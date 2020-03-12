@@ -180,8 +180,7 @@ Rapportserverinstallationen är nu klar.
    >
    >Om du till exempel vill starta Förenklad kinesiska skapar du ett kortkommando som godkänns i kommandoradsinställningen.
    >
-   >
-   ```
+   >```
    >Insight.exe -zh-cn
    >```
    >
