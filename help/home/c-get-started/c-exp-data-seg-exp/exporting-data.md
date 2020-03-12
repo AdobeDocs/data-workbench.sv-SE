@@ -53,8 +53,7 @@ För att ställa in exportkonfigurationen lades två nya exportkonfigurationsfil
    >
    >Exempel på generering av SSH-nycklar med hjälp av nyckelord:
    >
-   >
-   ```
+   >```
    >ssh-keygen -t rsa -b 4096 -C "<label>"
    >```
 
