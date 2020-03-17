@@ -3,7 +3,7 @@ description: Uppgraderar serverkomponenter för Data Workbench 6.3.
 title: DWB Server upgrade 6.2 to 6.3
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 79d5a2f44ade88f25f7621a4738d14c43777fc9f
 
 ---
 
@@ -22,26 +22,27 @@ Om du har anpassade profiler som har företräde framför standardfilerna i [!DN
    1. Ändra datatypen för **[!UICONTROL Proxy Password]** från [!DNL string"] till [!DNL EncryptedString]i avsnittet *Arbetsstationskonfiguration* .
 
       ```
-      Proxy User Name = string: 
-      Proxy Password = EncryptedString:   ( 
-      
-<i>from Proxy Password = String</i>)Use Address File = bool: true&quot;
+        Proxy User Name = string: 
+        Proxy Password = EncryptedString:   ( 
+        from Proxy Password = String) 
+        Use Address File = bool: true
+      ```
 
-    1. Lägg till nya poster för att aktivera de nya Namnvärdespar-omformningarna: *BuildNameValuePair* och *ExtractNameValuePairs*.
-    
-    Öppna en arbetsyta och högerklicka på **Admin** > **Profile Manager**.
-    
-    Under **Context** klickar du på filen **meta.cfg** i kolumnen **Base** och sedan på **Make Local**. I kolumnen med användartabellen högerklickar du och väljer **Open** > **in Workstation**.
-    
-    ![](assets/meta_cfg.png)
-    
-    * I det nya fönstret klickar du på **metadata** och lägger till godkända underordnade mallar.
-    
-    ![](assets/meta_cfg_child.png)
-    
-    * Öppna **transformation** och lägg till nya mallar.
-    
-    ![](assets/meta_cfg_template.png)
+   1. Lägg till nya poster för att aktivera de nya Namnvärdespar-omformningarna: *BuildNameValuePair* och *ExtractNameValuePairs*.
+
+      Öppna en arbetsyta och högerklicka på **Admin** > **Profilhanteraren**.
+
+      Klicka på filen **meta.cfg** i kolumnen **Bas** under **Kontext** och klicka sedan på **Skapa lokalt**. I kolumnen med användartabellen högerklickar du och väljer **Öppna** > **i Workstation**.
+
+      ![](assets/meta_cfg.png)
+
+      * I det nya fönstret klickar du på **metadata** och lägger till godkända underordnade mallar.
+
+         ![](assets/meta_cfg_child.png)
+
+      * Öppna **omformningar** och lägg till nya mallar.
+
+         ![](assets/meta_cfg_template.png)
 
 * **Uppdatering för snabbsammanslagningsförbättringar**. Lägg till parametrar eller ändra värden i följande konfigurationsfiler för att utnyttja hastighetsförbättringarna i Data Workbench under en omformning.
 
