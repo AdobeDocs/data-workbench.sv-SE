@@ -5,7 +5,7 @@ title: Spara och läsa in filter
 topic: Data workbench
 uuid: 5312b9c4-0193-4d45-af54-e8f6d2706bf2
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 3e8f2c01b913afb25fe5f6bde1c7ec5145059266
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
 Steg för att spara och läsa in filter.
 
-1. Högerklicka på filtrets namn (eller **[!UICONTROL-[namn]]** om filtret är nytt) och klicka på **[!UICONTROL Save Filter]**.
+1. Högerklicka på filtrets namn (eller **\[[!UICONTROL noname]\]** om filtret är nytt) och klicka på **[!UICONTROL Save Filter]**.
 1. Ange önskat namn på filtret i **[!UICONTROL Save As]** etiketten.
 
    ![Steginformation](assets/vis_FilterEditor_SaveFilter.png)
