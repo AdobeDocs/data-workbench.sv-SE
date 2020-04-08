@@ -3,7 +3,7 @@ description: Data Workbench innehåller en konfigurationsguide för installation
 title: Guiden Installera arbetsstation
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
@@ -52,7 +52,7 @@ Starta installationsguidens körbara fil och gå igenom varje steg för att inst
       >
       >En generisk ***Insight.cfg*** -fil utan serverinformation installeras från början. Vi rekommenderar att du använder den nyligen installerade ***filen Insight.cfg*** och anpassar den i stället för att flytta en fil från en tidigare installation. Eftersom sökvägen för installation av arbetsstationen har ändrats bör du lägga till teckensnitt, ta bort *användarmappen* och ta bort *TraceFileComponent *.
 
-1. (valfritt) Välj** Anpassad** för att välja språkpaket och plats för programmet och datafilerna.
+1. (valfritt) Välj **Anpassad** för att välja språkpaketet och platsen för programmet och datafilerna.
 1. Välj plats för **kortkommandon på Start-menyn**.
 
    ![](assets/6_4_workstation_wizard_folder.png)
