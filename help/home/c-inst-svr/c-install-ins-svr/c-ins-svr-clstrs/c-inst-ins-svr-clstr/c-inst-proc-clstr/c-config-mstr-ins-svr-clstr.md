@@ -4,7 +4,7 @@ solution: Insight
 title: Konfigurera Master Insight Server for Clustering
 uuid: c3ac38e3-79c5-4863-9156-194589a6bcbd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
@@ -137,7 +137,7 @@ Filen anger [!DNL Synchronize.cfg] mallens plats [!DNL Insight Server]. Den iden
 1. Expandera komponentstrukturen.
 1. I parametern Primär klusterserveradress anger du huvudserverns IP-adress (primär) **[!UICONTROL Insight Server]**.
 
-   ![](assets/cfg_cluster_SyncFile_(CentralCopy).png)
+   ![](assets/cfg_cluster_SyncFile_CentralCopy.png)
 
    Om du vill skapa en logg som registreras varje gång synkroniseringen sker mellan huvudservern [!DNL Insight Server] och bearbetningen [!DNL Insight Servers]kontrollerar du att parametern Aktivera synkroniseringslogg är inställd på &quot;true&quot;.
 
