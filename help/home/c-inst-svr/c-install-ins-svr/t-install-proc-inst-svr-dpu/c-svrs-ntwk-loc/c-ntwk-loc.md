@@ -1,17 +1,17 @@
 ---
-description: Adressfilen har samma syfte som ETC\HOSTS-filen på en nätverksansluten dator.
+description: Adressfilen har samma syfte som ETC&bsol;HOSTS-filen på en nätverksansluten dator.
 solution: Insight
 title: Nätverksplatser
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 translation-type: tm+mt
-source-git-commit: f6ec885266de6b6d99615d73fad2a1c22897424b
+source-git-commit: e8612fab1c13ca5262816dde7deaa6fd8bedbc62
 
 ---
 
 
 # Nätverksplatser{#network-locations}
 
-Adressfilen har samma syfte som ETC\HOSTS-filen på en nätverksansluten dator.
+Adressfilen har samma syfte som ETC&amp;bsol;HOSTS-filen på en nätverksansluten dator.
 
 Till skillnad från HOSTS-filen, som beskriver en samling namn, innehåller adressfilen flera samlingar med namn som kallas nätverksplatser.
 
