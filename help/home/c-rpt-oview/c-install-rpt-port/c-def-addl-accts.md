@@ -5,12 +5,12 @@ title: Definiera ytterligare konton
 topic: Data workbench
 uuid: 5ad98b52-267c-4c36-b43a-ae6ad415de8e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: e4f2c653c00c21180b14bf67cc116d832bddd028
 
 ---
 
 
-# Definiera ytterligare konton{#define-additional-accounts}
+# Definiera ytterligare konton
 
 Användarna måste ha ett giltigt konto och ange kontonamn och lösenord när de öppnar rapportportalen.
 
