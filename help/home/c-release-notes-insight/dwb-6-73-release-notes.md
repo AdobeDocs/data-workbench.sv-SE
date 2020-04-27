@@ -3,16 +3,12 @@ description: Nya funktioner och korrigeringar i Data Workbench 6.73.
 title: Versionsinformation för Data Workbench 6.73
 uuid: bba63a8c-9cb7-4334-b66a-22db92153066
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: 9552a2f9fe4e450b1e212b38a09f77252a009419
 
 ---
 
 
 # Versionsinformation för Data Workbench 6.73{#data-workbench-release-notes}
-
-Nya funktioner och korrigeringar i Data Workbench 6.73.
-
-## Versionsinformation för Data Workbench 6.73 {#topic-7655534554ac4a4b816af1bd73b06aad56757}
 
 Nya funktioner och korrigeringar i Data Workbench 6.73.
 
