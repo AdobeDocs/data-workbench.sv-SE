@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: analytics
 audience: end-user
-user-guide-title: Data Workbench Help
+user-guide-title: Hjälp om Data Workbench
 translation-type: tm+mt
-source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
+source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
 # Hjälp om Data Workbench {#using}
 
 + [Hjälp om Data Workbench](home/home.md)
-+ Versionsinformation {#release-notes}
++ Release notes {#release-notes}
    + [Översikt över versionsinformation](home/c-release-notes-insight/release-notes.md)
    + [Versionsinformation för Data Workbench 6.73](home/c-release-notes-insight/dwb-6-73-release-notes.md)
    + [Versionsinformation för Data Workbench 6.72](home/c-release-notes-insight/dwb-6-72-release-notes.md)
@@ -30,7 +30,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
    + [Versionsinformation för Data Workbench 6.2](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
    + [Data Workbench 6.11 - uppdatering](home/c-release-notes-insight/c-6-1-1.md)
    + [Uppdatering av dataflöden för april 2014](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
-   + [Versionsinformation för Data Workbench 6.2](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
+   + [Versionsinformation för Data Workbench 6.1](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
    + [Versionsinformation om Data Workbench 6.0 och 6.0.4](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
 + Installation {#install}
    + [Krav på arbetsstation](home/c-install-insight/c-data-workbench-client-install.md)
@@ -358,6 +358,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
 + Datauppsättningskonfiguration {#dataset}
    + [Om datauppsättningskonstruktion](home/c-dataset-const-proc/c-dataset-constr.md)
    + [Om datauppsättningskonfiguration](home/c-dataset-const-proc/c-dataset-config.md)
+   + [Data Workbench-stöd för GDPR](home/c-dataset-const-proc/dwb-gdpr.md)
    + Konfigurationsfil för loggbearbetning {#log-proc-config-file}
       + [Om konfigurationsfilen för loggbearbetning](home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)
       + [Redigera konfigurationsfilen för loggbearbetning](home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md)
@@ -379,7 +380,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [Om Inkludera datauppsättningar](home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)
       + [Arbeta med datauppsättningen Inkludera filer](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/c-work-dataset-inc-files.md)
       + [Redigera befintlig datauppsättning Inkludera filer](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md)
-      + [Skapar en ny datauppsättning med inkluderade filer](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-create-new-dataset-inc-files.md)
+      + [Skapar ny datauppsättning med inkluderade filer](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-create-new-dataset-inc-files.md)
       + Typer av datauppsättning innehåller filer {#types-dataset-inc-files}
          + [Typer av datauppsättning innehåller filer](home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-types-dataset-inc-files.md)
          + [Loggbehandlings-datauppsättningen innehåller filer](home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-log-proc-dataset-inc-files.md)
