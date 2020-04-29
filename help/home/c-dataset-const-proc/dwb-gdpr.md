@@ -4,7 +4,7 @@ solution: Analytics
 title: Data Workbench-stöd för GDPR
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
+source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
 
 ---
 
@@ -21,7 +21,7 @@ GDPR-förordningen identifierar rollerna och skyldigheterna för de olika parter
 * Adobe fungerar som **personuppgiftsbiträde** och tillhandahåller programvara och tjänster för att implementera GDPR-krav baserat på ditt avtal med Adobe.
 * Efter integrering av Data Workbench med GDPR-tjänsten och enligt GDPR-standarderna kan besökare på en webbplats (de **registrerade**) utöva sin&quot;rätt att bli bortglömd&quot; av Adobe, dataprocessorn. För att uppnå rättigheten att bli bortglömd kan du som personuppgiftsansvariga överföra utmanande besökar-ID:n till Adobe från ett användargränssnitt eller API. Mer information finns i dokumentationen för [Adobe Analytics GDPR-arbetsflöde](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) , inklusive förfrågningar om [åtkomst och borttagning](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html) .
 
->[!Note]
+>[!NOTE]
 >
 >För andra datakällor ansvarar din organisation för att rensa komplexa besökar-ID:n från andra loggkällor, som CRM, POS, IVR och andra rådatakällor. Tjänstepaket med skräddarsydd räckvidd kommer att finnas tillgängliga för att ge stöd till organisationer genom _att tillhandahålla en fullständig uppsättning ersättningsfiler för varje datakälla_ eller andra anpassade alternativ.
 
