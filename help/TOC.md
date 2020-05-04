@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Hjälp om Data Workbench
 translation-type: tm+mt
-source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
+source-git-commit: 6098c4fcb14d7fd2444832aaaf0f5b7cc1811dac
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
    + [Data Workbench 6.31 - uppdatering](home/c-release-notes-insight/c-6-3-1.md)
    + [Versionsinformation för Data Workbench 6.3](home/c-release-notes-insight/c-6-3/c-6-3.md)
    + [Data Workbench 6.21 - uppdatering](home/c-release-notes-insight/c-6-2-1.md)
-   + [Versionsinformation för Data Workbench 6.1](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
+   + [Versionsinformation för Data Workbench 6.2](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
    + [Data Workbench 6.11 - uppdatering](home/c-release-notes-insight/c-6-1-1.md)
    + [Uppdatering av dataflöden för april 2014](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
    + [Versionsinformation för Data Workbench 6.1](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
@@ -966,6 +966,6 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [Konfigurationsändringar för nytt schema](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [Inställningar för härledda dimensioner](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Fråge-API](https://www.adobe.io/)
-+ [Data Workbench med Analytics Data Feed](https://marketing.adobe.com/resources/help/en_US/insight/insight_sc_implementation.pdf)
++ [Data Workbench med Analytics Data Feed](home/assets/insight_sc_implementation.pdf)
 + [Integrering av Data Workbench med Adobe Target](home/dwb-adobe-target.md)
 + [Data Workbench-ordlista](dwb-glossary.md)
