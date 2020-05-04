@@ -2,10 +2,9 @@
 description: Rapportportalen består av en uppsättning ASP-filer (Application Server pages) och stödfiler.
 solution: Analytics
 title: Installera rapportportalprogramfiler
-topic: Data workbench
 uuid: 483a7401-1bb4-4a71-b8c7-e70ff1b129e7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 7521fe7f5fabe8e1be26e140ffff577a42fce88b
 
 ---
 
