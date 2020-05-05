@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Hjälp om Data Workbench
 translation-type: tm+mt
-source-git-commit: 6098c4fcb14d7fd2444832aaaf0f5b7cc1811dac
+source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
 
 ---
 
@@ -966,6 +966,6 @@ source-git-commit: 6098c4fcb14d7fd2444832aaaf0f5b7cc1811dac
       + [Konfigurationsändringar för nytt schema](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [Inställningar för härledda dimensioner](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Fråge-API](https://www.adobe.io/)
-+ [Data Workbench med Analytics Data Feed](home/assets/insight_sc_implementation.pdf)
++ [Data Workbench med Analytics Data Feed](home/assets/dwb-analytics-implementation.pdf)
 + [Integrering av Data Workbench med Adobe Target](home/dwb-adobe-target.md)
 + [Data Workbench-ordlista](dwb-glossary.md)
