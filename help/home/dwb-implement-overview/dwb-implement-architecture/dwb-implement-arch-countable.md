@@ -3,7 +3,7 @@ description: Förklaring av Countables i DataWorkbench (DWB) för utformning och
 title: Räkningsbara strukturer för schemautformning
 uuid: 2530980d-1c6b-4a96-b9c1-431fc75678bb
 translation-type: tm+mt
-source-git-commit: 6443bdf8856ba51252685fa0c1ed65f831142956
+source-git-commit: 8b0e9c8855a7c7228393dfab4bf78645f1953794
 
 ---
 
@@ -91,4 +91,4 @@ Gör så här för att skapa räkningsbar i DataWorkbench:
 
    Om alternativet Räknbart inte är den översta nivån anger du namnet på den överordnade nivån i det överordnade fältet. I exemplet nedan skapas Enagement Countable och Parent för den här inventeringen är Customer. ![](assets/dwb_impl_arch_5.png)
 
-Mer information om Data Workbench-arkitekturen för schemadesign, räkningsbara strukturer och offlinedataflödeskonfigurationer finns i [Dataset Schema Interface](https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html) , Dimensions och [Metrics Reference](../../assets/insight_sc_implementation.pdf).
+Mer information om Data Workbench-arkitekturen för schemadesign, räkningsbara strukturer och offlinedataflödeskonfigurationer finns i [Dataset Schema Interface](https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).
