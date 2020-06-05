@@ -4,7 +4,10 @@ solution: Analytics
 title: Data Workbench-stöd för GDPR
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
+source-git-commit: 279e71f3da3f0ebc29091e88b87666a22a36a8d6
+workflow-type: tm+mt
+source-wordcount: '525'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ GDPR-förordningen identifierar rollerna och skyldigheterna för de olika parter
 
 >[!NOTE]
 >
->För andra datakällor ansvarar din organisation för att rensa komplexa besökar-ID:n från andra loggkällor, som CRM, POS, IVR och andra rådatakällor. Tjänstepaket med skräddarsydd räckvidd kommer att finnas tillgängliga för att ge stöd till organisationer genom _att tillhandahålla en fullständig uppsättning ersättningsfiler för varje datakälla_ eller andra anpassade alternativ.
+>För andra datakällor ansvarar din organisation för att rensa komplexa besökar-ID:n från andra loggkällor, som CRM, POS, IVR och andra rådatakällor. Tjänstepaket med skräddarsydd räckvidd kommer att finnas tillgängliga för att ge stöd till organisationer genom _att tillhandahålla en fullständig uppsättning ersättningsfiler för varje datakälla_ som kontinuerliga tjänstbehållare krävs för att stödja eller underhålla.
 
 ## Uppgraderar DWB för GDPR-implementering
 
