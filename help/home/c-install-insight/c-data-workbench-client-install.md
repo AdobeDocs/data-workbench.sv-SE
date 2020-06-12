@@ -5,7 +5,10 @@ title: Krav på arbetsstation
 topic: Data workbench
 uuid: 3c4ba2e8-efbc-45fe-8ac1-923d070bc710
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ Mer information om ytterligare systemkrav för Data Workbench finns i [Serversys
 
 >[!IMPORTANT]
 >
->Server-, rapportserver- och klientkomponenterna uppgraderas för att köras på 64-bitars Windows-operativsystem.
+>Server-, rapportserver- och klientkomponenterna har uppgraderats för att köras på 64-bitars Windows-operativsystem.
 
 **Innan du börjar**
 
@@ -29,7 +32,7 @@ Kontrollera att du har utfört de här uppgifterna innan du installerar Data Wor
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   Detta ger behörighet för&quot;vit lista&quot; för dessa korsande körbara filer.
+   Detta aktiverar rättigheter för dessa korsande körbara filer.
 
 * **Installera Microsoft Excel om du vill exportera analysdata.** Om du vill exportera data från arbetsytor som Microsoft Excel-filer ( [!DNL .xls] eller [!DNL .xlsx]) måste Excel vara installerat och registrerat på den dator där du installerar Data Workbench. Om Excel inte har registrerats och Data Workbench försöker få åtkomst till det för första gången visas en registreringsdialogruta. Om du är osäker på om kopian är registrerad startar du Excel manuellt och slutför registreringsprocessen om en registreringsdialogruta visas.
 
