@@ -3,7 +3,10 @@ description: Följ de här stegen för att uppgradera till Data Workbench v6.4.
 title: Uppgraderar 6.3 till 6.4
 uuid: 2461c1ab-cf99-4fb5-b431-d7062df7a53d
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Följ dessa krav och rekommendationer när du uppgraderar till Data Workbench 6.
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   Detta ger behörighet för&quot;vit lista&quot; för dessa korsande körbara filer.
+   Detta aktiverar rättigheter för dessa korsande körbara filer.
 
 * **Uppdatera certifikatet *Trust_ca_cert.pem*på servrarna**.
 * **Omorganisation av attribueringsprofiler**.
