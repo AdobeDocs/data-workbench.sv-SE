@@ -5,7 +5,10 @@ title: Lägga till bokmärken
 topic: Data workbench
 uuid: 8b7fd6ac-9bab-4e7a-8f52-8568413052e8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,4 @@ Du kan skapa bokmärken för viktiga arbetsytor för att snabbt gå mellan visua
 >
 >* 25 bokmärken kan sparas.
 >* Om du lägger till ett bokmärke och sedan flyttar arbetsytans plats, blir bokmärket ogiltigt och måste tas bort från bokmärkespanelen och återställas.
->
-
-
 
