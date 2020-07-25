@@ -3,8 +3,12 @@ cloud: experience-cloud
 product: analytics
 audience: end-user
 user-guide-title: Hjälp om Data Workbench
+user-guide-description: Learn about the multi-channel capabilities of Data Workbench. Includes Data Workbench Client, Installation, Dataset Configuration guides, and more.
 translation-type: tm+mt
-source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
+source-git-commit: 53e6b7b96e7addd848a00691163878846b22b4c6
+workflow-type: tm+mt
+source-wordcount: '3518'
+ht-degree: 0%
 
 ---
 
@@ -14,24 +18,24 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 + [Hjälp om Data Workbench](home/home.md)
 + Versionsinformation {#release-notes}
    + [Översikt över versionsinformation](home/c-release-notes-insight/release-notes.md)
-   + [Versionsinformation för Data Workbench 6.74](home/c-release-notes-insight/dwb-6-74-release-notes.md)
-   + [Versionsinformation för Data Workbench 6.73](home/c-release-notes-insight/dwb-6-73-release-notes.md)
-   + [Versionsinformation för Data Workbench 6.72](home/c-release-notes-insight/dwb-6-72-release-notes.md)
-   + [Versionsinformation för Data Workbench 6.7](home/c-release-notes-insight/dwb-6-7-release-notes.md)
+   + [Versionsinformation om Data Workbench 6.74](home/c-release-notes-insight/dwb-6-74-release-notes.md)
+   + [Versionsinformation om Data Workbench 6.73](home/c-release-notes-insight/dwb-6-73-release-notes.md)
+   + [Versionsinformation om Data Workbench 6.72](home/c-release-notes-insight/dwb-6-72-release-notes.md)
+   + [Versionsinformation om Data Workbench 6.7](home/c-release-notes-insight/dwb-6-7-release-notes.md)
    + [Data Workbench Report Portal 2.1](home/c-release-notes-insight/reportserver-2-1.md)
-   + [Versionsinformation för Data Workbench 6.61](home/c-release-notes-insight/c-6-6-1.md)
-   + [Versionsinformation för Data Workbench 6.6](home/c-release-notes-insight/c-6-6.md)
+   + [Versionsinformation om Data Workbench 6.61](home/c-release-notes-insight/c-6-6-1.md)
+   + [Versionsinformation om Data Workbench 6.6](home/c-release-notes-insight/c-6-6.md)
    + [Data Workbench 6.52 - uppdatering](home/c-release-notes-insight/c-6-52.md)
    + [Data Workbench 6.51 - uppdatering](home/c-release-notes-insight/c-6-51.md)
-   + [Versionsinformation för Data Workbench 6.5](home/c-release-notes-insight/c-6-5.md)
-   + [Versionsinformation för Data Workbench 6.4](home/c-release-notes-insight/c-6-4/c-6-4.md)
+   + [Versionsinformation om Data Workbench 6.5](home/c-release-notes-insight/c-6-5.md)
+   + [Versionsinformation om Data Workbench 6.4](home/c-release-notes-insight/c-6-4/c-6-4.md)
    + [Data Workbench 6.31 - uppdatering](home/c-release-notes-insight/c-6-3-1.md)
-   + [Versionsinformation för Data Workbench 6.3](home/c-release-notes-insight/c-6-3/c-6-3.md)
+   + [Versionsinformation om Data Workbench 6.3](home/c-release-notes-insight/c-6-3/c-6-3.md)
    + [Data Workbench 6.21 - uppdatering](home/c-release-notes-insight/c-6-2-1.md)
-   + [Versionsinformation för Data Workbench 6.2](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
+   + [Versionsinformation om Data Workbench 6.2](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
    + [Data Workbench 6.11 - uppdatering](home/c-release-notes-insight/c-6-1-1.md)
    + [Uppdatering av dataflöden för april 2014](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
-   + [Versionsinformation för Data Workbench 6.1](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
+   + [Versionsinformation om Data Workbench 6.1](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
    + [Versionsinformation om Data Workbench 6.0 och 6.0.4](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
 + Installation {#install}
    + [Krav på arbetsstation](home/c-install-insight/c-data-workbench-client-install.md)
@@ -46,7 +50,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Konfigurera anslutningen till Insight Server](home/c-install-insight/install-setup/c-conn-isvr.md)
       + [Felsökning av anslutning](home/c-install-insight/install-setup/t-conn-trbsh.md)
    + Uppgraderar Data Workbench {#upgrade-dwb}
-      + [Uppgraderar Data Workbench-översikt](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
+      + [Uppgraderar Data Workbench - översikt](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
       + [Uppgraderar 6.4 till 6.5](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
       + [Uppgraderar 6.3 till 6.4](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
       + [DWB Server-uppgradering: 6.2 till 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
@@ -76,7 +80,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Låsa upp en arbetsyta](home/c-get-started/c-work-worksp/c-unlock-wksp.md)
       + [Ta bort arbetsytor](home/c-get-started/c-work-worksp/c-del-wksp.md)
       + [Använda arbetsytans fönstermeny](home/c-get-started/c-work-worksp/c-wksp-win-menu.md)
-   + [Kortkommandon för Data Workbench-klienten](home/c-get-started/analytics-quick-keys-for-dataworkbench.md)
+   + [Kortkommandon för Data Workbench Client](home/c-get-started/analytics-quick-keys-for-dataworkbench.md)
    + Arbeta med fönster på en arbetsyta {#working-with-windows-workspace}
       + [Arbeta med fönster i en översikt över arbetsytan](home/c-get-started/c-wk-win-wksp/c-wk-win-wksp.md)
       + [Hantera fönster på en arbetsyta](home/c-get-started/c-wk-win-wksp/c-man-win-wksp.md)
@@ -92,10 +96,10 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Segmentexport med anpassade rubriker](home/c-get-started/c-exp-data-seg-exp/c-segment-export.md)
       + [Exportera ett segment med hjälp av S/FTP-leverans](home/c-get-started/c-exp-data-seg-exp/exporting-data.md)
       + [Exportera profiler och målgrupper](home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
-      + [Exportera till bastjänsterna i Analytics](home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
+      + [Exportera till Analytics bastjänster](home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
       + [Exportera till Adobe Target](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
       + [Guiden för segmentexport](home/c-get-started/c-exp-data-seg-exp/segment-export.md)
-   + [Analysrapporter](home/c-get-started/c-template-report-types.md)
+   + [Analytics Reports](home/c-get-started/c-template-report-types.md)
    + Attributionsrapporter {#attribution-reports}
       + [Använda attribueringsrapporter](home/c-get-started/c-attribution-profiles/c-attribution-profiles.md)
       + [Översikt över attributprofiler](home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
@@ -359,12 +363,12 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 + Datauppsättningskonfiguration {#dataset}
    + [Om datauppsättningskonstruktion](home/c-dataset-const-proc/c-dataset-constr.md)
    + [Om datauppsättningskonfiguration](home/c-dataset-const-proc/c-dataset-config.md)
-   + [Data Workbench-stöd för GDPR](home/c-dataset-const-proc/dwb-gdpr.md)
+   + [Data Workbench Support for GDPR](home/c-dataset-const-proc/dwb-gdpr.md)
    + Konfigurationsfil för loggbearbetning {#log-proc-config-file}
       + [Om konfigurationsfilen för loggbearbetning](home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)
       + [Redigera konfigurationsfilen för loggbearbetning](home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md)
       + [Loggkällor](home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md)
-      + [Konfigurera en Data Workbench Server-filserverenhet](home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md)
+      + [Konfigurera en filserverenhet för Data Workbench Server](home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md)
       + [Loggbehandlingsparametrar](home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md)
       + [ODBC-datakällor](home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md)
       + [Hänsyn till konfigurationsfilen för loggbearbetning](home/c-dataset-const-proc/c-log-proc-config-file/c-cons-log-proc-config-file.md)
@@ -381,7 +385,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Om Inkludera datauppsättningar](home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)
       + [Arbeta med datauppsättningen Inkludera filer](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/c-work-dataset-inc-files.md)
       + [Redigera befintlig datauppsättning Inkludera filer](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md)
-      + [Skapar ny datauppsättning med inkluderade filer](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-create-new-dataset-inc-files.md)
+      + [Skapar en ny datauppsättning med inkluderade filer](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-create-new-dataset-inc-files.md)
       + Typer av datauppsättning innehåller filer {#types-dataset-inc-files}
          + [Typer av datauppsättning innehåller filer](home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-types-dataset-inc-files.md)
          + [Loggbehandlings-datauppsättningen innehåller filer](home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-log-proc-dataset-inc-files.md)
@@ -453,7 +457,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + Transform.cfg-fil {#transform-cfg-file}
             + [Filen Transform.cfg](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md)
             + [Definiera exporterare](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-def-exp.md)
-            + [Exempel på data Workbench Transform.cfg-filer](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md)
+            + [Exempel på Datan Workbench Transform.cfg-filer](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md)
          + [Filen Transform Mode.cfg](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-transf-mode-file.md)
          + [Filen Obligatoriska fältdefinitioner.cfg](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/c-req-field-def-file.md)
    + Ombearbetning och omformning {#reproc-retrans}
@@ -521,7 +525,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + [Installationsprocedurer för digitalt certifikat](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/t-dig-cert-install-proc.md)
       + [Konfigurera anslutningen till Insight Server](home/c-rpt-oview/c-inst-rpt/t-config-conn-ins-svr.md)
       + [Uppdatera rapportserver med en språkfil (.zbin-fil)](home/c-rpt-oview/c-inst-rpt/c-zbin-file-update.md)
-      + [Aktivera åtkomst till Data Workbench-servern](home/c-rpt-oview/c-inst-rpt/t-en-acc-ins-svr.md)
+      + [Aktivera åtkomst till Data Workbench Server](home/c-rpt-oview/c-inst-rpt/t-en-acc-ins-svr.md)
       + [Rapportserverstatus visas](home/c-rpt-oview/c-inst-rpt/t-display-svr-st-rpt.md)
       + [Registrerar rapportservern som en Windows-tjänst](home/c-rpt-oview/c-inst-rpt/t-reg-rpt-win-svc.md)
       + [Uppgraderar och avinstallerar rapportservern](home/c-rpt-oview/c-inst-rpt/c-upgrade-uninstall-rpt.md)
@@ -594,7 +598,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + [P3P-överväganden för sidtaggning från tredje part](home/c-undst-pg-tag/c-cons-thrd-pty-pg-tag.md)
    + [Arbetsblad för variabelmappning för sidtagg](home/c-undst-pg-tag/c-pg-tag-wkst.md)
 + Mätvärden, dimensioner och filter {#metrics}
-   + [Om Data Workbench-mått, dimensioner och filter](home/c-about/c-about.md)
+   + [Om Data Workbench, mått och filter](home/c-about/c-about.md)
    + [Expandera mått, dimensioner och filter](home/c-about/c-expand-capabilities.md)
    + [Dimensionstyper](home/c-about/c-dimension-types.md)
    + [Guiden Metrisk dim](home/c-about/metric-dim.md)
@@ -649,7 +653,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Uppgraderar Data Workbench Geography](home/c-geo-oview/c-upgrd-uninst-geo/t-upgrd-geo.md)
       + [Avinstallerar Data Workbench Geography](home/c-geo-oview/c-upgrd-uninst-geo/t-uninst-geo.md)
 + Kontrollerade experiment {#experiments}
-   + [Om Data Workbench-kontrollerade experiment](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
+   + [Om Experimentera med Data Workbench](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
    + [Hur identifierar webbplatsen besökare?](home/c-undst-ctrld-exp/c-id-vstrs.md)
    + [Hur fungerar kontrollerade experiment?](home/c-undst-ctrld-exp/c-ctrld-exp-wk.md)
    + [Vad ska jag testa?](home/c-undst-ctrld-exp/c-wht-test-.md)
@@ -676,8 +680,8 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + [Experimentera med kalkylblad](home/c-undst-ctrld-exp/t-exp-dsn-spst.md)
 + Serveradministration och installation {#server-admin-install}
    + [Systemkrav för server](home/c-inst-svr/c-msr-server/c-msr-server.md)
-   + Installerar Data Workbench-servrar {#install-servers}
-      + [Installerar Data Workbench-servrar](home/c-inst-svr/c-install-ins-svr/c-install-ins-svr.md)
+   + Installera Data Workbench-servrar {#install-servers}
+      + [Installera Data Workbench-servrar](home/c-inst-svr/c-install-ins-svr/c-install-ins-svr.md)
       + [Om licensenheter för Insight Server](home/c-inst-svr/c-install-ins-svr/c-abt-inst-svr-lic-units.md)
       + Insight Server DPU {#insight-server-dpu}
          + [Installationsprocedurer för en Insight Server DPU](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-install-proc-inst-svr-dpu.md)
@@ -685,7 +689,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + Digitala certifikat {#dig-certs}
             + [Hämta och installera digitala certifikat](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/c-dnld-dgtl-cert.md)
             + [Strängkryptering](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/string-encryption.md)
-            + [Använda anpassade certifikat i Data Workbench](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md)
+            + [Använda anpassade certifikat i Datan Workbench](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md)
             + [Windows certifikatarkiv](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/crypto-api.md)
          + [Kontrollera portinställningarna](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-chk-pt-stgs.md)
          + [Uppdaterar åtkomstkontrollsfilen](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-updt-accss-ctrl-file.md)
@@ -704,16 +708,16 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + Installera ett Insight Server-kluster {#install-insight-server-cluster}
             + [Installera ett Insight Server-kluster](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-ins-svr-clstr.md)
             + [Installationsprocedurer för ett kluster](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-inst-proc-clstr.md)
-            + [Installera Master Insight Server](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/t-ins-mstr-ins-svr.md)
-            + [Konfigurera Master Insight Server for Clustering](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md)
+            + [Installera Överordnad Insight Server](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/t-ins-mstr-ins-svr.md)
+            + [Konfigurera Överordnad Insight Server for Clustering](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md)
             + [Installera och konfigurera Processing Insight-servrar](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/t-inst-proc-ins-svrs.md)
             + [Konfigurera en profil som ska köras i ett kluster](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-prof-run-clstr.md)
          + Lägga till insight-servrar i ett befintligt kluster {#add-server-cluster}
             + [Lägga till insight-servrar i ett befintligt kluster](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-ins-svrs-ex-clstr.md)
             + [Lägga till en Insight Server DPU i ett befintligt kluster](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-dpu-ex-clstr.md)
             + [Lägga till en Insight Server FSU i ett befintligt kluster](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-fsu-ex-clstr.md)
-   + Administrera Data Workbench Server {#admin-dwb-server}
-      + [Administrera Data Workbench Server](home/c-inst-svr/c-admin-inst-svr/c-admin-inst-svr.md)
+   + Administrerar Data Workbench Server {#admin-dwb-server}
+      + [Administrerar Data Workbench Server](home/c-inst-svr/c-admin-inst-svr/c-admin-inst-svr.md)
       + [Validera det digitala certifikatet igen](home/c-inst-svr/c-admin-inst-svr/c-reval-dgtl-cert.md)
       + [Bekräfta att tjänsten körs](home/c-inst-svr/c-admin-inst-svr/c-cfrm-svc-rng.md)
       + Åtkomstkontroll {#access-control}
@@ -747,7 +751,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + Konfigurerar {#configure}
          + [Konfigurera Repeater-funktioner](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-cnfg-rptr-fntly.md)
          + [Konfigurera en Insight Server FSU för Repeater](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-fsu-rptr.md)
-         + [Konfigurera åtkomstkontroll för måldatorer](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
+         + [Konfigurera åtkomstkontroll för Target-datorer](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
          + [Skapa en anslutning mellan Insight och Repeater](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-crt-conn-ins-rptr.md)
          + [Nästa steg](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-nxt-stps-reptr.md)
       + [Administrera upprepare](home/c-inst-svr/c-rptr-fntly/c-admin-rptr.md)
@@ -806,7 +810,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Bekräfta att datainsamlaren körs](home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md)
       + [Bekräfta att dataöverföringen körs](home/c-snsr-ovrvw/admin-sensor/c-data-trmtr-rng.md)
       + [Övervaka administrativa händelser](home/c-snsr-ovrvw/admin-sensor/c-mntr-admin-evts.md)
-      + [Ändra måldata för Workbench-servern](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
+      + [Ändra Target Data Workbench Server](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
       + Offlinesensorer {#offline}
          + [Hantera med offlinesenssorer](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-ofln-snsrs.md)
          + [Förstå&quot;från och med&quot;](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-as-of-tm.md)
@@ -831,14 +835,14 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + Arbetsytor {#workspace}
       + [Arbetsytor för övervakning av Data Workbench Server](home/monitoring-installation/monitoring-profiles/monitoring-profiles.md)
       + [Arbetsytan Historik för Data Workbench](home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md)
-      + [Arbetsytan Status för Data Workbench-profil](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
-      + [Arbetsytan Status för Data Workbench Server](home/monitoring-installation/monitoring-profiles/monitoring-server-using.md)
-   + Profildimensioner och mått för Data Workbench {#monitoring-appendix}
-      + [Profildimensioner och mått för Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
-      + [Dimensioner i historikprofilen för Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
-      + [Dimensioner i statusprofilen för Data Workbench-profilen](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
-      + [Dimensioner i Data Workbench Server-statusprofilen](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
-      + [Mätvärden i den historiska övervakningsprofilen för Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
+      + [Datans Workbench profilstatus, arbetsyta](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
+      + [Statusarbetsytan för Data Workbench Server](home/monitoring-installation/monitoring-profiles/monitoring-server-using.md)
+   + Datans Workbench profilmått och mått {#monitoring-appendix}
+      + [Datans Workbench profilmått och mått](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
+      + [Dimensioner i Datans Workbench historiska profil](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
+      + [Dimensioner i Datans Workbench profilstatusprofil](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
+      + [Dimensioner i Datans Workbench serverstatusprofil](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
+      + [Mätvärden i Datans Workbench historiska övervakningsprofil](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
 + Kontrollpanel {#dashboard}
    + [Affärsmöjligheter](home/c-adobe-data-workbench-dashboard/c-business-opportunities.md)
    + [Funktioner](home/c-adobe-data-workbench-dashboard/c-features.md)
@@ -868,7 +872,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + [Ta bort visualiseringar](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-remove-visualizations.md)
          + [Storleksvisualiseringar](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-sizing-visualizations.md)
          + [Flytta visualiseringar](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-moving-visualizations.md)
-   + Kontrollpaneler {#dashboards}
+   + Dashboards {#dashboards}
       + [Kontrollpaneler](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboards.md)
       + Visa instrumentpaneler {#viewing-dashboards}
          + [Öppna och visa kontrollpaneler](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-opening-and-viewing-dashboards.md)
@@ -935,20 +939,20 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Redigera ett användarkonto](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-editing-a-user-account.md)
       + [Återställa en användares lösenord](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-resetting-a-users-password.md)
       + [Ta bort ett användarkonto](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-removing-a-user-account.md)
-   + Användargrupper {#user-groups}
+   + User Groups {#user-groups}
       + [Hantera användargrupper](home/c-preparing-for-dashboard-installation/c-managing-user-groups/c-managing-user-groups.md)
       + [Skapa en användargrupp](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-creating-a-user-group.md)
       + [Redigera en användargrupp](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-editing-a-user-group.md)
       + [Ta bort en användargrupp](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-removing-a-user-group.md)
    + [Systemloggar](home/c-preparing-for-dashboard-installation/c-system-logs.md)
 + Implementera Data Workbench {#implement}
-   + [Implementera Adobe Data Workbench](home/dwb-implement-overview/dwb-implement-overview.md)
+   + [Implementera Adobe-Data Workbench](home/dwb-implement-overview/dwb-implement-overview.md)
    + [Data Workbench Discovery och krav](home/dwb-implement-overview/dwb-implement-discovery.md)
    + [Installation och etablering av Data Workbench](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
    + [Grundläggande introduktionsinstruktioner för DWB Managed Services](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md)
    + [Data Workbench Architecture](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-architecture.md)
    + [Räkningsbara strukturer för schemautformning](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md)
-   + [Administration av Data Workbench](home/dwb-implement-overview/dwb-implement-admin.md)
+   + [Data Workbench](home/dwb-implement-overview/dwb-implement-admin.md)
    + Konfiguration och implementering {#implement-configure}
       + [Konfiguration och implementering av Data Workbench](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-configure.md)
       + [Konfigurera händelsetid](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-event-time.md)
@@ -962,9 +966,9 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Inställningar för fråge-API](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-query-api.md)
       + [Databearbetning - Skapar primärnyckel](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-primary-key.md)
    + Implementering av funktioner {#feature-implemenatation}
-      + [Implementering av funktioner i Data Workbench](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
+      + [Data Workbench implementering av funktioner](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
       + [Konfigurationsändringar för nytt schema](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [Inställningar för härledda dimensioner](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Fråge-API](https://www.adobe.io/)
 + [Integrering av Data Workbench med Adobe Target](home/dwb-adobe-target.md)
-+ [Data Workbench-ordlista](dwb-glossary.md)
++ [Datans Workbench ordlista](dwb-glossary.md)
