@@ -1,24 +1,27 @@
 ---
-description: Dimensionsuttryck används aldrig ensam, men kan användas var som helst där en dimension anropas i ett mät- eller filteruttryck.
+description: Dimension-uttryck används aldrig ensam, men kan användas var som helst där en dimension anropas i ett metrisk uttryck eller filteruttryck.
 solution: Analytics
 title: Syntax för dimensionsuttryck
 topic: Data workbench
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '1855'
+ht-degree: 0%
 
 ---
 
 
 # Syntax för dimensionsuttryck{#syntax-for-dimension-expressions}
 
-Dimensionsuttryck används aldrig ensam, men kan användas var som helst där en dimension anropas i ett mät- eller filteruttryck.
+Dimension-uttryck används aldrig ensam, men kan användas var som helst där en dimension anropas i ett metrisk uttryck eller filteruttryck.
 
 1. Understrukna ord ska anges bokstavligen i uttryckstexten.
-1. Formuläret {TEXT}? representerar valfri text.
-1. Formuläret {TEXT}* representerar text som kan förekomma noll eller flera gånger.
-1. Formuläret {A}| B| C|..} representerar text som består av exakt ett av de angivna alternativen, t.ex. A eller B eller C....
-1. Formuläret [A,B) representerar ett nummerintervall, från A till men inte B.
+1. Formuläret `{TEXT}?` representerar valfri text.
+1. Formuläret `{TEXT}*` representerar text som kan förekomma noll eller flera gånger.
+1. Formuläret `{A | B | C |...}` representerar text som består av exakt ett av de angivna alternativen, till exempel A eller B eller C....
+1. Formuläret `[A,B)` representerar ett nummerintervall, från A till men inte B.
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
  <tbody> 
@@ -28,7 +31,7 @@ Dimensionsuttryck används aldrig ensam, men kan användas var som helst där en
   </tr> 
   <tr> 
    <td colname="col1"> <p>(Dimension) </p> </td> 
-   <td colname="col2"> <p>Resultatet av (Dimension) är samma som resultatet av Dimension. Parenteser anger ordningen för åtgärder i ett uttryck. </p> <p>Exempel: Sessioner[ (Sida) = "/home" ] är antalet sessioner som besöker sidan "/home". </p> </td> 
+   <td colname="col2"> <p>Resultatet av (Dimension) är detsamma som resultatet av Dimensionen. Parenteser anger ordningen för åtgärder i ett uttryck. </p> <p>Exempel: Sessioner[ (Sida) = "/home" ] är antalet sessioner som besöker sidan "/home". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Tona ned efter nivå </p> </td> 
@@ -48,7 +51,7 @@ Dimensionsuttryck används aldrig ensam, men kan användas var som helst där en
   </tr> 
   <tr> 
    <td colname="col1"> <p>bucket(Level, Metric, Count, Format {, Start {, Size}? }?) </p> </td> 
-   <td colname="col2"> <p>Definierar en dimension vars element är intervall med siffror (med fast storlek, t.ex. [0-9], [10-19],..). Nivåelement relaterar till elementet i den bucket dim vars intervall innehåller måttvärdet för det elementet i nivån. Format är den utskriftsformatsträng som används för att formatera måttelementen. </p> <p>Exempel: Om Page_Duration_Minutes är en sidvisningsnivådimension som representerar antalet minuter som har tillbringats på varje sida, är bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5) en sessionsnivådimension som representerar antalet minuter som tillbringats i varje session. elementen är 5 minuters intervall {[0-5), [5-10),..,[495-500)}. </p> <p>Start är startvärdet för det första intervallet (standard: 0) och Size är intervallets storlek (standard: 1). </p> </td> 
+   <td colname="col2"> <p>Definierar en dimension vars element är intervall med siffror (med fast storlek, t.ex. [0-9], [10-19],..). Nivåelement relaterar till elementet i den bucket dim vars intervall innehåller måttvärdet för det elementet i nivån. Format är den utskriftsformatsträng som används för att formatera måttelementen. </p> <p>Exempel: Om Page_Duration_Minutes är en sidvisningsnivådimension som representerar antalet minuter som har tillbringats på varje sida, är bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5) en sessionsnivådimension som representerar antalet minuter som tillbringats i varje session. elementen är 5 minuters intervall <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Start är startvärdet för det första intervallet (standard: 0) och Size är intervallets storlek (standard: 1). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>prefix(Level {,ElementName-&gt;(Prefix{,Prefix}* )}* ) </p> </td> 
@@ -56,11 +59,11 @@ Dimensionsuttryck används aldrig ensam, men kan användas var som helst där en
   </tr> 
   <tr> 
    <td colname="col1"> <p>latens(Level, Clip, Dim, Filter, MaxBefore, MaxAfter, FormatString) </p> </td> 
-   <td colname="col2"> <p>Se <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> Skapa fördröjningsdimensioner </a>. </p> </td> 
+   <td colname="col2"> <p>Se <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> Skapa Dimensioner för fördröjning </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>cartesian_product(separator {,Dim}*) </p> </td> 
-   <td colname="col2"> <p>Definierar en dimension vars element är alla kombinationer ("den kartesiska produkten") av elementen i de angivna dimensionerna. Namnet på varje element skapas genom sammanfogning av motsvarande element i indatamåtten, avgränsade med den givna avgränsningssträngen. </p> <p>Om till exempel dimensionen D1 har elementen {"a", "b"} och dimensionen D2 har elementen {"x", "y"}, har kartesisk produkt("-", D1, D2) elementen {"a-x", "a-y", "b-x", "b-y"}. </p> <p>Observera att var och en av indatamåtten behandlas som om antalet dess element är nästa högre potens på två. Detta leder till att den kartesiska produkten har några "dummy"-element. När du använder API:t för Data Workbench kan dessa element vara implementerade, beroende på utdataformatet, eller så visas de som "#nnn", där nnn är elementets ordningstal (och ska ignoreras av klienten). </p> <p>Om D2 till exempel har de tre elementen {"x", "y", "z"}, behandlas det som om det hade fyra element och den kartesiska produkten hade elementen {"a-x", "a-y", "a-z", "#3", "b-x", "b-y", "b-z", "#7"}. </p> <p>Om inga dimensioner anges är resultatet en dimension med ett element, "#0", som motsvarar dimensionen Inget. </p> </td> 
+   <td colname="col2"> <p>Definierar en dimension vars element är alla kombinationer ("den kartesiska produkten") av elementen i de angivna dimensionerna. Namnet på varje element skapas genom sammanfogning av motsvarande element i indatamåtten, avgränsade med den givna avgränsningssträngen. </p> <p>Om till exempel dimensionen D1 har elementen {"a", "b"} och dimensionen D2 har elementen {"x", "y"}, har kartesisk produkt("-", D1, D2) elementen {"a-x", "a-y", "b-x", "b-y"}. </p> <p>Observera att var och en av indatamåtten behandlas som om antalet dess element är nästa högre potens på två. Detta leder till att den kartesiska produkten har några "dummy"-element. När du använder Data Workbench-API:t kan dessa element redigeras, beroende på utdataformatet, eller visas som "#nnn", där nnn är elementets ordningstal (och ska ignoreras av klienten). </p> <p>Om D2 till exempel har de tre elementen {"x", "y", "z"}, behandlas det som om det hade fyra element och den kartesiska produkten hade elementen {"a-x", "a-y", "a-z", "#3", "b-x", "b-y", "b-z", "#7"}. </p> <p>Om inga dimensioner anges är resultatet en dimension med ett element, "#0", som motsvarar dimensionen Inget. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Närmaste_räkningsbar(Dim) </p> </td> 
