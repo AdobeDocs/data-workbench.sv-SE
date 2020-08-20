@@ -5,7 +5,10 @@ title: Syntax för metriska uttryck
 topic: Data workbench
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '851'
+ht-degree: 0%
 
 ---
 
@@ -19,10 +22,10 @@ Mer information finns i [Skapa och redigera härledda mått](../../../home/c-get
 Anteckningar:
 
 1. Understrukna ord ska anges bokstavligen i uttryckstexten.
-1. Formuläret {TEXT}? representerar valfri text.
-1. Formuläret {TEXT}* representerar text som kan förekomma noll eller flera gånger.
-1. Formuläret {A}| B| C|..} representerar text som består av exakt ett av de angivna alternativen, t.ex. A eller B eller C....
-1. Formuläret [A,B) representerar ett nummerintervall, från A till men inte B.
+1. Formuläret `{TEXT}?` representerar valfri text.
+1. Formuläret `{TEXT}*` representerar text som kan förekomma noll eller flera gånger.
+1. Formuläret `{A | B | C |...}` representerar text som består av exakt ett av de angivna alternativen, till exempel A eller B eller C....
+1. Formuläret `[A,B)` representerar ett nummerintervall, från A till men inte B.
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
@@ -56,11 +59,11 @@ Anteckningar:
   </tr> 
   <tr> 
    <td colname="col1"> <p>konfidensgrad (mått) </p> </td> 
-   <td colname="col2"> <p>En uppskattning av standardavvikelsen för mätvärdet. Detta beräknas med hjälp av en provtagningsmetod som kallas schakknivning. </p> <p>Detta mått är minneskrävande och bör inte användas i stora tabeller. </p> <p>Om du vill använda den här syntaxen måste du ha en knivdimension (kallad"kniv") med lämpliga egenskaper. Mer information får du av Adobes konsulttjänster. </p> <p>Exempel: trust(Average_Score) </p> <p> <p>Obs!  Typerna av konfidensmått, inklusive konfidensmått (metrisk) och konfidensintervall (metrisk, schakniv), är särskilt användbara när du använder Adobes kontrollerade experimenteringsfunktioner. Om ett mätvärde hoppar från 12 % till 16 % under ett kontrollerat experiment kan du använda en självsäker pratbubbla för att beräkna sannolikheten för att hoppet berodde på slumpmässiga variationer. Detta kan hjälpa er att undvika att dra fel slutsatser av begränsade bevis och å andra sidan försäkra er om att en tvivelaktig förändring faktiskt är verklig. </p> </p> </td> 
+   <td colname="col2"> <p>En uppskattning av standardavvikelsen för mätvärdet. Detta beräknas med hjälp av en provtagningsmetod som kallas schakknivning. </p> <p>Detta mått är minneskrävande och bör inte användas i stora tabeller. </p> <p>Om du vill använda den här syntaxen måste du ha en knivdimension (kallad"kniv") med lämpliga egenskaper. Mer information får du av Adobe Consulting Services. </p> <p>Exempel: trust(Average_Score) </p> <p> <p>Obs!  Typerna av konfidensmått, inklusive konfidensmått (mått) och konfidensintervall (mått, omfångsnivå), är särskilt användbara när du använder Adobe:s kontrollerade experimenteringsfunktioner. Om ett mätvärde hoppar från 12 % till 16 % under ett kontrollerat experiment kan du använda en självsäker pratbubbla för att beräkna sannolikheten för att hoppet berodde på slumpmässiga variationer. Detta kan hjälpa er att undvika att dra fel slutsatser av begränsade bevis och å andra sidan försäkra er om att en tvivelaktig förändring faktiskt är verklig. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>konfidensnivå (mätinstrument, jackkniv) </p> </td> 
-   <td colname="col2"> <p>En uppskattning av standardavvikelsen för mätvärdet. Detta beräknas med hjälp av en provtagningsmetod som kallas schakknivning. Med den här syntaxen kan du avgöra om ett mätresultat är tillförlitligt med hjälp av en knivdimension som heter något annat än"jackkniv". </p> <p>Detta mått är minneskrävande och bör inte användas i stora tabeller. </p> <p>Om du vill använda den här syntaxen måste du ha en knivdimension (som kallas något annat än"kniv") med lämpliga egenskaper. Mer information får du av Adobes konsulttjänster. </p> <p>Exempel: trust(Average_Score,SubSamples) </p> </td> 
+   <td colname="col2"> <p>En uppskattning av standardavvikelsen för mätvärdet. Detta beräknas med hjälp av en provtagningsmetod som kallas schakknivning. Med den här syntaxen kan du avgöra om ett mätresultat är tillförlitligt med hjälp av en knivdimension som heter något annat än"jackkniv". </p> <p>Detta mått är minneskrävande och bör inte användas i stora tabeller. </p> <p>Om du vill använda den här syntaxen måste du ha en knivdimension (som kallas något annat än"kniv") med lämpliga egenskaper. Mer information får du av Adobe Consulting Services. </p> <p>Exempel: trust(Average_Score,SubSamples) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>eval(CellReference) </p> </td> 
@@ -75,7 +78,7 @@ Anteckningar:
    <td colname="col2"> <p>"Mått där filter används": Ett nytt mätvärde som filtreras av det angivna filtret. </p> <p>Exempel: Jan_Sessions = Sessions[ Month="Jan" ] </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Mått efter dimension </p> </td> 
+   <td colname="col1"> <p>Mått per Dimension </p> </td> 
    <td colname="col2"> <p>Ett mätvärde utvärderat vid dimensionens nivå. Resultatet av (M med X)[F] (resultatet av mätvärdet "M med X" utvärderat med filtret "F") är resultatet av M[F med X] (resultatet av mätvärdet "M" utvärderat med filtret "F med X"). </p> <p>Exempel: AB_Visitors = </p> <p>(Besökare per session)[Page="A" and Page="B"] = </p> <p>Besökare[(Page="A" och Page="B") per session] = </p> <p>Antalet besökare som besökt sida A och sida B under samma session. </p> </td> 
   </tr> 
   <tr> 
