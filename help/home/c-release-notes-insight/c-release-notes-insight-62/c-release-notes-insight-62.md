@@ -1,16 +1,19 @@
 ---
-description: Versionsinformationen för Data Workbench 6.2 innehåller nya funktioner, uppgraderingskrav, felkorrigeringar och kända fel.
-title: Versionsinformation för Data Workbench 6.2
+description: Versionsinformation om Data Workbench 6.2 innehåller nya funktioner, uppgraderingskrav, felkorrigeringar och kända fel.
+title: Versionsinformation om Data Workbench 6.2
 uuid: 8631c936-d53b-493d-9f58-72f541c3ddce
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '1250'
+ht-degree: 0%
 
 ---
 
 
-# Versionsinformation för Data Workbench 6.2{#data-workbench-release-notes}
+# Versionsinformation om Data Workbench 6.2{#data-workbench-release-notes}
 
-Versionsinformationen för Data Workbench 6.2 innehåller nya funktioner, uppgraderingskrav, felkorrigeringar och kända fel.
+Versionsinformation om Data Workbench 6.2 innehåller nya funktioner, uppgraderingskrav, felkorrigeringar och kända fel.
 
 ## Nya funktioner {#section-1225066ea8f44cf68e42e019d0bca816}
 
@@ -21,14 +24,14 @@ Data Workbench 6.2 innehåller följande nya funktioner:
 | Beslutsträd | Beslutsträd är en visualisering för prediktiv analys som används för att utvärdera besökares egenskaper och relationer. Beslutsträdsbyggaren genererar en beslutsträdsvisualisering baserad på ett angivet positivt fall och en uppsättning indata. |
 | Uppdatera till binärt filter i korrelationsmatris | Binärfiltret har uppdaterats med nya funktioner som kräver att du återskapar alla korrelationsmatriser med ett binärt filter som har skapats i tidigare versioner. |
 | Densitetskarta | Densitetskartan är en visualisering som visar element som skuggade rektanglar inom en fyrkantig karta. |
-| Attributionsprofil | Data Workbench analyserar snabbt attribueringsvärden (händelser för att attribuera ansvaret för en lyckad konvertering eller försäljning). Data Workbench tillhandahåller en regelbaserad attribueringsprofil med funktioner för arkitekten som ställer in attributrapporter och analytikern som kör rapporterna. |
-| Analysrapporter | Rapportmallar standardiserar Adobe Analytics-rapporter för användare av den data workbench som använder Adobe SC-profilen. Dessa rapporter är identiska med rapporter som används i marknadsföringsrapporter och analyser (tidigare SiteCatalyst). |
+| Attributionsprofil | För att snabbt analysera attribueringsvärden (händelser som ska attribuera ansvaret för en lyckad konvertering eller försäljning) tillhandahåller Datan Workbench en regelbaserad attribueringsprofil med funktioner för arkitekten som ställer in attribueringsrapporterna och analytikern som kör rapporterna. |
+| Analysrapporter | Rapportmallar standardiserar Adobe Analytics rapporter för användare av den data workbench som använder Adobe SC-profilen. Dessa rapporter är identiska med rapporter som används i marknadsföringsrapporter och analyser (tidigare SiteCatalyst). |
 | 3D-punktdiagram | En 3D-punktdiagram visar elementen i en datamåkning (t.ex. Dagar eller Referenswebbplats) i ett tredimensionellt rutnät där x-, y- och z-axlarna representerar olika mätvärden. |
 
 
-## Uppdateringar av användargränssnittet för Data Workbench-klient{#data-workbench-client-ui-updates}
+## Data Workbench Client UI Updates{#data-workbench-client-ui-updates}
 
-Data Workbench 6.2 innehåller nya uppdateringar av användargränssnittet till bokmärkespanelen, nya ikoner i verktygsfältet för arbetsytan, möjligheten att dra arbetsytan till en skärm, nya snabbtangenter och uppdateringar av cirkeldiagramvisningen.
+Data Workbench 6.2 innehåller nya uppdateringar av användargränssnittet till bokmärkespanelen, nya ikoner i arbetsytans verktygsfält, möjligheten att dra arbetsytan inom en skärm, nya snabbtangenter och uppdateringar av cirkeldiagramvisningen.
 
 ## Nya bokmärkesfunktioner {#section-e361b605441540ca8213c3fddb5e0718}
 
@@ -57,6 +60,7 @@ Du kan nu bokmärka viktiga arbetsytor för att snabbt gå mellan visualiseringa
 >
 >* 25 bokmärken kan sparas.
 >* Om du lägger till ett bokmärke och sedan flyttar arbetsytans plats, blir bokmärket ogiltigt och måste tas bort från bokmärkespanelen och återställas.
+
 >
 
 
@@ -87,7 +91,7 @@ En ny **[!UICONTROL Help]** ikon läggs till för att komma åt dokumentationen 
   </tr> 
   <tr> 
    <td colname="col1"> Hjälp </td> 
-   <td colname="col2">Öppna <span class="uicontrol"> Data Workbench-dokumentationen</span>. <p>Du kan också trycka på <span class="uicontrol"> &lt;F1&gt;</span> för att öppna hjälpen i en arbetsyta. </p> </td> 
+   <td colname="col2">Öppna <span class="uicontrol"> Datans Workbench dokumentation</span>. <p>Du kan också trycka på <span class="uicontrol"> &lt;F1&gt;</span> för att öppna hjälpen i en arbetsyta. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Om </td> 
@@ -147,17 +151,17 @@ Med de nya snabbtangenterna kan du ändra storlek på och anpassa arbetsytorna m
 * Anslutningsfel för arbetsstation som visar meddelandet &quot;Konflikt vid konfiguration av 412&quot; har ersatts med ett användarvänligt meddelande som identifierar systemåtgärd.
 * Kommandot &quot;post&quot; kan nu köras i Report Server.
 * Fel i användargränssnittet för klienten för förenklad kinesiska har korrigerats.
-* Adobe Analytics uppdaterade dataflödet som gör att Data Workbench kan dra nytta av profiler och målgrupper som är integrerade med Adobe Experience Cloud. Alla användare av Data Workbench var skyldiga att förbereda sin miljö för övergången senast den 21 april 2014.
+* Adobe Analytics har uppdaterat dataflödet som gör att Datan Workbench kan dra nytta av profiler och målgrupper som är integrerade med Adobe Experience Cloud. Alla användare av Datan Workbench måste förbereda sin miljö för övergången senast den 21 april 2014.
 
-   Profiler och målgrupper introducerades för att ge en fullständig bild av kunderna i hela Adobe Analytics. Den här nya tjänsten finns tillgänglig i Adobe Experience Cloud för att öka värdet på alla analysverktyg och börja skapa grunden för de här funktionerna i Analytics. Den nya besöksidentifieraren i Experience Cloud kommer att läggas till i dataflödet tillsammans med andra förbättringar och förbättringar som kan anpassas till den nya datafeeden och den globala besöksidentifieraren.
+   Profiler och målgrupper introducerades för att ge en fullständig bild av kunderna i hela Adobe Analytics. Den här nya tjänsten finns tillgänglig i Adobe Experience Cloud för att ge ytterligare värde åt analysverktygen och börja skapa grunden för dessa funktioner i Analytics. Den nya besöksidentifieraren för Experience Cloud läggs till i dataflödet tillsammans med andra förbättringar och förbättringar för anpassning till den nya dataflödet och den globala besökaridentifieraren.
 * När du importerar en arbetsyta visas ett felmeddelande även om importen lyckades.
 
 ## Krav för uppgradering {#section-3cc74d08f7454d698b5a6d3f1dcde282}
 
 * Attributprofilen är konfigurerad för användare som har implementerat Adobe SC-profilen för att använda dataflödet från Analytics (SC/Insight). Som standard används händelserna Marketing och Conversion som standardinteraktioner som utvärderas i de regelbaserade modellerna.
-* För användare som har Adobe SC-profilen som uppgraderar till Data Workbench 6.2, och som inte använder standardkonfigurationerna, kontrollerar du att [!DNL x-bot_id] värdet i [!DNL SC Fields.cfg] -filen avkodas korrekt och att [!DNL x-bot_id] fältet visas korrekt i [!DNL Decoding Instructions.cfg] och i [!DNL Exclude Hit.cfg] filerna. Detta blir bara ett problem om du har ändrat konfigurationsfilen från standardkonfigurationen.
+* För användare av Adobe SC-profilen som uppgraderar till Data Workbench 6.2, om du inte använder standardkonfigurationerna, kontrollerar du att [!DNL x-bot_id] värdet i [!DNL SC Fields.cfg] -filen avkodas korrekt och att [!DNL x-bot_id] fältet visas korrekt i [!DNL Decoding Instructions.cfg] och i [!DNL Exclude Hit.cfg] filerna. Detta blir bara ett problem om du har ändrat konfigurationsfilen från standardkonfigurationen.
 
-* Om du har tagit bort oanvända fält i filen **[!UICONTROL Dataset]** > **[!UICONTROL Log Processing** > **[!DNL SC Fields.cfg]** för Adobe SC-profilen måste du uppdatera så att de innehåller de uppdaterade fältvärdena som används för Attribution-profilen.
+* Om du har tagit bort oanvända fält i filen **[!UICONTROL Dataset]** > **[!UICONTROL Log Processing]** > **[!DNL SC Fields.cfg]** för Adobe SC-profilen måste du uppdatera för att få plats med de uppdaterade fältvärdena som används för attributprofilen.
 
 ## Kända fel {#section-dbb307639835493a83409f5f461932b8}
 
