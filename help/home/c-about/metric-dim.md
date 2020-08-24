@@ -1,39 +1,42 @@
 ---
-description: Skapa dimensioner som definieras av måttattribut (Mått) med en steg-för-steg-guide. Testa, förhandsgranska och spara sedan den nya måttenheten i Dimensions-listan.
+description: Skapa Dimensioner som definieras av måttattribut (Måttdimensioner) med en steg-för-steg-guide. Testa, förhandsgranska och spara sedan den nya Metrisk Dim-metoden i listan Dimensioner.
 title: Guiden Metrisk dim
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 translation-type: tm+mt
-source-git-commit: d892186621e7acb9504254496b038efc3e9fd8ec
+source-git-commit: 35e6e9280ab36e8b39e89039b791199d1de54e03
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 1%
 
 ---
 
 
 # Guiden Metrisk dim{#metric-dim-wizard}
 
-Skapa dimensioner som definieras av måttattribut (Mått) med en steg-för-steg-guide. Testa, förhandsgranska och spara sedan den nya måttenheten i Dimensions-listan.
+Skapa Dimensioner som definieras av måttattribut (Måttdimensioner) med en steg-för-steg-guide. Testa, förhandsgranska och spara sedan den nya Metrisk Dim-metoden i listan Dimensioner.
 
 Med en metrisk toning omvandlas ett mått till en ny dimension. Om du t.ex. använder en måttenhet som bygger på måtten för sidvyer och nivån för besökare visas dimensionselement baserat på den totala sidvyn för varje besökare. Med den kan du utöka ett definierat mått baserat på dimensionselement för att skapa och spara som en ny dimension.
 
-## Steg 1: Välj dimension och mått {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
+## Steg 1: Markera Dimension och mått {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
 
 1. Öppna guiden Metrisk dim.
 
-   Högerklicka på en arbetsyta och välj **[UICONTROL-verktyg]** > **[UICONTROL Skapa metrisk dim]**.
+   Högerklicka på arbetsytan och välj **[!UICONTROL Tools]** > **[!UICONTROL Create Metric Dim]**.
 
 1. Ange namnet Metrisk dim.
 
    Som standard fylls namnfältet i automatiskt baserat på nivå- och måttval.
 
-1. Välj en dimensionsnivå.
+1. Markera en Dimension.
 
    Dimensionsnivån är den överordnade dimensionen som innehåller alla ingående elementvärden för att filtrera indata och definiera en dimensionstyp.
 
-   Dimensionsnivåerna omfattar:
+   Dimensionerna är följande:
 
    * Klickande
    * Träff
    * Produkt
-   * Besök
+   * Gå in på
    * Besökare
 
 1. Välj ett mått.
@@ -69,7 +72,7 @@ Med en metrisk toning omvandlas ett mått till en ny dimension. Om du t.ex. anv�
 
 1. Uttryck för Lägg till antal buffertar.
 
-   Du kan definiera en måtttoning med olika intervall, eller intervall. Detta returnerar delmängder av element baserat på storlek, t.ex. [0-4], [5-10],..). Elementen på dimensionsnivån relaterar till elementen vars intervall innehåller måttvärdet. Mer information finns i beskrivningen av hakparentesuttrycket i [Syntax för dimensionsuttryck](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
+   Du kan definiera en måtttoning med olika intervall, eller intervall. Detta returnerar delmängder av element baserat på storlek, t.ex. [0-4], [5-10],..). Elementen på Dimensionen Nivå relaterar till de element vars intervall innehåller måttvärdet. Mer information om Dimension finns i beskrivningen av [Bucket-uttrycket under Syntax](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
 
 1. Klicka **[!UICONTROL Preview]** för att öppna tabellen med värden för Metrisk Dim innan du sparar.
 
