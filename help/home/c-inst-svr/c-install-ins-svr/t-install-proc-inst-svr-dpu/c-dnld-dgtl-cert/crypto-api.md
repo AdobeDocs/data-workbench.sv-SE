@@ -3,7 +3,10 @@ description: I Windows certifikatarkiv lagras klientens certifikat och privata n
 title: Windows certifikatarkiv
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
+workflow-type: tm+mt
+source-wordcount: '1000'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ I [Använda anpassade certifikat](../../../../../home/c-inst-svr/c-install-ins-s
 </filepath>>\Certificates\
 ```
 
-Certifikatets namn är `<Common Name>.pem` (till exempel [!DNL Analytics Server 1.pem](inte [!DNL trust_ca_cert.pem] filen).
+Certifikatets namn är `<Common Name>.pem` (till exempel [!DNL Analytics Server 1.pem] (inte [!DNL trust_ca_cert.pem] filen).
 
 Innan certifikatet och den privata nyckeln kan importeras måste de konverteras från . [!DNL pem] till ett [!DNL .pfx] format, till exempel [!DNL pkcs12.pfx] ).
 
@@ -89,7 +92,7 @@ Innan certifikatet och den privata nyckeln kan importeras måste de konverteras 
 
 **Steg 2: Redigera filen Insight.cfg.**
 
-Filen måste redigeras för att du ska kunna ange att Data Workbench ska använda funktionen Windows certifikatarkiv. [!DNL Insight.cfg] Varje serverpost i den här filen måste ha ytterligare parametrar angivna. Om parametrarna utelämnas används den befintliga certifikatkonfigurationen som standard. Om parametrarna anges men har felaktiga värden, kommer arbetsstationen att gå in i ett feltillstånd och du måste referera till loggfilen för felinformation.
+Filen måste redigeras för att du ska kunna dirigera Data Workbench till Windows certifikatarkivfunktion. [!DNL Insight.cfg] Varje serverpost i den här filen måste ha ytterligare parametrar angivna. Om parametrarna utelämnas används den befintliga certifikatkonfigurationen som standard. Om parametrarna anges men har felaktiga värden, kommer arbetsstationen att gå in i ett feltillstånd och du måste referera till loggfilen för felinformation.
 
 1. Öppna filen **Insight.cfg** (finns i installationskatalogen för **Insight** ).
 
@@ -113,7 +116,7 @@ Filen måste redigeras för att du ska kunna ange att Data Workbench ska använd
 
 1. När du har lagt till de här parametrarna och verifierat att värdena matchar listan i Windows Certifikatshanterare sparar du [!DNL Insight.cfg] filen.
 
-Du kan nu starta arbetsstationen (eller koppla från/återansluta till servern). Data Workbench bör läsa in ditt certifikat och din nyckel från certifikatarkivet och ansluta normalt.
+Du kan nu starta arbetsstationen (eller koppla från/återansluta till servern). Datan Workbench bör läsa in ditt certifikat och din nyckel från certifikatarkivet och ansluta normalt.
 
 ## Loggutdata {#section-a7ef8c9e90ef4bbabaa3cd51a2aca3ab}
 
