@@ -5,7 +5,10 @@ title: Installera övervakningsprofilen
 topic: Data workbench
 uuid: e0d6fc61-d9b9-4c4b-94e1-2acfd0ff4de6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 300b4fb872e9a48cb90297c29a2f93e0db60e7c2
+workflow-type: tm+mt
+source-wordcount: '1052'
+ht-degree: 0%
 
 ---
 
@@ -65,23 +68,23 @@ Anvisningar för installation av data workbench Monitoring Profile.
 
 1. Lägg till en schemalagd aktivitet i Windows för att anropa agenten var 10:e minut (den här perioden antas i beräkningarna av bearbetningsfrekvens). Programmet är [!DNL e:insight_monitor/insight_monitor_agent.exe]. Argumentet är config-file e:\insight_monitor\insight_monitor.cfg. Börja i e:\insight_monitor. Användaren som kör uppgiften måste ha behörighet att läsa/skriva [!DNL e:\insight_monitor] och läsa Win32 OLE-objektet [!DNL root\CIMV2] (krävs för att kontrollera startläget för tjänsten data workbench och för att kontrollera hur mycket utrymme som finns på de lokala diskarna)
 
-1. Bekräfta att VSL-filen börjar växa när övervakningsposterna ackumuleras. Detta kommer att ta en stund eftersom trafikvolymen blir extremt låg i en liten installation (var 10:e minut skickar agenten bara en träff för värdspecifika data plus en träff per bearbetningsprofil).
+1. Bekräfta att VSL börjar växa när övervakningsposterna ackumuleras. Detta kommer att ta en stund eftersom trafikvolymen blir extremt låg i en liten installation (var 10:e minut skickar agenten bara en träff för värdspecifika data plus en träff per bearbetningsprofil).
 1. Zippa upp insight_monitor.zip\profiles\Insight Historic to a temporary location.
-1. Uppdatera värdnamnet i [!DNL profile.cfg], [!DNL [!DNL dataset\cluster.cfg]] och [!DNL [!DNL dataset\segment export.cfg]].
+1. Uppdatera värdnamnet i [!DNL profile.cfg], [!DNL dataset\cluster.cfg]och [!DNL dataset\segment export.cfg].
 
 1. Uppdatera filerna till katalogen med data workbench-profiler.
-1. Uppdatera loggservern och sökvägen [!DNL dataset\log processing.cfg] till den plats där sensorns VSL:er samlas in.
+1. Uppdatera loggservern och sökvägen [!DNL dataset\log processing.cfg] till den plats där sensorn VSL samlas.
 1. [Du kan också] göra samma sak med profilerna [!DNL Insight Profile Status] och [!DNL Insight Server Status]. Dessutom bör statusprofilerna bearbetas om natten med ett efterföljande tvådagarsfönster. Lägg till en schemalagd aktivitet för Windows: Programmet är [!DNL e:\insight_monitor\insight_reprocess.exe]. Argumentet är [!DNL --profile-path="PATH TO PROFILES\insight profile status" --start-days-ago=2]. Lämna [!DNL start in] tomt. Lägg till en annan schemalagd aktivitet för *&quot;insight-serverstatus&quot;*. *insight_reprocess.exe* kräver läs- och skrivåtkomst till *log processing.cfg* för att uppdatera starttiden.
 
-1. Dessutom bör statusprofilerna bearbetas om natten med ett efterföljande tvådagarsfönster. Lägg till en schemalagd aktivitet för Windows: Programmet är *e:\insight_monitor\insight_reprocess.exe*. Argumentet är - [!DNL -profile-path="PATH TO PROFILES\insight profile status" --start-days-ago=2]. Lämna *början* tom. Lägg till en annan schemalagd aktivitet för [!DNL "insight server status"]. [!DNL insight_reprocess.exe] kräver läs-/skrivåtkomst för [!DNL log processing.cfg] att uppdatera starttiden. Bekräfta att varje profil läser VSL:er för bildskärmar när de samlas in. Detta kommer att ta en stund - förmodligen timmar - på grund av den extremt låga volymen.
+1. Dessutom bör statusprofilerna bearbetas om natten med ett efterföljande tvådagarsfönster. Lägg till en schemalagd aktivitet för Windows: Programmet är *e:\insight_monitor\insight_reprocess.exe*. Argumentet är - [!DNL -profile-path="PATH TO PROFILES\insight profile status" --start-days-ago=2]. Lämna *början* tom. Lägg till en annan schemalagd aktivitet för [!DNL "insight server status"]. [!DNL insight_reprocess.exe] kräver läs-/skrivåtkomst för [!DNL log processing.cfg] att uppdatera starttiden. Bekräfta att varje profil läser VSL när de samlas in. Detta kommer att ta en stund - förmodligen timmar - på grund av den extremt låga volymen.
 
 ## Installationsinformation {#section-17722441ab0046fcbcb46b957d56230a}
 
 * **Konfigurera övervakningsprofilen i en licensierad testmiljö**. Testmiljöpaketet ingår i din implementering av data workbench, vilket gör att du kan installera och konfigurera programmet. Om du installerar på en FSU- eller DPU-produktionsserver måste du konfigurera servern så att den körs på en separat port.
 * **Distribuera en ny sensor specifikt för övervakningsprofilen**. Du måste installera en ny instans av sensorn på servern som kör övervakningsprofilen. Detta är utöver produktionsinstansen för Sensor. (Det kostar inget extra att installera Sensor på en produktionsserver eller icke-produktionsserver specifikt för övervakningsprofilen.)
-* **Inaktivera övervakningsagenten under underhåll** av data workbench. För att undvika att få negativa mått på drifttid och prestanda kan du ställa in startläget för tjänsten till manuell för tjänsten InsightServer (Omniture Insight Server). Ett praktiskt PowerShell-kommando är *set-service -name insightserver -startuptype manual*. Ställ in det på automatisk efter underhållet: set- *service -name insightserver -startuptype automatic*. Ett annat alternativ är att tillfälligt inaktivera övervakaragentens schemalagda aktivitet.
+* **Inaktivera övervakningsagenten under underhåll** av data workbench. För att undvika att få negativa mått på drifttid och prestanda kan du ställa in startläget för tjänsten till manuell för tjänsten InsightServer (Omniture Insight Server). Ett praktiskt PowerShell-kommando är *set-service -name insightserver -startuptype manual*. Ställ in det på automatisk efter underhållet: *set-service -name insightserver -startuptype automatic*. Ett annat alternativ är att tillfälligt inaktivera övervakaragentens schemalagda aktivitet.
 * **Statusprofilerna behöver ett efterföljande fönster** för att kunna släppa gamla värdar och profiler samt gamla värdprofilsmappningar. Men om mängden händelsedata är så liten att data workbench inte buffrar den kan du behöva utöka fönsterstorleken en hel del för att det ska kunna bearbetas.
-* **Agenten samlar in den övergripande och äldsta tidpunkten från data workbench-detaljstatus**, som rapporteras i lokal värdtid om händelseloggens tidsstämplar är i UTC (som i VSL-filer). Om tidsstämplarna för händelsedata finns i en annan tidszon än UTC kommer tidpunkten att förskjutas i den resulterande statusprofilen för insight-profilen. Om **alla** tidsstämplar för händelsedata finns i samma tidszon kan du lägga till förskjutningen i *Insight-profilen Status\metrics\as of delay minutes.metric*.
+* **Agenten samlar in den övergripande och äldsta tidpunkten från data workbench-detaljstatus**, som rapporteras i lokal värdtid om händelseloggens tidsstämplar är i UTC (som i VSL filer). Om tidsstämplarna för händelsedata finns i en annan tidszon än UTC kommer tidpunkten att förskjutas i den resulterande statusprofilen för insight-profilen. Om **alla** tidsstämplar för händelsedata finns i samma tidszon kan du lägga till förskjutningen i *Insight-profilen Status\metrics\as of delay minutes.metric*.
 
 * **Två nya dimensioner introducerades för att hjälpa kunderna att gruppera sina servrar om de befinner sig i olika lägen**, till exempel produktion, staging, testservrar och servrar i andra delstater. Om du till exempel söker efter&quot;aktiv tid&quot;, tittar du bara på servrar i produktionsläge. Därför är gruppdimensionen bara ett annat sätt att godtyckligt gruppera servrar efter behov. I filen Övervakningskonfiguration kan du till exempel ange vilken värd som din avdelning betjänar, till exempel Operations, Development eller Marketing.
 
