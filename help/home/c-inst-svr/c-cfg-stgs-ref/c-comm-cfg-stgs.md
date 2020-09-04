@@ -4,9 +4,9 @@ solution: Insight
 title: Inställningar för kommunikationskonfiguration
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: 2ed16fa0d447426c4de863e502792bfb292765cc
+source-git-commit: 638eca495223fc9d5326bf9462a9c289d6fe2d9e
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -34,11 +34,11 @@ Slutför parametrarna i följande fil:
  <tbody> 
   <tr> 
    <td colname="col1"> Åtkomstkontrollfil </td> 
-   <td colname="col2"> <p>Sökväg till <span class="filepath"> Access Control.cfg- </span> filen. Standardplatsen är <span class="filepath"> Access Control- </span> mappen i <span class="keyword"> Insight Server </span> eller <span class="wintitle"> Repeater- </span> installationskatalogen. </p> <p>Exempel: <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Sökväg till <span class="filepath"> Access Control.cfg- </span> filen. Standardplatsen är <span class="filepath"> Access Control- </span> mappen i <span class="keyword"> Insight Server </span> eller <span class="wintitle"> Repeater- </span> installationskatalogen. </p> <p>Exempel: <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Åtkomstloggkatalog </td> 
-   <td colname="col2"> <p>Mappen som du vill mappa granskningsloggarna till. </p> <p>Exempel: <filepath></filepath> </p> <p> <p>Obs!  Du kan mappa granskningsloggar till en annan lokal enhet (exempel: <span class="filepath"> sträng: P:\\Audit\\ </span>), men mappa inte granskningsloggar till en nätverksenhet. </p> </p> </td> 
+   <td colname="col2"> <p>Mappen som du vill mappa granskningsloggarna till. </p> <p>Exempel: <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Obs!  Du kan mappa granskningsloggar till en annan lokal enhet (exempel: <span class="filepath"> sträng: P:\\Audit\\ </span>), men mappa inte granskningsloggar till en nätverksenhet. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Utförlig åtkomstlogg </td> 
@@ -46,19 +46,19 @@ Slutför parametrarna i följande fil:
   </tr> 
   <tr> 
    <td colname="col1"> IP-gränssnitt </td> 
-   <td colname="col2"> <p>IP-adress som ska användas när två nätverkskort är tillgängliga för åtkomst till två olika nätverk. </p> <p>Exempel: I <filepath></filepath><i>&lt; <span class="filepath"> IP-adress </span>&gt;</i> </p> </td> 
+   <td colname="col2"> <p>IP-adress som ska användas när två nätverkskort är tillgängliga för åtkomst till två olika nätverk. </p> <p>Exempel: <code>IP Interface = string: &lt; IP Address &gt;</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Port </td> 
-   <td colname="col2"> <p>Icke-säker (HTTP) port som <span class="keyword"> Insight Server </span> eller <span class="wintitle"> Repeater </span> lyssnar på. Standardporten är 80. Om du anger värdet 0 inaktiveras anslutningar som inte är säkra. </p> <p>Exempel: <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Icke-säker (HTTP) port som <span class="keyword"> Insight Server </span> eller <span class="wintitle"> Repeater </span> lyssnar på. Standardporten är 80. Om du anger värdet 0 inaktiveras anslutningar som inte är säkra. </p> <p>Exempel: <code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL-cifer </td> 
-   <td colname="col2"> I vissa miljöer krävs bättre kommunikationssäkerhet än i andra. Om du vill använda en viss SSL-chiffersvit kan du ange den med den här parametern. <p>Exempel: <filepath></filepath> </p> </td> 
+   <td colname="col2"> I vissa miljöer krävs bättre kommunikationssäkerhet än i andra. Om du vill använda en viss SSL-chiffersvit kan du ange den med den här parametern. <p>Exempel: <code>SSL Ciphers = string: AES256-SHA256</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL-port </td> 
-   <td colname="col2"> <p>Säker port (via SSL) som <span class="keyword"> Insight Server </span> eller <span class="wintitle"> Repeater </span> lyssnar på. Standardporten är 443. Om du anger värdet 0 inaktiveras säkra anslutningar. </p> <p>Exempel: <span class="filepath"></span> </p> <filepath></filepath> </td> 
+   <td colname="col2"> <p>Säker port (via SSL) som <span class="keyword"> Insight Server </span> eller <span class="wintitle"> Repeater </span> lyssnar på. Standardporten är 443. Om du anger värdet 0 inaktiveras säkra anslutningar. </p> <p>Exempel: <span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
