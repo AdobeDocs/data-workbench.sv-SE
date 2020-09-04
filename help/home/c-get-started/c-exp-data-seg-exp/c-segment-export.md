@@ -3,7 +3,10 @@ description: Skapa anpassade kolumnexportrubriker för segmentexportfilerna för
 title: Segmentexport med anpassade rubriker
 uuid: 186e7868-13b2-42e1-b83f-5a752ee9b407
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Du kan skapa kolumnrubriker för dina exportfiler.
 
    Ett exportfönster öppnas.
 
-1. Högerklicka på exportnamnet och klicka på **[!UICONTROL Spara som<export filename>]**.
+1. Högerklicka på exportnamnet och klicka på **Spara som`<export filename>`**.
 
    ![](assets/segment_export_headers_7.png)
 
