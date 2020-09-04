@@ -5,7 +5,7 @@ title: Lägga till bokmärken
 topic: Data workbench
 uuid: 8b7fd6ac-9bab-4e7a-8f52-8568413052e8
 translation-type: tm+mt
-source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Du kan skapa bokmärken för viktiga arbetsytor för att snabbt gå mellan visua
 
 **Så här tar du bort ett bokmärke:**
 
-* Högerklicka på bokmärkespanelen och välj **[!UICONTROL Ta bort<bookmark title>]**om du vill ta bort ett markerat bokmärke, eller markera **[!UICONTROL Clear All Bookmarks]**om du vill ta bort alla bokmärken.
+* På bokmärkespanelen högerklickar du och väljer **Ta bort`<bookmark title>`** för att ta bort ett markerat bokmärke, eller väljer **[!UICONTROL Clear All Bookmarks]** att ta bort alla bokmärken.
 
 * Du kan också högerklicka på arbetsytan i miniatyrbildsvyn i arbetsytan och välja **[!UICONTROL Clear Bookmark]**.
 
