@@ -3,7 +3,10 @@ description: Instruktioner för installation och konfigurering av Sensor för Su
 title: Sun Java Server på Windows Server 2000 eller senare
 uuid: 43f3eee0-2633-4bda-af6c-6c15433dd539
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '956'
+ht-degree: 0%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 Instruktioner för installation och konfigurering av Sensor för Sun Java System Application Server Standard Edition 7 som körs i Windows Server 2000 eller senare.
 
-Programfilerna för Sensor paketeras i en installationsfil som du får från Adobes nedladdningswebbplats. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
+Programfilerna för Sensor paketeras i en installationsfil som du får från hämtningsplatsen för Adobe. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
 
 Sensorn stöder följande servrar som körs under RedHat Linux 7.x eller senare eller Sun Solaris SPARC 2.6 eller senare:
 
@@ -104,8 +107,8 @@ När du har konfigurerat filen txlogd.conf kan du starta överföringsprogrammet
 1. Om du vill kontrollera om sändaren råkade ut för fel under starten klickar du på Start > Kontrollpanelen > Administrationsverktyg > Loggboken för att öppna Loggboken.
 
    1. Välj programloggen i den vänstra rutan i fönstret för Loggboken.
-   1. I den högra rutan söker du efter händelser med&quot;Adobe&quot; i kolumnen Källa.
-   1. Om du hittar ett fel från&quot;Adobe&quot; dubbelklickar du på felet för att visa fönstret Händelseegenskaper. Det här fönstret innehåller detaljerad information om felet.
+   1. I den högra rutan söker du efter händelser med Adobe i kolumnen Källa.
+   1. Om du hittar ett fel från &quot;Adobe&quot; dubbelklickar du på felet för att visa fönstret Händelseegenskaper. Det här fönstret innehåller detaljerad information om felet.
 
 1. Stäng Loggboken när du är klar med granskningen av programloggen.
 1. Kontrollera att sändaren har skapat diskkön (Diskq2000.log) i den katalog där du installerade Sensor-programfilerna och att det är den storlek som du angav i parametern QueueSize i filen txlogd.conf.
@@ -134,7 +137,7 @@ funcs="vys-cookie,vys-log,vys-init,vys-content-type"
 Init fn="vys-init" config-file="C:/VisualSciences/txlogd.conf"
 ```
 
-I filen obj.conf (t.ex. C:\Sun\AppServer7\domains\domain1\server1\config\ server1-obj.conf) lägger du till följande rader direkt under den befintliga &quot;<Object name="default">&quot; raden:
+I filen obj.conf (t.ex. C:\Sun\AppServer7\domains\domain1\server1\config\ server1-obj.conf) lägger du till följande rader direkt under den befintliga `<Object name="default">` raden:
 
 ```
 NameTrans fn="vys-cookie" 
