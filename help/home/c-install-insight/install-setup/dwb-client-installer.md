@@ -1,16 +1,19 @@
 ---
-description: Data Workbench innehåller en konfigurationsguide för installation av arbetsstationsprogrammet (klientprogrammet).
+description: Datan Workbench innehåller en konfigurationsguide för installation av arbetsstationsprogrammet (klientprogrammet).
 title: Guiden Installera arbetsstation
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
 translation-type: tm+mt
-source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 0%
 
 ---
 
 
 # Guiden Installera arbetsstation{#workstation-setup-wizard}
 
-Data Workbench innehåller en konfigurationsguide för installation av arbetsstationsprogrammet (klientprogrammet).
+Datan Workbench innehåller en konfigurationsguide för installation av arbetsstationsprogrammet (klientprogrammet).
 
 ## Installera arbetsstationen med installationsguiden {#section-58da9bb6196c46eab3b54146913fdcb8}
 
@@ -24,13 +27,13 @@ Starta installationsguidens körbara fil och gå igenom varje steg för att inst
 
    ![](assets/6_4_workstation_wizard.png)
 
-1. Klicka på **Nästa** i dialogrutan **Välkommen till installationsguiden** för Data Workbench.
+1. Klicka på **Nästa** i dialogrutan **Välkommen till guiden** Konfigurera Data Workbench.
 
 1. Välj om du vill installera en **ny installation** eller **uppgradera eller reparera** en befintlig installation.
 
    **Ny installation** skriver över tidigare installerade filer.
 
-   **Uppgradera** uppdaterar din arbetsstation till den senaste versionen eller låter dig reparera en befintlig installation. Data Workbench jämför installerade **Insight.exe** -filer och kör installationsguiden för arbetsstationen om det finns en nyare version av klienten.
+   **Uppgradera** uppdaterar din arbetsstation till den senaste versionen eller låter dig reparera en befintlig installation. Datan Workbench jämför installerade **Insight.exe** -filer och kör installationsguiden för arbetsstationen om det finns en nyare version av klienten.
 
 1. Välj installationsplats:
 
@@ -61,17 +64,17 @@ Starta installationsguidens körbara fil och gå igenom varje steg för att inst
 
 1. Klicka på **Nästa.** En sammanfattning av de valda sökvägarna och språken för filplatser visas. Klicka på **Installera.**
 
-1. Leta reda på **Data Workbench-certifikatet**.
+1. Leta reda på **Datans Workbench certifikat**.
 
-   Om installationsguiden inte kan hitta Data Workbench-certifikatet under installationen öppnas en dialogruta där du kan bläddra till platsen för certifikatet (en **.pem** -fil som finns som standard i mappen **Certificates** ) eller klicka på **Hoppa** för att hitta certifikatet efter installationen.
+   Om installationsguiden inte kan hitta certifikatet för Datan Workbench under installationen öppnas en dialogruta där du kan bläddra till platsen för certifikatet (en **.pem** -fil som finns som standard i mappen **Certifikat** ) eller klicka på **Hoppa över** för att hitta certifikatet efter installationen.
 
    Klicka på **Installera** när du har hittat certifikatet.
 
-1. När installationsguiden har slutförts och Data Workbench har installerats klickar du på **Slutför** för att slutföra installationen.
+1. När installationsguiden har slutförts och Datan Workbench har installerats klickar du på **Slutför** för att slutföra installationen.
 
    >[!NOTE]
    >
-   >Standardloggplatsen för guiden Konfigurera arbetsstation på **[!DNL C:\Users\`<userName>&quot;\AppData\Local\Temp.]**
+   >Standardloggplatsen för guiden Konfigurera arbetsstation på `C:\Users\<userName>\AppData\Local\Temp`.
 
    Markera kryssrutan **Starta program** för att öppna workbench efter installationen.
 
@@ -83,7 +86,7 @@ Starta installationsguidens körbara fil och gå igenom varje steg för att inst
 
 ## Installationsmappar {#section-b5ea5a3b3ecb4622aef713972f3f8ebd}
 
-Mappstrukturen Data Workbench har två installationsplatser:
+Datans Workbench mappstruktur har två installationsplatser:
 
 * **Programfiler** **Insight.exe** och tillhörande klientfiler (**Insight.ini**) finns nu som standard på
 
@@ -109,10 +112,10 @@ Mappstrukturen Data Workbench har två installationsplatser:
 
 ## Avinstallerar arbetsstationen {#section-5ce2e233fe4348469ef1b3c451dd5b70}
 
-Data Workbench innehåller nu en körbar fil som avinstallerar arbetsstationen (som är standard på **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**).
+Datan Workbench innehåller nu en körbar fil som avinstallerar arbetsstationen (som standard finns på **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**).
 
 Starta och följ stegen för att ta bort arbetsstationsfilerna för Data Workbench från hårddisken.
 
 >[!NOTE]
 >
->Du kan starta den körbara filen **unins00.exe** från mappen med genvägen **Avinstallera Data Workbench** från Start-menyn eller från **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.
+>Du kan starta den körbara filen **unins00.exe** från mappen med genvägen till Datan Workbench **** Avinstallera från Start-menyn eller från **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.
