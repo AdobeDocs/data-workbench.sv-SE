@@ -3,7 +3,7 @@ description: Versionsinformation om Data Workbench 6.2 innehåller nya funktione
 title: Versionsinformation om Data Workbench 6.2
 uuid: 8631c936-d53b-493d-9f58-72f541c3ddce
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Du kan nu bokmärka viktiga arbetsytor för att snabbt gå mellan visualiseringa
 
 **Så här tar du bort ett bokmärke:**
 
-* Högerklicka på bokmärkespanelen och välj **[!UICONTROL Ta bort<bookmark title>]**om du vill ta bort ett markerat bokmärke, eller markera **[!UICONTROL Clear All Bookmarks]**om du vill ta bort alla bokmärken.
+* På bokmärkespanelen högerklickar du och väljer **Ta bort`<bookmark title>`** för att ta bort ett markerat bokmärke, eller väljer **[!UICONTROL Clear All Bookmarks]** att ta bort alla bokmärken.
 
 * Du kan också högerklicka på arbetsytan i miniatyrbildsvyn i arbetsytan och välja **[!UICONTROL Clear Bookmark]**.
 
