@@ -1,16 +1,19 @@
 ---
-description: Data Workbench 6.2 innehåller nya uppdateringar av användargränssnittet till bokmärkespanelen, nya ikoner i verktygsfältet för arbetsytan, möjligheten att dra arbetsytan till en skärm, nya snabbtangenter och uppdateringar av cirkeldiagramvisningen.
-title: Uppdateringar av användargränssnittet för Data Workbench-klient
+description: Data Workbench 6.2 innehåller nya uppdateringar av användargränssnittet till bokmärkespanelen, nya ikoner i arbetsytans verktygsfält, möjligheten att dra arbetsytan inom en skärm, nya snabbtangenter och uppdateringar av cirkeldiagramvisningen.
+title: Data Workbench Client UI Updates
 uuid: 1bc18c90-8b46-4c90-b7a7-2c6710e1e28c
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '550'
+ht-degree: 0%
 
 ---
 
 
-# Uppdateringar av användargränssnittet för Data Workbench-klient{#data-workbench-client-ui-updates}
+# Data Workbench Client UI Updates{#data-workbench-client-ui-updates}
 
-Data Workbench 6.2 innehåller nya uppdateringar av användargränssnittet till bokmärkespanelen, nya ikoner i verktygsfältet för arbetsytan, möjligheten att dra arbetsytan till en skärm, nya snabbtangenter och uppdateringar av cirkeldiagramvisningen.
+Data Workbench 6.2 innehåller nya uppdateringar av användargränssnittet till bokmärkespanelen, nya ikoner i arbetsytans verktygsfält, möjligheten att dra arbetsytan inom en skärm, nya snabbtangenter och uppdateringar av cirkeldiagramvisningen.
 
 ## Nya bokmärkesfunktioner {#section-e361b605441540ca8213c3fddb5e0718}
 
@@ -31,7 +34,7 @@ Du kan nu bokmärka viktiga arbetsytor för att snabbt gå mellan visualiseringa
 
 **Så här tar du bort ett bokmärke:**
 
-* Högerklicka på bokmärkespanelen och välj **[!UICONTROL Ta bort<bookmark title>]**om du vill ta bort ett markerat bokmärke, eller markera **[!UICONTROL Clear All Bookmarks]**om du vill ta bort alla bokmärken.
+* På bokmärkespanelen högerklickar du och väljer **Ta bort`<bookmark title>`** för att ta bort ett markerat bokmärke, eller väljer **[!UICONTROL Clear All Bookmarks]** att ta bort alla bokmärken.
 
 * Du kan också högerklicka på arbetsytan i miniatyrbildsvyn i arbetsytan och välja **[!UICONTROL Clear Bookmark]**.
 
@@ -39,6 +42,7 @@ Du kan nu bokmärka viktiga arbetsytor för att snabbt gå mellan visualiseringa
 >
 >* 25 bokmärken kan sparas.
 >* Om du lägger till ett bokmärke och sedan flyttar arbetsytans plats, blir bokmärket ogiltigt och måste tas bort från bokmärkespanelen och återställas.
+
 >
 
 
@@ -69,7 +73,7 @@ En ny **[!UICONTROL Help]** ikon läggs till för att komma åt dokumentationen 
   </tr> 
   <tr> 
    <td colname="col1"> Hjälp </td> 
-   <td colname="col2">Öppna <span class="uicontrol"> Data Workbench-dokumentationen</span>. <p>Du kan också trycka på <span class="uicontrol"> &lt;F1&gt;</span> för att öppna hjälpen i en arbetsyta. </p> </td> 
+   <td colname="col2">Öppna <span class="uicontrol"> Datans Workbench dokumentation</span>. <p>Du kan också trycka på <span class="uicontrol"> &lt;F1&gt;</span> för att öppna hjälpen i en arbetsyta. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Om </td> 
