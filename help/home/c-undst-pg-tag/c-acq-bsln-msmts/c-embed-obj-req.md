@@ -5,7 +5,10 @@ title: Hämta inbäddade objektbegäranden (sidtaggar)
 topic: Data workbench
 uuid: 7fe561d1-aa5a-4ac9-82ba-aa27c7d208dd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '604'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ Sådana förfrågningar om inbäddade objekt är oftast förfrågningar om bildf
 
 En bild kan till exempel vara en annons, och du kanske vill veta att annonsen imponerades av en besökare. Ett JavaScript-kodfragment kan användas för att göra en mätning av att webbläsaren har en viss egenskap och skicka tillbaka det till en [!DNL Sensor] för förvärv. Varje sida på en plats kan innehålla 10 eller 100 inbäddade objektbegäranden. Om en plats lagrar logginformation för varje begäran, multipliceras mängden data som behövs för att hålla loggdata tillgängliga för framtida analys med antalet inbäddade objektbegäranden för varje begärd sida. Därför [!DNL Site] kan du behålla de förfrågningar som är viktiga för analys och ignorera andra innan du ådrar dig onödiga lagringskostnader.
 
-Genom att använda åsidosättningsfunktionen som finns i filtreringsfunktionerna för innehållstyp i [!DNL Sensor] (bifogar &quot;Log=1&quot; till frågesträngen för en inbäddad objektbegäran-URL) kan den specifika inbäddade objektbegäran och relaterade mätdata hämtas utan att webbplatshanteraren behöver lagra alla begäranden av den typen (till exempel alla <image> förfrågningar).
+Genom att använda åsidosättningsfunktionen som finns i filtreringsfunktionerna för innehållstyp i [!DNL Sensor] (bifogar &quot;Log=1&quot; till frågesträngen för en inbäddad objektbegäran-URL) kan den aktuella inbäddade objektbegäran och relaterade mätdata hämtas utan att webbplatshanteraren behöver lagra alla begäranden av den typen (till exempel alla `<image>` begäranden).
 
 [!DNL Sensor] samlar in mätdata i följande tabell för varje inbäddad objektbegäran som görs av webbservern, förutsatt att [!DNL Sensor] inte har konfigurerats för att filtrera ut eller att filtret har åsidosatts. Den insamlade informationen är relaterad till besökaren och sessionen och efterföljande sessioner via loggposterna x-trackingid eller cs(cookie).
 
