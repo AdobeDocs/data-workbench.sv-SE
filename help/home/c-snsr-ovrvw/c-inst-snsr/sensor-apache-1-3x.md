@@ -3,7 +3,10 @@ description: Detaljerade anvisningar för installation och konfigurering av Sens
 title: Apache Server 1.3.x i Linux, Sun Solaris, FreeBSD eller Mac OS X
 uuid: bd46dd0f-fe36-4f8b-a87c-8ca7b64da609
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+workflow-type: tm+mt
+source-wordcount: '1345'
+ht-degree: 0%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 Detaljerade anvisningar för installation och konfigurering av Sensor för en Apache Server 1.3.x i RedHat Linux 7.x eller senare, SUSE Linux 9.x eller senare, Sun Solaris SPARC 2.6 eller senare, Sun Solaris x86 9 eller senare, FreeBSD 4 eller senare eller Mac OS X PowerPC.
 
-Programfilerna för Sensor paketeras i en installationsfil som du får från Adobes nedladdningswebbplats. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
+Programfilerna för Sensor paketeras i en installationsfil som du får från hämtningsplatsen för Adobe. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
 
 Om du vill installera och konfigurera sensorn måste du utföra följande steg på hög nivå:
 
@@ -187,12 +190,12 @@ Det här kommandot startar sändaren som ett daemon. Åtgärds- och felmeddeland
 
 >[!NOTE]
 >
->Vissa Solaris-användare kan råka ut för felet&quot;Det går inte att hämta mutex&quot;. För att sensorn ska fungera på dessa system måste följande rad antingen läggas till eller redigeras i filen /etc/system: >
+>Vissa Solaris-användare kan råka ut för felet&quot;Det går inte att hämta mutex&quot;. För att sensorn ska fungera på dessa system måste följande rad antingen läggas till eller redigeras i filen /etc/system:
 >
-```>
+>
+```
 >semsys:seminfo_semmnu=1024
->```>
->The default Solaris setting is 60. Based on tests conducted with Sensor, which uses three semaphores for each instance, Adobe recommends that you use 1024 as your setting. This number is high enough for Sensor to function along with any other applications on the server that may require semaphores, but does not affect performance. To support this recommendation, please note that Adrian Cockcroft stated the following in his book Sun Performance and Tuning (Prentice Hall, October 1994): “Databases tend to use lots of shared memory and semaphore settings. These do not affect performance; as long as they are big enough, the programs will run.”
-
-
+>```
+>
+>Standardinställningen för Solaris är 60. Baserat på tester utförda med Sensor, som använder tre semaforer för varje instans, rekommenderar Adobe att du använder 1024 som inställning. Det här antalet är tillräckligt högt för att sensorn ska fungera tillsammans med andra program på servern som kan kräva semaforer, men som inte påverkar prestandan. Som stöd för denna rekommendation noterar ni att Adrian Cockcroft angav följande i sin bok Sun Performance and Tuning (Prentice Hall, oktober 1994): &quot;Databaser använder ofta många delade minnes- och semaforinställningar. Dessa påverkar inte prestanda. så länge de är tillräckligt stora kommer programmen att köras.&quot;
 
