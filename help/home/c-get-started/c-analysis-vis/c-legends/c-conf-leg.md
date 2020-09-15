@@ -5,7 +5,10 @@ title: Förtroendeförklaringar
 topic: Data workbench
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 0%
 
 ---
 
@@ -51,9 +54,10 @@ I följande förklaring visas tillförlitlighetsinformation om konverteringsmåt
 
 >[!NOTE]
 >
->När du analyserar resultatet av en beräkning måste du ta hänsyn till följande viktiga faktorer: >
+>När du analyserar resultatet av en beräkning måste du ta hänsyn till följande viktiga faktorer:
 >* Siffrorna är uppskattningar. Om du upprepar samma beräkningar med en annan datauppsättning får du ett annat resultat. Detta kallas slumpmässig variation.
 >* Extrapoleringar till högre sannolikheter beror på ett antagande om normalitet som inte är korrekt för alla mätvärden. Därför är värdena för 99 % sannolikhet mindre tillförlitliga än värdena för 90 % sannolikhet.
+
 >
 >
 Om du behöver mer exakta siffror bör du rådfråga en expert i statistik.
