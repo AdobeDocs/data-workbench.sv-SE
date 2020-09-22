@@ -1,15 +1,18 @@
 ---
 description: Om du vill ändra den data workbench-server som en sensor kommunicerar med (målservern) måste du redigera filen txlogd.conf på var och en av de webbservrar där Sensor är installerat.
-solution: Insight
-title: Ändra måldata för Workbench-servern
+solution: Analytics
+title: Ändra målserverns Data Workbench
 uuid: 931d376d-8622-4858-8290-19ce91538570
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 0%
 
 ---
 
 
-# Ändra måldata för Workbench-servern{#changing-the-target-data-workbench-server}
+# Ändra målserverns Data Workbench{#changing-the-target-data-workbench-server}
 
 Om du vill ändra den data workbench-server som en sensor kommunicerar med (målservern) måste du redigera filen txlogd.conf på var och en av de webbservrar där Sensor är installerat.
 
