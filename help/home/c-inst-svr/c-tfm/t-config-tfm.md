@@ -1,10 +1,13 @@
 ---
 description: Transformeringsfunktionen körs på en Insight Server FSU-dator för att möjliggöra export av loggkälldata för användning i andra program.
-solution: Insight
+solution: Analytics
 title: Konfigurera Transform
 uuid: 0526704a-71b2-4094-9d3a-1ba84f4dc287
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '481'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
 Transformeringsfunktionen körs på en Insight Server FSU-dator för att möjliggöra export av loggkälldata för användning i andra program.
 
-[!DNL Transform] kan läsa [!DNL .vsl] filer, loggfiler, XML-filer och ODBC-data och exportera data som [!DNL .vsl] filer, textfiler eller avgränsade textfiler som kan användas av datalagerinläsningsrutiner, revisionsbyråer eller andra mål. Dataextraheringen och dataomvandlingen kan utföras kontinuerligt eller schemalagt. Varje [!DNL Insight Server] FSU som tillhandahåller utdata för ändrade händelsedata måste köras [!DNL Transform].
+[!DNL Transform] kan läsa [!DNL .vsl] filer, loggfiler, XML-filer och ODBC-data och exportera data som [!DNL .vsl] filer, textfiler eller avgränsade textfiler som kan användas av data warehouse som inläsningsrutiner, revisionsbyråer eller andra mål. Dataextraheringen och dataomvandlingen kan utföras kontinuerligt eller schemalagt. Varje [!DNL Insight Server] FSU som tillhandahåller utdata för ändrade händelsedata måste köras [!DNL Transform].
 
 >[!NOTE]
 >
@@ -21,7 +24,7 @@ Transformeringsfunktionen körs på en Insight Server FSU-dator för att möjlig
 
 Mer information om systemkraven för installation, konfiguration och drift [!DNL Transform]finns i *dokumentet Minimum System Requirements* .
 
-Adobe distribuerar [!DNL Transform] funktionen som en profil i [!DNL .zip] filen för [!DNL Insight Server] versionspaketet. Profilen [!DNL Transform] är en intern profil som innehåller ytterligare funktioner för [!DNL Insight Server]. Precis som med alla andra interna profiler från Adobe bör profilen inte ändras. All anpassning måste ske i datauppsättningen, rollspecifika profiler eller andra profiler som du skapar.
+Adobe distribuerar [!DNL Transform] funktionaliteten som en profil i [!DNL .zip] filen för [!DNL Insight Server] versionspaketet. Profilen [!DNL Transform] är en intern profil som innehåller ytterligare funktioner för [!DNL Insight Server]. Precis som med alla andra interna profiler från Adobe bör profilen inte ändras. All anpassning måste ske i datauppsättningen, rollspecifika profiler eller andra profiler som du skapar.
 
 Profilen består av följande filer:
 
@@ -61,9 +64,9 @@ Alla dessa filer finns i profilens [!DNL Dataset] mapp.
    1. Ange namnet på den nya katalogen: [!DNL Transform]
    1. Högerklicka **[!UICONTROL (modified)]** högst upp i fönstret och klicka sedan **[!UICONTROL Save]**.
 
-   1. I [!DNL Profile Manager]högerklickar du på bockmarkeringen för [!DNL profile.cfg] i [!DNL User] kolumnen och klickar sedan på **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
+   1. Högerklicka [!DNL Profile Manager]på bockmarkeringen för [!DNL profile.cfg] i [!DNL User] kolumnen och klicka sedan på **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
 
       >[!NOTE]
       >
-      >Spara inte den ändrade konfigurationsfilen i någon av de interna profiler som tillhandahålls av Adobe (inklusive profilen), eftersom ändringarna skrivs över när du installerar uppdateringar för de här profilerna.
+      >Spara inte den ändrade konfigurationsfilen i någon av de interna profilerna som tillhandahålls av Adobe (inklusive profilen), eftersom ändringarna skrivs över när du installerar uppdateringar för de här profilerna.
 
