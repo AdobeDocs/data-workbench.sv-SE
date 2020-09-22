@@ -1,37 +1,40 @@
 ---
-description: De profiler och sökfiler som Adobe har utvecklat för just ditt program är interna profiler som innehåller mått, dimensioner och arbetsytor som möjliggör analys av din datauppsättning.
-solution: Insight
+description: De profiler och sökfiler som Adobe har utvecklat för just ditt program är interna profiler som innehåller mått, dimensioner och arbetsytor som gör det möjligt att analysera datauppsättningen.
+solution: Analytics
 title: Installera profiler och sökfiler
 uuid: edc670a6-ebc9-4a20-a66f-81dd4adf7433
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 0%
 
 ---
 
 
 # Installera profiler och sökfiler{#installing-profiles-and-lookup-files}
 
-De profiler och sökfiler som Adobe har utvecklat för just ditt program är interna profiler som innehåller mått, dimensioner och arbetsytor som möjliggör analys av din datauppsättning.
+De profiler och sökfiler som Adobe har utvecklat för just ditt program är interna profiler som innehåller mått, dimensioner och arbetsytor som gör det möjligt att analysera datauppsättningen.
 
 Precis som med alla andra interna profiler från Adobe bör dessa profiler inte ändras. All anpassning måste ske i datauppsättningen, rollspecifika profiler eller andra profiler som du skapar.
 
-Adobe distribuerar profil- och sökfiler för ditt program som en [!DNL .zip] fil. Varje zip-fil namnges för det program vars profil och sökningsfiler den innehåller. (Innehåller till exempel [!DNL Site52.zip] profilfilerna för platsen v5.2.) Filen [!DNL .zip] innehåller två mappar ( [!DNL Lookups] och [!DNL Profiles]).
+Adobe distribuerar profil- och sökfiler för programmet som en [!DNL .zip] fil. Varje zip-fil namnges för det program vars profil och sökningsfiler den innehåller. (Innehåller till exempel [!DNL Site52.zip] profilfilerna för platsen v5.2.) Filen [!DNL .zip] innehåller två mappar ( [!DNL Lookups] och [!DNL Profiles]).
 
 >[!NOTE]
 >
->Om du inte redan har installationsfilen som innehåller profilerna och sökfilerna för programmet kan du hämta dem från Adobes FTP-plats innan du börjar.
+>Om du inte redan har installationsfilen som innehåller profilerna och sökfilerna för programmet kan du hämta dem från FTP-platsen i Adobe innan du börjar.
 
-Du måste installera profilen och dess sökfiler på den dator som du bearbetar och kör datauppsättningsprofilen på [!DNL Insight Server] . Om du kör ett [!DNL Insight Server] kluster måste du installera filerna på huvudservern. Mer information om datauppsättningsprofiler finns i konfigurationsguiden för *datauppsättningar*.
+Du måste installera profilen och dess sökfiler på den dator som du bearbetar och kör datauppsättningsprofilen på [!DNL Insight Server] . Om du kör ett [!DNL Insight Server] kluster måste du installera filerna på den överordnad servern. Mer information om datauppsättningsprofiler finns i konfigurationsguiden för *datauppsättningar*.
 
-**Installera profiler för ditt Adobe-program**
+**Så här installerar du profiler för ditt Adobe-program**
 
-1. Öppna [!DNL Profiles] mappen från den [!DNL .zip] fil du fått från Adobe.
+1. Öppna [!DNL Profiles] mappen från den [!DNL .zip] fil som du har fått från Adobe.
 
-1. Kopiera alla mappar i [!DNL Profiles] mappen i [!DNL .zip] filen till [!DNL Profiles] mappen i din [!DNL Insight Server] installationskatalog. Du vill avsluta med [!DNL ...\Profiles\]*&lt;[!DNL internal profile name]>* mappar på din dator [!DNL Insight Server] som i följande exempel. De faktiska profilnamnen kan variera.
+1. Kopiera alla mappar i [!DNL Profiles] mappen i [!DNL .zip] filen till [!DNL Profiles] mappen i din [!DNL Insight Server] installationskatalog. Du vill avsluta med  [!DNL ...\Profiles\]*mapparna &lt;[!DNL internal profile name]>* på din dator [!DNL Insight Server] enligt följande exempel. De faktiska profilnamnen kan variera.
 
    ![](assets/win_installprofiles.png)
 
-1. Gå till mappen [!DNL Profiles\]*&lt;[!DNL dataset profile name]>* i den katalog där du installerade [!DNL Insight Server] och leta reda på [!DNL profile.cfg] filen i den här katalogen.
+1. Navigera till  [!DNL Profiles\]*mappen&lt;[!DNL dataset profile name]>* i den katalog där du installerade [!DNL Insight Server] och leta reda på [!DNL profile.cfg] filen i den här katalogen.
 
    >[!NOTE]
    >
@@ -64,11 +67,11 @@ Du måste installera profilen och dess sökfiler på den dator som du bearbetar 
 
 1. Spara filen. Spara filen som [!DNL profile.cfg] om den har ett annat namn.
 
-**Så här installerar du sökfiler för ditt Adobe-program**
+**Så här installerar du sökfiler för Adobe-programmet**
 
-1. Öppna [!DNL Lookups] mappen från den [!DNL .zip] fil du fått från Adobe.
+1. Öppna [!DNL Lookups] mappen från den [!DNL .zip] fil som du har fått från Adobe.
 
-1. Kopiera alla mappar i [!DNL Lookups] mappen i [!DNL .zip] filen till [!DNL Lookups] mappen i din [!DNL Insight Server] installationskatalog. Du vill avsluta med [!DNL ...\Lookups\]*&lt;[!DNL internal profile name]>* mappar på din dator [!DNL Insight Server] som i följande exempel. De faktiska profilnamnen kan variera.
+1. Kopiera alla mappar i [!DNL Lookups] mappen i [!DNL .zip] filen till [!DNL Lookups] mappen i din [!DNL Insight Server] installationskatalog. Du vill avsluta med  [!DNL ...\Lookups\]*mapparna &lt;[!DNL internal profile name]>* på din dator [!DNL Insight Server] enligt följande exempel. De faktiska profilnamnen kan variera.
 
    ![](assets/win_installLookups.png)
 
