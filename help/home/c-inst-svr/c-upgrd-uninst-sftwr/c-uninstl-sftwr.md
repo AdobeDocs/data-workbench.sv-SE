@@ -1,10 +1,13 @@
 ---
 description: Instruktioner för att avinstallera Insight Server, Transform eller Repeater.
-solution: Insight
+solution: Analytics
 title: Avinstallerar programvaran
 uuid: 79cf0db6-0f99-40fa-a7b0-38dd8d7246bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ Instruktioner för att avinstallera Insight Server, Transform eller Repeater.
 
    1. Högerklicka **[!UICONTROL (modified)]** högst upp i fönstret och klicka sedan **[!UICONTROL Save]**.
 
-   1. I [!DNL Profile Manager]högerklickar du på bockmarkeringen för [!DNL profile.cfg] i [!DNL User] kolumnen och klickar sedan på **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
+   1. Högerklicka [!DNL Profile Manager]på bockmarkeringen för [!DNL profile.cfg] i [!DNL User] kolumnen och klicka sedan på **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
 
 1. Ta bort [!DNL Transform] mappen från [!DNL Profiles] mappen i din [!DNL Insight Server] installationskatalog.
 
