@@ -1,10 +1,13 @@
 ---
 description: Kontrollera om insamlaren körs med olika metoder.
-solution: Insight
+solution: Analytics
 title: Bekräfta att datainsamlaren körs
 uuid: e5b9b12a-b8a5-4c00-abe5-e824516d46b7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 0%
 
 ---
 
@@ -16,11 +19,11 @@ Kontrollera om insamlaren körs med olika metoder.
 **Rekommenderad frekvens:** Var 5-10:e minut
 
 * [Använd platstestfunktionen i sändaren.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-a5a697c3252e40f184c0b662926170f2)
-* [Kontrollera om [!DNL Sensor] har angett en cookie.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-365a0182474c4dc9a5372d3e984f53de)
+* [Kontrollera [!DNL Sensor] om du ställer in en cookie.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-365a0182474c4dc9a5372d3e984f53de)
 
 ## Använda platstest {#section-a5a697c3252e40f184c0b662926170f2}
 
-Ett sätt att verifiera att insamlaren körs är att aktivera funktionen Platstest i sändaren. När du aktiverar platstest skickar sändaren regelbundet (var 60:e sekund) en GET-begäran till webbservern som insamlaren körs på. Om webbplatstestet inte får något svar från webbservern skriver det ett felmeddelande till syslog och skickar ett felmeddelande till [!DNL data workbench server] (som skrivs till sensorloggfilen).
+Ett sätt att verifiera att insamlaren körs är att aktivera funktionen Platstest i sändaren. När du aktiverar Webbplatstestning skickar sändaren regelbundet (var 60:e sekund) en GET-förfrågan till webbservern som insamlaren körs på. Om webbplatstestet inte får något svar från webbservern skriver det ett felmeddelande till syslog och skickar ett felmeddelande till [!DNL data workbench server] (som skrivs till sensorloggfilen).
 
 Om webbplatstestet tar emot ett svar från webbservern söker programmet i köfilen efter ett paket från webbservern. Om paketet inte visas (vilket anger att insamlaren inte kördes för att hämta händelsen) skriver Site Test ett felmeddelande till syslog och skickar ett felmeddelande till Adobe (som också skrivs till sensorloggfilen).
 
@@ -46,4 +49,4 @@ Ett annat sätt att verifiera att insamlaren körs på en webbserver är att kon
 
 Det går att byta namn på cookien. Om du har gjort det måste du leta efter det angivna namnet, inte v1st.
 
-Du kan utföra den här kontrollen med ett automatiserat skript eller en övervakningsagent. Om du vill ha ett exempelskript eller ytterligare hjälp med detta kontaktar du Adobes konsulttjänster.
+Du kan utföra den här kontrollen med ett automatiserat skript eller en övervakningsagent. Kontakta Adobe Consulting Services om du vill ha ett exempelskript eller ytterligare hjälp med den här uppgiften.
