@@ -1,10 +1,13 @@
 ---
 description: Åtkomstnivåer beskriver vilka URI:er på datorn som en grupp användare har behörighet att läsa eller ändra.
-solution: Insight
+solution: Analytics
 title: Om åtkomstnivåer
 uuid: e9091ae1-9a34-4e00-a928-20d04119ee9e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 0%
 
 ---
 
@@ -83,7 +86,7 @@ När du definierar åtkomstkontrollsgrupper måste du inkludera alla systemadmin
 
 >[!NOTE]
 >
->När [!DNL Access Control.cfg] filen ändras [!DNL Insight Server]avbryts alla befintliga anslutningar och alla måste återanslutas. Anslutningar kontrolleras mot behörigheterna i den uppdaterade [!DNL Access Control.cfg] filen. I serverhanterargränssnittet blir ikonen tillfälligt röd och sedan grön igen eftersom anslutningen avbryts och alla andra måste återanslutas. [!DNL Insight Server]
+>När [!DNL Access Control.cfg] filen ändras på [!DNL Insight Server]avbryts alla befintliga anslutningar och måste återanslutas. Anslutningar kontrolleras mot behörigheterna i den uppdaterade [!DNL Access Control.cfg] filen. I serverhanterargränssnittet blir ikonen tillfälligt röd och sedan grön igen eftersom anslutningen avbryts och alla andra måste återanslutas. [!DNL Insight Server]
 
 1. Öppna arbetsytan Serverhanteraren genom att klicka på [!DNL Admin] miniatyrbilden på fliken [!DNL Dataset and Profile] > **[!UICONTROL Servers Manager]** .
 
