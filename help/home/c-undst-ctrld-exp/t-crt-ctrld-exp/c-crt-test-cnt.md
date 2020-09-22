@@ -1,11 +1,14 @@
 ---
 description: Innan du konfigurerar experimentet bör du skapa det alternativa innehåll som du vill använda i experimentet.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Skapa testinnehåll
 topic: Data workbench
 uuid: d7996522-38a6-4bb8-9736-d71157c17b45
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 0%
 
 ---
 
