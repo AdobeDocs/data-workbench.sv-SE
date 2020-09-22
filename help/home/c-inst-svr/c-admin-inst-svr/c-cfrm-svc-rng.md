@@ -1,10 +1,13 @@
 ---
 description: För att implementeringen ska fungera som den ska bör du kontrollera att tjänsten Insight Server körs.
-solution: Insight
+solution: Analytics
 title: Bekräfta att tjänsten körs
 uuid: 0e0fb43b-56d5-4994-a9c4-9281e69844eb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '100'
+ht-degree: 1%
 
 ---
 
