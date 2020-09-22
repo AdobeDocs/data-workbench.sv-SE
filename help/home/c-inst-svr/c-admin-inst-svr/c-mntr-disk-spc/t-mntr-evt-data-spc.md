@@ -1,10 +1,13 @@
 ---
 description: Information om övervakning av händelsedataminne och ändring av loggkatalogen för sensordata.
-solution: Insight
+solution: Analytics
 title: Övervaka händelsens datautrymme
 uuid: e514e8fb-e735-4003-ab21-17470c73af37
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '582'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +20,7 @@ Information om övervakning av händelsedataminne och ändring av loggkatalogen 
 
 [!DNL Insight Server] lagrar en loggfil per [!DNL Sensor] dag på databehandlingsenheten eller filserverenheten, beroende på din konfiguration. Storleken på loggfilerna och mängden datalagringsutrymme som krävs för dem beror på många variabler, till exempel antalet webbplatser som loggas och antalet begäranden som webbservrarna tar emot per sekund.
 
-En typisk installation av [!DNL Insight Server] (eller ett [!DNL Insight Server] kluster) kan lagra flera terabyte data, förutsatt att den maskinvara som rekommenderas av Adobe används för [!DNL Insight Server] maskinvaran.
+En typisk installation av [!DNL Insight Server] (eller ett [!DNL Insight Server] kluster) kan lagra flera terabyte data, förutsatt att den maskinvara som rekommenderas av Adobe används för [!DNL Insight Server] datorn/datorerna vid implementeringen.
 
 Vanligtvis finns alla loggdata kvar på [!DNL Insight Server] datorn. Om det blir nödvändigt att göra mer datalagringsutrymme tillgängligt på datorn kan du flytta alla loggfiler utom den senaste dagen till en annan dator eller ett annat datalagringsmedium (zip-enhet, band osv.). När du flyttar data behöver du inte stoppa [!DNL Insight Server]det, och det påverkar inte de funktioner som finns i alla [!DNL Insights] som kan vara anslutna till [!DNL Insight Server] och arbeta med kontinuerliga data. Förutsatt att du inte bearbetar eller bearbetar om en analysdatauppsättning har du fortfarande tillgång till alla tidigare data och nya data är fortfarande tillgängliga i [!DNL Insight]. Om du bearbetar eller bearbetar om en analysdatauppsättning kan du inte komma åt data förrän bearbetningen är klar.
 
