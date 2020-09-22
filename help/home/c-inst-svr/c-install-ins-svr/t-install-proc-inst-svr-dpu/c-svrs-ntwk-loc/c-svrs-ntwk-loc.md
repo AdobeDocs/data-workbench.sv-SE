@@ -1,10 +1,13 @@
 ---
 description: Insight Servers klienter (Report and Insight) använder vanliga namn för att hänvisa till Insight Servers.
-solution: Insight
+solution: Analytics
 title: Definiera serverns nätverksplats
 uuid: 9cf2f268-6fde-4427-b832-a238d126d697
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 0%
 
 ---
 
