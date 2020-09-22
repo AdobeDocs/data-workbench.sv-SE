@@ -1,10 +1,13 @@
 ---
 description: Du bör regelbundet övervaka dina händelseloggfiler för att spåra händelsemeddelanden i Insight Server, som loggas till filerna <YYMMDD>-event.txt som finns som standard i händelsemappen i installationskatalogen för Insight Server.
-solution: Insight
+solution: Analytics
 title: Övervaka administrativa händelser
 uuid: 92d71478-0857-4af8-909c-0cf800b081f4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 0%
 
 ---
 
