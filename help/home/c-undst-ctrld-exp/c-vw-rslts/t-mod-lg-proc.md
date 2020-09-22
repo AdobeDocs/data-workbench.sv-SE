@@ -1,11 +1,14 @@
 ---
 description: Du måste lägga till x-experimentfältet i filen Log Processing.cfg, som används för att skapa en utökad dimension.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Ändra Log Processing.cfg
 topic: Data workbench
 uuid: 9105b09b-e3d5-4922-a205-b459553a4bec
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 0%
 
 ---
 
