@@ -1,10 +1,13 @@
 ---
 description: När du konfigurerar en datauppsättningsprofil att köras på ett Insight Server-kluster delar alla datorer i klustret alla datauppsättningskonfigurationsfiler för den profilen.
-solution: Insight
+solution: Analytics
 title: Konfigurera en profil som ska köras i ett kluster
 uuid: e181d069-fb2f-4a71-a86f-bb9a48cfe059
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +18,7 @@ När du konfigurerar en datauppsättningsprofil att köras på ett Insight Serve
 
 Därför måste parametrarnas poster i de här filerna gälla alla [!DNL Insight Servers] i klustret. Platserna för loggfilerna som ska läsas, sökfilerna som ska användas av [!DNL Insight Server]och platsen för utdata från [!DNL Insight Server] måste vara samma på alla datorer i klustret.
 
-Du utför alla konfigurationsuppgifter på klustrets huvudmapp [!DNL Insight Server], som är den [!DNL Insight Server] du använder för att redigera konfigurationsfilerna. Alla sparade konfigurationsfilsändringar som görs på mallsidan [!DNL Insight Server] synkroniseras automatiskt med filerna som bearbetas [!DNL Insight Servers] i klustret.
+Du utför alla konfigurationsåtgärder på klustrets överordnad [!DNL Insight Server]som är den [!DNL Insight Server] du använder för att redigera konfigurationsfilerna. Alla sparade konfigurationsfilsändringar som görs på överordnad [!DNL Insight Server] synkroniseras automatiskt med filerna som bearbetas [!DNL Insight Servers] i klustret.
 
 Om du vill köra en datauppsättningsprofil på ett [!DNL Insight Server] kluster måste du utföra följande processer i den ordning som anges:
 
@@ -31,7 +34,7 @@ Mer information om hur du anger en fil [!DNL Insight Server] som ska köras som 
 
 Om du bestämmer dig för att lagra källdatafiler på var och en av bearbetningsservrarna i stället för på en enda filserverenhet, måste du dela upp filerna jämnt mellan bearbetningsservrarna. Lagra inte alla datauppsättningens källfiler på var och en av bearbetningsservrarna. Om flera kopior av samma fil är tillgängliga för flera bearbetningsservrar, läses data flera gånger (en gång per dator) och dina data skevas.
 
-Kontakta Adobe Consulting för att få hjälp med att avgöra vilka [!DNL Insight Servers] loggfiler som ska behandlas.
+Kontakta Adobe Consulting för att få hjälp med att avgöra vilka loggfiler som [!DNL Insight Servers] ska behandlas.
 
 ## Ange bearbetningsservrar i Profile.cfg {#section-99664e072c21462f91fbafb6d893fcf9}
 
@@ -58,7 +61,7 @@ Du kommer åt profilkonfigurationsfilen med hjälp av [!DNL Profile Manager] i [
 
    >[!NOTE]
    >
-   >Om mallsidan [!DNL Insight Server] bearbetar data måste du lägga till den också.
+   >Om de överordnad [!DNL Insight Server] bearbetar data måste du också lägga till dem.
 
 1. Högerklicka **[!UICONTROL (modified)]** högst upp i fönstret och klicka sedan **[!UICONTROL Save]**.
 
@@ -68,7 +71,7 @@ Du kommer åt profilkonfigurationsfilen med hjälp av [!DNL Profile Manager] i [
 
 **Så här ändrar du datauppsättningens konfigurationsfiler**
 
-Om du behöver göra ändringar i datauppsättningens konfigurationsfiler ( [!DNL Log Processing.cfg], [!DNL Transformation.cfg], datauppsättningens inkluderingsfiler, [!DNL Log Processing Mode.cfg]och så vidare) gör du det bara på mallsidan [!DNL Insight Server].
+Om du behöver göra ändringar i datauppsättningens konfigurationsfiler ( [!DNL Log Processing.cfg], [!DNL Transformation.cfg], datauppsättningens inkluderingsfiler, [!DNL Log Processing Mode.cfg]och så vidare) gör du det bara på överordnad [!DNL Insight Server].
 
 1. Öppna de filer du vill ändra:
 
@@ -83,6 +86,6 @@ Om du behöver göra ändringar i datauppsättningens konfigurationsfiler ( [!DN
 
 >[!NOTE]
 >
->[!DNL Insight] Användare som har åtkomst till en datauppsättningsprofil som körs i ett kluster identifierar bara huvudfilen [!DNL Insight Server] i [!DNL Insight] konfigurationsfilen ( [!DNL insight.cfg]). Ur [!DNL Insight] användarens perspektiv är profilen tillgänglig endast för en [!DNL Insight Server] (huvudprofilen [!DNL Insight Server]). Frågebegäranden från analytiker kan dock dirigeras till någon av dem [!DNL Insight Servers] i klustret.
+>[!DNL Insight] Användare som har åtkomst till en datauppsättningsprofil som körs i ett kluster identifierar endast överordnad [!DNL Insight Server] i [!DNL Insight] konfigurationsfilen ( [!DNL insight.cfg]). Ur [!DNL Insight] användarens perspektiv är profilen tillgänglig endast på en [!DNL Insight Server] (överordnad [!DNL Insight Server]). Frågebegäranden från analytiker kan dock dirigeras till någon av dem [!DNL Insight Servers] i klustret.
 
 Ett [!DNL Insight Server] kluster tillåter centraliserad lagring av [!DNL .vsl] loggfiler (från [!DNL Sensor]) på en enda [!DNL Insight Server] dator som kallas filserverenhet (FSU). Information om hur du installerar en FSU finns i [Installationsprocedurer för en Insight Server FSU](../../../../../../home/c-inst-svr/c-install-ins-svr/t-inst-proc-fsu.md#task-e4a4a791b6694119ba45b36f3e573016). Mer information om hur du konfigurerar en FSU finns i *konfigurationsguiden* för datauppsättningar.
