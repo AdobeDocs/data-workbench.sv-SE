@@ -1,10 +1,13 @@
 ---
 description: Detaljerade anvisningar för hur du installerar en Insight Server DPU och konfigurerar den för administrativt bruk.
-solution: Insight
+solution: Analytics
 title: Installationsprocedurer för en Insight Server DPU
 uuid: 4a04d333-3264-4c15-87fd-8fd201eb68fc
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
