@@ -1,10 +1,10 @@
 ---
-description: Datorer med Target Insight Server som kör tjänsten Insight Server Replication måste kunna läsa loggfilerna på den här upprepade servern.
-solution: Insight
-title: Konfigurera åtkomstkontroll för Target-datorer
+description: Måldatorer för Insight Server som kör tjänsten Insight Server Replication måste kunna läsa loggfilerna på den här upprepade servern.
+solution: Analytics
+title: Konfigurera åtkomstkontroll för måldatorer
 uuid: 35e032cf-6c1d-4348-88ce-4f4a6a30b16f
 translation-type: tm+mt
-source-git-commit: 0276701151d1403926ce184069526ebdf3e28e36
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -12,9 +12,9 @@ ht-degree: 0%
 ---
 
 
-# Konfigurera åtkomstkontroll för Target-datorer{#configuring-access-control-for-target-machines}
+# Konfigurera åtkomstkontroll för måldatorer{#configuring-access-control-for-target-machines}
 
-Datorer med Target Insight Server som kör tjänsten Insight Server Replication måste kunna läsa loggfilerna på den här upprepade servern.
+Måldatorer för Insight Server som kör tjänsten Insight Server Replication måste kunna läsa loggfilerna på den här upprepade servern.
 
 Åtkomst till måldatorerna beviljas med hjälp av [!DNL Access Control.cfg] filen.
 
