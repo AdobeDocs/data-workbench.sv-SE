@@ -1,10 +1,13 @@
 ---
 description: För att upptäcka sensorfel så snart som möjligt och åtgärda dem innan de orsakar större problem eller avbrott bör du regelbundet övervaka dina händelseloggar.
-solution: Insight
+solution: Analytics
 title: Övervaka administrativa händelser
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1092'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ Du kan övervaka de här händelserna med Windows Event Viewer- eller Unix Syslo
 
 ## Övervaka händelser i Windows {#section-7c0443a356af4381bf22259654f5cd17}
 
-Sensorn loggar fel i programloggen för Windows Event Viewer med källan&quot;Adobe&quot;.
+Sensorn loggar fel i programloggen för Windows Event Viewer med källan Adobe.
 
 Meddelanden loggas som &quot;Information&quot;, &quot;Varning&quot; eller &quot;Fel&quot; beroende på hur allvarliga de är.
 
@@ -86,7 +89,7 @@ Tabeller som beskriver sensorhändelser och föreslagna åtgärder för de webbs
    <td colname="col2"> Ingen åtgärd krävs. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorinformation 1012: Adobe-skivkön är #% full </td> 
+   <td colname="col1"> Sensorinformation 1012: Diskkön för Adobe är #% full </td> 
    <td colname="col2"> Det här meddelandet loggas varje gång diskköutnyttjandet överskrider ett tröskelvärde på 10 %. Om procentandelen fortsätter att växa bör åtgärder vidtas innan kön är full och data förloras. Det troligaste problemet är att sensorn har slutat kommunicera med Insight Server. Kontakta Adobe ClientCare. </td> 
   </tr> 
   <tr> 
@@ -127,11 +130,11 @@ Tabeller som beskriver sensorhändelser och föreslagna åtgärder för de webbs
   </tr> 
   <tr> 
    <td colname="col1"> Sensorfel 4014: Det gick inte att öppna diskkön. </td> 
-   <td colname="col2"> Kontrollera att QueueFile-filnamnet finns i txlogd.conf och kontakta Adobe ClientCare om du tror att det är rätt. </td> 
+   <td colname="col2"> Kontrollera QueueFile-filnamnet i txlogd.conf och kontakta Adobe ClientCare om du tror att det är rätt. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Sensorfel 4020: Inte en köfil </td> 
-   <td colname="col2"> Kontrollera att QueueFile-filnamnet finns i txlogd.conf och kontakta Adobe ClientCare om du tror att det är rätt. </td> 
+   <td colname="col2"> Kontrollera QueueFile-filnamnet i txlogd.conf och kontakta Adobe ClientCare om du tror att det är rätt. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Sensorfel 4021: Kön är full </td> 
@@ -167,7 +170,7 @@ Tabeller som beskriver sensorhändelser och föreslagna åtgärder för de webbs
   </tr> 
   <tr> 
    <td colname="col1"> Sensorfel 5034: Signal mottagen </td> 
-   <td colname="col2"> Programmet avslutades troligtvis av en extern signal. Kontakta Adobe ClientCare om det inte går att fastställa källan till signalen. </td> 
+   <td colname="col2"> Programmet avslutades troligtvis av en extern signal. Kontakta Adobe ClientCare om det inte går att fastställa signalens källa. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Sensorfel 5035: Avsluta anropat från utsidan av huvudboken </td> 
