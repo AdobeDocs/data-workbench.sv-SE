@@ -1,31 +1,34 @@
 ---
-description: Du kanske vill lägga till en Insight Server FSU i ett befintligt kluster om du vill lagra källdata på ytterligare en filserver eller om du vill konfigurera en säkerhetskopia för Master Insight Server.
-solution: Insight
+description: Du kanske vill lägga till en Insight Server FSU i ett befintligt kluster om du vill lagra källdata på ytterligare en filserver eller om du vill konfigurera en säkerhetskopia för din överordnad Insight Server.
+solution: Analytics
 title: Lägga till en Insight Server FSU i ett befintligt kluster
 uuid: 57d6ef52-eef9-4425-943a-331e4c9c4207
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 0%
 
 ---
 
 
 # Lägga till en Insight Server FSU i ett befintligt kluster{#adding-an-insight-server-fsu-to-an-existing-cluster}
 
-Du kanske vill lägga till en Insight Server FSU i ett befintligt kluster om du vill lagra källdata på ytterligare en filserver eller om du vill konfigurera en säkerhetskopia för Master Insight Server.
+Du kanske vill lägga till en Insight Server FSU i ett befintligt kluster om du vill lagra källdata på ytterligare en filserver eller om du vill konfigurera en säkerhetskopia för din överordnad Insight Server.
 
 Om du vill lägga till en [!DNL Insight Server] FSU i ett befintligt kluster måste du utföra följande procedurer:
 
-1. [Uppdaterar konfigurationsfilerna på huvudservern](../../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-fsu-ex-clstr.md#section-b5f21f2edb35493da4475de2cdeefca1)
+1. [Uppdaterar konfigurationsfilerna på den Överordnad servern](../../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-fsu-ex-clstr.md#section-b5f21f2edb35493da4475de2cdeefca1)
 1. [Installera nya Insight Server FSU](../../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-fsu-ex-clstr.md#section-dddad299dd8642aa91cbe19a395ef3f4)
 1. [Konfigurera nya Insight Server FSU](../../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-fsu-ex-clstr.md#section-c39334c5bd754d5b98d41ad094333108)
 
-## Uppdaterar konfigurationsfilerna på huvudservern {#section-b5f21f2edb35493da4475de2cdeefca1}
+## Uppdaterar konfigurationsfilerna på den Överordnad servern {#section-b5f21f2edb35493da4475de2cdeefca1}
 
-I [!DNL Insight]öppnar du mappen [!DNL Server Files Manager] för huvudservern [!DNL Insight Server] (vanligtvis en [!DNL Insight Server] FSU) och gör följande för varje FSU som du vill lägga till i klustret:
+I [!DNL Insight]öppnar du [!DNL Server Files Manager] för din överordnad [!DNL Insight Server] (vanligtvis en [!DNL Insight Server] FSU) och gör följande för varje FSU som du vill lägga till i klustret:
 
-1. Redigera adressfilen på huvudservern så [!DNL Insight Server] att den innehåller namn och adress för den nya FSU:n enligt beskrivningen i [Lägga till bearbetningsinsiktsservrar i adressfilen](../../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md#section-2fe5298180164e8dbaa59ea6b6ff682d). Lägg till namn och adress för den nya FSU:n i den grupp där klustrets aktuella [!DNL Insight Servers] finns.
+1. Redigera adressfilen på överordnad [!DNL Insight Server] för att inkludera namn och adress för den nya FSU:n enligt beskrivningen i [Lägga till bearbetningsinsiktsservrar i adressfilen](../../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md#section-2fe5298180164e8dbaa59ea6b6ff682d). Lägg till namn och adress för den nya FSU:n i den grupp där klustrets aktuella [!DNL Insight Servers] finns.
 
-1. Redigera åtkomstkontrollsfilen på huvudservern så [!DNL Insight Server] att den inkluderar IP-adressen för den nya FSU:n enligt beskrivningen i [Uppdatera åtkomstkontrollsfilen för ett kluster](../../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md#section-fce1367d92a445168c35e9ca506e7d6b).
+1. Redigera åtkomstkontrollsfilen på överordnad [!DNL Insight Server] så att den innehåller IP-adressen för den nya FSU:n enligt beskrivningen i [Uppdatera åtkomstkontrollsfilen för ett kluster](../../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md#section-fce1367d92a445168c35e9ca506e7d6b).
 
 ## Installera nya Insight Server FSU {#section-dddad299dd8642aa91cbe19a395ef3f4}
 
@@ -53,9 +56,9 @@ Följande procedurer innehåller instruktioner för specifika konfigurationsuppg
 
 Om den nya FSU:n lagrar ytterligare källdata för den datauppsättning som körs i klustret måste du slutföra filserverns konfigurationsprocess enligt beskrivningen i Konfigurera en [!DNL Insight Server] filserverenhet i kapitlet Konfigurationsfil för loggbearbetning i *datauppsättningens konfigurationsguide*.
 
-**Säkerhetskopiera till den nya FSU:n för[!DNL Insight Server]huvudenheten**
+**Säkerhetskopiering av överordnad[!DNL Insight Server]FSU för nya FSU**
 
-Om du vill göra den nya FSU-enheten till en säkerhetskopia för huvudenheten [!DNL Insight Server] (som fungerar som en FSU för klustret) måste du ändra synkroniseringsfilen på den nya (säkerhetskopierade) FSU-enheten så att den synkroniseras med den överordnade FSU-enheten.
+Om du vill göra den nya FSU-enheten till en säkerhetskopia för överordnad [!DNL Insight Server] (som fungerar som FSU för klustret) måste du ändra synkroniseringsfilen på den nya (säkerhetskopierade) FSU:n så att den synkroniseras med den överordnad FSU:n.
 
 1. På säkerhetskopian av [!DNL Insight Server] FSU använder du [!DNL Server Files Manager] för att kopiera [!DNL Synchronize.cfg] filen i [!DNL Components for Processing Servers] mappen till [!DNL Components] mappen.
 
@@ -68,5 +71,5 @@ Om du vill göra den nya FSU-enheten till en säkerhetskopia för huvudenheten [
 
 1. Spara den ändrade filen med ett nytt namn, till exempel [!DNL FSU_Synchronize.cfg] så att du inte blandar ihop den med [!DNL Synchronize.cfg] filerna i DPU:erna i klustret.
 
-1. Spara den lokala kopian av den namnändrade filen [!DNL Server Files Manager] på servern med hjälp av . Säkerhetskopians FSU hämtar filerna i de identifierade katalogerna från [!DNL Insight Server] huvudfilhanteraren och hämtar dynamiskt uppdaterade kopior av dessa filer från huvudfilhanteraren [!DNL Insight Server] i FSU när de ändras.
+1. Spara den lokala kopian av filen med det nya namnet [!DNL Server Files Manager] på servern med hjälp av . Säkerhetskopians FSU hämtar filerna i de identifierade katalogerna från den överordnad [!DNL Insight Server] FSU:n och hämtar dynamiskt uppdaterade kopior av dessa filer från den överordnad [!DNL Insight Server] FSU:n när de ändras.
 
