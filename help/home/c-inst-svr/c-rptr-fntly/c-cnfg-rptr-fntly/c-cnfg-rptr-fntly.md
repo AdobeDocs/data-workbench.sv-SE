@@ -1,10 +1,13 @@
 ---
 description: Repeater-funktionaliteten gör att en Insight Server FSU kan ta emot händelsedata från en eller flera källor och replikera data till en eller flera Insight Server FSU:er som kör Insight ServerReplication Service.
-solution: Insight
+solution: Analytics
 title: Konfigurera Repeater-funktioner
 uuid: 45dca069-a91f-4fd4-bd47-c8c2e6aab834
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
