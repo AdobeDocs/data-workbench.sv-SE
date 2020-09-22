@@ -1,10 +1,13 @@
 ---
 description: Uppgraderar serverkomponenter för Data Workbench 6.1 från 5.4-installation.
-solution: Insight
+solution: Analytics
 title: DWB Server upgrade 5.4 to 5.5
 uuid: 9cf9f493-f098-4c6d-a8b5-786833496557
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 0%
 
 ---
 
