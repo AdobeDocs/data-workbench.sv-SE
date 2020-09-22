@@ -1,10 +1,13 @@
 ---
 description: Detaljerade anvisningar för installation och konfigurering av Sensor för WebSphere 5.x som körs i AIX 5.1 eller senare.
-solution: Insight
+solution: Analytics
 title: WebSphere i AIX
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1645'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 Detaljerade anvisningar för installation och konfigurering av Sensor för WebSphere 5.x som körs i AIX 5.1 eller senare.
 
-Programfilerna för [!DNL Sensor] är paketerade i en installationsfil som du får från Adobes nedladdningswebbplats. Om du inte redan har [!DNL Sensor] installationsfilen för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
+Programfilerna för [!DNL Sensor] är paketerade i en installationsfil som du får från hämtningsplatsen för Adobe. Om du inte redan har [!DNL Sensor] installationsfilen för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
 
 >[!NOTE]
 >
