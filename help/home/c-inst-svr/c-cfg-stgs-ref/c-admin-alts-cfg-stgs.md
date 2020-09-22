@@ -1,10 +1,13 @@
 ---
 description: Instruktioner för att konfigurera administrativa varningar för Insight Server, Repeater eller Transform.
-solution: Insight
+solution: Analytics
 title: Konfigurationsinställningar för administrativa aviseringar
 uuid: c2be2d1e-d81d-4d9f-ac94-4b642dad90b9
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '514'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +50,7 @@ Slutför parametrarna i följande fil:
   </tr> 
   <tr> 
    <td colname="col1"> Tidsgräns för sensorvarning (min) </td> 
-   <td colname="col2"> <p>Servern genererar en e-postavisering när den inte har fått några data från en konfigurerad och tidigare ansluten <span class="wintitle"> sensor </span> inom det här tidsfönstret. Standardvärdet är 15. </p> <p> <p>Obs!  Timeout för <span class="wintitle"> sensorvarning </span> fungerar bara om en befintlig anslutning till en <span class="wintitle"> sensor </span> släpps. Om servertjänsten stoppas och startas om och <span class="wintitle"> sensorerna </span> inte ansluter, genererar servern inga e-postvarningar. </p> </p> </td> 
+   <td colname="col2"> <p>Servern genererar en e-postavisering när den inte har fått några data från en konfigurerad och tidigare ansluten <span class="wintitle"> sensor </span> inom det här tidsfönstret. Standardvärdet är 15. </p> <p> <p>Obs!  <span class="wintitle"> Timeout för sensorvarning fungerar bara om en befintlig anslutning till en </span> sensor <span class="wintitle"> </span> släpps. Om servertjänsten stoppas och startas om och <span class="wintitle"> sensorerna </span> inte ansluter, genererar servern inga e-postvarningar. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Serveradress </td> 
