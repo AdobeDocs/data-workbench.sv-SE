@@ -1,10 +1,13 @@
 ---
 description: Filen Access Control.cfg hanterar åtkomsten till vissa funktioner i Insight Server.
-solution: Insight
+solution: Analytics
 title: Uppdaterar åtkomstkontrollsfilen
 uuid: f73651e5-6a8b-45fc-8f36-6751304dc53c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 1%
 
 ---
 
@@ -49,6 +52,7 @@ Syftet med den här proceduren är att identifiera en licensierad kopia av [!DNL
    * O (organisations-ID): Den här posten representerar organisationens ID. Exempel, `1 = string: O:46F582D4582596B40A45491@ExampleOrg`. Detta ID finns i Admin Console.
    * PLC - Den här posten ger åtkomst till användare som har etablerats för en viss produktkonfiguration. Den kan användas i format `Organization_Id-PLC`. Exempel, `1 = string: PLC:46F582D4582596B40A45491@ExampleOrg-DataworkbenchAdminUsers`. De användare som har etablerats för Data Workbench med PLC `DataworkbenchAdminUsers` får åtkomst till sina servrar.
    * E-post - Den här posten ger åtkomst till alla enskilda användare. Dess värde ska vara e-postadressen till den tilldelade användaren. Exempel, `1 = string: Email:kim@exampleorg.com`.
+
    >[!NOTE]
    >
    >
