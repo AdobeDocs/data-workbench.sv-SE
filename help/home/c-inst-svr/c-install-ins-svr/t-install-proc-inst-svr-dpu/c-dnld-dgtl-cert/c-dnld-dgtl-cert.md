@@ -1,10 +1,13 @@
 ---
 description: Allmän information om digitala certifikat och procedurer för att hämta och installera dem.
-solution: Insight
+solution: Analytics
 title: Hämta och installera digitala certifikat
 uuid: ac484e96-21dc-4643-ae74-01ac957e30ee
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 0%
 
 ---
 
@@ -23,17 +26,17 @@ Allmän information om digitala certifikat och procedurer för att hämta och in
 
 Adobe använder digitala X.509-certifikat för att identifiera och autentisera klient- och serverkomponenter som utgör en implementering.
 
-När du installerar en serverkomponent ( [!DNL Insight Server] eller [!DNL Repeater]) måste du installera det digitala certifikatet som Adobe har utfärdat för komponenten. Om du behöver migrera ditt Adobe-program till en annan dator måste du skaffa ett nytt certifikat från Adobe. Kontakta Adobes kundtjänst om du vill göra det.
+När du installerar en serverkomponent ( [!DNL Insight Server] eller [!DNL Repeater]) måste du installera det digitala certifikatet som Adobe har utfärdat för komponenten. Om du behöver migrera ditt Adobe-program till en annan dator måste du skaffa ett nytt certifikat från Adobe. Kontakta Adobe kundtjänst om du vill göra det.
 
 Det vanliga namnet som visas på det här certifikatet identifierar servern med ett angivet domännamn (till exempel [!DNL vs001a.mycompany.com]). När en serverklient ansluter till den här servern visar servern det här certifikatet som ett bevis på att det är servern som klienten begärde.
 
-När du installerar en serverklient (till exempel [!DNL Insight] eller [!DNL Report]) måste du installera det digitala certifikatet som tillåter en namngiven individ (till exempel Jane Smith) att använda det installerade klientprogrammet. Om du behöver migrera ditt Adobe-program till en annan dator eller en annan namngiven användare måste du skaffa ett nytt certifikat från Adobe. Kontakta Adobes kundtjänst om du vill göra det.
+När du installerar en serverklient (till exempel [!DNL Insight] eller [!DNL Report]) måste du installera det digitala certifikatet som tillåter en namngiven individ (till exempel Jane Smith) att använda det installerade klientprogrammet. Om du behöver migrera ditt Adobe-program till en annan dator eller en annan namngiven användare måste du skaffa ett nytt certifikat från Adobe. Kontakta Adobe kundtjänst om du vill göra det.
 
 Klientprogrammet presenterar det här digitala certifikatet för att få åtkomst till en serverkomponent. En administratör för serverkomponenten kan begränsa åtkomsten till serverresurser baserat på de värden för det vanliga namnet eller organisationsenheten som visas i klientens certifikat.
 
-De digitala X.509-certifikat som installeras med Adobe-program gör det även möjligt för dess klient- och serverkomponenter att utbyta information via SSL (Secure Sockets Layer). SSL skyddar överföringar via HTTP med hjälp av ett krypteringssystem för offentlig och privat nyckel. Adobes implementering av SSL stöder 1024-bitars RSA-nycklar och använder en 128-bitars RC4-krypteringsalgoritm.
+De digitala X.509-certifikat som installeras med Adobe-program gör det även möjligt för dess klient- och serverkomponenter att utbyta information via SSL (Secure Sockets Layer). SSL skyddar överföringar via HTTP med hjälp av ett krypteringssystem för offentlig och privat nyckel. Adobe implementering av SSL stöder 1024-bitars RSA-nycklar och använder en 128-bitars RC4-krypteringsalgoritm.
 
-Förutom säkerhet fungerar de digitala certifikat som du installerar även som licensnycklar som gör att du kan köra den installerade Adobe-programvaran. För att det ska fungera på rätt sätt måste ett digitalt certifikat vara nodlåst och aktuellt, annars startar inte programmet.
+Förutom säkerhet fungerar de digitala certifikat som du installerar även som licensnycklar som gör att du kan köra det installerade Adobe-programmet. För att det ska fungera på rätt sätt måste ett digitalt certifikat vara nodlåst och aktuellt, annars startar inte programmet.
 
 ## Strängkryptering {#section-8abe6b2d95704d38a04137d5c4602f0b}
 
@@ -41,11 +44,11 @@ Mer information finns i [Strängkryptering](../../../../../home/c-inst-svr/c-ins
 
 ## Nodlåsta certifikat {#section-b3dc7dcf2aa3439cbe66b0461b42d485}
 
-Ett nodlåst certifikat är ett digitalt certifikat som har registrerats på den dator där det är installerat. Nodlåsning associerar ett certifikat permanent med en specifik nodidentifierare (ett värde som unikt identifierar en viss dator). Om du vill låsa certifikatet med nod måste din dator ha Internetåtkomst till Adobe License Server eller till en proxyserver som har åtkomst till licensservern.
+Ett nodlåst certifikat är ett digitalt certifikat som har registrerats på den dator där det är installerat. Nodlåsning associerar ett certifikat permanent med en specifik nodidentifierare (ett värde som unikt identifierar en viss dator). Om du vill låsa certifikatet med nod måste datorn ha Internetåtkomst till licensservern för Adobe eller till en proxyserver som har åtkomst till licensservern.
 
 Om du installerar på en dator som inte har åtkomst till Internet måste du skaffa och installera ett särskilt förlåst certifikat enligt beskrivningen i [Använda digitala certifikat på datorer utan Internet-åtkomst](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/c-dnld-dgtl-cert.md#section-809366329a7d4e198f95fe06c1f534fa).
 
-Om du installerar på en dator som har åtkomst till Internet är ditt digitala certifikat automatiskt nodlåst första gången du startar din Adobe-produkt. När certifikatet har låsts till en nod kan det inte användas på någon annan dator. Om du behöver migrera din Adobe-produkt till en annan dator måste du skaffa ett nytt, olåst certifikat från Adobe.
+Om du installerar på en dator som har åtkomst till Internet är ditt digitala certifikat automatiskt nodlåst första gången du startar Adobe. När certifikatet har låsts till en nod kan det inte användas på någon annan dator. Om du behöver migrera din Adobe-produkt till en annan dator måste du skaffa ett nytt, olåst certifikat från Adobe.
 
 ## Aktuella certifikat {#section-15aabaa8625c46edaa7436e1f3fc29c5}
 
@@ -55,7 +58,7 @@ Förutom att vara nodlåst måste ett digitalt certifikat vara aktuellt. För at
 
 Om du installerar på en dator som inte har åtkomst till Internet måste du begära ett förlåst certifikat för din installation av [!DNL Insight Server]. Ett förlåst certifikat är ett digitalt certifikat som Adobe manuellt låser till nodidentifieraren för datorn.
 
-Om du vill begära ett förlåst certifikat måste du skicka nodidentifieraren och ditt certifikatnummer till Adobes kundtjänst. Kontakta Adobes kundtjänst om du vill ha nodidentifieraren för din dator och begära Adobe Node Identifier-verktyget. Du kan också få nodidentifieraren från varningen om att Adobe-programvaran utfärdar problem när den försöker ansluta till licensservern och inte kan göra det.
+Om du vill begära ett förlåst certifikat måste du skicka nodidentifieraren och ditt certifikatnummer till Adobe kundtjänst. Kontakta Adobe Customer Care för att få nodidentifieraren för din dator och be om Adobe Node Identifier-verktyget. Du kan också hämta nodidentifieraren från varningen om att programvaran Adobe utfärdar problem när den försöker ansluta till licensservern och inte kan göra det.
 
 När du får det förlåsta certifikatet installerar du det enligt beskrivningen i de två sista stegen i [Installationsproceduren](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/c-dnld-dgtl-cert.md#section-19f31676aad344a98e26e4fca1fad03b)för digitalt certifikat. När certifikatet behöver omvalideras måste du hämta ett nytt, validerat certifikat från licensservern och installera om det på datorn.
 
