@@ -1,10 +1,13 @@
 ---
 description: Instruktionerna för att installera en Insight Server FSU och konfigurera den för administrativt bruk liknar de som används för att installera och konfigurera en Insight Server DPU.
-solution: Insight
+solution: Analytics
 title: Installationsprocedurer för en Insight Server FSU
 uuid: ffed5095-f83c-4641-9ccc-4b94f51c3f95
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 0%
 
 ---
 
