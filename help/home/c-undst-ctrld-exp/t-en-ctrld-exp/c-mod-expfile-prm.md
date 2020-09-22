@@ -1,11 +1,14 @@
 ---
 description: ExpFile-parametern pekar på platsen för experimentets konfigurationsfil, som definierar ditt experiment.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Ändra parametern ExpFile
 topic: Data workbench
 uuid: bf146f46-f541-4969-8d90-af1a0c969344
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 0%
 
 ---
 
