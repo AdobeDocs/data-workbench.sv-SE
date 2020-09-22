@@ -1,11 +1,14 @@
 ---
 description: När du har lagt till det nya fältet i Log Processing.cfg och skapat den nya delade omvandlingen och den utökade dimensionen, kan du visa den nya utökade dimensionen som du skapade så fort som den snabba inmatningsfasen av databearbetningen har slutförts.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Visa experimentresultat
 topic: Data workbench
 uuid: c0468cad-fb8d-4ecf-8912-bf80b44b0a65
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 0%
 
 ---
 
