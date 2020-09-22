@@ -1,10 +1,13 @@
 ---
 description: Procedur för att starta Insight Server och samtidigt registrera den som en Microsoft Windows-tjänst.
-solution: Insight
+solution: Analytics
 title: Registrerar Insight Server som en Windows-tjänst
 uuid: 1b3d53ca-d50f-4520-abf5-6d5c40493b88
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '582'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Procedur för att starta Insight Server och samtidigt registrera den som en Micr
 1. Om du vill kontrollera om det [!DNL Insight Server] uppstod några fel under starten klickar du på **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Event Viewer]**. Kommandosekvensen kan variera beroende på vilken version av Windows du använder.
 
    1. Markera [!DNL Event Viewer] loggen i den vänstra rutan i **[!UICONTROL Application]** fönstret.
-   1. I den högra rutan söker du efter händelser med&quot;Adobe&quot; i [!DNL Source] kolumnen.
+   1. I den högra rutan söker du efter händelser med Adobe i [!DNL Source] kolumnen.
    1. Om du hittar ett fel från &quot;Adobe&quot; dubbelklickar du på felet för att visa [!DNL Event Properties] fönstret. Det här fönstret innehåller detaljerad information om felet.
 
 1. Stäng Loggboken när du är klar med granskningen av [!DNL Applications] loggen.
