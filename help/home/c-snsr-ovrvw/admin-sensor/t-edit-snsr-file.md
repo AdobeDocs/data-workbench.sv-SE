@@ -1,10 +1,13 @@
 ---
 description: Sensorkonfigurationsfilen, txlogd.conf, innehåller parametrar som Sensor använder för att upprätta en anslutning till data workbench-servern.
-solution: Insight
+solution: Analytics
 title: Redigera filen txlog.conf för sensorn
 uuid: e7f41c14-9047-4e1a-be0f-8acc8ecb1160
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '260'
+ht-degree: 0%
 
 ---
 
@@ -26,4 +29,4 @@ När du ändrar andra [!DNL txlogd.conf] parametrar, t.ex. IP-adressen för [!DN
    * Platsen för den kontrollerade experimentella konfigurationsfilen (definieras av parametern ExpFile i [!DNL txlogd.conf] filen) ska finnas i en katalog på webbservern som är tillgänglig för webbinnehållsutvecklarna eller styrs av ditt innehållshanteringssystem.
    * Värdet i parametern ExpCookieURL är en virtuell sida som används för att testa webbplatser. En användare som besöker den sidan får ett nytt spårnings-ID.
 
-Mer information om hur du arbetar med [!DNL txlogd.conf]finns hos Adobes konsulttjänster.
+Mer information om hur du arbetar med [!DNL txlogd.conf]finns hos Adobe Consulting Services.
