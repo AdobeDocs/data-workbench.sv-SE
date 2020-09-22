@@ -1,10 +1,13 @@
 ---
 description: Formatera instruktioner om tidsbaserade parametrar i Insight Server.
-solution: Insight
+solution: Analytics
 title: Tidszonskoder
 uuid: dcc8aa15-5846-4f24-8b82-e25ff89871ba
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +28,7 @@ UTC +hhm- *format*
 
 Tecknet (+) kan vara ett plus- (+) eller ett minustecken (-), och *tt* är förskjutningen från UTC i timmar och minuter. Den valfria variabeln *visar* en uppsättning regler för att implementera sommartid eller en liknande policy för klockbyte.
 
-Om du anger *tabeller* måste en tabbavgränsad fil med namnet *&lt;[!DNL dstrules]>* [!DNL .dst] finnas i katalogen Dataset\TimeZone i antingen basprofilen (för konfigurationsfiler som inte är kopplade till en viss datauppsättning) eller datauppsättningsprofilen (för konfigurationsfiler som är datauppsättningsspecifika). Filen anger en oberoende uppsättning regler för tidszon för sommartid. Du kan ha olika regeluppsättningar för olika år. I den [!DNL DST.dst] fil som Adobe tillhandahåller i basprofilen anges de amerikanska standardreglerna som fastställs i Energy Policy Act från 2005 (som börjar 2007) och amerikanska regler för tidigare år.
+Om du anger *tabeller* måste en tabbavgränsad fil med namnet *&lt;[!DNL dstrules]>* [!DNL .dst] finnas i katalogen Dataset\TimeZone i antingen basprofilen (för konfigurationsfiler som inte är kopplade till en viss datauppsättning) eller datauppsättningsprofilen (för konfigurationsfiler som är datauppsättningsspecifika). Filen anger en oberoende uppsättning regler för tidszon för sommartid. Du kan ha olika regeluppsättningar för olika år. I den [!DNL DST.dst] fil som tillhandahålls av Adobe i basprofilen specificeras de amerikanska standardreglerna som fastställs i 2005 års energipolicylag (som börjar 2007) och USA:s regler för tidigare år.
 
 Exempel på tidszonsposter visas nedan:
 
