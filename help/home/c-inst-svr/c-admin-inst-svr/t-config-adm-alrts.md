@@ -1,10 +1,13 @@
 ---
 description: Administrativa varningar skickar e-postmeddelanden till de angivna e-postadresserna när fel upptäcks av Insight Server under den normala åtgärden.
-solution: Insight
+solution: Analytics
 title: Konfigurera administrativa aviseringar
 uuid: 398e088b-ff83-46ae-a20c-ba0b50d85702
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Filen Administrativa aviseringar, [!DNL Administrative Alerts.cfg], används fö
 
 >[!NOTE]
 >
->Om du kör ett kluster måste du skapa eller ändra aviseringar på huvudservern [!DNL Insight Server] i klustret.
+>Om du kör ett kluster måste du skapa eller ändra aviseringar på överordnad [!DNL Insight Server] i klustret.
 
 **Skapa eller ändra en administrativ varning**
 
@@ -45,4 +48,4 @@ Filen Administrativa aviseringar, [!DNL Administrative Alerts.cfg], används fö
 
    1. I [!DNL Server Files Manager]högerklickar du på bockmarkeringen för filen i [!DNL Temp] kolumnen och väljer **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
 
-1. (Valfritt) Om du arbetar i ett kluster och vill att samma administrativa varningar ska tillämpas på varje databehandlingsenhet, måste du kopiera och klistra in den uppdaterade [!DNL Administrative Alerts.cfg] filen i [!DNL Components for Processing Servers] mappen i huvudinstallationskatalogen [!DNL Insight Server] .
+1. (Valfritt) Om du arbetar i ett kluster och vill att samma administrativa varningar ska gälla för varje databehandlingsenhet, måste du kopiera och klistra in den uppdaterade [!DNL Administrative Alerts.cfg] filen i [!DNL Components for Processing Servers] mappen i den överordnad [!DNL Insight Server] installationskatalogen.
