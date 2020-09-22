@@ -1,16 +1,19 @@
 ---
 description: Kontrollerade försök är tester som gör att du kan jämföra resultat från en experimentell exempelgrupp med resultat från en standardkontrollgrupp.
-solution: Insight,Analytics
-title: Data Workbench-kontrollerade experiment
+solution: Analytics,Analytics
+title: Experimentera med Data Workbench
 topic: Data workbench
 uuid: 5fce2d9e-4975-44e4-a7c0-11064d8d28b4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 0%
 
 ---
 
 
-# Data Workbench-kontrollerade experiment{#data-workbench-controlled-experiments}
+# Experimentera med Data Workbench{#data-workbench-controlled-experiments}
 
 Kontrollerade försök är tester som gör att du kan jämföra resultat från en experimentell exempelgrupp med resultat från en standardkontrollgrupp.
 
