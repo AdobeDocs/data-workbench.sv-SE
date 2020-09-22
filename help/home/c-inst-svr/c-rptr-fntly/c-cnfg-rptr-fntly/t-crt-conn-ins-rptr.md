@@ -1,10 +1,13 @@
 ---
 description: Om nätverkets brandväggar inte förhindrar åtkomst till den upprepade servern från Insight-datorer kan du skapa en anslutning mellan den upprepade servern och Insight så att du kan hantera den upprepade servern med Insight.
-solution: Insight
+solution: Analytics
 title: Skapa en anslutning mellan Insight och Repeater
 uuid: dccce83a-8708-4763-a19a-64d905a9f624
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 0%
 
 ---
 
