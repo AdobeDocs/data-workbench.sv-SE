@@ -1,11 +1,14 @@
 ---
 description: I ett experiment kan du definiera valfritt antal testgrupper förutom kontrollgruppen.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Hur fungerar kontrollerade experiment?
 topic: Data workbench
 uuid: 9549e2ab-dca9-4fb1-9729-65072f951900
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 0%
 
 ---
 
@@ -24,5 +27,5 @@ Resultaten av försöken kan enkelt analyseras med hjälp av [!DNL Insight] vilk
 
 >[!NOTE]
 >
->Adobe rekommenderar starkt att kontrollerade experiment samordnas och utförs med hjälp av synpunkter från de personer i organisationen som ansvarar för att konfigurera och underhålla analysdatauppsättningarna.
+>Adobe rekommenderar starkt att kontrollerade experiment samordnas och utförs med synpunkter från de personer i organisationen som ansvarar för att konfigurera och underhålla analysdatauppsättningarna.
 
