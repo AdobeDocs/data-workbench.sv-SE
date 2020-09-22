@@ -1,10 +1,13 @@
 ---
 description: Sensorn kan, när den används på en server, samla in fält med händelsedata från en giltig HTTP-begäran eller ett giltigt svarshuvud eller variabel som är tillgänglig för den via serverns API.
-solution: Insight
+solution: Analytics
 title: Utbyggbara fält
 uuid: 91b9857e-44a4-497f-b157-51afd30306fe
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 0%
 
 ---
 
@@ -63,4 +66,4 @@ Följande tabell innehåller beskrivningar av komponenterna i en SpecialLogField
  </tbody> 
 </table>
 
-Kontakta Adobe Consulting Services om du behöver hjälp med [!DNL Sensor] att konfigurera för att samla in utbyggbara händelsedatafält.
+Kontakta Adobe Consulting Services om du behöver hjälp med [!DNL Sensor] att konfigurera för att samla in utbyggbara händelsedatapostfält.
