@@ -1,10 +1,13 @@
 ---
 description: Instruktioner för att installera och konfigurera en Insight Server FSU för användning med Repeater.
-solution: Insight
+solution: Analytics
 title: Konfigurera en Insight Server FSU för Repeater
 uuid: c2bae862-37d3-4841-b31b-59593c1e4316
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Utför följande uppgifter i rätt ordning. Alla undantag eller ändringar som d
 
 1. Installera det [!DNL Insight Server] digitala certifikatet enligt beskrivningen i [Hämta och installera digitala certifikat](../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/c-dnld-dgtl-cert.md#concept-4f79c240492f4e52b6375b4b3bbefa17).
 
-   När du har loggat in på Adobe License Server måste du komma ihåg att söka efter certifikatnamnet som matchar serverns vanliga namn på den angivna upprepade datorn.
+   När du har loggat in på Adobe licensserver måste du komma ihåg att söka efter certifikatnamnet som matchar serverns vanliga namn på den angivna upprepade datorn.
 
 1. Kontrollera portinställningarna i [!DNL Communications.cfg] filen enligt beskrivningen i [Kontrollera portinställningarna](../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-chk-pt-stgs.md#task-a91191b0a19e4437aa535a27c734ae64).
 
