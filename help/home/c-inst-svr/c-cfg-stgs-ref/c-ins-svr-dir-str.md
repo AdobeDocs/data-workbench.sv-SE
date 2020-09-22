@@ -1,10 +1,13 @@
 ---
 description: Lista över filer som installerats med Insight Server och de filer som finns efter registreringen, och som körs för första gången.
-solution: Insight
+solution: Analytics
 title: Katalogstruktur för Insight Server
 uuid: 8339b275-f118-4d5d-937e-4df9f8a56b50
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +70,7 @@ Följande kataloger ingår i [!DNL Insight Server] installationspaketet:
   </tr> 
   <tr> 
    <td colname="col1"> Profiler </td> 
-   <td colname="col2"> <p>Filer som är relaterade till varje profil (konfigurations-, arbetsyte- och visualiseringsfiler). Profiler fylls i med data från en datauppsättning. Datauppsättningarna innehåller händelsedata ("loggdata"); sådana data kan hämtas av installerade <span class="wintitle"> sensorer </span>, skickas via webbfyrar eller sidtaggar, eller matas in från datalager. <span class="keyword"> Insight- </span> användare med åtkomst till en viss profil kan använda uppsättningen bearbetade data för den profilen samt de arbetsytor och visualiseringar som definieras i den profilen. </p> <p>Arbetsytor är arbetsytor för systemadministration eller -analys. En arbetsyta kan innehålla flera gränssnitt med olika detaljer om systemprestanda. </p> </td> 
+   <td colname="col2"> <p>Filer som är relaterade till varje profil (konfigurations-, arbetsyte- och visualiseringsfiler). Profiler fylls i med data från en datauppsättning. Datauppsättningarna innehåller händelsedata ("loggdata"); sådana data kan hämtas av installerade <span class="wintitle"> sensorer </span>, skickas via webbfyrar eller sidtaggar, eller indata från data warehouse. <span class="keyword"> Insight- </span> användare med åtkomst till en viss profil kan använda uppsättningen bearbetade data för den profilen samt de arbetsytor och visualiseringar som definieras i den profilen. </p> <p>Arbetsytor är arbetsytor för systemadministration eller -analys. En arbetsyta kan innehålla flera gränssnitt med olika detaljer om systemprestanda. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mjukvara </td> 
