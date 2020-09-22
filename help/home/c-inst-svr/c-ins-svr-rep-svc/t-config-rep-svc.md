@@ -1,10 +1,13 @@
 ---
 description: Du måste konfigurera målservern/målservrarna för Insight för att hämta data från den repeater där de ursprungliga händelsedata lagras.
-solution: Insight
+solution: Analytics
 title: Konfigurerar replikeringstjänsten
 uuid: 93931b1d-d1fd-4e98-aa88-f7962eea92a2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1005'
+ht-degree: 0%
 
 ---
 
@@ -90,7 +93,7 @@ Om du vill konfigurera hämtning av data från ett mål [!DNL Repeater] till ett
    </tr> 
    <tr> 
       <td colname="col1"> Sluttid, starttid </td> 
-      <td colname="col2"> <p>(Valfritt) Begränsar uppsättningen händelsedatafiler som kopieras till mål- <span class="keyword"> Insight-servern</span> till de som innehåller data i det intervall som definieras av Start-tid och Sluttid. Om Starttid anges kopieras inte händelsedatafiler där alla loggposter kommer från tidigare än den angivna starttiden. Om Sluttid anges kopieras inte händelsedatafiler där alla loggposter från den angivna tiden eller senare inte. Om endast en del av data i en fil finns i det angivna intervallet kopieras hela filen till måldatorn. </p> <p>Adobe rekommenderar att du använder något av följande format för tillfället: 
+      <td colname="col2"> <p>(Valfritt) Begränsar uppsättningen händelsedatafiler som kopieras till mål- <span class="keyword"> Insight-servern</span> till de som innehåller data i det intervall som definieras av Starttid och Sluttid. Om Starttid anges kopieras inte händelsedatafiler där alla loggposter kommer från tidigare än den angivna starttiden. Om Sluttid anges kopieras inte händelsedatafiler där alla loggposter från den angivna tiden eller senare inte. Om endast en del av data i en fil finns i det angivna intervallet kopieras hela filen till måldatorn. </p> <p>Adobe rekommenderar att du använder något av följande format för tillfället: 
       <ul id="ul_AE15A159A4C043398B37AD56FDFD9DCA">
       <li id="li_4DEF0F13D13E43E39CBD1A0F32765F32">1 januari 2013 HH:MM:SS EDT </li>
       <li id="li_E3275312E93D4C1FAA028543DC21B51A">1 januari 2013 HH:MM:SS GMT </li>
@@ -108,7 +111,7 @@ Om du vill konfigurera hämtning av data från ett mål [!DNL Repeater] till ett
 
 I det här exemplet visas hur filer kopieras om parametrarna Förenkla banor och Rekursiv är inställda på true.
 
-Anta att fjärr-URI är [!DNL /RemoteRoot/] och att den lokala sökvägen är [!DNL E:\LocalRoot\]. På fjärrdatorn ( [!DNL Repeater]) är filerna ordnade på följande sätt:
+Anta att fjärr-URI är [!DNL /RemoteRoot/] och lokal sökväg är [!DNL E:\LocalRoot\]. På fjärrdatorn ( [!DNL Repeater]) är filerna ordnade på följande sätt:
 
 * [!DNL /RemoteRoot/fileA.txt]
 * [!DNL /RemoteRoot/Dir1/fileB.txt]
