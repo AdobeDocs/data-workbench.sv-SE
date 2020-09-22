@@ -1,10 +1,13 @@
 ---
 description: Som standard skriver Insight Server sin datauppsättning (temp.db) till samma enhet som programfilerna för Insight Server.
-solution: Insight
+solution: Analytics
 title: Konfigurera platsen för datauppsättningen (temp.db)
 uuid: a6884cad-70ed-4bc6-853c-700d301fb178
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 0%
 
 ---
 
