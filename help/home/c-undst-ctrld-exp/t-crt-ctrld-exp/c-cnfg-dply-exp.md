@@ -1,11 +1,14 @@
 ---
 description: När du har definierat mål, hypotes och experimentera samt skapat testinnehållet, måste du konfigurera Sensor för att driftsätta det kontrollerade experimentet.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Konfigurera och distribuera experimentet
 topic: Data workbench
 uuid: 460d3ea4-a6c8-4ac4-9a3f-eab71f65b096
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1486'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ När du har definierat mål, hypotes och experimentera samt skapat testinnehåll
 
 ## Konfigurera filen för experimentkonfiguration {#section-037fe7dea9c94aee9cdc354dafdb7c03}
 
-Om du vill konfigurera experimentet måste du fylla i det kalkylblad för experimentkonfiguration som tillhandahålls av Adobe (namnges [!DNL TestExperiment.xls] som standard). Filen konfigureras [!DNL Sensor] för att experimentera och är Excel-versionen av textfilen som du angav när du [ändrade parametern](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)ExpFile.
+Om du vill konfigurera experimentet måste du slutföra kalkylbladet för experimentkonfiguration som tillhandahålls av Adobe (namnges [!DNL TestExperiment.xls] som standard). Filen konfigureras [!DNL Sensor] för att experimentera och är Excel-versionen av textfilen som du angav när du [ändrade parametern](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)ExpFile.
 
 Den här filen kan innehålla information om flera försök, som kan köras samtidigt eller vid olika tidpunkter och använda olika grupper och procenttal, men dessa experiment korrelerar inte på något sätt.
 
@@ -34,7 +37,7 @@ Du bör fylla i den här filen innan experimentet börjar och inte ändra inform
 >
 >Ett försök är omedelbart ogiltigt om definitionen av försöket ändras efter att försöket har börjat.
 
-1. Om du har administratörsåtkomst till dina webb- eller programservrar navigerar du till installationsmappen på valfri [!DNL Sensor] dator i webbklustret för att komma åt [!DNL Sensor] [!DNL TestExperiment.xls] filen. Om du inte har administratörsåtkomst kontaktar du din Adobe-kontohanterare för att begära [!DNL TestExperiment.xls] filen.
+1. Om du har administratörsåtkomst till dina webb- eller programservrar navigerar du till installationsmappen på valfri [!DNL Sensor] dator i webbklustret för att komma åt [!DNL Sensor] [!DNL TestExperiment.xls] filen. Om du inte har administratörsåtkomst kontaktar du kontohanteraren i Adobe för att begära [!DNL TestExperiment.xls] filen.
 
 1. Öppna [!DNL TestExperiment.xls] filen (du kan ändra namn på filen om du vill) och fyll i följande fält:
 
