@@ -1,11 +1,14 @@
 ---
 description: En hypotes är ett antagande, som kan betraktas som sann för argumentet, som ger en preliminär förklaring som kan testas genom ytterligare undersökningar.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Formge en hypotes
 topic: Data workbench
 uuid: 3973060a-f49e-44e1-aa49-25059cb33783
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ Försök att tänka på din hypotes i termer av alternativa sidor, bilder eller 
 
 Din hypotes måste kunna ge ett resultat med statistisk signifikans. Detta kan uppnås genom att öka andelen besökare som ingår i testet eller genom att köra testet under en längre period.
 
-I det här skedet bör ni också definiera era besöksbaserade framgångsmått, antingen som en del av hypotesen eller som en extra matris.
+Nu bör ni också definiera era besöksbaserade framgångsmått, antingen som en del av hypotesen eller som en extra matris.
 
 **Hypotes:** Om du flyttar den grafiska länken&quot;Begär en demo&quot; närmare sidans överkant ökar besökskonverteringen med minst 1,5 %.
 
