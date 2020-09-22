@@ -1,10 +1,13 @@
 ---
 description: Instruktioner för att uppgradera Repeater med Insight eller för att uppgradera genom att kopiera filer.
-solution: Insight
+solution: Analytics
 title: Uppgraderar upprepning
 uuid: 2027ed9e-9dd9-40f5-b7e9-2709f8745b5c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ Du kan använda någon av följande metoder för att uppgradera [!DNL Repeater] 
 
 >[!NOTE]
 >
->Om du behöver ladda upp ytterligare filer för att slutföra [!DNL Repeater] uppgraderingen får du instruktioner från Adobe om detta.
+>Om du behöver ladda upp ytterligare filer för att slutföra [!DNL Repeater] uppgraderingen kommer Adobe att ge anvisningar om detta.
 
 När du har överfört uppgraderingsfilerna till [!DNL Repeater] [!DNL Repeater] datorn startas de om automatiskt och den nya versionen läses in.
 
@@ -50,6 +53,6 @@ När du har överfört uppgraderingsfilerna till [!DNL Repeater] [!DNL Repeater]
 
 >[!NOTE]
 >
->Om du behöver ladda upp ytterligare filer för att slutföra [!DNL Insight Server] uppgraderingen får du instruktioner från Adobe om detta.
+>Om du behöver ladda upp ytterligare filer för att slutföra [!DNL Insight Server] uppgraderingen kommer Adobe att ge anvisningar om detta.
 
 När du har kopierat uppgraderingsfilerna till [!DNL Repeater] datorn startar [!DNL Repeater] automatiskt om sig själv och läser in den nya versionen.
