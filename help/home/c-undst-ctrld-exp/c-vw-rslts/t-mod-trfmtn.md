@@ -1,11 +1,14 @@
 ---
 description: Nu när x-experimentfältet är tillgängligt måste du skapa en utökad dimension för att inkludera x-experimentfältet i datauppsättningen, så att du kan visa dina resultat i Insight.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Modifying Transformation.cfg
 topic: Data workbench
 uuid: c17e48db-8fd9-4640-b621-6963bb8223d7
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Nu när x-experimentfältet är tillgängligt måste du skapa en utökad dimensi
 
 Om du vill göra det måste du lägga till en ny dimension i [!DNL Transformation.cfg] filen.
 
-Om du planerar att köra flera försök måste du även lägga till en ny delad omvandling till [!DNL Transformation.cfg] filen. Den här delade omformningen separerar de olika experimentnamnen och gruppnamnen så att informationen blir lättare att tolka. För att undvika att dina data bearbetas igen om du skulle behöva lägga till fler experiment vid ett senare tillfälle rekommenderar Adobe att du lägger till den delade omvandlingen även om du för närvarande inte planerar att köra flera försök.
+Om du planerar att köra flera försök måste du även lägga till en ny delad omvandling till [!DNL Transformation.cfg] filen. Den här delade omformningen separerar de olika experimentnamnen och gruppnamnen så att informationen blir lättare att tolka. För att undvika att bearbeta dina data igen om du skulle behöva lägga till fler experiment vid ett senare tillfälle rekommenderar Adobe att du lägger till den delade omvandlingen även om du för närvarande inte planerar att köra flera försök.
 
 I proceduren nedan beskrivs hur du skapar både den nya delade omformningen och den utökade dimensionen. Om du inte vill lägga till den delade omformningen hoppar du bara över steg 5-7.
 
