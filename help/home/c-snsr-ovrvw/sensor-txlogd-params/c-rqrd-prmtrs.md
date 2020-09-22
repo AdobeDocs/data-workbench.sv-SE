@@ -1,10 +1,13 @@
 ---
 description: Information om de parametrar som krävs för Sensor txlogd.conf.
-solution: Insight
+solution: Analytics
 title: Obligatoriska parametrar
 uuid: 187f4199-ec7f-4d5a-93eb-64a62d51ec7b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Information om de parametrar som krävs för Sensor txlogd.conf.
   </tr> 
   <tr> 
    <td colname="col1"> ServerAddress </td> 
-   <td colname="col2"> <p>Adressen till den <span class="keyword"> data workbench-server</span> som den här <span class="wintitle"> sensorn</span> skickar händelsedata till. </p> <p>Obs!  <p>När du arbetar i en klustrad miljö bör <span class="wintitle"> Sensor</span> konfigureras för att komma åt master- <span class="keyword"> data workbench-servern</span> för att undvika synkroniseringsproblem. I Data Workbench kan du visa information om bearbetningsdata- <span class="keyword"> workbench-servrar</span> i ditt kluster med hjälp av menyalternativet Relaterade servrar i <span class="wintitle"> Serverhanteraren</span>. Mer information om <span class="wintitle"> Serverhanteraren</span>finns i <i><span class="keyword"> Data Workbench</span><span class="wintitle"> Sensor</span> Guide</i>. </p> <p>Om webbservern kan matcha servernamn via DNS kan du ange serverns adress efter namn. Annars måste du ange serverns numeriska IP-adress. </p> <p>Exempel: <span class="filepath"> ServerAddress 10.1.0.7</span> eller </p> <p> <span class="filepath"> ServerAddress vserver01.mycompany.com</span> </p> </p> </td> 
+   <td colname="col2"> <p>Adressen till den <span class="keyword"> data workbench-server</span> som den här <span class="wintitle"> sensorn</span> skickar händelsedata till. </p> <p>Obs!  <p>När du arbetar i en klustrad miljö bör <span class="wintitle"> Sensor</span> konfigureras för att komma åt den överordnad <span class="keyword"> data workbench-servern</span> för att undvika synkroniseringsproblem. I Data Workbench kan du visa information om bearbetningen av <span class="keyword"> data workbench-servrar</span> i ditt kluster med hjälp av menyalternativet Relaterade servrar i <span class="wintitle"> Serverhanteraren</span>. Mer information om <span class="wintitle"> Serverhanteraren</span>finns i <i><span class="keyword"> Data Workbench</span><span class="wintitle"> Sensor</span> Guide</i>. </p> <p>Om webbservern kan matcha servernamn via DNS kan du ange serverns adress efter namn. Annars måste du ange serverns numeriska IP-adress. </p> <p>Exempel: <span class="filepath"> ServerAddress 10.1.0.7</span> eller </p> <p> <span class="filepath"> ServerAddress vserver01.mycompany.com</span> </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL </td> 
