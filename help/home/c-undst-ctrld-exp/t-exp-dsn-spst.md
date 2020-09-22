@@ -1,11 +1,14 @@
 ---
 description: Den här filen fungerar inte bara som ett kalkylblad, utan också som en referens till dina beslut om experimentet.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Experimentera med kalkylblad
 topic: Data workbench
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1398'
+ht-degree: 0%
 
 ---
 
@@ -14,13 +17,13 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 Den här filen fungerar inte bara som ett kalkylblad, utan också som en referens till dina beslut om experimentet.
 
-Om du behöver hjälp med att utforma ditt experiment kan du använda det experimentella designkalkylblad (som heter VS Controlled Experiment Design.xls som standard) som tillhandahålls av Adobe.
+Om du behöver hjälp med att utforma ditt experiment kan du använda det experimentella designkalkylbladet (som heter VS Controlled Experiment Design.xls som standard) som tillhandahålls av Adobe.
 
 Kalkylbladet för experimentell design kan endast ge användbara statistiska slutsatser när det aktuella mätvärdet definieras som en procentandel av besökarna som uppfyller vissa kriterier. Det är alltså bara användbart när man testar en besöksbaserad måtthypotes.
 
 **Utforma ett experiment med hjälp av designfilen för experimentet**
 
-1. Om du har administratörsåtkomst till dina webb- eller programservrar navigerar du till installationsmappen på valfri [!DNL Sensor] [!DNL Sensor] dator i webbklustret. Om du inte har administratörsåtkomst kontaktar du Adobe-kontohanteraren för att begära filen.
+1. Om du har administratörsåtkomst till dina webb- eller programservrar navigerar du till installationsmappen på valfri [!DNL Sensor] [!DNL Sensor] dator i webbklustret. Om du inte har administratörsåtkomst kontaktar du kontohanteraren i Adobe för att begära filen.
 1. Öppna filen VS Controlled Experiment Design.xls. (Du kan ändra namn på filen om du vill.)
 
    Kalkylbladet på följande sida är ett exempel på hur du skulle slutföra kalkylbladet när du förbereder testning av exempelhypotesen som används i hela den här guiden.
@@ -55,7 +58,7 @@ Kalkylbladet för experimentell design kan endast ge användbara statistiska slu
   </tr> 
   <tr> 
    <td colname="col1"> Måttdefinition </td> 
-   <td colname="col2"> <p>Definitionen av det mätvärde som experimentet baseras på. </p> <p>Format: Besökare[X]/Besökare </p> <p>Exempel: <span class="filepath"> Visitors[URI='conversionpage.asp']/Visitors</span></p> </td> 
+   <td colname="col2"> <p>Definitionen av det mätvärde som experimentet baseras på. </p> <p>Format: Besökare[X]/Besökare </p> <p>Exempel: <span class="filepath"> Besökare[URI='conversionpage.asp']/Besökare</span></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Avsedd starttid </td> 
@@ -91,11 +94,11 @@ Kalkylbladet för experimentell design kan endast ge användbara statistiska slu
   </tr> 
   <tr> 
    <td colname="col1"> Större än värdet för kontrollgruppen? </td> 
-   <td colname="col2"> Ställ in det här fältet på True om du vill kunna dra slutsatsen att testgruppens mått ökade under experimentet. Ställ in det här fältet på Falskt för att minska antalet besökare som behövs för att dra slutsatser. Adobe rekommenderar att du anger det som True. </td> 
+   <td colname="col2"> Ställ in det här fältet på True om du vill kunna dra slutsatsen att testgruppens mått ökade under experimentet. Ställ in det här fältet på Falskt för att minska antalet besökare som behövs för att dra slutsatser. Adobe rekommenderar att du ställer in det på True. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mindre än värdet för kontrollgruppen? </td> 
-   <td colname="col2"> Ställ in det här fältet på True om du vill kunna dra slutsatsen att testgruppens mätvärden minskade under experimentet. Adobe rekommenderar att du anger det som True. </td> 
+   <td colname="col2"> Ställ in det här fältet på True om du vill kunna dra slutsatsen att testgruppens mätvärden minskade under experimentet. Adobe rekommenderar att du ställer in det på True. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Minst (identifieringsnivå) </td> 
