@@ -1,10 +1,13 @@
 ---
 description: Med tjänsten Insight ServerReplication kan du överföra händelsedata som samlats in och lagrats på en Insight Server-dator till en annan Insight Server-dator.
-solution: Insight
+solution: Analytics
 title: Installera replikeringstjänsten
 uuid: a6467d5f-ca1c-4368-ba83-0b6bcabbe511
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 0%
 
 ---
 
