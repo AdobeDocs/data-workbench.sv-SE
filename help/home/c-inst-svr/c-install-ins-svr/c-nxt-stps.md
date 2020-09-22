@@ -1,17 +1,20 @@
 ---
-description: Instruktioner för att slutföra installationen av Adobe-programmet.
-solution: Insight
+description: Instruktioner för att slutföra installationen av ditt Adobe-program.
+solution: Analytics
 title: Nästa steg
 uuid: 9707adc2-0618-4e94-baed-80b076d60f29
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '115'
+ht-degree: 0%
 
 ---
 
 
-# Nästa steg{#next-steps}
+# Next Steps{#next-steps}
 
-Instruktioner för att slutföra installationen av Adobe-programmet.
+Instruktioner för att slutföra installationen av ditt Adobe-program.
 
 * Installera minst ett exemplar av [!DNL Insight] enligt * [!DNL Insight] User Guide*.
 
