@@ -1,10 +1,13 @@
 ---
 description: De administrativa uppgifterna för repetitiva funktioner liknar dem för Insight Server.
-solution: Insight
+solution: Analytics
 title: Administrera upprepare
 uuid: 4fbfce3a-2610-4dcd-a585-cb7ee07b90db
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 0%
 
 ---
 
