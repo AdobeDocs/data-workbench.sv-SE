@@ -1,10 +1,13 @@
 ---
 description: Du bör regelbundet övervaka tillgängligt diskutrymme så att alla Insight Server-datorer fortsätter att fungera på högsta möjliga nivå.
-solution: Insight
+solution: Analytics
 title: Övervaka diskutrymme
 uuid: 13248e36-4e88-4212-816e-bcc12deefcb4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 0%
 
 ---
 
@@ -26,5 +29,5 @@ Mer information om krav för datalagring än vad som anges i det här avsnittet 
 
 >[!NOTE]
 >
->Adobes konsulter kan utvärdera ditt användningsscenario för att hjälpa dig att projicera den mängd datalagring som din användning av Adobes programvaror genererar och kräver. Kontakta Adobes supporttjänster om du vill ha en sådan utvärdering.
+>Adobe konsulter kan utvärdera ditt användningsscenario för att hjälpa dig att projicera den mängd datalagring som din användning av Adobe program genererar och kräver. Kontakta Adobe Support om du vill ha en sådan utvärdering.
 
