@@ -1,11 +1,14 @@
 ---
 description: När du har kört experimentet tills det minsta antal besökare som krävs har deltagit i experimentet kan du vara säker på att du har tillräcklig statistisk tillförlitlighet för att utvärdera resultatet av ditt experiment.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Utvärdera experimentet
 topic: Data workbench
 uuid: 88fd81bc-b944-48ea-bd4d-8716979ec69e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
 
