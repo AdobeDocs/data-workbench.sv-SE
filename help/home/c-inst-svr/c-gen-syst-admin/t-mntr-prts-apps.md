@@ -1,10 +1,13 @@
 ---
 description: Om du vill övervaka implementeringen mer noggrant kan du övervaka alla portar på serverdatorerna samt de programvaruprodukter som körs på var och en av dessa portar.
-solution: Insight
+solution: Analytics
 title: Övervaka portar och program
 uuid: 63d92718-81df-49eb-adda-8b49bde57a9d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ Med ett program eller skript kan du övervaka den TCP-port som varje program kö
 
    Exempel: [!DNL https://127.0.0.1/Status/]
 
-   Datorn ska svara med en serverstatusbeskrivning. Om du inte svarar kan du kontrollera händelseloggarna och kontakta Adobes kundtjänst.
+   Datorn ska svara med en serverstatusbeskrivning. Om du inte svarar kan du kontrollera händelseloggarna och kontakta Adobe kundtjänst.
 
    Mer information om den här typen av avancerad övervakning finns hos Adobe Consulting Services.
 
