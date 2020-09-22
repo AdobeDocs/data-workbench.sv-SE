@@ -1,10 +1,13 @@
 ---
 description: En data workbench-server blir medveten om en datakälla, till exempel en sensor, när den tar emot data från den källan.
-solution: Insight
+solution: Analytics
 title: Förstå"från och med"
 uuid: a1853573-e77c-41f7-8b99-2843e38cc82d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 0%
 
 ---
 
