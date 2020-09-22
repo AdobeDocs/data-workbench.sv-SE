@@ -1,15 +1,18 @@
 ---
 description: När du har konfigurerat Transform måste du konfigurera det så att det exporterar loggkälldata för användning i andra program.
-solution: Insight
+solution: Analytics
 title: Nästa steg
 uuid: 359f24da-6367-4992-9153-66d872ed6b21
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '115'
+ht-degree: 0%
 
 ---
 
 
-# Nästa steg{#next-steps}
+# Next Steps{#next-steps}
 
 När du har konfigurerat Transform måste du konfigurera det så att det exporterar loggkälldata för användning i andra program.
 
