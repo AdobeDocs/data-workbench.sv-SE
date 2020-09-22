@@ -1,10 +1,13 @@
 ---
 description: Insight Server lyssnar som standard på port 80 (för HTTP) och 443 (för HTTPS).
-solution: Insight
+solution: Analytics
 title: Kontrollera portinställningarna
 uuid: 1adad226-5891-4498-80b6-1bb4d67f5bbb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '114'
+ht-degree: 0%
 
 ---
 
