@@ -1,11 +1,14 @@
 ---
 description: Testresultaten måste vara tydliga och meningsfulla så att du kan vara säker på att fatta stora dollarbeslut baserat på dessa resultat.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Vad ska jag testa?
 topic: Data workbench
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 0%
 
 ---
 
