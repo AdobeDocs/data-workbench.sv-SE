@@ -1,10 +1,13 @@
 ---
 description: Information om övervakning av datauppsättningar och tillägg av nya platser för datalagring av datauppsättningar.
-solution: Insight
+solution: Analytics
 title: Övervaka datauppsättningsdataområde
 uuid: 0b7b95e7-b1bb-49cf-b465-fdbdc4ee214e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ Om du vill [!DNL Insight Server] underhålla datauppsättningen på en annan enh
 
    >[!NOTE]
    >
-   >Parametern Identifiera diskfel är som standard inställd på true. Parametern Skivcachestorlek (MB) styr mängden minne som [!DNL Insight Server] används för att öka diskens åtkomsthastighet och är som standard inställd på 128. Kontakta Adobe innan du ändrar någon av dessa parametrar.
+   >Parametern Identifiera diskfel är som standard inställd på true. Parametern Skivcachestorlek (MB) styr mängden minne som [!DNL Insight Server] används för att öka diskens åtkomsthastighet och som standard är inställd på 128. Kontakta Adobe innan du ändrar någon av dessa parametrar.
 
 1. Om du vill ändra diskfilerna på [!DNL Insight Server] datorn högerklickar du **[!UICONTROL Disk Files]** och klickar på **[!UICONTROL Add new]** > **[!UICONTROL Disk File]**.
 
@@ -52,7 +55,7 @@ Om du vill [!DNL Insight Server] underhålla datauppsättningen på en annan enh
 
    >[!NOTE]
    >
-   >Parametern Identifiera diskfel är som standard inställd på true. Parametern Skivcachestorlek (MB) styr mängden minne som [!DNL Insight Server] används för att öka diskens åtkomsthastighet och är som standard inställd på 128. Kontakta Adobe innan du ändrar någon av dessa parametrar.
+   >Parametern Identifiera diskfel är som standard inställd på true. Parametern Skivcachestorlek (MB) styr mängden minne som [!DNL Insight Server] används för att öka diskens åtkomsthastighet och som standard är inställd på 128. Kontakta Adobe innan du ändrar någon av dessa parametrar.
 
 1. Spara ändringarna på servern genom att göra följande:
 
