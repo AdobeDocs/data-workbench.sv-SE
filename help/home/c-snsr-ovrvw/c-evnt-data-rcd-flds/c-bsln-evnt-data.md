@@ -1,10 +1,13 @@
 ---
 description: Information om baslinjehändelsedatapostfält som registrerats av sensorn.
-solution: Insight
+solution: Analytics
 title: Fält för baslinjedatapost för händelser
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 0%
 
 ---
 
