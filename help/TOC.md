@@ -3,11 +3,11 @@ cloud: experience-cloud
 product: analytics
 audience: end-user
 user-guide-title: Hjälp om Data Workbench
-user-guide-description: Learn about the multi-channel capabilities of Data Workbench. Includes Data Workbench Client, Installation, Dataset Configuration guides, and more.
+user-guide-description: Läs mer om Datans Workbench flerkanalsfunktioner. Innefattar handböcker om Data Workbench Client, Installation, Dataset Configuration med mera.
 translation-type: tm+mt
 source-git-commit: 53e6b7b96e7addd848a00691163878846b22b4c6
 workflow-type: tm+mt
-source-wordcount: '3518'
+source-wordcount: '3536'
 ht-degree: 0%
 
 ---
@@ -96,10 +96,10 @@ ht-degree: 0%
       + [Segmentexport med anpassade rubriker](home/c-get-started/c-exp-data-seg-exp/c-segment-export.md)
       + [Exportera ett segment med hjälp av S/FTP-leverans](home/c-get-started/c-exp-data-seg-exp/exporting-data.md)
       + [Exportera profiler och målgrupper](home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
-      + [Exportera till Analytics bastjänster](home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
+      + [Exportera till bastjänsterna i Analytics](home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
       + [Exportera till Adobe Target](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
       + [Guiden för segmentexport](home/c-get-started/c-exp-data-seg-exp/segment-export.md)
-   + [Analytics Reports](home/c-get-started/c-template-report-types.md)
+   + [Analysrapporter](home/c-get-started/c-template-report-types.md)
    + Attributionsrapporter {#attribution-reports}
       + [Använda attribueringsrapporter](home/c-get-started/c-attribution-profiles/c-attribution-profiles.md)
       + [Översikt över attributprofiler](home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
@@ -211,7 +211,7 @@ ht-degree: 0%
          + [Olika typer av processkartor](home/c-get-started/c-analysis-vis/c-proc-maps/c-types-proc-maps.md)
          + [Skapa en processkarta](home/c-get-started/c-analysis-vis/c-proc-maps/c-create-proc-maps.md)
          + [Flytta och rotera en processkarta](home/c-get-started/c-analysis-vis/c-proc-maps/c-move-proc-maps.md)
-         + [Markera en nod](home/c-get-started/c-analysis-vis/c-proc-maps/c-sel-nodes.md)
+         + [Välj en nod](home/c-get-started/c-analysis-vis/c-proc-maps/c-sel-nodes.md)
          + [Flytta en nod](home/c-get-started/c-analysis-vis/c-proc-maps/c-move-nodes.md)
          + [Ta bort en nod](home/c-get-started/c-analysis-vis/c-proc-maps/c-rem-nodes.md)
          + [Ge en nod en etikett](home/c-get-started/c-analysis-vis/c-proc-maps/c-label-nodes.md)
@@ -348,7 +348,7 @@ ht-degree: 0%
       + [Konfigurera en sökvägsläsare](home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md)
       + [Konfigurera en processkarta](home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md)
       + [Konfigurera gränssnittet för datauppsättningsschema](home/c-get-started/c-intf-anlys-ftrs/t-dataset-schema-intf.md)
-      + [Lokalisera tidsdimensioner](home/c-get-started/c-intf-anlys-ftrs/dwb-format-time-dimensions.md)
+      + [Lokalisera Dimensioner för tid](home/c-get-started/c-intf-anlys-ftrs/dwb-format-time-dimensions.md)
    + [Konfigurationsparametrar](home/c-get-started/c-insght-config-param.md)
    + Syntax för frågespråk {#qry-lang-syntx}
       + [Syntax för frågespråk](home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md)
@@ -439,17 +439,17 @@ ht-degree: 0%
          + [Integrera uppslagsdata](home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-int-lookup-data.md)
          + [Fylla i uppslagstabellen](home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-pop-lookup-table.md)
          + [Definiera uppslagsomformningar](home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-def-lookup-transf.md)
-   + Utökade dimensioner {#extended-dimensions}
-      + [Om utökade dimensioner](home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)
-      + [Definiera utökade dimensioner](home/c-dataset-const-proc/c-ex-dim/t-def-ex-dim.md)
-      + Typer av utökade dimensioner {#extended-dimensions-types}
-         + [Typer av utökade dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-types-ex-dim.md)
-         + [Räknbara dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-count-dim.md)
-         + [Enkla dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-simple-dim.md)
-         + [Många-till-många-dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-many-dim.md)
-         + [Numeriska dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md)
-         + [Dekorativa dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-denormal-dim.md)
-         + [Tidsdimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-time-dim.md)
+   + Utökade Dimensioner {#extended-dimensions}
+      + [Om utökade Dimensioner](home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)
+      + [Definiera utökade Dimensioner](home/c-dataset-const-proc/c-ex-dim/t-def-ex-dim.md)
+      + Typer av utökade Dimensioner {#extended-dimensions-types}
+         + [Typer av utökade Dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-types-ex-dim.md)
+         + [Räkningsbara Dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-count-dim.md)
+         + [Enkla Dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-simple-dim.md)
+         + [Många-till-många-Dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-many-dim.md)
+         + [Numeriska Dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md)
+         + [Dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-denormal-dim.md)
+         + [Dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-time-dim.md)
    + Omformningsfunktioner {#transform-functionality}
       + [Om omformningsfunktioner](home/c-dataset-const-proc/c-transf-func/c-abt-transf-func.md)
       + Konfigurationsfiler för transformering {#config-files-transform}
@@ -472,7 +472,7 @@ ht-degree: 0%
          + [Fältvisningsprogram](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-field-viewers.md)
       + Döljer datauppsättningskomponenter {#hide-dataset-comp}
          + [Döljer datauppsättningskomponenter](home/c-dataset-const-proc/c-dataset-config-tools/c-hide-dataset-comp/c-hide-dataset-comp.md)
-         + [Dölja utökade dimensioner](home/c-dataset-const-proc/c-dataset-config-tools/c-hide-dataset-comp/c-hide-ex-dim.md)
+         + [Dölja utökade Dimensioner](home/c-dataset-const-proc/c-dataset-config-tools/c-hide-dataset-comp/c-hide-ex-dim.md)
          + [Döljer datauppsättningskonfigurationsfiler](home/c-dataset-const-proc/c-dataset-config-tools/c-hide-dataset-comp/t-hide-dataset-config-files.md)
    + Villkor {#conditions}
       + [Om villkor](home/c-dataset-const-proc/c-conditions/c-abt-cond.md)
@@ -598,22 +598,22 @@ ht-degree: 0%
    + [P3P-överväganden för sidtaggning från tredje part](home/c-undst-pg-tag/c-cons-thrd-pty-pg-tag.md)
    + [Arbetsblad för variabelmappning för sidtagg](home/c-undst-pg-tag/c-pg-tag-wkst.md)
 + Mätvärden, dimensioner och filter {#metrics}
-   + [Om Data Workbench, mått och filter](home/c-about/c-about.md)
-   + [Expandera mått, dimensioner och filter](home/c-about/c-expand-capabilities.md)
-   + [Dimensionstyper](home/c-about/c-dimension-types.md)
+   + [Om Data Workbench Metrics, Dimensions, and Filters](home/c-about/c-about.md)
+   + [Expandera mått, Dimensioner och filter](home/c-about/c-expand-capabilities.md)
+   + [Dimensioner](home/c-about/c-dimension-types.md)
    + [Guiden Metrisk dim](home/c-about/metric-dim.md)
-   + Inbyggda mått, dimensioner och filter {#built-in-metrics}
-      + [Inbyggda mått, dimensioner och filter](home/c-about/c-builtin-metrics-dims/c-builtin-metrics-dims.md)
+   + Inbyggda mätvärden, Dimensioner och filter {#built-in-metrics}
+      + [Inbyggda mått, Dimensioner och filter](home/c-about/c-builtin-metrics-dims/c-builtin-metrics-dims.md)
       + [Inbyggda mätvärden](home/c-about/c-builtin-metrics-dims/c-builtin-metrics.md)
-      + [Inbyggda dimensioner](home/c-about/c-builtin-metrics-dims/c-builtin-dims.md)
+      + [Inbyggda Dimensioner](home/c-about/c-builtin-metrics-dims/c-builtin-dims.md)
       + [Inbyggda profilfilter](home/c-about/c-builtin-metrics-dims/c-builtin-filters.md)
    + Baslinjeprofiler {#baseline-profiles}
       + [Översikt över baslinjeprofiler](home/c-about/c-about-baseline-profiles/c-about-baseline-profiles.md)
       + [Trafikprofilmått](home/c-about/c-about-baseline-profiles/c-traffic-profile.md)
-      + [Trafikprofildimensioner](home/c-about/c-about-baseline-profiles/c-traffic-profile-dims.md)
+      + [Dimensioner för trafikprofiler](home/c-about/c-about-baseline-profiles/c-traffic-profile-dims.md)
       + [Värdeprofilmått](home/c-about/c-about-baseline-profiles/c-value-profile-metrics.md)
-      + [Värdeprofilsdimensioner](home/c-about/c-about-baseline-profiles/c-value-profile-dims.md)
-      + [Marknadsföringsprofildimensioner](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
+      + [Dimensioner för värdeprofil](home/c-about/c-about-baseline-profiles/c-value-profile-dims.md)
+      + [Dimensioner för marknadsföringsprofiler](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
 + Geografi {#geography}
    + [Om Data Workbench Geography](home/c-geo-oview/c-geo-oview.md)
    + Installerar Data Workbench Geography {#install-geography}
@@ -751,7 +751,7 @@ ht-degree: 0%
       + Konfigurerar {#configure}
          + [Konfigurera Repeater-funktioner](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-cnfg-rptr-fntly.md)
          + [Konfigurera en Insight Server FSU för Repeater](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-fsu-rptr.md)
-         + [Konfigurera åtkomstkontroll för Target-datorer](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
+         + [Konfigurera åtkomstkontroll för måldatorer](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
          + [Skapa en anslutning mellan Insight och Repeater](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-crt-conn-ins-rptr.md)
          + [Nästa steg](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-nxt-stps-reptr.md)
       + [Administrera upprepare](home/c-inst-svr/c-rptr-fntly/c-admin-rptr.md)
@@ -761,7 +761,7 @@ ht-degree: 0%
       + [Övervaka händelser för fel](home/c-inst-svr/c-gen-syst-admin/c-mntr-errs.md)
       + [Övervaka portar och program](home/c-inst-svr/c-gen-syst-admin/t-mntr-prts-apps.md)
    + Uppgradering och avinstallation {#upgrade-uninstall}
-      + [Uppgradera och avinstallera Adobe-program](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-uninst-sftwr.md)
+      + [Uppgradera och avinstallera Adobe-programvara](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-uninst-sftwr.md)
       + Uppgraderar Insight Server {#upgrade-insight-server}
          + [Uppgraderar Insight Server](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-sftwr.md)
          + [DWB Server-uppgradering: 6.2 till 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
@@ -810,7 +810,7 @@ ht-degree: 0%
       + [Bekräfta att datainsamlaren körs](home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md)
       + [Bekräfta att dataöverföringen körs](home/c-snsr-ovrvw/admin-sensor/c-data-trmtr-rng.md)
       + [Övervaka administrativa händelser](home/c-snsr-ovrvw/admin-sensor/c-mntr-admin-evts.md)
-      + [Ändra Target Data Workbench Server](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
+      + [Ändra målserverns Data Workbench](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
       + Offlinesensorer {#offline}
          + [Hantera med offlinesenssorer](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-ofln-snsrs.md)
          + [Förstå&quot;från och med&quot;](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-as-of-tm.md)
@@ -837,9 +837,9 @@ ht-degree: 0%
       + [Arbetsytan Historik för Data Workbench](home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md)
       + [Datans Workbench profilstatus, arbetsyta](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
       + [Statusarbetsytan för Data Workbench Server](home/monitoring-installation/monitoring-profiles/monitoring-server-using.md)
-   + Datans Workbench profilmått och mått {#monitoring-appendix}
-      + [Datans Workbench profilmått och mått](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
-      + [Dimensioner i Datans Workbench historiska profil](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
+   + Dimensioner och mått för Datans Workbench profil {#monitoring-appendix}
+      + [Dimensioner och mått för Datans Workbench profil](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
+      + [Dimensioner i Datans Workbench historikprofil](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
       + [Dimensioner i Datans Workbench profilstatusprofil](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
       + [Dimensioner i Datans Workbench serverstatusprofil](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
       + [Mätvärden i Datans Workbench historiska övervakningsprofil](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
@@ -946,7 +946,7 @@ ht-degree: 0%
       + [Ta bort en användargrupp](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-removing-a-user-group.md)
    + [Systemloggar](home/c-preparing-for-dashboard-installation/c-system-logs.md)
 + Implementera Data Workbench {#implement}
-   + [Implementera Adobe-Data Workbench](home/dwb-implement-overview/dwb-implement-overview.md)
+   + [Implementera Adobe Data Workbench](home/dwb-implement-overview/dwb-implement-overview.md)
    + [Data Workbench Discovery och krav](home/dwb-implement-overview/dwb-implement-discovery.md)
    + [Installation och etablering av Data Workbench](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
    + [Grundläggande introduktionsinstruktioner för DWB Managed Services](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md)
@@ -956,7 +956,7 @@ ht-degree: 0%
    + Konfiguration och implementering {#implement-configure}
       + [Konfiguration och implementering av Data Workbench](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-configure.md)
       + [Konfigurera händelsetid](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-event-time.md)
-      + [Dimensionsinställningar](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-dim-setup.md)
+      + [Dimension](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-dim-setup.md)
       + [Mätinställningar](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-metric-setup.md)
       + [Validering av interna och externa FTP-servrar](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-validation-ftp.md)
       + [Validerar datafeeds för historik](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-datafeeds-historical.md)
@@ -968,7 +968,7 @@ ht-degree: 0%
    + Implementering av funktioner {#feature-implemenatation}
       + [Data Workbench implementering av funktioner](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
       + [Konfigurationsändringar för nytt schema](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
-      + [Inställningar för härledda dimensioner](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
+      + [Inställningar för härledda Dimensioner](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Fråge-API](https://www.adobe.io/)
 + [Integrering av Data Workbench med Adobe Target](home/dwb-adobe-target.md)
 + [Datans Workbench ordlista](dwb-glossary.md)
