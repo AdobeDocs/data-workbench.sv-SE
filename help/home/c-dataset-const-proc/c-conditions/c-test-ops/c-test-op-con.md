@@ -5,9 +5,9 @@ title: Villkor för teståtgärd
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+source-git-commit: 1630f34588e4984226b70c963618856496b42346
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1115'
 ht-degree: 2%
 
 ---
@@ -199,7 +199,7 @@ Parametrarna för [!DNL Regular Expression] villkoret beskrivs i följande tabel
  </tbody> 
 </table>
 
-I det här exemplet visas hur villkoret används för att matcha ett fält med data som samlats in från webbplatstrafiken. [!DNL Regular Expression] Villkoret returnerar bara true om fältet cs(reference-query) innehåller en sträng som matchar det reguljära uttrycket `campaign=C[1-9][0-9]{4}`. Det här reguljära uttrycket matchar alla strängar som innehåller &quot;campaign=C12345&quot;. Mönstret matchar dock inte strängen &quot;campaign=C0123&amp;&quot; eftersom det första tecknet efter &quot;C&quot; inte finns i intervallet 1-9.
+I det här exemplet visas hur villkoret används för att matcha ett fält med data som samlats in från webbplatstrafiken. [!DNL Regular Expression] Villkoret returnerar bara true om fältet cs(reference-query) innehåller en sträng som matchar det reguljära uttrycket `campaign=C[1-9][0-9]{4}`. Det här reguljära uttrycket matchar alla strängar som innehåller `campaign=C12345`. Mönstret matchar dock inte strängen `campaign=C0123&` eftersom det första tecknet efter &quot;C&quot; inte ligger i intervallet 1-9.
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
