@@ -5,7 +5,10 @@ title: Villkor för teståtgärd
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '1119'
+ht-degree: 2%
 
 ---
 
@@ -38,7 +41,7 @@ Parametrarna för [!DNL Compare] villkoret beskrivs i följande tabell:
   <tr> 
    <td colname="col1"> Skiftlägeskänslig </td> 
    <td colname="col2">Sant eller falskt. Används endast om typen är <span class="wintitle"> LEXICAL</span>. Om värdet är false betraktas gemener och versaler som lika. </td> 
-   <td colname="col3"> true </td> 
+   <td colname="col3"> sant </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Kommentarer </td> 
@@ -113,7 +116,7 @@ Parametrarna för [!DNL Range] villkoret beskrivs i följande tabell:
   <tr> 
    <td colname="col1"> Skiftlägeskänslig </td> 
    <td colname="col2">Sant eller falskt. Används endast om <span class="wintitle"> typen</span> är <span class="wintitle"> LEXICAL</span>. Om värdet är false betraktas gemener och versaler som lika. </td> 
-   <td colname="col3"> true </td> 
+   <td colname="col3"> sant </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Kommentarer </td> 
@@ -171,7 +174,7 @@ Parametrarna för [!DNL Regular Expression] villkoret beskrivs i följande tabel
   <tr> 
    <td colname="col1"> Skiftlägeskänslig </td> 
    <td colname="col2"> Sant eller falskt. Om värdet är false betraktas gemener och versaler som lika. </td> 
-   <td colname="col3"> true </td> 
+   <td colname="col3"> sant </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Kommentarer </td> 
@@ -196,7 +199,7 @@ Parametrarna för [!DNL Regular Expression] villkoret beskrivs i följande tabel
  </tbody> 
 </table>
 
-I det här exemplet visas hur villkoret används för att matcha ett fält med data som samlats in från webbplatstrafiken. [!DNL Regular Expression] Villkoret returnerar bara true om fältet cs(reference-query) innehåller en sträng som matchar det reguljära uttrycket campaign=C[1-9][0-9]{4}. Det här reguljära uttrycket matchar alla strängar som innehåller &quot;campaign=C12345&quot;. Mönstret matchar dock inte strängen &quot;campaign=C0123&amp;&quot; eftersom det första tecknet efter &quot;C&quot; inte finns i intervallet 1-9.
+I det här exemplet visas hur villkoret används för att matcha ett fält med data som samlats in från webbplatstrafiken. [!DNL Regular Expression] Villkoret returnerar bara true om fältet cs(reference-query) innehåller en sträng som matchar det reguljära uttrycket `campaign=C[1-9][0-9]{4}`. Det här reguljära uttrycket matchar alla strängar som innehåller &quot;campaign=C12345&quot;. Mönstret matchar dock inte strängen &quot;campaign=C0123&amp;&quot; eftersom det första tecknet efter &quot;C&quot; inte finns i intervallet 1-9.
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
@@ -216,7 +219,7 @@ Villkorstestet [!DNL String Match] för strängens likhet. Det tar ett angivet f
   <tr> 
    <td colname="col1"> Skiftlägeskänslig </td> 
    <td colname="col2"> Sant eller falskt. Om värdet är false betraktas gemener och versaler som lika. </td> 
-   <td colname="col3"> true </td> 
+   <td colname="col3"> sant </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Kommentarer </td> 
