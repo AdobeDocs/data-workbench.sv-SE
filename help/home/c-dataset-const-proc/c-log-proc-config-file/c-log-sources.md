@@ -5,7 +5,10 @@ title: Loggkällor
 topic: Data workbench
 uuid: ea21c3d7-9188-4ba8-bacd-052d678bd799
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '3664'
+ht-degree: 0%
 
 ---
 
@@ -57,7 +60,7 @@ Händelsedata som samlas in [!DNL Sensors] från HTTP- och programservrar överf
 
 YYYMMDD-*SENSORID*.VSL
 
-där YYMMDD är filens datum, och *SENSORID* är det namn (tilldelat av din organisation) som anger vilka som [!DNL Sensor] samlat in och överfört data till data-workbench-servern.
+där YYMMDD är filens datum, och *SENSORID* är det namn (tilldelat av din organisation) som anger vilken som [!DNL Sensor] samlade in och överförde data till data-workbench-servern.
 
 ## Parametrar {#section-5c3f1e341c284486aeba3452057da7f3}
 
@@ -118,6 +121,7 @@ Filen som innehåller händelsedata måste uppfylla följande krav:
 * Om du vill ange start- och sluttider för databearbetning måste varje filnamn ha formatet:
 
    * [!DNL YYYYMMDD-SOURCE.log]
+
    där *YYYMMDD* är GMT-dagen (Greenwich Mean Time) för alla data i filen, och *SOURCE* är en variabel som identifierar källan till de data som finns i filen.
 
    >[!NOTE]
@@ -170,7 +174,7 @@ Parametrarna i följande tabell är tillgängliga för loggfilens loggkällor.
   </tr> 
   <tr> 
    <td colname="col1"> Maskmönster </td> 
-   <td colname="col2"> <p>Ett reguljärt uttryck med ett enda hämtade delmönster som extraherar ett konsekvent namn som används för att identifiera källan till en serie loggfiler. Endast filnamnet beaktas. Sökvägen och tillägget beaktas inte för matchning av reguljära uttryck. Om du inte anger ett <span class="wintitle"> maskmönster</span>genereras en mask automatiskt. </p> <p> För filerna <span class="filepath"> Logs\010105server1.log</span> and <span class="filepath"> Logs\010105server2.log</span>är <span class="wintitle"> maskmönstret</span> [0-9]{6}(.*). Det här mönstret extraherar strängen "server1" eller "server2" från filnamnen ovan. </p> <p> Se <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> Reguljära uttryck</a>. </p> </td> 
+   <td colname="col2"> <p>Ett reguljärt uttryck med ett enda hämtade delmönster som extraherar ett konsekvent namn som används för att identifiera källan till en serie loggfiler. Endast filnamnet beaktas. Sökvägen och tillägget beaktas inte för matchning av reguljära uttryck. Om du inte anger ett <span class="wintitle"> maskmönster</span>genereras en mask automatiskt. </p> <p> För filerna <span class="filepath"> Logs\010105server1.log</span> och <span class="filepath"> Logs\010105server2.log</span>blir <span class="wintitle"> maskmönstret</span> <code>[0-9]{6}(.*)</code>. Det här mönstret extraherar strängen "server1" eller "server2" från filnamnen ovan. </p> <p> Se <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> Reguljära uttryck</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Rekursiv </td> 
@@ -268,7 +272,7 @@ För XML-loggkällor är parametrarna i följande tabell tillgängliga.
   </tr> 
   <tr> 
    <td colname="col1"> Maskmönster </td> 
-   <td colname="col2"> <p>Ett reguljärt uttryck med ett enda hämtade delmönster som extraherar ett konsekvent namn som används för att identifiera källan till en serie loggfiler. Endast filnamnet beaktas. Sökvägen och tillägget beaktas inte för matchning av reguljära uttryck. Om du inte anger ett <span class="wintitle"> maskmönster</span>genereras en mask automatiskt. </p> <p> För filerna <span class="filepath"> Logs\010105server1.xml</span> och <span class="filepath"> Logs\010105server2.xml</span>är maskmönstret [0-9]{6}(.*). Det här mönstret extraherar strängen "server1" eller "server2" från filnamnen ovan. </p> <p> Se <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> Reguljära uttryck</a>. </p> </td> 
+   <td colname="col2"> <p>Ett reguljärt uttryck med ett enda hämtade delmönster som extraherar ett konsekvent namn som används för att identifiera källan till en serie loggfiler. Endast filnamnet beaktas. Sökvägen och tillägget beaktas inte för matchning av reguljära uttryck. Om du inte anger ett <span class="wintitle"> maskmönster</span>genereras en mask automatiskt. </p> <p> För filerna <span class="filepath"> Logs\010105server1.xml</span> och <span class="filepath"> Logs\010105server2.xml</span>blir maskmönstret <code>[0-9]{6}(.*)</code>. Det här mönstret extraherar strängen "server1" eller "server2" från filnamnen ovan. </p> <p> Se <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> Reguljära uttryck</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Rekursiv </td> 
@@ -293,14 +297,14 @@ För XML-loggkällor är parametrarna i följande tabell tillgängliga.
 AVRO-log-file.xml
 -->
 
-Avro-dataflödet är ett effektivare sätt att integrera data i Data Workbench:
+Avro-dataflödet är ett effektivare sätt att integrera data i Datan Workbench:
 
 <!-- <a id="section_45E3105B971C4220AE9CF573BEBF6080"></a> -->
 
 * Avro har ett format för trafik- och handelsdata som kan användas som en enda källa.
 * Avro-flödet är komprimerade data för flera källsegment som tillhandahålls per dag. Det tillhandahåller endast ifyllda fält och övervaknings- och meddelandefunktioner, tillgång till historiska data samt automatisk återställning.
 * Schemat, som är en självdefinierande layout för Avro-loggfiler, inkluderas i början av varje fil.
-* Nya fält läggs till med stödinformation för import av data Workbench-data utan att några ändringar behöver göras i avkodaren. Bland dessa finns:
+* Nya fält läggs till med stödinformation för import av Data Workbench utan att några ändringar behöver göras i avkodaren. Bland dessa finns:
 
    * Evars: 1-250 (tidigare 1-75)
    * Anpassade händelser: 1-1000 (jämfört med 1-100)
