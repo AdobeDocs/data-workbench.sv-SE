@@ -5,7 +5,10 @@ title: Reguljära uttryck
 topic: Data workbench
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '1418'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +33,7 @@ Denna bilaga är inte en omfattande introduktion till reguljära uttryck. En sä
 
 ## Terminologi för reguljära uttryck {#section-80b0d54f731e448391532ab3eb3c525c}
 
-| Villkor | Definition |
+| Term | Definition |
 |---|---|
 | Literal | En litteral är ett tecken som vi använder i ett reguljärt uttryck för att hitta en specifik teckensekvens. Om du till exempel vill hitta en produkt i [!DNL shop/products.html]är strängprodukten en litteral, eller det vi bokstavligen letar efter i strängen. |
 | Metatecken | Ett metatecken är ett specialtecken som har en unik tolkning i samband med reguljära uttryck. Exempel: punkt (.) är ett metatecken som används för att matcha alla tecken. |
@@ -66,7 +69,7 @@ Ett metatecken är ett specialtecken i ett program eller datafält som ger infor
 |---|---|
 | . (punkt) | Matchar ett enskilt tecken, till exempel: `re:x.z` matchar &quot;xyz&quot; eller &quot;xxz&quot;. |
 | * (stjärna) | Matchar ett eller flera tecken, till exempel: `re:Z*` matchar&quot;ZZZ&quot;. |
-| ? (jokertecken) | Matchar 0 eller 1 av föregående uttryck för att framtvinga minimal matchning, till exempel: `xy?z` matchar&quot;xy&quot; och&quot;xyz&quot;. |
+| ? (jokertecken) | Matchar 0 eller 1 av föregående uttryck för att framtvinga minimal matchning, till exempel: `xy?z` matchar &quot;xy&quot; och &quot;xyz&quot;. |
 
 Ytterligare vanliga reguljära uttryck kan också användas för att skapa mer komplexa söksträngar.
 
@@ -157,7 +160,7 @@ Med iterationsmetatecken kan du matcha ett mönster mer än en gång.
   </tr> 
   <tr> 
    <td colname="col1"> {n} </td> 
-   <td colname="col2"> <p>Matcha det inledande tecknet eller intervallet exakt n gånger. Följande mönster matchar telefonnummer från USA: [0-9]{3}-[0-9]{3}-[0-9]{4}. </p> <p> Det är inte ett optimalt mönster, men det avgör om målsträngen har rätt format. </p> </td> 
+   <td colname="col2"> <p>Matcha det inledande tecknet eller intervallet exakt n gånger. Följande mönster matchar telefonnummer från USA: <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> Det är inte ett optimalt mönster, men det avgör om målsträngen har rätt format. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> {n,m} </td> 
