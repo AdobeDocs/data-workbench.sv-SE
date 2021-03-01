@@ -87,7 +87,7 @@ ht-degree: 0%
       + [Arbeta med text i fönster](home/c-get-started/c-wk-win-wksp/c-work-text-win.md)
       + [Menyn Fönsterkontroller](home/c-get-started/c-wk-win-wksp/c-win-ctrls-menu.md)
       + [Exportera fönsterdata](home/c-get-started/c-wk-win-wksp/c-exp-win-data.md)
-   + Exportera data {#export-data}
+   + Exporterar data {#export-data}
       + [Exportera data med segmentexport](home/c-get-started/c-exp-data-seg-exp/c-exp-data-seg-exp.md)
       + [Segmentexport](home/c-get-started/c-exp-data-seg-exp/c-sgmt-expt.md)
       + [Utdataformat](home/c-get-started/c-exp-data-seg-exp/c-abt-otpt-frmt.md)
@@ -134,7 +134,7 @@ ht-degree: 0%
       + [Översikt över analysvisualiseringar](home/c-get-started/c-analysis-vis/c-analysis-vis.md)
       + [2D-punktdiagram](home/c-get-started/c-analysis-vis/c-scat-plots.md)
       + [3D-punktdiagram](home/c-get-started/c-analysis-vis/c-3d-scatterplots.md)
-      + Annotations {#annotations}
+      + Anteckningar {#annotations}
          + [Översikt över anteckningar](home/c-get-started/c-analysis-vis/c-annots/c-annots.md)
          + [Textanteckningar](home/c-get-started/c-analysis-vis/c-annots/c-text-annots.md)
          + [Bildanteckningar](home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md)
@@ -317,7 +317,7 @@ ht-degree: 0%
       + [Serverfilhanteraren](home/c-get-started/c-admin-intrf/c-svr-files-mgr.md)
       + [Serverövervakarens gränssnitt](home/c-get-started/c-admin-intrf/c-svr-mtr-intfc.md)
       + [Konfigurationsalternativ](home/c-get-started/c-admin-intrf/c-config-opt.md)
-   + Funktioner för gränssnitt och analys {#ui-analysis-features}
+   + Gränssnitts- och analysfunktioner {#ui-analysis-features}
       + [Funktioner för gränssnitt och analys](home/c-get-started/c-intf-anlys-ftrs/c-intf-anlys-ftrs.md)
       + [Anpassa Data Workbench lokalt](home/c-get-started/c-intf-anlys-ftrs/c-cstm-lcl.md)
       + Anpassa menyer {#custom-menus}
@@ -450,7 +450,7 @@ ht-degree: 0%
          + [Numeriska Dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md)
          + [Dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-denormal-dim.md)
          + [Dimensioner](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-time-dim.md)
-   + Omformningsfunktioner {#transform-functionality}
+   + Omformningsfunktion {#transform-functionality}
       + [Om omformningsfunktioner](home/c-dataset-const-proc/c-transf-func/c-abt-transf-func.md)
       + Konfigurationsfiler för transformering {#config-files-transform}
          + [Konfigurationsfiler för transformering](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/c-config-files-transf.md)
@@ -463,7 +463,7 @@ ht-degree: 0%
    + Ombearbetning och omformning {#reproc-retrans}
       + [Förstå ombearbetning och omformning](home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)
       + [Förbereda för ombearbetning eller omformning](home/c-dataset-const-proc/c-reproc-retrans/t-prep-reproc-retrans.md)
-   + Verktyg för datauppsättningskonfiguration {#dataset-config-tools}
+   + Konfigurationsverktyg för datauppsättning {#dataset-config-tools}
       + [Verktyg för datauppsättningskonfiguration](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md)
       + Gränssnitt för datauppsättningskonfiguration {#dataset-config-ui}
          + [Arbeta med gränssnitt för datauppsättningskonfiguration](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-config-int.md)
@@ -506,7 +506,7 @@ ht-degree: 0%
          + [Generera rapporter dynamiskt](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-dyn-gen-rpts.md)
          + [Publicera rapportuppsättningen på Data Workbench Server](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-pub-rpt-set.md)
       + [Status för rapportuppsättning](home/c-rpt-oview/c-work-rpt-sets/c-rev-rpt-set-stat.md)
-      + Redigera befintliga Report.cfg-filer {#edit-existing-report-files}
+      + Redigerar befintliga Report.cfg-filer {#edit-existing-report-files}
          + [Redigera befintliga Report.cfg-filer](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md)
          + [Skicka rapporter via e-post](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/t-res-rpts-email.md)
          + [E-postmeddelande om slutförd rapport](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/t-email-not-comp-rpt.md)
@@ -514,7 +514,7 @@ ht-degree: 0%
       + [Använda rapportportalen](home/c-rpt-oview/c-rpt-portal/c-rpt-portal.md)
       + [Öppna rapportportalen](home/c-rpt-oview/c-rpt-portal/t-open-rpt-port.md)
    + [Avancerad sökning i rapportportalen](home/c-rpt-oview/c-search-adv.md)
-   + Installerar rapportserver {#install-report-server}
+   + Installerar rapportservern {#install-report-server}
       + [Installerar rapportserver](home/c-rpt-oview/c-inst-rpt/c-inst-rpt.md)
       + [Innan du börjar](home/c-rpt-oview/c-inst-rpt/c-before-begin.md)
       + [Installationsöversikt](home/c-rpt-oview/c-inst-rpt/t-install-oview.md)
@@ -529,7 +529,7 @@ ht-degree: 0%
       + [Rapportserverstatus visas](home/c-rpt-oview/c-inst-rpt/t-display-svr-st-rpt.md)
       + [Registrerar rapportservern som en Windows-tjänst](home/c-rpt-oview/c-inst-rpt/t-reg-rpt-win-svc.md)
       + [Uppgraderar och avinstallerar rapportservern](home/c-rpt-oview/c-inst-rpt/c-upgrade-uninstall-rpt.md)
-   + Administrera rapportserver {#admin-report-server}
+   + Administrerar rapportservern {#admin-report-server}
       + [Administrera rapportserver](home/c-rpt-oview/c-admin-rpt/c-admin-rpt.md)
       + [Konfigurera Report.cfg-filer](home/c-rpt-oview/c-admin-rpt/c-config-rpt-files.md)
       + [Validera det digitala certifikatet igen](home/c-rpt-oview/c-admin-rpt/c-reval-dig-cert.md)
@@ -582,7 +582,7 @@ ht-degree: 0%
          + [Utföra kontrollerade experiment](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-perf-ctrl-exp.md)
       + [Hämta inbäddade objektbegäranden (sidtaggar)](home/c-undst-pg-tag/c-acq-bsln-msmts/c-embed-obj-req.md)
       + [Hämta mätdata via cookies](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-msmt-data-ck.md)
-   + Hämta utökade mått {#acquire-ext-measures}
+   + Hämtar utökade mått {#acquire-ext-measures}
       + [Hämta utökade mått](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-ext-msmt.md)
       + [Hämta dynamiska sidnamn](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-dyn-pg-names.md)
       + [Hämta ytterligare information](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-add-info.md)
@@ -602,7 +602,7 @@ ht-degree: 0%
    + [Expandera mått, Dimensioner och filter](home/c-about/c-expand-capabilities.md)
    + [Dimensioner](home/c-about/c-dimension-types.md)
    + [Guiden Metrisk dim](home/c-about/metric-dim.md)
-   + Inbyggda mätvärden, Dimensioner och filter {#built-in-metrics}
+   + Inbyggda mått, Dimensioner och filter {#built-in-metrics}
       + [Inbyggda mått, Dimensioner och filter](home/c-about/c-builtin-metrics-dims/c-builtin-metrics-dims.md)
       + [Inbyggda mätvärden](home/c-about/c-builtin-metrics-dims/c-builtin-metrics.md)
       + [Inbyggda Dimensioner](home/c-about/c-builtin-metrics-dims/c-builtin-dims.md)
@@ -680,7 +680,7 @@ ht-degree: 0%
    + [Experimentera med kalkylblad](home/c-undst-ctrld-exp/t-exp-dsn-spst.md)
 + Serveradministration och installation {#server-admin-install}
    + [Systemkrav för server](home/c-inst-svr/c-msr-server/c-msr-server.md)
-   + Installera Data Workbench-servrar {#install-servers}
+   + Installerar Data Workbench-servrar {#install-servers}
       + [Installera Data Workbench-servrar](home/c-inst-svr/c-install-ins-svr/c-install-ins-svr.md)
       + [Om licensenheter för Insight Server](home/c-inst-svr/c-install-ins-svr/c-abt-inst-svr-lic-units.md)
       + Insight Server DPU {#insight-server-dpu}
@@ -712,7 +712,7 @@ ht-degree: 0%
             + [Konfigurera Överordnad Insight Server for Clustering](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md)
             + [Installera och konfigurera Processing Insight-servrar](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/t-inst-proc-ins-svrs.md)
             + [Konfigurera en profil som ska köras i ett kluster](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-prof-run-clstr.md)
-         + Lägga till insight-servrar i ett befintligt kluster {#add-server-cluster}
+         + Lägger till insiktsservrar i ett befintligt kluster {#add-server-cluster}
             + [Lägga till insight-servrar i ett befintligt kluster](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-ins-svrs-ex-clstr.md)
             + [Lägga till en Insight Server DPU i ett befintligt kluster](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-dpu-ex-clstr.md)
             + [Lägga till en Insight Server FSU i ett befintligt kluster](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-fsu-ex-clstr.md)
@@ -760,13 +760,13 @@ ht-degree: 0%
       + [Bekräfta att dina system är felfria](home/c-inst-svr/c-gen-syst-admin/c-cnfm-syst-hlthy.md)
       + [Övervaka händelser för fel](home/c-inst-svr/c-gen-syst-admin/c-mntr-errs.md)
       + [Övervaka portar och program](home/c-inst-svr/c-gen-syst-admin/t-mntr-prts-apps.md)
-   + Uppgradering och avinstallation {#upgrade-uninstall}
+   + Uppgraderar och avinstallerar {#upgrade-uninstall}
       + [Uppgradera och avinstallera Adobe-programvara](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-uninst-sftwr.md)
       + Uppgraderar Insight Server {#upgrade-insight-server}
          + [Uppgraderar Insight Server](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-sftwr.md)
          + [DWB Server-uppgradering: 6.2 till 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
          + [DWB Server-uppgradering: 6.1 till 6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
-         + Uppgradering av Data Workbench 6.0 till 6.1 {#upgrade-6-0-to-6-1}
+         + Data Workbench 6.0 till 6.1 Uppgradering {#upgrade-6-0-to-6-1}
             + [Uppgradering av Data Workbench 6.0 till 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
             + [Installera Indatametodredigeraren](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md)
             + [DeviceAtlas-distribution](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)
@@ -803,7 +803,7 @@ ht-degree: 0%
       + [Netscape Enterprise på Linux eller Solaris](home/c-snsr-ovrvw/c-inst-snsr/c-install-netscape.md)
       + [Sun Java Server på Windows Server 2000 eller senare](home/c-snsr-ovrvw/c-inst-snsr/c-install-java-win.md)
       + [WebSphere i AIX](home/c-snsr-ovrvw/c-inst-snsr/c-wbsr.md)
-   + Administratör {#admin-sensor}
+   + Administrera {#admin-sensor}
       + [Administrerande sensor](home/c-snsr-ovrvw/admin-sensor/admin-sensor.md)
       + [Redigera filen txlog.conf för sensorn](home/c-snsr-ovrvw/admin-sensor/t-edit-snsr-file.md)
       + [Ändra sökvägen till Java-biblioteket](home/c-snsr-ovrvw/admin-sensor/modify-java-lib-path.md)
@@ -821,16 +821,16 @@ ht-degree: 0%
       + [Filparametrar för sensortext.conf](home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md)
       + [Obligatoriska parametrar](home/c-snsr-ovrvw/sensor-txlogd-params/c-rqrd-prmtrs.md)
       + [Valfria parametrar](home/c-snsr-ovrvw/sensor-txlogd-params/c-opt-pmtrs.md)
-   + Fält för händelsedatapost {#event-data-record}
+   + Händelsedatapostfält {#event-data-record}
       + [Fält för händelsedatapost](home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-evnt-data-rcd-flds.md)
       + [Fält för baslinjedatapost för händelser](home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-bsln-evnt-data.md)
       + [Utbyggbara fält](home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md)
-   + Exempel på konfigurationsfiler {#sample-configs}
+   + Exempelkonfigurationsfiler {#sample-configs}
       + [Exempel på konfigurationsfiler](home/c-snsr-ovrvw/sensor-sample-configs/sensor-sample-configs.md)
       + [Exempel på filen Txlogd.conf](home/c-snsr-ovrvw/sensor-sample-configs/txlogd-conf-samples.md)
    + [Kommandoradsalternativ för sensorsändare](home/c-snsr-ovrvw/sensor-transmitter-options.md)
    + [UNIX-filbehörigheter för sensor](home/c-snsr-ovrvw/sensor-unix-permissions.md)
-+ Installera övervakningsprofilen {#monitor}
++ Installerar övervakningsprofilen {#monitor}
    + [Installera övervakningsprofilen](home/monitoring-installation/monitoring-installation.md)
    + Arbetsytor {#workspace}
       + [Arbetsytor för övervakning av Data Workbench Server](home/monitoring-installation/monitoring-profiles/monitoring-profiles.md)
@@ -872,7 +872,7 @@ ht-degree: 0%
          + [Ta bort visualiseringar](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-remove-visualizations.md)
          + [Storleksvisualiseringar](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-sizing-visualizations.md)
          + [Flytta visualiseringar](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-moving-visualizations.md)
-   + Dashboards {#dashboards}
+   + Kontrollpaneler {#dashboards}
       + [Kontrollpaneler](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboards.md)
       + Visa instrumentpaneler {#viewing-dashboards}
          + [Öppna och visa kontrollpaneler](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-opening-and-viewing-dashboards.md)
@@ -912,7 +912,7 @@ ht-degree: 0%
       + [Instrumentpanel till Data Workbench Servers Communication](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [Verifierar aktivering av fråge-API](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
       + [Konfigurera åtkomstkontroll](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
-   + Driftsättning av instrumentpanel {#dashboard-deployment}
+   + Kontrollpanelsdistribution {#dashboard-deployment}
       + [Driftsättning av instrumentpanel](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
       + [Distribuera kontrollpanelen](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
       + [Konfigurera SQL Server](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-configuring-the-sql-server.md)
@@ -939,7 +939,7 @@ ht-degree: 0%
       + [Redigera ett användarkonto](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-editing-a-user-account.md)
       + [Återställa en användares lösenord](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-resetting-a-users-password.md)
       + [Ta bort ett användarkonto](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-removing-a-user-account.md)
-   + User Groups {#user-groups}
+   + Användargrupper {#user-groups}
       + [Hantera användargrupper](home/c-preparing-for-dashboard-installation/c-managing-user-groups/c-managing-user-groups.md)
       + [Skapa en användargrupp](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-creating-a-user-group.md)
       + [Redigera en användargrupp](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-editing-a-user-group.md)
