@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Hjälp om Data Workbench
 user-guide-description: Läs mer om Datans Workbench flerkanalsfunktioner. Innefattar handböcker om Data Workbench Client, Installation, Dataset Configuration med mera.
 translation-type: tm+mt
-source-git-commit: cfa391f4238bac43fdf2539baa8e038a79110200
+source-git-commit: 3fc9ad4411438afe50c0e20d807234176480e2b3
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3493'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,6 @@ ht-degree: 0%
       + [Uppgraderar Data Workbench - översikt](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
       + [Uppgraderar 6.4 till 6.5](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
       + [Uppgraderar 6.3 till 6.4](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
-      + [DWB Server-uppgradering: 6.2 till 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
       + [DWB Server-uppgradering: 6.1 till 6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
       + [Uppgradering av Data Workbench 6.0 till 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
       + [Uppgradering av Data Workbench 5.5 till 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
@@ -269,7 +268,6 @@ ht-degree: 0%
       + Arbeta med vektorlager {#vector-layers}
          + [Arbeta med vektorlager](home/c-get-started/c-im-layers/c-vctr-layers/c-vctr-layers.md)
          + [Definiera vektorlager som refererar till vektorfiler](home/c-get-started/c-im-layers/c-vctr-layers/c-ref-vctr-files.md)
-         + [Vektorlager som refererar till filer med tabbseparerade värden](home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md)
          + [Göra ett nytt vektorlager tillgängligt](home/c-get-started/c-im-layers/c-vctr-layers/t-make-new-vctr-layer-av.md)
    + Administrativa gränssnitt {#admin-ui}
       + [Administrativa gränssnitt](home/c-get-started/c-admin-intrf/c-admin-intrf.md)
@@ -334,7 +332,6 @@ ht-degree: 0%
          + [Ändra tabbordningen](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-chg-ordr-tabs.md)
          + [Visa undermappar som underflikar](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-sbfldrs-sbtabs.md)
          + [Dölja eller ta bort en tabb](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-hide-rmv-tabs.md)
-      + [Installera Indatametodredigeraren](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md)
       + [Konfigurera lokaliserade språk](home/c-get-started/c-intf-anlys-ftrs/c-localized-ime/c-localized-ime-config.md)
       + Konfigurera en låst arbetsyta {#config-locked-wkspc}
          + [Konfigurera en låst arbetsyta](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-config-locked-wkspc.md)
@@ -380,7 +377,6 @@ ht-degree: 0%
          + [Nytt besökarvillkor](home/c-dataset-const-proc/c-trans-config-file/c-spec-trans-param/c-new-vstr-con.md)
          + [Tidszoner](home/c-dataset-const-proc/c-trans-config-file/c-spec-trans-param/c-time-zones.md)
       + [Överväganden för transformeringskonfigurationsfilen](home/c-dataset-const-proc/c-trans-config-file/c-con-tran-config-file.md)
-      + [DeviceAtlas-distribution](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)
    + Datauppsättningen innehåller filer {#dataset-include-files}
       + [Om Inkludera datauppsättningar](home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)
       + [Arbeta med datauppsättningen Inkludera filer](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/c-work-dataset-inc-files.md)
@@ -468,7 +464,6 @@ ht-degree: 0%
       + Gränssnitt för datauppsättningskonfiguration {#dataset-config-ui}
          + [Arbeta med gränssnitt för datauppsättningskonfiguration](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-config-int.md)
          + [Datauppsättningsschema](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md)
-         + [Beroendekartor](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dep-maps.md)
          + [Fältvisningsprogram](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-field-viewers.md)
       + Döljer datauppsättningskomponenter {#hide-dataset-comp}
          + [Döljer datauppsättningskomponenter](home/c-dataset-const-proc/c-dataset-config-tools/c-hide-dataset-comp/c-hide-dataset-comp.md)
@@ -765,12 +760,6 @@ ht-degree: 0%
       + Uppgraderar Insight Server {#upgrade-insight-server}
          + [Uppgraderar Insight Server](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-sftwr.md)
          + [DWB Server-uppgradering: 6.2 till 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
-         + [DWB Server-uppgradering: 6.1 till 6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
-         + Data Workbench 6.0 till 6.1 Uppgradering {#upgrade-6-0-to-6-1}
-            + [Uppgradering av Data Workbench 6.0 till 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
-            + [Installera Indatametodredigeraren](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md)
-            + [DeviceAtlas-distribution](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)
-         + [Uppgradering av Data Workbench 5.5 till 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
          + [DWB Server-uppgradering: 5.4 till 5.5](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md)
          + [Uppgraderar omformning](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-trfm.md)
          + [Uppgraderar upprepning](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md)
