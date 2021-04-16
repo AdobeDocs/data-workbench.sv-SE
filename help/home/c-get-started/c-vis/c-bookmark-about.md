@@ -1,19 +1,17 @@
 ---
 description: Du kan skapa bokmärken för viktiga arbetsytor för att snabbt gå mellan visualiseringar och rapporter som används i arbetsflödet.
-solution: Analytics
 title: Lägga till bokmärken
-topic: Data workbench
 uuid: 8b7fd6ac-9bab-4e7a-8f52-8568413052e8
+exl-id: ba05d7ee-49c6-42a0-a490-9c59fcaaddc5
 translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
 
 ---
 
-
-# Lägga till bokmärken{#add-a-bookmarks}
+# Lägg till bokmärken{#add-a-bookmarks}
 
 Du kan skapa bokmärken för viktiga arbetsytor för att snabbt gå mellan visualiseringar och rapporter som används i arbetsflödet.
 
@@ -21,11 +19,11 @@ Du kan skapa bokmärken för viktiga arbetsytor för att snabbt gå mellan visua
 
    Den här ikonen visas bara som en bok innan du har skapat ett bokmärke för arbetsytan. Bokmärkesikonen ändras till en bok med en markerad sida när en arbetsyta har bokmärkts.
 
-1. Klicka **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** i den vänstra rutan för att öppna en lista med bokmärken.
+1. Klicka på **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** i den vänstra rutan för att öppna en lista med bokmärken.
 
    ![](assets/bookmarks_panel.png)
 
-1. Om du vill öppna en arbetsyta med bokmärken klickar du på namnet på arbetsytan i **[!UICONTROL Bookmark Panel]**.
+1. Om du vill öppna en bokmärkt arbetsyta klickar du på ett namn på arbetsytan i **[!UICONTROL Bookmark Panel]**.
 
    ![](assets/bookmarks_panel_left.png)
 
@@ -33,7 +31,7 @@ Du kan skapa bokmärken för viktiga arbetsytor för att snabbt gå mellan visua
 
 **Så här tar du bort ett bokmärke:**
 
-* På bokmärkespanelen högerklickar du och väljer **Ta bort`<bookmark title>`** för att ta bort ett markerat bokmärke, eller väljer **[!UICONTROL Clear All Bookmarks]** att ta bort alla bokmärken.
+* Högerklicka på bokmärkespanelen och välj **Ta bort`<bookmark title>`** om du vill ta bort ett markerat bokmärke, eller välj **[!UICONTROL Clear All Bookmarks]** om du vill ta bort alla bokmärken.
 
 * Du kan också högerklicka på arbetsytan i miniatyrbildsvyn i arbetsytan och välja **[!UICONTROL Clear Bookmark]**.
 
