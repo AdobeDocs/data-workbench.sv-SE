@@ -1,14 +1,15 @@
 ---
 description: Data på en kontrollpanel kan enkelt segmenteras och utforskas med hjälp av markeringar.
-solution: Analytics
 title: Göra markeringar på kontrollpanelen
-topic: Data workbench
 uuid: b28bcc11-8fd3-4431-98ba-8adbd42a73d5
+exl-id: 18475e5c-97f4-42fd-883a-f822432b5301
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 0%
 
 ---
-
 
 # Göra markeringar på kontrollpanelen{#making-selections-within-the-dashboard}
 
@@ -29,4 +30,3 @@ För varje markering som har gjorts från en visualisering visas även en post p
 >[!NOTE]
 >
 >Visualiserade data uppdateras inte automatiskt varje gång en markering görs. När du har gjort dina val måste du i stället initiera en uppdatering för att segmentera data och uppdatera dina visualiseringar.
-
