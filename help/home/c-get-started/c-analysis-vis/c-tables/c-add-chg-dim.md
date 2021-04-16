@@ -1,16 +1,17 @@
 ---
 description: Du kan lägga till flera dimensioner i en tabell för att få en mer detaljerad korstabellsbild av data.
-solution: Analytics
 title: Lägga till, ändra och flytta en dimension
-topic: Data workbench
 uuid: d8e67374-3b2b-4548-9322-e83c52941331
+exl-id: d2249f39-f4ab-4ec6-a2fb-90f8ecb2e3d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 0%
 
 ---
 
-
-# Lägga till, ändra och flytta en dimension{#add-change-and-move-a-dimension}
+# Lägg till, ändra och flytta en dimension{#add-change-and-move-a-dimension}
 
 Du kan lägga till flera dimensioner i en tabell för att få en mer detaljerad korstabellsbild av data.
 
@@ -18,7 +19,7 @@ Du kan lägga till dimensioner på båda axlarna i tabellen.
 
 **Lägga till en ny dimension**
 
-* Högerklicka på ett element eller etiketten för en dimension eller etiketten för ett mått och klicka sedan på **[!UICONTROL Add Dimension]** > *&lt;**[!UICONTROL dimension name]**>.* Dimensionen läggs till i visualiseringen på den valda axeln.
+* Högerklicka på ett element eller etiketten för en dimension eller etiketten för ett mått och klicka på **[!UICONTROL Add Dimension]** > *&lt;**[!UICONTROL dimension name]**>.* Dimensionen läggs till i visualiseringen på den valda axeln.
 
 I följande exempel visas sessionsmåttet som är graderat över veckodagen (i den övre tabellen) och samma tabell med en andra dimension, Denna månad, som läggs till i den övre axeln (i den nedre tabellen).
 
@@ -35,5 +36,4 @@ Du kan flytta en dimension till en annan plats på samma axel eller till den mot
 * Högerklicka på ett element eller etiketten för dimensionen som du vill flytta, klicka på **[!UICONTROL Move]***&lt; **[!UICONTROL dimension name]**>*och slutför sedan lämpligt steg:
 
    * Om du vill flytta en dimension till den motsatta axeln klickar du på den översta axeln eller till den vänstra axeln.
-   * Om du vill byta plats med en annan dimension på samma axel klickar du på **[!UICONTROL (move here)]**.
-
+   * Klicka på **[!UICONTROL (move here)]** om du vill byta plats med en annan dimension på samma axel.
