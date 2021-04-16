@@ -1,14 +1,15 @@
 ---
 description: Oavsett var du kan skriva text i ett fönster kan du utföra många av de funktioner du kan utföra i valfri textredigerare, t.ex. Anteckningar eller Microsoft Word.
-solution: Analytics
 title: Arbeta med text i fönster
-topic: Data workbench
 uuid: c0766fe3-3433-4409-bfae-325ec2f4c5ef
+exl-id: f786014d-c784-44f8-a399-f1d58bbb5f3d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 2%
 
 ---
-
 
 # Arbeta med text i fönster{#work-with-text-in-windows}
 
@@ -25,11 +26,10 @@ När du kopierar och klistrar in en parameter måste båda ha samma typ, till ex
 1. Högerklicka på en nod eller parameteretikett och klicka på **[!UICONTROL Copy]**.
 1. Gör något av följande:
 
-   * Högerklicka på vektorn och klicka **[!UICONTROL Paste as child]**. Noden klistras in ovanför den första noden i vektorn.
-   * Högerklicka på noden under vilken du vill klistra in noden och klicka sedan **[!UICONTROL Paste]**.
+   * Högerklicka på vektorn och klicka på **[!UICONTROL Paste as child]**. Noden klistras in ovanför den första noden i vektorn.
+   * Högerklicka på noden under vilken du vill klistra in noden och klicka på **[!UICONTROL Paste]**.
 
 **Kopiera och klistra in noder i en textredigerare**
 
 1. Högerklicka på en vektor eller nod och klicka på **[!UICONTROL Copy]**.
 1. Tryck på **[!UICONTROL Ctrl+v]** på lämplig plats i textredigeringsfilen.
-
