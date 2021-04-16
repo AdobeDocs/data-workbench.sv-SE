@@ -1,16 +1,17 @@
 ---
 description: Statistikpratbubblor mäter meningsfulla relationer för att identifiera dolda möjligheter och variabler av intresse, vilket ger mer avancerade datautvinningsfunktioner i målgruppsklustring och poängsättning av besökarrespons.
-solution: Analytics
 title: Statistiska bildtexter
-topic: Data workbench
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
+exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 0%
 
 ---
 
-
-# Statistiska bildtexter{#statistical-callouts}
+# Statistiska pratbubblor{#statistical-callouts}
 
 Statistikpratbubblor mäter meningsfulla relationer för att identifiera dolda möjligheter och variabler av intresse, vilket ger mer avancerade datautvinningsfunktioner i målgruppsklustring och poängsättning av besökarrespons.
 
@@ -19,7 +20,7 @@ Statistiska hänvisningar utökar algoritmerna så att fler typer av data kan ko
 Så här lägger du till statistiska hänvisningar:
 
 1. Högerklicka på måttrubriken i en tabell.
-1. Markera **[!UICONTROL Statistics]** och markera eller avmarkera bockorna för varje inställning. Alla i Bildtext är markerade som standardinställning.
+1. Välj **[!UICONTROL Statistics]** och markera eller avmarkera sedan bockmarkeringarna för varje obligatorisk inställning. Alla i Bildtext är markerade som standardinställning.
 
    ![](assets/statistical_callouts.png)
 
@@ -47,7 +48,7 @@ Bildtexten kan returnera statistiska värden som tagits med i datauppsättningen
   </tr>
   <tr>
    <td colname="col1"> Medel </td>
-   <td colname="col2"><p> Medelvärdet är det aritmetiska medelvärdet av måtten för elementen i dimensionen, beräknat som totalsumman dividerat med antalet (summa/antal). </p></td>
+   <td colname="col2"><p> Medelvärdet är det aritmetiska medelvärdet av elementens mätvärden i Dimensionen, beräknat som totalsumman dividerat med antalet (summa/antal). </p></td>
   </tr>
   <tr>
    <td colname="col1"> Standardavvikelse </td>
@@ -63,4 +64,3 @@ Bildtexten kan returnera statistiska värden som tagits med i datauppsättningen
   </tr>
  </tbody>
 </table>
-
