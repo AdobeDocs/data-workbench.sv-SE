@@ -1,17 +1,15 @@
 ---
 description: Mätvärdena kan redigeras med Metrisk redigerare och sparas i katalogen Metrics för en profil.
-solution: Analytics
 title: Syntax för metriska uttryck
-topic: Data workbench
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
+exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 0%
 
 ---
-
 
 # Syntax för metriska uttryck{#syntax-for-metric-expressions}
 
@@ -24,14 +22,14 @@ Anteckningar:
 1. Understrukna ord ska anges bokstavligen i uttryckstexten.
 1. Formuläret `{TEXT}?` representerar valfri text.
 1. Formuläret `{TEXT}*` representerar text som kan förekomma noll eller flera gånger.
-1. Formuläret `{A | B | C |...}` representerar text som består av exakt ett av de angivna alternativen, till exempel A eller B eller C....
+1. Formuläret `{A | B | C |...}` representerar text som består av exakt ett av de angivna alternativen, till exempel A eller B eller C...
 1. Formuläret `[A,B)` representerar ett nummerintervall, från A till men inte B.
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Identifierare </p> </td> 
-   <td colname="col2"> <p>En identifierare refererar till ett namngivet mätvärde. Mer information om reglerna för juridiska identifierare finns i <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntax för identifierare </a>. </p> <p>Exempel: Intäkter = Totalt_Pris </p> </td> 
+   <td colname="col2"> <p>En identifierare refererar till ett namngivet mätvärde. Information om reglerna för juridiska identifierare finns i <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntax för identifierare </a>. </p> <p>Exempel: Intäkter = Totalt_Pris </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(Metrisk) </p> </td> 
@@ -99,7 +97,7 @@ Anteckningar:
   </tr> 
   <tr> 
    <td colname="col1"> <p>sum(One,Countable_Dimension) </p> </td> 
-   <td colname="col2"> <p>Ett mätvärde som ger antalet räkningsbara dimensioner som Besök eller Session. </p> <p>Exempel: Besökare = summa(en,Besökare) </p> </td> 
+   <td colname="col2"> <p>Ett mätvärde som ger antalet räkningsbara dimensioner, t.ex. besökare eller session. </p> <p>Exempel: Besökare = summa(en,Besökare) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>sum(Numeric_Dimension, Countable_Dimension) </p> </td> 
@@ -119,4 +117,3 @@ Anteckningar:
   </tr> 
  </tbody> 
 </table>
-
