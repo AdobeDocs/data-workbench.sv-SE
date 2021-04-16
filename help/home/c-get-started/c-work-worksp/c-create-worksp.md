@@ -1,14 +1,15 @@
 ---
 description: Du kan anpassa befintliga arbetsytor genom att lägga till eller ändra befintliga visualiseringar eller skapa nya arbetsytor.
-solution: Analytics
 title: Skapa en arbetsyta
-topic: Data workbench
 uuid: 8669b70f-5ddf-4424-9269-0e4860eac498
+exl-id: 9c1fb9e6-6cc8-4894-800b-187b047c41d2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 0%
 
 ---
-
 
 # Skapa en arbetsyta{#create-a-workspace}
 
@@ -26,11 +27,11 @@ I det här avsnittet beskrivs följande uppgifter:
 
 ## Lägga till nya arbetsytor {#section-4236ae30e2884ea08f0885bf329f0778}
 
-Högerklicka på ett tomt område på fliken till önskad [!DNL Worktop] flik och klicka på något av följande alternativ:
+Högerklicka på ett tomt område på fliken [!DNL Worktop] och klicka på något av följande alternativ:
 
 * **[!UICONTROL New]** > **[!UICONTROL Blank Workspace]**. Det här alternativet visar en tom arbetsyta med standardstorlek.
 
-* **[!UICONTROL New]** > **[!UICONTROL Report Template]**. Det här alternativet visar en mall för standardstorlek som du kan använda för att skapa rapporter.
+* **[!UICONTROL New]** >  **[!UICONTROL Report Template]**. Det här alternativet visar en mall för standardstorlek som du kan använda för att skapa rapporter.
 
 ![](assets/mnu_workspaceManager.png)
 
@@ -40,7 +41,7 @@ Miniatyrbilden för den nya typen av arbetsyta visas på fliken.
 
 >[!NOTE]
 >
->När du har öppnat en ny arbetsyta kan du behöva klicka på **Lägg till** > Lås **upp** tillfälligt.
+>När du har öppnat en ny arbetsyta kan du behöva klicka på **Lägg till** > **Lås upp** tillfälligt.
 
 ## Kopiera och klistra in befintliga arbetsytor {#section-f91ae89b845640c9a4a52820a6110e65}
 
@@ -48,7 +49,7 @@ Du kan kopiera och klistra in en befintlig arbetsyta på en annan arbetsyta. Om 
 
 **Kopiera och klistra in en befintlig arbetsyta**
 
-1. Högerklicka på arbetsytan som du vill kopiera på den önskade [!DNL Worktop] fliken och klicka sedan på **[!UICONTROL Copy]**.
+1. Högerklicka på arbetsytan som du vill kopiera på den önskade fliken [!DNL Worktop] och klicka på **[!UICONTROL Copy]**.
 
    ![](assets/mnu_workspaceManager_Copywksp.png)
 
@@ -66,7 +67,7 @@ Följande exempel är en arbetsyta som klistras in på en arbetsyteflik som reda
 
 **Ändra namnet på en arbetsyta**
 
-1. Klicka på miniatyrbilden för den arbetsyta som du vill visa på önskad [!DNL Worktop] flik.
+1. Klicka på miniatyrbilden för den arbetsyta som du vill visa på den önskade fliken [!DNL Worktop].
 1. Klicka på rubriktexten i namnlisten på arbetsytan och skriv den nya titeln, som i följande exempel:
 
    ![](assets/wsp_changeTitle.png)
