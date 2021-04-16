@@ -1,14 +1,15 @@
 ---
 description: Information om hur du öppnar ett fältvisningsprogram för en loggkälla, transformering eller utökad dimension.
-solution: Analytics
 title: Öppna ett fältvisningsprogram
-topic: Data workbench
 uuid: fcc839cd-21dc-4eb0-9b8e-55fc92e6d400
+exl-id: 32a7418e-ca31-4d56-89a4-11416135f3e2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
-
 
 # Öppna ett fältvisningsprogram{#open-a-field-viewer}
 
@@ -20,5 +21,4 @@ Information om hur du öppnar ett fältvisningsprogram för en loggkälla, trans
 
    >[!NOTE]
    >
-   >Om du vill öppna ett fältvisningsprogram måste din Data Workbench-dator ha nätverksåtkomst till Data Workbench-servern som datauppsättningen finns på. Om din datauppsättning finns i ett Data Workbench-serverkluster måste din Data Workbench-dator ha nätverksåtkomst till huvudservern för Data Workbench i klustret.
-
+   >Om du vill öppna ett fältvisningsprogram måste din Data Workbench ha nätverksåtkomst till den Data Workbench som datauppsättningen finns på. Om datauppsättningen finns i ett serverkluster måste Datans Workbench dator ha nätverksåtkomst till den överordnad Datan Workbench i klustret.
