@@ -1,14 +1,15 @@
 ---
 description: Visualiseringar av svarstidstabeller är register som innehåller en latensdimension, som är en typ av härledd dimension som mäter den tid som har förflutit sedan en viss händelse inträffade.
-solution: Analytics
 title: Latenstabeller
-topic: Data workbench
 uuid: 8081540c-f96c-424e-802d-05d1be5a728d
+exl-id: 22f6d52f-e1c2-430a-9e69-3440be0ecdea
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '800'
+ht-degree: 0%
 
 ---
-
 
 # Latenstabeller{#latency-tables}
 
@@ -16,7 +17,7 @@ Visualiseringar av svarstidstabeller är register som innehåller en latensdimen
 
 Du definierar händelsen genom att göra markeringar inom en eller flera visualiseringar och ange dessa markeringar som händelsen med hjälp av alternativet för snabbmenyn Ange händelse. Latenstabeller är särskilt användbara för att spåra aktiviteter relaterade till en kampanj eller till en viss kundorder där du letar efter en tidskorrelation.
 
-I [!DNL Site]latenstabeller finns information om besökarsessioner som inträffade så många som sju dagar före eller efter händelsen, men du kan konfigurera latenstabeller så att de innehåller information om olika räkningsbara dimensioner och tidsdimensioner. Se [Konfigurera svarstabeller](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/c-config-ltcy-tbls.md#concept-7175c3defec64556994f0dfcccb7d15c).
+I [!DNL Site] innehåller latenstabeller information om besökarsessioner som inträffade så många som sju dagar före eller efter händelsen, men du kan konfigurera latenstabeller för att ge information om olika räkningsbara dimensioner och tidsdimensioner. Se [Konfigurera svarstabeller](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/c-config-ltcy-tbls.md#concept-7175c3defec64556994f0dfcccb7d15c).
 
 Element i den överordnade dimensionen, t.ex. en session, som är en del av den specifika händelse som du har markerat, har fördröjningen noll. Alla andra element tilldelas latenser som avspeglar avståndet (i rätt tidsdimension) från händelsen.
 
@@ -44,7 +45,7 @@ Om du vill skapa en latenstabell börjar du med att göra en markering och anger
 
 1. Högerklicka på en arbetsyta och öppna önskad visualisering(ar), som måste baseras på den räkningsbara dimension som används för att konfigurera latenstabellen.
 
-   I [!DNL Site] visualiseringen måste till exempel sessionerna vara baserade.
+   I [!DNL Site] måste till exempel visualiseringen/visualiseringarna vara sessionsbaserade.
 
 1. Öppna en tom latenstabell.
 1. Gör en markering på arbetsytan.
@@ -54,7 +55,7 @@ Om du vill skapa en latenstabell börjar du med att göra en markering och anger
 
 >[!NOTE]
 >
->Händelser som du väljer bevaras inte såvida du inte sparar markeringarna som en latensdimension. Stegen finns i [Återanvända en fördröjningsdimension](../../../home/c-get-started/c-analysis-vis/c-lat-tbls.md#section-29c6483bf9ba476fb1c24ad1df253f46).
+>Händelser som du väljer bevaras inte såvida du inte sparar markeringarna som en latensdimension. Anvisningar finns i [Återanvända en Latency-Dimension](../../../home/c-get-started/c-analysis-vis/c-lat-tbls.md#section-29c6483bf9ba476fb1c24ad1df253f46).
 
 ## Återanvända en latenstabell {#section-05f741169d204213b6537dce553e4f73}
 
@@ -62,30 +63,30 @@ Om du vill använda samma svarstabell igen kan du spara latenstabellen lokalt el
 
 **Spara latenstabellen för användning i andra arbetsytor**
 
-1. Högerklicka på visualiseringens övre kant och klicka **[!UICONTROL Save]**. Fönstret [!DNL Save] visas. Standardplatsen för att spara är användar-\*profilnamnet*\Arbetsmapp.
-1. Skriv ett beskrivande namn för visualiseringen i [!DNL File name] fältet och klicka på **[!UICONTROL Save]**.
+1. Högerklicka på visualiseringens övre kant och klicka på **[!UICONTROL Save]**. Fönstret [!DNL Save] visas. Standardplatsen för att spara är användar-\*profilnamnet*\Arbetsmapp.
+1. I fältet [!DNL File name] anger du ett beskrivande namn för visualiseringen och klickar på **[!UICONTROL Save]**.
 
 **Så här hämtar du den sparade latenstabellen**
 
-1. Högerklicka på arbetsytan och klicka **[!UICONTROL Open]** > **[!UICONTROL File]**. Fönstret [!DNL Open Visualization] visas.
+1. Högerklicka på arbetsytan och klicka på **[!UICONTROL Open]** > **[!UICONTROL File]**. Fönstret [!DNL Open Visualization] visas.
 1. Navigera till latenstabellen som du sparade.
 1. Markera visualiseringsfilen för latenstabellen ( [!DNL *.vw]) och klicka på **[!UICONTROL Open]**.
 
-## Återanvända en latensdimension {#section-29c6483bf9ba476fb1c24ad1df253f46}
+## Återanvänd en fördröjningsdimension {#section-29c6483bf9ba476fb1c24ad1df253f46}
 
 Om du vill använda samma fördröjningsdimension igen kan du spara latensdimensionen lokalt eller om du har rätt behörighet kan du spara den på servern så att alla användare av en viss profil kan komma åt den.
 
-Eventuella latensdimensioner som du skapar sparas i profilens Dimensions-katalog och finns tillgängliga i den [!DNL Change Dimension] nedrullningsbara listan i Data Workbench.
+Eventuella latensdimensioner som du skapar sparas i profilens katalog för Dimensioner och finns tillgängliga i listrutan [!DNL Change Dimension] i Datan Workbench.
 
 **Spara latensdimensionen för andra arbetsytor**
 
-1. Högerklicka på [!DNL Latency] kolumnetiketten eller något av dess element och klicka sedan på **[!UICONTROL Save Dimension]**. Fönstret [!DNL Save Dimension As] visas.
-1. Välj eller skapa lämplig underkatalog i Dimensions-katalogen.
-1. I [!DNL File name] fältet skriver du ett beskrivande namn för dimensionen (till exempel [!DNL Latency for Campaign 11565.dim]) och klickar på **[!UICONTROL Save]**.
+1. Högerklicka på kolumnetiketten [!DNL Latency] eller något av elementen i den och klicka på **[!UICONTROL Save Dimension]**. Fönstret [!DNL Save Dimension As] visas.
+1. Markera eller skapa lämplig underkatalog i katalogen Dimensions.
+1. I fältet [!DNL File name] anger du ett beskrivande namn för dimensionen (till exempel [!DNL Latency for Campaign 11565.dim]) och klickar på **[!UICONTROL Save]**.
 
 **Så här hämtar du den sparade fördröjningsdimensionen**
 
-1. Högerklicka på arbetsytan och klicka **[!UICONTROL Open]** > **[!UICONTROL File]**. Fönstret [!DNL Open Visualization] visas.
+1. Högerklicka på arbetsytan och klicka på **[!UICONTROL Open]** > **[!UICONTROL File]**. Fönstret [!DNL Open Visualization] visas.
 1. Navigera till den fördröjningsvisualisering som du sparade i mappen User\*profile name*\Dimensions.
 1. Markera latensdimensionsfilen ( [!DNL *.dim]) och klicka på **[!UICONTROL Open]**.
 
