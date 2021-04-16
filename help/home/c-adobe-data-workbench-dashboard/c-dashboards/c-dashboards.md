@@ -1,14 +1,15 @@
 ---
-description: 'null'
-solution: Analytics
+description: Kontrollpaneler
 title: Kontrollpaneler
-topic: Data workbench
 uuid: 578d29b2-3609-4f64-b800-4b453f10083d
+exl-id: a668b49a-4c2e-4667-88ac-7e4526ed177a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '84'
+ht-degree: 0%
 
 ---
-
 
 # Kontrollpaneler{#dashboards}
 
