@@ -1,22 +1,21 @@
 ---
 description: Om klienter kan nå en Insight Server via flera nätverk (till exempel via företagets intranät och Internet) måste adressfilen definiera en separat nätverksplats för varje servers IP-adresser.
-solution: Analytics
 title: Flera IP-adresser för en Insight-server
 uuid: 6ed00b47-8ba3-4127-a5db-7e684e573d9c
+exl-id: 71654a60-af82-45f2-826b-29ecc7127b0b
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
-
 # Flera IP-adresser för en Insight-server{#multiple-ip-addresses-for-an-insight-server}
 
 Om klienter kan nå en Insight Server via flera nätverk (till exempel via företagets intranät och Internet) måste adressfilen definiera en separat nätverksplats för varje servers IP-adresser.
 
-Om servern till exempel [!DNL VS01.myCompany.com] har IP-adressen 10.2.1.70 i ett internt nätverk och IP-adressen 65.196.125.167 på Internet, innehåller adressfilen en nätverksplats för var och en av adresserna enligt exemplet nedan:
+Om servern [!DNL VS01.myCompany.com] till exempel har IP-adressen 10.2.1.70 i ett internt nätverk och IP-adressen 65.196.125.167 på Internet, innehåller adressfilen en nätverksplats för var och en av adresserna enligt exemplet nedan:
 
 ```
 0 = NetworkLocation: 
@@ -35,4 +34,4 @@ Om servern till exempel [!DNL VS01.myCompany.com] har IP-adressen 10.2.1.70 i et
   Parent = string:
 ```
 
-När användare ansluter till en [!DNL Insight Server]server använder de parametern NetworkLocation (i klientanvändargränssnittet) för att ange den nätverksplats där de vill att serverns namn ska matchas. Med en adressfil med de två NetworkLocations som visas ovan skulle en användare ange parametern NetworkLocation till &quot;MyCorporate Intranet&quot; för att ansluta till [!DNL Insight Server] via det interna nätverket och till &quot;Internet&quot; för att ansluta till servern via Internet.
+När användare ansluter till en [!DNL Insight Server] använder de parametern NetworkLocation (i klientanvändargränssnittet) för att ange nätverksplatsen som de vill att serverns gemensamma namn ska matchas med. Med en adressfil med de två NetworkLocations som visas ovan skulle en användare ange parametern NetworkLocation till &quot;MyCorporate Intranet&quot; för att ansluta till [!DNL Insight Server] via det interna nätverket och till &quot;Internet&quot; för att ansluta till servern via Internet.
