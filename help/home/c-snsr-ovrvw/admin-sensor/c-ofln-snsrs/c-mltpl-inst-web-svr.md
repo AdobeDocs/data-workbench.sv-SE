@@ -1,16 +1,15 @@
 ---
 description: Information om den allmänna konfigurationen av sensorn med en webbserverinstans som körs på en webbserver.
-solution: Analytics
 title: Arbeta med flera instanser av en webbserver
 uuid: 778ea95f-e0f2-4c2a-b7ed-7e323fea1e48
+exl-id: a371f9ed-6c27-4b3d-843f-ae5621013410
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
 
 ---
-
 
 # Arbeta med flera instanser av en webbserver{#working-with-multiple-instances-of-a-web-server}
 
@@ -28,11 +27,10 @@ När [!DNL Sensor] är installerat på en webbserver som kör flera insamlarinst
 
 * Du kan replikera arkitekturen ovan flera gånger och låta varje webbserverinstans ha en separat köfil.
 
-   På så sätt kan du identifiera var och en av webbserverinstanserna unikt. Identifieringen av webbservern (och motsvarande SensorID i [!DNL Sensor] konfigurationen) är med andra ord en funktion i den här konfigurationen.
+   På så sätt kan du identifiera var och en av webbserverinstanserna unikt. Identifieringen av webbservern (och motsvarande SensorID i [!DNL Sensor]-konfigurationen) är med andra ord en funktion i den här konfigurationen.
 
-I vilket fall som helst innehåller data fortfarande all värdnamnsinformation så att du kan skilja mellan [!DNL www.client.com], [!DNL www2.client.com]och så vidare. Den korrekta konfigurationen avgörs av analysmålen och om analytikerna behöver segmentera data baserat på en specifik instans som körs på en webbserver.
+I vilket fall som helst innehåller data fortfarande all värdnamnsinformation så att du kan skilja mellan [!DNL www.client.com], [!DNL www2.client.com] och så vidare. Den korrekta konfigurationen avgörs av analysmålen och om analytikerna behöver segmentera data baserat på en specifik instans som körs på en webbserver.
 
 >[!NOTE]
 >
 >Denna typ av segmentering används vanligtvis endast vid operativ analys och ger inte mycket praktisk användning utanför det området.
-
