@@ -1,14 +1,15 @@
 ---
 description: Tvådimensionella (2D) diagram visar ett mått över två dimensioner.
-solution: Analytics
 title: 2D-diagram
-topic: Data workbench
 uuid: f8860fff-4614-4b1a-b217-760bf4d48f20
+exl-id: 9767124b-8507-4b25-842b-8e2729e57461
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
 
 ---
-
 
 # 2D-diagram{#d-graphs}
 
@@ -31,4 +32,4 @@ Se följande exempel:
 1. Flytta musen över den lodräta axeln för att markera ett plan i diagrammet.
 1. När planet är markerat klickar och drar du musen uppåt eller nedåt för att skala diagrammets lodräta axel.
 
-Se [Zooma i visualiseringar](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
+Se [Zooma in visualiseringar](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
