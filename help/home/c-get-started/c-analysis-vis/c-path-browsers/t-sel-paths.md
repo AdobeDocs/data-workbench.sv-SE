@@ -1,16 +1,17 @@
 ---
 description: Du kan markera en bana i en sökvägsläsare för att skapa filter som innehåller data som är kopplade till elementen i sökvägen.
-solution: Analytics
 title: Markera en bana
-topic: Data workbench
 uuid: 3131df2f-674f-44b8-9006-d8cb1ecf3874
+exl-id: c560dfd0-ccaf-4a60-88a1-29a33f8aa014
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 0%
 
 ---
 
-
-# Markera en bana{#select-a-path}
+# Välj en sökväg{#select-a-path}
 
 Du kan markera en bana i en sökvägsläsare för att skapa filter som innehåller data som är kopplade till elementen i sökvägen.
 
@@ -23,7 +24,7 @@ Anta till exempel att du har skapat en sökvägsläsare som visar sidor på en w
 >Du kan ändra standardnivådimensionen för en sökvägsläsare. Instruktioner om hur du konfigurerar en sökvägsläsare finns i [Konfigurera sökvägsläsare](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
 
 1. Klicka på ett element i sökvägsläsaren för att utöka den visade sökvägen till vänster eller höger om roten.
-1. Högerklicka på önskat element och klicka **[!UICONTROL Select path]**. Den markerade banan kontureras med vitt.
+1. Högerklicka på önskat element och klicka på **[!UICONTROL Select path]**. Den markerade banan kontureras med vitt.
 
    >[!NOTE]
    >
@@ -36,4 +37,3 @@ Anta till exempel att du har skapat en sökvägsläsare som visar sidor på en w
    ![](assets/client-path.png)
 
    Den här sökvägen utgör en markering och alla andra öppna visualiseringar på arbetsytan (inklusive förklaringar) uppdateras för att visa data som är kopplade till den bana som skapas av de markerade elementen. Se [Göra markeringar i visualiseringar](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746).
-
