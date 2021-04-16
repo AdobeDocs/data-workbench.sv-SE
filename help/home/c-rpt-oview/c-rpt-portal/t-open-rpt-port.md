@@ -1,26 +1,28 @@
 ---
 description: Steg för att öppna rapportportalen.
-solution: Analytics
 title: Öppna rapportportalen
-topic: Data workbench
 uuid: f9a1c213-d500-4408-a621-3af29da63791
+exl-id: 74ac9276-ba76-44ce-a15b-33af0622ab19
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '178'
+ht-degree: 0%
 
 ---
 
-
-# Öppna rapportportalen{#opening-the-report-portal}
+# Öppnar rapportportalen{#opening-the-report-portal}
 
 Steg för att öppna rapportportalen.
 
-Om du har flera tillgängliga profiler kan du välja rätt profil i listrutan. Om du bara har en profil visas ingen listruta. Om du bara har en profil och autentiseringen är inaktiverad skickas du direkt till [!DNL Report Portal] startsidan.
+Om du har flera tillgängliga profiler kan du välja rätt profil i listrutan. Om du bara har en profil visas ingen listruta. Om du bara har en profil och autentiseringen är inaktiverad skickas du direkt till startsidan för [!DNL Report Portal].
 
-1. I webbläsaren öppnar du [!DNL Report Portal] med följande URI-format:
+1. Öppna [!DNL Report Portal] i din webbläsare med följande URI-format:
 
-   http://*ServerAddress*/*PortalName* Exempel: [!DNL http://dataworkbench/ReportPortal]
-1. Om du har flera tillgängliga profiler väljer du en profil på den **[!UICONTROL Profile]** nedrullningsbara menyn.
-1. Om [!DNL Report Portal] du uppmanas att ange inloggningsuppgifter anger du ett kontonamn och lösenord och klickar sedan på **[!UICONTROL login]**. Tåget [!DNL Report Portal] öppnas.
+   http://*Serveradress*/*PortalName*
+Exempel: [!DNL http://dataworkbench/ReportPortal]
+1. Om du har flera tillgängliga profiler väljer du en profil i listrutan **[!UICONTROL Profile]**.
+1. Om [!DNL Report Portal] frågar efter inloggningsuppgifter anger du ett kontonamn och ett lösenord och klickar sedan på **[!UICONTROL login]**. [!DNL Report Portal] öppnas.
 
    ![](assets/report_portal_home.png)
 
@@ -32,16 +34,15 @@ Om du har flera tillgängliga profiler kan du välja rätt profil i listrutan. O
   </tr> 
   <tr> 
    <td colname="col1"> Kalender </td> 
-   <td colname="col2"> <p>Klicka på <span class="uicontrol"> knappen Kalender </span> i den vänstra rutan och klicka sedan på ett fönster för att visa rapporter för den valda dagen. </p> </td> 
+   <td colname="col2"> <p>Klicka på knappen <span class="uicontrol"> Kalender </span> i den vänstra rutan och klicka sedan på ett fönster för att visa rapporterna för den valda dagen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Lista </td> 
-   <td colname="col2"> <p>Klicka på <span class="uicontrol"> knappen </span> Lista i den vänstra rutan om du vill visa datum listade efter datum. </p> </td> 
+   <td colname="col2"> <p>Klicka på knappen <span class="uicontrol"> Lista </span> i den vänstra rutan om du vill visa datum listade efter datum. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Sök </td> 
-   <td colname="col2"> Om du vill hitta specifika rapporter klickar du på <span class="uicontrol"> knappen Sök för att öppna </span> funktionen Avancerad sökning <a href="../../../home/c-rpt-oview/c-search-adv.md#concept-083b751e28b645ceaa4d9784d21f78ca"> </a> . </td> 
+   <td colname="col2"> Om du vill hitta specifika rapporter klickar du på knappen <span class="uicontrol"> Sök </span> för att öppna funktionen <a href="../../../home/c-rpt-oview/c-search-adv.md#concept-083b751e28b645ceaa4d9784d21f78ca"> Avancerad sökning </a>. </td> 
   </tr> 
  </tbody> 
 </table>
-
