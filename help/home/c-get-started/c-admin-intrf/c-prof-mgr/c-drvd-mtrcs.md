@@ -1,28 +1,29 @@
 ---
 description: Du definierar nya mätvärden (kallas härledda mätvärden) och redigerar befintliga mätdefinitioner med hjälp av Metrisk redigerare.
-solution: Analytics
 title: Arbeta med härledda mätvärden
-topic: Data workbench
 uuid: 9767c170-e0cb-47b4-94f1-e9f6950b5926
+exl-id: 83467c64-4b9a-44ab-91a2-202c76c89979
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
-
-# Arbeta med härledda mätvärden{#work-with-derived-metrics}
+# Arbeta med härledda mått{#work-with-derived-metrics}
 
 Du definierar nya mätvärden (kallas härledda mätvärden) och redigerar befintliga mätdefinitioner med hjälp av Metrisk redigerare.
 
-Mer information om mått än vad som anges i det här avsnittet och i [Query Language Syntax](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)finns i *Metrisk, Dimensioner och Filter Guide*.
+Mer information om mått än vad som anges i det här avsnittet och i [Query Language Syntax](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f) finns i *Handbok för mått, Dimensioner och filter*.
 
 ## Skapa ett härlett mått {#section-d57b98bf0a9940daba4920ff7efc808d}
 
 Du använder en [!DNL Metric Editor] för att definiera ett nytt mått efter namn, formel och format, som sparas i mappen User\*profile_name*\Metrics för senare bruk.
 
-1. Öppna ett nytt [!DNL Metric Editor] med **[!UICONTROL Admin]** > **[!UICONTROL Profile]** -menyalternativet eller genom att högerklicka på **[!UICONTROL User]** kolumnen för mappen där du vill skapa måttet och klicka **[!UICONTROL Create]** > **[!UICONTROL New Metric]**.
+1. Öppna en ny [!DNL Metric Editor] med menyalternativet **[!UICONTROL Admin]** > **[!UICONTROL Profile]** eller genom att högerklicka på kolumnen **[!UICONTROL User]** för mappen där du vill skapa måttet och klicka på **[!UICONTROL Create]** > **[!UICONTROL New Metric]**.
 
-   En [!DNL Metric Editor] skärm.
+   En [!DNL Metric Editor] visas.
 
 1. Skriv ett namn för det nya måttet i parametern Namn.
 
@@ -65,26 +66,25 @@ Du använder en [!DNL Metric Editor] för att definiera ett nytt mått efter nam
    >
    >När ett lämpligt uttryck anges visas värdet för det nya måttet på förhandsvisningsraden. Om det finns ett fel i uttrycket visar förhandsvisningsraden ett felmeddelande.
 
-1. Högerklicka **[!UICONTROL (New)]** och klicka **[!UICONTROL Save]**.
+1. Högerklicka på **[!UICONTROL (New)]** och klicka på **[!UICONTROL Save]**.
 
-   När du sparar måttet skapas en fil som representerar det nya måttet på datorn i installationskatalogen för Data Workbench \User\*profilnamn*\Metrics.
+   När du sparar måttet skapas en fil som representerar det nya måttet på datorn i Datans Workbench installationskatalog \User\*profilnamn*\Metrisk.
 
    ![](assets/vis_MetricEditor_NewAndEditing.png)
 
-Nu kan du använda det nya måttet i hela den aktuella profilen genom att markera det på samma sätt som för andra inbyggda mätvärden. Om du vill ändra i vilken ordning mätvärdena visas på mätenas-menyn läser du [Anpassa menyer med hjälp av Order.txt-filer](../../../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/t-cstm-menus-ordr-files.md#task-a391800a8dd444deb3e1516d5189f999).
+Nu kan du använda det nya måttet i hela den aktuella profilen genom att markera det på samma sätt som för andra inbyggda mätvärden. Information om hur du ändrar i vilken ordning mätvärdena visas på mätningsmenyn finns i [Anpassa menyer med Order.txt Files](../../../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/t-cstm-menus-ordr-files.md#task-a391800a8dd444deb3e1516d5189f999).
 
-Om du vill att alla användare av profilen ska använda det mått som du har skapat måste du publicera det till arbetsprofilen med hjälp av [!DNL Profile Manager]. Se [Publicera filer i din arbetsprofil](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
+Om du vill att alla användare av profilen ska använda det mått som du har skapat måste du publicera det till arbetsprofilen med [!DNL Profile Manager]. Se [Publicera filer till din arbetsprofil](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
 
 ## Redigera härledda mått {#section-db6d924cf4e14bcc8d57cfe1059fc797}
 
-1. Högerklicka på bockmarkeringen för den mätfil som du vill redigera i kolumnen [!DNL Profile Manager] profilnamn [!DNL Metrics Manager], *eller* i kolumnen för profilnamn **[!UICONTROL Make Local]**. Klicka sedan på.
-1. Högerklicka på bockmarkeringen för måttfilen i [!DNL User] kolumnen och klicka på **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
+1. I kolumnen [!DNL Profile Manager] eller [!DNL Metrics Manager] i *profilnamnet* högerklickar du på bockmarkeringen för den mätfil som du vill redigera och klickar sedan på **[!UICONTROL Make Local]**.
+1. Högerklicka på bockmarkeringen för måttfilen i kolumnen [!DNL User] och klicka på **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
 
    >[!NOTE]
    >
-   >Du kan också öppna en [!DNL Metric Editor] genom att högerklicka på ett mätrelaterat område i en visualisering för att visa mätmenyn. Mer information finns i [Arbeta med mät- och dimensionsmenyer](../../../../home/c-get-started/c-vis/c-met-dim-menus.md#concept-50f07ae47c3e4f94ad7d3d7f8293ccac).
+   >Du kan också öppna en [!DNL Metric Editor] genom att högerklicka på ett mätrelaterat område i en visualisering för att visa mätmenyn. Mer information finns i [Arbeta med Dimension- och mätmenyer](../../../../home/c-get-started/c-vis/c-met-dim-menus.md#concept-50f07ae47c3e4f94ad7d3d7f8293ccac).
 
-1. I [!DNL Metric Editor]redigerar och sparar du måttdefinitionen efter behov med steg 2-4 i [Skapa nya härledda mått](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-d57b98bf0a9940daba4920ff7efc808d).
+1. I [!DNL Metric Editor] redigerar och sparar du måttdefinitionen efter behov med steg 2-4 i [Skapa nya härledda mått](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-d57b98bf0a9940daba4920ff7efc808d).
 
-   Om du vill att alla användare av profilen ska använda måttet som du redigerade måste du publicera det i arbetsprofilen med hjälp av [!DNL Profile Manager]. Se [Publicera filer i din arbetsprofil](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
-
+   Om du vill att alla användare av profilen ska använda måttet som du redigerade måste du publicera det till arbetsprofilen med [!DNL Profile Manager]. Se [Publicera filer till din arbetsprofil](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
