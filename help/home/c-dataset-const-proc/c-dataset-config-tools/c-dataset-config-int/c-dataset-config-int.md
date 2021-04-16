@@ -1,14 +1,15 @@
 ---
 description: Gränssnitten för datauppsättningskonfiguration visar relationerna mellan datauppsättningens komponenter (loggkällor, fält, omformningar och dimensioner).
-solution: Analytics
 title: Arbeta med gränssnitt för datauppsättningskonfiguration
-topic: Data workbench
 uuid: c29faccd-0402-4982-9e5b-7379e2590246
+exl-id: cc2b876f-8d65-4b36-920a-dde3928795bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 0%
 
 ---
-
 
 # Arbeta med gränssnitt för datauppsättningskonfiguration{#working-with-dataset-configuration-interfaces}
 
@@ -20,9 +21,8 @@ Vissa av gränssnitten innehåller alternativ för att visa information om, sök
 
 Du kan öppna gränssnitten för datauppsättningskonfiguration på något av följande sätt:
 
-* **Admin-menyn:** Högerklicka i en arbetsyta, klicka **[!UICONTROL Admin]** och välj sedan önskat menyalternativ.
+* **Admin Menu:** Right-click within a workspace, click  **[!UICONTROL Admin]**, then click the appropriate menu option.
 
    -OR-
 
-* **Fliken Admin:** Klicka för att öppna motsvarande miniatyrbild av arbetsytan på **[!UICONTROL Admin]** > **[!UICONTROL Dataset and Profile tab]**.
-
+* **fliken Admin:** Klicka för att öppna motsvarande miniatyrbild av arbetsytan på  **[!UICONTROL Admin]** >  **[!UICONTROL Dataset and Profile tab]**.
