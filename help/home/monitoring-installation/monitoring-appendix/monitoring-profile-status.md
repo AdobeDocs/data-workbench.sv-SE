@@ -1,16 +1,17 @@
 ---
 description: Följande mått är tillgängliga för användning i data workbench Profile Status profile profile profile profile profile.
-solution: Analytics
-title: Dimensioner i statusprofilen för Data Workbench-profilen
-topic: Data workbench
+title: Dimensioner i Datans Workbench profilstatusprofil
 uuid: bd84a3e5-d1ea-4768-9dac-62f5dfbad49a
+exl-id: 57b3ff16-26db-4292-819b-f6cd8e024c2a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1047'
+ht-degree: 0%
 
 ---
 
-
-# Dimensioner i statusprofilen för Data Workbench-profilen{#dimensions-in-the-data-workbench-profile-status-profile}
+# Dimensioner i Datans Workbench profilstatusprofil{#dimensions-in-the-data-workbench-profile-status-profile}
 
 Följande mått är tillgängliga för användning i data workbench Profile Status profile profile profile profile profile.
 
@@ -26,19 +27,19 @@ Följande mått är tillgängliga för användning i data workbench Profile Stat
   </tr> 
   <tr> 
    <td colname="col1"> <b>Miljö</b> </td> 
-   <td colname="col2"> Värdet cs-uri-query(c) används för miljö-ID. Den sista raden för ett block används som värde för dimensionen. Den här enkla dimensionen visar miljön som dina servrar körs i (förutsatt att den är korrekt konfigurerad). <p>Detta kan anges i filen insight_monitor_agent.cfg </p></td> 
+   <td colname="col2"> Värdet cs-uri-query(c) används för miljö-ID. Den sista raden för ett block används som värde för dimensionen. Den här enkla Dimensionen visar miljön där dina servrar körs (förutsatt att den är korrekt konfigurerad). <p>Detta kan anges i filen insight_monitor_agent.cfg </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Mega-indata per minut</b> </td> 
-   <td colname="col2"> Värdet cs-uri-query(bj) används för den här dimensionen. Den sista raden för ett block används som värde för dimensionen. Om datauppsättningen är i snabb inmatning visar den här numeriska dimensionens värde den MB per minut som systemet matar in data med. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Värdet cs-uri-query(bj) används för den här dimensionen. Den sista raden för ett block används som värde för dimensionen. Om datauppsättningen är i snabb inmatning visar den numeriska Dimensionens värde den MB per minut som systemet matar in data med. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Mega-byte för snabb sammanslagning per minut</b> </td> 
-   <td colname="col2">Värdet cs-uri-query(bk) används för den här dimensionen. Den sista raden för ett block används som värde för dimensionen. Om datauppsättningen är i snabb sammanslagning visar den här numeriska dimensionens värde den MB per minut som systemet sammanfogas med. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2">Värdet cs-uri-query(bk) används för den här dimensionen. Den sista raden för ett block används som värde för dimensionen. Om datauppsättningen är i snabb sammanslagning visar den här numeriska Dimensionens värde den MB per minut som systemet sammanfogas med. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>GigaBytes-fält</b> </td> 
-   <td colname="col2"> Värdet cs-uri-query(bg) används för den här dimensionen. Värdet divideras med 1000 och avrundas till närmaste heltal. Den här numeriska dimensionens värde visar mängden utrymme som fälten i datauppsättningen använder. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Värdet cs-uri-query(bg) används för den här dimensionen. Värdet divideras med 1000 och avrundas till närmaste heltal. Den här numeriska Dimensionens värde visar mängden utrymme som används för fälten i datauppsättningen. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Värd</b> </td> 
@@ -54,7 +55,7 @@ Följande mått är tillgängliga för användning i data workbench Profile Stat
   </tr> 
   <tr> 
    <td colname="col1"> <b>ID för bearbetningsläge</b> </td> 
-   <td colname="col2"> Värdet cs-uri-query(bb) används för den här enkla dimensionen. Det är sista raden för ett visst block. Med ett ID för bearbetningsläge kan du se vilket bearbetningsläge systemet har (snabb inmatning, snabb sammanslagning, realtid). <p>Obs!  Dimensionen är dold och sedan återexponerad med egna värden i dimensionshanteringsläget på klientsidan. </p></td> 
+   <td colname="col2"> Värdet cs-uri-query(bb) används för den här enkla Dimensionen. Det är sista raden för ett visst block. Med ett ID för bearbetningsläge kan du se vilket bearbetningsläge systemet har (snabb inmatning, snabb sammanslagning, realtid). <p>Obs!  Dimensionen är dold och sedan återexponerad med egna värden i dimensionshanteringsläget på klientsidan. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Bearbetningen har avbrutits</b> </td> 
@@ -62,18 +63,18 @@ Följande mått är tillgängliga för användning i data workbench Profile Stat
   </tr> 
   <tr> 
    <td colname="col1"> <b>Profil</b> </td> 
-   <td colname="col2"> Värdet cs-uri-query(ba) används för den här enkla dimensionen. Den här dimensionen visar namnet/namnen på de profiler som för närvarande övervakas. </td> 
+   <td colname="col2"> Värdet cs-uri-query(ba) används för den här enkla Dimensionen. Den här dimensionen visar namnet/namnen på de profiler som för närvarande övervakas. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Källa längst bak</b> </td> 
-   <td colname="col2"> Den sista raden med cs-uri-query(bl) kopieras till fältet x-source-furest-behind. Den enkla dimensionen använder den sista raden för ett visst block. Den här dimensionen visar när den senaste kontakten med en datakälla inträffade. </td> 
+   <td colname="col2"> Den sista raden med cs-uri-query(bl) kopieras till fältet x-source-furest-behind. I Dimensionen Enkel används sista raden för ett visst block. Den här dimensionen visar när den senaste kontakten med en datakälla inträffade. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Omformningsprocent</b> </td> 
    <td colname="col2"> Värdet cs-uri-query(bf) används för den här numeriska dimensionen. Det är sista raden för ett visst block. Den här dimensionen används för att beräkna procentandelen av fullständig dataomvandling. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b>Tidsdimensioner</b> </td> 
+   <td colname="col1"> <b>Dimensioner</b> </td> 
    <td colname="col2"> Timme, Dag, Vecka, Månad, Timme på dagen och Dag på veckan hämtas alla från fältet för x-tidsstämpling. </td> 
   </tr> 
   <tr> 
@@ -81,7 +82,7 @@ Följande mått är tillgängliga för användning i data workbench Profile Stat
    <td colname="col2"> Grupperingsord som ger dig ett annat sätt att filtrera den resulterande datauppsättningen. Ange i filen insight_monitor_agent.cfg. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b>Mått</b> </td> 
+   <td colname="col1"> <b>Mätvärden</b> </td> 
    <td colname="col2"> Nedan visas mätvärden som ingår i data workbench Profile Monitoring Profile och hur de härleds. </td> 
   </tr> 
   <tr> 
@@ -90,7 +91,7 @@ Följande mått är tillgängliga för användning i data workbench Profile Stat
   </tr> 
   <tr> 
    <td colname="col1"> <b>Efter fördröjning i sekunder</b> </td> 
-   <td colname="col2"> Detta mått är summan av sekundvärdena per fördröjning för varje block, dividerat med det totala antalet block. (Från och med fördröjningssekunders dimension är inte konfigurerad utanför lådan) </td> 
+   <td colname="col2"> Detta mått är summan av sekundvärdena per fördröjning för varje block, dividerat med det totala antalet block. (Dimensionen Efter fördröjning i sekunder är inte konfigurerad utanför rutan) </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Block</b> </td> 
@@ -122,7 +123,7 @@ Följande mått är tillgängliga för användning i data workbench Profile Stat
   </tr> 
   <tr> 
    <td colname="col1"> <b>Bearbetningen har avbrutits</b> </td> 
-   <td colname="col2"> Summan av Bearbetning av den fasta dimensionen för varje block dividerat med Blocks-måttet. </td> 
+   <td colname="col2"> Summan av Dimensionen Bearbetning av förinställd för varje block, dividerat med värdet för block. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Omformning</b> </td> 
@@ -130,4 +131,3 @@ Följande mått är tillgängliga för användning i data workbench Profile Stat
   </tr> 
  </tbody> 
 </table>
-
