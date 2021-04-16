@@ -1,22 +1,23 @@
 ---
-description: Gränssnittet Detaljerad status i data workbench är användbart för felsökning av fel eller andra problem med Data Workbench Server- och Report Server-datorer som är klienter till Data Workbench Server.
-solution: Analytics
+description: Gränssnittet Detaljerad status i data workbench är användbart för felsökning av fel eller andra problem med Data Workbench Server- och Report Server-datorer som är Data Workbench Server-klienter.
 title: Rapportserverstatus visas
-topic: Data workbench
 uuid: 5260266d-5bd1-4905-9619-f67f6e1bc54c
+exl-id: 3a717a81-7c5d-432d-b214-4ae0455b19b5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 0%
 
 ---
 
+# Visa rapportserverstatus{#displaying-report-server-status}
 
-# Rapportserverstatus visas{#displaying-report-server-status}
+Gränssnittet Detaljerad status i data workbench är användbart för felsökning av fel eller andra problem med Data Workbench Server- och Report Server-datorer som är Data Workbench Server-klienter.
 
-Gränssnittet Detaljerad status i data workbench är användbart för felsökning av fel eller andra problem med Data Workbench Server- och Report Server-datorer som är klienter till Data Workbench Server.
+Om du vill visa rapportens status i [!DNL Master Server Detailed Status]-gränssnittet måste du lägga till en rapportstatusserver i [!DNL Servers]-vektorn i [!DNL Communications.cfg]-filen för data workbench-servern. Följande procedur beskriver hur du lägger till rapportstatusservern i filen [!DNL Communications.cfg]:
 
-Om du vill visa rapportens status i [!DNL Master Server Detailed Status] gränssnittet måste du lägga till en rapportstatusserver till [!DNL Servers] vektorn i data workbench-serverns [!DNL Communications.cfg] fil. I proceduren nedan beskrivs hur du lägger till rapportstatusservern i [!DNL Communications.cfg] filen:
-
-Mer information om [!DNL Detailed Status] gränssnitt finns i kapitlet Administrativa gränssnitt i *användarhandboken* för Data Workbench.
+Mer information om [!DNL Detailed Status]-gränssnitt finns i kapitlet Administrativa gränssnitt i *användarhandboken för Data Workbench*.
 
 **Lägga till en[!DNL Report Status Server]**
 
@@ -24,7 +25,7 @@ Mer information om [!DNL Detailed Status] gränssnitt finns i kapitlet Administr
 
    Exempel: [!DNL C:\Adobe\Server\Components]
 1. Öppna [!DNL Communications.cfg] i en textredigerare som Anteckningar.
-1. Leta reda på [!DNL Servers] vektorn och lägg till rapportstatusservern i den här vektorn så som den markeras i följande filfragment.
+1. Leta reda på vektorn [!DNL Servers] och lägg till rapportstatusservern i den här vektorn så som den markeras i följande filfragment.
 
    ```
     . . .
@@ -43,5 +44,5 @@ Mer information om [!DNL Detailed Status] gränssnitt finns i kapitlet Administr
          URI = string: /ReportStatus.vsp
    ```
 
-1. Uppdatera antalet objekt för [!DNL Servers] vektorn (d.v.s. ökar objektvärdet med ett) så som det markerats i filfragmentet i föregående steg.
+1. Uppdatera antalet objekt för [!DNL Servers]-vektorn (d.v.s. ökar objektvärdet med ett) så som det markerats i filfragmentet i föregående steg.
 1. Spara filen.
