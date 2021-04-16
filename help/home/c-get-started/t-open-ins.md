@@ -1,21 +1,22 @@
 ---
-description: När Data Workbench har installerats och är ansluten till servern kan du använda den för att analysera bearbetade data.
-solution: Analytics
+description: När Datan Workbench har installerats och är ansluten till servern kan du använda den för att analysera dina bearbetade data.
 title: Öppnar Data Workbench
-topic: Data workbench
 uuid: d1da143d-6302-4467-a989-842b54b87c2e
+exl-id: 898c9dc7-969c-4e62-be6b-1d2e0086b1d6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 0%
 
 ---
 
-
 # Öppnar Data Workbench{#opening-data-workbench}
 
-När Data Workbench har installerats och är ansluten till servern kan du använda den för att analysera bearbetade data.
+När Datan Workbench har installerats och är ansluten till servern kan du använda den för att analysera dina bearbetade data.
 
-1. Navigera till installationskatalogen för Data Workbench.
-1. Dubbelklicka [!DNL insight.exe] för att starta programmet.
+1. Gå till Datans Workbench installationskatalog.
+1. Dubbelklicka på [!DNL insight.exe] för att starta programmet.
 1. Klicka på **[!UICONTROL Login]**.
 
    ![](assets/dwb_login.png)
@@ -24,7 +25,7 @@ När Data Workbench har installerats och är ansluten till servern kan du använ
 
    ![](assets/dwb_signin.png)
 
-   Första gången du startar visas [!DNL Start] sidan och profildata och datacachen hämtas.
+   Första gången du startar visas sidan [!DNL Start] och profildata och datacachen hämtas.
 
 1. När datacachen börjar fyllas klickar du på **[!UICONTROL Start]**.
 
@@ -32,11 +33,10 @@ När Data Workbench har installerats och är ansluten till servern kan du använ
 
    ![](assets/wtp_open.png)
 
-   Nästa gång du startar Data Workbench hoppar systemet över [!DNL Start] sidan och visar [!DNL Worktop]bilden, såvida inte en ny profil har lagts till på servern.
+   Nästa gång du startar Datan Workbench hoppar systemet över sidan [!DNL Start] och visar [!DNL Worktop], såvida inte en ny profil har lagts till på servern.
 
-   Uppdateringar av profilen och dess data hämtas endast om du arbetar online och har en nätverksanslutning till Data Workbench-servern. Mer information om att arbeta online finns i [Arbeta offline och online](../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
+   Uppdateringar av profilen och dess data hämtas endast om du arbetar online och har en nätverksanslutning till Datan Workbench. Mer information om att arbeta online finns i [Arbeta offline och online](../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
 
    >[!NOTE]
    >
    >Det rekommenderas inte att flera användare delar en enda dator för att använda arbetsstationen.
-
