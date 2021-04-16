@@ -1,14 +1,15 @@
 ---
 description: Komprimerar/utökar den aktuella visualiseringen.
-solution: Analytics
 title: Komprimera och utöka visualiseringar
-topic: Data workbench
 uuid: 16ee5479-e457-4abc-8a40-ed75612318fa
+exl-id: b005fd1e-1704-476f-b220-44ac591b8d15
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '94'
+ht-degree: 0%
 
 ---
-
 
 # Komprimera och utöka visualiseringar{#collapsing-and-expanding-visualizations}
 
