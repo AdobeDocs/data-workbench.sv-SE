@@ -1,14 +1,15 @@
 ---
 description: Befintliga kontrollpaneler kan redigeras när som helst, antingen för tillfälliga syften eller för att göra permanenta ändringar som ska sparas på servern.
-solution: Analytics
 title: Redigera eller uppdatera en instrumentpanel
-topic: Data workbench
 uuid: 643f24f5-78ce-4876-8c01-889bfae5735e
+exl-id: 822c5544-f7e3-4297-b784-926c43f8bc4e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 0%
 
 ---
-
 
 # Redigera eller uppdatera en instrumentpanel{#editing-or-updating-a-dashboard}
 
@@ -26,5 +27,5 @@ Befintliga kontrollpaneler kan redigeras när som helst, antingen för tillfäll
 
 1. Öppna instrumentpanelen.
 1. När kontrollpanelen har lästs in väljer du **[!UICONTROL Save]** i listrutan Kontrollpanel.
-1. När fönstret visas justerar du instrumentpanelens titel, beskrivning, plats och delningsalternativ efter behov. **[!UICONTROL Update Existing Dashboard]**
-1. Klicka **[!UICONTROL Update]** för att spara uppdateringar på servern. Se [Spara en kontrollpanel](../../../home/c-adobe-data-workbench-dashboard/c-dashboards/t-saving-a-dashboard.md#task-4132cf487bc640149c91afd0b7b0701e).
+1. När fönstret **[!UICONTROL Update Existing Dashboard]** visas justerar du instrumentpanelens titel, beskrivning, plats och delningsalternativ efter behov.
+1. Klicka på **[!UICONTROL Update]** om du vill spara uppdateringar på servern. Se [Spara en instrumentpanel](../../../home/c-adobe-data-workbench-dashboard/c-dashboards/t-saving-a-dashboard.md#task-4132cf487bc640149c91afd0b7b0701e).
