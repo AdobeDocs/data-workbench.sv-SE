@@ -1,16 +1,17 @@
 ---
 description: Nya funktioner i Data Workbench 6.0.4, bland annat felkorrigeringar och kända fel.
-solution: Analytics
-title: Versionsinformation för Data Workbench 6.0
-topic: Data workbench
+title: Versionsinformation om Data Workbench 6.0
 uuid: b348425e-3304-4db7-a280-479a34452bdb
+exl-id: be69b3be-24e7-4a8c-9dc8-1360a9b6fb3a
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1679'
+ht-degree: 0%
 
 ---
 
-
-# Versionsinformation för Data Workbench 6.0
+# Versionsinformation om Data Workbench 6.0
 
 Nya funktioner i Data Workbench 6.0.4, bland annat felkorrigeringar och kända fel.
 
@@ -18,14 +19,14 @@ Nya funktioner i Data Workbench 6.0.4, bland annat felkorrigeringar och kända f
 
 Data workbench (Insight 6.0) innehåller dessa nya funktioner och visualiseringar för extra rapporteringsfunktioner och verktyg för prediktiv analys.
 
-| Data Workbench-funktioner | Beskrivning |
+| Data Workbench | Beskrivning |
 |---|---|
-| [Trattvisualisering](../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization.md#concept-79a0854325324bb9a60906cf79ef66da) | Med Trattvisualisering kan ni definiera kundens sekventiella processflöde och synliggöra besökarnas bortfall vid varje steg i processen. |
+| [Trattvisualisering](../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization.md#concept-79a0854325324bb9a60906cf79ef66da) | Med Trattvisualiseringen kan ni definiera kundens sekventiella processflöde och synliggöra besökarnas bortfall vid varje steg i processen. |
 | [Besökskluster](../../../home/c-get-started/c-analysis-vis/c-visitor-cluster/c-visitor-cluster.md#concept-1c2406ef7b284a56a02daa38eaa2e73d) | Med klustring kan ni utnyttja kundens egenskaper för att dynamiskt kategorisera besökarna och generera klusteruppsättningar baserat på valda dataindata för kundanalys och målgruppsanpassning. |
 | [Korrelationsanalys](../../../home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md#concept-a7c8766b40be43aaa4084612689b630c) | Med korrelationsanalys kan ni snabbt identifiera relevanta dataförhållanden för att utöka och förbättra analysen. |
 | [Uppdaterad DeviceAtlas-distribution](../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md#concept-28b7bd5c0d854e73834261c431bed1e0) | DeviceAtlas JSON-filen kommer nu att distribueras i en .bundle-fil (en namnändrad .tar.gz) tillsammans med DeviceAtlas.dll och DeviceAtlas64.dll. |
 
-## Krav för klientuppgradering {#section-f316103b48374b6eac77e8feb5c47ecf}
+## Klientuppgraderingskrav {#section-f316103b48374b6eac77e8feb5c47ecf}
 
 Utför följande uppgraderingsuppgifter för klientfunktionerna i Data Workbench (Insight 6.0):
 
@@ -40,7 +41,7 @@ Förutsättningar:
 * Innan du uppgraderar till Insight 6.0 och Report Server 6.0 måste Insight-administratören först uppgradera till Insight Server 6.0.
 * Insight-administratören måste välja en zbin-fil baserat på språk (en-us.zbin, zh-cn.zbin), kopiera språkfilen, sedan byta namn på den till insight.zbin och placera den namnändrade filen i rotkatalogen för rapportservern där den körbara filen finns. Starta sedan om Insight Report Server.
 
-Mer information om uppgradering på serversidan finns i [Serveruppgraderingskraven](../../../home/c-release-notes-insight/release-notes.md) .
+Se [Krav för serveruppgradering](../../../home/c-release-notes-insight/release-notes.md) för ytterligare information om serveruppgradering.
 
 **Så här uppgraderar du zbin-filen för klienten (från version 5.x till 6.0)**
 
@@ -51,7 +52,7 @@ Mer information om uppgradering på serversidan finns i [Serveruppgraderingskrav
    ```
 
 1. Starta om Insight-klienten.
-1. Navigera till profilen Software and Docs (SoftDocs-profilen) och hämta den **[!UICONTROL Insight.zbin]** fil som krävs: [!DNL Software\Insight Client\v6.00\Insight_6.00.zip]
+1. Navigera till profilen Software and Docs (SoftDocs-profilen) och hämta den obligatoriska **[!UICONTROL Insight.zbin]**-filen: [!DNL Software\Insight Client\v6.00\Insight_6.00.zip]
 
 1. Kopiera filen Insight.zbin till samma mapp som filen Insight.exe.
 1. Om du vill vara säker på att Insight-klienten nu uppdateras från Insight Server ändrar du filargumentet Insight.cfg till true:
@@ -92,7 +93,7 @@ Vi rekommenderar också att man uppgraderar serverklustren med en ny installatio
 
 ## Uppgradera serverkluster
 
-**Förbered språkfilen (.zbin-fil).** Insight-administratören väljer `<language>.zbin` filen för det språk som krävs (till exempel: sv-se.zbin , zh-cn.zbin) i `/localization/<language>.zbin` mappen. Administratören kopierar sedan språkfilen och byter namn på den till &quot;insight.zbin&quot;.
+**Förbered språkfilen (.zbin-fil).** Insight-administratören väljer  `<language>.zbin` filen för det språk som krävs (till exempel: sv-se.zbin , zh-cn.zbin) i  `/localization/<language>.zbin` mappen. Administratören kopierar sedan språkfilen och byter namn på den till &quot;insight.zbin&quot;.
 
 När språkfilen (.zbin) har förberetts måste både Insight Client och Report Server uppdateras. Insight Client uppdateras under [klientuppgraderingsprocessen](../../../home/c-release-notes-insight/release-notes.md), men i de flesta fall uppdaterar Insight-administratören Report Server.
 
@@ -137,6 +138,7 @@ Uppdatera språkfilerna för Report Server:
 
    1. Öppna Windows Service Manager.
    1. Högerklicka [!DNL Adobe Insight Report Server - Properties].
+
    Sökvägen till den körbara filen innehåller parametrarna:
 
    ```
@@ -172,7 +174,7 @@ Den anpassade profilen bör ärva PAServer.cfg från profilen Predictive Analyti
 Förutsättningar:
 
 * Innan du uppgraderar Report Server 6.0 måste Insight-administratören först uppgradera till Insight Server 6.0.
-* För alla språk kräver Report Server 6.0 att Insight.zbin läggs till i rotmappen för Report Server. Kontrollera att filen `base/localization/<language>.zbin` kopieras och byter namn till &quot;insight.zbin&quot;. Kopiera den till roten i rapportserverkatalogen.
+* För alla språk kräver Report Server 6.0 att Insight.zbin läggs till i rotmappen för Report Server. Kontrollera att `base/localization/<language>.zbin` har kopierats och bytt namn till insight.zbin. Kopiera den till roten i rapportserverkatalogen.
 
 Uppdatera parametrarna Fonts och Start:
 
@@ -211,7 +213,7 @@ Så här kontrollerar du om rapportservern körs med rätt parametrar:
    ReportServer.exe -Service ReportServer -Locale -en-us
    ```
 
-**Uppgradera SiteCatalyst-dataflödet för Insight 6.0**. Filnamnsformatet för SiteCatalyst-dataflödet för Insight 6.0 har ändrats.
+**Uppgradera dataflödet från SiteCatalyst för Insight 6.0**. Filnamnsformatet för datafeeden SiteCatalyst för Insight 6.0 har ändrats.
 
 Aktuellt filnamnsformat:
 
@@ -227,13 +229,13 @@ YYYYMMDD-RSID_HH0000.tsv.gz
 
 >[!NOTE]
 >
->Den här ändringen påverkar inte användare som för närvarande distribueras med *wbench/ecom* -versionen av SiteCatalyst-dataflödet.
+>Den här ändringen påverkar inte användare som för närvarande distribueras med *wbench/ecom*-versionen av dataflödet från SiteCatalyst.
 
 Ändringen av filnamnsformatet möjliggör fullständig användning av Insight-deklarationerna för start- och sluttid under loggbearbetningen. Detta gör att processen kan utvärdera om innehållet i filen ska läsas, i stället för att filtrera alla källfiler med en rad för rad-sökning.
 
 I de flesta fall implementerades en namnbytesprocess när filen togs emot för att ge full användning av den här funktionen. Den här ändringen tillhandahåller den namnkonvention som krävs som standard utan att en sekundär process behövs och utan behov.
 
-Så här använder du den nya SiteCatalyst-datafeeden:
+Så här använder du den nya datafeeden för SiteCatalyst:
 
 1. Bestäm hur den mottagande processen ska hantera det nya filnamnsformatet.
 
@@ -251,13 +253,13 @@ Så här använder du den nya SiteCatalyst-datafeeden:
 
 ## Korrigeringar {#section-203f917dd6224114a1f801309c4c2cee}
 
-* Tangentkombinationen för att lämna en arbetsyta utan att spara ändringar har uppdaterats till **[!UICONTROL `<Ctrl>`+`<Backspace>`]**. Du har tidigare annullerat ändringar och stängt en arbetsyta genom att trycka på`<Ctrl>`+`<Delete>`.
+* Tangentkombinationen för att lämna en arbetsyta utan att spara ändringar har uppdaterats till **[!UICONTROL `<Ctrl>`+`<Backspace>`]**. Du har tidigare avbrutit ändringarna och stängt en arbetsyta genom att trycka på `<Ctrl>` + `<Delete>`.
 
-## Versionsinformation för Data Workbench 6.0.4{#data-workbench-release-notes}
+## Versionsinformation om Data Workbench 6.0.4{#data-workbench-release-notes}
 
 Nya funktioner i Data Workbench 6.0.4, bland annat felkorrigeringar och kända fel.
 
-Om du vill visa tidigare funktioner och korrigeringar som är baserade på den senaste versionen läser du i arkiven [med](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html)versionsinformation.
+Om du vill visa tidigare funktioner och korrigeringar som är baserade på den senaste versionen läser du [versionsinformationen, arkiv](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html).
 
 ## Nya funktioner {#section-2-1225066ea8f44cf68e42e019d0bca816}
 
@@ -267,9 +269,9 @@ Data Workbench 6.0.4 innehåller dessa nya funktioner och visualiseringar för e
 
 ![](assets/visitor_scoring_visual.png)
 
-Mer information om den här funktionen finns i [Propensitetsbedömning](../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-visitor-propensity.md#concept-2958f4640dd44b9d86ad51c4f6165f40) .
+Mer information om den här funktionen finns i [Propensitetsbedömning](../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-visitor-propensity.md#concept-2958f4640dd44b9d86ad51c4f6165f40).
 
-## Krav för uppgradering {#section-08bd6fe3da8740fcb19688e8cac6f223}
+## Uppgraderingskrav {#section-08bd6fe3da8740fcb19688e8cac6f223}
 
 **Loggkälla-ID måste definieras**. Från och med version 6.04 får du följande fel om inte ID för loggkälla är definierat:
 
@@ -306,13 +308,13 @@ Log Source ID = string: <Name your ID Here>
 
 **Möjlighet att delegera FSU-resurser**
 
-I [!DNL Profiles/`<profilename>`/dataset/Cluster.cfg]kan du nu ange separata filserverenheter (FSU) för servrarna Normalize och Source List. Dessa tjänster är inte längre knutna till Master FSU.
+I [!DNL Profiles/`<profilename>`/dataset/Cluster.cfg] kan du nu ange separata filserverenheter (FSU) för servrarna Normalize och Source List. Dessa tjänster är inte längre knutna till den Överordnad FSU:n.
 
 >[!NOTE]
 >
 >Om listservern inte anges ärver listservern standardinställningarna för serverkonfigurationen.
 
-Exempel i [!DNL cluster.cfg] filen.
+Exempel i [!DNL cluster.cfg]-filen.
 
 ```
 Cluster = ClusterConfig: 
@@ -326,7 +328,7 @@ Cluster = ClusterConfig:
     Use SSL = bool: false
 ```
 
-## Åtgärdade fel {#section-3b4b85a35f534288adf8a5246ef028cc}
+## Korrigerade fel {#section-3b4b85a35f534288adf8a5246ef028cc}
 
 * I Data Workbench 6.0 hade Correlation Matrix och Cluster Builder inte stöd för Compute in Background. Detta har nu åtgärdats i version 6.0.4.
 * Tidigare kunde en åtkomstöverträdelse uppstå om du hade markerat något på tratten och tagit bort ett steg. Detta har lösts.
