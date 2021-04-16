@@ -1,14 +1,15 @@
 ---
 description: Du kan skapa en sökvägsläsare från ett diagram, en tabell eller ett processdiagram.
-solution: Analytics
 title: Skapa sökvägsläsare
-topic: Data workbench
 uuid: 84a5e587-fb02-461b-aec8-1b6ad473ebc3
+exl-id: 9fa11b84-da73-447a-8b10-7eab381e3f66
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 0%
 
 ---
-
 
 # Skapa sökvägsläsare{#creating-path-browsers}
 
@@ -22,7 +23,7 @@ Du kan skapa en sökvägsläsare från ett diagram, en tabell eller ett processd
 
 >[!NOTE]
 >
->Om du drar ett element till en sökvägsläsare kan det ändra grunddimensionen som är kopplad till sökvägsläsaren, men det påverkar inte nivådimensionen, gruppdimensionen eller måttet. Därför måste du vara försiktig när du väljer en basdimension som är bra när du använder den tillsammans med webbläsarens nivådimension, gruppdimension och mätvärden. Om du vill ändra nivådimension, gruppdimension eller mätvärde måste du redigera sökvägsläsarens [!DNL *.vw] fil i en textredigerare som Anteckningar. Se [Konfigurera sökvägsläsare](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
+>Om du drar ett element till en sökvägsläsare kan det ändra grunddimensionen som är kopplad till sökvägsläsaren, men det påverkar inte nivådimensionen, gruppdimensionen eller måttet. Därför måste du vara försiktig när du väljer en basdimension som är bra när du använder den tillsammans med webbläsarens nivådimension, gruppdimension och mätvärden. Om du vill ändra nivådimensionen, gruppdimensionen eller måttet måste du redigera sökvägen till webbläsarens [!DNL *.vw]-fil i en textredigerare som Anteckningar. Se [Konfigurera sökvägsläsare](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
 
 **Skapa en sökvägsläsare från en processkarta**
 
@@ -36,4 +37,3 @@ Du kan skapa en sökvägsläsare från ett diagram, en tabell eller ett processd
 >[!NOTE]
 >
 >När du skapar en sökvägsläsare från en processkarta, ignorerar sökvägsläsaren elementen i nivådimensionen utan tillhörande basdimensionselement. När du drar en nod från en processkarta till en sökvägsläsare definieras banwebbläsarens basdimension (med namnet Karta) av processkartan och dess element begränsas till elementen på processkartan. Därför har vissa element i sökvägsläsarens nivådimension inte associerade basdimensionselement och visas inte i sökvägsläsaren.
-
