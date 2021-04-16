@@ -1,16 +1,17 @@
 ---
 description: Information om hur du visar, döljer och ändrar en nods etikett.
-solution: Analytics
 title: Ge en nod en etikett
-topic: Data workbench
 uuid: ded00cc8-2958-4aca-9d45-92afc441e9e2
+exl-id: e234aa1b-2f5d-42ec-bad7-2ada0db38702
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '144'
+ht-degree: 0%
 
 ---
 
-
-# Ge en nod en etikett{#label-a-node}
+# Märk en nod{#label-a-node}
 
 Information om hur du visar, döljer och ändrar en nods etikett.
 
@@ -32,4 +33,3 @@ Information om hur du visar, döljer och ändrar en nods etikett.
 1. Klicka på nodetiketten för att gå till redigeringsläget och ändra nodens etikett efter behov.
 
 ![](assets/mnu_2DProcessMap_label.png)
-
