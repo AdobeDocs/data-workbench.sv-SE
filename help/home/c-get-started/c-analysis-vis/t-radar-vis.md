@@ -1,14 +1,15 @@
 ---
 description: Radardiagram ger snabb fokusering på de områden som behöver uppmärksammas mest genom att ge en visuell bild av en uppsättning mätvärden och hur de relaterar eller skiljer sig.
-solution: Analytics
 title: Radarvisualisering
-topic: Data workbench
 uuid: 39d67743-b6c1-46f1-99fd-7c71dfe07932
+exl-id: 5385d903-422b-4936-bbb3-0d5ee4d286de
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 0%
 
 ---
-
 
 # Radarvisualisering{#radar-visualization}
 
@@ -26,12 +27,11 @@ Varje radial i ett radardiagram är ett mått och minst tre mätvärden krävs. 
 
    ![](assets/client-rad.png)
 
-1. Om du vill lägga till mätvärden högerklickar du i visualiseringen och väljer **[!UICONTROL Add Metric]**.
+1. Om du vill lägga till mått högerklickar du i visualiseringen och väljer **[!UICONTROL Add Metric]**.
 1. Om du vill förankra ett mätresultat i diagrammet högerklickar du på ett mätresultat och väljer följande alternativ:
 
-   **Fäst mot det här måttet:** Använder det här måttet som riktmärke som andra mätvärden ritas på. Du kan förankra ett mått i taget. Varje mätvärde i diagrammet filtreras efter den aktiva arbetsytan eller efter inget filter. Riktvärdesförhållandet mellan dessa två värden ritas på axeln mellan diagrammets mitt och metriskt namn på radarn. Noll ritas i mitten.
+   **Fäst mot det här måttet:** Använder det här måttet som riktmärke som andra mätvärden ritas till. Du kan förankra ett mått i taget. Varje mätvärde i diagrammet filtreras efter den aktiva arbetsytan eller efter inget filter. Riktvärdesförhållandet mellan dessa två värden ritas på axeln mellan diagrammets mitt och metriskt namn på radarn. Noll ritas i mitten.
 
 1. Om du vill skalförändra ett mått med det förankrade måttet högerklickar du på måttet och väljer följande alternativ:
 
-   **Skala med ankarpunkt:** När det här alternativet är aktiverat skalas måttets axel så att referensförhållandet för det valda fästpunktsmåttet ritas i cirkeln, med noll i mitten. När cirkeln inte är vald representerar den ett referensvärde på 1. Vanligtvis aktiverar du Skala med ankarpunkt för räkningsbara mått, som besökare eller sidvyer, och inaktiverar det för proportionsmått som Konvertering, Genomsnittlig sessionstid eller Sidvyer per session.
-
+   **Skala med ankarpunkt:** När det här måttets axel är aktiverat skalas den så att referensförhållandet för det valda ankarpunktsmåttet ritas i cirkeln, med noll i mitten. När cirkeln inte är vald representerar den ett referensvärde på 1. Vanligtvis aktiverar du Skala med ankarpunkt för räkningsbara mått, som besökare eller sidvyer, och inaktiverar det för proportionsmått som Konvertering, Genomsnittlig sessionstid eller Sidvyer per session.
