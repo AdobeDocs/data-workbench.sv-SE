@@ -1,16 +1,17 @@
 ---
 description: Information om hur du lägger till en pratbubbla i en 2D-processkarta.
-solution: Analytics
 title: Lägga till en bildtext
-topic: Data workbench
 uuid: 5302e914-5382-4a35-b4c8-a9ad42859a3e
+exl-id: acb0cdae-80eb-48ee-aeb5-87e7ba557aa8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '51'
+ht-degree: 0%
 
 ---
 
-
-# Lägga till en bildtext{#add-a-callout}
+# Lägg till en bildtext{#add-a-callout}
 
 Information om hur du lägger till en pratbubbla i en 2D-processkarta.
 
@@ -21,4 +22,3 @@ Mer information om bildtexter finns i [Lägga till bildtexter på en arbetsyta](
 >[!NOTE]
 >
 >Du kan bara lägga till hänvisningar till 2D-processkartor.
-
