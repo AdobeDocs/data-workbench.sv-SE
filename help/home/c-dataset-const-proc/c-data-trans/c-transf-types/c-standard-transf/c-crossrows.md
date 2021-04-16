@@ -1,26 +1,27 @@
 ---
-description: Precis som med andra omformningar tillämpas CrossRows-omformningen på datarader (loggposter) i loggkällorna.
-solution: Analytics
+description: Precis som för andra omformningar tillämpas CrossRows-omformningen på datarader (loggposter) i loggkällorna.
 title: Korsrader
-topic: Data workbench
 uuid: 5910c150-6bec-4d98-b116-9b382fd54d3c
+exl-id: 321f986e-44a9-454c-9311-0ae37a11a088
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1137'
+ht-degree: 0%
 
 ---
 
-
 # Korsrader{#crossrows}
 
-Precis som med andra omformningar tillämpas CrossRows-omformningen på datarader (loggposter) i loggkällorna.
+Precis som för andra omformningar tillämpas CrossRows-omformningen på datarader (loggposter) i loggkällorna.
 
-För varje datarad får omformningen det angivna indatafältets värde, utför en uppsättning bearbetningssteg och registrerar resultatet i det utdatafält som du anger. När omformningen däremot fungerar på en datarad (den här raden kallas för utdataraden), tas hänsyn till den raden plus en eller flera andra datarader (de här raderna kallas indatarader) som är kopplade till samma spårnings-ID. [!DNL CrossRows] För ett visst spårnings-ID baseras därför värdet för utdatafältet för varje utdatarad på värdena i indatafältet för en eller flera indatarader.
+För varje datarad får omformningen det angivna indatafältets värde, utför en uppsättning bearbetningssteg och registrerar resultatet i det utdatafält som du anger. När [!DNL CrossRows]-omformningen fungerar på en datarad (den här raden kallas för utdataraden), beaktas den raden plus en eller flera andra datarader (de här raderna kallas indatarader) som är kopplade till samma spårnings-ID. För ett visst spårnings-ID baseras därför värdet för utdatafältet för varje utdatarad på värdena i indatafältet för en eller flera indatarader.
 
 Omformningen innehåller flera villkor och begränsningar som gör att du kan begränsa indataraderna för omformningen. Du kan uttrycka dessa begränsningar i form av data workbench-serverns villkor (se [Villkor](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)), ett intervall med indatarader i förhållande till utdataraden eller ett intervall med tider i förhållande till utdataradens tid. För de indatarader som uppfyller omformningens villkor och begränsningar kan du använda en åtgärd (till exempel SUM) som bestämmer värdet för utdatafältet.
 
 >[!NOTE]
 >
->För att omvandlingen ska fungera måste data sorteras i tid och grupperas efter spårnings-ID:t i källdata. [!DNL CrossRows] Fungerar därför bara [!DNL CrossRows] när den definieras i [!DNL Transformation.cfg] filen eller i en [!DNL Transformation Dataset Include] fil.
+>För att [!DNL CrossRows]-omformningen ska fungera måste data sorteras i tid och grupperas med spårnings-ID:t i källdata. Därför fungerar [!DNL CrossRows] bara när den definieras i filen [!DNL Transformation.cfg] eller i en [!DNL Transformation Dataset Include]-fil.
 
 Kom ihåg följande när du granskar parameterbeskrivningarna i följande tabell:
 
@@ -63,7 +64,7 @@ Kom ihåg följande när du granskar parameterbeskrivningarna i följande tabell
   </tr> 
   <tr> 
    <td colname="col1"> Nyckel </td> 
-   <td colname="col2"> <p>Valfritt. Namnet på fältet som ska användas som nyckel. </p> <p> Om en tangent anges begränsas indataraderna för en given utdatarad till det sammanhängande blocket med rader med samma nyckelvärde som utdataraden. Den här begränsningen är utöver alla andra begränsningar som finns på indataraderna med andra parametrar för <span class="wintitle"> CrossRows</span> -omformningen. </p> <p> Om du till exempel arbetar med webbdata och gör fältet x-session-key (som har ett unikt värde för varje session) till nyckeln, begränsas indataraderna för omformningen till de rader som har samma x-session-nyckelvärde som utdataraden. Därför bör du endast ta hänsyn till indatarader som representerar sidvyer som inträffar under samma session som utdataraden. </p> </td> 
+   <td colname="col2"> <p>Valfritt. Namnet på fältet som ska användas som nyckel. </p> <p> Om en tangent anges begränsas indataraderna för en given utdatarad till det sammanhängande blocket med rader med samma nyckelvärde som utdataraden. Den här begränsningen är utöver alla andra begränsningar som finns på indataraderna med andra parametrar för <span class="wintitle"> CrossRows</span>-omformningen. </p> <p> Om du till exempel arbetar med webbdata och gör fältet x-session-key (som har ett unikt värde för varje session) till nyckeln, begränsas indataraderna för omformningen till de rader som har samma x-session-nyckelvärde som utdataraden. Därför bör du endast ta hänsyn till indatarader som representerar sidvyer som inträffar under samma session som utdataraden. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -103,10 +104,10 @@ Kom ihåg följande när du granskar parameterbeskrivningarna i följande tabell
  </tbody> 
 </table>
 
-Omformningen i det här exemplet används på rader med webbdata för att för varje sidvy hitta tidpunkten för nästa sidvy. [!DNL CrossRows] Eftersom vi vet att [!DNL CrossRows] används endast under datauppsättningens transformeringsfas, ordnas dataraderna efter besökare (varje besökare har ett unikt spårnings-ID) och tid.
+[!DNL CrossRows]-omformningen i det här exemplet används på rader med webbdata för att för varje sidvy hitta tidpunkten för nästa sidvy. Eftersom vi vet att [!DNL CrossRows] endast används under omformningsfasen i datauppsättningsprocessen, ordnas dataraderna av besökaren (varje besökare har ett unikt spårnings-ID) och tid.
 
-Indatafältet, x-timestamp, används bara för indatarader där x-is-page-view-fältet är ifyllt (vilket anger att dataraden representerar en sidvy). Fältet x-session-key (som har ett unikt värde för varje session) anges för Key-parametern. Indataraderna (loggposter) för omformningen är därför begränsade till det sammanhängande blocket med rader som har samma värde för x-session-key som utdataraden. Med andra ord, för att kunna användas för omformningen måste en indatarad representera en sidvy som inträffar under samma session som sidvyn i utdataraden. Den första radåtgärden hämtar värdet för utdatafältet från den första indataraden som uppfyller villkoret och som har samma x-session-nyckelvärde som utdataraden. [!DNL Input]
+Indatafältet, x-timestamp, används bara för indatarader där x-is-page-view-fältet är ifyllt (vilket anger att dataraden representerar en sidvy). Fältet x-session-key (som har ett unikt värde för varje session) anges för Key-parametern. Indataraderna (loggposter) för omformningen är därför begränsade till det sammanhängande blocket med rader som har samma värde för x-session-key som utdataraden. Med andra ord, för att kunna användas för omformningen måste en indatarad representera en sidvy som inträffar under samma session som sidvyn i utdataraden. Den första radåtgärden hämtar värdet för utdatafältet från den första indataraden som uppfyller villkoret [!DNL Input] och har samma x-session-nyckelvärde som utdataraden.
 
 ![](assets/cfg_TransformationType_CrossRows.png)
 
-[!DNL CrossRows] körs en viss tid i förhållande till storleken på indata plus storleken på utdata. Det innebär att för åtgärderna SUM, FIRST ROW och LAST ROW är det inte mindre effektivt än andra omformningar. För ALL är situationen mer komplicerad eftersom det är möjligt att konfigurera datamängden för varje datarad (loggpost) som är proportionerlig till det totala antalet rader (loggposter) för ett visst spårnings-ID. [!DNL CrossRows]
+[!DNL CrossRows] körs en viss tid i förhållande till storleken på indata plus storleken på utdata. Det innebär att för åtgärderna SUM, FIRST ROW och LAST ROW är det inte mindre effektivt än andra omformningar. För ALL är situationen mer komplex eftersom det är möjligt att konfigurera [!DNL CrossRows] så att data genereras för varje datarad (loggpost) som är proportionerlig till det totala antalet rader (loggposter) för ett visst spårnings-ID.
