@@ -1,16 +1,17 @@
 ---
 description: Data workbench innehåller inbyggda mätvärden.
-solution: Analytics
 title: Inbyggda mätvärden
-topic: Data workbench
 uuid: 1e4d91dc-0130-4296-8395-fd2ddb03f6ef
+exl-id: a8a2a8dd-dc13-4eb3-92ce-09f02252ecf0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '310'
+ht-degree: 0%
 
 ---
 
-
-# Inbyggda mätvärden{#built-in-metrics}
+# Inbyggda mått{#built-in-metrics}
 
 Data workbench innehåller inbyggda mätvärden.
 
@@ -25,7 +26,6 @@ I följande tabell visas de tillgängliga inbyggda mätvärdena för data workbe
 | Totalt antal avkodade loggposter | Antalet poster i loggfilerna som har avkodats som en del av loggbearbetningsfasen för Insight Server-databearbetning. |
 | Totalt antal filtrerade loggposter | Antalet poster i loggfilerna som accepterats av robotfiltret efter avkodningen samt loggpostvillkoren och andra filter som används som en del av loggbearbetningsfasen för databearbetning i Insight Server. |
 | Totalt antal loggposter | Antalet poster i loggfilerna som hittills har bearbetats i loggbearbetningsfasen för Insight Server-databearbetning. |
-| Totalt antal bearbetade loggposter | Antalet filtrerade loggposter som har integrerats i Adobe-datauppsättningen. |
+| Totalt antal bearbetade loggposter | Antalet filtrerade loggposter som har integrerats i datauppsättningen Adobe. |
 | Transformeringsförlopp | Procentandelen slutförda transformeringsfasen för databearbetning i Insight Server. |
 | Okomprimerade loggbyte lästa | Den totala mängden okomprimerade data (i byte) som hittills har bearbetats under loggbearbetningsfasen. |
-
