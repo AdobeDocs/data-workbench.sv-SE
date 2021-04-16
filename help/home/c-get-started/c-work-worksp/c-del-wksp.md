@@ -1,14 +1,15 @@
 ---
 description: Information om hur du tar bort arbetsytor från skrivbordet.
-solution: Analytics
 title: Ta bort arbetsytor
-topic: Data workbench
 uuid: 85fd84d6-0602-4ff4-a55a-44077f3f3151
+exl-id: 17ea8b7b-9ecb-44a5-844c-f7daec52dc8e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '118'
+ht-degree: 0%
 
 ---
-
 
 # Ta bort arbetsytor{#deleting-a-workspaces}
 
@@ -31,4 +32,3 @@ Högerklicka på arbetsytan som du vill ta bort och klicka på **[!UICONTROL Rev
 Högerklicka på arbetsytan som du vill ta bort och klicka på **[!UICONTROL Delete]**.
 
 ![](assets/mnu_workspaceManager_Deletewksp.png)
-
