@@ -1,37 +1,38 @@
 ---
 description: Gränssnittet Dataset Schema visar de utökade dimensionerna (räkningsbara, enkla, många-till-många, numeriska, denorala och tidsmått) som definieras i konfigurationsfilen för transformeringsdatauppsättningen och ger en vy över relationerna mellan dessa dimensioner.
-solution: Analytics
 title: Gränssnitt för dataset Schema
-topic: Data workbench
 uuid: 3726e568-d3ea-47f8-8ac4-582c97fbbe0a
+exl-id: a8d4cf02-4ff7-4fcc-9062-425c1fe1fb28
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 0%
 
 ---
 
-
-# Gränssnitt för dataset Schema{#dataset-schema-interface}
+# Gränssnitt för datamängdsschema{#dataset-schema-interface}
 
 Gränssnittet Dataset Schema visar de utökade dimensionerna (räkningsbara, enkla, många-till-många, numeriska, denorala och tidsmått) som definieras i konfigurationsfilen för transformeringsdatauppsättningen och ger en vy över relationerna mellan dessa dimensioner.
 
-Dessutom visar gränssnittet alla härledda dimensioner som du har definierat samt alla utökade dimensioner som har konfigurerats att vara dolda [!DNL Dataset Schema] .
+Dessutom visar [!DNL Dataset Schema]-gränssnittet alla härledda dimensioner som du har definierat samt alla utökade dimensioner som har konfigurerats att vara dolda.
 
 ![](assets/vis_DatasetSchema_Example2.png)
 
 >[!NOTE]
 >
->Du kan söka efter dimensioner inifrån schemardiagrammet. Namnet på dimensionerna som hittas av söksträngen markeras och raderna i den överordnade klassen ändrar färg för alla träffar som hittas i underordnade dimensioner. De räkningsbara dimensionerna förblir synliga när du rullar för att ge visningshierarki och kontext.
+>Du kan söka efter dimensioner inifrån schemardiagrammet. Namnet på dimensionerna som hittas av söksträngen markeras och raderna i den överordnade klassen ändrar färg för alla träffar som hittas i underordnade underordnade dimensioner. De räkningsbara dimensionerna förblir synliga när du rullar för att ge visningshierarki och kontext.
 
-**Så här tolkar du en dimensionstyp med[!DNL Dataset Schema]gränssnittet**
+**Så här tolkar du en dimensionstyp med  [!DNL Dataset Schema] gränssnittet**
 
-I följande tabell visas dimensionstyperna och färgerna i vilka deras namn visas i [!DNL Dataset Schema] gränssnittet. Överordnade för provdimensionerna (från exemplet ovan) noteras också.
+I följande tabell visas dimensionstyperna och färgerna i vilka deras namn visas i gränssnittet [!DNL Dataset Schema]. Överordnade för provdimensionerna (från exemplet ovan) noteras också.
 
 <table id="table_CF888522626E49A4A10D87085CAB5CC1"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Dimensionstyp </th> 
+   <th colname="col1" class="entry"> Dimension </th> 
    <th colname="col2" class="entry"> Färg </th> 
-   <th colname="col3" class="entry"> Exempeldimension och överordnad </th> 
+   <th colname="col3" class="entry"> Exempel på Dimension och överordnad </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -78,17 +79,16 @@ I följande tabell visas dimensionstyperna och färgerna i vilka deras namn visa
  </tbody> 
 </table>
 
-Mer information om de här dimensionstyperna finns i konfigurationsguiden för *datauppsättningar*.
+Mer information om de här dimensionstyperna finns i *Konfigurationshandboken för datauppsättningar*.
 
 **Visa standardvisualisering för en dimension**
 
-* Klicka på önskad dimension i [!DNL Dataset Schema] gränssnittet. Standardvisualiseringen visas. Om standardvisualiseringen till exempel är en tabell som visar sessioner och den valda dimensionen och du klickar på URI-dimensionen, visar Data Workbench en tabell med URI efter sessioner.
+* Klicka på önskad dimension i [!DNL Dataset Schema]-gränssnittet. Standardvisualiseringen visas. Om standardvisualiseringen till exempel är en tabell som visar sessioner och den valda dimensionen och du klickar på URI-dimensionen, visas en tabell med URI efter sessioner i Datan Workbench.
 
    >[!NOTE]
    >
-   >Om du vill ändra standardvisualiseringen som visas läser du [i Dataset Schema Interface](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175).
+   >Om du vill ändra standardvisualiseringen som visas läser du [Dataset Schema Interface](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175).
 
 **Visa en specifik visualisering för en dimension**
 
-* Högerklicka på önskad dimension i [!DNL Dataset Schema] gränssnittet och klicka på **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*.
-
+* Högerklicka på önskad dimension i [!DNL Dataset Schema]-gränssnittet och klicka på **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*.
