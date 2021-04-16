@@ -1,20 +1,21 @@
 ---
 description: Visar alla webbläsare som stöds.
-solution: Analytics
 title: Webbläsare som stöds
-topic: Data workbench
 uuid: 7add01cc-905f-46e8-8e0d-3e9d458c466c
+exl-id: 5f1dcd53-c0ee-436f-ad7c-8d669008a61c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
-
 
 # Webbläsare som stöds{#supported-browsers}
 
 Visar alla webbläsare som stöds.
 
-Adobe Insight-kontrollpanelen är ett webbaserat program som använder den senaste webbläsartekniken. Den kan användas i alla operativsystem eftersom operativsystemet är utrustat med en kompatibel webbläsare.
+Adobe Insight Dashboard är ett webbaserat program som använder den senaste webbläsartekniken. Den kan användas i alla operativsystem eftersom operativsystemet är utrustat med en kompatibel webbläsare.
 
 Eftersom kontrollpanelen utnyttjar funktioner som inte stöds i äldre versioner av webbläsare, krävs senare webbläsare för att programmet ska fungera optimalt. Många olika webbläsare kan fungera, men endast följande webbläsare stöds officiellt:
 
