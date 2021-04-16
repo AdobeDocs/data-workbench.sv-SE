@@ -1,14 +1,15 @@
 ---
 description: Du kan visa banorna mellan noder i en processmappning i färg.
-solution: Analytics
 title: Aktivera en färglänk
-topic: Data workbench
 uuid: 7046128e-6d52-4875-9979-c4c7bad59c9d
+exl-id: d210e54a-5f5e-4bcf-b2d2-7a748d7b90ba
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
-
 
 # Aktivera en färglänk{#activate-a-color-link}
 
