@@ -1,14 +1,15 @@
 ---
 description: Följ de här stegen för att använda visualiseringen av förmånsbedömning.
-solution: Analytics
 title: Ställa in benägenhetsbedömning
-topic: Data workbench
 uuid: afc9aada-3bf9-4ce6-8c43-a955771065b4
+exl-id: e16a7062-636e-44a9-a07d-343d48bf1b4c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 0%
 
 ---
-
 
 # Ställa in benägenhetsbedömning{#setting-up-propensity-scoring}
 
@@ -22,15 +23,15 @@ Följ de här stegen för att använda visualiseringen av förmånsbedömning.
 
    Ange den beroende variabeln genom att markera:
 
-* **Dimensionselement**: Högerklicka på arbetsytan och välj **[!UICONTROL Table]**. Välj sedan ett Dimension-element som din beroende variabel.
+* **Dimension-element**: Högerklicka på arbetsytan och välj  **[!UICONTROL Table]**. Markera sedan ett element i Dimensionen som din beroende variabel.
 
    ELLER
 
-* **[!UICONTROL Filter Editor]**. Klicka **[!UICONTROL Add]** > **[!UICONTROL Visualization]** > **[!UICONTROL Filter Editor]** för att öppna filterredigerarens visualisering.
+* **[!UICONTROL Filter Editor]**. Klicka på **[!UICONTROL Add]** > **[!UICONTROL Visualization]** > **[!UICONTROL Filter Editor]** för att öppna filterredigerarens visualisering.
 
    ![](assets/propensity_visualization_filter_editor.png)
 
-   När du har valt ett dimensionselement eller filter som beroende variabel klickar du på **[!UICONTROL Set Target]** och anger ett namn som beskriver den beroende variabeln. Klicka sedan på **[!UICONTROL OK]** (och kontrollera att filterrutan är markerad) för att ange mål.
+   När du har markerat ett element i Dimensionen eller ett filter som den beroende variabeln klickar du på **[!UICONTROL Set Target]** och anger ett namn som beskriver den beroende variabeln. Klicka sedan på **[!UICONTROL OK]** (och se till att filterrutan är markerad) för att ställa in målet.
 
    ![](assets/propensity_visualization_setTarget.png)
 
@@ -41,16 +42,16 @@ Följ de här stegen för att använda visualiseringen av förmånsbedömning.
 
    ![](assets/propensity_visualization_metrics.png)
 
-* **Mätvärden**. Välj ett mätvärde på **[!UICONTROL Metrics]** menyn i verktygsfältet Propensitetsbedömning.
+* **Mätvärden**. Välj ett mätvärde på menyn **[!UICONTROL Metrics]** i verktygsfältet Propensitetsbedömning.
 
-* **Dimensionselement**: Högerklicka på arbetsytan och välj **[!UICONTROL Table]**. Markera ett eller flera dimensionselement och dra till den vänstra kolumnen under **[!UICONTROL Independent Variables]** eller till **[!UICONTROL Element]** rutan med `<Ctrl>` +- `<Alt>` tangenterna.
+* **Dimension-element**: Högerklicka på arbetsytan och välj  **[!UICONTROL Table]**. Markera ett eller flera textelement och dra till den vänstra Dimensionen under **[!UICONTROL Independent Variables]** eller till rutan **[!UICONTROL Element]** med hjälp av tangenterna `<Ctrl>` + `<Alt>`.
 
-1. Ställ in **[!UICONTROL Training Filter]**. Du kan definiera den uppsättning besökare som du vill poängsätta genom att klicka **[!UICONTROL Options]** > **[!UICONTROL Set Training Filter]** i verktygsfältet Propensitetsbedömning. Detta ger en delmängd av data som byggts med enbart de besökare som du vill poängsätta. Exempel: besökare som besökt den senaste månaden, besökare som bor i Australien eller besökare som har tittat på specifika produkter.
+1. Ange **[!UICONTROL Training Filter]**. Du kan definiera den uppsättning besökare som du vill poängsätta genom att klicka på **[!UICONTROL Options]** > **[!UICONTROL Set Training Filter]** i verktygsfältet Propensitetsbedömning. Detta ger en delmängd av data som byggts med enbart de besökare som du vill poängsätta. Exempel: besökare som besökt den senaste månaden, besökare som bor i Australien eller besökare som har tittat på specifika produkter.
 
-   Standardfiltret är **[!UICONTROL Train on Everyone]** men du kan ändra det genom att aktivera **[!UICONTROL Dimension Elements]** i en tabell eller skapa ett filter med **[!UICONTROL Filter Editor]**.
+   Standardfiltret är **[!UICONTROL Train on Everyone]**, men du kan ändra det genom att aktivera **[!UICONTROL Dimension Elements]** i en tabell eller skapa ett filter med **[!UICONTROL Filter Editor]**.
 
-   När du har valt ett dimensionselement eller skapat ett filter och aktiverat klickar du på **Alternativ** > **Ange utbildningsfilter**, anger ett namn som beskriver filtret och klickar sedan på **[!UICONTROL OK]**.
-1. När du har identifierat alla dina indata, tryck **[!UICONTROL Go]**.
+   När du har markerat ett filterelement eller skapat ett filter och aktiverat klickar du på **Alternativ** > **Ange utbildningsfilter**, anger ett namn som beskriver Dimensionen och klickar sedan på **[!UICONTROL OK]**.
+1. När du har identifierat alla indata trycker du på **[!UICONTROL Go]**.
 
    ![](assets/propensity_visualization_GO.png)
 
@@ -60,7 +61,7 @@ Följ de här stegen för att använda visualiseringen av förmånsbedömning.
    Från och med 6.1 har du nu ett alternativ när du använder Spara benägenhetspoäng:
 
 * Dimension
-* Mått och mått
+* Dimension och mått
 
    Du kan få två sparade filer, både en dimension och ett definierat mått.
 
@@ -73,9 +74,9 @@ Följ de här stegen för att använda visualiseringen av förmånsbedömning.
 
    Systemet visar **[!UICONTROL Model Complete]** och genererar en poängmodell när processen är klar.
 
-   Om du högerklickar på **[!UICONTROL Model Complete]** identifieras poängmodellen som den definieras av systemet. Värden från 0 procent till 100 procent identifierar sannolikheten för att besökarna matchar **[!UICONTROL Target]** variabeln.
+   Högerklicka på **[!UICONTROL Model Complete]** för att identifiera noggrannheten för bedömningsmodellen enligt definitionen i systemet. Värden från 0 procent till 100 procent identifierar sannolikheten för att besökarna matchar variabeln **[!UICONTROL Target]**.
 
-   Sammanfusionsmatrisen ger fyra tal genom kombinationen av Faktiskt positivt (AP), Faktiskt negativt (AN), Förutsagt positivt (PP) och Förutsagt negativt (PN). Dessa siffror erhålls genom att tillämpa den resulterande poängmodellen på de 20 %-testdata som vi vet det sanna svaret på. Om poängen är större än 50 % förutspås det som ett positivt fall (matcha den definierade händelsen).
+   Sammanfusionsmatrisen ger fyra tal genom kombinationen av Faktiskt positivt (AP), Faktiskt negativt (AN), Förutsagt positivt (PP) och Förutsagt negativt (PN). Dessa siffror erhålls genom att använda den resulterande poängmodellen på de 20 %-testdata som vi vet det sanna svaret på. Om poängen är större än 50 % förutspås det som ett positivt fall (matcha den definierade händelsen).
 
    ![](assets/propensity_lift_gain_1.png)
 
@@ -96,6 +97,6 @@ Följ de här stegen för att använda visualiseringen av förmånsbedömning.
  </tbody> 
 </table>
 
-1. Öppna ett [lyft- eller magasin-schema](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a)eller [modellvisaren](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-9f2593a8218140b7bd132a4c74e159f9).
+1. Öppna ett [Lyft- eller magasin-schema](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a) eller [modellvisningsprogram](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-9f2593a8218140b7bd132a4c74e159f9).
 
-   Högerklicka på visualiseringen **av modellen Complete** och välj **[!UICONTROL Lift Chart]**, **[!UICONTROL Gain Chart]** eller **[!UICONTROL Model Viewer.]**
+   Högerklicka på visualiseringen **Modellen är klar** och välj **[!UICONTROL Lift Chart]**, **[!UICONTROL Gain Chart]** eller **[!UICONTROL Model Viewer.]**
