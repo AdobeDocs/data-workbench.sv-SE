@@ -1,22 +1,23 @@
 ---
 description: Beskriver miniatyrbildsvyn och listvyn.
-solution: Analytics
 title: Vyer i instrumentpaneler
-topic: Data workbench
 uuid: 8e5ef06a-6c5a-4792-a732-fe7574aed8ab
+exl-id: 94da6ee1-30ab-426f-9be3-fd56f172aadb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 0%
 
 ---
 
-
-# Vyer i instrumentpaneler{#dashboard-browser-views}
+# Vyer i instrumentpanelswebbläsaren{#dashboard-browser-views}
 
 Beskriver miniatyrbildsvyn och listvyn.
 
 Det finns två vyer som kan användas för att navigera på instrumentpaneler i Dashboard Browser: miniatyrbildsvyn och listvyn. Miniatyrbildsvyn innehåller miniatyrbilder av kontrollpaneler när du bläddrar, medan listvyn är en mer detaljorienterad tabellbaserad vy av de tillgängliga kontrollpanelerna.
 
-## Miniatyrbildsvisning {#section-b522ce5e6e184ef9a0e1b9a42f7a9ae0}
+## Miniatyrbildsvy {#section-b522ce5e6e184ef9a0e1b9a42f7a9ae0}
 
 Miniatyrbildsvyn innehåller ett galleri med miniatyrbilder som motsvarar de kontrollpaneler som du har tillgång till. Om en miniatyrbild visar en standardikon kontaktar du administratören för att få en miniatyrbild för den instrumentpanelen. Med ikonerna till vänster om sökfältet kan du växla mellan miniatyrbilder och listvyer.
 
@@ -28,7 +29,7 @@ Du kan också utforska undermappar genom att klicka på pilen till vänster om d
 
 ![](assets/choose_a_dashboard2.png)
 
-Du kan sedan välja den aktuella instrumentpanelen genom att klicka på den. När du har klickat på en miniatyrbild för kontrollpanelen fylls den högra ramen i med information om kontrollpanelen. Instrumentpanelsinformationen innehåller en miniatyrvy av den valda instrumentpanelen, dess namn, en kort beskrivning, ägare, skapandedatum, senaste ändringsdatum, profil(er) som används för att kompilera data, synlighetskontroller och erbjuder ett urval av åtgärder.
+Du kan sedan välja den aktuella instrumentpanelen genom att klicka på den. När du har klickat på en miniatyrbild för kontrollpanelen fylls den högra ramen i med information om kontrollpanelen. Instrumentpanelsinformationen innehåller en miniatyrvy av den valda instrumentpanelen, dess namn, en kort beskrivning, ägare, datum när den skapades, senaste ändringsdatum, profil(er) som används för att kompilera data, synlighetskontroller och erbjuder ett urval av åtgärder.
 
 ## Listvy {#section-aa79d51168a7430ea2816413dc6cc73a}
 
