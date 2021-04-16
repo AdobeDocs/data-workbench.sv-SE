@@ -1,16 +1,15 @@
 ---
 description: Lista över filer som installerats med Insight Server och de filer som finns efter registreringen, och som körs för första gången.
-solution: Analytics
 title: Katalogstruktur för Insight Server
 uuid: 8339b275-f118-4d5d-937e-4df9f8a56b50
+exl-id: 568391d0-e0f7-4a5a-ad71-de33c52968a0
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 0%
 
 ---
-
 
 # Katalogstruktur för Insight Server{#insight-server-directory-structure}
 
@@ -18,7 +17,7 @@ Lista över filer som installerats med Insight Server och de filer som finns eft
 
 ## Filer som ingår i installationspaketet {#section-daec17dab3e34c3c9e1ef65842cb91f1}
 
-Följande kataloger ingår i [!DNL Insight Server] installationspaketet:
+Följande kataloger ingår i installationspaketet [!DNL Insight Server]:
 
 <table id="table_CE713A3D671C453A87986E4CD4620EF3"> 
  <thead> 
@@ -38,11 +37,11 @@ Följande kataloger ingår i [!DNL Insight Server] installationspaketet:
   </tr> 
   <tr> 
    <td colname="col1"> Granskning </td> 
-   <td colname="col2"> Dagliga åtkomstloggar med information om alla anslutningsförsök till <span class="keyword"> Insight Server </span>. </td> 
+   <td colname="col2"> Dagliga åtkomstloggar som innehåller information om alla anslutningsförsök till <span class="keyword"> Insight Server </span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> bin </td> 
-   <td colname="col2"> <span class="keyword"> Körbara programfiler </span> för Insight Server. </td> 
+   <td colname="col2"> <span class="keyword"> Körbara programfiler  </span> för Insight Server. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Certifikat </td> 
@@ -54,7 +53,7 @@ Följande kataloger ingår i [!DNL Insight Server] installationspaketet:
   </tr> 
   <tr> 
    <td colname="col1"> Komponenter för serverbearbetning </td> 
-   <td colname="col2"> <span class="keyword"> Insight Server- </span> komponentkonfigurationsfiler för bearbetning av <span class="keyword"> Insight-servrar </span> i ett <span class="keyword"> Insight Server- </span> kluster. </td> 
+   <td colname="col2"> <span class="keyword"> Insight Server- </span> komponentkonfigurationsfiler för bearbetning av  <span class="keyword"> Insight-servrar  </span> i ett  <span class="keyword"> Insight Server- </span> kluster. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Händelser </td> 
@@ -62,11 +61,11 @@ Följande kataloger ingår i [!DNL Insight Server] installationspaketet:
   </tr> 
   <tr> 
    <td colname="col1"> Loggar </td> 
-   <td colname="col2"> <p>Loggfiler som skapats av <span class="wintitle"> sensor </span>(er). </p> <p>"Logs" är standardloggningskatalogen, men en alternativ katalog kan ha angetts i <span class="filepath"> communications.cfg- </span> filen. </p> </td> 
+   <td colname="col2"> <p>Loggfiler som skapats av <span class="wintitle"> sensor </span>. </p> <p>"Logs" är standardloggningskatalogen, men en alternativ katalog kan ha angetts i filen <span class="filepath"> communications.cfg </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uppslag </td> 
-   <td colname="col2"> Uppslagsfiler, till exempel robot- och sökmotorlistor. <span class="keyword"> Insight Server </span> måste läsa in alla sökfiler i minnet. Den totala storleken på alla sökfiler som refereras i komponentkonfigurationsfiler, plus overhead (t.ex. 12 byte per rad för <span class="filepath"> FlatFileLookup- </span> filer), får inte överstiga det tillgängliga fysiska eller virtuella minnet som är tillgängligt när alla andra program har lästs in. </td> 
+   <td colname="col2"> Uppslagsfiler, till exempel robot- och sökmotorlistor. <span class="keyword"> Insight Server  </span> måste läsa in alla sökfiler i minnet. Den totala storleken på alla sökfiler som refereras i komponentkonfigurationsfiler, plus overhead (t.ex. 12 byte per rad för <span class="filepath"> FlatFileLookup </span>-filer), får inte överstiga det tillgängliga fysiska eller virtuella minnet som är tillgängligt efter att alla andra program har lästs in. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Profiler </td> 
@@ -74,14 +73,14 @@ Följande kataloger ingår i [!DNL Insight Server] installationspaketet:
   </tr> 
   <tr> 
    <td colname="col1"> Mjukvara </td> 
-   <td colname="col2"> <span class="keyword"> Programuppdateringar </span> . Rapportera programuppdateringar lagras också här. </td> 
+   <td colname="col2"> <span class="keyword"> Uppdateringar av  </span> programmet Insight. Rapportera programuppdateringar lagras också här. </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Kataloger och filer skapade efter start {#section-ef7408e8fae64454b326ec07453d4628}
 
-Katalogerna som anges nedan skapas efter [!DNL Insight Server] att de har registrerats och körs för första gången:
+Katalogerna som anges nedan skapas efter att [!DNL Insight Server] har registrerats och körs för första gången:
 
 <table id="table_89CC9F3E568044C8A0072BF0A6EDCCEF"> 
  <thead> 
@@ -93,15 +92,15 @@ Katalogerna som anges nedan skapas efter [!DNL Insight Server] att de har regist
  <tbody> 
   <tr> 
    <td colname="col1"> Läge </td> 
-   <td colname="col2"> Bearbetar information som genererats av <span class="keyword"> Insight Server </span>. </td> 
+   <td colname="col2"> Bearbetar information som skapats av <span class="keyword"> Insight Server </span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Tillfällig </td> 
-   <td colname="col2"> <p>Plats för de temporära filer som används av <span class="keyword"> Insight Server </span> vid ombearbetning och åtgärd. Det finns vanligtvis en fil (med namnet <span class="filepath"> temp.db </span> som standard) per fysisk enhet. </p> <p> <span class="keyword"> Insight Server </span> måste konfigureras för att skriva till den här katalogen. </p> </td> 
+   <td colname="col2"> <p>Platsen för de temporära filer som används av <span class="keyword"> Insight Server </span> under ombearbetningen och åtgärden. Det finns vanligtvis en fil (med namnet <span class="filepath"> temp.db </span> som standard) per fysisk enhet. </p> <p> <span class="keyword"> Insight Server  </span> måste konfigureras för att skriva till den här katalogen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Kalkera </td> 
-   <td colname="col2"> Logga och händelsedata om <span class="keyword"> Insight Server </span>. Användbar för felsökning. </td> 
+   <td colname="col2"> Logg- och händelsedata om <span class="keyword"> Insight Server </span>. Användbar för felsökning. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Användare </td> 
@@ -109,4 +108,3 @@ Katalogerna som anges nedan skapas efter [!DNL Insight Server] att de har regist
   </tr> 
  </tbody> 
 </table>
-
