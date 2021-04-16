@@ -1,14 +1,15 @@
 ---
 description: För att identifiera serverns hälsa och prestanda kan du använda standardprofiler för data workbench för att övervaka servern från den installerade agenten med aktuella data, eller använda profiler för tidigare datauppsättningar för att se hur prestandaförändringar påverkar över tid.
-solution: Analytics
 title: Arbetsytor för övervakning av Data Workbench Server
-topic: Data workbench
 uuid: 07bd0749-1d3b-46ef-9c85-5e694a306db1
+exl-id: 9deee1a2-e102-4aaa-a68a-a31543aed07e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '133'
+ht-degree: 0%
 
 ---
-
 
 # Arbetsytor för övervakning av Data Workbench Server{#workspaces-for-monitoring-the-data-workbench-server}
 
@@ -23,4 +24,3 @@ De arbetsytor för data workbench som oftast används är bland annat:
 Om du vill välja en profil öppnar du den nedrullningsbara menyn i det övre vänstra hörnet i gränssnittet för Data Workbench Client.
 
 ![](assets/profile_switch.png)
-
