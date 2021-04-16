@@ -1,14 +1,15 @@
 ---
 description: Med Data Workbench kan du använda ytterligare matematiska beräkningar.
-solution: Analytics
 title: Syntax för matematiska uttryck
-topic: Data workbench
 uuid: 63eee559-edfc-4efc-a6c8-66689d156701
+exl-id: a1433258-d3e8-4515-a1ae-00f9108e98c0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 0%
 
 ---
-
 
 # Syntax för matematiska uttryck{#syntax-for-math-expressions}
 
@@ -87,4 +88,3 @@ Matematiska funktioner kan användas för att utvärdera och visa i matematisk o
   </tr> 
  </tbody> 
 </table>
-
