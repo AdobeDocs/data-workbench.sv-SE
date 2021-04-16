@@ -1,16 +1,17 @@
 ---
 description: När du gör en markering på en glob från ett visst lager, visar alla andra lager endast data som hör till de markerade data.
-solution: Analytics
 title: Göra markeringar på en glob
-topic: Data workbench
 uuid: 265206f8-2437-4490-8e7c-0a00ce56fd7f
+exl-id: 83e3b08b-b2a8-455b-87a4-bf48c619b3b9
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '80'
+ht-degree: 0%
 
 ---
 
-
-# Göra markeringar på en glob{#make-selections-on-a-globe}
+# Gör markeringar på en glob{#make-selections-on-a-globe}
 
 När du gör en markering på en glob från ett visst lager, visar alla andra lager endast data som hör till de markerade data.
 
