@@ -1,18 +1,17 @@
 ---
 description: Adobe rekommenderar att du regelbundet administrerar och övervakar den allmänna hälsan för varje server där en Adobe-produkt är installerad.
-solution: Analytics
 title: General Systems Administration
 uuid: 36f87f65-3791-41fd-a4fb-b94f7fa32fac
+exl-id: a35b5f2f-8c3c-486c-b795-bd2f84be2fc6
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
 
 ---
 
-
-# General Systems Administration{#general-systems-administration}
+# Allmän systemadministration{#general-systems-administration}
 
 Adobe rekommenderar att du regelbundet administrerar och övervakar den allmänna hälsan för varje server där en Adobe-produkt är installerad.
 
@@ -23,4 +22,3 @@ Information om hur du administrerar vissa Adobe-program finns i de enskilda kapi
 >[!NOTE]
 >
 >Den här handboken, dess rekommenderade frekvenser och dess instruktioner förutsätter att du använder övervakningsverktyg.
-
