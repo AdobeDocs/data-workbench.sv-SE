@@ -1,16 +1,17 @@
 ---
 description: En många-till-många-dimension har en många-till-många-relation med sin överordnade räkningsbara dimension.
-solution: Analytics
-title: Många-till-många-dimensioner
-topic: Data workbench
+title: Många-till-många-Dimensioner
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
+exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 1%
 
 ---
 
-
-# Många-till-många-dimensioner{#many-to-many-dimensions}
+# Många-till-många-Dimensioner{#many-to-many-dimensions}
 
 En många-till-många-dimension har en många-till-många-relation med sin överordnade räkningsbara dimension.
 
@@ -45,7 +46,7 @@ Många-till-många-dimensioner definieras av följande parametrar:
   <tr> 
    <td colname="col1"> Dold </td> 
    <td colname="col2"> Avgör om dimensionen visas i gränssnittet för data workbench. Som standard är den här parametern inställd på false. Om dimensionen till exempel bara ska användas som bas för ett mätresultat, kan du ställa in den här parametern på true för att dölja dimensionen från data workbench-visningen. </td> 
-   <td colname="col3"> false </td> 
+   <td colname="col3"> falskt </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Indata </td> 
