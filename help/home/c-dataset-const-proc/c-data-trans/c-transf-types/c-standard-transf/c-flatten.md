@@ -1,14 +1,15 @@
 ---
 description: Omformningen Förenkla tar en vektor med strängar och mappar varje värde till ett eget fält.
-solution: Analytics
 title: Förenkla
-topic: Data workbench
 uuid: 00b06a5c-506b-45fe-9773-44d65b8ec233
+exl-id: 63f3e4bc-238f-4e15-8ae5-2f805bd080d3
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 1%
 
 ---
-
 
 # Förenkla{#flatten}
 
@@ -23,12 +24,12 @@ Omformningen Förenkla tar en vektor med strängar och mappar varje värde till 
 | Indata | En vektor med strängvärden som ska mappas till utdatafältnamnen. |  |
 | Utdata | En uppsättning utdatafältnamn. |  |
 
-Att tänka på [!DNL Flatten]
+Att tänka på för [!DNL Flatten]
 
 * Om indatavektorn innehåller fler värden än det finns definierade utdatafält tas de extra indatavärdena bara bort.
 * Om indatavektorn innehåller färre värden än det finns definierade utdatafält får de extra utdatafälten standardvärdet (om det är definierat) eller en tom sträng om inget standardvärde är definierat.
 
-Här används omvandlingen för att ta en vektor med produkter (x-produkter) och dela upp dem i fyra fält (x-product1, ..., x-product4). [!DNL Flatten]
+Här används [!DNL Flatten]-omvandlingen för att ta en vektor med produkter (x-produkter) och dela upp dem i fyra fält (x-product1, ..., x-product4).
 
 ![](assets/cfg_TransformationType_Flatten.png)
 
@@ -38,4 +39,3 @@ Om indatavärdet innehöll strängarna B57481, C46355 och Z97123, skulle utdataf
 * x-product2 = C46355
 * x-product3 = Z97123
 * x-product4 = Tom (Det finns fler indata än utdata och inget standardvärde har angetts.)
-
