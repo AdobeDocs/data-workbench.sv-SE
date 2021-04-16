@@ -1,16 +1,17 @@
 ---
 description: Om du markerar en nod genom att klicka på den tonas de andra noderna ned så att du lättare kan se pilarna till och från den markerade noden.
-solution: Analytics
-title: Markera en nod
-topic: Data workbench
+title: Välj en nod
 uuid: d63b39f6-edec-4b4c-b36b-f6e6881d3419
+exl-id: a483547f-e338-4d13-8a0b-6cb7971b7790
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 0%
 
 ---
 
-
-# Markera en nod{#select-a-node}
+# Välj en nod{#select-a-node}
 
 Om du markerar en nod genom att klicka på den tonas de andra noderna ned så att du lättare kan se pilarna till och från den markerade noden.
 
@@ -33,4 +34,3 @@ Du kan också flytta de markerade noderna som en grupp inom visualiseringen.
 **Så här tar du bort en nod eller en grupp noder från markeringen**
 
 * Skift-klicka på en nod eller Skift-dra över flera noder.
-
