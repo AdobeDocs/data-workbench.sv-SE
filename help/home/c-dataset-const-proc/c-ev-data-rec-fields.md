@@ -1,16 +1,17 @@
 ---
 description: Information om de datafält som Data Workbench-servern kan bearbeta för att skapa en datauppsättning.
-solution: Analytics
 title: Fält för händelsedatapost
-topic: Data workbench
 uuid: b0232bfa-0a3b-4e3d-876e-6a15a3764eae
+exl-id: 35433b87-991a-4fb9-ba6a-3217e89eb769
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1092'
+ht-degree: 0%
 
 ---
 
-
-# Fält för händelsedatapost{#event-data-record-fields}
+# Händelsedatapostfält{#event-data-record-fields}
 
 Information om de datafält som Data Workbench-servern kan bearbeta för att skapa en datauppsättning.
 
@@ -22,7 +23,7 @@ Information om de datafält som Data Workbench-servern kan bearbeta för att ska
 
 Händelsedata som används för att skapa en datauppsättning finns i filer som kallas loggkällor. De data som är tillgängliga i loggkällorna kallas händelsedata eftersom varje datapost representerar en transaktionspost eller en enda instans av en händelse med en associerad tidsstämpel.
 
-Händelsedata för en loggkälla samlas in i realtid av [!DNL Sensors]. Händelsedata som samlas in [!DNL Sensors] från HTTP- och programservrar överförs till data workbench-servrar, som konverterar data till komprimerade loggfiler ( [!DNL .vsl]). Händelsedata som finns i en platt fil, XML-fil eller en ODBC-datakälla läses av data workbench-servern, som tillhandahåller avkodare som du definierar för att extrahera en gemensam uppsättning datafält från dessa olika format.
+Händelsedata för en loggkälla samlas in i realtid av [!DNL Sensors]. Händelsedata som samlats in av [!DNL Sensors] från HTTP- och programservrar överförs till data workbench-servrar, som konverterar data till komprimerade loggfiler ( [!DNL .vsl]). Händelsedata som finns i en platt fil, XML-fil eller en ODBC-datakälla läses av data workbench-servern, som tillhandahåller avkodare som du definierar för att extrahera en gemensam uppsättning datafält från dessa olika format.
 
 Följande avsnitt innehåller information om de datafält (kallas händelsedatafält eller loggpostfält) som samlas in av [!DNL Sensors] eller läses och görs tillgängliga för data workbench-servern.
 
@@ -36,7 +37,7 @@ Följande avsnitt innehåller information om de datafält (kallas händelsedataf
 * c anger information från klienten.
 * x anger information som skapas av en Adobe-produkt.
 
-## Fält för baslinjedatapost för händelser {#section-a882ed7aa6af41eeb45a55bf8c1ca3d7}
+## Fält för baslinjehändelsedatapost {#section-a882ed7aa6af41eeb45a55bf8c1ca3d7}
 
 Loggfiler ( [!DNL .vsl]) innehåller fält med händelsedata som samlas in från servrar av [!DNL Sensors] och används av data workbench-servern i datauppsättningsprocessen. I följande tabell visas fälten i en vanlig händelsedatapost som registrerats av [!DNL Sensor]:
 
@@ -102,7 +103,7 @@ Loggfiler ( [!DNL .vsl]) innehåller fält med händelsedata som samlas in från
   </tr> 
   <tr> 
    <td colname="col1"> x-trackingid </td> 
-   <td colname="col2"> <p>Det 64-bitars hexadecimala värdet för den unika webbläsaridentifieraren som finns i en beständig cookie som angetts av en <span class="wintitle"> sensor </span> och som klienten skickar en begäran till en server. </p> <p> Exempel: 42FDF66DE610CF36 </p> </td> 
+   <td colname="col2"> <p>64-bitars hexadecimalt värde för den unika webbläsaridentifieraren som finns i en beständig cookie som anges av en <span class="wintitle">-sensor </span> och som tillhandahålls av klienten med en begäran till en server. </p> <p> Exempel: 42FDF66DE610CF36 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -129,7 +130,7 @@ Tabellen nedan innehåller exempel på fält som härleds av data workbench-serv
   </tr> 
   <tr> 
    <td colname="col1"> cs(reference-host) </td> 
-   <td colname="col2"> <p>Skådarens hela värdnamn. </p> <p> Exempel: Om cs(reference) är <span class="filepath"> http://my.domain.com/my/page </span>är cs(reference-host) <span class="filepath"> my.domain.com </span>. </p> </td> 
+   <td colname="col2"> <p>Skådarens hela värdnamn. </p> <p> Exempel: Om cs(reference) är <span class="filepath"> http://my.domain.com/my/page </span> är cs(reference-host) <span class="filepath"> my.domain.com </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(reference-query)(name) </td> 
@@ -143,8 +144,8 @@ Tabellen nedan innehåller exempel på fält som härleds av data workbench-serv
    <td colname="col1"> cs-uri-query(name) </td> 
    <td colname="col2"> <p>Värdet som är associerat med det angivna namnet. Om det finns flera värden för det angivna namnet returneras det sista av dessa värden. </p> Exempel: 
     <ul id="ul_47BBB2E3076A46629BFCDB2A460F700B"> 
-     <li id="li_AC9BB29505A54AE4AFF49438530C9EA4"> För URI:n <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product2=casette&amp;product3=cd </span>returnerar cs-uri-query(product3) cd. </li> 
-     <li id="li_B036C1D0B25748E0A155DDC9B1B999CB"> För URI:n <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product1=casette </span>returnerar <span class="wintitle"> cs-uri-query(product1) </span> casette. </li> 
+     <li id="li_AC9BB29505A54AE4AFF49438530C9EA4"> För URI:n <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product2=casette&amp;product3=cd </span> returnerar cs-uri-query(product3) cd. </li> 
+     <li id="li_B036C1D0B25748E0A155DDC9B1B999CB"> För URI:n <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product1=casette </span> returnerar <span class="wintitle"> cs-uri-query(product1) </span> casette. </li> 
     </ul> <p> </p> </td> 
   </tr> 
   <tr> 
@@ -161,15 +162,15 @@ Tabellen nedan innehåller exempel på fält som härleds av data workbench-serv
   </tr> 
   <tr> 
    <td colname="col1"> x-local-timestring </td> 
-   <td colname="col2"> <p>x-timestamp konverteras till den lokala tidszon som anges i Transformation.cfg- <span class="filepath"> </span> filen för datauppsättningen. Formatet är YYY-MM-DD HH:MM:SS.mmm. </p> <p> <p>Obs!  Du kan också definiera tidskonverteringar som x-local-timestring i <span class="filepath"> Log Processing.cfg- </span> filen. Mer information finns i <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Loggbearbetningskonfigurationsfil </a>. </p> </p> </td> 
+   <td colname="col2"> <p>x-timestamp konverteras till den lokala tidszonen som anges i filen <span class="filepath"> Transformation.cfg </span> för datauppsättningen. Formatet är YYY-MM-DD HH:MM:SS.mmm. </p> <p> <p>Obs!  Du kan också definiera tidskonverteringar som x-local-timestring i filen <span class="filepath"> Log Processing.cfg </span>. Mer information finns i <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Loggbearbetningskonfigurationsfil </a>. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> x-log-source-id </td> 
-   <td colname="col2"> <p>Den identifierare som motsvarar loggkällan för en viss loggpost. För att identifieraren ska kunna registreras måste du ange den i <span class="wintitle"> fältet Loggkälla-ID </span> i <span class="filepath"> Log Processing.cfg- </span> filen när du definierar <span class="wintitle"> sensor- </span>, loggfil- eller ODBC-datakällor. Mer information finns i <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Loggbearbetningskonfigurationsfil </a>. </p> <p> Exempel: från VSensor01. </p> </td> 
+   <td colname="col2"> <p>Den identifierare som motsvarar loggkällan för en viss loggpost. För att identifieraren ska kunna registreras måste du ange den i fältet <span class="wintitle"> Loggkälla-ID </span> i filen <span class="filepath"> Log Processing.cfg </span> när du definierar <span class="wintitle"> sensor </span>, loggfil eller ODBC-datakällor. Mer information finns i <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Loggbearbetningskonfigurationsfil </a>. </p> <p> Exempel: från VSensor01. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> x-mask </td> 
-   <td colname="col2"> Maskmönstret för <span class="wintitle"> Sensor- </span> datakällorna (härleds från <span class="filepath"> .vsl- </span> filnamnen). För en fil vars namn har formatet <span class="filepath"> YYYYMMDD-SENSORID.VSL </span>är x-mask SENSORID. </td> 
+   <td colname="col2"> Maskmönstret för datakällorna <span class="wintitle"> sensor </span> (härleds från filnamnen <span class="filepath"> .vsl </span>). För en fil vars namn har formatet <span class="filepath"> YYYMMDD-SENSORID.VSL </span> är x-mask SENSORID. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> x-timestring </td> 
@@ -182,4 +183,4 @@ Tabellen nedan innehåller exempel på fält som härleds av data workbench-serv
  </tbody> 
 </table>
 
-[!DNL Sensor]kan, när den används på en server, samla in fält med händelsedata från alla giltiga HTTP-begäranden, svarsrubriker eller variabler som är tillgängliga för den via serverns API. Om du vill samla in sådana datafält måste du ange önskade rubrikfält eller variabler i [!DNL txlogd.conf]konfigurationsfilen för [!DNL Sensor]. Mer information finns i *Data Workbench[!DNL Sensor]Guide*.
+[!DNL Sensor]kan, när den används på en server, samla in fält med händelsedata från alla giltiga HTTP-begäranden, svarsrubriker eller variabler som är tillgängliga för den via serverns API. Om du vill samla in sådana datafält måste du ange önskade rubrikfält eller variabler i [!DNL txlogd.conf]konfigurationsfilen för [!DNL Sensor]. Mer information finns i *Datan Workbench [!DNL Sensor] Guide*.
