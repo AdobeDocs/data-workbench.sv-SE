@@ -1,20 +1,21 @@
 ---
 description: Med måttteckenförklaringar kan du visa baslinjevärden som hör till din profil och statistik som hör till datauppsättningen (eller till den aktuella markeringen, om en sådan har gjorts).
-solution: Analytics
 title: Måttteckenförklaringar
-topic: Data workbench
 uuid: 72de7b0e-0a71-4465-baaf-d515fe474e0d
+exl-id: 1f2e58e2-44ea-4760-a504-2ed3a80c8b19
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
 
-
-# Måttteckenförklaringar{#metric-legends}
+# Måttförklaringar{#metric-legends}
 
 Med måttteckenförklaringar kan du visa baslinjevärden som hör till din profil och statistik som hör till datauppsättningen (eller till den aktuella markeringen, om en sådan har gjorts).
 
-I måttförklaringarna i Adobe-programmet visas de mätvärden som är relevanta för datauppsättningen, som i följande [!DNL Site] måttförklaring.
+I måttförklaringarna i ditt Adobe-program visas de mått som är relevanta för din datamängd, som i följande [!DNL Site]-måttförklaring.
 
 ![](assets/lgd_MetricLegend.png)
 
@@ -28,7 +29,7 @@ Måttförklaringar är egentligen ett specialfall för en tabellvisualisering. D
 
 ## Ta bort ett mått {#section-c0da3396b2d44b9b899b7a0e7d747d94}
 
-* Högerklicka på namnet på mätvärdet som du vill ta bort i måttförklaringen och klicka på **[!UICONTROL Remove]**.
+* Högerklicka på namnet på måttet som du vill ta bort i måttförklaringen och klicka på **[!UICONTROL Remove]**.
 
 ![](assets/lgd_MetricLegend_removeMetric.png)
 
