@@ -1,14 +1,15 @@
 ---
 description: Med detaljtabeller kan du visa ytterligare information om en delmängd av data, som definieras av de val du gör i andra visualiseringar.
-solution: Analytics
 title: Detaljtabell
-topic: Data workbench
 uuid: 2becff5e-c78d-4ac7-8cda-814ad0193efd
+exl-id: d7f0b768-f341-41e8-904b-ec98a25f7aa9
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '498'
+ht-degree: 0%
 
 ---
-
 
 # Detaljtabell{#detail-table}
 
@@ -53,12 +54,12 @@ Först måste du skapa en visualisering som visar den tidsram som du är intress
 
 Om du vill visa den information som beskrivs ovan måste du utföra följande steg:
 
-1. Högerklicka i detaljtabellen och klicka **[!UICONTROL Add Level]** > **[!UICONTROL Visitor]**.
-1. Högerklicka i detaljtabellen och klicka **[!UICONTROL Add Level]** > **[!UICONTROL Page View]**.
-1. Högerklicka på **[!UICONTROL Visitors]** nivårubriken och klicka **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL Domain]**.
+1. Högerklicka i detaljtabellen och klicka på **[!UICONTROL Add Level]** > **[!UICONTROL Visitor]**.
+1. Högerklicka i detaljtabellen och klicka på **[!UICONTROL Add Level]** > **[!UICONTROL Page View]**.
+1. Högerklicka på nivårubriken **[!UICONTROL Visitors]** och klicka på **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL Domain]**.
 1. Högerklicka i rubriken på besökarnivån och klicka på **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL City]**.
 1. Högerklicka i rubriken på besökarnivån och klicka på **[!UICONTROL Add Metric]** > **[!UICONTROL Page Views]**.
-1. Högerklicka i rubriken på sidvisningsnivån och klicka på **[!UICONTROL Add Attribute]** > **[!UICONTROL Page]** > **[!UICONTROL Page]**.
+1. Högerklicka i rubriken för sidvisningsnivån och klicka på **[!UICONTROL Add Attribute]** > **[!UICONTROL Page]** > **[!UICONTROL Page]**.
 
 I följande exempelarbetsyta visas de relaterade detaljerna för ett slumpmässigt urval av sex besökare på webbplatsen under den tidsperiod som du angav.
 
@@ -76,7 +77,7 @@ I följande exempelarbetsyta visas de relaterade detaljerna för ett slumpmässi
 
 ![](assets/mnu_DetailsTable_Level.png)
 
-## Lägg till attribut och mätvärden {#section-cdda2df3c9a448d5b9770686c8b8efb3}
+## Lägg till attribut och mått {#section-cdda2df3c9a448d5b9770686c8b8efb3}
 
 * Högerklicka på ett attribut eller en måttrubrik och klicka på **[!UICONTROL Add Attribute]** > *&lt;**[!UICONTROL attribute name]**>* eller **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
