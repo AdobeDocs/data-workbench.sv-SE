@@ -1,16 +1,17 @@
 ---
 description: Det finns flera typer av dimensioner på data workbench-servern. Därför är det viktigt att du känner till dimensionstypen när du använder en dimension för att skapa mått, filter eller härledda dimensioner.
-solution: Analytics
-title: Dimensionstyper
-topic: Data workbench
+title: Dimensioner
 uuid: 07659373-8d9b-473d-8daa-ca8e7ac4afe8
+exl-id: cbc25504-2c1c-4622-adc1-c9bbac8e12fb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '754'
+ht-degree: 0%
 
 ---
 
-
-# Dimensionstyper{#dimension-types}
+# Dimensioner{#dimension-types}
 
 Det finns flera typer av dimensioner på data workbench-servern. Därför är det viktigt att du känner till dimensionstypen när du använder en dimension för att skapa mått, filter eller härledda dimensioner.
 
@@ -19,7 +20,7 @@ Insight Server kan skapa och underhålla följande typer av dimensioner:
 <table id="table_1A79B6C57ED145B6AA3BB05DD37AAD1B"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Dimensionstyper </th> 
+   <th colname="col1" class="entry"> Dimensioner </th> 
    <th colname="col2" class="entry"> Beskrivning </th> 
   </tr> 
  </thead>
@@ -34,7 +35,7 @@ Insight Server kan skapa och underhålla följande typer av dimensioner:
   </tr> 
   <tr> 
    <td colname="col1"> Numeriskt </td> 
-   <td colname="col2">En dimension som har sorterat numeriska värden och en 1:N-relation med en överordnad räkningsbar dimension. En numerisk dimension kan tolkas som att den representerar en numerisk egenskap för elementen i dess överordnade dimension. Numeriska dimensioner används ofta för att definiera summamått. <p>Exempel: Den numeriska dimensionen Sessionsintäkt definierar intäkten, i dollar, för varje session. Varje session har ett enda intäktsbelopp, men ett valfritt antal sessioner kan ha samma intäkt, så sessionsintäkten är"en-till-många" med session. Ett mått på"Intäkter" kan definieras som <span class="filepath"> summan(Session_Revenue, Session)</span>, som anger den totala intäkten för de valda sessionerna. </p></td> 
+   <td colname="col2">En dimension som har sorterat numeriska värden och en 1:N-relation med en överordnad räkningsbar dimension. En numerisk dimension kan tolkas som att den representerar en numerisk egenskap för elementen i dess överordnade dimension. Numeriska dimensioner används ofta för att definiera summamått. <p>Exempel: Den numeriska dimensionen Sessionsintäkt definierar intäkten, i dollar, för varje session. Varje session har ett enda intäktsbelopp, men ett valfritt antal sessioner kan ha samma intäkt, så sessionsintäkten är"en-till-många" med session. Ett mått för "Intäkt" kan definieras som <span class="filepath"> summa(Session_Revenue, Session)</span>, vilket ger den totala intäkten för de valda sessionerna. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Många-till-många </td> 
@@ -50,8 +51,7 @@ Insight Server kan skapa och underhålla följande typer av dimensioner:
   </tr> 
   <tr> 
    <td colname="col1"> Härledd </td> 
-   <td colname="col2">Härledda dimensioner, i stället för att definieras i datauppsättningskonfigurationen baserat på de data som bearbetas, definieras i profilen baserat på andra dimensioner eller mätvärden. Många härledda dimensioner skapas automatiskt för att skapa olika typer av visualiseringar. <p>När en användare skapar en webbplats- eller processkarta skapar Insight Server i tysthet en Prefix-dimension. Andra, t.ex. måtten för rapporttiden, definieras av filer i katalogen Dimensions för en profil. </p></td> 
+   <td colname="col2">Härledda dimensioner, i stället för att definieras i datauppsättningskonfigurationen baserat på de data som bearbetas, definieras i profilen baserat på andra dimensioner eller mätvärden. Många härledda dimensioner skapas automatiskt för att skapa olika typer av visualiseringar. <p>När en användare skapar en webbplats- eller processkarta skapar Insight Server i tysthet en Prefix-dimension. Andra, t.ex. måtten för rapporttiden, definieras av filer i katalogen Dimensioner i en profil. </p></td> 
   </tr> 
  </tbody> 
 </table>
-
