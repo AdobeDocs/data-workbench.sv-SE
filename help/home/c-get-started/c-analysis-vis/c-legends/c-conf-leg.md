@@ -1,19 +1,17 @@
 ---
 description: Förtroendeförklaringar hjälper dig att avgöra sannolikheten för att de siffror du ser beror på en chans och förstå eventuella avvikelser i data.
-solution: Analytics
 title: Förtroendeförklaringar
-topic: Data workbench
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
+exl-id: 9aab169a-98b8-4e71-b74d-28e385c5c424
 translation-type: tm+mt
-source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
 
 ---
 
-
-# Förtroendeförklaringar{#confidence-legends}
+# Bekräftelseförklaringar{#confidence-legends}
 
 Förtroendeförklaringar hjälper dig att avgöra sannolikheten för att de siffror du ser beror på en chans och förstå eventuella avvikelser i data.
 
@@ -62,9 +60,9 @@ I följande förklaring visas tillförlitlighetsinformation om konverteringsmåt
 >
 Om du behöver mer exakta siffror bör du rådfråga en expert i statistik.
 
-## Ändra mätvärden eller formler {#section-7f09ff84c3514f26b78d29294e1f03d9}
+## Ändra mått eller formler {#section-7f09ff84c3514f26b78d29294e1f03d9}
 
-* Klicka i fältet och skriv det önskade måttet eller uttrycket i den förtroendeförklaring som visas **[!UICONTROL Metric or Formula]** . Mer information om syntaxregler för uttryck finns i [Query Language Syntax](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+* Klicka i fältet **[!UICONTROL Metric or Formula]** i förtroendeförklaringen och skriv önskat mått eller uttryck. Mer information om syntaxregler för uttryck finns i [Syntax för frågespråk](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 ## Exportera till Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
 
