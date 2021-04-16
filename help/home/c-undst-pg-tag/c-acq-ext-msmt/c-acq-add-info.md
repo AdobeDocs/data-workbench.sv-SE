@@ -1,14 +1,15 @@
 ---
 description: Frågesträngsvariabler kan läggas till i en JavaScript-begäran för att samla in ytterligare mått när en begäran görs.
-solution: Analytics
 title: Hämta ytterligare information
-topic: Data workbench
 uuid: 0a8075e9-4986-42c4-b505-3985b433cf8e
+exl-id: ad4f5e08-b7b7-4de3-b0c2-71440facb2d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
-
 
 # Hämta ytterligare information{#acquiring-additional-information}
 
@@ -43,4 +44,3 @@ I det här exemplet kan skriptvariablerna för v_1 och v_2 härledas från en an
 | v_pn= | Värde som är associerat med v_pn-frågesträngsvariabeln | v_pn=Ansökningsformulär |
 | v_1= | Värde som är associerat med frågesträngsvariabeln v_1 | v_1=99.99 |
 | v_2= | Värde som är associerat med variabeln v_2-frågesträng | v_2=visa |
-
