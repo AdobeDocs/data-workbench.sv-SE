@@ -1,16 +1,17 @@
 ---
 description: Följande dimensioner är tillgängliga för användning i serverstatusprofilen för data workbench.
-solution: Analytics
-title: Dimensioner i Data Workbench Server-statusprofilen
-topic: Data workbench
+title: Dimensioner i Datans Workbench serverstatusprofil
 uuid: 4cfe882a-2797-4af9-bd6d-75bc31ee909c
+exl-id: 002f6b95-f151-41d9-ae28-9c01c1f621ee
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1366'
+ht-degree: 0%
 
 ---
 
-
-# Dimensioner i Data Workbench Server-statusprofilen{#dimensions-in-the-data-workbench-server-status-profile}
+# Dimensioner i Datans Workbench serverstatusprofil{#dimensions-in-the-data-workbench-server-status-profile}
 
 Följande dimensioner är tillgängliga för användning i serverstatusprofilen för data workbench.
 
@@ -22,27 +23,27 @@ Följande dimensioner är tillgängliga för användning i serverstatusprofilen 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Agentversion</b> </td> 
-   <td colname="col2"> Värdet cs-uri-query(af) används för den här enkla dimensionen. Det är det sista icke-tomma värdet för en server. Detta visar byggdatum och byggtid för de versioner av övervakningsagenten som körs. </td> 
+   <td colname="col2"> Värdet cs-uri-query(af) används för den här enkla Dimensionen. Det är det sista icke-tomma värdet för en server. Detta visar byggdatum och byggtid för de versioner av övervakningsagenten som körs. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>All profilåtergivning</b> </td> 
-   <td colname="col2"> Fältet cs-uri-query(a) används för den här numeriska dimensionen, det är värdet för den sista raden för en viss server, villkorat med cs-uri-query(k) är inte tomt. Den här dimensionen används för att ange om några profiler bearbetas. </td> 
+   <td colname="col2"> Fältet cs-uri-query(a) används för den här numeriska Dimensionen, det är värdet för den sista raden för en viss server, villkorat med cs-uri-query(k) är inte tomt. Den här dimensionen används för att ange om några profiler bearbetas. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Procentvärde för kapacitetsrad</b> </td> 
-   <td colname="col2"> Fältet cs-uri-query(r) används för den här numeriska dimensionen, det är värdet för den sista raden för en viss server, villkorat med cs-uri-query(k) är inte tomt. </td> 
+   <td colname="col2"> Fältet cs-uri-query(r) används för den här numeriska Dimensionen, det är värdet för den sista raden för en viss server, villkorat med cs-uri-query(k) är inte tomt. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Procent av kapacitetsstorlek</b> </td> 
-   <td colname="col2"> Fältet cs-uri-query(n) används för den här numeriska dimensionen, det är värdet för sista raden för en viss server, villkorat med cs-uri-query(k) är inte tomt. </td> 
+   <td colname="col2"> Fältet cs-uri-query(n) används för den här numeriska Dimensionen, det är värdet för den sista raden för en viss server, villkorat med cs-uri-query(k) är inte tomt. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Gemensamt namn</b> </td> 
-   <td colname="col2"> Fältet sc-ur-query(am) används för den här enkla dimensionen. Det är värdet för värdet för Senaste icke-tomma för en given server. Här visas det vanliga namnet på de servrar som övervakas. </td> 
+   <td colname="col2"> Fältet sc-ur-query(am) används för den här enkla Dimensionen, det är värdet för värdet Last Nonblank för en viss server. Här visas det vanliga namnet på de servrar som övervakas. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Komponentkontrollen lyckades</b> </td> 
-   <td colname="col2"> Fältet cs-uri-query(v) används för den här enkla dimensionen, det är värdet för den sista raden för en viss server. Den här dimensionen kontrollerar serverkomponenterna för att kontrollera att de fungerar som de ska. </td> 
+   <td colname="col2"> Fältet cs-uri-query(v) används för den här enkla Dimensionen, det är värdet för den sista raden för en viss server. Den här dimensionen kontrollerar serverkomponenterna för att kontrollera att de fungerar som de ska. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Komponenter i fel</b> </td> 
@@ -50,11 +51,11 @@ Följande dimensioner är tillgängliga för användning i serverstatusprofilen 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Miljö</b> </td> 
-   <td colname="col2">Värdet cs-uri-query(c) används för miljö-ID. Den sista raden för ett block används som värde för dimensionen. Den här enkla dimensionen visar miljön som dina servrar körs i (förutsatt att den är korrekt konfigurerad). <p><p>Obs!  Den här dimensionen anges i insight_monitor_agent.cfg. </p></p></td> 
+   <td colname="col2">Värdet cs-uri-query(c) används för miljö-ID. Den sista raden för ett block används som värde för dimensionen. Den här enkla Dimensionen visar miljön där dina servrar körs (förutsatt att den är korrekt konfigurerad). <p><p>Obs!  Den här dimensionen anges i insight_monitor_agent.cfg. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Beräknad svep deksekunder</b> </td> 
-   <td colname="col2"> Fältet för x-estimated-sweep-dekaseconds används i den här numeriska dimensionen. Detta är den uppskattade sveptiden för servrarna dividerat med tio (minskad upplösning för svepmätning för att göra måttet mer rimligt stort). <p><p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></p></td> 
+   <td colname="col2"> Fältet för x-Estimated-sweep-dekaseconds används i den här numeriska Dimensionen. Detta är den uppskattade sveptiden för servrarna dividerat med tio (minskad upplösning för svepmätning för att göra måttet mer rimligt stort). <p><p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Värd</b> </td> 
@@ -98,18 +99,18 @@ Följande dimensioner är tillgängliga för användning i serverstatusprofilen 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Procentvärde för temporärt databasutrymme</b> </td> 
-   <td colname="col2"> Den sista raden i värdet för cs-uri-query(an) kopieras till fältet x-temp-db-space-percentage. Detta är en numerisk dimension som används för att beräkna procentandelen använt temporärt DB-utrymme på en given server. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Den sista raden i värdet för cs-uri-query(an) kopieras till fältet x-temp-db-space-percentage. Detta är en numerisk Dimension som används för att beräkna procentandelen använt temporärt DB-utrymme på en viss server. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Insight Version</b> </td> 
-   <td colname="col2"> Värdet cs-uri-query(ab) används för den här enkla dimensionen. Det är det sista icke-tomma värdet för en server. Visar version(er) av data workbench-servern som körs på varje server. </td> 
+   <td colname="col2"> Värdet cs-uri-query(ab) används för den här enkla Dimensionen. Det är det sista icke-tomma värdet för en server. Visar version(er) av data workbench-servern som körs på varje server. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Grupp</b> </td> 
    <td colname="col2"> Grupperingsord som ger dig ett annat sätt att filtrera den resulterande datauppsättningen. <p>Obs!  Den här dimensionen anges i insight_monitor_agent.cfg. </p></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b>Mått</b> </td> 
+   <td colname="col1"> <b>Mätvärden</b> </td> 
    <td colname="col2"> Nedan visas mätvärden som ingår i data workbench Profile Monitoring Profile och hur de härleds. </td> 
   </tr> 
   <tr> 
@@ -178,4 +179,3 @@ Följande dimensioner är tillgängliga för användning i serverstatusprofilen 
   </tr> 
  </tbody> 
 </table>
-
