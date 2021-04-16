@@ -1,14 +1,15 @@
 ---
 description: Följ de här stegen för att skapa en ny kanalvisualisering
-solution: Analytics
 title: Bygga en tratt
-topic: Data workbench
 uuid: 88afa09d-42ff-4e3b-b5cc-d74e01f4fc39
+exl-id: 24b63998-3aad-4ddf-b2d2-78dd0df9a510
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 0%
 
 ---
-
 
 # Bygga en tratt{#building-a-funnel}
 
@@ -30,7 +31,7 @@ Följ de här stegen för att skapa en ny kanalvisualisering
 
 1. Lägg till en dimension genom att markera elementet och dra samtidigt som du håller ned **[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]**.
 
-1. Dra elementet till rätt position över målzonen **[!UICONTROL Drag Dimension Element Here]**.
+1. Dra elementet till rätt position över målzonen, **[!UICONTROL Drag Dimension Element Here]**.
 
    ![](assets/step4-funnel.png)
 
@@ -46,6 +47,6 @@ Följ de här stegen för att skapa en ny kanalvisualisering
 
    ![](assets/last-image-funnel.png)
 
-Från tratten kan ni identifiera bortfall och nedgång i takt med att kunderna konverterar försäljningen och efterföljande kampanjer eller innehållsvägar. Om du vill ha mer information kan du öppna en [sökvägsläsare](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) och se en detaljerad lista över de sidor som tagits innan den valda sidan anländer samt de sökvägar som tagits efter att de har lämnat sidan.
+Från tratten kan ni identifiera bortfall och nedgång i takt med att kunderna konverterar försäljningen och efterföljande kampanjer eller innehållsvägar. Om du vill ha mer information kan du öppna en [sökvägsläsare](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) för att se en detaljerad lista över de sidor som tagits innan de anländer till den valda sidan samt de sökvägar som har tagits efter att de har lämnat sidan.
 
 Se ytterligare [Funktioner](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3).
