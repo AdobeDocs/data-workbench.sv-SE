@@ -1,14 +1,15 @@
 ---
 description: URI-omformningen Unescape tar bort alla tecken i en sträng som har escape-konverterats.
-solution: Analytics
 title: UnescapeURI
-topic: Data workbench
 uuid: 25e87cc7-812d-4d77-be94-16093e8955fe
+exl-id: abf20906-5052-4bbe-9ffb-522b850669a6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 2%
 
 ---
-
 
 # UnescapeURI{#unescapeuri}
 
@@ -38,4 +39,3 @@ Om dokumentnamnsvärdet var
 blir värdet för x-docname-unescape
 
 * [!DNL mysite.net/lending and leasing forms/document library/credit application.doc]
-
