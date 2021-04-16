@@ -1,14 +1,15 @@
 ---
 description: Visualiseringar kan enkelt konfigureras och konfigureras om.
-solution: Analytics
 title: Konfigurera visualiseringar
-topic: Data workbench
 uuid: d918f45b-2e4d-499f-902f-bcc661fe12f3
+exl-id: d70869ee-fb75-47a3-92fe-518f69f5fe73
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '61'
+ht-degree: 0%
 
 ---
-
 
 # Konfigurera visualiseringar{#configuring-visualizations}
 
