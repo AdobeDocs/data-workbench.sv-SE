@@ -1,16 +1,15 @@
 ---
 description: Information om baslinjehändelsedatapostfält som registrerats av sensorn.
-solution: Analytics
 title: Fält för baslinjedatapost för händelser
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
+exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
 
 ---
-
 
 # Fält för baslinjedatapost för händelser{#baseline-event-data-record-fields}
 
@@ -78,9 +77,9 @@ Information om baslinjehändelsedatapostfält som registrerats av sensorn.
   </tr> 
   <tr> 
    <td colname="col1"> x-trackingid </td> 
-   <td colname="col2"> <p>Det 64-bitars hexadecimala värdet för den unika webbläsaridentifieraren som finns i en beständig cookie som angetts av en <span class="wintitle"> sensor </span> och som klienten skickar en begäran till en server. </p> <p>Exempel: 42FDF66DE610CF36 </p> </td> 
+   <td colname="col2"> <p>64-bitars hexadecimalt värde för den unika webbläsaridentifieraren som finns i en beständig cookie som anges av en <span class="wintitle">-sensor </span> och som tillhandahålls av klienten med en begäran till en server. </p> <p>Exempel: 42FDF66DE610CF36 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-De kan [!DNL data workbench server] härleda ett antal variabler från baslinjehändelsedatafälten. Mer information finns i konfigurationsguiden för *datauppsättningar*.
+[!DNL data workbench server] kan härleda ett antal variabler från baslinjehändelsedatafälten. Mer information finns i *Konfigurationshandboken för datauppsättningar*.
