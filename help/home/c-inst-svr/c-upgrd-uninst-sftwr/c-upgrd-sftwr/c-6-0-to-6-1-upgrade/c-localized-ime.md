@@ -1,14 +1,15 @@
 ---
 description: Data workbench har nu stöd för IME (Input Method Editor) som en sekundär textinmatningsprocess för internationella språk.
-solution: Analytics
 title: Installera Indatametodredigeraren
-topic: Data workbench
 uuid: 2a4dc6de-9dd7-4280-b410-fb88a135fe45
+exl-id: 3fcc58f5-29a9-427e-831a-44d527614b56,0bdc7d95-b49a-4ca5-9fde-9c1ce2cd14ec,e4e1c016-0544-434a-b82e-fdd2a4af316c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 0%
 
 ---
-
 
 # Installera Indatametodredigeraren{#installing-the-input-method-editor}
 
@@ -20,29 +21,29 @@ Med IME-program kan du ange internationella tecken på ett antal olika sätt som
 >
 >I version 6.1 av data workbench stöds endast det virtuella förenklade kinesiska tangentbordet. Om du anger andra språk via IME-programmet kan det leda till oväntat beteende.
 
-## Använda en IME {#section-5f008d75a7b24119ab6aebc55454f927}
+## Använda ett IME-program {#section-5f008d75a7b24119ab6aebc55454f927}
 
 Så här använder du den flytande IME-textinmatningsfunktionen:
 
-1. Klicka **[!UICONTROL Alt + Space]** för ett textinmatningsområde.
+1. Klicka på **[!UICONTROL Alt + Space]** om du vill se ett textinmatningsområde.
 1. Ange värden med hjälp av systemets IME.
-1. Stäng inmatningsdialogrutan genom att markera **[!UICONTROL Enter]** eller klicka på **[!UICONTROL OK]** knappen.
+1. Stäng inmatningsdialogrutan genom att välja **[!UICONTROL Enter]** eller klicka på knappen **[!UICONTROL OK]**.
 
    Dialogrutan försvinner och tecknen visas i det markerade fältet.
 
 **Uppdaterar filen Insight.cfg**
 
-Om du vill använda IME-programmet måste du uppdatera [!DNL Insight.cfg] filen med den här inställningen:
+Om du vill använda IME-programmet måste du uppdatera [!DNL Insight.cfg]-filen med den här inställningen:
 
 ```
 Localized IME = bool: true
 ```
 
-Om den här inställningen inte finns i konfigurationsfilen aktiveras inte IME-funktionen när du trycker **[!UICONTROL Alt + Space]** på den.
+Om den här inställningen inte finns i konfigurationsfilen aktiveras inte IME-funktionen om du trycker på **[!UICONTROL Alt + Space]**.
 
-**Startar Insight på ett annat språk:** För att få bättre stöd för lokaliserade resurser som välkomstskärm och för att kunna hantera flera språk i framtiden, kräver data workbench kommandoradsargument som anger vilket språk som ska läsas in. Standardspråket är engelska.
+**Starta Insight på ett annat språk:** För att få bättre stöd för lokaliserade resurser som välkomstskärm och för att kunna ha stöd för flera språk i framtiden, kräver data workbench kommandoradsargument som identifierar det språk som ska läsas in. Standardspråket är engelska.
 
-Om du startar data workbench på kinesiska måste du anropa [!DNL Insight.exe] med argumentet&quot;-zh-cn&quot;:
+Om du startar en data workbench på kinesiska måste du anropa [!DNL Insight.exe] med argumentet&quot;-zh-cn&quot;:
 
 ```
 Insight.exe -zh-cn
