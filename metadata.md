@@ -1,20 +1,15 @@
 ---
 cloud: Experience Cloud
 product: adobe analytics
-solution-title: Läs mer & Support
-solution-hub-url: https://helpx.adobe.com/se/support/analytics.html
-solution-image: assets/analytics-icon-24.png
-getting-started-title: Komma igång
-getting-started-url: https://helpx.adobe.com/analytics/get-started.html
-tutorials-title: Tutorials
-tutorials-url: https://helpx.adobe.com/se/analytics/kt/index/analytics-videos.html
+solution: Analytics
+type: Documentation
 git-repo: https://git.corp.adobe.com/AdobeDocs/data-workbench.sv-SE
 index: true
 translation-type: tm+mt
-source-git-commit: cfa391f4238bac43fdf2539baa8e038a79110200
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 9%
+source-wordcount: '111'
+ht-degree: 0%
 
 ---
 
