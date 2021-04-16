@@ -2,16 +2,15 @@
 description: Kontrollerade försök är tester som gör att du kan jämföra resultat från en experimentell exempelgrupp med resultat från en standardkontrollgrupp.
 solution: Analytics,Analytics
 title: Experimentera med Data Workbench
-topic: Data workbench
 uuid: 5fce2d9e-4975-44e4-a7c0-11064d8d28b4
+exl-id: 40bcf6a4-c722-427c-81ac-45dec1eae0b5
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 0%
 
 ---
-
 
 # Experimentera med Data Workbench{#data-workbench-controlled-experiments}
 
@@ -21,6 +20,6 @@ På webbplatsen kan du implementera, mäta och analysera kontrollerade experimen
 
 >[!NOTE]
 >
->Webbplatsexperiment kan bara analyseras i datauppsättningar där den enda metod för identifiering av besökare som används är den [!DNL Sensor] set-beständiga cookie-metoden. Sensorer som körs på J2EE-servrar (JBoss, Tomcat, WebLogic och WebSphere) stöder inte kontrollerade experiment. Mer information finns i följande avsnitt.
+>Webbplatsförsök kan bara analyseras i datauppsättningar där den enda metod för besöksidentifiering som används är den [!DNL Sensor]-inställda beständiga cookie-metoden. Sensorer som körs på J2EE-servrar (JBoss, Tomcat, WebLogic och WebSphere) stöder inte kontrollerade experiment. Mer information finns i följande avsnitt.
 
 Med Site kan man implementera A/B, A/B/A och multivariata kontrollerade experiment för att samla in tillräckligt med testdata för att få statistiskt korrekta data för en detaljerad utvärdering av hypotesen, utan att det påverkar webbplatsens prestanda.
