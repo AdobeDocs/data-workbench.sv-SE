@@ -1,14 +1,15 @@
 ---
 description: Marknadsföring av din webbplats kan innebära att annonser placeras i form av bilder eller andra multimediefiler (från din webbserver) på tredjepartswebbplatser.
-solution: Analytics
 title: Mäta annonsintryckt
-topic: Data workbench
 uuid: ca2bd6bf-4f49-406c-b47a-18d6abfb48a4
+exl-id: 77cd816e-63a4-4080-ac65-0661e1de4ec0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 0%
 
 ---
-
 
 # Mäta annonsintryckt{#measuring-advertisement-impression}
 
@@ -16,7 +17,7 @@ Marknadsföring av din webbplats kan innebära att annonser placeras i form av b
 
 I sådana fall kanske du vill mäta både intrycket av annonsen i en webbläsare och den efterföljande klickningen, om en sådan inträffar, till annonsens mål-URL på webbplatsen.
 
-För annonser i form av bilder, som läggs [!DNL Log=1] till i frågesträngen, skapas bildbegäran och därmed även reklamintrycket, som spelas in av [!DNL Sensor] i analyssyfte.
+Om du lägger till [!DNL Log=1] i frågesträngen för annonser i form av bilder blir det en bildförfrågan, och därmed även ett reklamintryck, som spelas in av [!DNL Sensor] i analyssyfte.
 
 ```
 <!—REFERENCE IMPRESSION TAG-> 
@@ -30,7 +31,7 @@ För annonser i form av bilder, som läggs [!DNL Log=1] till i frågesträngen, 
 | v_ica= | Värde som anger Impression Campaign Asset | v_ica=&quot;72890ab&quot; |
 | v_icr= | Värde som anger Impression Campaign Referer | v_icr=&quot;http://money.cnn.com/markets/ |
 
-Förutom att lägga [!DNL Log=1] till bildbegäran bör en identifierare läggas till i webbadressen som leder från annonsen till målsidan på webbplatsen för att spåra annonsen som ledde fram till klickningen och spåra klickningen tillbaka till den specifika kampanjen för annonsen.
+Förutom att lägga till [!DNL Log=1] i bildbegäran bör en identifierare läggas till i webbadressen som leder från annonsen till målsidan på webbplatsen för att spåra annonsen som ledde fram till klickningen och spåra klickningen tillbaka till den specifika kampanjen för annonsen.
 
 ```
 <a href=”www.mysite.com/path/to/landingpage?Log=1&v_c=CAMPAIGN&v_ca=72890ab&v_cr=http://money.cnn.com/markets/”>
@@ -64,4 +65,3 @@ Click Here
   </tr> 
  </tbody> 
 </table>
-
