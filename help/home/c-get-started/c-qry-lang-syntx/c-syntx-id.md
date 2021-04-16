@@ -1,14 +1,15 @@
 ---
 description: Metrisk, dimension och filteruttryck kan använda identifierare för att referera till namngivna mått, dimensioner och filter.
-solution: Analytics
 title: Syntax för identifierare
-topic: Data workbench
 uuid: 9cfa188a-05ca-4163-a268-e33fce9a1929
+exl-id: 79bc5585-7b21-4a9d-b044-28ff4bc5a885
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 0%
 
 ---
-
 
 # Syntax för identifierare{#syntax-for-identifiers}
 
@@ -28,4 +29,4 @@ En giltig identifierare kan innehålla ett eller flera av följande:
 
 Alla andra tecken är ogiltiga i en identifierare.
 
-Samma regler gäller för namn på mått, dimensioner och filter när de används utanför uttryck, förutom att namnen kan innehålla mellanslag men inte understreck. Du kan till exempel definiera dimensionen Sessionsreferens i [!DNL Transformation.cfg] filen som Sessionsreferens, men inte [!DNL Session_Referrer].
+Samma regler gäller för namn på mått, dimensioner och filter när de används utanför uttryck, förutom att namnen kan innehålla mellanslag men inte understreck. Du kan till exempel definiera dimensionen Sessionsreferens i [!DNL Transformation.cfg]-filen som Sessionsreferens, men inte [!DNL Session_Referrer].
