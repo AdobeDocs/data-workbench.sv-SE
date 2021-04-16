@@ -1,18 +1,19 @@
 ---
-description: 'null'
-solution: Analytics
+description: Lägga till en profilanslutning
 title: Lägga till en profilanslutning
-topic: Data workbench
 uuid: 0a168236-8c15-456b-9ac8-ca572baa916a
+exl-id: c8dd2286-df88-4b23-a7de-cd90bfe76289
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 0%
 
 ---
 
-
 # Lägga till en profilanslutning{#adding-a-profile-connection}
 
-1. Klicka **[!UICONTROL Add Profile Connection]** för att öppna **[!UICONTROL New Profile Connection]** fönstret.
+1. Klicka på **[!UICONTROL Add Profile Connection]** för att öppna fönstret **[!UICONTROL New Profile Connection]**.
 1. Fyll i de nödvändiga fälten med hjälp av formuläret nedan:
 
    ![](assets/new_profile_connection.png)
@@ -26,6 +27,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    * **[!UICONTROL Name]**: Ange namnet på profilen så som den ska visas på kontrollpanelen.
 
 
-1. När formuläret har konfigurerats på rätt sätt klickar du för **[!UICONTROL Create Connection]** att lägga till profilanslutningen i systemet.
+1. När formuläret har konfigurerats korrekt klickar du på **[!UICONTROL Create Connection]** för att lägga till profilanslutningen i systemet.
 
    Om åtgärden lyckades visas ett meddelande om att profilanslutningen har skapats.
