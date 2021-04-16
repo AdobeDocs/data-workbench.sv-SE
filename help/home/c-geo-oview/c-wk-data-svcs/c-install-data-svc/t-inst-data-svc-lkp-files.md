@@ -1,16 +1,17 @@
 ---
 description: Steg för att installera IP Geo-Intelligence- eller IP Geo-location-sökfiler.
-solution: Analytics
 title: Installerar Data Service Lookup-filer
-topic: Data workbench
 uuid: a3fe8a14-2c74-4105-bc5b-2298f0f4b61e
+exl-id: b19904f4-ead0-4bed-a79f-864c78bc0e1d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 0%
 
 ---
 
-
-# Installerar Data Service Lookup-filer{#installing-the-data-service-lookup-files}
+# Installerar datatjänstens sökningsfiler{#installing-the-data-service-lookup-files}
 
 Steg för att installera IP Geo-Intelligence- eller IP Geo-location-sökfiler.
 
@@ -20,14 +21,13 @@ Uppslagsfilen (Lookups\*profilnamn*\*datafilnamn*) som tillhandahålls med datat
 
 >[!NOTE]
 >
->Alla dina [!DNL IP Geo-location] - eller [!DNL IP Geo-intelligence] datafiler måste få plats i det tillgängliga fysiska minnet på din data workbench-server.
+>Alla dina [!DNL IP Geo-location]- eller [!DNL IP Geo-intelligence]-datafiler måste få plats i det tillgängliga fysiska minnet på din data workbench-server.
 
-1. Öppna mappen Lookups från den [!DNL .zip] fil du fick från Adobe.
+1. Öppna mappen Lookups från [!DNL .zip]-filen som du fick från Adobe.
 1. Kopiera mappen IP Geo-Intelligence eller IP Geo-location till mappen Lookups i installationskatalogen för data workbench-servern (du vill avsluta med en ...\Lookups\IP Geo-intelligence or a ..\Lookups\IP Geo-location folder on your data workbench server as shown in the following example. Namnen på de andra mapparna i mappen Uppslag kan skilja sig från de som visas.
 
    ![Steginformation](assets/Geo_installLookups_dirIP.png)
 
    >[!NOTE]
    >
-   >Adobe skickar regelbundet filer som innehåller uppdaterade [!DNL IP Geo-intelligence] - eller [!DNL IP Geo-location] sökfiler. När du tar emot dessa filer måste du läsa in dem på din data workbench-server enligt Adobes anvisningar. Instruktioner finns i följande avsnitt.
-
+   >Adobe skickar regelbundet filer som innehåller uppdaterade [!DNL IP Geo-intelligence]- eller [!DNL IP Geo-location]-sökfiler. När du tar emot dessa filer måste du läsa in dem på din data workbench-server enligt instruktionerna från Adobe. Instruktioner finns i följande avsnitt.
