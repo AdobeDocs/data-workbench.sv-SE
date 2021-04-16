@@ -1,14 +1,15 @@
 ---
 description: Värden som anges i ett formulär på en webbsida kan samlas in och läggas till i frågesträngen på den efterfrågade sidan (när formuläret skickas) med hjälp av JavaScript.
-solution: Analytics
 title: Allmän information
-topic: Data workbench
 uuid: 401816a5-1d95-48e6-bedf-ee2a5dbd2d50
+exl-id: 9effc72b-e75f-423c-87ec-6ac25edee8d6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '175'
+ht-degree: 0%
 
 ---
-
 
 # Allmän information{#general-information}
 
@@ -53,7 +54,7 @@ I det här exemplet läggs värdena som anges i formuläret av webbläsaranvänd
 http://www.myserver.com/thankyou.asp?v_1=John Smith&v_2=Los Angeles&v_3=California&v_4=90210
 ```
 
-Följande utökade mått skulle erhållas med denna begäran, utöver de basmått som samlats in av [!DNL Sensor]:
+Följande utökade mått skulle erhållas med denna begäran utöver de baslinjemått som samlats in av [!DNL Sensor]:
 
 | Insamlade data | Förklaring | Exempel |
 |---|---|---|
@@ -61,4 +62,3 @@ Följande utökade mått skulle erhållas med denna begäran, utöver de basmåt
 | v_2 | Värde som är associerat med formulärfältet CITY | v_2=Los Angeles |
 | v_3 | Värde som är associerat med STAT-formulärfältet | v_3=Kalifornien |
 | v_4 | Värdet som är associerat med ZIP-formulärfältet | v_4=90210 |
-
