@@ -1,17 +1,15 @@
 ---
 description: Reguljära uttryck används i alla sökfält i en workbench för data, inklusive frågans entitetspaneler.
-solution: Analytics
 title: Reguljära uttryck
-topic: Data workbench
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
+exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
 translation-type: tm+mt
-source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 1%
 
 ---
-
 
 # Reguljära uttryck{#regular-expressions}
 
@@ -29,15 +27,15 @@ Ett reguljärt uttryck är ett textmönster som består av en kombination av alf
 
 För att identifiera och extrahera komplexa strängmönster använder data workbench-servern reguljära uttryck i vissa omformningar och villkor. Här följer en kort guide till reguljära uttryck.
 
-Denna bilaga är inte en omfattande introduktion till reguljära uttryck. En särskilt bra referens är O&#39;Reillys publikation *Mastering Regular Expressions, 2:a upplagan* av Jeffrey E. F. Friedl.
+Denna bilaga är inte en omfattande introduktion till reguljära uttryck. En särskilt bra referens är O&#39;Reilly-publikationen *Mastering Regular Expressions, andra utgåvan* av Jeffrey E. F. Friedl.
 
 ## Terminologi för reguljära uttryck {#section-80b0d54f731e448391532ab3eb3c525c}
 
 | Term | Definition |
 |---|---|
-| Literal | En litteral är ett tecken som vi använder i ett reguljärt uttryck för att hitta en specifik teckensekvens. Om du till exempel vill hitta en produkt i [!DNL shop/products.html]är strängprodukten en litteral, eller det vi bokstavligen letar efter i strängen. |
+| Literal | En litteral är ett tecken som vi använder i ett reguljärt uttryck för att hitta en specifik teckensekvens. Om du till exempel vill hitta en produkt i [!DNL shop/products.html] är strängprodukten en litteral, eller det vi bokstavligen letar efter i strängen. |
 | Metatecken | Ett metatecken är ett specialtecken som har en unik tolkning i samband med reguljära uttryck. Exempel: punkt (.) är ett metatecken som används för att matcha alla tecken. |
-| Escape-sekvens | En escape-sekvens är bara ett sätt att tala om för motorn för reguljära uttryck att vi vill använda ett av metatecknen som en litteral. Escape-sekvenser börjar alltid med omvänt snedstreck (`\`). Genom att placera det omvända snedstrecket (som också är ett metatecken) framför ett metatecken tolkar motorn för reguljära uttryck det escape-metatecken som en litteral. Om du till exempel vill matcha metateckenperioden (`.`) måste du använda en escape-sekvens. Om du vill matcha en av punkterna i strängen 168.196.0.11 kan du använda det reguljära uttrycket som består av ett omvänt snedstreck och en punkt (`\.`). |
+| Escape-sekvens | En escape-sekvens är bara ett sätt att tala om för motorn för reguljära uttryck att vi vill använda ett av metatecknen som en litteral. Escape-sekvenser börjar alltid med ett omvänt snedstreck (`\`). Genom att placera det omvända snedstrecket (som också är ett metatecken) framför ett metatecken tolkar motorn för reguljära uttryck det escape-metatecken som en litteral. Om du till exempel vill matcha metateckenperioden (`.`) måste du använda en escape-sekvens. Om du vill matcha en av punkterna i strängen 168.196.0.11 kan du använda det reguljära uttrycket som består av ett omvänt snedstreck och en punkt (`\.`). |
 | Mönster | Det här är en kortfattad terminologi för det reguljära uttrycket. Ett reguljärt uttryck är ett mönster som du försöker matcha mot målsträngen. |
 | Målsträng | Den här termen hänvisar till strängen som vi söker i för att hitta det önskade mönstret. |
 
@@ -107,11 +105,11 @@ Titta på följande exempel:
 | Win9`[58]` | OS=Win95 | Win95 |
 | Win95 | 8 | OS=Win98 | Win98 |
 | `[0-9]` | Mozilla/3.0 | 3 |
-| Lesson`[A-Z]` | Lektion | Ingen matchning eftersom&quot;a&quot; med lägre placering inte ligger inom intervallet för&quot;A till och med Z&quot;. |
+| Lektion`[A-Z]` | Lektion | Ingen matchning eftersom&quot;a&quot; med lägre placering inte ligger inom intervallet för&quot;A till och med Z&quot;. |
 
 **Negation**
 
-Negation är ett sätt att säga att du vill matcha vad som helst förutom de angivna tecknen. negationsmetatecknet, cirkumflex eller cirkumflex (`^`), används som det första tecknet inom parentes för att ange att du vill att matchningen ska vara vad som helst utom de återstående tecknen inom parentes. Om du till exempel vill matcha ett tecken men ett semikolon (`;`) skriver du
+Negation är ett sätt att säga att du vill matcha vad som helst förutom de angivna tecknen. negationsmetatecknet, cirkumflex eller cirkumflex (`^`), används som det första tecknet inom hakparenteser för att ange att matchningen ska vara vad som helst utom de återstående tecknen inom hakparenteserna. Om du till exempel vill matcha ett tecken men ett semikolon (`;`) skriver du
 
 [`^;`]
 
@@ -123,8 +121,8 @@ Om du vill tvinga fram en matchning till början eller slutet av en målsträng,
 
 | För det här metatecknet.. | Processor för reguljära uttryck kommer att... |
 |---|---|
-| Cirkumflex eller Caret (`^`) | Matcha mot början av strängen. ^`[Tt]`han skulle till exempel matcha målsträngen &quot;Början&quot;, men inte &quot;Detta är början&quot;. |
-| Dollar-tecken (`$`) | Matcha mot strängens slut. Till exempel skulle `[Ee]`nd$ matcha&quot;This is the end&quot; men inte matcha&quot;The end is a special time&quot;. |
+| Cirkumflex eller Caret (`^`) | Matcha mot början av strängen. ^`[Tt]`han skulle till exempel matcha målsträngen &quot;Början&quot;, men inte &quot;Detta är början.&quot; |
+| Dollartecken (`$`) | Matcha mot strängens slut. `[Ee]`nd$ skulle till exempel matcha&quot;This is the end&quot;, men skulle inte matcha&quot;The end is a special time&quot;. |
 
 >[!NOTE]
 >
@@ -171,7 +169,7 @@ Med iterationsmetatecken kan du matcha ett mönster mer än en gång.
 
 ## Mönsterextrahering {#section-4389779653b64f6cb7c47615b25c1a79}
 
-Mönstermatchning är bara en del av kraften i reguljära uttryck. Med reguljära uttryck kan du även extrahera viktiga delar av en målsträng. Detta görs med vänster och höger parentes. Extraktionerna används vanligtvis som indata i en annan process och nås via *%position%*, där position är ett heltal som refererar till antalet parenteser som matchades.
+Mönstermatchning är bara en del av kraften i reguljära uttryck. Med reguljära uttryck kan du även extrahera viktiga delar av en målsträng. Detta görs med vänster och höger parentes. Dessa extraheringar används vanligtvis som indata i en annan process och nås via *%position%*, där position är ett heltal som refererar till antalet parenteser som matchades.
 
 Titta på följande exempel på mönsterextrahering:
 
@@ -211,4 +209,3 @@ Titta på följande exempel på mönsterextrahering:
   </tr> 
  </tbody> 
 </table>
-
