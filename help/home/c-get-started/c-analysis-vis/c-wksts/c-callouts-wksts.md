@@ -1,20 +1,21 @@
 ---
 description: Om du vill göra informationen i ett kalkylblad tydligare kan du lägga till en bildtext som drar uppmärksamheten till ett visst mått.
-solution: Analytics
 title: Använda bildtexter med kalkylblad
-topic: Data workbench
 uuid: f2f137ba-0ea2-464c-8d4c-057a265cdaf7
+exl-id: e975ac89-7d6f-4732-b10d-94a71e1f01be
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '155'
+ht-degree: 0%
 
 ---
 
-
-# Använda bildtexter med kalkylblad{#use-callouts-with-worksheets}
+# Använd bildtexter med kalkylblad{#use-callouts-with-worksheets}
 
 Om du vill göra informationen i ett kalkylblad tydligare kan du lägga till en bildtext som drar uppmärksamheten till ett visst mått.
 
-Som standard innehåller Data Workbench följande typer av metriska pratbubblor:
+Som standard innehåller Data Workbench följande typer av metriska hänvisningar:
 
 * Anteckning
 * Tomma staplar
