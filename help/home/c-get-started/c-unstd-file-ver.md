@@ -1,28 +1,29 @@
 ---
-description: Med arbetsytan är det enkelt att avgöra var varje arbetsyta lagras, oavsett om den finns på Data Workbench-servern, på den lokala datorn eller båda.
-solution: Analytics
+description: Med arbetsytan är det enkelt att avgöra var varje arbetsyta är lagrad, oavsett om den finns på Datan Workbench, på den lokala datorn eller båda.
 title: Filversionshantering
-topic: Data workbench
 uuid: 5e7430f3-1425-41d2-828b-bc8f5786bf3b
+exl-id: 82a70d51-a95c-4ddd-8d3c-cd0364940693
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 0%
 
 ---
 
-
 # Filversionshantering{#file-versioning}
 
-Med arbetsytan är det enkelt att avgöra var varje arbetsyta lagras, oavsett om den finns på Data Workbench-servern, på den lokala datorn eller båda.
+Med arbetsytan är det enkelt att avgöra var varje arbetsyta är lagrad, oavsett om den finns på Datan Workbench, på den lokala datorn eller båda.
 
 ## Identifiera filversioner {#section-d555c96b016344f19b356c12213dd2a9}
 
 **Server**
 
-En serverarbetsyta lagras på den anslutna Data Workbench-servern och är tillgänglig för alla användare som har tillgång till den här profilen och fliken. En serverarbetsyta visas som en enda miniatyrbild.
+En serverarbetsyta lagras på den anslutna Datan Workbench och är tillgänglig för alla användare som har tillgång till den här profilen och fliken. En serverarbetsyta visas som en enda miniatyrbild.
 
 ![](assets/wsp_thumb_server.png)
 
-Serverarbetsytor lagras som standard i lämplig undermapp i mappen Workspaces på den anslutna Data Workbench-servern.
+Serverarbetsytor lagras som standard i lämplig undermapp i Workspaces-mappen på den anslutna Datan Workbench.
 
 **Lokal**
 
@@ -30,7 +31,7 @@ En lokal arbetsyta är den lokala versionen av en serverarbetsyta. En lokal arbe
 
 ![](assets/wsp_thumb_local.png)
 
-Lokala arbetsytor lagras som standard i [!DNL User\working profile name\Workspaces\tab] namnmappen i installationskatalogen för Data Workbench (eller Insight).
+Lokala arbetsytor lagras som standard i namnmappen [!DNL User\working profile name\Workspaces\tab] i installationskatalogen för Data Workbench (eller Insight).
 
 >[!NOTE]
 >
@@ -38,7 +39,7 @@ Lokala arbetsytor lagras som standard i [!DNL User\working profile name\Workspac
 
 **Användare**
 
-En användararbetsyta är en arbetsyta som skapades på och som bara finns på den lokala datorn. En användararbetsyta visas som en enda miniatyrbild med en prickad kontur av en tom arbetsyta bakom, vilket anger att det inte finns någon källarbetsyta på den anslutna Data Workbench-servern.
+En användararbetsyta är en arbetsyta som skapades på och som bara finns på den lokala datorn. En användararbetsyta visas som en enda miniatyrbild med en prickad kontur av en tom arbetsyta bakom, vilket anger att det inte finns någon källarbetsyta på den anslutna Datan Workbench.
 
 ![](assets/wsp_thumb_user.png)
 
