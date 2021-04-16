@@ -1,22 +1,23 @@
 ---
 description: Om du markerar element i en visualisering filtreras datauppsättningen dynamiskt.
-solution: Analytics
 title: Markera i visualiseringar
-topic: Data workbench
 uuid: 3900354f-826b-41e8-9bc2-e4856928bad5
+exl-id: bb1dd7e4-a9f8-48b5-a12d-433c601b455b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '279'
+ht-degree: 0%
 
 ---
 
-
-# Markera i visualiseringar{#make-selections-in-visualizations}
+# Gör markeringar i visualiseringar{#make-selections-in-visualizations}
 
 Om du markerar element i en visualisering filtreras datauppsättningen dynamiskt.
 
 När du gör en markering i en visualisering uppdateras alla andra visualiseringar på arbetsytan automatiskt så att de endast speglar de data som är kopplade till de element som du har valt.
 
-På följande arbetsyta visas en filmtabell där *Cocktail* -filmklippet har valts. I arbetsytan filtrerar tabellen Poäng och måttförklaringen automatiskt visningen av det valda elementet (det vill säga, deras skärmar visar data för *filmens Cocktail*).
+På följande arbetsyta visas en filmtabell där filmen *Cocktail* är markerad. I arbetsytan filtrerar poängtabellen och måttförklaringen automatiskt visningen av det valda elementet (det vill säga, deras skärmar återspeglar data för filmen *Cocktail*).
 
 ![](assets/wsp_selection_Basic.png)
 
@@ -44,4 +45,3 @@ Använd följande mus- och tangentsekvenser för att ta bort en markering:
 |---|---|
 | Rensa en markering | Skift+klicka |
 | Radera alla markeringar (d.v.s. markera alla element igen) | Högerklicka på ett värde i visualiseringen |
-
