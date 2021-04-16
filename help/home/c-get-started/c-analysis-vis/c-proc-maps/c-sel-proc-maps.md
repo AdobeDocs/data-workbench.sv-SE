@@ -1,16 +1,17 @@
 ---
 description: Du kan markera i processkartor för att skapa filter som innehåller eller exkluderar data som är kopplade till en viss nod.
-solution: Analytics
 title: Göra en markering från en processkarta
-topic: Data workbench
 uuid: 7fd00090-c9ab-4bb6-8584-7de7b6f4b68c
+exl-id: 8ede395f-906a-49e0-8ff8-b43a326275e5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 0%
 
 ---
 
-
-# Göra en markering från en processkarta{#make-a-selection-from-a-process-map}
+# Gör ett val från en processkarta{#make-a-selection-from-a-process-map}
 
 Du kan markera i processkartor för att skapa filter som innehåller eller exkluderar data som är kopplade till en viss nod.
 
@@ -30,9 +31,9 @@ När du gör en markering baserat på en nod i en processkarta, markerar du alla
 1. Högerklicka på en nod i en processkarta.
 1. Klicka på något av följande alternativ för att göra ett val baserat på noden:
 
-   * **[!UICONTROL Select]*** **[!UICONTROL group dimension name +s]*** **[!UICONTROL through node name]**: Filtrerar data så att de innehåller alla element i gruppdimensionen som passerat noden genom att filtrera bort alla sessioner som inte gick igenom noden.
+   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL through node name]**: Filtrerar data så att de innehåller alla element i gruppdimensionen som passerat noden genom att filtrera bort alla sessioner som inte gick igenom noden.
 
-   * **[!UICONTROL Select]*** **[!UICONTROL group dimension name +s]*** **[!UICONTROL NOT through node name]**: Filtrerar data så att de innehåller alla element i gruppdimensionen som inte gick igenom noden genom att filtrera bort alla sessioner som passerat genom noden.
+   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL NOT through node name]**: Filtrerar data så att de innehåller alla element i gruppdimensionen som inte gick igenom noden genom att filtrera bort alla sessioner som passerat genom noden.
 
 ![](assets/vis_2DProcessMap_Selections_Movie.png)
 
@@ -41,4 +42,3 @@ När du gör en markering baserat på en nod i en processkarta, markerar du alla
 När du gör en markering i ett 3D-processschema kommer den nod som markeringen görs för att ringas in. Benchmarks appears around each bar help you compare metric values with and without the selection. Se [Förstå riktmärken](../../../../home/c-get-started/c-vis/c-ustd-benchmks.md#concept-c7b0f4102e92458096f8c4765cbe2914).
 
 ![](assets/vis_3DProcessMap_Selection.png)
-
