@@ -1,16 +1,15 @@
 ---
 description: Som standard skriver Insight Server sin datauppsättning (temp.db) till samma enhet som programfilerna för Insight Server.
-solution: Analytics
 title: Konfigurera platsen för datauppsättningen (temp.db)
 uuid: a6884cad-70ed-4bc6-853c-700d301fb178
+exl-id: 6812883f-ad51-4314-8c80-e95c3fe84664
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera platsen för datauppsättningen (temp.db){#configuring-the-location-of-the-dataset-temp-db}
 
@@ -18,7 +17,7 @@ Som standard skriver Insight Server sin datauppsättning (temp.db) till samma en
 
 Om du till exempel installerar [!DNL Insight Server] på enhet C skrivs datauppsättningen till enhet C.
 
-Om du vill [!DNL Insight Server] underhålla datauppsättningen på en annan enhet, eller om mängden data som ska samlas in kräver användning av flera enheter, måste du uppdatera [!DNL Disk Files.cfg] filen och ange var du vill [!DNL Insight Server] skriva [!DNL temp.db] filen.
+Om du vill att [!DNL Insight Server] ska underhålla datauppsättningen på en annan enhet, eller om den datamängd du förväntar dig ska samla in kräver att flera enheter används, måste du uppdatera [!DNL Disk Files.cfg]-filen och ange var du vill att [!DNL Insight Server] ska skriva [!DNL temp.db]-filen.
 
 **Så här konfigurerar du platsen för temp.db**
 
@@ -26,7 +25,7 @@ Om du vill [!DNL Insight Server] underhålla datauppsättningen på en annan enh
 
    Exempel: [!DNL C:\Adobe\Server\Components]
 
-1. Öppna [!DNL Disk Files.cfg] filen i en textredigerare som Anteckningar.
+1. Öppna [!DNL Disk Files.cfg]-filen i en textredigerare som Anteckningar.
 
    Som standard innehåller den här filen en enda post i strukturen Diskfiler enligt nedan.
 
@@ -37,7 +36,7 @@ Om du vill [!DNL Insight Server] underhålla datauppsättningen på en annan enh
      Detect Disk Corruption = bool: true
    ```
 
-1. Om du vill ändra platsen för [!DNL temp.db]filen ändrar du definitionen för Diskfiler. Följande exempel visar hur du skulle redigera konfigurationen för att sprida [!DNL temp.db] filen mellan enheterna C, D och E:
+1. Om du vill ändra platsen för [!DNL temp.db] ändrar du definitionen av Diskfiler. Följande exempel visar hur du skulle redigera konfigurationen för att sprida filen [!DNL temp.db] mellan enheterna C, D och E:
 
    ```
    component = DiskSpaceManagerComponent:
@@ -50,5 +49,4 @@ Om du vill [!DNL Insight Server] underhålla datauppsättningen på en annan enh
 
    >[!NOTE]
    >
-   >Observera att dubbla omvända snedstreck används i filnamnen ovan. I [!DNL Insight Server] konfigurationsfiler är det omvända snedstrecket ett escape-tecken. Den används för att uttrycka särskilda kontrollsekvenser (t.ex. \t för ett tabbtecken) i text. Om du vill visa ett faktiskt omvänt snedstreck måste du skriva det två gånger (till exempel \\) för att åsidosätta escape-funktionen. Detta gäller endast när du redigerar konfigurationsfiler i en textredigerare som Anteckningar.
-
+   >Observera att dubbla omvända snedstreck används i filnamnen ovan. I [!DNL Insight Server]-konfigurationsfiler är det omvända snedstrecket ett escape-tecken. Den används för att uttrycka särskilda kontrollsekvenser (t.ex. \t för ett tabbtecken) i text. Om du vill visa ett faktiskt omvänt snedstreck måste du skriva det två gånger (till exempel \\) för att åsidosätta escape-funktionen. Detta gäller endast när du redigerar konfigurationsfiler i en textredigerare som Anteckningar.
