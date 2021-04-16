@@ -1,26 +1,27 @@
 ---
-description: IPLookup-omvandlingen tar IP-geolokaliserings- eller IP-geointelligensdata (tillhandahålls av alla leverantörer av sådana data och konverteras till ett eget format av Adobe) och omvandlar dessa data till geografisk information som kan användas i analyser.
-solution: Analytics
+description: IPLookup-omvandlingen tar IP-geolokaliserings- eller IP-geointelligensdata (som tillhandahålls av en leverantör av sådana data och konverteras till ett eget format av Adobe) och omvandlar data till geografisk information som kan användas i analyser.
 title: IPLookup
-topic: Data workbench
 uuid: 6fccee39-761f-4854-a7fd-3f8b453e0698
+exl-id: 3e9dba44-8d31-49af-8ce0-fecaf92edeb7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 2%
 
 ---
 
-
 # IPLookup{#iplookup}
 
-IPLookup-omvandlingen tar IP-geolokaliserings- eller IP-geointelligensdata (tillhandahålls av alla leverantörer av sådana data och konverteras till ett eget format av Adobe) och omvandlar dessa data till geografisk information som kan användas i analyser.
+IPLookup-omvandlingen tar IP-geolokaliserings- eller IP-geointelligensdata (som tillhandahålls av en leverantör av sådana data och konverteras till ett eget format av Adobe) och omvandlar data till geografisk information som kan användas i analyser.
 
-Två [!DNL IPLookup] omformningar visas på menyn Lägg till ny > *Omformningstyp *:
+Två [!DNL IPLookup]-omformningar visas på menyn Lägg till ny > *Omformningstyp *:
 
-* [!DNL IPLookup] Quova för [!DNL IP geo-location] data
+* [!DNL IPLookup] Quova för  [!DNL IP geo-location] data
 
-* [!DNL IPLookup] Digital Envoy för [!DNL IP geo-intelligence] data
+* [!DNL IPLookup] Digital Envoy för  [!DNL IP geo-intelligence] data
 
-När du definierar en [!DNL IPLookup] omformning väljer du lämplig omformning för dina [!DNL IP geo-location] - eller [!DNL IP geo-intelligence] data.
+När du definierar en [!DNL IPLookup]-omformning väljer du lämplig omformning för dina [!DNL IP geo-location]- eller [!DNL IP geo-intelligence]-data.
 
 <table id="table_C438A30AB5E64160A5C486D6887B1D7E"> 
  <thead> 
@@ -58,13 +59,12 @@ När du definierar en [!DNL IPLookup] omformning väljer du lämplig omformning 
   </tr> 
   <tr> 
    <td colname="col1"> Utdata </td> 
-   <td colname="col2"> <p>Namnen på utdatasträngarna. </p> <p> Konverteringarna IPLookup <span class="wintitle"> Quova och</span> IPLookup <span class="wintitle"></span> Digital Envoy har olika utdataparametrar. Se till att du använder rätt transformering för IP-sökdata. </p> </td> 
+   <td colname="col2"> <p>Namnen på utdatasträngarna. </p> <p> IPLookup</span>-omvandlingarna <span class="wintitle"> IPLookup</span> Digital Envoy har olika utdataparametrar. <span class="wintitle"> Se till att du använder rätt transformering för IP-sökdata. </span></span></p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-I det här exemplet används data (i sökfilen [!DNL IP geo-location] [!DNL Quova.bin]) för att skapa de listade utdatafälten. Utdata (AOL, ASN, Area Code o.s.v.) kan användas för att skapa dimensioner för geografisk analys av besökstrafik.
+I det här exemplet används [!DNL IP geo-location]-data (i sökfilen [!DNL Quova.bin]) för att skapa de listade utdatafälten. Utdata (AOL, ASN, Area Code o.s.v.) kan användas för att skapa dimensioner för geografisk analys av besökstrafik.
 
 ![](assets/cfg_TransformationType_IPLookup.png)
-
