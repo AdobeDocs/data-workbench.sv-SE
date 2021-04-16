@@ -1,14 +1,15 @@
 ---
 description: Data workbench innehåller en uppsättning omvandlingar som gör att data workbench-servern kan införliva sökdata i datauppsättningen.
-solution: Analytics
 title: Integrera uppslagsdata
-topic: Data workbench
 uuid: 35fd48f7-c0c4-4a83-919d-c15902f27495
+exl-id: 150d3aae-4431-488f-8f19-b522637ee935
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 0%
 
 ---
-
 
 # Integrera uppslagsdata{#integrating-lookup-data}
 
@@ -31,5 +32,4 @@ Om du vill inkludera sökdata måste du först generera en uppslagsfil eller ha 
 
 >[!NOTE]
 >
->Observera att [!DNL ODBCLookup] omformningen endast fungerar när den definieras i [!DNL Transformation.cfg] filen eller i en [!DNL Transformation Dataset Include] fil.
-
+>Observera att [!DNL ODBCLookup]-omformningen endast fungerar när den definieras i [!DNL Transformation.cfg]-filen eller i en [!DNL Transformation Dataset Include]-fil.
