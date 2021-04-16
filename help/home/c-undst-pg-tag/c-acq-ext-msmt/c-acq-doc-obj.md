@@ -1,14 +1,15 @@
 ---
 description: Med JavaScript Document Object Model kan ytterligare skriptmetoder användas för att förstärka begäran om zig.js-filen.
-solution: Analytics
 title: Hämta dokumentobjekt
-topic: Data workbench
 uuid: 7681c337-b147-4937-9d9c-0ff48d9bdd00
+exl-id: eae6609c-be86-44cf-a1a1-69ffb43231fa
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 0%
 
 ---
-
 
 # Hämta dokumentobjekt{#acquiring-document-objects}
 
