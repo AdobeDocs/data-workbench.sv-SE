@@ -1,18 +1,19 @@
 ---
-description: Med rapportservern för Data Workbench kan du schemalägga och automatiskt generera rapportuppsättningar och distribuera till andra.
-solution: Analytics
+description: Med rapportservern för Data Workbench kan du schemalägga och automatiskt generera rapportuppsättningar och distribuera dem till andra.
 title: Data Workbench Report Server
-topic: Data workbench
 uuid: eac678de-58bf-46d2-aa09-592696c01fb2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 0%
 
 ---
 
 
 # Data Workbench Report Server{#data-workbench-report-server}
 
-Med rapportservern för Data Workbench kan du schemalägga och automatiskt generera rapportuppsättningar och distribuera till andra.
+Med rapportservern för Data Workbench kan du schemalägga och automatiskt generera rapportuppsättningar och distribuera dem till andra.
 
 Du kan t.ex. skapa en statusrapport som innehåller de specifika visualiseringar som medlemmarna i ledningen är intresserade av att se och sedan distribuera den resulterande rapporten till rätt chefer.
 
