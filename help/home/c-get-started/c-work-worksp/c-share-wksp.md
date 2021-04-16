@@ -1,20 +1,21 @@
 ---
 description: Du kan använda arbetsytemenyn Exportera för att skriva ut och exportera arbetsytor till PNG-filer eller till Excel.
-solution: Analytics
 title: Dela en arbetsyta
-topic: Data workbench
 uuid: 6100143a-d602-42d7-b742-987fe5f835d6
+exl-id: c05b0f8f-cd73-4025-825b-32471c8681b8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 0%
 
 ---
-
 
 # Dela en arbetsyta{#share-a-workspace}
 
 Du kan använda arbetsytemenyn Exportera för att skriva ut och exportera arbetsytor till PNG-filer eller till Excel.
 
-Klicka på en arbetsyta **[!UICONTROL Export]**.
+Klicka på **[!UICONTROL Export]** på en arbetsyta.
 
 ![](assets/mnu_export.png)
 
@@ -49,11 +50,11 @@ Klicka på en arbetsyta **[!UICONTROL Export]**.
   </tr> 
   <tr> 
    <td colname="col1"> Excel </td> 
-   <td colname="col2"> Om Microsoft Excel är installerat på Data Workbench-datorn startar automatiskt Microsoft Excel och exporterar data från vissa visualiseringar, vissa teckenförklaringar och textanteckningar till en ny Excel-fil (.xls eller .xlsx). Se <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb"> Exportera arbetsytedata till Microsoft Excel</a>. </td> 
+   <td colname="col2"> Om Microsoft Excel är installerat på Datan Workbench startas Microsoft Excel automatiskt och data från vissa visualiseringar, vissa teckenförklaringar och textanteckningar exporteras till en ny Excel-fil (.xls eller .xlsx). Se <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb"> Exportera arbetsytedata till Microsoft Excel</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Exportera (Excel) från mall </td> 
-   <td colname="col2"> Om Microsoft Excel är installerat på Data Workbench-datorn startar automatiskt Microsoft Excel och exporterar data från vissa visualiseringar, vissa teckenförklaringar och textanteckningar till Excel-mallfilen (<span class="filepath"> .xls</span> eller <span class="filepath"> .xlsx</span>) som du väljer. Se <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> Exportera till en Excel-mallfil</a>. </td> 
+   <td colname="col2"> Om Microsoft Excel är installerat på Datan Workbench startas Microsoft Excel automatiskt och data från vissa visualiseringar, vissa teckenförklaringar och textanteckningar exporteras till Excel-mallfilen (<span class="filepath"> .xls</span> eller <span class="filepath"> .xlsx</span>) som du markerar. Se <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> Exportera till en Excel-mallfil</a>. </td> 
   </tr> 
  </tbody> 
 </table>
