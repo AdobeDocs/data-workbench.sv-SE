@@ -1,14 +1,17 @@
 ---
-description: 'null'
-title: Data Workbench-ordlista
+description: Datans Workbench ordlista
+title: Datans Workbench ordlista
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
+exl-id: 29d6560a-0394-4031-8152-20f7ea0de00b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '4201'
+ht-degree: 0%
 
 ---
 
-
-# Data Workbench-ordlista{#data-workbench-glossary}
+# Datans Workbench ordlista{#data-workbench-glossary}
 
 **Varning**
 
@@ -20,7 +23,7 @@ En individ som utför analyser, definierar rapporter eller på annat sätt anvä
 
 **Arkitekt**
 
-En individ som bestämmer hur data ska samlas in, bearbetas och organiseras för analys och rapportering. Denna person har ofta stor sakkunskap om hur man konfigurerar Adobe® Platform för analytiker.
+En individ som bestämmer hur data ska samlas in, bearbetas och organiseras för analys och rapportering. Den här personen har i allmänhet stor sakkunskap om hur man konfigurerar Adobe® Platform för att användas av analytiker.
 
 **Stolpdiagram**
 
@@ -32,11 +35,11 @@ En mätning eller standard som fungerar som en referenspunkt som andra kan mäta
 
 **Kardinalitet**
 
-Antalet element i en uppsättning. Antalet element i en Adobe-datamängd kallas dimensionens kardinalitet.
+Antalet element i en uppsättning. Antalet element i en datadimension i Adobe kallas dimensionens kardinalitet.
 
 **Kontrollpunkt**
 
-Den tidpunkt då en kopia av en Adobe-datauppsättning skrevs för säkerhetskopiering eller återställning. Termen avser också den datauppsättning som skrivs under en kontrollpunktsåtgärd.
+Den tidpunkt då en kopia av en datauppsättning från Adobe skrevs för säkerhetskopiering eller återställning. Termen avser också den datauppsättning som skrivs under en kontrollpunktsåtgärd.
 
 **Chi-square**
 
@@ -82,7 +85,7 @@ Ett numeriskt mått på styrkan hos ett linjärt förhållande mellan två slump
 
 Det numeriska värde som anger styrkan i ett linjärt förhållande mellan två slumpmässiga variabler. Se även korrelation.
 
-**Räkningsbar dimension**
+**Räknebar Dimension**
 
 En dimension där antalet element som dimensionen innehåller kan räknas diskret. Räknbara dimensioner kan ha underordnade dimensioner av följande typer: Räknbart, numeriskt, enkelt, många-till-många och normalt.
 
@@ -110,13 +113,13 @@ Den oguidade eller interaktiva tillämpningen av en samling matematiska förfara
 
 En funktion som gör att användarna enkelt kan välja en delmängd av en datauppsättning för användning i online- eller offlineanalyser. (En datadelmängd är en del av datauppsättningen som baseras på ett filter.)
 
-**Datalager**
+**Data Warehouse**
 
-En databas som är avsedd att stödja beslutsfattande i organisationer. Ett datalager innehåller i allmänhet stora mängder ämnesorienterade, tidsvarierande, icke-flyktiga data som är strukturerade för snabba onlinefrågor och sammanfattningar av företagsledning.
+En databas som är avsedd att stödja beslutsfattande i organisationer. Ett data warehouse innehåller i allmänhet stora mängder ämnesorienterade, tidsvarierande, icke-flyktiga data som är strukturerade för snabba, onlinefrågor och sammanfattningar av företagsledning.
 
 **Databehandlingsenhet**
 
-En typ av data workbench-server som bearbetar, lagrar och levererar data från en Adobe-datamängd. En DPU kan också lagra VSL-loggfiler som innehåller källdata som datauppsättningen skapas från eller ta emot dessa data från en filserverenhet (FSU) för data workbench. En DPU är den typ av data workbench-server med vilken data workbench- och Report®-klienter interagerar direkt.
+En typ av data workbench-server som bearbetar, lagrar och skickar data från en datauppsättning i Adobe. En DPU kan lagra de VSL loggfilerna som innehåller källdata som datauppsättningen skapas från, eller ta emot dessa data från en filserverenhet (FSU) för data workbench. En DPU är den typ av data workbench-server med vilken data workbench- och Report®-klienter interagerar direkt.
 
 **Datauppsättning**
 
@@ -128,7 +131,7 @@ Data som skapas och lagras i en data workbench-serverdatamängd. Den innehåller
 
 **Datauppsättningsposter**
 
-Dessa händelsedataposter har godkänts i en Adobe-datauppsättning efter att all filtrering och annan bearbetning har utförts. Kallas även bearbetade loggposter.
+Dessa händelsedataposter som har godkänts för en datauppsättning i Adobe efter att all filtrering och annan behandling har utförts. Kallas även bearbetade loggposter.
 
 **Datauppsättningsschema**
 
@@ -136,7 +139,7 @@ En visualisering i data workbench som visar schemat för den datauppsättning so
 
 **Lagringsutrymme för datauppsättning**
 
-Mängden data (i byte) som anges eller skapas i en Adobe-datauppsättning. Dessa data lagras av datauppsättningen i en fil som heter Temp.db på en data workbench-serverdator. Data i Temp.db är övergående och kan återskapas genom att källdata (dvs. händelsedata och integreringsdata) bearbetas på nytt med rätt konfigurationsfiler.
+Mängden data (i byte) som anges eller skapas i en datauppsättning i Adobe. Dessa data lagras av datauppsättningen i en fil som heter Temp.db på en data workbench-serverdator. Data i Temp.db är övergående och kan återskapas genom att källdata (dvs. händelsedata och integreringsdata) bearbetas på nytt med rätt konfigurationsfiler.
 
 **Avkodare**
 
@@ -146,13 +149,13 @@ Komponenten i data workbench-servern som läser händelsedata från olika källo
 
 En uppsättning element, som alla är av en liknande typ i användarens uppfattning. Elementen definierar en uppsättning kategorier som data kan grupperas i. Elementen måndag, tisdag, onsdag, torsdag, fredag, lördag och söndag utgör till exempel&quot;Veckodag&quot;.
 
-**Dimensionselement**
+**Dimension-element**
 
 En enskild kategori inom en dimension. En&quot;Veckodag&quot;-dimension skulle till exempel innehålla de enskilda elementen måndag, tisdag, onsdag, torsdag, fredag, lördag och söndag.
 
-**Dimensionsförklaring**
+**Dimension**
 
-I data workbench, teckenförklaringen som visar de dimensioner som har definierats i (eller härletts från) datauppsättningen. När ett urval görs i en visualisering identifierar dimensionsförklaringen de dimensioner vars värden skiljer sig från referensvärdet med en statistiskt signifikant mängd.
+I data workbench, teckenförklaringen som visar de dimensioner som har definierats i (eller härletts från) datauppsättningen. När ett urval görs i en visualisering identifierar teckenförklaringen de Dimensioner vars värden skiljer sig från referensvärdet med en statistiskt signifikant mängd.
 
 **Granska uppåt/nedåt**
 
@@ -162,13 +165,13 @@ En specifik analysteknik där användaren navigerar mellan olika datanivåer, fr
 
 De data som samlas in av sensorer eller på annat sätt (till exempel en webbserverloggfil), som utgör den primära inmatningen till data workbench-servern. Varje händelsedatapost representerar en transaktionspost eller en enda instans av en händelse.
 
-**Utökad dimension**
+**Utökad Dimension**
 
 En dimension som baseras på utökade data. Utökade data är alla data utöver vad som minimalt krävs för att skapa en giltig händelsedatapost. Utökade data kan läggas till i en händelsedatapost när den ursprungliga händelsen hämtas eller kan infogas från andra källor och läggas till i händelsedataposten som integreringsdata. Alla dimensioner som baseras på dessa ytterligare data betraktas som&quot;utökade&quot;.
 
 **Filserverenhet (FSU)**
 
-En typ av data workbench-server vars funktion är att enbart ta emot händelsedata från en eller flera sensorer eller upprepade servrar och tillhandahålla data till en eller flera Data Workbench Server Data Processing Units (DPU) för deras användning vid konstruktionen av Adobe-datamängder. FSU:er optimerar överföringen av händelsedata till DPU:er och är avsevärt snabbare än vanliga filservrar. Användning av en FSU minskar maskinvarukostnaderna genom att tillåta att loggdata lagras på en hårdvara till lägre kostnad och minskar den administrativa komplexiteten genom att låta flera sensorer peka på en enda workbench-server för data.
+En typ av data workbench-server vars funktion är att endast ta emot händelsedata från en eller flera sensorer eller upprepade servrar och tillhandahålla data till en eller flera Data Workbench Server Data Processing Units (DPU) för deras användning när datauppsättningar skapas i Adobe. FSU:er optimerar överföringen av händelsedata till DPU:er och är avsevärt snabbare än vanliga filservrar. Användning av en FSU minskar maskinvarukostnaderna genom att tillåta att loggdata lagras på en hårdvara till lägre kostnad och minskar den administrativa komplexiteten genom att låta flera sensorer peka på en enda workbench-server för data.
 
 **Inkrementell frågeutvärdering**
 
@@ -190,9 +193,9 @@ En typ av visualisering i data workbench som ritar mått för en angiven dimensi
 
 Ett villkor som avgör om en händelsedatapost (en loggpost) kommer att inkluderas i datauppsättningen. Ett villkor för loggpost kan till exempel ange att endast händelsedataposter som är kopplade till en viss webbplats ska tillåtas till datauppsättningen. Loggpostvillkoren anges i loggbearbetningskonfigurationsfilen på data workbench-servern.
 
-**Många-till-många-dimension**
+**Många-till-många-Dimension**
 
-I Adobe Platform är detta en dimension som har en många-till-många-relation med en överordnad Countable-dimension. En många-till-många-dimension representerar en uppsättning värden för varje element i dess överordnade dimension. I Webbplats har till exempel sökfrasdimensionen en många-till-många-relation till sin överordnade, sessionsdimensionen (d.v.s. en session kan ha ett valfritt antal sökfraser och en sökfras kan ha ett valfritt antal sessioner.)
+I Adobe Platform har en dimension som har en många-till-många-relation med en överordnad Countable-dimension. En många-till-många-dimension representerar en uppsättning värden för varje element i dess överordnade dimension. I Webbplats har till exempel sökfrasdimensionen en många-till-många-relation till sin överordnade, sessionsdimensionen (d.v.s. en session kan ha ett valfritt antal sökfraser och en sökfras kan ha ett valfritt antal sessioner.)
 
 **Maskering**
 
@@ -208,7 +211,7 @@ Ett tal som skiljer den högsta halvan av ett prov, en population eller en sanno
 
 **Mått**
 
-I Adobe, en namngiven formel som beskriver hur du beräknar ett kvantitativt värde utifrån data i datauppsättningen. I Site, t.ex., representerar måttet &quot;Sessioner per besökare&quot; en formel som delar antalet sessioner med antalet besökare.
+I Adobe är det en namngiven formel som beskriver hur ett kvantitativt värde ska beräknas utifrån data i datauppsättningen. I Site, t.ex., representerar måttet &quot;Sessioner per besökare&quot; en formel som delar antalet sessioner med antalet besökare.
 
 **Metrisk förklaring**
 
@@ -226,7 +229,7 @@ Villkoret som avgör om ett nytt spårnings-ID skapas när data workbench-server
 
 En gruppering av en eller flera diskreta objekt i en enda logisk enhet. I en konfigurationsfil (.cfg) är en nod ett objekt som innehåller relaterade parametrar. Se även Parameter och Vektor. I data workbench representerar en nod på en processkarta en sida eller en definierad grupp med sidor.
 
-**Numerisk dimension**
+**Numerisk Dimension**
 
 I Adobe Platform har en dimension ordnats, numeriska värden och en 1:N-relation med en överordnad räkningsbar dimension. I allmänhet representerar en numerisk dimension en numerisk egenskap för elementen i den överordnade dimensionen. Numeriska dimensioner används ofta för att definiera summamått.
 
@@ -236,7 +239,7 @@ En relation mellan två datamått där ett enskilt element i en dimension är (e
 
 **Ordningstal**
 
-Vara eller beteckna en numerisk ordning i en serie. (Källa: `http://wordnet.princeton.edu/perl/webwn?s=ordinal`) Om en dimension sorteras ordningstalt i data workbench visas elementen i dimensionen i den ordning som de representeras internt.
+Vara eller beteckna en numerisk ordning i en serie. (Källa: `http://wordnet.princeton.edu/perl/webwn?s=ordinal`) Om en dimension sorteras ordalt i data workbench visas elementen i dimensionen i den ordning som de representeras internt.
 
 **Extrafunktioner**
 
@@ -268,7 +271,7 @@ I ett Data Workbench-serverkluster styrs data workbench-servrarna av konfigurati
 
 **Profil**
 
-En uppsättning konfigurationsfiler som innehåller regler för att skapa en datauppsättning för ett specifikt analyssyfte. En profil definierar också artiklar som statistik, varianter, arbetsytor, rapporter, visualiseringar och teckenförklaringar som gör att analytiker kan interagera med datauppsättningen och få information från den. En profil kan struktureras generellt för en webbplats (som i en profil för www.mysite.com) eller anpassas för en viss typ av användare (som användarprofilen&quot;Marknadsföring&quot; eller användarprofilen&quot;Finans&quot;).
+En uppsättning konfigurationsfiler som innehåller regler för att skapa en datauppsättning för ett specifikt analyssyfte. En profil definierar också artiklar som statistik, varianter, arbetsytor, rapporter, visualiseringar och teckenförklaringar som gör att analytiker kan interagera med datauppsättningen och få information från den. En profil kan struktureras generellt för en webbplats (som i en profil för www.mysite.com) eller anpassas för en viss typ av användare (som användarprofilen &quot;Marknadsföring&quot; eller &quot;Finans&quot;).
 
 **Profilhanteraren**
 
@@ -290,9 +293,9 @@ En typ av visualisering i data workbench som representerar data som kan vara tv�
 
 En funktion i data workbench som gör att en analytiker kan begränsa mängden data som hämtas och visas för rapportering eller analys. Du kan göra en markering interaktivt i en data-workbench genom att klicka på element som visas i en eller flera dimensioner (genom att vänsterklicka markeras ett element och högerklicka avmarkeras ett element). Markeringar kan också göras genom att definiera filter som markerar vissa element i angivna dimensioner.
 
-**Enkel dimension**
+**Enkel Dimension**
 
-I Adobe Platform är detta en dimension som har en 1:N-relation med en överordnad, räkningsbar dimension. Besökarreferenten är till exempel en enkel dimension vars överordnade dimension är den räkningsbara dimensionen, Visitor. En besökare har bara en besökarreferent. En besöksreferent kan dock ha flera besökare (d.v.s. en besöksreferent kan vara relaterad till många besökare).
+I Adobe Platform har en dimension som har en 1:N-relation med en överordnad räkningsbar dimension. Besökarreferenten är till exempel en enkel dimension vars överordnade dimension är den räkningsbara dimensionen, Visitor. En besökare har bara en besökarreferent. En besöksreferent kan dock ha flera besökare (d.v.s. en besöksreferent kan vara relaterad till många besökare).
 
 **Utjämning**
 
@@ -316,7 +319,7 @@ Ett diagram som visar hur en viss egenskap eller ett visst värde ändras över 
 
 **Spårnings-ID**
 
-En identifierare som unikt identifierar de primära enheter som analyseras i en Adobe-datauppsättning. Ett spårnings-ID kan skapas från olika källor, bland annat ett unikt ID från en webbklientcookie, ett IP-nummer och en hash för användaragenten eller ett x.509-namn. Även om dessa är några vanliga källor för ett spårnings-ID kan alla värden som kan identifiera de enheter som fyller i Visitor-dimensionen i datauppsättningen användas.
+En identifierare som unikt identifierar de primära enheter som analyseras i en datauppsättning i Adobe. Ett spårnings-ID kan skapas från olika källor, bland annat ett unikt ID från en webbklientcookie, ett IP-nummer och en hash för användaragenten eller ett x.509-namn. Även om dessa är några vanliga källor för ett spårnings-ID kan alla värden som kan identifiera de enheter som fyller i Visitor-dimensionen i datauppsättningen användas.
 
 **Omformning**
 
@@ -344,7 +347,7 @@ En funktion i data workbench-servern som gör att besökare med stora mängder h
 
 **VSL**
 
-Loggfil. Den typ av fil i vilken data workbench-serverns lagrar händelsedata som de tar emot från sensorn. VSL-filer komprimeras, men kan skrivas ut i okomprimerad form med hjälp av dataomvandlingsfunktioner. VSL är filtillägget för en loggfil.
+Loggfil. Den typ av fil i vilken data workbench-serverns lagrar händelsedata som de tar emot från sensorn. VSL komprimeras, men kan skrivas ut i okomprimerad form med hjälp av dataomvandlingsfunktioner. VSL är filtillägget för en loggfil.
 
 **Konsekvensanalys**
 
