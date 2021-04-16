@@ -1,14 +1,15 @@
 ---
 description: Visualiseringar är element som läggs till på kontrollpanelens arbetsyta och konfigureras för att visa olika mått- och dimensionsbaserade data.
-solution: Analytics
 title: Visualiseringar
-topic: Data workbench
 uuid: 1e15de30-7761-422a-a836-7a1b49b58daf
+exl-id: 7e8b23cd-5e95-4cd5-b07e-3aa53f26fac7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 0%
 
 ---
-
 
 # Visualiseringar{#visualizations}
 
@@ -42,4 +43,3 @@ Rubrikdelen av visualiseringen innehåller visualiseringstiteln och visualiserin
 * Exempelindikator. Visas när data visualiseras är ett exempel och inte ett 100 % fullständigt frågeresultat.
 * Visualiseringsverktyg. Utför specifika åtgärder för visualiseringar. Vilka verktyg som är tillgängliga beror på visualiseringstyp, läge och aktuella användarbehörigheter.
 * Visualiseringstext. Visar data för visualiseringen enligt konfigurationen. Det här området är interaktivt och beror på vilken typ av visualisering som visas.
-
