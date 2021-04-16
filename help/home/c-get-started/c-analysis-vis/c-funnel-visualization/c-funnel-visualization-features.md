@@ -1,14 +1,15 @@
 ---
 description: Funktionen för trattvisualisering innehåller funktioner för att bygga en kanal med flera dimensioner, obearbetade besökarnummer, procentandel besökare i varje steg samt separata omfång.
-solution: Analytics
 title: Funktioner
-topic: Data workbench
 uuid: 7d2f5ff9-95d3-41f5-931c-689f140714c2
+exl-id: e78dcefe-6f92-45de-9990-0beac09ad82f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 0%
 
 ---
-
 
 # Funktioner{#funnel-features}
 
@@ -48,7 +49,7 @@ Här är de grundläggande funktionerna i kanalvisualiseringen.
  </tbody> 
 </table>
 
-## Tratt Steps {#section-96a6732558dd4740b73541844f06d3ef}
+## Trattsteg {#section-96a6732558dd4740b73541844f06d3ef}
 
 Diskarna i en tratt representerar stegen i navigeringen, konerna representerar genomgången från ett steg till nästa och pilarna representerar utfallet. Om du klickar på en ikon markeras de användare som då faller igenom och inkluderas i det aktuella arbetsytefiltret. När du klickar på en pil markeras de besökare som faller bort.
 
@@ -56,22 +57,22 @@ Diskarna i en tratt representerar stegen i navigeringen, konerna representerar g
 >
 >Trattvisualiseringen har en gräns på åtta steg som kan tillämpas.
 
-## Ytterligare funktioner {#section-22a3582db8114ca8bce77f50bbbf296a}
+## Ytterligare funktioner och funktioner {#section-22a3582db8114ca8bce77f50bbbf296a}
 
 * **Justera klipp och nivå på tratten**. Välj alternativet Tratt på menyn Visualisering. När tratten har skapats kan du högerklicka på titeln för att justera klippet och nivån till valfri mätbar nivå i systemet.
 
    ![](assets/funnel_path_browser_9.png)
 
-* **Dra fler element**. Lägg till fler element i tratten genom att dra och släppa dem från Dimensionstabellen till tratten med `<Ctrl>` +- `<Alt>` tangenterna. Du kan dra flera steg samtidigt från dimensionstabellen genom att markera flera objekt (med `<Ctrl>` +-klicka) och sedan dra dem till trattvisualiseringen med `<Ctrl>` +- `<Alt>` .
-* **Ta bort ett steg**: Ta bort element genom att högerklicka på steget i visualiseringen och klicka på **Ja**.
+* **Dra fler element**. Lägg till fler element i tratten genom att dra och släppa dem från tabellen Dimension till tratten med `<Ctrl>` + `<Alt>`. Du kan dra flera steg samtidigt från tabellen Dimension genom att markera flera objekt (med `<Ctrl>` + klicka) och sedan dra dem till Tratt-visualiseringen med `<Ctrl>` + `<Alt>`.
+* **Ta bort ett steg**: Ta bort element genom att högerklicka på steget i visualiseringen och klicka på  **Ja**.
 
    ![](assets/funnel_path_browser_4.png)
 
 * **Ordna om stegen som du har dragit till tratten**. Klicka bara på steget för att markera det och dra det till en annan plats för att ordna om stegen.
-* **Öppna en sökvägsläsare**. Du kan se mer information om var kunderna faller igenom eller faller bort från processen med funktionen [Lägg till en sökvägsläsare](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) .
+* **Öppna en sökvägsläsare**. Du kan se mer information om var kunderna faller igenom eller faller bort från processen med funktionen [Lägg till en sökvägsläsare](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119).
 
 * **Lägg till fler steg**. Du kan lägga till högst åtta steg för varje trattvisualisering.
 * **Ändra måttet**. Mätvärdet kan ändras så att stegen är inventeringsbesök eller något annat mått i varje steg. Vilka alternativ som är tillgängliga varierar beroende på datauppsättning.
-* **Visa i en tabellvy**. Högerklicka på titeln för att visa menyn Trattvisualisering och klicka på **[!UICONTROL Show Tabular View]**. I tabellvy kan du välja **[!UICONTROL Show Graph View]** att återgå till grafisk representation av tratten. Om du vill öppna tabellvyn högerklickar du på titeln och väljer Visa tabellvy på menyn.
+* **Visa i en tabellvy**. Högerklicka på titeln för att visa menyn Trattvisualisering och klicka på **[!UICONTROL Show Tabular View]**. I tabellvy kan du välja **[!UICONTROL Show Graph View]** om du vill återgå till den grafiska representationen av tratten. Om du vill öppna tabellvyn högerklickar du på titeln och väljer Visa tabellvy på menyn.
 
 * **Jämför sekvenser**. Ett effektivt sätt att jämföra två liknande sekvenser är att visa deras två visualiseringar sida vid sida. Du kan också visa både tabellvyn och diagramvyn sida vid sida med funktionen Duplicera. Om du vill öppna högerklickar du på titeln och väljer Duplicera på menyn.
