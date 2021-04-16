@@ -1,14 +1,15 @@
 ---
 description: En arbetsyta är en behållare för en viss analys- och visualiseringsåtgärd.
-solution: Analytics
 title: Visa arbetsytor
-topic: Data workbench
 uuid: 848035e5-7b7f-4e33-b61d-3759335e459b
+exl-id: 18db0cd4-6cb0-4514-9056-1c1e82b2092e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 0%
 
 ---
-
 
 # Visa arbetsytor{#display-workspaces}
 
@@ -28,5 +29,4 @@ Du analyserar dina data genom att kombinera olika typer av visualiseringar i en 
 
 >[!NOTE]
 >
->När du har öppnat en ny arbetsyta kan du behöva klicka **[!UICONTROL Add]** > **[!UICONTROL Temporarily Unlock]** för att låsa upp skärmen.
-
+>När du har öppnat en ny arbetsyta kan du behöva klicka på **[!UICONTROL Add]** > **[!UICONTROL Temporarily Unlock]** för att låsa upp skärmen.
