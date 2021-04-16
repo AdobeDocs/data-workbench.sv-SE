@@ -1,14 +1,15 @@
 ---
 description: Information om hur du visar identifieringsinformation om en profilkomponent.
-solution: Analytics
 title: Visa nodinformation
-topic: Data workbench
 uuid: 2016a650-b021-4295-8313-d6287578ed10
+exl-id: f8ce7741-8ba2-484d-ac35-5c286b65f098
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 0%
 
 ---
-
 
 # Visa nodinformation{#view-node-details}
 
@@ -36,9 +37,9 @@ Omvandlingens typ och namn, namnet på filen som omformningen är definierad i o
 
 >[!NOTE]
 >
->Prestandainformation för omvandlingen visas bara om alternativet är aktiverat för [!DNL Show Performance Data] beroendekartan. Mer information finns i [Visa prestandadata](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
+>Prestandainformation för omvandlingen visas bara om alternativet [!DNL Show Performance Data] är aktiverat för beroendemappningen. Mer information finns i [Visa prestandadata](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
-**Utökad dimension**
+**Utökad Dimension**
 
 Den utökade dimensionens namn och typ, namnet på filen där dimensionen definieras och dimensionens nummer i filen.
 
@@ -54,7 +55,7 @@ Måttets namn.
 
 ![](assets/vis_DependencyMap_MetricID.png)
 
-**Härledd dimension**
+**Härledd Dimension**
 
 Den härledda dimensionens namn.
 
@@ -81,4 +82,3 @@ Sökvägen för menyalternativet i profilens Menu-katalog.
 **Så här visar du indata och utdata för en profilkomponent**
 
 * Högerklicka på önskad nod och klicka på **[!UICONTROL Inputs]** eller **[!UICONTROL Outputs]**. En lista över in- och utdata visas.
-
