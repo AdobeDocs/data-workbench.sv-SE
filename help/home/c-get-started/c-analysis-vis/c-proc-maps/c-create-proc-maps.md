@@ -1,20 +1,21 @@
 ---
 description: Du kan skapa 2D- och 3D-processkartor genom att dra och släppa element från stapeldiagram, tabeller och hierarkivvyer till en tom karta.
-solution: Analytics
 title: Skapa en processkarta
-topic: Data workbench
 uuid: dbcde637-0411-4296-99ca-5510e0285e4b
+exl-id: 2e417a8e-5b1c-4dce-9e4e-ac7ed044564c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 0%
 
 ---
-
 
 # Skapa en processkarta{#create-a-process-map}
 
 Du kan skapa 2D- och 3D-processkartor genom att dra och släppa element från stapeldiagram, tabeller och hierarkivvyer till en tom karta.
 
-De element som du kan lägga till måste vara element i processmappningens basdimension. Du kan också dra och släppa noder från en processkarta till en annan så länge som kartorna använder samma basdimension. Dessutom kan hela kartan zoomas eller flyttas för att fokusera på en viss nod, eller så kan den ändras till andra visualiseringstyper. Se [Zooma i visualiseringar](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
+De element som du kan lägga till måste vara element i processmappningens basdimension. Du kan också dra och släppa noder från en processkarta till en annan så länge som kartorna använder samma basdimension. Dessutom kan hela kartan zoomas eller flyttas för att fokusera på en viss nod, eller så kan den ändras till andra visualiseringstyper. Se [Zooma in visualiseringar](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
 
 **Lägga till element i en processkarta med hjälp av ett tabell- eller stolpdiagram**
 
@@ -32,7 +33,7 @@ De element som du kan lägga till måste vara element i processmappningens basdi
 >
 >Adobe rekommenderar att du lägger till noder från den högsta nivån i hierarkin som du analyserar.
 
-1. Högerklicka på ett element eller etiketten för basdimensionen från en tabell eller ett stolpdiagram med samma basdimension som processkartan och klicka sedan på **[!UICONTROL Hierarchy View]**.
+1. Högerklicka på ett element eller etiketten för basdimensionen från en tabell eller ett stolpdiagram med samma basdimension som processkartan och klicka på **[!UICONTROL Hierarchy View]**.
 1. Tryck på Ctrl+Alt medan du klickar och drar element till processkartan. Markören visar ordet &quot;Nej&quot; tills musen når kartan.
 
    >[!NOTE]
@@ -53,4 +54,3 @@ Mer information om sidhierarkivyer finns i [Använda hierarkivyer](../../../../h
 
    * Om du vill kopiera enskilda noder klickar du på och drar varje nod till den andra processkartan.
    * Om du vill kopiera flera noder Ctrl-klickar och drar du för att skapa en ruta runt de noder du vill kopiera. Klicka sedan och dra de markerade noderna till den andra processkartan. Alla markerade noder kopieras till den andra processkartan.
-
