@@ -1,14 +1,15 @@
 ---
 description: UTM-projektionen (Universal Transverse Mercator) definieras av åtta parametrar.
-solution: Analytics
 title: Universal Transverse Mercator Projection
-topic: Data workbench
 uuid: 55421412-5c68-4a4f-88d6-650d5999a77c
+exl-id: 7d7610c3-14e7-474e-b792-ad413c86a2ef
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
-
 
 # Universal Transverse Mercator Projection{#universal-transverse-mercator-projections}
 
@@ -16,15 +17,15 @@ UTM-projektionen (Universal Transverse Mercator) definieras av åtta parametrar.
 
 När du anger en Universal Transverse Mercator-projektion för ett terrängbildslager måste dina terrängbildfiler justeras med false (projiceras) norrut mot bildens överkant och false österut till bildens högra del.
 
-Om du vill ange en UTM-projektion för en terrängbildskälla måste du öppna filen i en textredigerare, till exempel Anteckningar, ange parametern Projektionsinformation till TransverseMercatorProjection och lägga till inställningar för UTM-projektionen. [!DNL Terrain Images.cfg]
+Om du vill ange en UTM-projektion för en terrängbildskälla måste du öppna filen [!DNL Terrain Images.cfg] i en textredigerare som Anteckningar, ange parametern Projektionsinformation till TransverseMercatorProjection och lägga till inställningar för UTM-projektionen.
 
 **Ange en Universal Transverse Mercator-projektion**
 
-1. Klicka på [!DNL Server Files Manager]för **[!UICONTROL Components]** att visa innehållet. Filen finns i den här [!DNL Terrain Images.cfg] katalogen.
+1. Klicka på **[!UICONTROL Components]** i [!DNL Server Files Manager] för att visa innehållet. Filen [!DNL Terrain Images.cfg] finns i den här katalogen.
 
-1. Högerklicka på bockmarkeringen i kolumnen *Servernamn* för [!DNL Terrain Images.cfg]och klicka sedan på **[!UICONTROL Make Local]**. En bock visas i [!DNL Temp] kolumnen för [!DNL Terrain Images.cfg].
+1. Högerklicka på bockmarkeringen i kolumnen *servernamn* för [!DNL Terrain Images.cfg] och klicka sedan på **[!UICONTROL Make Local]**. En bock visas i kolumnen [!DNL Temp] för [!DNL Terrain Images.cfg].
 
-1. Högerklicka på den nya bockmarkeringen i [!DNL Temp] kolumnen och klicka på **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Filen [!DNL Terrain Images.cfg]visas i ett fönster.
+1. Högerklicka på den nya bockmarkeringen i kolumnen [!DNL Temp] och klicka på **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Filen [!DNL Terrain Images.cfg]visas i ett fönster med anteckningar.
 
 1. Redigera parametrarna för projektionsinformation med följande exempelfilfragment och parametertabell som stödlinjer. Var noga med att specificera projektionstypen så som den markeras nedan.
 
@@ -46,6 +47,5 @@ Om du vill ange en UTM-projektion för en terrängbildskälla måste du öppna f
 | Falsk inklistring | Falsk estring av projektionens mitterdianer, i meter. För UTM är detta alltid 500 000. |
 | Falskt Northing | Ekvatorns falska norning i projektionen, i meter. För UTM är detta 0 för områden på norra halvklotet och 10 000 för områden på södra halvklotet. |
 | Koordinater för nordvästra hörnet, koordinater för sydöstra hörn | Koordinaterna (i projicerade meter) för bildens övre vänstra och nedre högra hörn. |
-| Prime Meridian | Longitud för projektionens mitterdiska meridian, angiven i grader öster om Greenwich. Negativa tal kan användas för att ange grader västerut. |
+| Prime Meridian | Longitud för projektionsytans mitterdlinje, angiven i grader öster om Greenwich. Negativa tal kan användas för att ange grader västerut. |
 | Skalfaktor | Projektionscylinderns radie i förhållande till ellipsoidens halvhuvudaxel. För UTM-projektioner (Universal Transverse Mercator) är detta alltid 0,9996. |
-
