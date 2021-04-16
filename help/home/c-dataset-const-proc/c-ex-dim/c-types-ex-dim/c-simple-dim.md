@@ -1,16 +1,17 @@
 ---
 description: En enkel dimension har en 1:N-relation med dess överordnade räkningsbara dimension.
-solution: Analytics
-title: Enkla dimensioner
-topic: Data workbench
+title: Enkla Dimensioner
 uuid: 3bca2354-02c4-4739-a7da-acccdb0efdfd
+exl-id: 2acad750-7c48-40f1-8130-ab056ac8bf0d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 0%
 
 ---
 
-
-# Enkla dimensioner{#simple-dimensions}
+# Enkla Dimensioner{#simple-dimensions}
 
 En enkel dimension har en 1:N-relation med dess överordnade räkningsbara dimension.
 
@@ -45,7 +46,7 @@ Enkla dimensioner definieras av följande parametrar:
   <tr> 
    <td colname="col1"> Dold </td> 
    <td colname="col2"> Avgör om dimensionen visas i gränssnittet för data workbench. Som standard är den här parametern inställd på false. Om dimensionen till exempel bara ska användas som bas för ett mätresultat, kan du ställa in den här parametern på true för att dölja dimensionen från data workbench-visningen. </td> 
-   <td colname="col3"> false </td> 
+   <td colname="col3"> falskt </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Indata </td> 
@@ -82,7 +83,7 @@ Enkla dimensioner definieras av följande parametrar:
 
 I det här exemplet illustreras definitionen av en enkel dimension med händelsedata som samlats in från webbplatstrafiken och en inläsningsfil.
 
-Ta ett exempel på en undersökning av webbplatsbesökarnas favoritscout-cookies. En webbsida hämtar den här rösten och returnerar den till webbservern i namnvärdespar som favoritcookie. Endast en röst per besökare räknas, men besökarna kan ändra sig och rösta igen om de vill. Det här är en 1:N-relation: en besökare kan ha många röster, men varje röst är endast kopplad till en besökare. Därför är dimensionens överordnade besökare (endast en röst per besökare) och operationen är LAST ROW (så att de kan ändra sig och rösta igen).
+Ta ett exempel på en omröstning om webbplatsbesökarnas favoritkakor Girl Scout. En webbsida hämtar den här rösten och returnerar den till webbservern i namnvärdespar som favoritcookie. Endast en röst per besökare räknas, men besökarna kan ändra sig och rösta igen om de vill. Det här är en 1:N-relation: en besökare kan ha många röster, men varje röst är endast kopplad till en besökare. Därför är dimensionens överordnade besökare (endast en röst per besökare) och operationen är LAST ROW (så att de kan ändra sig och rösta igen).
 
 Platshållare måste finnas för alla typer av cookies så att cookie-typer som inte får några röster visas i data workbench-skärmen. Därför har en inläsningsfil definierats som innehåller listan med cookie-typer som kan väljas. Den här filens innehåll, som har sparats i en fil med namnet [!DNL cookietypes.txt], ser ut ungefär så här:
 
@@ -101,4 +102,3 @@ Tunna spetsar
 Den sista dimensionen definieras enligt följande:
 
 ![](assets/cfg_Transformation_Dim_Simple.png)
-
