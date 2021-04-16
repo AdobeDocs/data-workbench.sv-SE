@@ -1,14 +1,15 @@
 ---
 description: Bearbetningen av XML-filer som loggkällor för att definiera avkodare för extrahering av data från XML-filen.
-solution: Analytics
 title: XML-avkodningsgrupper
-topic: Data workbench
 uuid: 8fc9ab80-9a71-4fe2-a646-e830ffeb67b9
+exl-id: 0b0534b7-8596-4528-a643-8a9b41dcaa33
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1295'
+ht-degree: 0%
 
 ---
-
 
 # XML-avkodningsgrupper{#xml-decoder-groups}
 
@@ -43,20 +44,20 @@ I följande tabell beskrivs tabellparametern och alla underparametrar som du må
    <td colname="col1"> Fält </td> 
    <td colname="col2"> <p>De utökade fält (till exempel x-trackingid, x-email) där data lagras. De data som ska lagras i fältet avgörs av underfälten Sökväg och/eller Åtgärd. </p> <p> Sökvägen är fältets nivå i den strukturerade XML-filen. Sökvägen till ett fält är relativ till sökvägen till den tabell i vilken det har definierats. Exempel är <span class="filepath"> tag.tag.tag </span> eller <span class="filepath"> tag.tag.tag.@attribute </span>. Observera att banor är skiftlägeskänsliga. </p> <p> En operation används på varje rad i den angivna sökvägen för att skapa en utdatafil. Följande åtgärder är tillgängliga: 
      <ul id="ul_B264A411D7E3446288E7E69D62150B8B"> 
-      <li id="li_5936E81C0EEF46AFB780E451A04A88E4"><b>SENASTE:</b> Fältet får värdet för sökvägens senaste förekomst i XML-filen. </li> 
-      <li id="li_7BC4F24F2CA84C2EB64B06FE09B4CAF6"><b>INTERVALL:</b> Tilldelar ett slumpmässigt värde till fältet. Den här åtgärden är användbar om du behöver generera ett unikt ID, t.ex. för x-trackingid-fältet. </li> 
-      <li id="li_C1D34EA11BFB4859A25A275A9B63FB56"><b>INHERIT:</b> Det definierade fältet ärver sitt värde från den överordnade tabellens motsvarande fält. </li> 
-      <li id="li_F62FB8CD962E4E1495D9A2D5B7A78E2A"><b>"<i>konstant </i>":</b> Konstanten måste omges av citattecken. Du kan använda en konstant åtgärd för att kontrollera om det finns en viss sökväg. om sökvägen finns, tilldelas fältet konstantens värde. </li> 
+      <li id="li_5936E81C0EEF46AFB780E451A04A88E4"><b>SISTA:</b> Fältet får värdet för sökvägens senaste förekomst i XML-filen. </li> 
+      <li id="li_7BC4F24F2CA84C2EB64B06FE09B4CAF6"><b>RANDOM:</b> Tilldelar ett slumpmässigt värde till fältet. Den här åtgärden är användbar om du behöver generera ett unikt ID, t.ex. för x-trackingid-fältet. </li> 
+      <li id="li_C1D34EA11BFB4859A25A275A9B63FB56"><b>INHERIT:</b> Det definierade fältet ärver värdet från den överordnade tabellens motsvarande fält. </li> 
+      <li id="li_F62FB8CD962E4E1495D9A2D5B7A78E2A"><b>"<i>constant  </i>":</b> Konstanten måste omslutas av citattecken. Du kan använda en konstant åtgärd för att kontrollera om det finns en viss sökväg. om sökvägen finns, tilldelas fältet konstantens värde. </li> 
      </ul> </p> <p> <b>Lägga till ett fält i en avkodningstabell</b> </p> <p> 
      <ul id="ul_91D104D927424DEA9E788E43B2F6FEA9"> 
-      <li id="li_5448B01EE82349569BBFC99C9604D7B8"> Högerklicka på <span class="uicontrol"> Fält </span>och klicka sedan på <span class="uicontrol"> Lägg till nytt </span> &gt; <span class="uicontrol"> XMLDecoderField </span>. Definiera fält, åtgärd och sökväg. </li> 
+      <li id="li_5448B01EE82349569BBFC99C9604D7B8"> Högerklicka på <span class="uicontrol"> fält </span> och klicka sedan på <span class="uicontrol"> Lägg till nytt </span> &gt; <span class="uicontrol"> XMLDecoderField </span>. Definiera fält, åtgärd och sökväg. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Bana </td> 
    <td colname="col2"> <p>Nivån i den strukturerade XML-filen för vilken avkodningstabellen innehåller information. För en underordnad XML-avkodningstabell är sökvägen relativ till den överordnade tabellens sökväg. Observera att banor är skiftlägeskänsliga. </p> <p> Om XML-filen till exempel innehåller strukturen: </p> 
 
-    &amp;lt;visitor&amp;gt;
+    &amp;Lt;besökare;
     
     &amp;nbsp;
     
@@ -66,7 +67,7 @@ I följande tabell beskrivs tabellparametern och alla underparametrar som du må
     
     &amp;lt;/visitor&amp;gt;
     
-    &amp;lt;/logdata&amp;gt;&amp;nbsp; &lt;/code> &lt;p> är sökvägen &lt;span class=&quot;filepath&quot;> loggdata.visitor &lt;/span>. &lt;/p> &lt;/td>
+    &amp;lt;/logdata&amp;gt;&amp;nbsp;   &lt;p> blir sökvägen &lt;span class=&quot;filepath&quot;>logdata.visitor&lt;/span> . &lt;/p> &lt;/td>
 </tr> 
   <tr> 
    <td colname="col1"> Tabell </td> 
@@ -76,7 +77,7 @@ I följande tabell beskrivs tabellparametern och alla underparametrar som du må
    <td colname="col1"> Barn </td> 
    <td colname="col2"> <p>Valfritt. En eller flera inbäddade avkodningstabeller. Varje underordnat objekt innehåller parametrarna Fält, Sökväg och Tabell som beskrivs ovan. </p> <p> <b>Lägga till ett underordnat objekt i en avkodningstabell</b> </p> <p> 
      <ul id="ul_902AC6CA5D66457D84CBA3194FF49BBE"> 
-      <li id="li_07B4D60E7E2E4630B4878691E575936A"> Högerklicka på <span class="uicontrol"> Underordnad </span> och klicka på <span class="uicontrol"> Lägg till ny </span> &gt; <span class="uicontrol"> XMLDecoderTable </span>. Definiera fält, åtgärd och sökväg. </li> 
+      <li id="li_07B4D60E7E2E4630B4878691E575936A"> Högerklicka på <span class="uicontrol"> Underordnade </span> och klicka på <span class="uicontrol"> Lägg till ny </span> &gt; <span class="uicontrol"> XMLDecoderTable </span>. Definiera fält, åtgärd och sökväg. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -84,7 +85,7 @@ I följande tabell beskrivs tabellparametern och alla underparametrar som du må
 
 Om du vill använda en XML-fil som loggkälla för en datauppsättning måste grupper och tabeller för XML-avkodning definieras för att extrahera den information som ska bearbetas i datauppsättningen. I det här exemplet kan du se hur du definierar avkodningsgrupper och tabeller för en XML-exempelkälla för en webbdatauppsättning.
 
-Följande XML-fil innehåller information om en webbplatsbesökare, inklusive ett Experience Cloud-ID, e-postadress, fysisk adress och information om besökarens sidvisningar.
+Följande XML-fil innehåller information om en besökare på webbplatsen, inklusive ett Experience Cloud-ID, en e-postadress, en fysisk adress och information om besökarens sidvisningar.
 
 ![](assets/xmlFile_LogSource.png)
 
@@ -98,7 +99,7 @@ I det här exemplet extraherar vi information om besökaren och de sidvyer som �
 * Besökarens ID, som vi lagrar i fältet x-trackingid.
 * Besökarens e-postadress (contact.email), som vi lagrar i fältet x-email.
 * Besökarens registreringsstatus. Om besökaren är en registrerad användare kan vi lagra värdet&quot;1&quot; i det x-is-registrerade fältet.
-* Sökvägsvärdet är [!DNL logdata.visitor]och tabellvärdet är [!DNL Log Entry]. Mer information om de här parametrarna finns i tabellen XMLDecoderGroup ovan.
+* Sökvägsvärdet är [!DNL logdata.visitor] och tabellvärdet är [!DNL Log Entry]. Mer information om de här parametrarna finns i tabellen XMLDecoderGroup ovan.
 
 **Följande information finns för den underordnade tabellen (sidvy):**
 
@@ -108,7 +109,7 @@ I det här exemplet extraherar vi information om besökaren och de sidvyer som �
 * URI:n för varje sidvy, som lagras i fältet cs-uri-stam.
 * Sökvägsvärdet är sidvy och tabellvärdet är &quot;Loggpost&quot;. Mer information om de här parametrarna finns i tabellen XMLDecoderGroup ovan.
 
-I följande skärmbild visas en del av filen med den resulterande XML-avkodningsgruppen för XML-exempelfilen baserat på den beskrivna strukturen för den överordnade och underordnade XML-avkodningstabellen. [!DNL Log Processing Dataset Include]
+I följande skärmbild visas en del av [!DNL Log Processing Dataset Include]-filen med den resulterande XML-avkodningsgruppen för XML-exempelfilen baserat på den beskrivna strukturen för den överordnade och underordnade XML-avkodningstabellen.
 
 ![](assets/cft_LogProc_xmldecodergroup_top.png)
 
@@ -122,15 +123,15 @@ En tabell som visar resultatet av den här avkodaren för XML-exempelfilen ser u
 | PAGEVIEW | /index.html |  |  | 2006-01-01 08:00:00 | 1 |
 | PAGEVIEW | / |  |  | 2006-01-01 08:00:30 | 1 |
 
-Du kan skapa en tabell som den ovan i data workbench med hjälp av ett fältvisningsgränssnitt. Mer information om fältvisningsgränssnittet finns i [Konfigurationsverktyg](../../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)för datauppsättningar.
+Du kan skapa en tabell som den ovan i data workbench med hjälp av ett fältvisningsgränssnitt. Mer information om fältvisningsprogrammets gränssnitt finns i [Verktyg för datauppsättningskonfiguration](../../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5).
 
 ## Använda #value on XML element för att läsa dess attributvärde {#section-88758428afb94f0baa5a986604d53bc1}
 
-Nu kan du använda taggen i XML-sökvägar för att hämta värdet för ett XML-element. **[!DNL #value]**
+Du kan nu använda taggen **[!DNL #value]** i XML-sökvägar för att hämta värdet för ett XML-element.
 
-Om du t.ex. tidigare angav en sökväg till **`<Hit><Page name="Home Page" index="20">home.html</Page></Hit>`** vänster kan du inte läsa värdet för `<Page>` -taggen. Om du vill läsa värdet för en `<Page>` tagg och dess attribut kan du använda [!DNL Hit.Page.@name] respektive [!DNL Hit.Page.@index] . Du kan också hämta värdet för taggen med hjälp av **`Hit.Page.#value`** uttryck.
+Om du till exempel tidigare angav en sökväg på **`<Hit><Page name="Home Page" index="20">home.html</Page></Hit>`** kan du inte läsa värdet för taggen `<Page>`. Om du vill läsa värdet för en `<Page>`-tagg och dess attribut kan du använda [!DNL Hit.Page.@name] respektive [!DNL Hit.Page.@index]. Du kan också hämta värdet för taggen med hjälp av uttrycket **`Hit.Page.#value`**.
 
-Du kan till exempel läsa värdet för taggen `<varValue>` genom att lägga till följande fält i avkodare:
+Du kan till exempel läsa värdet för taggen `<varValue>` genom att lägga till följande fält i avkodaren:
 
 ```
 7 = XMLDecoderField: 
@@ -142,7 +143,7 @@ Path = string: varValue
 Table = string: Log Entry
 ```
 
-På samma sätt kan du läsa värdet för taggen `<Rep>` genom att lägga till följande fält i avkodaren:
+På samma sätt kan du läsa värdet för taggen `<Rep>` genom att lägga till följande fält i avkodare:
 
 ```
 7 = XMLDecoderField: 
@@ -154,7 +155,7 @@ Path = string: Reps
 Table = string: Log Entry
 ```
 
-Om du däremot vill läsa värdet för elementtaggen utan attribut, kan en `<text>` tagg under en `<line>` -tagg och dess värde läsas direkt genom att ange &quot; [!DNL text]&quot; i en bana eller med [!DNL line.text], beroende på hur du har skapat avkodaren.
+Om du däremot vill läsa värdet för elementtaggen utan attribut kan du läsa en `<text>`-tagg under en `<line>`-tagg och dess värde direkt genom att ange [!DNL text] i en sökväg eller med [!DNL line.text], beroende på hur du har skapat avkodaren.
 
 ```
 2 = XMLDecoderField: 
@@ -166,4 +167,3 @@ Path = string:
 <b>line</b> 
 Table = string: Log Entry
 ```
-
