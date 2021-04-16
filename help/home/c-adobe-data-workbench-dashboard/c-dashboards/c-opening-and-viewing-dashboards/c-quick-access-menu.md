@@ -1,14 +1,15 @@
 ---
 description: Ett av de enklaste sätten att öppna en kontrollpanel är att använda snabbmenyn på den vänstra navigeringspanelen i kontrollpanelens gränssnitt.
-solution: Analytics
 title: Snabbmeny
-topic: Data workbench
 uuid: 724a3cf5-94e9-4f4a-ba88-6e010015fe0d
+exl-id: 36717e0d-e0e4-4ec3-857c-59d01913363a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '150'
+ht-degree: 0%
 
 ---
-
 
 # Snabbmeny{#quick-access-menu}
 
@@ -19,4 +20,3 @@ Om du placerar markören över ett mappmenyobjekt (markeras med högerpilen) ut�
 Den här metoden är idealisk när du känner till namnet och platsen för den instrumentpanel som du vill öppna. Om du är osäker på kontrollpanelens namn och/eller plats kan du använda instrumentpanelens webbläsare för att leta reda på och öppna den.
 
 ![](assets/quick_access_menu.png)
-
