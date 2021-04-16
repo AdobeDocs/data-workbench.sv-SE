@@ -2,24 +2,23 @@
 description: När du har driftsatt ditt experiment bör du verifiera att experimentet fungerar som det ska.
 solution: Analytics,Analytics
 title: Validera experimentversionen
-topic: Data workbench
 uuid: 59769f5b-4175-479e-ad7d-7226e9c666af
+exl-id: 6dfd01ca-288d-40fd-aad4-75a588902ebd
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 0%
 
 ---
 
-
-# Validera experimentversionen{#validating-the-experiment}
+# Validerar experimentet{#validating-the-experiment}
 
 När du har driftsatt ditt experiment bör du verifiera att experimentet fungerar som det ska.
 
-Som beskrivs i [Ändra parametern ExpCookieURL (Valfritt)](../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md#concept-215bf86bab4e4ec0b0cc803ec48a8fcf)kan den sida som anges i parametern ExpCookieURL i [!DNL Sensor] konfigurationsfilen användas för att placera dig själv i en specifik experimentgrupp.
+Som nämndes i [Ändra ExpCookieURL-parametern (Valfritt)](../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md#concept-215bf86bab4e4ec0b0cc803ec48a8fcf) kan sidan som anges i parametern ExpCookieURL i konfigurationsfilen [!DNL Sensor] användas för att placera dig själv i en specifik experimentgrupp.
 
-Den virtuella standardsidan är [!DNL /setcookie.htm]men du måste använda det värde som du anger i parametern ExpCookieURL.
+Den virtuella standardsidan är [!DNL /setcookie.htm], men du måste använda det värde som du anger i parametern ExpCookieURL.
 
 ## Begär testsidan {#section-8aed3b48d47f4e6c8869c0216f8781b1}
 
@@ -29,7 +28,7 @@ Varje gång du vill testa en ny grupp måste du rensa dina cookies för webbplat
 
 Om du vill placera dig själv i en viss grupp inom ett specifikt experiment begär du testsidan med en frågesträng i följande format:
 
-[!DNL http://] *&lt;[!DNL sitename/?Experiment Name=Group Name]>*
+[!DNL http://] *&lt; [!DNL sitename/?Experiment Name=Group Name]>*
 
 Exempel:
 
@@ -44,4 +43,3 @@ Om du skrev in följande i webbläsaren skulle webbläsaren visa webbplatsens he
 När besökare i index2-gruppen begär hemsidan visas den grafiska länken &quot;Begär en demo&quot; högre upp på sidan, som i följande bild:
 
 ![](assets/TestPage.png)
-
