@@ -1,18 +1,19 @@
 ---
-description: Information om de administrationsgränssnitt som är tillgängliga för att hantera och övervaka din implementering av Data Workbench. Information om hur du öppnar administrativa gränssnitt samt information om flera andra gränssnitt.
-solution: Analytics
+description: Information om de administrationsgränssnitt som är tillgängliga för att hantera och övervaka implementeringen av Data Workbench. Information om hur du öppnar administrativa gränssnitt samt information om flera andra gränssnitt.
 title: Administrativa gränssnitt
-topic: Data workbench
 uuid: bd587f01-7edc-44e8-b4d4-f74f94f5d60f
+exl-id: 109e30da-9ccb-4349-865a-dff9c05fe37a
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 0%
 
 ---
 
-
 # Administrativa gränssnitt{#administrative-interfaces}
 
-Information om de administrationsgränssnitt som är tillgängliga för att hantera och övervaka din implementering av Data Workbench. Information om hur du öppnar administrativa gränssnitt samt information om flera andra gränssnitt.
+Information om de administrationsgränssnitt som är tillgängliga för att hantera och övervaka implementeringen av Data Workbench. Information om hur du öppnar administrativa gränssnitt samt information om flera andra gränssnitt.
 
 * [Gränssnitt för dataset Schema](c-dtst-sch-intrf.md)
 * [Frågestatusförklaring](c-query-stat-lgnd.md)
