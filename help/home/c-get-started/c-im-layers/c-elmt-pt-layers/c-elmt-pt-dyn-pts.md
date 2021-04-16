@@ -1,14 +1,15 @@
 ---
 description: När du skapar ett elementpunktslager med hjälp av dynamiska punkter bäddas latitud- och longituddata in i varje element i dimensionen.
-solution: Analytics
 title: Definiera punktlager för element med hjälp av dynamiska punkter
-topic: Data workbench
 uuid: f4b41969-329a-4c33-a8db-8d85597fa577
+exl-id: 5f6e264c-5804-47fa-a3ca-8608a3f7e9d3
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 1%
 
 ---
-
 
 # Definiera punktlager för element med hjälp av dynamiska punkter{#define-element-point-layers-using-dynamic-points}
 
@@ -16,19 +17,19 @@ När du skapar ett elementpunktslager med hjälp av dynamiska punkter bäddas la
 
 Om du vill definiera ett elementpunktslager med hjälp av dynamiska punkter måste du skapa eller redan ha tillgång till följande:
 
-* En dimension, definierad i [!DNL Transformation.cfg] filen eller en [!DNL transformation dataset include] fil, där varje element innehåller strängen &quot;latitud,longitud&quot; eller &quot;latitud,longitud,namn&quot;.
+* En dimension, definierad i filen [!DNL Transformation.cfg] eller en [!DNL transformation dataset include]-fil, där varje element innehåller strängen &quot;latitud,longitud&quot; eller &quot;latitud,longitud,namn&quot;.
 
-   Anvisningar om hur du skapar en dimension finns i konfigurationsguiden för *datauppsättningar*.
+   Anvisningar om hur du skapar en dimension finns i *Konfigurationshandboken för datauppsättningar*.
 
 * En lagerfil som anger den relaterade dimensionen.
 
-Mer information om det format som behövs för lagerfilen finns i [Elementpunktslagerfilformat](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#section-0645fbc761c14bb986f3d6f02df407a0).
+Mer information om vilket format som krävs för lagerfilen finns i [Elementpunktslagerfilformat](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#section-0645fbc761c14bb986f3d6f02df407a0).
 
 >[!NOTE]
 >
->När du använder [!DNL Dynamic Points]måste du se till att kardinaliteten för den dimension som anges i lagerfilen är rimlig. Om alla rader i en datauppsättning har olika latitud- och longitudvärden fylls dimensionerna snabbt upp och de flesta rader hamnar i ett Small Elements-element. Eftersom elementet Small Elements inte har någon latitud eller longitud visas det inte på jorden.
+>När du använder [!DNL Dynamic Points] är det viktigt att se till att dimensionens kardinalitet som anges i lagerfilen är rimlig. Om alla rader i en datauppsättning har olika latitud- och longitudvärden fylls dimensionerna snabbt upp och de flesta rader hamnar i ett Small Elements-element. Eftersom elementet Small Elements inte har någon latitud eller longitud visas det inte på jorden.
 
-## Lagerfilformat för elementpunkt {#section-0645fbc761c14bb986f3d6f02df407a0}
+## Elementpunktslagerfilformat {#section-0645fbc761c14bb986f3d6f02df407a0}
 
 Varje lagerfil för elementpunkter som använder dynamiska punkter måste formateras med följande mall:
 
@@ -60,7 +61,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Mått </td> 
-   <td colname="col2"> Namnet på mätvärdet som utvärderas över dimensionen som anges i Dimension-parametern. </td> 
+   <td colname="col2"> Namnet på mätvärdet som utvärderas över dimensionen som anges i parametern Dimension. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dynamiska punkter </td> 
@@ -86,7 +87,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Filen har följande [!DNL IP Coordinates.layer] format:
+Filen [!DNL IP Coordinates.layer] har följande format:
 
 ```
 Layer = ElementPointLayer:
@@ -94,4 +95,3 @@ Layer = ElementPointLayer:
   Metric = ref: wdata/model/metric/Visitors
   Dynamic Points = bool: true
 ```
-
