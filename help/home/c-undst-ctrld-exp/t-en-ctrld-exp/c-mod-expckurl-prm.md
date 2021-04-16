@@ -2,16 +2,15 @@
 description: Parametern ExpCookieURL kan användas för att testa att ditt kontrollerade experiment fungerar som det ska.
 solution: Analytics,Analytics
 title: Ändra parametern ExpCookieURL (valfritt)
-topic: Data workbench
 uuid: 0c160c26-f9de-4e41-a05d-bf7bb32395bb
+exl-id: fe3dadab-890d-4426-b6f5-8ffd1cd38c69
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
 
 ---
-
 
 # Ändra parametern ExpCookieURL (valfritt){#modifying-the-expcookieurl-paramter-optional}
 
@@ -19,7 +18,7 @@ Parametern ExpCookieURL kan användas för att testa att ditt kontrollerade expe
 
 Den här parametern definierar URL:en för en virtuell sida som när den efterfrågas placerar dig i ett visst experiment och en viss grupp och sedan dirigerar om dig till webbplatsens rot. Från den punkten till slutet av experimentet ingår du i det angivna experimentet och gruppen.
 
-Standardsidan för den här parametern är [!DNL setcookie.htm]men du kan använda vilken giltig virtuell URL som helst.
+Standardsidan för den här parametern är [!DNL setcookie.htm], men du kan använda vilken giltig virtuell URL som helst.
 
 >[!NOTE]
 >
