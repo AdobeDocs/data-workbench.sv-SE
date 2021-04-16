@@ -1,14 +1,15 @@
 ---
 description: Ett filter är ett uttryck som definierar en delmängd av data i en datauppsättning.
-solution: Analytics
 title: Syntax för filteruttryck
-topic: Data workbench
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
+exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '789'
+ht-degree: 0%
 
 ---
-
 
 # Syntax för filteruttryck{#syntax-for-filter-expressions}
 
@@ -16,9 +17,9 @@ Ett filter är ett uttryck som definierar en delmängd av data i en datauppsätt
 
 Ett filter antingen tillåter eller avvisar varje element i varje dimension enligt relationen mellan dimensionerna.
 
-Du kan redigera filter med hjälp av [!DNL Filter Editor]. Se [Filterredigerare](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
+Filter kan redigeras med [!DNL Filter Editor]. Se [Filterredigerare](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
 
-I följande tabell innehåller varje syntaxbeskrivning ett exempel på ett metriskt uttryck som använder det filtret. Exempel:[SessionsTrue] är ett mått som definieras med filtret &quot;Sant&quot;. Måttet[SessionsTrue] är detsamma som måttet Sessions eftersom filtret True tillåter alla element i sessionsdimensionen.
+I följande tabell innehåller varje syntaxbeskrivning ett exempel på ett metriskt uttryck som använder det filtret. Sessioner[Sant] är till exempel ett mått som definieras med filtret &quot;Sant&quot;. Sessionerna[Sant]-måttet är samma som sessionsmätningen eftersom filtret Sant tillåter alla element i sessionsdimensionen.
 
 <table id="table_5D66E6C11B384460BAAA7A6130214594"> 
  <tbody> 
@@ -104,4 +105,3 @@ I följande tabell innehåller varje syntaxbeskrivning ett exempel på ett metri
   </tr> 
  </tbody> 
 </table>
-
