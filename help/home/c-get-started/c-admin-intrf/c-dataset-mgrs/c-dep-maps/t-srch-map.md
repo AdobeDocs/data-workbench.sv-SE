@@ -1,16 +1,17 @@
 ---
 description: Steg för att söka efter komponenter som innehåller specifik text.
-solution: Analytics
 title: Söka i en karta
-topic: Data workbench
 uuid: 87fa8c69-f1f1-4977-b60c-050ddaacaab2
+exl-id: fb04aedb-aa31-45d0-9225-66d8fd2f7810
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '61'
+ht-degree: 0%
 
 ---
 
-
-# Söka i en karta{#search-within-a-map}
+# Sök på en karta{#search-within-a-map}
 
 Steg för att söka efter komponenter som innehåller specifik text.
 
