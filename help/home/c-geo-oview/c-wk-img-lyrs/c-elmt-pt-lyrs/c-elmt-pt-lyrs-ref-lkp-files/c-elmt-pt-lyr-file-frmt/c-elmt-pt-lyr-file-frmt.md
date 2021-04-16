@@ -1,20 +1,21 @@
 ---
 description: Formateringsinformation om elementets punktlagerfil.
-solution: Analytics
 title: Filformat för elementpunktslager
-topic: Data workbench
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
+exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 1%
 
 ---
-
 
 # Filformat för elementpunktslager{#element-point-layer-file-format}
 
 Formateringsinformation om elementets punktlagerfil.
 
-Varje elementpunktslagerfil [!DNL .layer] som refererar till en uppslagsfil måste formateras med följande mall:
+Varje elementpunktslager [!DNL .layer] som refererar till en uppslagsfil måste formateras med följande mall:
 
 ```
 Layer = ElementPointLayer:
@@ -57,15 +58,15 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Nyckelkolumn </td> 
-   <td colname="col2"> <p>Namnet på kolumnen i uppslagsfilen som innehåller data för den gemensamma nyckeln, vilket gör att data-workbench-servern kan integrera data i uppslagsfilen i datauppsättningen. Detta måste vara den första kolumnen i sökfilen. </p> <p>Varje rad i den här kolumnen är ett element i en dimension. Den här dimensionen måste definieras i filen Transformation.cfg <span class="filepath"></span> eller en inkluderingsfil för transformeringsdatamängd och anges i dimensionsparametern för den här filen. Mer information om omvandlingskonfigurationsfiler finns i konfigurationsguiden för <i>datauppsättningar</i>. </p> </td> 
+   <td colname="col2"> <p>Namnet på kolumnen i uppslagsfilen som innehåller data för den gemensamma nyckeln, vilket gör att data-workbench-servern kan integrera data i uppslagsfilen i datauppsättningen. Detta måste vara den första kolumnen i sökfilen. </p> <p>Varje rad i den här kolumnen är ett element i en dimension. Den här dimensionen måste definieras i filen <span class="filepath"> Transformation.cfg</span> eller en inkluderingsfil för en transformeringsdatamängd och anges i Dimension-parametern för den här filen. Mer information om transformeringskonfigurationsfiler finns i <i>Konfigurationshandboken för datauppsättningar</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimension </td> 
-   <td colname="col2">Namnet på dimensionen (definierad i en transformeringskonfigurationsfil) som innehåller element som motsvarar dataraderna i kolumnen <span class="wintitle"> Nyckel</span> . </td> 
+   <td colname="col2">Namnet på dimensionen (definierad i en transformeringskonfigurationsfil) som innehåller element som motsvarar dataraderna i kolumnen <span class="wintitle"> Key</span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mått </td> 
-   <td colname="col2"> Namnet på mätvärdet som utvärderas över dimensionen som anges i Dimension-parametern. </td> 
+   <td colname="col2"> Namnet på mätvärdet som utvärderas över dimensionen som anges i parametern Dimension. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Skala </td> 
@@ -87,7 +88,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Filen har följande [!DNL Zip Points.layer] format:
+Filen [!DNL Zip Points.layer] har följande format:
 
 ```
 Layer = ElementPointLayer:
@@ -100,4 +101,3 @@ Layer = ElementPointLayer:
   Dimension = ref: wdata/model/dim/Zipcode
   Metric = ref: wdata/model/metric/Sessions
 ```
-
