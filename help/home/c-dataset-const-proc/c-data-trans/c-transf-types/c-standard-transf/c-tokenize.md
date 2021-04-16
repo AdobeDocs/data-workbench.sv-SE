@@ -1,20 +1,21 @@
 ---
 description: Transformeringen Tokenize använder iterativt ett reguljärt uttryck mot indatasträngen.
-solution: Analytics
 title: Tokenize
-topic: Data workbench
 uuid: f8430e6c-ec14-4ba6-aeae-92c9f2520a63
+exl-id: c1f39b5b-4717-44f6-99c7-4e6a215f3542
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 1%
 
 ---
-
 
 # Tokenize{#tokenize}
 
 Transformeringen Tokenize använder iterativt ett reguljärt uttryck mot indatasträngen.
 
-Till skillnad från [!DNL RETransform]detta [!DNL Tokenize] behöver inte matcha hela strängen: det reguljära uttrycket som används för [!DNL Tokenize] omformningen kan matcha en delmängd av indata. När en matchning har hittats använder det reguljära uttrycket igen, med början vid tecknet efter slutet av den sista matchningen. [!DNL Tokenize]
+Till skillnad från [!DNL RETransform] behöver [!DNL Tokenize] inte matcha hela strängen: det reguljära uttrycket som används för omformningen [!DNL Tokenize] kan matcha en delmängd av indata. När en matchning har hittats använder [!DNL Tokenize] det reguljära uttrycket igen, med början vid tecknet efter slutet av den sista matchningen.
 
 | Parameter | Beskrivning | Standard |
 |---|---|---|
@@ -26,7 +27,7 @@ Till skillnad från [!DNL RETransform]detta [!DNL Tokenize] behöver inte matcha
 | Uttryck | Det reguljära uttryck som används för matchning. |  |
 | Utdata | Namnen på utdatasträngarna. Du kan ha flera utdata för en given indatasträng. Antalet utdata måste motsvara antalet hämtade delmönster i det reguljära uttrycket. |  |
 
-I följande exempel använder omformningen ett reguljärt uttryck för att hämta namnen på frågesträngarna (i cs-uri-query) och returnerar det hämtade delmönstret (frågenamnet) till x-pull-query-name. [!DNL Tokenize]
+I följande exempel använder omformningen [!DNL Tokenize] ett reguljärt uttryck för att hämta namnen på frågesträngarna (i cs-uri-query) och returnerar det hämtade delmönstret (frågenamnet) till x-pull-query-name.
 
 ![](assets/cfg_TransformationType_Tokenize.png)
 
