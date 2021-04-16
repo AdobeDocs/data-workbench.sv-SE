@@ -1,24 +1,25 @@
 ---
 description: Följ de här stegen för att uppdatera till data workbench v6.1 från din Insight v5.5x-installation.
-solution: Analytics
 title: Uppgradering av Data Workbench 5.5 till 6.1
-topic: Data workbench
 uuid: 14e3612e-11a2-402a-9478-904ec55df23c
+exl-id: c730f6d5-2171-4d97-a967-509dc2517c86,3f25917b-b929-4e3b-84f0-1a81b30ba641
 translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 0%
 
 ---
 
-
-# Uppgradering av Data Workbench 5.5 till 6.1{#data-workbench-to-upgrade}
+# Data Workbench 5.5 till 6.1 uppgradering{#data-workbench-to-upgrade}
 
 Följ de här stegen för att uppdatera till data workbench v6.1 från din Insight v5.5x-installation.
 
-**Steg 1**: [Serveruppgradering](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md#section-08bd6fe3da8740fcb19688e8cac6f223)
+**Steg 1**:  [Serveruppgradering](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md#section-08bd6fe3da8740fcb19688e8cac6f223)
 
-**Steg 2**: Uppgradering av [rapportserver](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md#section-afd9560a446242e9b06490e5f98aaaec)
+**Steg 2**:  [Uppgradering av rapportserver](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md#section-afd9560a446242e9b06490e5f98aaaec)
 
-**Steg 3**: [Klientuppgradering](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md#section-c896e57ecd2847afb18f4d8ef7cc0e06)
+**Steg 3**:  [Klientuppgradering](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md#section-c896e57ecd2847afb18f4d8ef7cc0e06)
 
 >[!IMPORTANT]
 >
@@ -26,37 +27,37 @@ Följ de här stegen för att uppdatera till data workbench v6.1 från din Insig
 
 ## Serveruppgradering {#section-08bd6fe3da8740fcb19688e8cac6f223}
 
-Så här uppdaterar du **[!UICONTROL Server v6.1]** komponenterna:
+Så här uppdaterar du **[!UICONTROL Server v6.1]**-komponenterna:
 
-1. Öppna arbetsytan med hjälp av **[!UICONTROL Software and Docs]** **[!UICONTROL Start Here]** profilen och ladda ned alla serverpaket som behövs till en lokal mapp.
+1. Använd profilen **[!UICONTROL Software and Docs]** för att öppna arbetsytan **[!UICONTROL Start Here]** och hämta alla serverpaket som behövs till en lokal mapp.
 
-   * Ladda ned **[!UICONTROL Server Packages]** \ **[!UICONTROL v6.1]** zip-mappar och extrahera alla filer.
+   * Hämta zip-mappar för **[!UICONTROL Server Packages]** \ **[!UICONTROL v6.1]** och extrahera alla filer.
 
-      Paketet innehåller **[!UICONTROL Server]** och **[!UICONTROL Lookup]** mappar med **[!UICONTROL Profile]** - och **[!UICONTROL Base]** **[!UICONTROL Transform]** sökfilerna som ska läggas till och ersättas för att uppdatera servern.
+      Paketet **[!UICONTROL Server]** innehåller mapparna **[!UICONTROL Lookup]** och **[!UICONTROL Profile]** med sökfilerna **[!UICONTROL Base]** och **[!UICONTROL Transform]** som ska läggas till och ersättas för att uppdatera servern.
 
-   * Hämta nya **[!UICONTROL Profiles]** mappar.
-   * Hämta uppdaterade **[!UICONTROL Lookup]** mappar.
-   * Hämta **[!UICONTROL Report Server]** \ **[!UICONTROL v6.1]** -paketet.
-   * Hämta ytterligare **[!UICONTROL Sensor]** filer **[!UICONTROL Documentation]** och **[!UICONTROL Dashboard]** filer efter behov.
+   * Hämta nya **[!UICONTROL Profiles]**-mappar.
+   * Hämta uppdaterade **[!UICONTROL Lookup]**-mappar.
+   * Hämta **[!UICONTROL Report Server]** \ **[!UICONTROL v6.1]**-paketet.
+   * Hämta ytterligare **[!UICONTROL Sensor]**-, **[!UICONTROL Documentation]**- och **[!UICONTROL Dashboard]**-filer efter behov.
 
-1. Stoppa **[!UICONTROL Adobe Insight Server]** tjänsten.
+1. Stoppa tjänsten **[!UICONTROL Adobe Insight Server]**.
 
    ![](assets/install_server_download1.png)
 
-1. Från det hämtade **[!UICONTROL Server]** paketet:
+1. Från det hämtade **[!UICONTROL Server]**-paketet:
 
-   1. Ersätt [!DNL Server\Bin] mappen för att uppdatera [!DNL InsightServer64.exe] och stödfilerna.
+   1. Ersätt mappen [!DNL Server\Bin] för att uppdatera [!DNL InsightServer64.exe] och stödfilerna.
 
-   1. Ersätt [!DNL Server\Profiles] mappen. Du kan skriva över alla filer.
-   1. Uppdatera [!DNL Server\Lookups] mappen. Du vill lägga till de nyligen hämtade filerna i de anpassade filer som redan finns i mappen.
-   1. Ersätt den [!DNL Server\Software] mapp som ska uppdateras [!DNL Insight.exe] och [!DNL ReportServer.exe]
+   1. Ersätt mappen [!DNL Server\Profiles]. Du kan skriva över alla filer.
+   1. Uppdatera mappen [!DNL Server\Lookups]. Du vill lägga till de nyligen hämtade filerna i de anpassade filer som redan finns i mappen.
+   1. Ersätt mappen [!DNL Server\Software] för att uppdatera [!DNL Insight.exe] och [!DNL ReportServer.exe]
 
-   1. Uppdatera den [!DNL Server\Scripts] mapp som ska uppdateras [!DNL TnTSend.exe].
+   1. Uppdatera mappen [!DNL Server\Scripts] för att uppdatera [!DNL TnTSend.exe].
 
-1. Om du använder **[!UICONTROL DeviceAtlas]** måste du [uppdatera paketet](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) som finns i [!DNL Server\Lookups] mappen.
-1. Ange [!DNL Directories] i [!DNL Profile.cfg] filen för att se till att vektorn uppdateras så att antalet objekt för varje profil återspeglas.
+1. Om du använder **[!UICONTROL DeviceAtlas]** måste du [uppdatera paketet](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) i mappen [!DNL Server\Lookups].
+1. Ange [!DNL Directories] i [!DNL Profile.cfg]-filen för att se till att vektorn uppdateras så att antalet objekt för varje profil återspeglas.
 
-   Om du till exempel vill aktivera profilen måste du uppdatera den här inställningen. **[!UICONTROL Predictive Analytics]**
+   Om du till exempel vill aktivera profilen **[!UICONTROL Predictive Analytics]** måste du uppdatera den här inställningen.
 
    ```
    Directories = vector: 5 items 
@@ -67,15 +68,15 @@ Så här uppdaterar du **[!UICONTROL Server v6.1]** komponenterna:
        4 = string: Profile Name\\
    ```
 
-1. Konfigurera och spara [!DNL PAServer.cfg] filen för att uppgradera funktionen Predictive Analytics.
+1. Konfigurera och spara filen [!DNL PAServer.cfg] för att uppgradera funktionen Predictive Analytics.
 
-   Om du vill skicka Predictive Analytics-jobb till servrarna måste du konfigurera [!DNL Server > Predictive Analytics > Dataset > PAServer.cfg] filen för att hantera klusteröverföringar på serversidan.
+   Om du vill skicka Predictive Analytics-jobb till servrarna måste du konfigurera [!DNL Server > Predictive Analytics > Dataset > PAServer.cfg]-filen för att hantera klusteröverföringar på serversidan.
 
-   Den anpassade profilen bör ärva inställningarna från konfigurationsprofilen Predictive Analytics, så att du kan konfigurera och spara den [!DNL PAServer.cfg] baserat på implementeringen av webbplatsen.
+   Den anpassade profilen bör ärva inställningarna från konfigurationsprofilen Predictive Analytics, så att du kan konfigurera och spara [!DNL PAServer.cfg] baserat på implementeringen av din webbplats.
 
 1. Definiera **[!UICONTROL Log Source ID]**.
 
-   Den **[!UICONTROL Recording of Rows per Log Source]** lades till **[!UICONTROL v6.04]** och definierades i den anpassade profilens [!DNL Log Processing.cfg] fil genom att lägga till ett unikt namn **[!UICONTROL Log Source ID]**.
+   **[!UICONTROL Recording of Rows per Log Source]** lades till i **[!UICONTROL v6.04]** och definierades i den anpassade profilens [!DNL Log Processing.cfg]-fil genom att lägga till ett unikt namn med namnet **[!UICONTROL Log Source ID]**.
 
    ```
    Log Processing.cfg
@@ -89,27 +90,27 @@ Så här uppdaterar du **[!UICONTROL Server v6.1]** komponenterna:
    Log Source ID must be defined for all log sources.
    ```
 
-1. Eftersom filen [!DNL EventMessages.dll] har uppdaterats måste du avregistrera och sedan registrera den **[!UICONTROL Adobe Insight Server]** i hela klustret.
+1. Eftersom [!DNL EventMessages.dll] har uppdaterats måste du avregistrera och sedan registrera **[!UICONTROL Adobe Insight Server]** i klustret.
 
    * [!DNL InsightServer64.exe /unregserver]
    * [!DNL InsightServer64.exe /regserver]
 
-1. Starta **[!UICONTROL Adobe Insight Server]** tjänsten i klustret.
+1. Starta tjänsten **[!UICONTROL Adobe Insight Server]** i klustret.
 
 Serverinstallationen är klar.
 
-## Uppgradering av rapportserver {#section-afd9560a446242e9b06490e5f98aaaec}
+## Report Server-uppgradering {#section-afd9560a446242e9b06490e5f98aaaec}
 
 >[!IMPORTANT]
 >
 >Innan du uppgraderar till **[!UICONTROL Report Server v6.1]** måste du först uppgradera till **[!UICONTROL Server v6.1]**.
 
-1. Använd **[!UICONTROL Software and Docs]** profilen för att hämta **[!UICONTROL v6.1]** från **[!UICONTROL Report Server]** paketet till en lokal mapp.
+1. Hämta **[!UICONTROL v6.1]** från **[!UICONTROL Report Server]**-paketet till en lokal mapp med profilen **[!UICONTROL Software and Docs]**.
 1. Kopiera **[!UICONTROL Report Server 6.1]** från det hämtade paketet och ersätt profilpaketen.
 
    >[!NOTE]
    >
-   >Filen [!DNL Insight.zbin] i [!DNL install] mappen är en säkerhetskopia som används för lokalisering och måste finnas i [!DNL install] katalogen. Den här filen eller andra [!DNL .zbin] filer kommer att användas beroende på vilka kommandoradsinställningar som skickas vid start.
+   >Filen [!DNL Insight.zbin] i mappen [!DNL install] är en säkerhetskopia som används för lokalisering och måste finnas i katalogen [!DNL install]. Den här filen eller andra [!DNL .zbin]-filer används beroende på vilka kommandoradsinställningar som skickas när du startar.
 
 1. (valfritt) Ändra rapportserverns konfigurationsfil så att den stöder dubbelbyte-tecken.
 
@@ -126,9 +127,9 @@ Serverinstallationen är klar.
 
 1. Konfigurera [!DNL Report Server v6.1].
 
-   1. Stoppa **[!UICONTROL Adobe Insight Report Server]** tjänsten.
+   1. Stoppa tjänsten **[!UICONTROL Adobe Insight Report Server]**.
    1. Starta en kommandotolk som administratör.
-   1. Navigera till [!DNL install] mappen Report Server.
+   1. Navigera till mappen Report Server [!DNL install].
    1. Ta bort tjänsten Report Server med följande kommando:
 
       ```
@@ -142,7 +143,7 @@ Serverinstallationen är klar.
    ReportServer.exe -RegServer -Locale -zh-cn (Simplified Chinese)
    ```
 
-1. Kontrollera att Report Server körs med rätt inställningar genom att öppna **[!UICONTROL Windows Service Manager]** och högerklicka **[!UICONTROL Adobe Insight Report Server - Properties]**. Sökvägen till den körbara filen visar de uppdaterade kommandoradsinställningarna.
+1. Kontrollera att Report Server körs med rätt inställningar genom att öppna **[!UICONTROL Windows Service Manager]** och högerklicka på **[!UICONTROL Adobe Insight Report Server - Properties]**. Sökvägen till den körbara filen visar de uppdaterade kommandoradsinställningarna.
 
 Rapportserverinstallationen är nu klar.
 
@@ -153,15 +154,15 @@ Rapportserverinstallationen är nu klar.
 >Innan du uppgraderar till **[!UICONTROL Client v6.1]** måste administratören först uppgradera till **[!UICONTROL Server v6.1.]**
 
 1. Starta [!DNL Insight.exe] men anslut INTE till några profiler.
-1. Redigera [!DNL Insight.cfg] filen så att programmet inte uppdateras automatiskt.
+1. Redigera [!DNL Insight.cfg]-filen om du inte vill uppdatera programvaran automatiskt.
 
    ```
    Update Software = bool: false
    ```
 
-1. Anslut till **[!UICONTROL Software and Docs]** profil (programdokument).
-1. Ladda ned [!DNL Software\Insight Client\v6.10].
-1. (valfritt) Ändra [!DNL insight.cfg] för att hantera dubbelbytetecken.
+1. Anslut till profilen **[!UICONTROL Software and Docs]** (programdokument).
+1. Hämta [!DNL Software\Insight Client\v6.10].
+1. (valfritt) Ändra [!DNL insight.cfg] om du vill ha stöd för dubbelbytetecken.
 
    Data workbench har för närvarande stöd för både engelska och förenklad kinesiska. Välj teckensnitt som ska ha stöd för båda dessa språk:
 
@@ -172,15 +173,16 @@ Rapportserverinstallationen är nu klar.
    ```
 
 1. Avsluta från klienten.
-1. Kopiera filerna i det hämtade **v6.1** -klientpaketet till [!DNL Install] mappen.
+1. Kopiera filerna i det hämtade **v6.1**-klientpaketet till mappen [!DNL Install].
 
    >[!NOTE]
    >
-   >Filen i installationsmappen är en säkerhetskopia som används för lokalisering och måste finnas i installationskatalogen. [!DNL Insight.zbin] Den här filen eller andra [!DNL .zbin] filer kommer att användas beroende på vilka kommandoradsinställningar som skickas vid start.
+   >Filen [!DNL Insight.zbin] i installationsmappen är en säkerhetskopia som används för lokalisering och måste finnas i installationskatalogen. Den här filen eller andra [!DNL .zbin]-filer används beroende på vilka kommandoradsinställningar som skickas när du startar.
    >
    >Om du till exempel vill starta Förenklad kinesiska skapar du ett kortkommando som godkänns i kommandoradsinställningen.
    >
-   >```
+   >
+   ```
    >Insight.exe -zh-cn
    >```
    >
@@ -188,7 +190,7 @@ Rapportserverinstallationen är nu klar.
 
 1. Starta [!DNL Insight.exe] för engelska eller genvägen som du skapade för ett annat språk.
 1. Anslut till din profil och tillåt klienten att synkronisera med servern.
-1. (valfritt) Om du vill använda IME-programmet gör du följande ändringar i [!DNL Insight.cfg] filen:
+1. (valfritt) Om du vill använda IME-programmet gör du följande ändringar i [!DNL Insight.cfg]-filen:
 
    ```
    Localized IME = bool: true
@@ -196,13 +198,13 @@ Rapportserverinstallationen är nu klar.
 
    I Input Method Editor (IME) kan du ange internationella tecken.
 
-1. (valfritt) Redigera [!DNL Insight.cfg] filen så uppdateras programmet automatiskt:
+1. (valfritt) Redigera [!DNL Insight.cfg]-filen så uppdateras programmet automatiskt:
 
    ```
    Update Software = bool: true
    ```
 
    Se instruktionerna för implementering av IME.
-1. Starta om igen efter profilsynkroniseringen för att använda den senaste [!DNL .zbin] filen.
+1. Starta om igen efter profilsynkroniseringen för att använda den senaste [!DNL .zbin]-filen.
 
 Klientinstallationen är klar.
