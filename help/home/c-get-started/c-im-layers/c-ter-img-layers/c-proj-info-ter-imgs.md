@@ -1,32 +1,33 @@
 ---
 description: Data workbench stöder både latitud- och longitudprojektioner och UTM-projektioner (Universal Transverse Mercator) för alla terrängbildslagerkällor.
-solution: Analytics
 title: Ange projektionsinformation för terrängbilder
-topic: Data workbench
 uuid: cc1e1e35-6b23-4121-a9f5-489001cb2ef8
+exl-id: 2638c5d4-164d-411b-8464-0a3af81b6537
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 0%
 
 ---
-
 
 # Ange projektionsinformation för terrängbilder{#specify-projection-information-for-terrain-images}
 
 Data workbench stöder både latitud- och longitudprojektioner och UTM-projektioner (Universal Transverse Mercator) för alla terrängbildslagerkällor.
 
-Projektionsinformation krävs för oprojicerade oprojicerade bitmappar och allmänna bilder, utan projicering. Du kan ange projektionsinformation för bilder med inbäddad projektionsinformation, men det är vanligtvis inte nödvändigt eftersom projektionsparametrarna bestäms automatiskt utifrån geodetiska data som är inbäddade i själva bilden. I följande avsnitt finns information om hur du anger dessa projektionsformat i [!DNL Terrain Images.cfg] filen.
+Projektionsinformation krävs för oprojicerade oprojicerade bitmappar och allmänna bilder, utan projicering. Du kan ange projektionsinformation för bilder med inbäddad projektionsinformation, men det är vanligtvis inte nödvändigt eftersom projektionsparametrarna bestäms automatiskt utifrån geodetiska data som är inbäddade i själva bilden. Följande avsnitt innehåller information om hur du anger dessa projektionsformat i [!DNL Terrain Images.cfg]-filen.
 
-## Latitude-longitud - prognoser {#section-6e335357ec28462ba39c565e0a5986c7}
+## Latitude-longitud - projektioner {#section-6e335357ec28462ba39c565e0a5986c7}
 
-Latitud-longitud-projektionsformatet (LatLonProjection) i filen definieras av fyra parametrar för latitud och longitud. [!DNL Terrain Images.cfg]
+Latitud-longitud-projektionsformatet (LatLonProjection) i filen [!DNL Terrain Images.cfg] definieras av fyra parametrar för latitud och longitud.
 
-Om du vill ange en LatLonProjection för oprojicerade bilder (oprojicerade råbilder och allmänna bilder, oprojicerade) kan du ange inställningar för LatLonProjection i fönstret i Data Workbench. [!DNL Terrain Images.cfg]
+Om du vill ange en LatLonProjection för oprojicerade bilder (oprojicerade råbilder och allmänna bilder, oprojicerade) kan du ange inställningar för LatLonProjection i fönstret [!DNL Terrain Images.cfg] i Datan Workbench.
 
-Om du vill ange en LatLonProjection för bilder med inbäddad projektionsinformation, måste du öppna [!DNL Terrain Images.cfg] filen i en textredigerare som Anteckningar, ange parametern Projection Info till LatLonProjection och lägga till inställningar för [!DNL LatLonProjection].
+Om du vill ange en LatLonProjection för bilder med inbäddad projektionsinformation måste du öppna filen [!DNL Terrain Images.cfg] i en textredigerare som Anteckningar, ange parametern Projection Info till LatLonProjection och lägga till inställningar för [!DNL LatLonProjection].
 
 **Ange en LatLonProjection för oprojicerade bilder**
 
-1. Öppna [!DNL Terrain Images.cfg] filen i Data Workbench och lägg till en källfil för terrängbildlager enligt beskrivningen i [Definiera ett terrängbildlager](../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md#concept-f4b3a20969354ca38955e3fd5beb0f4f).
+1. Öppna filen [!DNL Terrain Images.cfg] i Datan Workbench och lägg till en källfil för terrängbildlager enligt beskrivningen i [Definiera ett terrängbildlager](../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md#concept-f4b3a20969354ca38955e3fd5beb0f4f).
 1. Redigera parametrarna för Projektionsinformation med följande parametertabell som vägledning:
 
 <table id="table_32F6EADB2DA34592ABD6FFAC9E00BB27"> 
@@ -56,16 +57,16 @@ Om du vill ange en LatLonProjection för bilder med inbäddad projektionsinforma
  </tbody> 
 </table>
 
-1. Spara filen genom att högerklicka **[!UICONTROL (modified)]** högst upp i fönstret och klicka på **[!UICONTROL Save]**.
-1. Om du vill spara de lokalt gjorda ändringarna på Data Workbench-serverdatorn [!DNL Server Files Manager]högerklickar du på bockmarkeringen [!DNL Terrain Images.cfg] i [!DNL Temp] kolumnen och klickar sedan på **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
+1. Spara filen genom att högerklicka på **[!UICONTROL (modified)]** högst upp i fönstret och klicka på **[!UICONTROL Save]**.
+1. Om du vill spara de lokalt gjorda ändringarna på Datan Workbench högerklickar du i [!DNL Server Files Manager] på bockmarkeringen för [!DNL Terrain Images.cfg] i [!DNL Temp]-kolumnen och sedan på **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
 
 **Ange en LatLonProjection för bilder i inbäddad projektionsinformation**
 
-Klicka på [!DNL Server Files Manager]för **[!UICONTROL Components]** att visa innehållet. Filen finns i den här [!DNL Terrain Images.cfg] katalogen.
+Klicka på **[!UICONTROL Components]** i [!DNL Server Files Manager] för att visa innehållet. Filen [!DNL Terrain Images.cfg] finns i den här katalogen.
 
-Högerklicka på bockmarkeringen i servernamnskolumnen för [!DNL Terrain Images.cfg]och klicka sedan på **[!UICONTROL Make Local]**. En bock visas i [!DNL Temp] kolumnen för [!DNL Terrain Images.cfg].
+Högerklicka på bockmarkeringen i servernamnskolumnen för [!DNL Terrain Images.cfg] och klicka sedan på **[!UICONTROL Make Local]**. En bock visas i kolumnen [!DNL Temp] för [!DNL Terrain Images.cfg].
 
-Högerklicka på den nya bockmarkeringen i [!DNL Temp] kolumnen och klicka på **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Filen visas i ett fönster med Anteckningar [!DNL Terrain Images.cfg] .
+Högerklicka på den nya bockmarkeringen i kolumnen [!DNL Temp] och klicka på **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Filen [!DNL Terrain Images.cfg] visas i ett fönster med anteckningar.
 
 Redigera parametrarna för projektionsinformation med följande exempelfilfragment som hjälp. Var noga med att specificera projektionstypen så som den markeras nedan. Beskrivningar av parametrarna finns i tabellen LatLonProjection Parameters i föregående procedur.
 
@@ -81,13 +82,13 @@ Projection Info = LatLonProjection:
 
 UTM-projektionen (Universal Transverse Mercator) definieras av åtta parametrar. När du anger en Universal Transverse Mercator-projektion för ett terrängbildslager måste dina terrängbildfiler justeras med false (projiceras) norrut mot bildens överkant och false österut till bildens högra del.
 
-Om du vill ange en UTM-projektion för en terrängbildskälla måste du öppna filen i en textredigerare, till exempel Anteckningar, ange parametern Projektionsinformation till TransverseMercatorProjection och lägga till inställningar för UTM-projektionen. [!DNL Terrain Images.cfg]
+Om du vill ange en UTM-projektion för en terrängbildskälla måste du öppna filen [!DNL Terrain Images.cfg] i en textredigerare som Anteckningar, ange parametern Projektionsinformation till TransverseMercatorProjection och lägga till inställningar för UTM-projektionen.
 
 **Ange en Universal Transverse Mercator-projektion**
 
-1. Klicka på [!DNL Server Files Manager]för **[!UICONTROL Components]** att visa innehållet. Filen finns i den här [!DNL Terrain Images.cfg] katalogen.
-1. Högerklicka på bockmarkeringen i servernamnskolumnen för [!DNL Terrain Images.cfg]och klicka sedan på **[!UICONTROL Make Local]**. En bock visas i [!DNL Temp] kolumnen för [!DNL Terrain Images.cfg.]
-1. Högerklicka på den nya bockmarkeringen i [!DNL Temp] kolumnen och klicka på **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Filen visas i ett fönster med Anteckningar [!DNL Terrain Images.cfg] .
+1. Klicka på **[!UICONTROL Components]** i [!DNL Server Files Manager] för att visa innehållet. Filen [!DNL Terrain Images.cfg] finns i den här katalogen.
+1. Högerklicka på bockmarkeringen i servernamnskolumnen för [!DNL Terrain Images.cfg] och klicka sedan på **[!UICONTROL Make Local]**. En bock visas i kolumnen [!DNL Temp] för [!DNL Terrain Images.cfg.]
+1. Högerklicka på den nya bockmarkeringen i kolumnen [!DNL Temp] och klicka på **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Filen [!DNL Terrain Images.cfg] visas i ett fönster med anteckningar.
 1. Redigera parametrarna för projektionsinformation med följande exempelfilfragment och parametertabell som stödlinjer. Var noga med att specificera projektionstypen så som den markeras nedan.
 
    ```
@@ -128,7 +129,7 @@ Om du vill ange en UTM-projektion för en terrängbildskälla måste du öppna f
   </tr> 
   <tr> 
    <td colname="col1"> <p>Prime Meridian </p> </td> 
-   <td colname="col2"> <p>Longitud för projektionens mitterdiska meridian, angiven i grader öster om Greenwich. Negativa tal kan användas för att ange grader västerut. </p> </td> 
+   <td colname="col2"> <p>Longitud för projektionsytans mitterdlinje, angiven i grader öster om Greenwich. Negativa tal kan användas för att ange grader västerut. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Skalfaktor </p> </td> 
@@ -136,4 +137,3 @@ Om du vill ange en UTM-projektion för en terrängbildskälla måste du öppna f
   </tr> 
  </tbody> 
 </table>
-
