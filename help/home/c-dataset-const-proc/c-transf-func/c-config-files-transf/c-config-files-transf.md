@@ -1,14 +1,15 @@
 ---
 description: Transformeringsfunktionen innehåller tre konfigurationsfiler som innehåller de parametrar som krävs för att läsa och exportera data.
-solution: Analytics
 title: Konfigurationsfiler för transformering
-topic: Data workbench
 uuid: abb5b7a4-ade6-4658-b3a1-7ce4c2c17507
+exl-id: 9cd5ae3a-e3fc-466f-a6ab-20582001fb4a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '103'
+ht-degree: 0%
 
 ---
-
 
 # Konfigurationsfiler för transformering{#configuration-files-for-transform}
 
@@ -20,5 +21,4 @@ Transformeringsfunktionen innehåller tre konfigurationsfiler som innehåller de
 
 >[!NOTE]
 >
->Innan du börjar konfigurera implementeringen av omvandlingsfunktionen måste du kontrollera att du har installerat data workbench [!DNL Transform.cfg] och data workbench T- [!DNL ransform Mode.cfg] filer samt alla Adobe-programprodukter och -program som behövs för implementeringen. Installationsanvisningar finns i *Server Products Installation and Administration Guide*.
-
+>Innan du börjar konfigurera implementeringen av omvandlingsfunktionen måste du kontrollera att du har installerat data workbench-filerna [!DNL Transform.cfg] och data workbench T [!DNL ransform Mode.cfg] och alla Adobe-programprodukter och program som behövs för implementeringen. Installationsanvisningar finns i *Handbok för installation och administration av serverprodukter*.
