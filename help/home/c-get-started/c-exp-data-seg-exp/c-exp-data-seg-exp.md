@@ -1,14 +1,15 @@
 ---
 description: Med segmentexportfunktionen kan du skapa ett segment av elementen i valfri räkningsbar dimension och sedan gruppvis eller kontinuerligt exportera data för segmentet till en tabbavgränsad fil.
-solution: Analytics
 title: Exportera data med segmentexport
-topic: Data workbench
 uuid: a6468e76-fe5a-4807-806e-015063f9627a
+exl-id: 46540d63-3b6e-4cfc-ba34-8caffadab99c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 0%
 
 ---
-
 
 # Exportera data med segmentexport{#exporting-data-using-segment-export}
 
