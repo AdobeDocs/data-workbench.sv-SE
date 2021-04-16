@@ -1,14 +1,15 @@
 ---
 description: Om du arbetar med webbdata kan du använda ExtractValue-omformningen för att extrahera ett värde från en frågesträng, cookie-fil eller liknande kodade fält i webbplatsdata.
-solution: Analytics
 title: ExtractValue
-topic: Data workbench
 uuid: 305827a2-04e6-421f-82cb-923d62b02e70
+exl-id: 5bafe64f-081a-49ec-997e-68e8f6915a71
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 1%
 
 ---
-
 
 # ExtractValue{#extractvalue}
 
@@ -58,9 +59,8 @@ Observera att namnen som motsvarar värdet som ska extraheras kan vara olika i v
  </tbody> 
 </table>
 
-Om du vill extrahera en sökfras kan du extrahera hela frasen och, om du vill, dela frasen i söktermer med hjälp av en [!DNL Tokenize] omformning. Mer information om [!DNL Tokenize] omformningen finns i [Tokenisera](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c).
+Om du vill extrahera en sökfras kan du extrahera hela frasen och, om du vill, dela frasen i söktermer med en [!DNL Tokenize]-omformning. Mer information om [!DNL Tokenize]-omformningen finns i [Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c).
 
-I det här exemplet konfigureras en [!DNL ExtractValue] omformning så att värden i fältet x-v-search-querynames extraheras från cs(reference-query) och lagras i fältet för x-search-phrase.
+I det här exemplet konfigureras en [!DNL ExtractValue]-omformning så att värden i fältet x-v-search-querynames extraheras från cs(reference-query) och lagras i fältet x-search-phrase.
 
 ![](assets/cfg_TransformationType_ExtractValue.png)
-
