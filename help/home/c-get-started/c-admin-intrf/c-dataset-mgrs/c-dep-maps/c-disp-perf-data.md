@@ -1,14 +1,15 @@
 ---
 description: Information om hur du visar prestandadata för en omformning eller utökad dimension.
-solution: Analytics
 title: Visa prestandadata
-topic: Data workbench
 uuid: 7149c565-79a6-4e01-acae-d6eea1f5fa39
+exl-id: 665716c7-08e2-4797-9e98-7b5dba5facb5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '103'
+ht-degree: 0%
 
 ---
-
 
 # Visa prestandadata{#display-performance-data}
 
@@ -24,4 +25,3 @@ Information om hur du visar prestandadata för en omformning eller utökad dimen
 ![](assets/vis_DependencyMap_PerfData_Transformation.png)
 
 ![](assets/vis_DependencyMap_PerfData_ExtDims.png)
-
