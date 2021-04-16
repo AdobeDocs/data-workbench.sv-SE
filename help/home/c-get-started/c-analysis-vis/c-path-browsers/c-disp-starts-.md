@@ -1,16 +1,17 @@
 ---
 description: Du kan visa början och slutet av banor i sökvägsläsaren.
-solution: Analytics
 title: Visa början och slutet av banor
-topic: Data workbench
 uuid: b5294111-393c-44d9-a641-18ecd566797f
+exl-id: 08604c56-f151-49e6-8290-50f8fa04c802
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 0%
 
 ---
 
-
-# Visa början och slutet av banor{#display-the-start-and-end-of-paths}
+# Visa början och slutet av sökvägar{#display-the-start-and-end-of-paths}
 
 Du kan visa början och slutet av banor i sökvägsläsaren.
 
@@ -18,13 +19,12 @@ Om sökvägsläsaren t.ex. visar sidsekvensen för varje session, kan du se node
 
 **Aktivera eller inaktivera visning av start och slut**
 
-* Högerklicka på den övre kanten i sökvägsläsaren och klicka på **[!UICONTROL Display]** > *&lt;**[!UICONTROL Group dimension name]**>* **[!UICONTROL starts and ends]**. När det här alternativet är aktiverat visas ett X till vänster om *gruppdimensionsnamnet* som börjar och slutar.
+* Högerklicka på den övre kanten i sökvägsläsaren och klicka på **[!UICONTROL Display]** > *&lt;**[!UICONTROL Group dimension name]**>* **[!UICONTROL starts and ends]**. När det här alternativet är aktiverat visas ett X till vänster om *gruppdimensionsnamn* börjar och slutar.
 
-Om t.ex. sökvägsläsaren visar sidsekvensen för varje session, väljer du att visa sessionens början och slut.
+Om t.ex. sökvägsläsaren visar sidsekvensen för varje session, väljer du att visa sessionens start- och slutsekvenser.
 
 ![](assets/vis_PathBrowser_StartsAndEnds.png)
 
 >[!NOTE]
 >
 >Du kan inte ange en start- eller slutnod som rot för en sökvägsläsare eller markera en start- eller slutnod.
-
