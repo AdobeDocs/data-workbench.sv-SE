@@ -2,12 +2,14 @@
 cloud: Experience Cloud
 product: analytics
 audience: end-user
+feature-set: Analytics
+feature: Data Workbench
 user-guide-title: Hjälp om Data Workbench
 user-guide-description: Läs mer om Datans Workbench flerkanalsfunktioner. Innefattar handböcker om Data Workbench Client, Installation, Dataset Configuration med mera.
 translation-type: tm+mt
-source-git-commit: 3fc9ad4411438afe50c0e20d807234176480e2b3
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
-source-wordcount: '3493'
+source-wordcount: '3495'
 ht-degree: 0%
 
 ---
