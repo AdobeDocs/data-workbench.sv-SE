@@ -1,14 +1,15 @@
 ---
 description: Som en del av den insamlade baslinjemätningsinformationen samlar sensorn in de domäncookies som skickas från en besökares dator när en begäran görs från webbservern.
-solution: Analytics
 title: Hämta mätdata via cookies
-topic: Data workbench
 uuid: 34cd6baf-6317-4774-8165-58208698b53c
+exl-id: 37c7b5f6-33bf-4373-963a-e08a826e05df
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '587'
+ht-degree: 0%
 
 ---
-
 
 # Hämta mätdata via cookies{#acquiring-measurement-data-through-cookies}
 
@@ -18,9 +19,9 @@ Detta inkluderar både beständiga cookies och sessionscookies som anges på web
 
 I de flesta fall anger webbplatser beständiga cookies för att identifiera besökare eller samla in användarindata för användning i efterföljande besökarsessioner. All information som skrivs till och lagras i beständiga cookies kan hämtas och användas tillsammans med alla andra mätdata i data workbench-servern.
 
-Ett exempel på en sådan beständig cookie kan innehålla en kundidentifierare i form av en numerisk nyckel som finns i en domänspecifik cookie som finns på besökarens dator. Förutom att identifiera användaren som en återkommande besökare kan den beständiga cookien även användas för att ytterligare identifiera besökaren som en återkommande kund eller för att knyta besökaren till information som finns i en kunddatabas så att kundernas demografisk information som är offline kan visas i [!DNL Site] och användas för interaktiv analys.
+Ett exempel på en sådan beständig cookie kan innehålla en kundidentifierare i form av en numerisk nyckel som finns i en domänspecifik cookie som finns på besökarens dator. Förutom att identifiera användaren som en återkommande besökare kan den beständiga cookien även användas för att ytterligare identifiera besökaren som en återkommande kund eller för att knyta besökaren till information som finns i en kunddatabas så att demografisk information som är offline kan visas i [!DNL Site] och användas för interaktiv analys.
 
-Sessionscookies kan vara en bra mekanism för att samla in användarindata via formulärfält eller andra dynamiska interaktiva element på webbplatsen. Om en webbplats implementerar formulär för att hämta användarspecifika indata finns informationen kvar i sessionscookien endast så länge som sessionen är aktiv. När en användare lämnar webbplatsen eller sedan avslutar en session, lagras inte längre informationen på användarens dator. Den information som anges registreras dock av [!DNL Sensor] och görs tillgänglig som mätdata inom [!DNL Site].
+Sessionscookies kan vara en bra mekanism för att samla in användarindata via formulärfält eller andra dynamiska interaktiva element på webbplatsen. Om en webbplats implementerar formulär för att hämta användarspecifika indata finns informationen kvar i sessionscookien endast så länge som sessionen är aktiv. När en användare lämnar webbplatsen eller sedan avslutar en session, lagras inte längre informationen på användarens dator. Den angivna informationen hämtas dock av [!DNL Sensor] och görs tillgänglig som mätdata i [!DNL Site].
 
 Här följer ett exempel på hur du använder en sessionskaka för att fånga en enda formulärvariabel som anges av en besökare.
 
