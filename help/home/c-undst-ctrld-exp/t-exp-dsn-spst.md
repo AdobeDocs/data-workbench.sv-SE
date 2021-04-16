@@ -2,18 +2,17 @@
 description: Den här filen fungerar inte bara som ett kalkylblad, utan också som en referens till dina beslut om experimentet.
 solution: Analytics,Analytics
 title: Experimentera med kalkylblad
-topic: Data workbench
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
+exl-id: 554790ab-1182-4481-87b0-e768ea769ddf
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
 
 ---
 
-
-# Experimentera med kalkylblad{#experiment-design-spreadsheet}
+# Experimentera i designkalkylblad{#experiment-design-spreadsheet}
 
 Den här filen fungerar inte bara som ett kalkylblad, utan också som en referens till dina beslut om experimentet.
 
@@ -23,7 +22,7 @@ Kalkylbladet för experimentell design kan endast ge användbara statistiska slu
 
 **Utforma ett experiment med hjälp av designfilen för experimentet**
 
-1. Om du har administratörsåtkomst till dina webb- eller programservrar navigerar du till installationsmappen på valfri [!DNL Sensor] [!DNL Sensor] dator i webbklustret. Om du inte har administratörsåtkomst kontaktar du kontohanteraren i Adobe för att begära filen.
+1. Om du har administratörsåtkomst till dina webb- eller programservrar navigerar du till installationsmappen för [!DNL Sensor] på valfri [!DNL Sensor]-dator i webbklustret. Om du inte har administratörsåtkomst kontaktar du kontohanteraren i Adobe för att begära filen.
 1. Öppna filen VS Controlled Experiment Design.xls. (Du kan ändra namn på filen om du vill.)
 
    Kalkylbladet på följande sida är ett exempel på hur du skulle slutföra kalkylbladet när du förbereder testning av exempelhypotesen som används i hela den här guiden.
@@ -58,7 +57,7 @@ Kalkylbladet för experimentell design kan endast ge användbara statistiska slu
   </tr> 
   <tr> 
    <td colname="col1"> Måttdefinition </td> 
-   <td colname="col2"> <p>Definitionen av det mätvärde som experimentet baseras på. </p> <p>Format: Besökare[X]/Besökare </p> <p>Exempel: <span class="filepath"> Besökare[URI='conversionpage.asp']/Besökare</span></p> </td> 
+   <td colname="col2"> <p>Definitionen av det mätvärde som experimentet baseras på. </p> <p>Format: Besökare[X]/Besökare </p> <p>Exempel: <span class="filepath"> Besökare[URI='conversionpage.asp']/Visitors</span></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Avsedd starttid </td> 
@@ -156,7 +155,7 @@ Du måste titta på värdet i fältet Minimum Visitors Required (Test+Control Gr
 
 ![](assets/Experiment_Design_Min_Visitors.png)
 
-och jämför det med värdet i fältet Total i [!DNL Visitors] kolumnen.
+och jämför det med värdet i fältet Total i kolumnen [!DNL Visitors].
 
 ![](assets/Experiment_Design_Total_Visitors.png)
 
