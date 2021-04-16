@@ -1,16 +1,17 @@
 ---
 description: Med en tidsdimension kan du skapa en uppsättning periodiska eller absoluta mått för lokal tid (t.ex. Dag, Veckodag, Timme på dagen, Reservationstid osv.) baserat på ett tidsstämpelfält som du anger för parametern Indatatid (1970 epok).
-solution: Analytics
-title: Tidsdimensioner
-topic: Data workbench
+title: Dimensioner
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
+exl-id: f9534b24-3a16-4220-bac2-bc541e121005
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 1%
 
 ---
 
-
-# Tidsdimensioner{#time-dimensions}
+# Dimensioner{#time-dimensions}
 
 Med en tidsdimension kan du skapa en uppsättning periodiska eller absoluta mått för lokal tid (t.ex. Dag, Veckodag, Timme på dagen, Reservationstid osv.) baserat på ett tidsstämpelfält som du anger för parametern Indatatid (1970 epok).
 
@@ -38,7 +39,7 @@ Tidsdimensionerna definieras av följande parametrar:
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Dimensioner </td> 
+   <td colname="col1"> Mått </td> 
    <td colname="col2"> <p>Du kan ange dimensionsnamn för följande perioder: </p> <p> 
      <ul id="ul_EB0837DD66BE4004A615A6029EEF4CD5"> 
       <li id="li_2E46E6DB004E443C8CC831DCEE743D60"> Dag </li> 
@@ -53,7 +54,7 @@ Tidsdimensionerna definieras av följande parametrar:
   <tr> 
    <td colname="col1"> Dold </td> 
    <td colname="col2"> Avgör om dimensionen visas i gränssnittet för data workbench. Som standard är den här parametern inställd på false. Om dimensionen till exempel bara ska användas som bas för ett mätresultat, kan du ställa in den här parametern på true för att dölja dimensionen från data workbench-visningen. </td> 
-   <td colname="col3"> true </td> 
+   <td colname="col3"> sant </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Indatatid (1970 epok) </td> 
@@ -76,4 +77,3 @@ Tidsdimensionerna definieras av följande parametrar:
 I det här exemplet skapas en uppsättning tidsdimensioner baserade på det användardefinierade indatafältet x-time-1970. Tidsdimensionerna för uppsättningen heter&quot;Sessionstid&quot;. Eftersom det överordnade elementet för varje dimension är sessionsdimensionen, motsvarar varje element i tidsdimensionerna den tid då en session påbörjades. Parametern Startdag för vecka anger att varje vecka i dimensionen Vecka börjar på måndag.
 
 ![](assets/cfg_Transformation_Dim_TimeDim.png)
-
