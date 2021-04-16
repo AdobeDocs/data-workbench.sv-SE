@@ -1,18 +1,19 @@
 ---
-description: Visar hur du konfigurerar rubrik, profil, dimension, mått, filter, Visa överkant, Sortera efter och Tidsperiod.
-solution: Analytics
+description: Visar hur du konfigurerar rubrik, profil, Dimension, mått, filter, Visa överkant, Sortera efter och Tidsperiod.
 title: Konfigurera visualiseringar
-topic: Data workbench
 uuid: aca77188-8f28-4554-8913-412b252f688c
+exl-id: 153adf94-5689-4917-9d71-625caef49903
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 0%
 
 ---
 
-
 # Konfigurera visualiseringar{#configuring-visualizations}
 
-Visar hur du konfigurerar rubrik, profil, dimension, mått, filter, Visa överkant, Sortera efter och Tidsperiod.
+Visar hur du konfigurerar rubrik, profil, Dimension, mått, filter, Visa överkant, Sortera efter och Tidsperiod.
 
 Varje visualisering på kontrollpanelens arbetsyta har en egen konfiguration. När en visualisering först läggs till på kontrollpanelens arbetsyta visas dess konfigurationsfönster automatiskt. När du har konfigurerat visualiseringen kan du när som helst ändra den genom att klicka på kugghjulsikonen i den övre högra delen av visualiseringsfönstret.
 
@@ -22,7 +23,7 @@ Varje visualisering på kontrollpanelens arbetsyta har en egen konfiguration. N�
 
 ## Visualiseringstitel {#section-0414844283d745ae912e85f8ea14a51d}
 
-I det här fältet kan du anpassa den titel som visas högst upp i visualiseringen. Som standard är rubriken inställd på **[!UICONTROL Automatic Title]**, vilket automatiskt genererar en titel för visualiseringsfönstret. Genom att avmarkera **[!UICONTROL Automatic Title]** knappen kan du placera valfri rubrik i det här fältet. (Det här fältet gäller för alla visualiseringar.)
+I det här fältet kan du anpassa den titel som visas högst upp i visualiseringen. Som standard är rubriken inställd på **[!UICONTROL Automatic Title]**, vilket automatiskt genererar en titel för visualiseringsfönstret. Genom att rensa knappen **[!UICONTROL Automatic Title]** kan du placera valfri titel i det här fältet. (Det här fältet gäller för alla visualiseringar.)
 
 ![](assets/title.png)
 
@@ -42,7 +43,7 @@ Profiler är datauppsättningar som definieras i Data workbench och som innehål
 
 Här kan du välja vilken dimension du vill visualisera. Listan fylls i från listan med tillgängliga dimensioner från den profil som valts i fältet Profil. Klicka på önskad dimension och klicka sedan på knappen Välj. (Det här fältet gäller inte för visualiseringar av metriska förklaringar och RTF.)
 
-Dimensioner är kategorier av liknande datatyper. Dimensionen Dagar i veckan består till exempel av följande dataelement: Söndag, måndag, tisdag, onsdag, torsdag, fredag och lördag. Dimensionerna visar vad som mäts.
+Dimensioner är kategorier av liknande datatyper. Dimensionen Dagar i veckan består till exempel av följande dataelement: Söndag, måndag, tisdag, onsdag, torsdag, fredag och lördag. Dimensioner visar vad som mäts.
 
 ![](assets/dimension.png)
 
@@ -60,11 +61,11 @@ Multimetriska visualiseringar har ett flermetriskt urvalsfönster:
 
 Listan fylls i från listan med mätvärden som är tillgängliga från den profil som valts i fältet Profil.
 
-Klicka på önskade mätvärden och sedan på **[!UICONTROL Select]**. (Det här fältet gäller inte för Rich Text-visualiseringar.)
+Klicka på önskade mätvärden och klicka sedan på **[!UICONTROL Select]**. (Det här fältet gäller inte för Rich Text-visualiseringar.)
 
 ## Filter {#section-f8619ae2f8e54735a2c1b0fbb8bb1281}
 
-Välj de filter som du vill använda för visualiseringen. I filterurvalsfönstret kan du välja flera filter från filterlistan. Listan fylls i från listan med tillgängliga filter från den profil som valts i fältet Profil. Klicka på det önskade filtret och sedan på **[!UICONTROL Select]**.
+Välj de filter som du vill använda för visualiseringen. I filterurvalsfönstret kan du välja flera filter från filterlistan. Listan fylls i från listan med tillgängliga filter från den profil som valts i fältet Profil. Klicka på önskat filter och sedan på **[!UICONTROL Select]**.
 
 >[!NOTE]
 >
@@ -94,9 +95,9 @@ På så sätt kan du ange hur data ska sorteras när de visas inom visualisering
 
 Med den här visualiseringen kan du ange önskat start- och/eller slutdatum för de data som ska visas i visualiseringen.
 
-Om du väljer **[!UICONTROL All Dates]**visas hela det tillgängliga datumintervallet i profilen.
+Om du väljer **[!UICONTROL All Dates]**visas hela datumintervallet som är tillgängligt i profilen.
 
-Om du väljer **[!UICONTROL Range]** det här alternativet visas endast de data som ligger inom ett angivet intervall. Om du vill ange datumintervallet kan du skriva in start- och/eller slutdatumet eller använda en kalenderinmatning genom att välja kalenderikonen.
+Om du väljer **[!UICONTROL Range]** visas endast de data som ligger inom ett angivet intervall. Om du vill ange datumintervallet kan du skriva in start- och/eller slutdatumet eller använda en kalenderinmatning genom att välja kalenderikonen.
 
 (Det här fältet gäller inte för Rich Text-visualiseringar.)
 
@@ -105,4 +106,3 @@ Om du väljer **[!UICONTROL Range]** det här alternativet visas endast de data 
 >Datumintervall som används här används bara för motsvarande visualisering, inte för hela instrumentpanelen. Detta är användbart när du vill jämföra resultatet av två olika visualiseringar med olika datumintervall.
 
 ![](assets/time_period.png)
-
