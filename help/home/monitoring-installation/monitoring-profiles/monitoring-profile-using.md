@@ -1,24 +1,25 @@
 ---
 description: Statusprofilen för data workbench-profilen ger aktuell information om tillståndet för data workbench-servern baserat på profilen i stället för servermått eller historiska data.
-solution: Analytics
-title: Arbetsytan Status för Data Workbench-profil
-topic: Data workbench
+title: Datans Workbench profilstatus, arbetsyta
 uuid: b54713c8-863d-4376-8ebf-4a2985e28c76
+exl-id: 40b9b0bf-4fd9-48d8-875b-514921c520cd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 0%
 
 ---
 
-
-# Arbetsytan Status för Data Workbench-profil{#data-workbench-profile-status-workspace}
+# Datans Workbench profilstatus-arbetsyta{#data-workbench-profile-status-workspace}
 
 Statusprofilen för data workbench-profilen ger aktuell information om tillståndet för data workbench-servern baserat på profilen i stället för servermått eller historiska data.
 
-## Status för Data Workbench-profil {#section-65d1fa393cfd450cbacef3cba823fcc1}
+## Datans Workbench profilstatus {#section-65d1fa393cfd450cbacef3cba823fcc1}
 
 Den här statusprofilen ger den aktuella data workbench-serverinformationen, men inte helt i realtid, eftersom agenten avfrågas var tionde minut och rapporteringen alltid innehåller denna fördröjning på tio minuter. Mer exakt är att de datauppsättningar som genereras av den här profilen ger den senaste observationen av servern från agenten, som oftast har en standardavsökningsperiod på tio minuter.
 
-Mer referensinformation om de dimensioner som används i data workbench Profile Status Profile finns i [Statusprofil för](../../../home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md#concept-d4cd7da41c8a42bab4aea25418264e64)insight-profil.
+Mer referensinformation om de dimensioner som används i data workbench Profile Status Profile finns i [Statusprofil för insight Profile](../../../home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md#concept-d4cd7da41c8a42bab4aea25418264e64).
 
 ![](assets/Status_General_Status.png)
 
@@ -33,4 +34,3 @@ Om det fasta måttet är 1 kommer servern att stängas av. Om värdet är 0, är
 **Loggläsning för stora batchladdningar**
 
 ![](assets/Status_General_stalled_log.png)
-
