@@ -1,17 +1,15 @@
 ---
 description: När en sidas HTML-kod har begärts av en webbläsare begär webbläsaren att de inbäddade objekten som sidans HTML-kod refererar till ska fylla i sidan som visas av webbläsaren.
-solution: Analytics
 title: Hämta inbäddade objektbegäranden (sidtaggar)
-topic: Data workbench
 uuid: 7fe561d1-aa5a-4ac9-82ba-aa27c7d208dd
+exl-id: 593e49bc-9619-4e85-8ce3-2e9d23d175c9
 translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 1%
 
 ---
-
 
 # Hämta inbäddade objektbegäranden (sidtaggar){#acquiring-embedded-object-requests-page-tags}
 
@@ -19,11 +17,11 @@ När en sidas HTML-kod har begärts av en webbläsare begär webbläsaren att de
 
 Sådana förfrågningar om inbäddade objekt är oftast förfrågningar om bildfiler eller JavaScript-filer, även om det finns hundratals eller kanske tusentals typer av inbäddade objekt som används på Internet idag. Många av dessa förfrågningar om inbäddade objekt är i allmänhet inte användbara vid analys eller rapportering av en webbplats affärsverksamhet. Många sådana förfrågningar är därför inte lämpliga för förvärv såvida de inte har ett specifikt affärssyfte, som att presentera en annons eller göra ett annat mått på webbplatsaktiviteten.
 
-En bild kan till exempel vara en annons, och du kanske vill veta att annonsen imponerades av en besökare. Ett JavaScript-kodfragment kan användas för att göra en mätning av att webbläsaren har en viss egenskap och skicka tillbaka det till en [!DNL Sensor] för förvärv. Varje sida på en plats kan innehålla 10 eller 100 inbäddade objektbegäranden. Om en plats lagrar logginformation för varje begäran, multipliceras mängden data som behövs för att hålla loggdata tillgängliga för framtida analys med antalet inbäddade objektbegäranden för varje begärd sida. Därför [!DNL Site] kan du behålla de förfrågningar som är viktiga för analys och ignorera andra innan du ådrar dig onödiga lagringskostnader.
+En bild kan till exempel vara en annons, och du kanske vill veta att annonsen imponerades av en besökare. Ett JavaScript-kodfragment kan användas för att göra en mätning av att webbläsaren har en viss egenskap och skicka det tillbaka till en [!DNL Sensor] för förvärv. Varje sida på en plats kan innehålla 10 eller 100 inbäddade objektbegäranden. Om en plats lagrar logginformation för varje begäran, multipliceras mängden data som behövs för att hålla loggdata tillgängliga för framtida analys med antalet inbäddade objektbegäranden för varje begärd sida. Av den anledningen kan du med [!DNL Site] behålla de förfrågningar som är viktiga för analys och ignorera andra innan du ådrar dig onödiga lagringskostnader.
 
-Genom att använda åsidosättningsfunktionen som finns i filtreringsfunktionerna för innehållstyp i [!DNL Sensor] (bifogar &quot;Log=1&quot; till frågesträngen för en inbäddad objektbegäran-URL) kan den aktuella inbäddade objektbegäran och relaterade mätdata hämtas utan att webbplatshanteraren behöver lagra alla begäranden av den typen (till exempel alla `<image>` begäranden).
+Genom att använda åsidosättningsfunktionen som finns i filtreringsfunktionerna för innehållstyp i [!DNL Sensor] (som bifogar &quot;Log=1&quot; till frågesträngen för en inbäddad objektbegäran-URL), kan just den inbäddade objektbegäran och relaterade mätdata hämtas utan att platshanteraren behöver lagra alla begäranden av den typen (till exempel alla `<image>`-begäranden).
 
-[!DNL Sensor] samlar in mätdata i följande tabell för varje inbäddad objektbegäran som görs av webbservern, förutsatt att [!DNL Sensor] inte har konfigurerats för att filtrera ut eller att filtret har åsidosatts. Den insamlade informationen är relaterad till besökaren och sessionen och efterföljande sessioner via loggposterna x-trackingid eller cs(cookie).
+[!DNL Sensor] samlar in mätdata i följande tabell för varje inbäddad objektbegäran som görs av webbservern, förutsatt att den inte  [!DNL Sensor] är konfigurerad för att filtrera ut eller att filtret har åsidosatts. Den insamlade informationen är relaterad till besökaren och sessionen och efterföljande sessioner via loggposterna x-trackingid eller cs(cookie).
 
 <table id="table_11BE08A798E743EC8E76F738F0CE5884"> 
  <thead> 
@@ -38,7 +36,7 @@ Genom att använda åsidosättningsfunktionen som finns i filtreringsfunktionern
   <tr> 
    <td colname="col1"> x-trackingid </td> 
    <td colname="col2"> Spåra identifierare (unik besökare) </td> 
-   <td colname="col3"> Identifieraren läser från en cookie som placerats i användarens webbläsare av <span class="wintitle"> Sensor </span> vid den första begäran </td> 
+   <td colname="col3"> Identifieraren har läst från en cookie som placerats i användarens webbläsare av <span class="wintitle"> sensor </span> vid första begäran </td> 
    <td colname="col4"> V1st=3C94007B4E01F9C2 </td> 
   </tr> 
   <tr> 
@@ -75,13 +73,13 @@ Genom att använda åsidosättningsfunktionen som finns i filtreringsfunktionern
    <td colname="col1"> s-dns </td> 
    <td colname="col2"> Serverdomännamn </td> 
    <td colname="col3"> Domännamn för webbservern som bearbetar begäran </td> 
-   <td colname="col4"> <span class="filepath"> www.domain.com </span> </td> 
+   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(reference) </td> 
    <td colname="col2"> Refererande URL </td> 
    <td colname="col3"> Innehåll i HTTP-referensfältet som skickas av klienten </td> 
-   <td colname="col4"> <span class="filepath"> http://www.referringsite.com </span> </td> 
+   <td colname="col4"> <span class="filepath"> http://www.referringsite.com  </span> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(user-agent) </td> 
@@ -103,4 +101,3 @@ Genom att använda åsidosättningsfunktionen som finns i filtreringsfunktionern
   </tr> 
  </tbody> 
 </table>
-
