@@ -1,14 +1,15 @@
 ---
 description: Konceptuell information om kalkylbladsuttryck och användning av cellreferenser.
-solution: Analytics
 title: Kalkylbladsuttryck
-topic: Data workbench
 uuid: be57d6bd-3e13-4c90-9034-8e0f2b8315aa
+exl-id: 1ff3ec24-0363-4b6c-8c91-31e49ed0f7c4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 1%
 
 ---
-
 
 # Kalkylbladsuttryck{#worksheet-expressions}
 
@@ -45,19 +46,19 @@ I följande tabell visas exempelformler för kalkylbladet i föregående exempel
   </tr> 
   <tr> 
    <td colname="col1"> <p>B4 </p> <p>Refererade besökare från hänvisande A som visade sidan Använd nu </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Refererade_besökare[Page="/applynow/default.asp" </span> </p> <p> AND <span class="filepath"> Referrer="Ref A"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Refererade_besökare[Page="/applynow/default.asp"  </span> </p> <p> AND <span class="filepath"> Referer="Ref A"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>C2 </p> <p>Besökare som visade sidan Använd nu och sidan Programguiden </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Besökare[Page="/applynow/default.asp" </span> </p> <p> AND <span class="filepath"> Page="/applynow/appwizard.asp"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Besökare[Page="/applynow/default.asp"  </span> </p> <p> AND <span class="filepath"> Page="/applynow/appwizard.asp"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>C3 </p> <p>Refererade besökare som visade sidan Använd nu och sidan Programguiden </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Refererade_besökare[Page="/applynow/default.asp" </span> </p> <p> AND <span class="filepath"> Page="/applynow/appwizard.asp"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Refererade_besökare[Page="/applynow/default.asp"  </span> </p> <p> AND <span class="filepath"> Page="/applynow/appwizard.asp"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>C4 </p> <p>Refererade besökare från hänvisande A som visade sidan Använd nu och sidan för programguiden </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Refererade_besökare[Page="/applynow/default.asp"</span> </p> <p> AND <span class="filepath"> Page="/applynow/appwizard.asp"</span> </p> <p> AND <span class="filepath"> Referrer="Ref A"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Refererade_besökare[Page="/applynow/default.asp"</span> </p> <p> AND <span class="filepath"> Page="/applynow/appwizard.asp"</span> </p> <p> AND <span class="filepath"> Referer="Ref A"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>D2 </p> <p>Procentandel besökare som visade sidan Använd nu och sidan Programguiden </p> </td> 
@@ -74,7 +75,7 @@ I följande tabell visas exempelformler för kalkylbladet i föregående exempel
  </tbody> 
 </table>
 
-Precis som med andra visualiseringar uppdateras kalkylblad automatiskt när du gör en markering i en annan visualisering på arbetsytan. Mer information om hur du markerar finns i [Göra markeringar i Visualiseringar](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746).
+Precis som med andra visualiseringar uppdateras kalkylblad automatiskt när du gör en markering i en annan visualisering på arbetsytan. Mer information om hur du markerar finns i [Göra markeringar i visualiseringar](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746).
 
 I följande exempel på webbdata har flera dagar med sessionsdata valts i visualiseringen Sessioner efter dag. Kalkylbladet visar att ungefär 69 procent av besökarna från Referer A som visade sidan Använd nu under den valda tidsramen även visade sidan Programguide. Utan detta val (som visas i exemplet ovan) visade ungefär 55 procent av besökarna från Referer A sidan Använd nu och sidan Programguide.
 
@@ -86,7 +87,6 @@ Du kan ersätta valfri sträng, oavsett om den är för sig eller i ett annat ut
 
 * **Enkel cellreferens:** Cell A2 innehåller textbesökarna, som används som rubrik. Cell B2 innehåller [!DNL eval(A1)], som utvärderas till [!DNL =Visitors].
 
-* **Filtercellsreferens:** Cell A5 innehåller gårdagens datum. Cell B5 innehåller [!DNL-besökare[ Day=A5 ]], som utvärderas till antalet besökare i går.
+* **Filtercellsreferens:** Cell A5 innehåller gårdagens datum. Cell B5 innehåller [!DNL-besökare[ Day=A5 ]], som utvärderas till antalet besökare igår.
 
-* **Sammanfogad cellreferens:** Cell A5 innehåller dagens datum och cell A6 innehåller tiden 08:00 till 08:59 för en timme. Cell B6 innehåller [!DNL Visitors[ Hour=A5+&quot;&quot;+A6 ]], som beräknas till antalet besökare idag mellan 08.00 och 09.00.
-
+* **Sammanfogad cellreferens:** Cell A5 innehåller dagens datum och cell A6 innehåller tiden 08:00 till 08:59 för en timme. Cell B6 innehåller [!DNL-besökare[ Timme=A5+&quot;&quot;+A6 ]], som beräknas till antalet besökare idag mellan 08:00 och 09:00.
