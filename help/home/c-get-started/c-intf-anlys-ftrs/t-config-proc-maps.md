@@ -1,14 +1,15 @@
 ---
 description: Processkartor kan konfigureras så att de fungerar med valfri kombination av basdimension, gruppdimension, nivådimension och mätvärden som passar ditt program och din datamängd.
-solution: Analytics
 title: Konfigurera en processkarta
-topic: Data workbench
 uuid: e629191e-48b9-4b58-b6aa-3705ff7b387e
+exl-id: 0b37e942-4596-45cc-bc31-db147626f4eb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
-
 
 # Konfigurera en processkarta{#configure-a-process-map}
 
@@ -16,12 +17,12 @@ Processkartor kan konfigureras så att de fungerar med valfri kombination av bas
 
 När du har konfigurerat en processkarta visas den med andra processkartor i [!DNL Add Visualization menu].
 
-1. I [!DNL Profile Manager]klickar du **[!UICONTROL Menu]****[!UICONTROL Add Visualization]** och sedan på den typ av processkarta som du vill konfigurera (2D-metrisk karta, 2D-processkarta eller 3D-processkarta).
+1. Klicka på **[!UICONTROL Menu]** i [!DNL Profile Manager], klicka på **[!UICONTROL Add Visualization]** och klicka sedan på den typ av processkarta som du vill konfigurera (2D-metrisk karta, 2D-processkarta eller 3D-processkarta).
 
-   Minst en [!DNL *.vw] fil finns i katalogen.
+   Minst en [!DNL *.vw]-fil finns i katalogen.
 
 1. Högerklicka på bockmarkeringen för den önskade filen och klicka på **[!UICONTROL Make Local]**.
-1. Högerklicka på bockmarkeringen för filen i [!DNL User] kolumnen och klicka på **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Högerklicka på bockmarkeringen för filen i kolumnen [!DNL User] och klicka på **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Redigera filens parametrar med följande exempelfil och tabell som stödlinjer:
 
    ```
@@ -88,6 +89,6 @@ När du har konfigurerat en processkarta visas den med andra processkartor i [!D
 
    >[!NOTE]
    >
-   >Om du vill vara säker på att processkartan sparas som en [!DNL *.vw] fil anger du Spara som typ till Alla filer i [!DNL Save As] fönstret.
+   >Om du vill vara säker på att processkartan sparas som en [!DNL *.vw]-fil anger du Spara som typ till Alla filer i fönstret [!DNL Save As].
 
-1. (Valfritt) Om du vill göra ändringarna tillgängliga för alla som använder arbetsprofilen, högerklickar du i [!DNL Profile Manager]kryssrutan för filen i [!DNL User] kolumnen och klickar på **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. (Valfritt) Om du vill göra ändringarna tillgängliga för alla användare av arbetsprofilen högerklickar du i [!DNL Profile Manager] på bockmarkeringen för filen i kolumnen [!DNL User] och klickar på **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
