@@ -1,16 +1,17 @@
 ---
 description: Campaign-dimensionen definieras i Site Marketing-profilen för att erbjuda funktioner för kampanjanalys.
-solution: Analytics
-title: Marknadsföringsprofildimensioner
-topic: Data workbench
+title: Dimensioner för marknadsföringsprofiler
 uuid: 034b4318-58e6-4638-9b13-fac83ff9f826
+exl-id: 93804fba-a44b-4cdc-8d67-d4ec0656e742
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 1%
 
 ---
 
-
-# Marknadsföringsprofildimensioner{#marketing-profile-dimensions}
+# Dimensioner för marknadsföringsprofil{#marketing-profile-dimensions}
 
 Campaign-dimensionen definieras i Site Marketing-profilen för att erbjuda funktioner för kampanjanalys.
 
@@ -33,7 +34,7 @@ Campaign-dimensionen definieras i Site Marketing-profilen för att erbjuda funkt
  </tbody> 
 </table>
 
-**Exempel på mått för anpassad marknadsföringsprofil**
+**Exempel på Dimensioner för anpassade marknadsföringsprofiler**
 
 Du kan lägga in ytterligare datamängder för ytterligare analys. Dessa mått läggs till genom att ytterligare information läggs in i dataströmmen som samlas in för analys. Följande tabell innehåller några av de anpassade marknadsföringsdimensionerna som har lagts till i distributioner för kunder i olika branscher:
 
@@ -48,4 +49,3 @@ Du kan lägga in ytterligare datamängder för ytterligare analys. Dessa mått l
 | Källa för marknadsföringskampanj | Tolkar kampanjkällan (första värde) från frågesträngar för marknadsföringskampanjer. |
 | Typ av marknadsföringskampanj | Tolkar kampanjtypen (andra värdet) från frågesträngarna för marknadsföringskampanjer. |
 | PPC-kampanjinformation | Samlar in värdesträngen som är kopplad till frågesträngsvariabeln ppc. |
-
