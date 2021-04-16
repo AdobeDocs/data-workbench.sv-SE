@@ -1,16 +1,17 @@
 ---
 description: Om du vill ansluta till en data workbench-server måste Report Server ha behörighet att komma åt den servern.
-solution: Analytics
-title: Aktivera åtkomst till Data Workbench-servern
-topic: Data workbench
+title: Aktivera åtkomst till Data Workbench Server
 uuid: e112ac2a-34fe-40a2-9324-262f5cb1f681
+exl-id: bf409413-470e-4e05-9bd2-b5b511bbe4a5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 0%
 
 ---
 
-
-# Aktivera åtkomst till Data Workbench-servern{#enabling-access-to-the-data-workbench-server}
+# Aktivera åtkomst till Data Workbench Server{#enabling-access-to-the-data-workbench-server}
 
 Om du vill ansluta till en data workbench-server måste Report Server ha behörighet att komma åt den servern.
 
@@ -18,13 +19,13 @@ Du ger åtkomst till en data workbench-server genom att lägga till Report Serve
 
 >[!NOTE]
 >
->När du arbetar i en klustrad miljö bör Report Server konfigureras för att komma åt master data workbench-servern för att undvika synkroniseringsproblem. I Data Workbench kan du visa information om hur du bearbetar servrar i klustret med hjälp av [!DNL Related Servers] menyalternativet i [!DNL Servers Manager]. Mer information om [!DNL Servers Manager]detta finns i kapitlet Administrativa gränssnitt i *användarhandboken* för Data Workbench.
+>När du arbetar i en klustrad miljö bör Report Server konfigureras för att komma åt den överordnad data workbench-servern för att undvika synkroniseringsproblem. I data workbench kan du visa information om hur du bearbetar servrar i klustret med hjälp av menyalternativet [!DNL Related Servers] i [!DNL Servers Manager]. Mer information om [!DNL Servers Manager] finns i kapitlet Administrativa gränssnitt i *Datans Workbench användarhandbok*.
 
 I proceduren nedan beskrivs hur du manuellt lägger till Report Server i åtkomstkontrollsfilen på en data workbench-server. Om du vill uppdatera åtkomstkontrollsfilen på det här sättet måste du ha tillgång till filsystemet på den dator där data workbench-servern är installerad.
 
-Du kan också uppdatera serverns åtkomstkontrollfil med hjälp av [!DNL Server Files Manager] i data workbench. För att göra detta måste din data workbench-klient ha administratörsbehörighet på servern.
+Du kan också uppdatera serverns åtkomstkontrollfil med [!DNL Server Files Manager] i data workbench. För att göra detta måste din data workbench-klient ha administratörsbehörighet på servern.
 
-Mer information om [!DNL Server Files Manager]detta finns i kapitlet Administrativa gränssnitt i *användarhandboken* för Data Workbench.
+Mer information om [!DNL Server Files Manager] finns i kapitlet Administrativa gränssnitt i *Datans Workbench användarhandbok*.
 
 **Konfigurera åtkomst till en data workbench-server**
 
@@ -33,7 +34,7 @@ Mer information om [!DNL Server Files Manager]detta finns i kapitlet Administrat
    Exempel: [!DNL C:\Adobe\Server\Access Control]
 
 1. Öppna [!DNL Access Control.cfg] i en textredigerare som Anteckningar.
-1. Leta reda på [!DNL Report Server AccessGroup] och lägg till [!DNL Report Server’s] ett gemensamt namn för den här gruppen, vilket markeras i följande filfragment. (Skriv det vanliga namnet exakt som det visas på det digitala [!DNL Report Server’s] certifikatet.)
+1. Leta reda på [!DNL Report Server AccessGroup] och lägg till det vanliga namnet [!DNL Report Server’s] för den här gruppen så som det markeras i följande filfragment. (Skriv det vanliga namnet exakt som det visas på det digitala certifikatet [!DNL Report Server’s].)
 
    ```
    . . .
