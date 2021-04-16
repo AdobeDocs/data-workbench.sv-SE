@@ -1,14 +1,15 @@
 ---
 description: Information om tidszonskoder och -format.
-solution: Analytics
 title: Tidszonskoder
-topic: Data workbench
 uuid: 5698882a-9682-41d8-88d3-8471578a22cc
+exl-id: 2829c4ca-af6f-4ddb-acce-b33c3b552ba7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '376'
+ht-degree: 2%
 
 ---
-
 
 # Tidszonskoder{#time-zone-codes}
 
@@ -25,7 +26,7 @@ Tidszoner uttrycks i ett systemoberoende tidszonsformat (Coordinated Universal T
 
 Tecknet (+) kan antingen vara ett plustecken (+) eller ett minustecken (-), och det är förskjutningen från UTC i timmar och minuter. Den valfria variabeln visar en uppsättning regler för att implementera sommartid eller en liknande policy för klockbyte.
 
-Om du anger regler måste det finnas en tabbavgränsad fil med namnet [!DNL dstrules.dst] i katalogen Dataset\TimeZone för antingen [!DNL Base] profilen (för konfigurationsfiler som inte är kopplade till en viss datauppsättning) eller datauppsättningsprofilen (för konfigurationsfiler som är datauppsättningsspecifika). Filen anger en oberoende uppsättning regler för tidszon för sommartid. Du kan ha olika regeluppsättningar för olika år. I den [!DNL DST.dst] fil som Adobe tillhandahåller i [!DNL Base] profilen specificeras de amerikanska standardreglerna som fastställs i Energy Policy Act från 2005 (som börjar 2007) och amerikanska regler för tidigare år.
+Om du anger moduler måste det finnas en tabbavgränsad fil med namnet [!DNL dstrules.dst] i katalogen Dataset\TimeZone i antingen profilen [!DNL Base] (för konfigurationsfiler som inte är kopplade till en viss datauppsättning) eller datauppsättningsprofilen (för konfigurationsfiler som är datauppsättningsspecifika). Filen anger en oberoende uppsättning regler för tidszon för sommartid. Du kan ha olika regeluppsättningar för olika år. Filen [!DNL DST.dst] som tillhandahålls av Adobe i profilen [!DNL Base] anger de amerikanska standardreglerna som fastställs i energipolicylagen från 2005 (som gäller från och med 2007) och amerikanska regler för tidigare år.
 
 Exempel på tidszonsposter visas nedan:
 
@@ -36,9 +37,9 @@ När det här formatet används behöver systemtidszonen för data workbench-ser
 
 Följande tabell innehåller en lista med koder som du kan använda för att ange tidszoner i tidsbaserade parametrar.
 
-## Tidszonskod, tabell {#section-b4f965b872c543e2ac52a3c94410d076}
+## Kodtabell för tidszon {#section-b4f965b872c543e2ac52a3c94410d076}
 
-Om du implementerar en policy för sommartid eller liknande klockbytesprinciper, måste du spara filen som innehåller rätt regler i katalogen för profilnamn på [!DNL .dst] [!DNL \Dataset\Timezone] datorn med data workbench-servern.
+Om du implementerar sommartid eller en liknande princip för ändring av klockslag, måste du spara filen [!DNL .dst] som innehåller rätt regler i katalogen [!DNL \Dataset\Timezone] för profilnamnet på servern för data.
 
 | Code | Tidszon | Förskjutning från GMT |
 |---|---|---|
@@ -51,4 +52,3 @@ Om du implementerar en policy för sommartid eller liknande klockbytesprinciper,
 | mdt | Mountain, dagsljus | 7 |
 | pst | Pacific Standard | 8 |
 | pdt | Pacific, dagsljus | 8 |
-
