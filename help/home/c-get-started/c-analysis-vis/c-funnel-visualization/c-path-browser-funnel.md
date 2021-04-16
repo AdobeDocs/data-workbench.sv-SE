@@ -1,14 +1,15 @@
 ---
 description: I Trattvisualiseringen kan du öppna en sökvägsläsare för att identifiera ytterligare detaljerad information om besökarens bortfall och genomsökningsvägar.
-solution: Analytics
 title: Lägga till en sökvägsläsare
-topic: Data workbench
 uuid: 6b6879bf-81e5-4c6f-a4a6-eecac1ab0a29
+exl-id: d9ecb982-3b9d-497f-9cae-5c4220a5204f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 0%
 
 ---
-
 
 # Lägga till en sökvägsläsare{#adding-a-path-browser}
 
@@ -29,7 +30,6 @@ Du kan identifiera var besökarna&quot;faller bort&quot; (som lämnade banan) el
    I visualiseringen av Bläddraren anger bredden på de linjer som går in och ut i den valda dimensionen trafikvolymen. Till exempel kom ett fåtal besökare in genom andra rutter innan de kom till Män-sidan, men de flesta kom in via hemsidan. De flesta gick till sidan Män Surfing när de gick.
 
 1. Öppna sökvägsläsaren för att se om det finns några som helst. Högerklicka på ikonen i tratten för att identifiera sökvägen för besökare som gick igenom, eller flyttat till nästa steg i tratten.
-1. Klicka på knappen **Mer** längst ned i visualiseringen i Bläddra efter, om du vill öppna en tabell med alla besök i en tabellvy för föregående och aktuella besök.
+1. Klicka på knappen **Mer** längst ned i visualiseringen i Blädderaren för att öppna en tabell med alla besök listade i en tabellvy för föregående och aktuella besök.
 
    ![](assets/path_browser_more.png)
-
