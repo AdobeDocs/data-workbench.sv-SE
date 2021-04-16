@@ -1,20 +1,21 @@
 ---
 description: Så här skapar du en indatacell.
-solution: Analytics
 title: Skapa en indatacell
-topic: Data workbench
 uuid: 9b2883e4-b12a-4279-9894-37a1df6c34b3
+exl-id: 1e55696e-fcc8-4521-b37b-f52409229e6d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
 
 ---
-
 
 # Skapa en indatacell{#create-an-input-cell}
 
 Så här skapar du en indatacell.
 
-När cell B1 är formaterad som en indatacell (genom att högerklicka på cellen och klicka **[!UICONTROL Format]** > **[!UICONTROL Input Cell]**) och du låser visualiseringen (genom att högerklicka på den övre kanten och klicka **[!UICONTROL Locked]**) kan du ändra värdet på indatacellen så att resultatet visas&quot;när du vill&quot;.
+När cell B1 är formaterad som en indatacell (genom att högerklicka på cellen och klicka på **[!UICONTROL Format]** > **[!UICONTROL Input Cell]**) och du låser visualiseringen (genom att högerklicka på den övre kanten och klicka på **[!UICONTROL Locked]**), kan du ändra värdet på indatacellen för att visa resultaten direkt.
 
 I följande exempel visas ett kalkylblad som visar formeln för en indatacell.
 
@@ -31,4 +32,3 @@ När du har formaterat B1 och låst visualiseringen kan du ändra värdet för d
 ![](assets/vis_Worksheet_InputCell_locked.png)
 
 ![](assets/vis_Worksheet_InputCell_locked_changed.png)
-
