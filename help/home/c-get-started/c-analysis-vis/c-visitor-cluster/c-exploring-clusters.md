@@ -1,18 +1,19 @@
 ---
-description: När du har skapat en klusterdimension kan du spara den och granska den med hjälp av Klusterutforskaren.
-solution: Analytics
+description: När du har skapat en Dimension för kluster kan du spara den och granska den med hjälp av Klusterutforskaren.
 title: Utforska kluster
-topic: Data workbench
 uuid: b0a07525-c586-466a-ac5e-7c7674cb58f8
+exl-id: d144f51c-8103-428d-801c-a12fb3ec5866
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
 
-
 # Utforska kluster{#exploring-clusters}
 
-När du har skapat en klusterdimension kan du spara den och granska den med hjälp av Klusterutforskaren.
+När du har skapat en Dimension för kluster kan du spara den och granska den med hjälp av Klusterutforskaren.
 
 1. Välj Visualisering > Predictive Analytics > Clustering > Cluster Explorer > Clusters. Välj den sparade klusterdimension som du vill utforska.
 
@@ -22,7 +23,7 @@ När du har skapat en klusterdimension kan du spara den och granska den med hjä
 
    ![](assets/explore_clusters_2.png)
 
-1. Om du vill ändra den klusterdimension du utforskar ändrar du radiemått, lägger till trendlinjer och visar korrelationen på den här menyn.
+1. Om du vill ändra den Dimension av kluster som du utforskar ändrar du radiemått, lägger till trendlinjer och visar korrelationen på den här menyn.
 
    ![](assets/explore_clusters_3.png)
 
@@ -31,4 +32,3 @@ När du har skapat en klusterdimension kan du spara den och granska den med hjä
 1. Högerklicka på klustret för att visa menyn och välj bland bildtexttyper: Bild- eller textanteckning, metrisk förklaring, tabell, linjediagram eller punktdiagram.
 
    ![](assets/explore_clusters_4.png)
-
