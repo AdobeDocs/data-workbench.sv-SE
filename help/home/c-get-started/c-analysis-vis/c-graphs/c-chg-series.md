@@ -1,14 +1,15 @@
 ---
 description: Element i en dimension kan färgkodas som en serie i ett linjediagram så att varje element lättare kan spåras i andra visualiseringar på arbetsytan.
-solution: Analytics
 title: Ändra en serie
-topic: Data workbench
 uuid: 4e9630c6-a663-486d-ae82-f6d25f74a41c
+exl-id: 7a639a7f-e526-4916-a957-b005277bdd2d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
-
 
 # Ändra en serie{#change-a-series}
 
@@ -22,9 +23,8 @@ När en serie är aktiv visas data för de olika elementen i dimensionen i omvä
 
 **Aktivera en serie**
 
-* Högerklicka på ett element eller dimensionsetiketten och klicka på **[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]**>*.
+* Högerklicka på ett element eller dimensionens etikett och klicka på **[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]**>*.
 
 **Så här inaktiverar du en serie**
 
-* Högerklicka på ett element eller dimensionens etikett och klicka sedan **[!UICONTROL Change Series]** > **[!UICONTROL None]**.
-
+* Högerklicka på ett element eller dimensionsetiketten och klicka på **[!UICONTROL Change Series]** > **[!UICONTROL None]**.
