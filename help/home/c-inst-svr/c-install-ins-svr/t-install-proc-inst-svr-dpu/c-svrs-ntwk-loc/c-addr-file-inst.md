@@ -1,18 +1,17 @@
 ---
 description: Adressfilen som är installerad på Insight Server innehåller fyra fördefinierade nätverksplatser.
-solution: Analytics
 title: Adressfilen som är installerad på Insight Server
 uuid: a58d36d8-e1a3-43e7-91c5-c57351e1be49
+exl-id: 12e9bfa2-99ac-4584-b761-38401d1bc3d1
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
 
 ---
 
-
-# Adressfilen som är installerad på Insight Server{#the-address-file-installed-on-insight-server}
+# Adressfilen är installerad på Insight Server{#the-address-file-installed-on-insight-server}
 
 Adressfilen som är installerad på Insight Server innehåller fyra fördefinierade nätverksplatser.
 
@@ -42,22 +41,22 @@ Locations = vector: 4 items
 ```
 
 * NetworkLocation 0 är en tom, namnlös nätverksplats som du redigerar för att associera det vanliga namnet för din [!DNL Insight Server] till dess IP-adress. Om servern har flera IP-adresser skapar du ytterligare NetworkLocations.
-* NetworkLocation 1 är [!DNL Insight] nätverksplatsen. Om du inte uttryckligen anger parametern NetworkLocation, [!DNL Insight] tolkas gemensamma namn via den här nätverksplatsen.
+* NetworkLocation 1 är nätverksplatsen [!DNL Insight]. Om du inte uttryckligen anger parametern NetworkLocation löser [!DNL Insight] genvägar via den här nätverksplatsen.
 
-* NetworkLocation 2 är [!DNL Insight Server] nätverksplatsen. När de [!DNL Insight Servers] arbetar i ett kluster använder de den här nätverksplatsen för att matcha vanliga namn för kommunikation mellan servrar.
+* NetworkLocation 2 är nätverksplatsen [!DNL Insight Server]. När [!DNL Insight Servers] används i ett kluster används den här nätverksplatsen för att matcha vanliga namn för kommunikation mellan servrar.
 
-* NetworkLocation 3 är [!DNL Report] serverns nätverksplats. Om du inte uttryckligen anger parametern NetworkLocation, [!DNL Report] tolkas gemensamma namn via den här nätverksplatsen.
+* NetworkLocation 3 är serverns [!DNL Report] nätverksplats. Om du inte uttryckligen anger parametern NetworkLocation löser [!DNL Report] genvägar via den här nätverksplatsen.
 
 ## Konfigurera adressfilen {#section-10caab9854a244e39b09071946f7bd27}
 
-I proceduren nedan beskrivs hur du konfigurerar adressfilen för att definiera en nätverksplats (eller nätverksplatser) för din [!DNL Insight Server]dator.
+Följande procedur beskriver hur du konfigurerar adressfilen för att definiera en nätverksplats (eller nätverksplatser) för din [!DNL Insight Server].
 
 1. Navigera till mappen [!DNL Addresses] i den katalog där du installerade [!DNL Insight Server] (till exempel [!DNL C:\Adobe\Server\Addresses)].
 
-1. Leta reda på [!DNL server.address] filen och byt namn på den så att den återspeglar serverns vanliga namn. Om det gemensamma namnet till exempel var [!DNL server.mycompany.com]så skulle du byta namn på filen [!DNL server.mycompany.com.address].
+1. Leta reda på filen [!DNL server.address] och byt namn på filen så att den återspeglar serverns vanliga namn. Om det gemensamma namnet till exempel är [!DNL server.mycompany.com] skulle du byta namn på filen [!DNL server.mycompany.com.address].
 
 1. Öppna den namnändrade filen i en textredigerare som Anteckningar.
-1. Redigera NetworkLocation 0 för att ange det vanliga namnet och IP-adressen för [!DNL Insight Server] filen enligt nedan. Om servern har flera IP-adresser använder du NetworkLocation 0 för att ange serverns IP-adress i det lokala icke-routningsbara nätverket (till exempel dess plats i det interna nätverket).
+1. Redigera NetworkLocation 0 för att ange det vanliga namnet och IP-adressen för [!DNL Insight Server] enligt nedan. Om servern har flera IP-adresser använder du NetworkLocation 0 för att ange serverns IP-adress i det lokala icke-routningsbara nätverket (till exempel dess plats i det interna nätverket).
 
    ```
    Locations = vector: 3 items 
@@ -80,22 +79,22 @@ I proceduren nedan beskrivs hur du konfigurerar adressfilen för att definiera e
  <tbody> 
   <tr> 
    <td colname="col1"> <i>IP-adress</i> </td> 
-   <td colname="col2"> <p>Den numeriska IP-adressen för <span class="keyword"> Insight Server- </span> datorn. </p> <p>Exempel: 192.168.124.176 </p> </td> 
+   <td colname="col2"> <p>Den numeriska IP-adressen för <span class="keyword"> Insight Server </span>-datorn. </p> <p>Exempel: 192.168.124.176 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>Gemensamt namn </i> </td> 
+   <td colname="col1"> <i>Gemensamt namn  </i> </td> 
    <td colname="col2"> <p>Det vanliga namnet som tilldelats det digitala certifikatet för <span class="keyword"> Insight Server </span>. </p> <p>Exempel: <span class="filepath"> server.mycompany.com </span></p> <p>Obs! Var noga med att skriva det här namnet exakt som det visas i certifikatet. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>Namn på nätverksplats </i> </td> 
+   <td colname="col1"> <i>Namn på nätverksplats  </i> </td> 
    <td colname="col2"> <p>Namnet som du vill tilldela till samlingen med vanliga namn och IP-adresser som representeras av denna NetworkLocation. Namnet måste vara unikt i adressfilen. </p> <p>Exempel: Företagets intranät </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-1. Om du [!DNL Insight Server] har ytterligare IP-adresser skapar du ytterligare en NetworkLocation för varje adress. (Ett enkelt sätt att göra detta är att skapa en kopia av den NetworkLocation du skapade ovan och uppdatera IP-adressen i kopian.)
+1. Om din [!DNL Insight Server] har ytterligare IP-adresser skapar du en ytterligare NetworkLocation för varje adress. (Ett enkelt sätt att göra detta är att skapa en kopia av den NetworkLocation du skapade ovan och uppdatera IP-adressen i kopian.)
 
-   Du kan lägga till den nya NetworkLocation i slutet av adressfilen eller infoga den mellan befintliga NetworkLocation-definitioner. (Positionen för en NetworkLocation i adressfilen är inte signifikant. men [!DNL Insight], [!DNL Insight Server]och [!DNL Report] Server NetworkLocations placeras vanligtvis i slutet av filen.)
+   Du kan lägga till den nya NetworkLocation i slutet av adressfilen eller infoga den mellan befintliga NetworkLocation-definitioner. (Positionen för en NetworkLocation i adressfilen är inte signifikant. men i allmänhet placeras nätverksplatserna [!DNL Insight], [!DNL Insight Server] och [!DNL Report] Server i slutet av filen.)
 
    När du har lagt till de nödvändiga NetworkLocations gör du följande för att numrera om objekten i filen:
 
@@ -108,7 +107,7 @@ I proceduren nedan beskrivs hur du konfigurerar adressfilen för att definiera e
    1. Uppdatera NetworkLocation-objektnumren så att NetworkLocations numreras i följd (med början från 0).
    Ett exempel på en adressfil som definierar en [!DNL Insight Server] med två IP-adresser finns i exemplet i det här avsnittet.
 
-1. I nätverksplatserna [!DNL Insight] och [!DNL Report] Server redigerar du parametern Parent så som visas nedan för att ange namnet på den NetworkLocation som [!DNL Insight] och [!DNL Report] använder som standardnätverksplatser. (Ett exempel på hur den överordnade parametern ser ut när den är konfigurerad finns i exemplet i det här avsnittet.)
+1. I nätverksplatserna [!DNL Insight] och [!DNL Report] för servern redigerar du parametern Parent så som visas nedan för att ange namnet på den NetworkLocation som [!DNL Insight] och [!DNL Report] använder som standardnätverksplatser. (Ett exempel på hur den överordnade parametern ser ut när den är konfigurerad finns i exemplet i det här avsnittet.)
 
    ```
    1 = NetworkLocation:  
@@ -122,9 +121,9 @@ I proceduren nedan beskrivs hur du konfigurerar adressfilen för att definiera e
      Parent = string: ClientDefaultNetworkLocation
    ```
 
-   Om du [!DNL Insight Server] har en enda IP-adress och därför bara har en NetworkLocation, pekar du parametern Parent på den NetworkLocation. Om du [!DNL Insight Server] har flera IP-adresser pekar du parametern Parent på den NetworkLocation som definierar den adress som dina [!DNL Insight] - och [!DNL Report] klienter oftast ansluter till.
+   Om din [!DNL Insight Server] har en enda IP-adress och därför bara har en NetworkLocation, pekar du parametern Parent på den NetworkLocation. Om din [!DNL Insight Server] har flera IP-adresser pekar du parametern Parent på den NetworkLocation som definierar den adress som dina [!DNL Insight]- och [!DNL Report]-klienter oftast ansluter till.
 
-1. I nätverksplatsen redigerar du parametern Parent så som visas nedan för att peka på den NetworkLocation som servern använder för att matcha vanliga namn på andra [!DNL Insight Server] [!DNL Insight Servers] när den arbetar i ett kluster. (Även om den här nätverksplatsen inte används om inte en [!DNL Insight Server] används i ett kluster, är det bra att peka parametern Parent mot en nätverksplats som identifierar serverns interna IP-adress, även i en enda serverkonfiguration.)
+1. I nätverksplatsen [!DNL Insight Server] redigerar du parametern Parent så som visas nedan för att peka på den NetworkLocation som servern använder för att matcha vanliga namn för andra [!DNL Insight Servers] när den arbetar i ett kluster. (Även om den här nätverksplatsen inte används om inte [!DNL Insight Server] används i ett kluster, är det bra att peka parametern Parent mot en nätverksplats som identifierar serverns interna IP-adress, även i en enda serverkonfiguration.)
 
    ```
    2 = NetworkLocation:  
@@ -136,11 +135,11 @@ I proceduren nedan beskrivs hur du konfigurerar adressfilen för att definiera e
 I följande exempel visas en ifylld adressfil. Den här filen definierar fem nätverksplatser.
 
 * NetworkLocation-objekten 0 och 1 definierar nätverksplatser med namnen&quot;MyCorporateIntranet&quot; och&quot;Internet&quot;. Dessa nätverksplatser definierar två olika IP-adresser för en server med namnet [!DNL VS01.myCompany.com].
-* NetworkLocation-objekt 2 är [!DNL Insight] nätverksplatsen. Det här är standardnätverksplatsen som används av [!DNL Insight]. I det här exemplet ärver nätverksplatsen [!DNL Insight] dess AddressDefinitions från NetworkLocation på Internet.
+* NetworkLocation-objekt 2 är nätverksplatsen [!DNL Insight]. Det här är standardnätverksplatsen som används av [!DNL Insight]. I det här exemplet ärver nätverksplatsen [!DNL Insight] adressdefinitioner från NetworkLocation på Internet.
 
-* NetworkLocation-objekt 3 är [!DNL Insight Server] nätverksplatsen. Detta är standardnätverksplatsen [!DNL Insight Server] som används vid kommunikation med andra servrar i ett kluster. I det här exemplet ärver nätverksplatsen [!DNL Insight Server] dess AddressDefinitions från NetworkLocation för &quot;MyCorporate Intranet&quot;.
+* NetworkLocation-objekt 3 är nätverksplatsen [!DNL Insight Server]. Det här är standardnätverksplatsen [!DNL Insight Server] som används vid kommunikation med andra servrar i ett kluster. I det här exemplet ärver nätverksplatsen [!DNL Insight Server] adressdefinitioner från NetworkLocation för MyCorporate Intranet.
 
-* NetworkLocation-objekt 4 är [!DNL Report] serverns nätverksplats. Det här är standardnätverksplatsen som används av [!DNL Report]. I det här exemplet ärver [!DNL Report] servernätverksplatsen sina AddressDefinitions från NetworkLocation på Internet.
+* NetworkLocation-objekt 4 är [!DNL Report] serverns nätverksplats. Det här är standardnätverksplatsen som används av [!DNL Report]. I det här exemplet ärver nätverksplatsen [!DNL Report] AddressDefinitions från NetworkLocation på Internet.
 
    ```
    Locations = vector: 5 items 
@@ -175,4 +174,3 @@ I följande exempel visas en ifylld adressfil. Den här filen definierar fem nä
        Name = string: Report Server 
        Parent = string: Internet
    ```
-
