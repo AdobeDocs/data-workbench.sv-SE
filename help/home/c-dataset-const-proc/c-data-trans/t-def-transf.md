@@ -1,14 +1,15 @@
 ---
 description: Du kan definiera dataomformningar som ska användas under loggbearbetnings- eller omformningsfasen för datauppsättningens konstruktion.
-solution: Analytics
 title: Definiera en omformning
-topic: Data workbench
 uuid: 69dd667b-e465-4c1a-a20e-4384e8988cd0
+exl-id: 61ce8093-9e64-419a-bddc-dc2225c0eaab
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 0%
 
 ---
-
 
 # Definiera en omformning{#defining-a-transformation}
 
@@ -16,9 +17,9 @@ Du kan definiera dataomformningar som ska användas under loggbearbetnings- elle
 
 >[!NOTE]
 >
->Adobe rekommenderar att du definierar omformningar i antingen [!DNL Log Processing] eller [!DNL Transformation Dataset Include] filer i stället för i [!DNL Log Processing.cfg] eller [!DNL Transformation.cfg].
+>Adobe rekommenderar att du definierar omformningar i antingen [!DNL Log Processing]- eller [!DNL Transformation Dataset Include]-filer i stället för i [!DNL Log Processing.cfg] eller [!DNL Transformation.cfg].
 
-Följande omformningar fungerar bara när de definieras i [!DNL Transformation.cfg] filen eller i en [!DNL Transformation Dataset Include] fil:
+Följande omformningar fungerar bara när de definieras i [!DNL Transformation.cfg]-filen eller i en [!DNL Transformation Dataset Include]-fil:
 
 * [](../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-uri-transf/c-appenduri.md#concept-a0df05dd958645bf8219fc7b0b675ee4)AppendURII
 * [Korsrader](../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2)
@@ -28,14 +29,14 @@ Följande omformningar fungerar bara när de definieras i [!DNL Transformation.c
 
 **Definiera en omformning**
 
-1. Använd [!DNL Profile Manager] för att öppna den datauppsättningskonfigurationsfil där du vill definiera omvandlingen.
+1. Använd [!DNL Profile Manager] för att öppna den datauppsättningskonfigurationsfil i vilken du vill definiera omvandlingen.
 
-   * (Rekommenderas) Om du vill öppna en datauppsättningsinkluderingsfil läser du [Inkludera filer](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)i datauppsättningen.
-   * Mer information om hur du öppnar [!DNL Log Processing.cfg] filen finns i [Redigera konfigurationsfilen](../../../home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md#task-6a2fa1b735cb4eefad730f0a3a7858e5)för loggbearbetning.
+   * (Rekommenderas) Mer information om hur du öppnar en inkluderingsfil för datauppsättningar finns i [Inkludera datauppsättningar](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md).
+   * Mer information om hur du öppnar filen [!DNL Log Processing.cfg] finns i [Redigera konfigurationsfilen för loggbearbetning](../../../home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md#task-6a2fa1b735cb4eefad730f0a3a7858e5).
 
-   * Mer information om hur du öppnar [!DNL Transformation.cfg] filen finns i [Redigera konverteringskonfigurationsfilen](../../../home/c-dataset-const-proc/c-trans-config-file/t-edit-trans-config-file.md#task-cfef4142c1bf4437a669d1fdc75cabbc).
+   * Mer information om hur du öppnar filen [!DNL Transformation.cfg] finns i [Redigera konfigurationsfilen för omvandling](../../../home/c-dataset-const-proc/c-trans-config-file/t-edit-trans-config-file.md#task-cfef4142c1bf4437a669d1fdc75cabbc).
 
-1. Högerklicka **[!UICONTROL Transformations]** och klicka sedan på **[!UICONTROL Add new]** > *&lt;**[!UICONTROL Transformation type]**>*.
+1. Högerklicka på **[!UICONTROL Transformations]** och klicka sedan på **[!UICONTROL Add new]** > *&lt;**[!UICONTROL Transformation type]**>*.
 1. Ange lämplig information för omvandlingen. Beskrivningar av omformningstyperna och information om deras parametrar finns i följande avsnitt:
 
    * [Standardomformningar](../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-standard-transf.md#concept-25f4bdbf8fe74c4aaeb2fcd226243886)
@@ -46,10 +47,9 @@ Följande omformningar fungerar bara när de definieras i [!DNL Transformation.c
 
        Tips för att definiera och redigera omformningar:
    
-   * När du redigerar konfigurationen för en omformning i ett datautbytefönster kan du använda kortkommandon för grundläggande redigeringsfunktioner, t.ex. Klipp ut (Ctrl+X), Kopiera (Ctrl+C), Klistra in (Ctrl+V), Ångra (Ctrl+Z), Gör om (Ctrl+Skift+Z), markera avsnitt (klicka+dra) och markera alla (Ctrl+a). Du kan dessutom använda kortkommandona för att kopiera och klistra in text eller hela omformningsdefinitioner från en konfigurationsfil ( [!DNL .cfg]) till en annan.
-   * För alla omformningar som du definierar kan du lägga till en eller flera kommentarsrader i kommentarsparametern för att ytterligare beskriva omformningen eller lägga till anteckningar om hur den används. Om du vill lägga till en kommentar med data workbench högerklickar du på **[!UICONTROL Comments]** etiketten och klickar sedan **[!UICONTROL Add new]** > **[!UICONTROL Comment Line]**.
+   * När du redigerar konfigurationen för en omformning i ett datautbyte-fönster kan du använda kortkommandon för grundläggande redigeringsfunktioner, t.ex. Klipp ut (Ctrl+X), Kopiera (Ctrl+C), Klistra in (Ctrl+V), Ångra (Ctrl+Z), Gör om (Ctrl+Skift+Z), markera avsnitt (klicka+dra) och markera alla (Ctrl+a). Du kan dessutom använda kortkommandona för att kopiera och klistra in text eller hela omformningsdefinitioner från en konfigurationsfil ( [!DNL .cfg]) till en annan.
+   * För alla omformningar som du definierar kan du lägga till en eller flera kommentarsrader i kommentarsparametern för att ytterligare beskriva omformningen eller lägga till anteckningar om hur den används. Om du vill lägga till en kommentar med data workbench högerklickar du på etiketten **[!UICONTROL Comments]** och klickar sedan på **[!UICONTROL Add new]** > **[!UICONTROL Comment Line]**.
 
-   * Du kan öppna konfigurationen för alla omformningar från en [!DNL Transformation Dependency Map]. När du har öppnat konfigurationen kan du redigera den och spara ändringarna. Mer information om [!DNL Transformation Dependency Maps]finns i [Verktyg](../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)för datauppsättningskonfiguration.
+   * Du kan öppna konfigurationen för alla omformningar från en [!DNL Transformation Dependency Map]. När du har öppnat konfigurationen kan du redigera den och spara ändringarna. Mer information om [!DNL Transformation Dependency Maps] finns i [Verktyg för datauppsättningskonfiguration](../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5).
 
    * En tom strängutmatning från en omformning kan skriva över en sträng som inte är tom i utdatafältet.
-
