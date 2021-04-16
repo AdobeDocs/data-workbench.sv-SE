@@ -2,16 +2,15 @@
 description: Testresultaten måste vara tydliga och meningsfulla så att du kan vara säker på att fatta stora dollarbeslut baserat på dessa resultat.
 solution: Analytics,Analytics
 title: Vad ska jag testa?
-topic: Data workbench
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
+exl-id: 0f06ff0f-b385-4614-8007-afdb85191a85
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
 
 ---
-
 
 # Vad ska jag testa?{#what-should-i-test}
 
@@ -35,10 +34,10 @@ Många typer av experiment med många olika mål kan utföras med Site. Följand
 För att uppnå dessa mål stöder Site följande typer av metoder för kontrollerad experimenterande och testning:
 
 * **Sidersättning:** Ersätt statisk URL X med statisk URL Y. Denna metod har begränsad användning i en dynamisk miljö.
-* **Dynamisk URI-ersättning:** Det här är en variant av Sidersättning som ersätter den statiska sidan X med den dynamiska sidan Y för att återge dynamiskt innehåll.
-* **Objektersättning:** Ersätt det fasta objektet X med det fasta objektet Y.
+* **Dynamisk URI-ersättning:** Detta är en variant av sidersättning som ersätter statisk sida X med dynamisk sida Y för att återge dynamiskt innehåll.
+* **Objektersättning:** Ersätt fast objekt X med fast objekt Y.
 * **Innehållsersättning:** Ersätt innehållsuppsättningen X (flera objekt, sidor, tabeller och så vidare) med innehållsuppsättningen Y.
-* **Experimentell variabelersättning:** Ersätt JavaScript-objekt /writeCookie_X.js med JavaScript-objekt /writeCookie_Y.js här skriver du en cookie som kan användas av ett bakomliggande system för att hantera visst innehåll.
+* **Experimentera med variabelersättning:** Ersätt JavaScript-objekt /writeCookie_X.js med JavaScript-objekt /writeCookie_Y.js här skriver du en cookie som kan användas av ett bakomliggande system för att hantera visst innehåll.
 
 >[!NOTE]
 >
