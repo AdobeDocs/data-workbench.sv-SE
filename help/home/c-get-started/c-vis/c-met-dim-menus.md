@@ -1,22 +1,23 @@
 ---
 description: De menyer som du kommer åt genom att högerklicka på mät- eller dimensionsområdet i en visualisering ger åtkomst till åtgärder som relaterar till måttet eller dimensionen i den visualiseringen.
-solution: Analytics
 title: Mått och dimensionsmenyer
-topic: Data workbench
 uuid: 0dfae2bd-6c33-4496-83ea-f7f6de960259
+exl-id: 59bed6c1-74b2-49e2-ac68-f22c8bed668a
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 0%
 
 ---
-
 
 # Mått och dimensionsmenyer{#metric-and-dimension-menus}
 
 De menyer som du kommer åt genom att högerklicka på mät- eller dimensionsområdet i en visualisering ger åtkomst till åtgärder som relaterar till måttet eller dimensionen i den visualiseringen.
 
-Mer information om hur du använder dessa menyalternativ med en viss typ av visualisering finns i det lämpliga visualiseringsavsnittet i [Analysvisualiseringar](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md).
+Mer information om hur du använder dessa menyalternativ med en viss typ av visualisering finns i det relevanta visualiseringsavsnittet i [Analysvisualiseringar](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md).
 
-## Menyn Metrisk {#section-115db63a26f04b57ac954a69972c6291}
+## Menyn Mått {#section-115db63a26f04b57ac954a69972c6291}
 
 Du kommer åt menyn Mått genom att högerklicka på ett mätrelaterat område i en visualisering.
 
@@ -42,14 +43,14 @@ Den här menyn innehåller olika alternativ beroende på vilken typ av visualise
   </tr> 
   <tr> 
    <td colname="col1"> <p>Zooma till markering </p> </td> 
-   <td colname="col2"> <p>Zoomar in en markerad delmängd av data i ett linjediagram. Se <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> Zooma in visualiseringar</a>. Mer information om markeringar finns i <a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746"> Göra markeringar i Visualiseringar</a>. </p> </td> 
+   <td colname="col2"> <p>Zoomar in en markerad delmängd av data i ett linjediagram. Se <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> Zooma in visualiseringar</a>. Mer information om markeringar finns i <a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746"> Göra markeringar i visualiseringar</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Metrisk redigerare </p> </td> 
-   <td colname="col2"> <p>Gör att du kan redigera definitionen för det mätvärde som identifieras av fältet för metriskt namn. Se <a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-db6d924cf4e14bcc8d57cfe1059fc797"> Redigera befintliga härledda mått</a>. </p> </td> 
+   <td colname="col2"> <p>Gör att du kan redigera definitionen för det mått som identifieras av fältet för metriskt namn. Se <a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-db6d924cf4e14bcc8d57cfe1059fc797"> Redigera befintliga härledda mått</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Mått </p> </td> 
+   <td colname="col1"> <p>Mätvärden </p> </td> 
    <td colname="col2"> <p>Rubrik för följande måttrelaterade menyalternativ. </p> </td> 
   </tr> 
   <tr> 
@@ -69,7 +70,7 @@ Den här menyn innehåller olika alternativ beroende på vilken typ av visualise
    <td colname="col2"> <p>Rubrik för följande layoutrelaterade menyalternativ. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Lägg till dimension </p> </td> 
+   <td colname="col1"> <p>Lägg till Dimension </p> </td> 
    <td colname="col2"> <p>Lägger till ytterligare en dimension till visualiseringen. </p> </td> 
   </tr> 
   <tr> 
@@ -79,7 +80,7 @@ Den här menyn innehåller olika alternativ beroende på vilken typ av visualise
  </tbody> 
 </table>
 
-## Använda dimensionsmenyn {#section-e09de0aa6b74459a957b627ff7d07979}
+## Använd dimensionsmenyn {#section-e09de0aa6b74459a957b627ff7d07979}
 
 Du kommer åt dimensionsmenyn genom att högerklicka på ett dimensionsrelaterat område i en visualisering.
 
@@ -136,7 +137,7 @@ Den här menyn innehåller olika alternativ beroende på vilken typ av visualise
    <td colname="col2"> <p>Lägger till en visualisering som använder den valda dimensionen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Spara dimension </p> </td> 
+   <td colname="col1"> <p>Spara Dimension </p> </td> 
    <td colname="col2"> <p>Sparar den valda dimensionen från visualiseringen. </p> </td> 
   </tr> 
   <tr> 
@@ -148,7 +149,7 @@ Den här menyn innehåller olika alternativ beroende på vilken typ av visualise
    <td colname="col2"> <p>Rubrik för följande layoutrelaterade menyalternativ. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Lägg till dimension </p> </td> 
+   <td colname="col1"> <p>Lägg till Dimension </p> </td> 
    <td colname="col2"> <p>Lägger till ytterligare en dimension till visualiseringen. </p> </td> 
   </tr> 
   <tr> 
@@ -156,13 +157,12 @@ Den här menyn innehåller olika alternativ beroende på vilken typ av visualise
    <td colname="col2"> <p>Ändrar dimensionen i visualiseringen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Flytta dimension </p> </td> 
+   <td colname="col1"> <p>Flytta Dimension </p> </td> 
    <td colname="col2"> <p>Flyttar den valda dimensionen till en annan axel i visualiseringen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Ta bort dimension </p> </td> 
+   <td colname="col1"> <p>Ta bort Dimension </p> </td> 
    <td colname="col2"> <p>Tar bort den valda dimensionen från visualiseringen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
