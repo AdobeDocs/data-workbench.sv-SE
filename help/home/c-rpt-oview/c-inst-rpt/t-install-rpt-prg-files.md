@@ -1,16 +1,17 @@
 ---
 description: Steg för att installera rapportserverprogramfilerna.
-solution: Analytics
 title: Installera rapportprogramfiler
-topic: Data workbench
 uuid: 9c250783-7080-4c27-bd8c-add208b2b1bf
+exl-id: 8f871e5c-1267-4564-a168-398f9dc793a4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '142'
+ht-degree: 0%
 
 ---
 
-
-# Installera rapportprogramfiler{#installing-the-report-program-files}
+# Installerar rapportprogramfiler{#installing-the-report-program-files}
 
 Steg för att installera rapportserverprogramfilerna.
 
@@ -20,7 +21,7 @@ Report Server är en klient till Data Workbench Server och är licensierad att k
 
    Exempel: [!DNL D:\Adobe\Report]
 
-1. Gå till nedladdningswebbplatsen som tillhandahålls av Adobe och leta reda på installationsfilen för Report Server.
+1. Gå till hämtningsplatsen som tillhandahålls av Adobe och leta upp installationsfilen för Report Server.
 1. Extrahera innehållet i installationsfilen till den katalog du skapade ovan.
 1. Om du vill exportera till Excel i Windows 2008-system skapar du en av följande kataloger:
 
@@ -31,4 +32,4 @@ Report Server är en klient till Data Workbench Server och är licensierad att k
 1. Välj **[!UICONTROL Security]**.
 1. Klicka på **[!UICONTROL Edit]**.
 1. Lägg till **[!UICONTROL Everyone]**.
-1. Bevilja full kontroll för **[!UICONTROL Everyone]**.
+1. Bevilja fullständig kontroll för **[!UICONTROL Everyone]**.
