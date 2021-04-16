@@ -1,16 +1,17 @@
 ---
 description: Med Data Workbench kan ni skapa nya mätvärden, filter och dimensioner för att utöka den information som är tillgänglig via ett program eller enkelt anpassa definitionerna i programmet efter era behov. Den öppna datatypen, måtten och filtren gör att du kan besvara fler frågor när du lägger till nya mätvärden och dimensioner.
-solution: Analytics
-title: Expandera mått, dimensioner och filter
-topic: Data workbench
+title: Expandera mått, Dimensioner och filter
 uuid: eaec0731-1916-4063-9fda-3a92ee325024
+exl-id: 5a7719a3-ba2e-4361-87e0-4d0df23196df
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 0%
 
 ---
 
-
-# Expandera mått, dimensioner och filter{#expanding-metrics-dimensions-and-filters}
+# Expandera mått, Dimensioner och filter{#expanding-metrics-dimensions-and-filters}
 
 Med Data Workbench kan ni skapa nya mätvärden, filter och dimensioner för att utöka den information som är tillgänglig via ett program eller enkelt anpassa definitionerna i programmet efter era behov. Den öppna datatypen, måtten och filtren gör att du kan besvara fler frågor när du lägger till nya mätvärden och dimensioner.
 
