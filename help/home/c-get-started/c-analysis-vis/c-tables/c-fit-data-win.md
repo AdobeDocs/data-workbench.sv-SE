@@ -1,14 +1,15 @@
 ---
 description: Med alternativet Anpassa till fönster kan datakolumnerna i en tabell automatiskt expanderas eller krympas för att passa fönstret varje gång du ändrar storlek på det.
-solution: Analytics
 title: Anpassa data till ett fönster
-topic: Data workbench
 uuid: a45283e1-56df-4110-a052-2135baeaf709
+exl-id: 79eb1177-11bd-44ad-aafc-4de6f961f78f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 0%
 
 ---
-
 
 # Anpassa data till ett fönster{#fit-data-to-a-window}
 
@@ -18,7 +19,7 @@ När [!DNL Fit to Window] är inaktiverat måste du ändra storlek på datakolum
 
 **Aktivera eller inaktivera alternativet Anpassa till fönster**
 
-* Högerklicka på visualiseringens övre kant och klicka **[!UICONTROL Fit to Window]**.
+* Högerklicka på visualiseringens övre kant och klicka på **[!UICONTROL Fit to Window]**.
 
    ![](assets/mnu_Table_Fit.png)
 
@@ -29,4 +30,3 @@ När det här alternativet är aktiverat visas ett X till vänster om [!DNL Fit 
 * Klicka på linjen som avgränsar två datakolumner (i det övre axelområdet) och dra till önskad bredd.
 
    ![](assets/mnu_Table_Resize.png)
-
