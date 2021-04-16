@@ -1,18 +1,19 @@
 ---
-description: Versionsinformationen för Data Workbench 6.1 innehåller nya funktioner, uppgraderingskrav, felkorrigeringar och kända fel.
-solution: Analytics
-title: Versionsinformation för Data Workbench 6.2
-topic: Data workbench
+description: Versionsinformation om Data Workbench 6.1 innehåller nya funktioner, uppgraderingskrav, felkorrigeringar och kända fel.
+title: Versionsinformation om Data Workbench 6.1
 uuid: 5bfb558a-ce85-4b4a-95dc-ccef337c4d1b
+exl-id: ed37a00f-b4cd-428e-abb7-7c52d5cfd2f9
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '693'
+ht-degree: 0%
 
 ---
 
+# Versionsinformation för Data Workbench 6.1{#data-workbench-release-notes}
 
-# Versionsinformation för Data Workbench 6.2{#data-workbench-release-notes}
-
-Versionsinformationen för Data Workbench 6.1 innehåller nya funktioner, uppgraderingskrav, felkorrigeringar och kända fel.
+Versionsinformation om Data Workbench 6.1 innehåller nya funktioner, uppgraderingskrav, felkorrigeringar och kända fel.
 
 ## Nya funktioner {#section-1225066ea8f44cf68e42e019d0bca816}
 
@@ -25,20 +26,20 @@ Data Workbench 6.1 innehåller följande nya funktioner:
 | Data workbench nu på kinesiska | Data Workbench har nu stöd för förenklad kinesiska för klientprogrammet. Data workbench stöder även IME (Input Method Editor) som en sekundär textinmatningsprocess för internationella språk. |
 | Matematiska funktioner | Nu kan du lägga till matematiska funktioner i mått, matematiska omformningar och kalkylbladsceller för att ytterligare beräkna datauppsättningar. |
 | Statistiska bildtexter | Tabeller erbjuder nu en statistiksammanfattning för måttkolumner. Anropet kan visa medelvärdet, standardavvikelsen, minimi- och maximivärden, variansen och totalantalet för kolumnen. Den kan vägas in i alla urval och utvärderingar. |
-| filtret Korrelationsmatris | Korrelationsmatrisen har uppdaterats med ett binärt filter så att du kan begränsa värden för en eller båda korrelerade mätvärden, vilket gör att du kan fokusera jämförelsen bättre. Nu kan du även lägga till Dimension-element från en dimensionstabell genom att klicka på Ctrl + Alt och dra element till matriskolumnen eller -raden som ska utvärderas. |
+| filtret Korrelationsmatris | Korrelationsmatrisen har uppdaterats med ett binärt filter så att du kan begränsa värden för en eller båda korrelerade mätvärden, vilket gör att du kan fokusera jämförelsen bättre. Nu kan du även lägga till element från en matristabell genom att klicka på Ctrl + Alt och dra Dimensioner till den matriskolumn eller Dimension som ska utvärderas. |
 | Dölj utfallsetikett i trattvisualisering | Växla mellan att visa och dölja bortfallsetiketter i en trattvisualisering genom att högerklicka på titeln och välja Dölj bortfall. |
 
 ## Sortera tabellkolumner{#sorting-table-columns}
 
 Sortera tabellkolumner i bokstavsordning eller efter ordningstal.
 
-Om du bättre vill markera element i en dimensionstabell kan du ordna den första kolumnen i bokstavsordning eller efter ordningstal genom att välja **[!UICONTROL Sort]** menyalternativet.
+Om du bättre vill markera element i en texttabell kan du ordna den första Dimensionen i bokstavsordning eller efter ordningstal genom att välja menyalternativet **[!UICONTROL Sort]**.
 
 Tecknet # visas när en kolumn sorteras efter ordningstal (standard).
 
 **Välj sorteringsalternativ**
 
-Om du vill ändra sorteringsalternativen mellan ordningstal och alfabet högerklickar du och väljer **[!UICONTROL Sort]**. Klicka på pilen för att vända ordningen.
+Om du vill ändra sorteringsalternativen mellan ordningstalet och alfabetet högerklickar du och väljer **[!UICONTROL Sort]**. Klicka på pilen för att vända ordningen.
 
 ![](assets/sort_table_alpha.png)
 
@@ -54,7 +55,7 @@ Funnel-visualisering identifierar var en kund överger en marknadsföringskampan
 
 ![](assets/c_funnel_hide_fallout.png)
 
-I en **[!UICONTROL Funnel]** visualisering kan du högerklicka på titeln och välja **[!UICONTROL Hide Fallout]** från menyn för att dölja utfallsetiketterna.
+I en **[!UICONTROL Funnel]**-visualisering kan du högerklicka på titeln och välja **[!UICONTROL Hide Fallout]** på menyn för att dölja utfallsetiketterna.
 
 ## Kända fel {#section-ff2180c6871c413480e15fa915c253b9}
 
@@ -70,6 +71,6 @@ I en **[!UICONTROL Funnel]** visualisering kan du högerklicka på titeln och v�
 * När du använder automatisk radbrytning i kalkylbladsvisualisering radbryts inte lokaliserade ord korrekt. Extra skräptecken läggs till i strängen.
 
    Tillfällig lösning: Ingen
-* Det går inte att starta [!DNL Insight.exe] om installationskatalogen har ett namn med icke-engelska tecken.
+* Det går inte att starta [!DNL Insight.exe] om installationskatalogen har namn med tecken som inte är engelska.
 
    Tillfällig lösning: Behåll standardnamn eller byt namn med endast engelska tecken i mappsökvägen för att starta körbara filer.
