@@ -1,22 +1,23 @@
 ---
 description: De statistiska beräkningarna för Propensitetsbedömning är definierade.
-solution: Analytics
 title: Beräknar benägenhetsbedömning
-topic: Data workbench
 uuid: 67270864-0468-4cc9-b48b-0e880f813555
+exl-id: 679e1363-fd10-4a44-a85a-ef0daefaf303
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 0%
 
 ---
 
-
-# Beräknar benägenhetsbedömning{#calculating-propensity-scoring}
+# Beräknar Scoring för benägenhet{#calculating-propensity-scoring}
 
 De statistiska beräkningarna för Propensitetsbedömning är definierade.
 
 Poängen som beräknas för varje besökare är en uppskattad sannolikhet att den angivna händelsen (definierad av målfiltret) kan inträffa, vilket resulterar i ett poängvärdesintervall från 0 till 100 procent. Bedömningsprocessen använder befintliga exempel som utbildningsdata för att hitta förhållandet mellan händelsens sannolikhet och de valda oberoende variablerna av intresse.
 
-Sådana relationer återspeglas matematiskt i varje kvantitativt värde som associeras för varje oberoende variabel. Dessa värden kallas för modellkoefficienter. ScoreDim använder för närvarande algoritmen IRLS (Iterally Reweight Least Squares) för att beräkna modellkoefficienterna. IRLS går igenom proverna flera gånger tills skillnaden på koefficienter mellan aktuellt pass och föregående pass är mindre än 1,0e-6, då det kallas **konvergerat**. Beroende på data kan IRLS dock inte uppnå konvergens.
+Sådana relationer återspeglas matematiskt i varje kvantitativt värde som associeras för varje oberoende variabel. Dessa värden kallas för modellkoefficienter. ScoreDim använder för närvarande algoritmen IRLS (Iterally Reweight Least Squares) för att beräkna modellkoefficienterna. IRLS går igenom proverna flera gånger tills skillnaden på koefficienter mellan det aktuella passet och det föregående passet är mindre än 1,0e-6, vid vilket det kallas **konvergerad**. Beroende på data kan IRLS dock inte uppnå konvergens.
 
 I så fall kommer standardutbildningen att upphöra när
 
