@@ -1,16 +1,15 @@
 ---
 description: Adressfilen har samma syfte som ETC&bsol;HOSTS-filen på en nätverksansluten dator.
-solution: Analytics
 title: Nätverksplatser
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
+exl-id: 938217da-8935-4f2a-b5f8-9afc1dd489f3
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
 
 ---
-
 
 # Nätverksplatser{#network-locations}
 
