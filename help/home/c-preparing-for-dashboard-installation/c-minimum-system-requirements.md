@@ -1,20 +1,21 @@
 ---
 description: Visar lägsta konfigurationskrav.
-solution: Analytics
 title: Lägsta systemkrav
-topic: Data workbench
 uuid: 15848e82-8c16-4ed8-a96f-d4293519203a
+exl-id: 6e679b17-99fc-40bc-b35c-0a0afbc4e807
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
-
 
 # Lägsta systemkrav{#minimum-system-requirements}
 
 Visar lägsta konfigurationskrav.
 
-Adobe Data Workbench-kontrollpanelen är utformad för att köras på en Windows-baserad serverplattform med endast ett fåtal konfigurationskrav. Kontrollpanelen kräver minst:
+Kontrollpanelen för Adobe data workbench är utformad för att köras på en Windows-baserad serverplattform med endast ett fåtal konfigurationskrav. Kontrollpanelen kräver minst:
 
 * Windows Server 2008 (x64 rekommenderas) eller 2008 R2 operativsystem med:
 
@@ -23,4 +24,3 @@ Adobe Data Workbench-kontrollpanelen är utformad för att köras på en Windows
    * Microsoft SQL Server 2008 (Express Edition är helt kompatibel.)
 
 * Kommunikation med en korrekt konfigurerad data workbench-server som kör data workbench version 5.45 eller senare med Query API-licens
-
