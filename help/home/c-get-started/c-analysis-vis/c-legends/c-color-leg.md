@@ -1,16 +1,17 @@
 ---
 description: Färgförklaringar - färgkodsvisualiseringar med mätvärden som Konvertering och Kvarhållning - kan användas i nästan alla arbetsytor.
-solution: Analytics
 title: Färgteckenförklaringar
-topic: Data workbench
 uuid: 4f5ad93e-9128-464c-b5b7-9db454fa71a6
+exl-id: 0ecf5237-8d64-46a6-b73b-e59de69e5988
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 0%
 
 ---
 
-
-# Färgteckenförklaringar{#color-legends}
+# Färgförklaringar{#color-legends}
 
 Färgförklaringar - färgkodsvisualiseringar med mätvärden som Konvertering och Kvarhållning - kan användas i nästan alla arbetsytor.
 
@@ -25,4 +26,3 @@ Att länka affärsstatistik till färg gör det mycket enklare att upptäcka avv
 * Högerklicka på måttnamnet och klicka på det önskade måttet.
 
    ![](assets/lgd_ColorLegend.png)
-
