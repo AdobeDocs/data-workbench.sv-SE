@@ -1,14 +1,15 @@
 ---
 description: För alla språk kräver Report Server 6.0 och senare filen insight.zbin som kopieras till rotmappen för Report Server.
-solution: Analytics
 title: Uppdatera rapportserver med en språkfil (.zbin-fil)
-topic: Data workbench
 uuid: 2ecf2afc-bb5f-4fc7-8fb8-a904fb7ed407
+exl-id: a76b7c01-83f0-4cf2-97a9-07d51cc75b3c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 0%
 
 ---
-
 
 # Uppdatera rapportserver med en språkfil (.zbin-fil){#update-report-server-with-a-language-file-zbin-file}
 
@@ -51,9 +52,9 @@ Uppdatera språkfilerna för Report Server:
 
    1. Öppna Windows Service Manager.
    1. Högerklicka [!DNL Adobe Insight Report Server - Properties].
+
    Sökvägen till den körbara filen innehåller parametrarna:
 
    ```
    ReportServer.exe -Service ReportServer -Locale -en-us
    ```
-
