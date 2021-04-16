@@ -1,20 +1,21 @@
 ---
 description: Data workbench använder reguljära uttryck (regex) för sök- och sorteringsåtgärder.
-solution: Analytics
 title: Reguljära uttryck
-topic: Data workbench
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
+exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 0%
 
 ---
-
 
 # Reguljära uttryck{#regular-expressions}
 
 Data workbench använder reguljära uttryck (regex) för sök- och sorteringsåtgärder.
 
-I **[!UICONTROL Search]** fältet kan du utföra en sökning efter satsen &quot;re:&quot; med vanliga uttryck, till exempel:
+I fältet **[!UICONTROL Search]** kan du utföra en sökning efter satsen &quot;re:&quot; med vanliga uttryck, till exempel:
 
 ```
 <b>re: *.s</b>
@@ -43,6 +44,6 @@ I **[!UICONTROL Search]** fältet kan du utföra en sökning efter satsen &quot;
  </tbody> 
 </table>
 
-Ytterligare vanliga reguljära uttryck kan också användas för att skapa mer komplexa söksträngar. Reguljära uttryck används i alla sökfält i Data Workbench, inklusive frågans entitetspaneler.
+Ytterligare vanliga reguljära uttryck kan också användas för att skapa mer komplexa söksträngar. Reguljära uttryck används i alla sökfält för Data Workbench, inklusive frågans entitetspaneler.
 
-Se detaljerad information i [reguljära uttryck](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).
+Mer detaljerad information finns i [reguljära uttryck](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).
