@@ -1,16 +1,15 @@
 ---
 description: Instruktioner för att uppgradera Repeater med Insight eller för att uppgradera genom att kopiera filer.
-solution: Analytics
 title: Uppgraderar upprepning
 uuid: 2027ed9e-9dd9-40f5-b7e9-2709f8745b5c
+exl-id: f81fa79e-f660-48fd-b2ff-419961d49c55
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
 
 ---
-
 
 # Uppgraderar upprepning{#upgrading-repeater}
 
@@ -18,41 +17,41 @@ Instruktioner för att uppgradera Repeater med Insight eller för att uppgradera
 
 Du kan använda någon av följande metoder för att uppgradera [!DNL Repeater] från Platform 4.x eller senare:
 
-* Om du har skapat en anslutning mellan [!DNL Insight] och [!DNL Repeater] enligt beskrivningen i [Skapa en anslutning mellan Insight och Repeater](../../../../home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-crt-conn-ins-rptr.md#task-785bfe5f0e31484683e4345038add118)kan du använda [!DNL Insight] för att uppgradera [!DNL Repeater]. Se [Uppgradera upprepning med Insight](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md#section-59c24448fd0f45c08abd0245ad746764).
+* Om du skapade en anslutning mellan [!DNL Insight] och [!DNL Repeater] enligt beskrivningen i [Skapa en anslutning mellan Insight och Repeater](../../../../home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-crt-conn-ins-rptr.md#task-785bfe5f0e31484683e4345038add118) kan du använda [!DNL Insight] för att uppgradera [!DNL Repeater]. Se [Uppgradera upprepning med Insight](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md#section-59c24448fd0f45c08abd0245ad746764).
 
    -or-
 
-* Om du inte kunde eller inte kunde skapa en anslutning mellan [!DNL Insight] och [!DNL Repeater]måste du kopiera uppgraderingsfilerna direkt till [!DNL Repeater] datorn. Se [Uppgradera upprepning genom att kopiera filer](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md#section-202f2209f6604f19a15d96b517ea1bc1).
+* Om du inte kunde eller inte kunde skapa en anslutning mellan [!DNL Insight] och [!DNL Repeater] måste du kopiera uppgraderingsfilerna direkt till [!DNL Repeater]-datorn. Se [Uppgradera upprepning genom att kopiera filer](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md#section-202f2209f6604f19a15d96b517ea1bc1).
 
 ## Uppgraderar upprepning med Insight {#section-59c24448fd0f45c08abd0245ad746764}
 
-1. På [!DNL Insight] datorn kopierar du [!DNL bin] mappen från [!DNL Insight Server] uppgraderingspaketet till [!DNL Temp] mappen i den katalog där [!DNL Insight] är installerad.
-1. Börja [!DNL Insight].
-1. Öppna arbetsytan Serverhanteraren genom att klicka på [!DNL Insight]miniatyrbilden på [!DNL Admin] > [!DNL Dataset and Profile] **[!UICONTROL Servers Manager]** -fliken.
-1. Högerklicka på ikonen för den [!DNL Repeater] du vill uppgradera och klicka på **[!UICONTROL Server Files]**.
-1. I [!DNL Server Files Manager]exemplet gör du följande för att överföra uppgraderingsfilerna till servern:
+1. På [!DNL Insight]-datorn kopierar du mappen [!DNL bin] från [!DNL Insight Server]-uppgraderingspaketet till [!DNL Temp]-mappen i den katalog där [!DNL Insight] är installerat.
+1. Starta [!DNL Insight].
+1. I [!DNL Insight], på fliken [!DNL Admin] > [!DNL Dataset and Profile], klickar du på miniatyrbilden för **[!UICONTROL Servers Manager]** för att öppna arbetsytan Serverhanteraren.
+1. Högerklicka på ikonen för [!DNL Repeater] som du vill uppgradera och klicka på **[!UICONTROL Server Files]**.
+1. I [!DNL Server Files Manager] gör du följande för att överföra uppgraderingsfilerna till servern:
 
-   1. Leta reda på [!DNL bin] mappen.
-   1. Högerklicka på bockmarkeringen för [!DNL bin] mappen i katalogen Temp och välj **[!UICONTROL Save Directory to]** > *&lt;**[!UICONTROL server name]**>*.
-
->[!NOTE]
->
->Du kommer att se ett meddelande om att det här steget skriver över filer med samma namn som finns på servern. Klicka **[!UICONTROL Yes]** för att fortsätta.
+   1. Leta reda på mappen [!DNL bin].
+   1. Högerklicka på bockmarkeringen för mappen [!DNL bin] i katalogen Temp och välj **[!UICONTROL Save Directory to]** > *&lt;**[!UICONTROL server name]**>*.
 
 >[!NOTE]
 >
->Om du behöver ladda upp ytterligare filer för att slutföra [!DNL Repeater] uppgraderingen kommer Adobe att ge anvisningar om detta.
+>Du kommer att se ett meddelande om att det här steget skriver över filer med samma namn som finns på servern. Klicka på **[!UICONTROL Yes]** för att fortsätta.
 
-När du har överfört uppgraderingsfilerna till [!DNL Repeater] [!DNL Repeater] datorn startas de om automatiskt och den nya versionen läses in.
+>[!NOTE]
+>
+>Om du behöver ladda upp ytterligare filer för att slutföra uppgraderingen av [!DNL Repeater], kommer Adobe att ge instruktioner om att göra det.
+
+När du har överfört uppgraderingsfilerna till [!DNL Repeater]-datorn startar [!DNL Repeater] automatiskt om och läser in den nya versionen.
 
 ## Uppgradera upprepning genom att kopiera filer {#section-202f2209f6604f19a15d96b517ea1bc1}
 
-1. Öppna uppgraderingsfilen från Adobe. Den här filen är antagligen en [!DNL .zip] fil för uppgradering [!DNL Insight Server].
-1. Gå till den katalog där du installerade [!DNL Repeater] (till exempel [!DNL D:\Adobe\Repeater]).
-1. Kopiera [!DNL bin] mappen i [!DNL .zip] filen och klistra in den i din [!DNL Repeater] installationskatalog för att skriva över den befintliga [!DNL bin] mappen.
+1. Öppna uppgraderingsfilen från Adobe. Den här filen är troligen en [!DNL .zip]-fil för uppgradering av [!DNL Insight Server].
+1. Gå till katalogen där du installerade [!DNL Repeater] (till exempel [!DNL D:\Adobe\Repeater]).
+1. Kopiera mappen [!DNL bin] i filen [!DNL .zip] och klistra in den i installationskatalogen för [!DNL Repeater] för att skriva över den befintliga mappen [!DNL bin].
 
 >[!NOTE]
 >
->Om du behöver ladda upp ytterligare filer för att slutföra [!DNL Insight Server] uppgraderingen kommer Adobe att ge anvisningar om detta.
+>Om du behöver ladda upp ytterligare filer för att slutföra uppgraderingen av [!DNL Insight Server], kommer Adobe att ge instruktioner om att göra det.
 
-När du har kopierat uppgraderingsfilerna till [!DNL Repeater] datorn startar [!DNL Repeater] automatiskt om sig själv och läser in den nya versionen.
+När du har kopierat uppgraderingsfilerna till [!DNL Repeater]-datorn startar [!DNL Repeater] automatiskt om och läser in den nya versionen.
