@@ -1,14 +1,15 @@
 ---
 description: Omformningen RETransform (reguljärt uttryck) är en mönstermatchningsomformning som använder reguljära uttryck för att ange ett mönster att söka efter och hämta i indata och lagrar den hämtade strängen i ett angivet utdatafält.
-solution: Analytics
 title: RETransform
-topic: Data workbench
 uuid: 60b5b60e-678a-416d-b5c3-57b1bbefce7d
+exl-id: 2595f782-0efb-4a2a-84bd-fdb04baf0852
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '430'
+ht-degree: 0%
 
 ---
-
 
 # RETransform{#retransform}
 
@@ -18,7 +19,7 @@ Reguljära uttryck utvärderas mot hela indatasträngen. Om indata inte matchar 
 
 >[!NOTE]
 >
->Omvandlingen [!DNL RETransform] fungerar på ungefär samma sätt som [!DNL REMatch] omformningen (se [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)), som skapar ett utdatafält för varje hämtat delmönster i det reguljära uttrycket. Du kan tänka dig [!DNL RETransform] som en kombination av [!DNL REMatch] och [!DNL Format] omformningar. Om åtgärdsparametern (se Åtgärd i följande tabell) är inställd på &quot;RESULTS&quot; [!DNL RETransform] fungerar den som en kombination av [!DNL REMatch] och [!DNL Union] omformningar.
+>Omvandlingen [!DNL RETransform] fungerar på liknande sätt som omformningen [!DNL REMatch] (se [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)), som skapar ett utdatafält för varje hämtat delmönster i det reguljära uttrycket. Du kan tänka dig [!DNL RETransform] som en kombination av [!DNL REMatch] och [!DNL Format]-omformningar. Om åtgärdsparametern (se Åtgärd i följande tabell) är inställd på &quot;RESULTS&quot; fungerar [!DNL RETransform] som en kombination av [!DNL REMatch] och [!DNL Union]-omformningar.
 
 <table id="table_51B7342E6A5E4E31913BD0F6A6ACC424"> 
  <thead> 
