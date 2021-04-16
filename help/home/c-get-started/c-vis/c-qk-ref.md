@@ -1,18 +1,19 @@
 ---
-description: Visa en lista med användargränssnittsåtgärder och kortkommandon för Data Workbench-klienten.
-solution: Analytics
+description: Visa en lista med Data Workbench klientåtgärder och kortkommandon.
 title: Snabbreferens
-topic: Data workbench
 uuid: d4563f21-4a0c-4ba5-844a-700b03a7f56e
+exl-id: 59ac0cc7-e7c7-4ce1-889a-9a65a0faa853
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '477'
+ht-degree: 0%
 
 ---
 
-
 # Snabbreferens{#quick-reference}
 
-Visa en lista med användargränssnittsåtgärder och kortkommandon för Data Workbench-klienten.
+Visa en lista med Data Workbench klientåtgärder och kortkommandon.
 
 Se även [Kortkommandon](../../../home/c-get-started/c-vis/c-qk-ref.md#section-0597bf92e1af4bcf9f1c8ceffe52649a).
 
@@ -36,7 +37,7 @@ Använd dessa åtgärder när du utför uppgifter i klientens användargränssni
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Klicka på logotypen Data Workbench i det övre vänstra hörnet av arbetsytan </td> 
+   <td colname="col1"> Klicka på Datans Workbench logotyp i det övre vänstra hörnet av arbetsytan </td> 
    <td colname="col2"> <p>Sparar ändringarna </p> </td> 
   </tr> 
   <tr> 
@@ -132,7 +133,7 @@ Använd dessa kortkommandon för arbetsytor och konfigurationsfiler.
 | Ctrl + S | Sparar en arbetsyta. |
 | Ctrl + O | Öppnar en visualiseringsfil. Det är samma sak som att välja Lägg till > Öppna på arbetsytemenyn. |
 | Ctrl + E | Öppna en konfiguration (som standard) eller andra filer. Det är samma sak som att välja Lägg till > Redigera på arbetsytans meny. Markera Alla om du vill öppna andra filer. |
-| Meny för vanliga filer | Klicka på **Lägg till > Öppna** från en arbetsyta för att öppna nyligen öppnade filer (sparar de tio senaste) eller filer som du &quot;fäster&quot; på den nya menyn. På menyn kan du klicka på nålikonen i listan för att spara visualiseringen. |
+| Meny för vanliga filer | Klicka på **Lägg till > Öppna** från en arbetsyta för att öppna nyligen öppnade filer (sparar de senaste tio) eller filer som du &quot;fäster&quot; på den nya menyn. På menyn kan du klicka på nålikonen i listan för att spara visualiseringen. |
 
 <table id="table_99414A5999F94A2EAB2BBBA27EE487F5"> 
  <thead> 
@@ -144,12 +145,11 @@ Använd dessa kortkommandon för arbetsytor och konfigurationsfiler.
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Högerklicka på en nod och klicka på <span class="uicontrol"> Klistra in</span> </p> </td> 
-   <td colname="col2"> <p>Klistrar in en nod i en <span class="filepath"> .cfg</span> -fil </p> </td> 
+   <td colname="col2"> <p>Klistrar in en nod i en <span class="filepath"> .cfg</span>-fil </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1">Högerklicka på vektorn och klicka på <span class="uicontrol"> Klistra in som underordnad</span> </td> 
-   <td colname="col2">Klistrar in en vektor i en <span class="filepath"> .cfg</span> -fil på vektornivå </td> 
+   <td colname="col2">Klistrar in en vektor i en <span class="filepath"> .cfg</span>-fil på vektornivå </td> 
   </tr> 
  </tbody> 
 </table>
-
