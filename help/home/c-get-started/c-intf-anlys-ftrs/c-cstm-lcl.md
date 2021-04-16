@@ -1,26 +1,26 @@
 ---
-description: Data Workbench är extremt flexibelt när det gäller antalet sätt att anpassa det.
-solution: Analytics
+description: Datan Workbench är extremt flexibel när det gäller antalet sätt att anpassa den.
 title: Anpassa Data Workbench lokalt
-topic: Data workbench
 uuid: 9d04ebbf-fa48-4594-9b59-8b7e4c85fe6a
+exl-id: 07ad2744-2dd3-4db0-92ab-05346f74a076
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 0%
 
 ---
 
-
 # Anpassa Data Workbench lokalt{#customize-data-workbench-locally}
 
-Data Workbench är extremt flexibelt när det gäller antalet sätt att anpassa det.
+Datan Workbench är extremt flexibel när det gäller antalet sätt att anpassa den.
 
-Alla anpassningar som görs av en användare till instansen av Data Workbench finns i mappen User i installationskatalogen för Data Workbench. Den här katalogen synkroniseras med Data Workbench-servern för att ge en säkerhetskopia av din lokala information.
+Alla anpassningar som görs av en användare till deras Data Workbench finns i mappen User i installationskatalogen för Datan Workbench. Katalogen synkroniseras med Datan Workbench för att ge en säkerhetskopia av din lokala information.
 
-Om du vill ta bort anpassningar av Data Workbench tar du bort alla filer och mappar i installationskatalogen för Data Workbench, förutom de fem element som ursprungligen installerades:
+Om du vill ta bort anpassningar av Datan Workbench tar du bort alla filer och mappar i Datans Workbench installationskatalog utom de fem element som ursprungligen installerades:
 
 * Basklapp
 * Certifikatmapp
 * Konfigurationsmapp
 * [!DNL Insight.cfg] fil
 * [!DNL Insight.exe] fil
-
