@@ -1,14 +1,15 @@
 ---
 description: Kopiera-omformningen kopierar bara värdet i indatafältet till det angivna utdatafältet. Om indatafältet kan vara en vektor med strängar måste utdatafältet börja med "x-".
-solution: Analytics
 title: Kopiera
-topic: Data workbench
 uuid: 073f53bf-befb-4fba-a8f8-260ffcdd007c
+exl-id: 04e97006-1e8e-4123-bbbc-b90a5231170f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '176'
+ht-degree: 2%
 
 ---
-
 
 # Kopiera{#copy}
 
@@ -23,7 +24,6 @@ Kopiera-omformningen kopierar bara värdet i indatafältet till det angivna utda
 | Indata | Namnet på det fält som du vill kopiera från. |  |
 | Utdata | Namnet på utdatafältet. |  |
 
-I det här exemplet, som använder fält med data som samlats in från webbplatstrafiken, får utdatafältet x-purchase-success det literala värdet &quot;1&quot; varje gång cs-uri-stam matchar [!DNL /checkout/confirmed.php]. Om användaren inte [!DNL Condition] är nöjd (dvs. cs-uri-stam inte matchar [!DNL /checkout/confirmed.php]) ändras inte x-purchase-success.
+I det här exemplet, där fält med data som samlats in från webbplatstrafiken används, får utdatafältet x-purchase-success det literala värdet &quot;1&quot; varje gång cs-uri-stam matchar [!DNL /checkout/confirmed.php]. Om [!DNL Condition] inte är nöjd (d.v.s. cs-uri-stammen inte matchar [!DNL /checkout/confirmed.php]) ändras inte x-purchase-success.
 
 ![](assets/cfg_TransformationType_Copy.png)
-
