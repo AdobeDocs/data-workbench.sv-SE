@@ -1,16 +1,17 @@
 ---
 description: Information om hur du lägger till och ändrar mätvärden.
-solution: Analytics
 title: Lägga till och ändra ett mått
-topic: Data workbench
 uuid: fa4c1f8a-628e-4f51-b088-a398d6d7c315
+exl-id: 5b7d8880-4bd4-4086-8212-c3c23f6af972
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 0%
 
 ---
 
-
-# Lägga till och ändra ett mått{#add-and-change-a-metric}
+# Lägg till och ändra ett mått{#add-and-change-a-metric}
 
 Information om hur du lägger till och ändrar mätvärden.
 
@@ -26,4 +27,4 @@ I följande exempel visas medelpoängsmåttet för filstorleken (i den övre tab
 
 **Ändra ett mätvärde**
 
-* Högerklicka på etiketten eller ett element i måttet som du vill ändra och klicka sedan på **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*. Det nya måttet ersätter det ursprungliga måttet.
+* Högerklicka på etiketten eller ett element i måttet som du vill ändra, klicka på **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*. Det nya måttet ersätter det ursprungliga måttet.
