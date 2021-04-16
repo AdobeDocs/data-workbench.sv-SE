@@ -1,16 +1,17 @@
 ---
 description: Data workbench innehåller inbyggda dimensioner.
-solution: Analytics
-title: Inbyggda dimensioner
-topic: Data workbench
+title: Inbyggda Dimensioner
 uuid: 0aabbc52-266d-46c1-a4b3-dd575c0f2c72
+exl-id: c08a487d-60b8-4db7-8776-7ae1b9f1f27c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '100'
+ht-degree: 7%
 
 ---
 
-
-# Inbyggda dimensioner{#built-in-dimensions}
+# Inbyggda Dimensioner{#built-in-dimensions}
 
 Data workbench innehåller inbyggda dimensioner.
 
@@ -36,8 +37,7 @@ I följande tabell visas de tillgängliga inbyggda dimensionerna för data workb
    <td colname="col1"> En (dold) </td> 
    <td colname="col2"> Numeriskt </td> 
    <td colname="col3"> Ej tillämpligt </td> 
-   <td colname="col4">Elementet "1", som också har ett ordvärde <span class="filepath"> = 1</span>, gäller alla element med alla dimensioner. Enkeldimensionen används vanligtvis för att konstruera antal med den här syntaxen: <p><span class="filepath"> sum(one,Countable_Dimension)</span></p></td> 
+   <td colname="col4">Elementet "1", som även har ett ordningstal <span class="filepath"> = 1</span>, relaterar till alla element med alla dimensioner. Enkeldimensionen används vanligtvis för att konstruera antal med den här syntaxen: <p><span class="filepath"> sum(one,Countable_Dimension)</span></p></td> 
   </tr> 
  </tbody> 
 </table>
-
