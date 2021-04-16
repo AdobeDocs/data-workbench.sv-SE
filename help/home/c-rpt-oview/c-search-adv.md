@@ -1,24 +1,25 @@
 ---
 description: I rapportportalen finns en sökfunktion för att hitta rapporter baserat på en trädvy över mappar, trädvy över rapportdatum och en ad hoc-sökning.
-solution: Analytics
 title: Avancerad sökning i rapportportalen
-topic: Data workbench
 uuid: 3b5262fb-ea42-449f-8ef9-897806a310a8
+exl-id: 891d51ad-8477-4a1a-9fe5-97e1210f11d5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
-
 
 # Avancerad sökning i rapportportalen{#advanced-search-in-the-report-portal}
 
 I rapportportalen finns en sökfunktion för att hitta rapporter baserat på en trädvy över mappar, trädvy över rapportdatum och en ad hoc-sökning.
 
-1. Klicka på **[!UICONTROL Search]** fliken till vänster i rapportportalen.
+1. Klicka på fliken **[!UICONTROL Search]** i den vänstra rutan i rapportportalen.
 
    ![](assets/report_portal_search_button.png)
 
-   En ny webbsida öppnas och visar **[!UICONTROL Search]** sidan med **[!UICONTROL Folder Tree]** alternativet som standardvy.
+   En ny webbsida öppnas och sidan **[!UICONTROL Search]** visas med alternativet **[!UICONTROL Folder Tree]** som standardvy.
 
    ![](assets/report_portal_search_headers.png)
 
@@ -34,7 +35,7 @@ I rapportportalen finns en sökfunktion för att hitta rapporter baserat på en 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Mappträd </p> </td> 
-   <td colname="col2"> <p>Välj rapporter baserat på den anpassade hierarkin för rapportmappar. De här mapparna definieras och ordnas som en <a href="../../home/c-rpt-oview/c-work-rpt-sets/c-work-rpt-sets.md#concept-a5f078668e1245e684cb2a778c8803d5"> rapportuppsättning</a>. </p> </td> 
+   <td colname="col2"> <p>Välj rapporter baserat på den anpassade hierarkin för rapportmappar. De här mapparna definieras och ordnas som en <a href="../../home/c-rpt-oview/c-work-rpt-sets/c-work-rpt-sets.md#concept-a5f078668e1245e684cb2a778c8803d5">-rapportuppsättning</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Datumträd </p> </td> 
@@ -54,8 +55,7 @@ I rapportportalen finns en sökfunktion för att hitta rapporter baserat på en 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Visa markerade </p> </td> 
-   <td colname="col2">Klicka här om du vill visa rapporter som har valts i mappträdet eller i datumträdvyn. Rapportportalen öppnas i ett nytt fönster och visar varje rapport som en PNG-fil. Om flera rapporter är markerade kan varje enskild rapport väljas från en flik högst upp på sidan. <p>Klicka på knappen <span class="uicontrol"> Skriv ut</span> på den här sidan om du vill skriva ut den markerade rapporten eller klicka på <span class="uicontrol"> Hämta</span> om du vill spara lokalt. </p> </td> 
+   <td colname="col2">Klicka här om du vill visa rapporter som har valts i mappträdet eller i datumträdvyn. Rapportportalen öppnas i ett nytt fönster och visar varje rapport som en PNG-fil. Om flera rapporter är markerade kan varje enskild rapport väljas från en flik högst upp på sidan. <p>Klicka på knappen <span class="uicontrol"> Skriv ut</span> på den här sidan om du vill skriva ut den markerade rapporten eller klicka på <span class="uicontrol"> Hämta</span> om du vill lagra lokalt. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
