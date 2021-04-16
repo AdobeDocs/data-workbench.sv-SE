@@ -2,16 +2,15 @@
 description: Definiera målets primära funktion och målgruppen.
 solution: Analytics,Analytics
 title: Definiera målet
-topic: Data workbench
 uuid: 4957b249-8790-4275-98ab-9c6398039a63
+exl-id: 6ee140ff-3cfb-45f8-9bce-f360fbb19322
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
 
 ---
-
 
 # Definiera målet{#defining-the-objective}
 
@@ -25,7 +24,6 @@ Vanliga mål för webbplatsprocessen är bland annat att förbättra stegen elle
 
 Tänk noga på vad du vill veta om din webbplats. Genom att noggrant planera ditt experiment blir resultatet mycket mer meningsfullt för ert företag.
 
-**Mål:** För att öka antalet besökare på vår webbplats som vill ha en demonstration av vår produkt via den grafiska länken&quot;Begär en demo&quot;, som visas i följande bild:
+**Mål:** För att öka antalet besökare på vår webbplats som begär en demonstration av vår produkt via den grafiska länken&quot;Begär en demo&quot;, som visas i följande bild:
 
 ![](assets/ControlPage.png)
-
