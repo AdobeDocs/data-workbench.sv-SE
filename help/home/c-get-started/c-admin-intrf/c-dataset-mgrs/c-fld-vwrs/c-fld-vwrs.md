@@ -3,7 +3,6 @@ description: Ett fältvisningsprogram är en tabell som innehåller värdena fö
 title: Fältvisningsprogram
 uuid: 1227b0de-6ae8-4f97-ad3e-5c9ead818ba5
 exl-id: 53ede4aa-4865-4e67-b3b1-e3e6287f29d7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '279'
