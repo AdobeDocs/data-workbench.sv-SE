@@ -3,7 +3,6 @@ description: Förutom att göra enkla, men ändå kraftfulla, peka-och-klicka-ma
 title: Välja data med andra metoder
 uuid: 0e2b8e6d-d696-4597-9f85-1968b18cfbc8
 exl-id: d6ef163e-1faa-4b0f-b69b-9e559f6f34fb
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '307'
