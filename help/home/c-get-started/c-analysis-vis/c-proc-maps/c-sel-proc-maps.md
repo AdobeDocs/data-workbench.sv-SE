@@ -3,7 +3,6 @@ description: Du kan markera i processkartor för att skapa filter som innehålle
 title: Göra en markering från en processkarta
 uuid: 7fd00090-c9ab-4bb6-8584-7de7b6f4b68c
 exl-id: 8ede395f-906a-49e0-8ff8-b43a326275e5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '393'
