@@ -3,7 +3,6 @@ description: Frågesträngsvariabler kan läggas till i en JavaScript-begäran f
 title: Hämta ytterligare information
 uuid: 0a8075e9-4986-42c4-b505-3985b433cf8e
 exl-id: ad4f5e08-b7b7-4de3-b0c2-71440facb2d1
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '173'
