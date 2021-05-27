@@ -3,7 +3,6 @@ description: Webbsidor är ofta strukturerade med programmeringsspråket ASP (Ac
 title: ASP-specifik information
 uuid: 552288cb-b775-4121-8869-322f2a26932b
 exl-id: f73235e1-d44a-4056-b1f4-a86879c19483
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '446'
