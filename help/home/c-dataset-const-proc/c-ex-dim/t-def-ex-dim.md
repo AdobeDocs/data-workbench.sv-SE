@@ -3,7 +3,6 @@ description: Steg för att definiera utökade dimensioner.
 title: Definiera utökade Dimensioner
 uuid: 25946998-54ca-4595-a2f9-9c593917643a
 exl-id: e1664548-e2b4-47bb-8bec-155c16873e08
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '191'
