@@ -3,7 +3,6 @@ description: Anropet om körning av referenssidans tagg infogas på webbsidor so
 title: Lägga till körningsanrop för referenssidkod
 uuid: 8c682649-d1b1-40a6-a2b2-4ff5a92b732f
 exl-id: a4f9ab2b-50e8-4e0b-9c87-80dffb697316
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '356'
