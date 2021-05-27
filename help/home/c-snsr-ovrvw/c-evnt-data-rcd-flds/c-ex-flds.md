@@ -3,7 +3,6 @@ description: Sensorn kan, n채r den anv채nds p책 en server, samla in f채lt med h�
 title: Utbyggbara f채lt
 uuid: 91b9857e-44a4-497f-b157-51afd30306fe
 exl-id: e783d073-cf06-4415-80e1-567b55fdee12
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '334'
