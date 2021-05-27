@@ -3,7 +3,6 @@ description: Information om uppgradering och avinstallation av Report Server-pro
 title: Uppgraderar och avinstallerar rapportservern
 uuid: 42f0d190-1a88-424d-be4b-90338144d287
 exl-id: 86d0d848-4e2a-45cb-a1b3-b8a856332d33
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '377'
