@@ -3,7 +3,6 @@ description: Du kan anpassa utseendet på alla menyer genom att redigera filen o
 title: Anpassa en meny med order.txt-filer
 uuid: 4346114a-05d0-4d15-9633-09c9d869cdd6
 exl-id: 3803a56f-19b7-4792-a277-97f76c11ec0e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '946'
