@@ -3,7 +3,6 @@ description: Visar tre sätt att exportera data och hur du hämtar exporter.
 title: Exporterar data
 uuid: de37a60b-09db-4976-b427-f28b4697a8aa
 exl-id: b581d617-62e7-4f39-84f3-853c0424bb3b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '391'
