@@ -3,7 +3,6 @@ description: Om du markerar en nod genom att klicka på den tonas de andra noder
 title: Välj en nod
 uuid: d63b39f6-edec-4b4c-b36b-f6e6881d3419
 exl-id: a483547f-e338-4d13-8a0b-6cb7971b7790
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '149'
