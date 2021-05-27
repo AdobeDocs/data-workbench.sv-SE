@@ -3,7 +3,6 @@ description: I Workspaces-mappen i Datans Workbench installationskatalog anger f
 title: Folder.lock och workspace.lock-filer
 uuid: d4c69e16-0596-4542-854f-bc614167ae80
 exl-id: 980b8692-8aa5-481f-b6bc-33836d8a3a76
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '601'
@@ -55,7 +54,7 @@ Arbetsytorna i den här mappen är nu låsta eller olåsta enligt inställningen
 1. Högerklicka i cellen i kolumnen [!DNL User] för mappen som du vill klistra in filen i och klicka på **[!UICONTROL Paste]**.[!DNL .lock]
 1. Om den här filen används för att låsa en enskild arbetsyta högerklickar du på bockmarkeringen för filen [!DNL .lock] i kolumnen [!DNL User] och ändrar namnet i fältet [!DNL File] så att det matchar namnet på den arbetsyta som du vill låsa.
 
-   Om du till exempel vill låsa arbetsytan [!DNL Monthly Numbers.vw] ger du filen namnet [!DNL Monthly Numbers.lock].Om den här filen används för att låsa en enskild arbetsyta högerklickar du på bockmarkeringen för filen [!DNL .lock] i kolumnen [!DNL User] och ändrar namnet i fältet [!DNL File] så att det matchar namnet på den arbetsyta som du vill låsa. Om du till exempel vill låsa arbetsytan [!DNL Monthly Numbers.vw] ger du filen namnet &quot;[!DNL Monthly Numbers.lock]&quot;.
+   Om du till exempel vill låsa arbetsytan [!DNL Monthly Numbers.vw] ger du filen namnet &quot;[!DNL Monthly Numbers.lock]&quot;.Om den här filen används för att låsa en enskild arbetsyta högerklickar du på bockmarkeringen för filen [!DNL .lock] i kolumnen [!DNL User] och ändrar namnet i fältet [!DNL File] så att det matchar namnet på den arbetsyta som du vill låsa. Om du till exempel vill låsa arbetsytan [!DNL Monthly Numbers.vw] ger du filen namnet [!DNL Monthly Numbers.lock].
 
 1. Så här ändrar du inställningen i filen:
 
