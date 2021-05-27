@@ -3,7 +3,6 @@ description: En rapportuppsättning är en samling arbetsytor som genereras av R
 title: Rapportuppsättningar
 uuid: 421055d7-0cf0-4664-b944-327a254a97a4
 exl-id: 95609a1a-e70c-41e2-ace3-0cb09f77705a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '148'
