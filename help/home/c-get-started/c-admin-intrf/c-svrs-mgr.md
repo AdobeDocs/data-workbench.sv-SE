@@ -3,7 +3,6 @@ description: Det verktyg som i första hand används av systemadministratörer �
 title: Serverhanteraren
 uuid: 96c8f060-ffd4-46b9-b039-b2ac024400b6
 exl-id: e8b22d9f-3f1b-4a97-942a-85786bd3c547
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '649'
