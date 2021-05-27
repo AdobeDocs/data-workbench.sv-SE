@@ -3,7 +3,6 @@ description: N채r en sidas HTML-kod har beg채rts av en webbl채sare beg채r webbl�
 title: H채mta inb채ddade objektbeg채randen (sidtaggar)
 uuid: 7fe561d1-aa5a-4ac9-82ba-aa27c7d208dd
 exl-id: 593e49bc-9619-4e85-8ce3-2e9d23d175c9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '604'
