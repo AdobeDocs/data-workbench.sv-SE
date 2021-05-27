@@ -3,7 +3,6 @@ description: Välj indatavariabler, antalet kluster och en målpopulation (om du
 title: Byggkluster
 uuid: f8462445-b7d2-48ae-aed7-2a3abc491cfb
 exl-id: 60bc75bf-2f89-455b-8be9-aa20bb837752
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '508'
