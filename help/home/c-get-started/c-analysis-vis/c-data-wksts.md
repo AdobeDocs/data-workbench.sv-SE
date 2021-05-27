@@ -3,7 +3,6 @@ description: Text eller uttryck kan anges i valfri cell i ett kalkylblad.
 title: Arbeta med data i kalkylblad
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
 exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '710'
