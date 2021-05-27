@@ -3,7 +3,6 @@ description: Vi rekommenderar att du skapar en kontrollpanel även för kortsikt
 title: Skapa en kontrollpanel
 uuid: 5b9e9db2-d7ac-4c97-8df0-74a9e5a0c496
 exl-id: bd51d4c0-bcf2-4ba6-8b32-de06c74f359f
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '377'
