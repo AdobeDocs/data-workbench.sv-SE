@@ -3,7 +3,6 @@ description: Om du stänger en olåst arbetsyta sparas som standard alla ändrin
 title: Spara en arbetsyta
 uuid: 166f9ef8-c2c4-4dfc-8d7d-453650bee6b8
 exl-id: 0f1052f5-496c-443e-b29d-5973c16ef527
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '334'
