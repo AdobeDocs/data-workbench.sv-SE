@@ -3,7 +3,6 @@ description: Insight Server licensieras per serverdator.
 title: Installera Data Workbench-servrar
 uuid: d6a64a6e-a463-4980-b836-45017fab6e7e
 exl-id: 5325b7fb-fb2d-479f-ad5f-c5fb520e2b22
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '75'
