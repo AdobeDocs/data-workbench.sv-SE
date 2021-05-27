@@ -3,7 +3,6 @@ description: Information om hur du lägger till och ändrar mätvärden.
 title: Lägga till och ändra ett mått
 uuid: fa4c1f8a-628e-4f51-b088-a398d6d7c315
 exl-id: 5b7d8880-4bd4-4086-8212-c3c23f6af972
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '108'
