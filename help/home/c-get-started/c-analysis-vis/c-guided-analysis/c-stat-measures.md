@@ -3,7 +3,6 @@ description: För att underlätta statistikarbetet tillhandahåller Data Workben
 title: Statistikåtgärder
 uuid: a8782cd2-d657-4c04-9c5d-8e0af2a3b76e
 exl-id: 166ff98b-d531-4b31-897e-0c7fedbd2f4d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '467'
