@@ -2,7 +2,6 @@
 description: Integrera Data Workbench med Adobe Target. Exportera datasegment och fyll i exportfiler automatiskt.
 title: Integrering av Data Workbench med Adobe Target
 exl-id: e7c41e7a-aae6-4b5c-8b14-7ae97b62d70b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '664'
