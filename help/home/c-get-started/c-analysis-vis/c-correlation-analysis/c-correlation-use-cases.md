@@ -3,7 +3,6 @@ description: Att definiera beroende korrelationspunkter som är begripliga på e
 title: Användningsexempel för korrelationsanalys
 uuid: 47328574-6600-44d7-8fff-feff3097488a
 exl-id: d4834350-8756-44b7-ab2d-64f86134100b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '183'
@@ -19,7 +18,7 @@ I dessa fall framhävs konsten att identifiera relationer som korrelationspunkte
 
 ## Korrelation för sociala medier och webbplatser{#section-388e18eb9dbd4ff1bd56fb30472a5359}
 
-Digitala förlag vill maximera sin förståelse för det potentiella förhållandet mellan sociala medier och besök på deras webbplats. Den digitala utgivaren kör till exempel korrelationsrapporten mellan Twitters omnämnanden varje timme och besök under en tvåveckorsperiod. Korrelationen är *r* = 0,28, vilket indikerar ett medelstort, positivt samband mellan Twitter-omnämnanden och webbplatsbesök.
+Digitala förlag vill maximera sin förståelse för det potentiella förhållandet mellan sociala medier och besök på deras webbplats. Den digitala utgivaren kör till exempel korrelationsrapporten mellan Twitter-omnämnanden per timme och besök under en tvåveckorsperiod. Korrelationen är *r* = 0,28, vilket indikerar ett medelstort, positivt samband mellan Twitter omnämnanden och webbplatsbesök.
 
 ## Optimering för e-handlare {#section-4e88ca075d654ffe90768b1c33c62c89}
 
