@@ -3,7 +3,6 @@ description: När Sensor samlar in händelsedata från en webbserver, ställer S
 title: Hur identifierar sensorn besökare och sessioner?
 uuid: 3735ed2d-67c4-469b-8b3e-0fac90cc4c09
 exl-id: f5781ed6-ac83-4a8e-b412-8966f8c39c41
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '232'
