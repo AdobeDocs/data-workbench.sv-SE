@@ -3,7 +3,6 @@ description: Steg för att installera IP Geo-Intelligence- eller IP Geo-location
 title: Installerar Data Service Lookup-filer
 uuid: a3fe8a14-2c74-4105-bc5b-2298f0f4b61e
 exl-id: b19904f4-ead0-4bed-a79f-864c78bc0e1d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '222'
