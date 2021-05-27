@@ -3,7 +3,6 @@ description: Information om loggbearbetning och transformeringsdatauppsättninge
 title: Typer av datauppsättning innehåller filer
 uuid: 5dc0a937-a036-4ede-bc2c-1c5fef10808a
 exl-id: 8a897f23-aff0-4720-8166-8f1ee7aea13f
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '37'
