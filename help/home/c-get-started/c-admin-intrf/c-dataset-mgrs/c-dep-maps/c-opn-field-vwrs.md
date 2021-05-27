@@ -3,7 +3,6 @@ description: Information om hur du öppnar ett fältvisningsprogram för en logg
 title: Öppna ett fältvisningsprogram
 uuid: fcc839cd-21dc-4eb0-9b8e-55fc92e6d400
 exl-id: 32a7418e-ca31-4d56-89a4-11416135f3e2
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '156'
