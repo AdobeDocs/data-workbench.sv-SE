@@ -3,7 +3,6 @@ description: Instruktioner för att avinstallera Insight Server, Transform eller
 title: Avinstallerar programvaran
 uuid: 79cf0db6-0f99-40fa-a7b0-38dd8d7246bd
 exl-id: 3ba5e5e3-c1a2-4ecb-9f88-a3fe923837e7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '207'
