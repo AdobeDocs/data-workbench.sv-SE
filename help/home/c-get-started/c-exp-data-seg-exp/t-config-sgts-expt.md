@@ -3,7 +3,6 @@ description: Du kan skapa ett segment av elementen i valfri räkningsbar dimensi
 title: Konfigurera segment för export
 uuid: 651be834-ee41-4487-8c5a-30d94580f6a0
 exl-id: 4f53e02c-3f00-44b3-9f6d-a2f23903b3fa
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '865'
