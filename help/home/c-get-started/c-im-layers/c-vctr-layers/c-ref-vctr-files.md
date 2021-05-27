@@ -3,7 +3,6 @@ description: Du kan skapa ett vektorlager som refererar till en eller flera vekt
 title: Definiera vektorlager som refererar till vektorfiler
 uuid: fe6639fb-98fb-4246-9cc1-1a928df6ae0a
 exl-id: d78fa7ea-e2a9-42b7-9071-5f72409c5b7a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '281'
