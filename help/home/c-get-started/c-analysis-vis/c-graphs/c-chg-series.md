@@ -3,7 +3,6 @@ description: Element i en dimension kan färgkodas som en serie i ett linjediagr
 title: Ändra en serie
 uuid: 4e9630c6-a663-486d-ae82-f6d25f74a41c
 exl-id: 7a639a7f-e526-4916-a957-b005277bdd2d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '156'
