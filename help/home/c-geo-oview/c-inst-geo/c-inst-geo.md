@@ -3,7 +3,6 @@ description: I det här kapitlet beskrivs hur du installerar data workbenchGeogr
 title: Installerar Data Workbench Geography
 uuid: 2c3d2e4a-97a7-4afc-b72d-c012db77e535
 exl-id: 3f32672c-e62b-4b8b-84f7-11ff732519ad
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '207'
