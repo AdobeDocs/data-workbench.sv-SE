@@ -3,7 +3,6 @@ description: I Instrumentpanelsläsaren kan du också söka efter befintliga ins
 title: Söka i Dashboard Browser
 uuid: b11b024e-3876-48f2-85e2-a4af047e4985
 exl-id: f6dd923c-f98b-4ca0-a109-88b3988b9c95
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '224'
