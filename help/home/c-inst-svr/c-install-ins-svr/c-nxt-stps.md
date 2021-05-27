@@ -3,7 +3,6 @@ description: Instruktioner för att slutföra installationen av ditt Adobe-progr
 title: Nästa steg
 uuid: 9707adc2-0618-4e94-baed-80b076d60f29
 exl-id: 5393a0ae-732c-409c-830b-64050f123091
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '115'
