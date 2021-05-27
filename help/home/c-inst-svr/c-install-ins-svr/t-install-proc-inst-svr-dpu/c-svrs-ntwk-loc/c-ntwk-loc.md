@@ -3,7 +3,6 @@ description: Adressfilen har samma syfte som ETC&bsol;HOSTS-filen på en nätver
 title: Nätverksplatser
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 exl-id: 938217da-8935-4f2a-b5f8-9afc1dd489f3
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '254'
