@@ -3,7 +3,6 @@ description: Du kan filtrera värdena som visas i ett fältvisningsprogram genom
 title: Filtrera i ett fältvisningsprogram
 uuid: 3788fa03-c898-4e9d-81a0-ecf90376cac6
 exl-id: 0bb781e7-8c1c-4a74-882f-410470782ad2
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '173'
