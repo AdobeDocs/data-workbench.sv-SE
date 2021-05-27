@@ -3,7 +3,6 @@ description: Information om olika typer av processkartor.
 title: Olika typer av processkartor
 uuid: 19473b77-13c1-4829-b018-d3316e434ba4
 exl-id: 8bac7036-c7fe-4566-8e59-08e1ddc7ddb7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '748'
@@ -47,7 +46,7 @@ I en måttkarta för konvertering ritas noder med 0 procents konvertering till v
 
 ![](assets/vis_2DMetricMap_Conversion.png)
 
-På samma sätt visas element med 0 procents behållning till vänster om diagrammet och element med 100 procents behållning till höger. Du kan se kvarhållningsfrekvensen för varje nod på kartan, vilket hjälper dig att avgöra vilka element som påverkar kunderna att returnera.
+På samma sätt visas element med 0 procents kvarhållning till vänster om diagrammet och element med 100 procents kvarhållning till höger. Du kan se kvarhållningsfrekvensen för varje nod på kartan, vilket hjälper dig att avgöra vilka element som påverkar kunderna att returnera.
 
 ![](assets/vis_2DMetricMap_Retention.png)
 
