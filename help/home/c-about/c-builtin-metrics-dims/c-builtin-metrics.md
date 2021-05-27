@@ -3,7 +3,6 @@ description: Data workbench innehåller inbyggda mätvärden.
 title: Inbyggda mätvärden
 uuid: 1e4d91dc-0130-4296-8395-fd2ddb03f6ef
 exl-id: a8a2a8dd-dc13-4eb3-92ce-09f02252ecf0
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '310'
