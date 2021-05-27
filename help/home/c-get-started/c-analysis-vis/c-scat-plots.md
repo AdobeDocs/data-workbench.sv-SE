@@ -3,7 +3,6 @@ description: Punktdiagram visar elementen i en datamängd (till exempel Sida ell
 title: 2D-punktdiagram
 uuid: 73c23d22-3c3a-4535-b66b-0e3508bd904c
 exl-id: 340f8c18-ce47-4f3a-aba4-3d6124505313
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '366'
