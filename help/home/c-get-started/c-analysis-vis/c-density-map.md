@@ -3,7 +3,6 @@ description: I densitetskartan visas element som skuggade rektanglar inom en fyr
 title: Densitetskarta
 uuid: c13cecee-f322-4757-aa90-12039173ff9f
 exl-id: da37d954-cadb-42a6-a44b-9b38c0354a5d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '610'
