@@ -3,7 +3,6 @@ description: Det tredje sättet som en kontrollpanel kan öppnas på är genom a
 title: Hyperlänk för instrumentpanel
 uuid: da27204f-64be-4ea1-8bf9-ce907e334d86
 exl-id: 05890f46-bcb6-476a-9d3b-4bfeb95b20d4
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '135'
