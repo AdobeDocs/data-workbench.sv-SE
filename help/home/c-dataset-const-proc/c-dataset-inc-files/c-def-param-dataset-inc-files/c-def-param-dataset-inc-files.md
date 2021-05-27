@@ -3,7 +3,6 @@ description: När du konfigurerar datauppsättningen kan du definiera variabler,
 title: Definiera parametrar i datauppsättningen inkluderar filer
 uuid: 1eb7d48c-a107-4b32-abca-55d30586813f
 exl-id: 80bb77e1-a157-4e16-9519-6d0e2ce17fe1
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '493'
