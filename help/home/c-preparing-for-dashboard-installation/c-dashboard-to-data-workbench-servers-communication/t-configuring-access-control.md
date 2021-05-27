@@ -3,7 +3,6 @@ description: Kontrollpanelen kräver vissa skrivskyddade behörigheter för att 
 title: Konfigurera åtkomstkontroll
 uuid: 600b6799-547d-46da-9027-4f64943e2ccd
 exl-id: a9ff61bb-c519-4205-8fa8-bfd1986fcd60
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '163'
