@@ -3,7 +3,6 @@ description: En uppsättning standardprofiler för varje program har skapats så
 title: Baslinjeprofiler
 uuid: ff76ff7e-ccde-4d99-9109-8612a4a83183
 exl-id: f1bd5c1d-5f79-4b8c-9928-97169d553631
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '625'
