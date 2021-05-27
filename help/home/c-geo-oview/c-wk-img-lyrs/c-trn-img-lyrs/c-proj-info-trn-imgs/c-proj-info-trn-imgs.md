@@ -3,7 +3,6 @@ description: Data workbench Geography stöder både latitud- och longitudprojekt
 title: Ange projektionsinformation för terrängbilder
 uuid: 4a476192-e749-4187-b64e-9794f39b0019
 exl-id: 400b9b59-f700-4b16-8549-fe93140cad1a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '109'
