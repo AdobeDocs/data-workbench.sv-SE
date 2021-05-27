@@ -3,7 +3,6 @@ description: Med konfigurationsfilen Transform Mode.cfg kan du pausa bearbetning
 title: Filen Transform Mode.cfg
 uuid: 6e875d02-341a-414c-90e5-aa7fa910ab81
 exl-id: 4faca063-3ca9-4c7c-9f04-ba2dfb647a77
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '528'
