@@ -3,7 +3,6 @@ description: Samla in aktivitet över webbplatslänkar från tredje part för at
 title: Spåra avslut till externa länkar
 uuid: 523f5b4c-4600-4d44-82e7-4a8b2db2d266
 exl-id: fd7434e9-cd66-408e-baa9-6a0df4039786
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '193'
