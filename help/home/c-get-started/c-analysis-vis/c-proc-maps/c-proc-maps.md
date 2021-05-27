@@ -3,7 +3,6 @@ description: Med processkartor kan du analysera aktivitetsflödet mellan element
 title: Processkarta
 uuid: f1db41a9-400e-467a-ba59-39831fb166af
 exl-id: 019cee7b-a704-4b47-84c6-d3ddc277c43e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '737'
