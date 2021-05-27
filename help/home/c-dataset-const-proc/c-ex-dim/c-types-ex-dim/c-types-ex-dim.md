@@ -3,7 +3,6 @@ description: Med Insight Server kan du definiera räkneliga, enkla, många-till-
 title: Typer av utökade Dimensioner
 uuid: 68f42903-0599-43f2-8b5b-da9e171d77b1
 exl-id: 13a52ece-b68b-45bc-ac2d-d68c91742c9d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '305'
