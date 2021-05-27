@@ -3,7 +3,6 @@ description: Bildtexter är fönster som du lägger till på en arbetsyta för a
 title: Lägga till bildtexter på en arbetsyta
 uuid: fb3dd74d-da20-40cb-bc96-e56d25003e48
 exl-id: fcdb9231-d44a-4287-b799-6a66f7f79432
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '440'
