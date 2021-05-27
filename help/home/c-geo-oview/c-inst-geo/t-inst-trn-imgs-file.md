@@ -3,7 +3,6 @@ description: Steg för att installera filen Terrain Images.cfg på data workbenc
 title: Installera filen Terrain Images.cfg
 uuid: b692bff9-9356-4047-a2f7-f44310bf85fa
 exl-id: 4cc91839-ea36-4476-846a-59af4c5f684c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '91'
