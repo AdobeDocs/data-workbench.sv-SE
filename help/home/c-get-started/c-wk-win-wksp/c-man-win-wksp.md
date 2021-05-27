@@ -3,7 +3,6 @@ description: Vilka typer av fönster som är tillgängliga beror på vilken prof
 title: Hantera fönster på en arbetsyta
 uuid: a7f9b132-999a-4ba8-9e34-1d41075f9e13
 exl-id: 0bedc792-c05b-4f7c-ac1e-f2d5c66e440d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '201'
