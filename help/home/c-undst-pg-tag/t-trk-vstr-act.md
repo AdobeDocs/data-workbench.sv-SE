@@ -3,7 +3,6 @@ description: Webbplatser som byggts med Flash kräver särskild uppmärksamhet n
 title: Spåra besöksaktivitet i Flash multimediematerial
 uuid: fe2e75eb-0897-4f63-b582-b4f1fdce02a1
 exl-id: f51c7034-a7fd-4575-80e1-18fc6513ca2b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '713'
