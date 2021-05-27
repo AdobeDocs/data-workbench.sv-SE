@@ -3,7 +3,6 @@ description: Vanligtvis vill du lägga till en Insight Server DPU i ett befintli
 title: Lägga till en Insight Server DPU i ett befintligt kluster
 uuid: 1977a90e-bd51-4838-9498-f7692891109f
 exl-id: 9cac2795-626b-4fe3-8a7c-f36c9f1dc68f
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '373'
