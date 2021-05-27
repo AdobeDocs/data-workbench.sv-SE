@@ -3,7 +3,6 @@ description: Procedur för att starta Insight Server och samtidigt registrera de
 title: Registrerar Insight Server som en Windows-tjänst
 uuid: 1b3d53ca-d50f-4520-abf5-6d5c40493b88
 exl-id: ba74d4c0-5d99-47a4-8b92-c65d0ec514e2
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '582'
