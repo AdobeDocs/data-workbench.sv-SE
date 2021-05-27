@@ -3,7 +3,6 @@ description: En räkningsbar dimensions element kan räknas av systemet.
 title: Räkningsbara Dimensioner
 uuid: 3312f5eb-69b9-43af-b32a-5c40e3050b29
 exl-id: c607c15d-de85-4daf-af76-79b460f51b38
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '685'
