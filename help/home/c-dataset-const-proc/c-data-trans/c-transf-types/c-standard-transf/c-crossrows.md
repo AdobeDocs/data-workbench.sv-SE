@@ -3,7 +3,6 @@ description: Precis som för andra omformningar tillämpas CrossRows-omformninge
 title: Korsrader
 uuid: 5910c150-6bec-4d98-b116-9b382fd54d3c
 exl-id: 321f986e-44a9-454c-9311-0ae37a11a088
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1137'
