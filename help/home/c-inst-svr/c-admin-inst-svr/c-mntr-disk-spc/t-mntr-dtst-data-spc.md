@@ -3,7 +3,6 @@ description: Information om övervakning av datauppsättningar och tillägg av n
 title: Övervaka datauppsättningsdataområde
 uuid: 0b7b95e7-b1bb-49cf-b465-fdbdc4ee214e
 exl-id: eb34d5fe-73c6-461f-8bb0-85833d8f824f
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '464'
