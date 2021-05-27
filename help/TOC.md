@@ -6,7 +6,6 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Hjälp om Data Workbench
 user-guide-description: Läs mer om Datans Workbench flerkanalsfunktioner. Innefattar handböcker om Data Workbench Client, Installation, Dataset Configuration med mera.
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '3495'
