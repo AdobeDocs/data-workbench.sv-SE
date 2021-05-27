@@ -3,7 +3,6 @@ description: Transformeringsfunktionen körs på en Insight Server FSU-dator fö
 title: Konfigurera Transform
 uuid: 0526704a-71b2-4094-9d3a-1ba84f4dc287
 exl-id: 5dbd70e4-55fc-4446-b687-525e7957209b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '481'
