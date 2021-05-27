@@ -3,7 +3,6 @@ description: Med omvandlingar kan du extrahera information som finns i dina data
 title: Om omformningar
 uuid: 9366f607-741d-4512-9e1b-4165f4291246
 exl-id: 9bd533ef-a87e-400a-9bb0-5af1851cca0a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '307'
