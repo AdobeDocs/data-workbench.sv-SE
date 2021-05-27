@@ -3,7 +3,6 @@ description: Det finns fem fördefinierade åtkomstkontrollsgrupper, men du kan 
 title: Om åtkomstkontrollgrupper
 uuid: ff783078-6d2f-4a64-ab11-8083e35d765f
 exl-id: 35353b0a-7f08-4215-8a2c-ee1e26d9f5db
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '262'
