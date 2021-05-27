@@ -3,7 +3,6 @@ description: Instruktionerna för att installera en Insight Server FSU och konfi
 title: Installationsprocedurer för en Insight Server FSU
 uuid: ffed5095-f83c-4641-9ccc-4b94f51c3f95
 exl-id: 7373af97-0ecf-47a2-bc27-dbfeb7ca3eaa
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '163'
