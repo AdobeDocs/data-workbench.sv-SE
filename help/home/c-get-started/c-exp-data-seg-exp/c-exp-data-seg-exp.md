@@ -3,7 +3,6 @@ description: Med segmentexportfunktionen kan du skapa ett segment av elementen i
 title: Exportera data med segmentexport
 uuid: a6468e76-fe5a-4807-806e-015063f9627a
 exl-id: 46540d63-3b6e-4cfc-ba34-8caffadab99c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '132'
