@@ -3,7 +3,6 @@ description: Du kan använda kalkylblad för att ange att ett mätvärde har nå
 title: Skapa en måttindikator
 uuid: da304004-ef45-4c89-8c91-dd5158172dd6
 exl-id: 5713f3dd-85ef-407c-b21c-80e9b4390b6d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '601'
