@@ -2,7 +2,6 @@
 description: Instruktioner för att skapa utökade dimensioner och beskriva de typer av utökade dimensioner som du kan definiera för att skapa under datauppsättningens omformningsfas.
 title: Utökade Dimensioner
 uuid: 465682c2-5b08-4b94-817f-ff7b405142af
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '134'
