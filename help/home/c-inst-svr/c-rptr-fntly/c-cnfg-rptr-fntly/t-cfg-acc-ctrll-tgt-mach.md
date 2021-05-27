@@ -3,7 +3,6 @@ description: Måldatorer för Insight Server som kör tjänsten Insight Server R
 title: Konfigurera åtkomstkontroll för måldatorer
 uuid: 35e032cf-6c1d-4348-88ce-4f4a6a30b16f
 exl-id: 2d0b554a-30e9-4344-9aec-a68fd5f57304
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '245'
