@@ -2,7 +2,6 @@
 description: De mapp- och filnamn som ingår i implementeringen visas till vänster i Profilhanteraren.
 title: Profilhanteraren
 uuid: c3a19a56-c96b-4661-b656-b845feba4b6f
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1098'
