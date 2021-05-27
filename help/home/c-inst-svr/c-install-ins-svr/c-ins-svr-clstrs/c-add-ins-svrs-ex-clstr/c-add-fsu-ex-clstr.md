@@ -3,7 +3,6 @@ description: Du kanske vill lägga till en Insight Server FSU i ett befintligt k
 title: Lägga till en Insight Server FSU i ett befintligt kluster
 uuid: 57d6ef52-eef9-4425-943a-331e4c9c4207
 exl-id: b3b08016-42ad-4972-a8b7-ee714493fa52
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '699'
