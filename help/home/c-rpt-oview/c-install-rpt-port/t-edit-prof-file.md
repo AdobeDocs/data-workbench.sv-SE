@@ -3,7 +3,6 @@ description: Om du vill ange vilka profiler som ska vara tillgängliga i rapport
 title: Redigera filen Profiles.xml
 uuid: 3640552b-bc46-4b4f-8524-e021b0ca2bfc
 exl-id: 7a3900e4-e472-4295-80f7-ce755958bc18
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '113'
