@@ -3,7 +3,6 @@ description: Information om hur du anger parametrar i filen Transform.cfg basera
 title: Exempel på Datan Workbench Transform.cfg-filer
 uuid: cb473a5a-54e2-4bf7-84fb-c9c27910ef64
 exl-id: f7aadde4-6d89-4bd4-b34b-192a81a71dc3
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '409'
