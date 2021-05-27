@@ -3,7 +3,6 @@ description: Tabeller som innehåller en lista med konstanta och anpassade varia
 title: Arbetsblad för variabelmappning för sidtagg
 uuid: 1ecef047-5a04-401d-b3d5-f31fddb134e1
 exl-id: 647c6a14-58b4-4f87-bccf-fa7ac24811a5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '238'
