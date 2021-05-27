@@ -3,7 +3,6 @@ description: Konceptuell information om bildlager.
 title: Om bildlager
 uuid: a8b00bda-c5b2-4f27-8c15-2d319b3bfa70
 exl-id: c6d30747-70d2-4489-ad64-fd131e76a7a2
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '564'
