@@ -3,7 +3,6 @@ description: Varje DPU från vilken kontrollpanelen ska visa data måste ha en Q
 title: Verifierar aktivering av fråge-API
 uuid: deedd1a4-c476-49f6-9278-556d914d2b93
 exl-id: 3dde2958-0f99-45f8-b65b-207a92362292
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '160'
