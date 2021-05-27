@@ -3,7 +3,6 @@ description: Information om hur du kommer åt dina kontoinställningar och ändr
 title: Hantering av användarkonto
 uuid: 13fab0e2-e2db-442e-b139-e7b576d04dbb
 exl-id: b985a21b-6244-4e7d-86c2-14935c005335
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '132'
