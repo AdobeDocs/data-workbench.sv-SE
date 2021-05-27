@@ -3,7 +3,6 @@ description: Steg för att göra ett nytt terränglager tillgängligt för visni
 title: Göra ett nytt Terrain-bildlager tillgängligt
 uuid: aeeb4ab0-f55c-47b8-96e4-eafd4df4d68a
 exl-id: 76374298-ed65-4fcf-b40b-be7c15784f40
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '180'
