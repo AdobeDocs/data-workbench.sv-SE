@@ -3,7 +3,6 @@ description: Dessa steg gäller endast när du skapar undermenyer och menyaltern
 title: Skapa en arbetsytans meny och ett menyalternativ
 uuid: 9565fe7a-fa4c-42b6-9aa5-b652a2d62796
 exl-id: 26f2b85c-ab23-41a4-bf4b-9e507952fede
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '503'
