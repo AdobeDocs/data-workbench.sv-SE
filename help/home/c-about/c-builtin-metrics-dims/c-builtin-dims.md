@@ -3,7 +3,6 @@ description: Data workbench innehåller inbyggda dimensioner.
 title: Inbyggda Dimensioner
 uuid: 0aabbc52-266d-46c1-a4b3-dd575c0f2c72
 exl-id: c08a487d-60b8-4db7-8776-7ae1b9f1f27c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '100'
