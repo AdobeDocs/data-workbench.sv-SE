@@ -3,7 +3,6 @@ description: Bearbetningen av XML-filer som loggkällor för att definiera avkod
 title: XML-avkodningsgrupper
 uuid: 8fc9ab80-9a71-4fe2-a646-e830ffeb67b9
 exl-id: 0b0534b7-8596-4528-a643-8a9b41dcaa33
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1295'
@@ -120,8 +119,8 @@ En tabell som visar resultatet av den här avkodaren för XML-exempelfilen ser u
 | x-rowtype | cs—uri-system | x-email | x-is-registered | x-event-time | x-tracking-id |
 |---|---|---|---|---|---|
 | BESÖKARE |  | foo@bar.com | 1 |  | 1 |
-| PAGEVIEW | /index.html |  |  | 2006-01-01 08:00:00 | 1 |
-| PAGEVIEW | / |  |  | 2006-01-01 08:00:30 | 1 |
+| PAGEVIEW | /index.html |  |  | 2006-01-01 08:00:00 | 3 |
+| PAGEVIEW | / |  |  | 2006-01-01 08:00:30 | 3 |
 
 Du kan skapa en tabell som den ovan i data workbench med hjälp av ett fältvisningsgränssnitt. Mer information om fältvisningsprogrammets gränssnitt finns i [Verktyg för datauppsättningskonfiguration](../../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5).
 
