@@ -3,7 +3,6 @@ description: Du bör regelbundet övervaka dina händelseloggfiler för att spå
 title: Övervaka administrativa händelser
 uuid: 92d71478-0857-4af8-909c-0cf800b081f4
 exl-id: e468a7d0-ed09-4367-88ce-b68964511e76
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '395'
