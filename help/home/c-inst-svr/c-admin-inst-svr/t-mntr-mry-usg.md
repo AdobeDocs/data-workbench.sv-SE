@@ -3,7 +3,6 @@ description: Information om bedömning och övervakning av adressutrymmesbelastn
 title: Övervaka minnesanvändning
 uuid: e7f1c51b-d874-43f4-a074-1c064b5f298a
 exl-id: b8c0b33b-dbec-4947-911b-11c8a83bbc9c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '581'
