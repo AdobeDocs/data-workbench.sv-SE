@@ -3,7 +3,6 @@ description: Konfigurationsfilen Communications.cfg innehåller nätverksinstäl
 title: Konfigurera kommunikation
 uuid: 04d08206-17b1-4348-a945-0c907c9a494c
 exl-id: af5e788e-8904-4c68-b02a-c95b523b076d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '189'
