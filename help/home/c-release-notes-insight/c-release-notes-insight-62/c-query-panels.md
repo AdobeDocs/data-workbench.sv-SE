@@ -2,7 +2,6 @@
 description: Använd Finder-panelerna i Data Workbench för att välja mått, dimensioner och filter. Panelerna har stöd för sökning, sorteringsalternativ samt möjlighet att dra och släppa.
 title: Finders
 uuid: 7a4144f5-133f-48ed-9613-1e42b1313120
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '640'
@@ -11,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Findrar{#finders}
+# Finders{#finders}
 
 Använd Finder-panelerna i Data Workbench för att välja mått, dimensioner och filter. Panelerna har stöd för sökning, sorteringsalternativ samt möjlighet att dra och släppa.
 
