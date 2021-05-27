@@ -3,7 +3,6 @@ description: Kopiera-omformningen kopierar bara värdet i indatafältet till det
 title: Kopiera
 uuid: 073f53bf-befb-4fba-a8f8-260ffcdd007c
 exl-id: 04e97006-1e8e-4123-bbbc-b90a5231170f
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '176'
