@@ -3,7 +3,6 @@ description: Insight Servers klienter (Report and Insight) använder vanliga nam
 title: Definiera serverns nätverksplats
 uuid: 9cf2f268-6fde-4427-b832-a238d126d697
 exl-id: def360b8-f146-45ca-ae61-fd213adef68b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '233'
