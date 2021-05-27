@@ -3,7 +3,6 @@ description: Sensor automatiserar inhämtningen av data från din internetkanal 
 title: Hur fungerar datainsamlingsprocessen?
 uuid: d34e5938-217b-4a1e-b96e-55a02b1c3af0
 exl-id: dd930739-ca24-4166-8ebd-84b65f6f3754
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '286'
