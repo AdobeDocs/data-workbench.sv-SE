@@ -3,7 +3,6 @@ description: Granskningsloggfiler spårar alla anslutningsförsök till och frå
 title: Övervaka granskningsloggar
 uuid: 38af9328-3f72-48a4-a0de-bf7477fedc25
 exl-id: 220330da-e5dc-4ac0-9b70-42b08ccb3577
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '196'
