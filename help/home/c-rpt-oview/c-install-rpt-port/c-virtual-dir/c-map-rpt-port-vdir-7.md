@@ -3,7 +3,6 @@ description: Steg för att mappa rapportportalen till en virtuell katalog (IIS 7
 title: Mappa rapportportalen till en virtuell katalog (IIS 7.0 eller senare)
 uuid: 9d18fb85-f9d7-48b6-a19b-1e7b68a5adca
 exl-id: 2fa3439a-1fe5-4a20-83db-d233ae8b5263
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '437'
