@@ -2,7 +2,6 @@
 description: Adobe Data Workbench tillhandahåller verktyg och processer för att göra era data klara för att följa de allmänna dataskyddsreglerna (GDPR).
 title: Data Workbench Support for GDPR
 exl-id: fdc43567-0c57-4851-9073-e295258a8074
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '525'
