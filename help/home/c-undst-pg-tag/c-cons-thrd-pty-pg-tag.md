@@ -3,7 +3,6 @@ description: Konceptuell information om taggning från tredje part och förhindr
 title: P3P-överväganden för sidtaggning från tredje part
 uuid: b88d0d22-0ff8-4b63-9be9-7acc12061146
 exl-id: 8eb521b6-802c-4d9f-a6b4-b1c4f694b8b8
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '773'
