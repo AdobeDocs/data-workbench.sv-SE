@@ -3,7 +3,6 @@ description: Reguljära uttryck används i alla sökfält i en workbench för da
 title: Reguljära uttryck
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1418'
@@ -104,7 +103,7 @@ Titta på följande exempel:
 |---|---|---|
 | Win9`[58]` | OS=Win95 | Win95 |
 | Win95 | 8 | OS=Win98 | Win98 |
-| `[0-9]` | Mozilla/3.0 | 3 |
+| `[0-9]` | Mozilla/3.0 | 1 |
 | Lektion`[A-Z]` | Lektion | Ingen matchning eftersom&quot;a&quot; med lägre placering inte ligger inom intervallet för&quot;A till och med Z&quot;. |
 
 **Negation**
