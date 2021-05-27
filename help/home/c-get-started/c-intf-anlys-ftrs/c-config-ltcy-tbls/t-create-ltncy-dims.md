@@ -3,7 +3,6 @@ description: Latensdimensioner skapas från en överordnad räkningsbar dimensio
 title: Skapa en latensdimension
 uuid: 531d8bf6-a66f-4b02-9d81-05664fb9c988
 exl-id: 38b470ef-9409-455b-b2b8-b0391f80b800
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '542'
