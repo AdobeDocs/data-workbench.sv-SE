@@ -3,7 +3,6 @@ description: Följ de här stegen för att uppdatera till data workbench v6.1 fr
 title: Uppgradering av Data Workbench 6.0 till 6.1
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
 exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '753'
