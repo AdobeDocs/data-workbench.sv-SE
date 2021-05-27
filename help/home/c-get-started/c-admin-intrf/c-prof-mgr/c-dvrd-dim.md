@@ -3,7 +3,6 @@ description: De nya dimensionerna som du skapar med Data Workbench (kallas härl
 title: Arbeta med härledda dimensioner
 uuid: 3a955fdc-6666-40ab-aee0-bd23c260c009
 exl-id: 5b7e3a2a-ac61-4186-ad6c-234edf68af3e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '562'
