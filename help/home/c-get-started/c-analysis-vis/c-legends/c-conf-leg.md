@@ -3,7 +3,6 @@ description: Förtroendeförklaringar hjälper dig att avgöra sannolikheten fö
 title: Förtroendeförklaringar
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
 exl-id: 9aab169a-98b8-4e71-b74d-28e385c5c424
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '445'
