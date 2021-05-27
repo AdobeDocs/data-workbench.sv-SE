@@ -3,7 +3,6 @@ description: Du måste konfigurera målservern/målservrarna för Insight för a
 title: Konfigurerar replikeringstjänsten
 uuid: 93931b1d-d1fd-4e98-aa88-f7962eea92a2
 exl-id: ae189089-fd5d-41cb-ad10-2b8c2032dafc
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1005'
