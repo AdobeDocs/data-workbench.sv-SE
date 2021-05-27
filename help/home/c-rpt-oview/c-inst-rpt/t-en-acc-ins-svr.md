@@ -3,7 +3,6 @@ description: Om du vill ansluta till en data workbench-server måste Report Serv
 title: Aktivera åtkomst till Data Workbench Server
 uuid: e112ac2a-34fe-40a2-9324-262f5cb1f681
 exl-id: bf409413-470e-4e05-9bd2-b5b511bbe4a5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '283'
