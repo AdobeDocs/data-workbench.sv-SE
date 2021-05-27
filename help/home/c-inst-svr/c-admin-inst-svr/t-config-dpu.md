@@ -3,7 +3,6 @@ description: DPU-konfigurationsfilen DPU.cfg anger olika prestandaparametrar fö
 title: Konfigurera DPU.cfg
 uuid: c348622b-7d4b-4cfa-a8f8-a07d91e440d5
 exl-id: 55e4ea7f-fee3-4af7-9cbc-d121e79e6ab2
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '206'
