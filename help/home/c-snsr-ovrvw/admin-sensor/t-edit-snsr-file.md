@@ -3,7 +3,6 @@ description: Sensorkonfigurationsfilen, txlogd.conf, innehåller parametrar som 
 title: Redigera filen txlog.conf för sensorn
 uuid: e7f41c14-9047-4e1a-be0f-8acc8ecb1160
 exl-id: ed243bb4-cf87-4bcf-89d6-5ff5cec3bc6e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '260'
