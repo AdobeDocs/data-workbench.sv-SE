@@ -3,7 +3,6 @@ description: Som standard visas staplar i diagramvisualiseringar, men du kan enk
 title: Ändra visning av diagram
 uuid: 8448afab-a2b0-4f96-a0e5-920013e83905
 exl-id: b8d8d403-0432-42e1-8019-2d2d0a891e55
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '165'
