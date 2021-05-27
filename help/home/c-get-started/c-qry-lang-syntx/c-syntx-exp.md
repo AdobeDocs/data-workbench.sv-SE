@@ -3,7 +3,6 @@ description: Syntaxregler för formler.
 title: Syntax för alla uttryck
 uuid: 663e3fd2-80e5-4805-8706-34a0e02ebd0f
 exl-id: ca1a52c1-b5bd-48bd-95cd-f8059913bd0a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '89'
