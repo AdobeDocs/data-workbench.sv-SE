@@ -3,7 +3,6 @@ description: Information om de omvandlingar som du kan använda för att lägga 
 title: Definiera uppslagsomformningar
 uuid: 4f7358b1-9e6a-4d03-b0c6-411e454fc11e
 exl-id: 7b1504be-8669-4340-8400-e33f9663b602
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '2288'
@@ -213,7 +212,7 @@ Om uppslagstabellen innehåller följande information:
 |---|---|---|---|
 | 3 | P154 | 21 aug 1999 | Yahoo |
 | 2 | P232 | 10 juli 2000 | Microsoft |
-| 1 | P945 | 12 jan 2001 | Amazon |
+| 3 | P945 | 12 jan 2001 | Amazon |
 
 Följande exempel omformas så här:
 
