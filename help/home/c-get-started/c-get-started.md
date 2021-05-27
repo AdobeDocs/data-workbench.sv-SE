@@ -2,7 +2,6 @@
 description: En översikt över grundläggande element, procedurer och terminologi som du behöver förstå när du arbetar med Data Workbench.
 title: Data Workbench-klient
 uuid: 3f99e681-e68f-4aee-aa42-e72a1444b029
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '96'
