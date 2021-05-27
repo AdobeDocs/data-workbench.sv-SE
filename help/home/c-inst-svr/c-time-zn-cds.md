@@ -3,7 +3,6 @@ description: Formatera instruktioner om tidsbaserade parametrar i Insight Server
 title: Tidszonskoder
 uuid: dcc8aa15-5846-4f24-8b82-e25ff89871ba
 exl-id: d8923b01-24fe-4a70-9800-f2eedf567c6a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '364'
