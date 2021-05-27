@@ -3,7 +3,6 @@ description: Gränssnittet Serverövervakaren är användbart för felsökning e
 title: Serverövervakarens gränssnitt
 uuid: 609dd8ea-31a9-44c1-ab75-ca783ec85650
 exl-id: fb8baae9-ac1e-4355-ba38-fef6621e22bb
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '362'
@@ -55,7 +54,7 @@ I följande tabell visas de uppgifter som kan utföras med gränssnittet [!DNL S
   </tr> 
   <tr> 
    <td colname="col1"> <p>För att fastställa det aktuella antalet nätverksanslutningar till datorn </p> </td> 
-   <td colname="col2"> <p>Visa den sista raden i informationen för datorns <span class="wintitle"> Server Monitor</span>. I exemplet ovan ser du att två nätverksanslutningar för närvarande kommer från en dator. </p> </td> 
+   <td colname="col2"> <p>Visa den sista raden i datorns <span class="wintitle"> Server Monitor</span>-information. I exemplet ovan ser du att två nätverksanslutningar för närvarande kommer från en dator. </p> </td> 
   </tr> 
  </tbody> 
 </table>
