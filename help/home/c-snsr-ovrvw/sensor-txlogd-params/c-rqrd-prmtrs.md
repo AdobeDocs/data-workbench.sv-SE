@@ -3,7 +3,6 @@ description: Information om de parametrar som krävs för Sensor txlogd.conf.
 title: Obligatoriska parametrar
 uuid: 187f4199-ec7f-4d5a-93eb-64a62d51ec7b
 exl-id: 782e11e9-b11b-4003-9669-f31187208ec3
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '538'
