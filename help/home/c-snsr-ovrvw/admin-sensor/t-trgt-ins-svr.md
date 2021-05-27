@@ -3,7 +3,6 @@ description: Om du vill ändra den data workbench-server som en sensor kommunice
 title: Ändra målserverns Data Workbench
 uuid: 931d376d-8622-4858-8290-19ce91538570
 exl-id: 9d18cae1-4037-48c6-8514-3278e2c73b47
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '280'
