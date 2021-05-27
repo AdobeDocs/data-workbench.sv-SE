@@ -3,7 +3,6 @@ description: Du kan öppna ett fältvisningsprogram som en bildtext från en ber
 title: Skapa ett fältvisningsprogram
 uuid: df48e728-96f9-4432-82c8-f8047840ffb9
 exl-id: a2563dbb-1d1f-4ed8-b73b-6ac7a2687405
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '346'
