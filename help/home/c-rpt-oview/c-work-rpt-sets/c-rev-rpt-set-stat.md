@@ -3,7 +3,6 @@ description: När en Report.cfg-fil har konfigurerats för att generera rapporte
 title: Status för rapportuppsättning
 uuid: bbe00fcd-0ce1-4607-b1a2-002733cf4736
 exl-id: ac78e490-9435-48f9-b5f5-18208896cef1
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '120'
