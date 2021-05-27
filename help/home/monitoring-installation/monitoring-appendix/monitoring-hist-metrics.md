@@ -3,7 +3,6 @@ description: Nedan visas de mätvärden som ingår i den historiska övervakning
 title: Mätvärden i Datans Workbench historiska övervakningsprofil
 uuid: 47b874f7-8acb-4593-9ac9-5997d5279e52
 exl-id: 65f0f605-f128-45bb-8f6c-95284b2da740
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '718'
