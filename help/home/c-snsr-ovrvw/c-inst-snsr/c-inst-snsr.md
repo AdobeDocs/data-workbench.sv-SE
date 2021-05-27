@@ -3,7 +3,6 @@ description: Du installerar sensor på samma dator som den server vars aktivitet
 title: Installera sensor
 uuid: 8d500fd0-daa0-453b-8284-b3f112a358ce
 exl-id: cd5b54bf-301a-41a9-a69c-d9adb314be03
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '200'
