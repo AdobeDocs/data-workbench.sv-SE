@@ -3,7 +3,6 @@ description: Om du arbetar med data som samlats in från webbplatstrafiken kan d
 title: Skändis
 uuid: c6e2487a-80e5-4e00-b4d4-2ce013fac3ea
 exl-id: bb25cb4b-7185-4524-8ff5-740b672e1cd9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '773'
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Sälj{#sessionize}
+# Skändis{#sessionize}
 
 Om du arbetar med data som samlats in från webbplatstrafiken kan du använda Sessionsomvandling för att avgöra hur sessioner definieras.
 
