@@ -3,7 +3,6 @@ description: Kontrollpanelen för data workbench innehåller ett sidofält och v
 title: Användargränssnitt för instrumentpanel
 uuid: cfa6c553-e223-4b0e-8b4a-255afa85c999
 exl-id: f80da6c7-02cb-4916-b139-617703cf27b6
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '276'
