@@ -3,7 +3,6 @@ description: Syftet med Sensorns filtreringsfunktion av innehållstyp är att el
 title: Filtrera efter innehållstyp
 uuid: 8a3b567b-8c7b-4ca2-bfcb-74a1addda2bd
 exl-id: 0ed93a18-ef47-462b-8609-3ec98b037e6b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '195'
