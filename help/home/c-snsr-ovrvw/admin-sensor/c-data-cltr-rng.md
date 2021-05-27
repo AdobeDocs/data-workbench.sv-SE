@@ -3,7 +3,6 @@ description: Kontrollera om insamlaren körs med olika metoder.
 title: Bekräfta att datainsamlaren körs
 uuid: e5b9b12a-b8a5-4c00-abe5-e824516d46b7
 exl-id: 1235d741-1ddf-4a65-8377-3d8a9b4ba0d3
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '455'
@@ -18,7 +17,7 @@ Kontrollera om insamlaren körs med olika metoder.
 **Rekommenderad frekvens:** var 5-10:e minut
 
 * [Använd platstestfunktionen i sändaren.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-a5a697c3252e40f184c0b662926170f2)
-* [Kontrollera  [!DNL Sensor] om du ställer in en cookie.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-365a0182474c4dc9a5372d3e984f53de)
+* [Kontrollera om  [!DNL Sensor] ställer in en cookie.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-365a0182474c4dc9a5372d3e984f53de)
 
 ## Använda platstest {#section-a5a697c3252e40f184c0b662926170f2}
 
