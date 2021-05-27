@@ -3,7 +3,6 @@ description: Steg för att avinstallera data workbenchGeography.
 title: Avinstallerar Data Workbench Geography
 uuid: 038b2dfb-4db2-42c6-85c3-bc5d776e7736
 exl-id: e3898423-3b28-4786-834a-1d1ff9deb7c6
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '248'
