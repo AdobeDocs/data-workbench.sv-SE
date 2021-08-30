@@ -1,18 +1,18 @@
 ---
-description: Med Data Workbench kan ni skapa nya mätvärden, filter och dimensioner för att utöka den information som är tillgänglig via ett program eller enkelt anpassa definitionerna i programmet efter era behov. Den öppna datatypen, måtten och filtren gör att du kan besvara fler frågor när du lägger till nya mätvärden och dimensioner.
+description: Med Data Workbench kan du skapa mätvärden, filter och dimensioner för att utöka den information som finns i ett program eller enkelt anpassa definitionerna i programmet efter dina behov. Den öppna datatypen, måtten och filtren gör att du kan besvara fler frågor när du lägger till nya mätvärden och dimensioner.
 title: Expandera mått, Dimensioner och filter
 uuid: eaec0731-1916-4063-9fda-3a92ee325024
 exl-id: 5a7719a3-ba2e-4361-87e0-4d0df23196df
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 92c0628b78d39a5cf75fb5cb6b63b1c95d3b7eea
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
 # Expandera mått, Dimensioner och filter{#expanding-metrics-dimensions-and-filters}
 
-Med Data Workbench kan ni skapa nya mätvärden, filter och dimensioner för att utöka den information som är tillgänglig via ett program eller enkelt anpassa definitionerna i programmet efter era behov. Den öppna datatypen, måtten och filtren gör att du kan besvara fler frågor när du lägger till nya mätvärden och dimensioner.
+Med Data Workbench kan du skapa mätvärden, filter och dimensioner för att utöka den information som finns i ett program eller enkelt anpassa definitionerna i programmet efter dina behov. Den öppna datatypen, måtten och filtren gör att du kan besvara fler frågor när du lägger till nya mätvärden och dimensioner.
 
 Nyligen definierade mått kan utvärderas över befintliga dimensioner och även befintliga mått kan utvärderas över nydefinierade dimensioner. Nyligen definierade mätvärden kan också användas som indata i andra mätvärden. Eftersom mätvärden bygger på klientsidan (det vill säga att deras konstruktion inte kräver datauppsättningsbearbetning) har de minimal inverkan på systemets prestanda. Ni kan öka analysmöjligheterna genom att skapa många mätnivåer.
 
