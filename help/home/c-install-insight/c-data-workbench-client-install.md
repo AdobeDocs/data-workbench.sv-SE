@@ -3,9 +3,9 @@ description: Nedan följer krav och rekommendationer för hur du installerar arb
 title: Krav på arbetsstation
 uuid: 3c4ba2e8-efbc-45fe-8ac1-923d070bc710
 exl-id: 35e259e3-3d6d-45c8-a923-2f8de117489d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Nedan följer krav och rekommendationer för hur du installerar arbetsstationen (klienten) i Datan Workbench.
 
-Mer information om systemkrav för Data Workbench finns i [Systemkrav för serversystem](https://docs.adobe.com/help/en/data-workbench/using/server-admin-install/c-msr-server.html).
+Mer information om systemkrav för Data Workbench finns i [Systemkrav för serversystem](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/c-msr-server.html?lang=en).
 
 >[!IMPORTANT]
 >

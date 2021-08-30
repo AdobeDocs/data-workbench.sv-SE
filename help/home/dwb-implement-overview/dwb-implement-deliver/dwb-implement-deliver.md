@@ -3,9 +3,9 @@ description: När du har konfigurerat DWB kan du implementera dessa funktioner.
 title: Data Workbench implementering av funktioner
 uuid: f7eec017-f27c-4ae0-bc23-45195fc08d81
 exl-id: 4b2625a6-cc44-4281-b532-fc29e8c06105
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ När du har konfigurerat DWB kan du implementera dessa funktioner.
 
 * Mer information om hur du implementerar **Globe visualization** finns i [Globes](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/globes/c-globes.html).
 
-* Information om hur du implementerar **arbetsytor för attribuering** finns i [Regelbaserad attribuering](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-rules-attrib.html) och [Bästa passningsattribut](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html).
+* Information om hur du implementerar **arbetsytor för attribuering** finns i [Regelbaserad attribuering](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-rules-attrib.html?lang=en) och [Bästa passningsattribut](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html?lang=en).
 
 * Information om hur du implementerar **Predictive Analytics**-arbetsytor finns i [Visualiseringar](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-vis.html) och den visualisering som listas nedan.
 
-* Information om hur du implementerar **Predictive Intelligence with Clustering visualizations** finns i [Clustering](https://docs.adobe.com/help/en/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html).
+* Information om hur du implementerar **Predictive Intelligence with Clustering visualizations** finns i [Clustering](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html?lang=en).
 
 * Information om hur du implementerar **Predictive Intelligence with Propensity Scoring** finns i [Propensity Scoring](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-propensity/c-visitor-propensity.html).
 

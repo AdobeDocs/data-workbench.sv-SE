@@ -2,9 +2,9 @@
 description: Adobe Data Workbench tillhandahåller verktyg och processer för att göra era data klara för att följa de allmänna dataskyddsreglerna (GDPR).
 title: Data Workbench Support for GDPR
 exl-id: fdc43567-0c57-4851-9073-e295258a8074
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ GDPR-förordningen identifierar rollerna och skyldigheterna för de olika parter
 
 * Din organisation fungerar som **personuppgiftsansvarig** för att fastställa kontext och lagring av personuppgifter baserat på dina behov och begränsningar. Adobe bearbetar och lagrar sedan dessa data åt dig.
 * Adobe fungerar som **databehandlare** och tillhandahåller programvaran och tjänsterna för att implementera GDPR-krav baserat på ditt avtal med Adobe.
-* Efter integrering av Data Workbench med GDPR-tjänsten och enligt GDPR-standarder kan besökare på en webbplats (de **registrerade**) utöva sin&quot;rätt att bli bortglömd&quot; av Adobe, dataprocessorn. För att uppnå rättigheten att bli bortglömd kan du som personuppgiftsansvariga överföra utmanande besökar-ID:n till Adobe från ett användargränssnitt eller ett API. Mer information finns i [dokumentationen för Adobe Analytics GDPR-arbetsflödet](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html), inklusive [begäran om åtkomst och borttagning](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+* Efter integrering av Data Workbench med GDPR-tjänsten och enligt GDPR-standarder kan besökare på en webbplats (de **registrerade**) utöva sin&quot;rätt att bli bortglömd&quot; av Adobe, dataprocessorn. För att uppnå rättigheten att bli bortglömd kan du som personuppgiftsansvariga överföra utmanande besökar-ID:n till Adobe från ett användargränssnitt eller ett API. Mer information finns i [dokumentationen för Adobe Analytics GDPR-arbetsflödet](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=en), inklusive [begäran om åtkomst och borttagning](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 >[!NOTE]
 >
