@@ -3,9 +3,9 @@ description: Datauppsättningskonfigurationen avser processen att redigera de ko
 title: Om datauppsättningskonfiguration
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
 exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ c_addl_config_files.xml
 
 * **Server.cfg:** Filen  [!DNL Server.cfg] anger standardstorleken för datacache (i byte) för data workbench-datorer som ansluter till data workbench-servern. Se [Ytterligare konfigurationsfiler](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
 
-* **Transform.cfg och Transform Mode.cfg:** De här filerna är bara tillgängliga om du har licensierat dataomvandlingsfunktionen att använda med ditt Adobe-program. Filen [!DNL Transform.cfg] innehåller de parametrar som definierar loggkällor och dataomformningar för omformningsfunktioner. De omformningar som du definierar ändrar källdata och skapar ett format som du anger. Med [!DNL Insight Transform Mode.cfg]-filen kan du pausa bearbetningen av data till en datauppsättning, ange offlinekällor eller ange den frekvens med vilken omformningsfunktionen sparar sina tillståndsfiler. Se [Omformningsfunktion](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
+* **Transform.cfg och Transform Mode.cfg:** De här filerna är bara tillgängliga om du har licensierat dataomvandlingsfunktionen att använda med ditt Adobe-program. Filen [!DNL Transform.cfg] innehåller de parametrar som definierar loggkällor och dataomformningar för omformningsfunktioner. De omformningar som du definierar ändrar källdata och skapar ett format som du anger. Med [!DNL Insight Transform Mode.cfg]-filen kan du pausa bearbetningen av data till en datauppsättning, ange offlinekällor eller ange den frekvens med vilken omformningsfunktionen sparar sina tillståndsfiler. Se [Omformningsfunktion](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
 
 <!--
 c_next_steps.xml

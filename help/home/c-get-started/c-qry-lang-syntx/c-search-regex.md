@@ -3,9 +3,9 @@ description: Data workbench använder reguljära uttryck (regex) för sök- och 
 title: Reguljära uttryck
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
 exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
@@ -45,4 +45,4 @@ I fältet **[!UICONTROL Search]** kan du utföra en sökning efter satsen &quot;
 
 Ytterligare vanliga reguljära uttryck kan också användas för att skapa mer komplexa söksträngar. Reguljära uttryck används i alla sökfält för Data Workbench, inklusive frågans entitetspaneler.
 
-Mer detaljerad information finns i [reguljära uttryck](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).
+Mer detaljerad information finns i [reguljära uttryck](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).

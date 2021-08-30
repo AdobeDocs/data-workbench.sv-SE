@@ -3,9 +3,9 @@ description: Information om parametrar för Report Server.cfg.
 title: Report Server.cfg-parametrar
 uuid: 506f30f7-c8c6-4580-8423-7da8d00b0d57
 exl-id: 339e4219-ff4d-4df6-b45a-7144927a843b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,7 @@ Följande tabell innehåller beskrivningar av filparametrarna [!DNL Report Serve
   </tr> 
   <tr> 
    <td colname="col1"> Statusintervall </td> 
-   <td colname="col2"> <p>Frekvensen (i sekunder) med vilken <span class="wintitle"> Report Server </span> genererar och skickar statusinformation till data workbench-servern som ska visas i <span class="wintitle"> Detailed Status </span>. </p> <p>Standardvärdet är 120 sekunder. Vi rekommenderar inte att du anger det här till ett lågt värde, till exempel två minuter, eftersom det kan ta timmar att köra en rapportkö. I så fall kan du överväga en inställning på 600 till 1 200 sekunder. </p> <p>Mer information om <span class="wintitle"> Detaljerad status </span> finns i kapitlet Administrativa gränssnitt i <a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> Användarhandbok för Insight </a>. </p> </td> 
+   <td colname="col2"> <p>Frekvensen (i sekunder) med vilken <span class="wintitle"> Report Server </span> genererar och skickar statusinformation till data workbench-servern som ska visas i <span class="wintitle"> Detailed Status </span>. </p> <p>Standardvärdet är 120 sekunder. Vi rekommenderar inte att du anger det här till ett lågt värde, till exempel två minuter, eftersom det kan ta timmar att köra en rapportkö. I så fall kan du överväga en inställning på 600 till 1 200 sekunder. </p> <p>Mer information om <span class="wintitle"> Detaljerad status </span> finns i kapitlet Administrativa gränssnitt i <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> Användarhandbok för Insight </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uppdateringsintervall </td> 

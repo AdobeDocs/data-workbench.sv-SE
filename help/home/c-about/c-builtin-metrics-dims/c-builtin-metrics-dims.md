@@ -3,9 +3,9 @@ description: I det här avsnittet finns detaljerad information om inbyggda mått
 title: Inbyggda mått, Dimensioner och filter
 uuid: 05676254-f6f5-4cb1-a664-da96d5b965db
 exl-id: d581a029-fd59-47c5-b832-64407102ace7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,4 @@ Nästan alla mått definieras i en profils metrikatalog. Ett fåtal inbyggda mä
 
 >[!NOTE]
 >
->Loggbearbetningsfasen innebär inte att alla händelsedata kommer från loggfiler. Även om det ibland gör det kan händelsedata komma från en annan källa, som en ODBC-datakälla. Mer information om datakällor finns i [Konfigurationshandboken för datauppsättningar](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html).
+>Loggbearbetningsfasen innebär inte att alla händelsedata kommer från loggfiler. Även om det ibland gör det kan händelsedata komma från en annan källa, som en ODBC-datakälla. Mer information om datakällor finns i [Konfigurationshandboken för datauppsättningar](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html).

@@ -2,17 +2,19 @@
 description: Stolpdiagrammet i Data Workbench innehåller nu en regressionsjämförelse för flera mätvärden i flera diagram.
 title: Diagram för regressionsanalys
 uuid: 8512890e-f42b-4dce-826a-2b4bf2a215f4
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: bfc76c4a-edd5-41fe-b875-c199ea3beab5
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 0%
 
 ---
-
 
 # Diagram för regressionsanalys{#regression-analysis-graph}
 
 Stolpdiagrammet i Data Workbench innehåller nu en regressionsjämförelse för flera mätvärden i flera diagram.
 
-[Med stapeldiagram](https://docs.adobe.com/content/help/en/data-workbench/using/client/analysis-visualizations/graphs/c-graphs.html) i Data Workbench kan du komprimera måtten i ett diagram till måtten i ett annat diagram. Om du har flera diagram kan du jämföra ett mätvärde (som den oberoende variabeln) med ett diagram som utvärderar andra mätvärden (som beroende variabler). På så sätt kan du bestämma styrkan för relationen mellan en beroende variabel (det mätvärde som etablerats först) och en serie andra ändringsvärden (regressioner med det etablerade beroende mätvärdet).
+[Med ](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/graphs/c-graphs.html) stolpdiagram kan du ändra måtten i ett diagram till måtten i ett annat Data Workbench. Om du har flera diagram kan du jämföra ett mätvärde (som den oberoende variabeln) med ett diagram som utvärderar andra mätvärden (som beroende variabler). På så sätt kan du bestämma styrkan för relationen mellan en beroende variabel (det mätvärde som etablerats först) och en serie andra ändringsvärden (regressioner med det etablerade beroende mätvärdet).
 
 Med regressionsanalysen på en grafvisualisering kan analytiker utföra &quot;konsekvensscenarier&quot;. Om antalet besök till exempel ökar till denna nivå, hur påverkar denna ökning intäkterna?
 
@@ -26,7 +28,7 @@ Med regressionsanalysen på en grafvisualisering kan analytiker utföra &quot;ko
 
 1. Ange andra måttdiagram som oberoende variabler.
 
-   Högerklicka på mätvärden och välj **[!UICONTROL Regress with `<base metric name>`]** för andra mätvärden.
+   Högerklicka på mätvärdet och välj **[!UICONTROL Regress with `<base metric name>`]** för andra mätvärden.
 
    ![](assets/c_graph_regression.png)
 
@@ -41,4 +43,3 @@ Med regressionsanalysen på en grafvisualisering kan analytiker utföra &quot;ko
    ![](assets/c_graph_regression_3.png)
 
    Om besökarnas värden ökar till 26 141 blir de andra värdena Besök vid 26 560 och Sidvyer vid 189 091.
-

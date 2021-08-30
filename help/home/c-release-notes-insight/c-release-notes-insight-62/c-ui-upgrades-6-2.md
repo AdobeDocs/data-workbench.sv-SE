@@ -2,10 +2,9 @@
 description: Data Workbench 6.2 innehåller nya uppdateringar av användargränssnittet till bokmärkespanelen, nya ikoner i arbetsytans verktygsfält, möjligheten att dra arbetsytan inom en skärm, nya snabbtangenter och uppdateringar av cirkeldiagramvisningen.
 title: Data Workbench Client UI Updates
 uuid: 1bc18c90-8b46-4c90-b7a7-2c6710e1e28c
-translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -22,11 +21,11 @@ Du kan nu bokmärka viktiga arbetsytor för att snabbt gå mellan visualiseringa
 **Arbeta med bokmärken**
 
 1. Skapa ett bokmärke för en arbetsyta genom att klicka på ikonen Bokmärke ![](assets/bookmark_icon.png) i det övre högra hörnet av verktygsfältet.
-1. Klicka **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** i den vänstra rutan för att öppna en lista med bokmärken.
+1. Klicka på **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** i den vänstra rutan för att öppna en lista med bokmärken.
 
    ![](assets/bookmarks_panel.png)
 
-1. Om du vill öppna en arbetsyta med bokmärken klickar du på namnet på arbetsytan i **[!UICONTROL Bookmark Panel]**.
+1. Om du vill öppna en bokmärkt arbetsyta klickar du på ett namn på arbetsytan i **[!UICONTROL Bookmark Panel]**.
 
    ![](assets/bookmarks_panel_left.png)
 
@@ -34,7 +33,7 @@ Du kan nu bokmärka viktiga arbetsytor för att snabbt gå mellan visualiseringa
 
 **Så här tar du bort ett bokmärke:**
 
-* På bokmärkespanelen högerklickar du och väljer **Ta bort`<bookmark title>`** för att ta bort ett markerat bokmärke, eller väljer **[!UICONTROL Clear All Bookmarks]** att ta bort alla bokmärken.
+* Högerklicka på bokmärkespanelen och välj **Ta bort`<bookmark title>`** om du vill ta bort ett markerat bokmärke, eller välj **[!UICONTROL Clear All Bookmarks]** om du vill ta bort alla bokmärken.
 
 * Du kan också högerklicka på arbetsytan i miniatyrbildsvyn i arbetsytan och välja **[!UICONTROL Clear Bookmark]**.
 
@@ -46,14 +45,13 @@ Du kan nu bokmärka viktiga arbetsytor för att snabbt gå mellan visualiseringa
 >
 
 
-
 ## Nya ikoner i arbetsytan {#section-c108bbd1661249e79c146727ff3d2470}
 
-Data Workbench 6.2 ersätter nu texten på arbetsytan med ikoner. Du kan fortfarande hovra över och se verktygstipset som identifierar ikonen, inklusive **[!UICONTROL File]**, **[!UICONTROL Add]** och **[!UICONTROL Export]**.
+Data Workbench 6.2 ersätter nu texten på arbetsytan med ikoner. Du kan fortfarande hovra över ikonen och se verktygstipset som identifierar den, inklusive **[!UICONTROL File]**, **[!UICONTROL Add]** och **[!UICONTROL Export]**.
 
 ![](assets/new_icons.png)
 
-En ny **[!UICONTROL Help]** ikon läggs till för att komma åt dokumentationen och andra kunskapscenter, inklusive följande länkar:
+En ny **[!UICONTROL Help]**-ikon läggs till för att komma åt dokumentationen och andra kunskapscenter, inklusive följande länkar:
 
 <table id="table_64BBC67B1BB44B1197FF7E5E7B067696"> 
  <thead> 
@@ -65,19 +63,19 @@ En ny **[!UICONTROL Help]** ikon läggs till för att komma åt dokumentationen 
  <tbody> 
   <tr> 
    <td colname="col1"> Marknadsföringsrapporter och analyser </td> 
-   <td colname="col2">Öppna på hjälpsidan för <span class="uicontrol"> Adobe Marketing Reports &amp; Analytics</span> . </td> 
+   <td colname="col2">Öppna på hjälpsidan <span class="uicontrol"> Adobe Marketing Reports &amp; Analytics</span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Idea Exchange </td> 
-   <td colname="col2">Öppna inloggningen <span class="uicontrol"> för</span>Idea Exchange. På den här onlineportalen kan användare tillhandahålla uppdateringsändringar och förbättringsidéer till Data Workbench. Alla användare kan sedan rösta på dessa kundfokuserade idéer. </td> 
+   <td colname="col2">Öppna för inloggningen <span class="uicontrol"> Idea Exchange</span>. På den här onlineportalen kan användare tillhandahålla uppdateringsändringar och förbättringsidéer till Data Workbench. Alla användare kan sedan rösta på dessa kundfokuserade idéer. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Hjälp </td> 
-   <td colname="col2">Öppna <span class="uicontrol"> Datans Workbench dokumentation</span>. <p>Du kan också trycka på <span class="uicontrol"> &lt;F1&gt;</span> för att öppna hjälpen i en arbetsyta. </p> </td> 
+   <td colname="col1"> Hjälp om  </td> 
+   <td colname="col2">Öppna dokumentationen för <span class="uicontrol">-Datan Workbench</span>. <p>Du kan också trycka på <span class="uicontrol"> &lt;F1&gt;</span> för att öppna hjälpen i en arbetsyta. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Om </td> 
-   <td colname="col2">Öppna för att identifiera <span class="uicontrol"> klientversionen</span> av data workbench. </td> 
+   <td colname="col2">Öppna för att identifiera <span class="uicontrol">-klientversionen</span> av data workbench. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -94,7 +92,7 @@ Om en arbetsyta är större än den visningsbara skärmen kan du flytta vyn så 
 
 ## Snabbtangenter för att ändra arbetsytevyer {#section-d8322f72423f437aa2e34f2188b1341c}
 
-Med de nya snabbtangenterna kan du ändra storlek på och anpassa arbetsytorna mellan fönster- och fullsidesvyer. Se [Snabbreferens](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-qk-ref.html) för fler kortkommandon.
+Med de nya snabbtangenterna kan du ändra storlek på och anpassa arbetsytorna mellan fönster- och fullsidesvyer. Se [Snabbreferens](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-qk-ref.html) för fler tangentbordstangenter.
 
 <table id="table_A01C514C99F043338D183A6839E03DEA"> 
  <thead> 

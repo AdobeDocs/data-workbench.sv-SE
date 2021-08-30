@@ -3,9 +3,9 @@ description: Nya funktioner i Data Workbench 6.0.4, bland annat felkorrigeringar
 title: Versionsinformation om Data Workbench 6.0
 uuid: b348425e-3304-4db7-a280-479a34452bdb
 exl-id: be69b3be-24e7-4a8c-9dc8-1360a9b6fb3a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1677'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Data workbench (Insight 6.0) innehåller dessa nya funktioner och visualiseringa
 | [Korrelationsanalys](../../../home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md#concept-a7c8766b40be43aaa4084612689b630c) | Med korrelationsanalys kan ni snabbt identifiera relevanta dataförhållanden för att utöka och förbättra analysen. |
 | [Uppdaterad DeviceAtlas-distribution](../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md#concept-28b7bd5c0d854e73834261c431bed1e0) | DeviceAtlas JSON-filen kommer nu att distribueras i en .bundle-fil (en namnändrad .tar.gz) tillsammans med DeviceAtlas.dll och DeviceAtlas64.dll. |
 
-## Klientuppgraderingskrav {#section-f316103b48374b6eac77e8feb5c47ecf}
+## Krav för klientuppgradering {#section-f316103b48374b6eac77e8feb5c47ecf}
 
 Utför följande uppgraderingsuppgifter för klientfunktionerna i Data Workbench (Insight 6.0):
 
@@ -258,7 +258,7 @@ Så här använder du den nya datafeeden för SiteCatalyst:
 
 Nya funktioner i Data Workbench 6.0.4, bland annat felkorrigeringar och kända fel.
 
-Om du vill visa tidigare funktioner och korrigeringar som är baserade på den senaste versionen läser du [versionsinformationen, arkiv](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html).
+Om du vill visa tidigare funktioner och korrigeringar som är baserade på den senaste versionen läser du [versionsinformationen, arkiv](https://experienceleague.adobe.com/docs/data-workbench/using/release-notes/release-notes.html).
 
 ## Nya funktioner {#section-2-1225066ea8f44cf68e42e019d0bca816}
 
@@ -270,7 +270,7 @@ Data Workbench 6.0.4 innehåller dessa nya funktioner och visualiseringar för e
 
 Mer information om den här funktionen finns i [Propensitetsbedömning](../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-visitor-propensity.md#concept-2958f4640dd44b9d86ad51c4f6165f40).
 
-## Uppgraderingskrav {#section-08bd6fe3da8740fcb19688e8cac6f223}
+## Krav för uppgradering {#section-08bd6fe3da8740fcb19688e8cac6f223}
 
 **Loggkälla-ID måste definieras**. Från och med version 6.04 får du följande fel om inte ID för loggkälla är definierat:
 
@@ -327,7 +327,7 @@ Cluster = ClusterConfig:
     Use SSL = bool: false
 ```
 
-## Korrigerade fel {#section-3b4b85a35f534288adf8a5246ef028cc}
+## Åtgärdade fel {#section-3b4b85a35f534288adf8a5246ef028cc}
 
 * I Data Workbench 6.0 hade Correlation Matrix och Cluster Builder inte stöd för Compute in Background. Detta har nu åtgärdats i version 6.0.4.
 * Tidigare kunde en åtkomstöverträdelse uppstå om du hade markerat något på tratten och tagit bort ett steg. Detta har lösts.

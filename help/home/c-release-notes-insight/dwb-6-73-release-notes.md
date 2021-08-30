@@ -1,14 +1,16 @@
 ---
 description: Nya funktioner och korrigeringar i Data Workbench 6.73.
-title: Versionsinformation för Data Workbench 6.73
+title: Versionsinformation om Data Workbench 6.73
 uuid: bba63a8c-9cb7-4334-b66a-22db92153066
-translation-type: tm+mt
-source-git-commit: 9552a2f9fe4e450b1e212b38a09f77252a009419
+exl-id: 911c0cb7-ad95-4dbb-90ff-8e5c40b19f7f
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 1%
 
 ---
 
-
-# Versionsinformation för Data Workbench 6.73{#data-workbench-release-notes}
+# Versionsinformation om Data Workbench 6.73{#data-workbench-release-notes}
 
 Nya funktioner och korrigeringar i Data Workbench 6.73.
 
@@ -31,14 +33,14 @@ Nya funktioner och korrigeringar i Data Workbench 6.73.
 
 ## Känt fel {#section-f2cb932f6225457a872fb916a78df89a}
 
-* Data Workbench Workstation version 6.73 ansluter inte till Data Workbench-servrar version 6.61 och äldre. Orsaken är att äldre serverversioner använder en svag form av ciphers som inte stöds i version 6.73. Aktivera stöd för äldre versioner
+* Data Workbench Workstation version 6.73 ansluter inte till Data Workbench Servers version 6.61 och tidigare. Orsaken är att äldre serverversioner använder en svag form av ciphers som inte stöds i version 6.73. Aktivera stöd för äldre versioner
 
    1. Åsidosätt SSL-chifferlistan på servern med en stark chifferlista som stöds av OpenSSL version 1.0.1h. Om du vill åsidosätta lägger du till nyckeln&quot;SSL-chiphers&quot; i filerna&quot;Communications.cfg&quot; som finns i katalogerna&quot;Components&quot; och&quot;Components for Processing Servers&quot;. Exempel: `SSL Ciphers = string: !aNULL:AESGCM`
 
       >[!NOTE]
       >
-      >Kontrollera att nyckeln är placerad på samma nivå som SSL-porten. Mer information finns i Inställningar för [kommunikationskonfiguration](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/config-settings/c-comm-cfg-stgs.html)
+      >Kontrollera att nyckeln är placerad på samma nivå som SSL-porten. Mer information finns i [Inställningar för kommunikationskonfiguration](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/config-settings/c-comm-cfg-stgs.html)
 
    1. Placera den senaste filen trust_ca_cert.pem på server 6.61 och äldre servrar. Den här inställningen gäller för alla Workstation 6.7x-versioner.
 
-Se [arkiverad veringsinformation](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html) för Data Workbench 5.3 till 5.52.
+Se [arkiverad versionsinformation](https://experienceleague.adobe.com/docs/data-workbench/using/release-notes/release-notes.html) för Data Workbench 5.3 till 5.52.

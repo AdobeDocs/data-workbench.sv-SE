@@ -3,9 +3,9 @@ description: Profilhanteraren visar alla kataloger som är associerade med din a
 title: Skapa en profilhanterare
 uuid: e16741e2-740b-4f57-861d-e2f57d30abbc
 exl-id: 43b95473-ab3e-4a80-9b91-7c221e74b096
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Profilhanteraren visar alla kataloger som är associerade med din arbetsprofil.
 
 Du kanske vill komma åt en underkatalog till [!DNL Profile Manager] utan att behöva navigera i hela katalogstrukturen. Menyalternativen [!DNL Metrics] och [!DNL Workspaces] som finns på menyn [!DNL Manage] på arbetsytans fönstermeny gör att du kan öppna mapparna Profilhanterarens mått och arbetsytor.
 
-Mer information om [!DNL Profile Manager] finns i [Profilhanteraren](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html).
+Mer information om [!DNL Profile Manager] finns i [Profilhanteraren](https://experienceleague.adobe.com/docs/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html).
 
 Som standard har du åtkomst till följande hanterare:
 

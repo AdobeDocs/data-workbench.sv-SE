@@ -3,9 +3,9 @@ description: Trafikprofilen innehåller följande mått för att identifiera bes
 title: Trafikprofilmått
 uuid: 7dfa18ef-d2cd-44ae-8c56-a0630a9d5cf2
 exl-id: 38f191e5-5b30-4fe0-a680-bcb33fe52eca
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '709'
 ht-degree: 1%
 
 ---
@@ -96,7 +96,7 @@ Trafikprofilen innehåller följande mått för att identifiera besökstrafik.
   <tr> 
    <td colname="col1"> Sessionsvaraktighet </td> 
    <td colname="col2"> <p>Formel: <span class="filepath"> (summa (Exact_Page_Duration, Session)*.1/Sessions)[Session_ Duration &lt;= '01:00:00']</span></p> <p>Nivå: Session </p> </td> 
-   <td colname="col3">Den genomsnittliga tiden (MM:SS) som en besökare tillbringar i en session. <p><p>Obs! Du kan använda det här måttet med funktionen <a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external"> Segmentexport</a>. </p></p></td> 
+   <td colname="col3">Den genomsnittliga tiden (MM:SS) som en besökare tillbringar i en session. <p><p>Obs! Du kan använda det här måttet med funktionen <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external"> Segmentexport</a>. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Sessioner per sidvy </td> 

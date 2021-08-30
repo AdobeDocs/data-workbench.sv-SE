@@ -3,10 +3,10 @@ description: Information för att generera rapporter som Excel-filer.
 title: Genererar rapporter som Microsoft Excel-filer
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
 exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 1%
+source-wordcount: '474'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +36,7 @@ Om dessa krav uppfylls startar [!DNL Report Server] automatiskt Microsoft Excel 
 
 Om du inte har angett [!DNL Custom Title] som visualisering används fönstertypen (till exempel Filmtabell) som kalkylbladsnamn.
 
-Mer information om hur du anger [!DNL Custom Titles] för visualiseringar finns i [Data Workbench Client Guide](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html).
+Mer information om hur du anger [!DNL Custom Titles] för visualiseringar finns i [Data Workbench Client Guide](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html).
 
 ## Använda en mallfil {#section-40ab11916f464b1a88214ab969da6751}
 

@@ -3,14 +3,14 @@ description: Följ de här stegen för att uppdatera till data workbench v6.1 fr
 title: Uppgradering av Data Workbench 6.0 till 6.1
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
 exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
 
-# Data Workbench 6.0 till 6.1 Uppgradering{#data-workbench-to-upgrade}
+# Uppgradering av Data Workbench 6.0 till 6.1{#data-workbench-to-upgrade}
 
 Följ de här stegen för att uppdatera till data workbench v6.1 från din Data Workbench v6.0x-installation.
 
@@ -52,7 +52,7 @@ Så här uppdaterar du **[!UICONTROL Server v6.1]**-komponenterna:
    1. Ersätt mappen [!DNL Server\Software] för att uppdatera [!DNL Insight.exe] och [!DNL ReportServer.exe]
    1. Uppdatera mappen [!DNL Server\Scripts] för att uppdatera [!DNL TnTSend.exe].
 
-1. Om du använder **[!UICONTROL DeviceAtlas]** måste du [uppdatera paketet](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) i mappen [!DNL Server\Lookups].
+1. Om du använder **[!UICONTROL DeviceAtlas]** måste du [uppdatera paketet](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) i mappen [!DNL Server\Lookups].
 
 1. Konfigurera [!DNL Profile.cfg]-filen för att se till att vektorn uppdateras så att antalet objekt för varje profil återspeglas.
 
@@ -98,7 +98,7 @@ Så här uppdaterar du **[!UICONTROL Server v6.1]**-komponenterna:
 
 Serverinstallationen är klar.
 
-## Report Server-uppgradering {#section-afd9560a446242e9b06490e5f98aaaec}
+## Uppgradering av rapportserver {#section-afd9560a446242e9b06490e5f98aaaec}
 
 >[!IMPORTANT]
 >

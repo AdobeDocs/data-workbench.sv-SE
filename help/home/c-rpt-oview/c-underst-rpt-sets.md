@@ -3,9 +3,9 @@ description: En rapportuppsättning är en samling arbetsytor som genereras av R
 title: Rapportuppsättningar
 uuid: 421055d7-0cf0-4664-b944-327a254a97a4
 exl-id: 95609a1a-e70c-41e2-ace3-0cb09f77705a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,6 @@ I installationsmappen för [!DNL Insight] representerar varje undermapp i mappen
 
 >[!NOTE]
 >
->I Datan Workbench [!DNL Profile Manager] visas rapportuppsättningar som undermappar i mappen [!DNL Reports]. Mer information om [!DNL Profile Manager] finns i [Datans Workbench användarhandbok](https://docs.adobe.com/content/help/en/data-workbench/using/home.html#Data_Workbench_Help).
+>I Datan Workbench [!DNL Profile Manager] visas rapportuppsättningar som undermappar i mappen [!DNL Reports]. Mer information om [!DNL Profile Manager] finns i [Datans Workbench användarhandbok](https://experienceleague.adobe.com/docs/data-workbench/using/home.html#Data_Workbench_Help).
 
 Genom att definiera specifika konfigurationsinställningar för en rapportuppsättning i dess [!DNL Report.cfg]-fil kan du schemalägga skapandet och distributionen av rapporterna, inklusive vem som tar emot vilka rapporter och i vilka format.

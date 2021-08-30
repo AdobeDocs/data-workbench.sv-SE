@@ -3,9 +3,9 @@ description: För att vissa funktioner i Report Server ska fungera måste du til
 title: Innan du börjar
 uuid: cb464fb6-3109-4eff-9c95-f0cf1f8a8c66
 exl-id: 5c8bb4c3-fe76-4b4e-960d-113a9927ad59
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 För att vissa funktioner i Report Server ska fungera måste du tillhandahålla och konfigurera maskinvara eller programvara innan du installerar.
 
-## Grundläggande krav för rapportservern {#section-e891eaee79fe4fa98e658426dc3b2777}
+## Krav för grundläggande rapportserver {#section-e891eaee79fe4fa98e658426dc3b2777}
 
-De rapporter som skapas kan antingen vara PNG-bilder, XLS-kalkylblad eller e-postmeddelanden i ett filsystem. Maskinvarukraven är identiska med [data workbench-klienten](https://docs.adobe.com/content/help/en/data-workbench/using/install/c-data-workbench-client-install.html#Data_Workbench_Client_Minimum_System_Requirements).
+De rapporter som skapas kan antingen vara PNG-bilder, XLS-kalkylblad eller e-postmeddelanden i ett filsystem. Maskinvarukraven är identiska med [data workbench-klienten](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html#Data_Workbench_Client_Minimum_System_Requirements).
 
 Följande krav gäller för rapportservern:
 

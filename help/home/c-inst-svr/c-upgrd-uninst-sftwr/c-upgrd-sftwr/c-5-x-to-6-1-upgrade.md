@@ -3,14 +3,14 @@ description: Följ de här stegen för att uppdatera till data workbench v6.1 fr
 title: Uppgradering av Data Workbench 5.5 till 6.1
 uuid: 14e3612e-11a2-402a-9478-904ec55df23c
 exl-id: c730f6d5-2171-4d97-a967-509dc2517c86,3f25917b-b929-4e3b-84f0-1a81b30ba641
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
 
-# Data Workbench 5.5 till 6.1 uppgradering{#data-workbench-to-upgrade}
+# Uppgradering av Data Workbench 5.5 till 6.1{#data-workbench-to-upgrade}
 
 Följ de här stegen för att uppdatera till data workbench v6.1 från din Insight v5.5x-installation.
 
@@ -53,7 +53,7 @@ Så här uppdaterar du **[!UICONTROL Server v6.1]**-komponenterna:
 
    1. Uppdatera mappen [!DNL Server\Scripts] för att uppdatera [!DNL TnTSend.exe].
 
-1. Om du använder **[!UICONTROL DeviceAtlas]** måste du [uppdatera paketet](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) i mappen [!DNL Server\Lookups].
+1. Om du använder **[!UICONTROL DeviceAtlas]** måste du [uppdatera paketet](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) i mappen [!DNL Server\Lookups].
 1. Ange [!DNL Directories] i [!DNL Profile.cfg]-filen för att se till att vektorn uppdateras så att antalet objekt för varje profil återspeglas.
 
    Om du till exempel vill aktivera profilen **[!UICONTROL Predictive Analytics]** måste du uppdatera den här inställningen.
@@ -98,7 +98,7 @@ Så här uppdaterar du **[!UICONTROL Server v6.1]**-komponenterna:
 
 Serverinstallationen är klar.
 
-## Report Server-uppgradering {#section-afd9560a446242e9b06490e5f98aaaec}
+## Uppgradering av rapportserver {#section-afd9560a446242e9b06490e5f98aaaec}
 
 >[!IMPORTANT]
 >

@@ -3,9 +3,9 @@ description: Profilfilter begränsar omfattningen av de data som är tillgängli
 title: Inbyggda profilfilter
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Följande profilfilter är tillgängliga för användaren när en datauppsättni
 >
 >Ytterligare filter kan skapas och tillämpas genom att de finns i en profils filterkatalog.
 
-## Delmängd av data {#section-0defb44315d94254ab6e629ec3d6f420}
+## Delning av data {#section-0defb44315d94254ab6e629ec3d6f420}
 
 En datadelmängd fungerar som ett datafilter genom att du bara kan välja de datadimensionselement som är av intresse för dig.
 
@@ -37,7 +37,7 @@ Användarna kan själva skapa datadeluppsättningar eller komma åt datadelupps�
 >
 >Du kan skapa flera datadeluppsättningar och växla mellan dem för att visa olika delar av data. Kom ihåg att inaktivera Dela data när du vill visa alla data. I annat fall är dina mätvärden inte representativa för alla data i datauppsättningen.
 
-## Sessionsfiltret är brutet {#section-1608e97da6464b11aea27cbb7f3160e4}
+## Sessionsfilter - brutet {#section-1608e97da6464b11aea27cbb7f3160e4}
 
 Det brutna sessionsfiltret är en måttformel som enkelt kan ändras för att uppfylla alla filterkrav. I standardwebbplatsprofilerna är filtret för bruten session konfigurerat så att det omfattar alla besökare som har en synlig flagga som är inställd på 1. Värdet 1 anger att det finns en spårningscookie för besökaren.
 
@@ -51,4 +51,4 @@ entity = derived_filter:
 
 Som standard tillämpas filtret för bruten session på arbetsytorna både på urvalet och deras riktmärken, och du kan aktivera det genom att högerklicka på arbetsytan och klicka på Data > Brutet sessionsfilter.
 
-Det går att referera till filtret för bruten session i filteruttryck som Broken_Session_Filter, även om det inte är aktiverat för den aktuella arbetsytan. Mer information finns i [filteruttryck](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers).
+Det går att referera till filtret för bruten session i filteruttryck som Broken_Session_Filter, även om det inte är aktiverat för den aktuella arbetsytan. Mer information finns i [filteruttryck](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers).

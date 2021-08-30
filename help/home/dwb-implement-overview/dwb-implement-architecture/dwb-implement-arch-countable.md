@@ -2,17 +2,19 @@
 description: Förklaring av Countables i DataWorkbench (DWB) för utformning och implementering av schemat.
 title: Räkningsbara strukturer för schemautformning
 uuid: 2530980d-1c6b-4a96-b9c1-431fc75678bb
-translation-type: tm+mt
-source-git-commit: 8b0e9c8855a7c7228393dfab4bf78645f1953794
+exl-id: 4f2a2f8a-7b42-42bb-8ba1-2675ffe6b2c2
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 0%
 
 ---
-
 
 # Räkningsbara strukturer för schemautformning{#schema-design-countable-structures}
 
 Förklaring av Countables i DataWorkbench (DWB) för utformning och implementering av schemat.
 
-## Förstå räkneligt i Data Workbench {#section-6e6b8d1c17634d669e62c91a80a0bc62}
+## Förstå inventering i Data Workbench {#section-6e6b8d1c17634d669e62c91a80a0bc62}
 
 På den högsta nivån finns räkningsbara dimensioner. Räkningsbara dimensioner har två huvudfunktioner. För det första är de dimensioner vars element du vill räkna. Med andra ord besvarar räknare frågor som:
 
@@ -24,7 +26,7 @@ På den högsta nivån finns räkningsbara dimensioner. Räkningsbara dimensione
 
 Räknbara dimensioner kan vara överordnade av andra dimensioner eller underordnade av andra räkningsbara dimensioner.
 
-Även om din räkningsbara rotdimension inte behöver kopplas till spårnings-ID:n i data, rekommenderar Adobe att du konfigurerar datamängdens räkningsbara rotdimension så att spårnings-ID-fältet (x-trackingid) används som Key. Därför kopplas varje element i roträkningsbar till ett unikt värde för x-trackingid, och alla data om varje element grupperas tillsammans.
+Även om din räkningsbara rotdimension inte behöver kopplas till spårnings-ID:n i data rekommenderar Adobe att du konfigurerar datamängdens räkningsbara rotdimension så att spårnings-ID-fältet (x-trackingid) används som Key. Därför kopplas varje element i roträkningsbar till ett unikt värde för x-trackingid, och alla data om varje element grupperas tillsammans.
 
 Räknbara dimensioner definieras med följande parametrar:
 
@@ -57,7 +59,7 @@ Räknbara dimensioner definieras med följande parametrar:
   <tr> 
    <td colname="col1"> Dold </td> 
    <td colname="col2"> Avgör om dimensionen visas i gränssnittet för data workbench. Som standard är den här parametern inställd på false. Om dimensionen till exempel bara ska användas som bas för ett mätresultat, kan du ställa in den här parametern på true för att dölja dimensionen från data workbench-visningen. </td> 
-   <td colname="col3"> false </td> 
+   <td colname="col3"> falskt </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Nyckel </td> 
@@ -66,7 +68,7 @@ Räknbara dimensioner definieras med följande parametrar:
   </tr> 
   <tr> 
    <td colname="col1"> Överordnad </td> 
-   <td colname="col2"> <p> Namnet på den överordnade dimensionen. Alla räkningsbara dimensioner kan vara en överordnad dimension. Om du vill göra en dimension till den översta nivån i datasetens schema anger du parametern till "root". Den definierade dimensionen blir den räkningsbara rotdimensionen för datauppsättningen. Om du till exempel arbetar med Plats är dimensionen Visitor den räkningsbara rotdimensionen för datauppsättningen. </p> <p>Obs! Även om din räkningsbara rotdimension inte behöver kopplas till spårnings-ID:n i data, rekommenderar Adobe att du konfigurerar datamängdens räkningsbara rotdimension så att spårnings-ID-fältet (x-trackingid) används som Key. Därför kopplas varje element i roträkningsbar till ett unikt värde för x-trackingid, och alla data om varje element grupperas tillsammans. Om du vill konfigurera datauppsättningen på ett annat sätt kontaktar du Adobe. </p> </td> 
+   <td colname="col2"> <p> Namnet på den överordnade dimensionen. Alla räkningsbara dimensioner kan vara en överordnad dimension. Om du vill göra en dimension till den översta nivån i datasetens schema anger du parametern till "root". Den definierade dimensionen blir den räkningsbara rotdimensionen för datauppsättningen. Om du till exempel arbetar med Plats är dimensionen Visitor den räkningsbara rotdimensionen för datauppsättningen. </p> <p>Obs! Även om din räkningsbara rotdimension inte behöver kopplas till spårnings-ID:n i data rekommenderar Adobe att du konfigurerar datamängdens räkningsbara rotdimension så att spårnings-ID-fältet (x-trackingid) används som Key. Därför kopplas varje element i roträkningsbar till ett unikt värde för x-trackingid, och alla data om varje element grupperas tillsammans. Om du vill konfigurera datauppsättningen på ett annat sätt kontaktar du Adobe. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
@@ -85,10 +87,10 @@ Gör så här för att skapa räkningsbar i DataWorkbench:
 
 1. Öppna profilhanteraren
 1. Skapa en konfigurationsfil under Transformation-mappen och öppna den i arbetsstationen.
-1. Under Utökade dimensioner högerklickar du och väljer Lägg till ny -> Räknbart enligt nedan: ![](assets/dwb_impl_arch_4.png)
+1. Under Utökade Dimensioner högerklickar du och väljer Lägg till ny -> Räknbart enligt nedan: ![](assets/dwb_impl_arch_4.png)
 
 1. Ange namn för ny räkningsbar. I exemplet nedan definieras kundinventering. Om det är den högsta räkningsbara nivån skriver du roten för den överordnade nivån. ![](assets/dwb_impl_arch_5.png)
 
    Om alternativet Räknbart inte är den översta nivån anger du namnet på den överordnade nivån i det överordnade fältet. I exemplet nedan skapas Enagement Countable och Parent för den här inventeringen är Customer. ![](assets/dwb_impl_arch_5.png)
 
-Mer information om Data Workbench-arkitekturen för schemadesign, räkningsbara strukturer och offlinedataflödeskonfigurationer finns i [Dataset Schema Interface](https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).
+Mer information om arkitekturen för schemadesign, räkningsbara strukturer och offlinedataflödeskonfigurationer finns i [Dataset Schema Interface](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).
