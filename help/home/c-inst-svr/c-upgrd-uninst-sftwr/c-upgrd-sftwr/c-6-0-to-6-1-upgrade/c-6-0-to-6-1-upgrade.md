@@ -3,9 +3,9 @@ description: Följ de här stegen för att uppdatera till data workbench v6.1 fr
 title: Uppgradering av Data Workbench 6.0 till 6.1
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
 exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -52,18 +52,18 @@ Så här uppdaterar du **[!UICONTROL Server v6.1]**-komponenterna:
    1. Ersätt mappen [!DNL Server\Software] för att uppdatera [!DNL Insight.exe] och [!DNL ReportServer.exe]
    1. Uppdatera mappen [!DNL Server\Scripts] för att uppdatera [!DNL TnTSend.exe].
 
-1. Om du använder **[!UICONTROL DeviceAtlas]** måste du [uppdatera paketet](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) i mappen [!DNL Server\Lookups].
+1. Om du använder **[!UICONTROL DeviceAtlas]** måste du [uppdatera paketet](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md) i mappen [!DNL Server\Lookups].
 
 1. Konfigurera [!DNL Profile.cfg]-filen för att se till att vektorn uppdateras så att antalet objekt för varje profil återspeglas.
 
    Om du till exempel vill aktivera profilen **[!UICONTROL Predictive Analytics]** måste du uppdatera den här inställningen.
 
    ```
-   Directories = vector: 5 items 
-       0 = string: Base\\ 
-       1 = string: Geography\\ 
-       2 = string: Predictive Analytics\\ 
-       3 = string: Adobe SC\\ 
+   Directories = vector: 5 items
+       0 = string: Base\\
+       1 = string: Geography\\
+       2 = string: Predictive Analytics\\
+       3 = string: Adobe SC\\
        4 = string: Profile Name\\
    ```
 
@@ -85,7 +85,7 @@ Så här uppdaterar du **[!UICONTROL Server v6.1]**-komponenterna:
    Om du inte har definierat ID för loggkälla visas följande fel:
 
    ```
-   Missing Log Source ID in log processing.cfg.  
+   Missing Log Source ID in log processing.cfg.
    Log Source ID must be defined for all log sources.
    ```
 
@@ -115,10 +115,10 @@ Serverinstallationen är klar.
 1. (valfritt) Data workbench har för närvarande stöd för engelska (-en-us) och kinesiska (-zh-cn). Du måste ange ett teckensnitt som stöder enkla tecken och dubbelbyte-tecken:
 
    ```
-   Report Server.cfg - Add Fonts 
-      Fonts = vector: 2 items  
-      0 = string: SimSun  
-      1 = string: Arial 
+   Report Server.cfg - Add Fonts
+      Fonts = vector: 2 items
+      0 = string: SimSun
+      1 = string: Arial
    ```
 
    Windows-operativsystemet måste också ha teckensnitten installerade.
@@ -137,7 +137,7 @@ Serverinstallationen är klar.
    1. Starta tjänsten baserat på språkinställningarna:
 
       ```
-      ReportServer.exe -RegServer -Locale -en-us (English)  
+      ReportServer.exe -RegServer -Locale -en-us (English)
       ReportServer.exe -RegServer -Locale -zh-cn (Simplified Chinese)
       ```
 
@@ -185,9 +185,9 @@ Så här installerar du förenklad kinesiska:
    Data workbench har för närvarande stöd för både engelska och förenklad kinesiska. Du kan välja teckensnitt som har stöd för båda dessa språk:
 
    ```
-   Fonts = vector: 2 items 
-   0 = string: SimSun 
-   1 = string: Arial 
+   Fonts = vector: 2 items
+   0 = string: SimSun
+   1 = string: Arial
    ```
 
    Windows-operativsystemet måste också ha de begärda teckensnitten installerade.

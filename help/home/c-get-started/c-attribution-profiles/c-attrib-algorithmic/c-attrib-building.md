@@ -3,9 +3,9 @@ description: Öppna Best Fit Attribution från Premium-menyn och följ de här s
 title: Skapa en modell för bästa passform
 uuid: d1fd0340-1917-41bc-9a08-e78a79d084e7
 exl-id: e0a42374-2500-46a3-a72a-708ab2d228db
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Se en översikt över [Best Fit Attribution](../../../../home/c-get-started/c-at
 
    >[!NOTE]
    >
-   >Best Fit Attribution är en Adobe Analytics Premium-funktion som kräver att du aktiverar Premium i din profil. Du måste uppdatera certifikatet och lägga till Premium-profilen i filen profile.cfg. Se [DWB Server upgrade: 6.2 till 6.3](https://experienceleague.adobe.com/docs/data-workbench/using/install/upgrade-dwb/c-6-2-to-6-3-upgrade.html) för DWB 6.3.
+   >Best Fit Attribution är en Adobe Analytics Premium-funktion som kräver att du aktiverar Premium i din profil. Du måste uppdatera certifikatet och lägga till Premium-profilen i filen profile.cfg. Se [DWB Server upgrade: 6.2 till 6.3](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md) för DWB 6.3.
 
 1. Ange **[!UICONTROL Success]**-måttet.
 
@@ -108,54 +108,54 @@ När diagrammet är klart visas en attribueringsmodell som beräknas per kanal o
 
 Menyn **Alternativ** innehåller avancerade funktioner för att ställa in och visa analysen för bästa passform.
 
-<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Alternativ-menyn </th> 
-   <th colname="col2" class="entry"> Beskrivning </th> 
+<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Alternativ-menyn </th>
+   <th colname="col2" class="entry"> Beskrivning </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Ange utbildningsfilter  </span> </td> 
-   <td colname="col2"> Utbildningsfiltret används med fönstret Slutfört för att filtrera populationen när attribueringsmodellen skapas. Detta ger en delmängd av data som bara innehåller de besökare som du vill analysera. <p>Obs! Erfarna användare kan också utnyttja flexibiliteten i filter för att fokusera bortom tidslinjen i Success och Touch Windows. Förutom att välja ett tidsintervall kan du välja en uppsättning <i>Refererande domäner</i> om du bara vill undersöka attributet för användare från dessa domäner. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Visa beskrivning av komplext filter  </span> </td> 
-   <td colname="col2"> Visar filterkoden för utbildningsfiltret, fönstret Slutfört och pekfönstret. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Spara modell  </span> </td> 
-   <td colname="col2"> Sparar den aktuella attribueringsmodellen för framtida bruk. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Läs in modell  </span> </td> 
-   <td colname="col2"> Öppnar en tidigare sparad attribueringsmodell. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Presentationsvy  </span> </td> 
-   <td colname="col2"> Döljer den översta menyraden för presentation. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Alternativ &gt; </b> Avancerat innehåller funktioner för att ställa in storleken på kursuppsättningen och ange vilken metod som ska användas vid klassobalans. </p> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Avancerat &gt; Utbildningsstorlek  </span> </td> 
-   <td colname="col2"> <p>Anger utbildningens uppsättningsstorlek. </p> <p>Obs!  Standardstorleken för utbildning är Stor för 250 000 besökare. </p> 
-    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD"> 
-     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">Liten = 50 000 </li> 
-     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">Liten = 75 000 </li> 
-     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">Normal = 100 000 </li> 
-     <li id="li_0BB7F791603745028CFC661EBC94D8B4">Stor = 250,00 </li> 
-     <li id="li_34B60233C84F48F1BCB8040C5195411A">Mycket stor = 500 000 </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><b>Avancerat &gt; Klasssaldo  </b> </td> 
-   <td colname="col2"> <p>Identifierar och definierar antalet indataposter som ska genereras för ett klassproblem baserat på datamängdens storlek. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Ange utbildningsfilter  </span> </td>
+   <td colname="col2"> Utbildningsfiltret används med fönstret Slutfört för att filtrera populationen när attribueringsmodellen skapas. Detta ger en delmängd av data som bara innehåller de besökare som du vill analysera. <p>Obs! Erfarna användare kan också utnyttja flexibiliteten i filter för att fokusera bortom tidslinjen i Success och Touch Windows. Förutom att välja ett tidsintervall kan du välja en uppsättning <i>Refererande domäner</i> om du bara vill undersöka attributet för användare från dessa domäner. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Visa beskrivning av komplext filter  </span> </td>
+   <td colname="col2"> Visar filterkoden för utbildningsfiltret, fönstret Slutfört och pekfönstret. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Spara modell  </span> </td>
+   <td colname="col2"> Sparar den aktuella attribueringsmodellen för framtida bruk. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Läs in modell  </span> </td>
+   <td colname="col2"> Öppnar en tidigare sparad attribueringsmodell. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Presentationsvy  </span> </td>
+   <td colname="col2"> Döljer den översta menyraden för presentation. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p><b>Alternativ &gt; </b> Avancerat innehåller funktioner för att ställa in storleken på kursuppsättningen och ange vilken metod som ska användas vid klassobalans. </p> </td>
+   <td colname="col2"> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Avancerat &gt; Utbildningsstorlek  </span> </td>
+   <td colname="col2"> <p>Anger utbildningens uppsättningsstorlek. </p> <p>Obs!  Standardstorleken för utbildning är Stor för 250 000 besökare. </p>
+    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD">
+     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">Liten = 50 000 </li>
+     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">Liten = 75 000 </li>
+     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">Normal = 100 000 </li>
+     <li id="li_0BB7F791603745028CFC661EBC94D8B4">Stor = 250,00 </li>
+     <li id="li_34B60233C84F48F1BCB8040C5195411A">Mycket stor = 500 000 </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><b>Avancerat &gt; Klasssaldo  </b> </td>
+   <td colname="col2"> <p>Identifierar och definierar antalet indataposter som ska genereras för ett klassproblem baserat på datamängdens storlek. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 | Alternativ för att återställa och ta bort | Beskrivning |
