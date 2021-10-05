@@ -3,7 +3,7 @@ description: Datans Workbench ordlista
 title: Datans Workbench ordlista
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
 exl-id: 29d6560a-0394-4031-8152-20f7ea0de00b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '4201'
 ht-degree: 0%
@@ -62,11 +62,11 @@ En vanlig variabel som skapar en relation mellan raderna i två tabelluppsättni
 
 **Konfidensintervall**
 
-Ett värdeintervall som har en angiven sannolikhet att innehålla hastigheten eller trenden. De 80% (p- värde = 0,20), 95% (p- värde = 0,05) och 99% (p- värde = 0,01) konfidensintervallen är de vanligaste intervallen. (Källa: `http://www.nci.nih.gov/statistics/glossary`)
+Ett värdeintervall som har en angiven sannolikhet att innehålla hastigheten eller trenden. De 80% (p- värde = 0,20), 95% (p- värde = 0,05) och 99% (p- värde = 0,01) konfidensintervallen är de vanligaste intervallen. (Källa: `https://www.nci.nih.gov/statistics/glossary`)
 
 **Konfidensnivå**
 
-Sannolikheten för att samplingsfelet i ett undersökningsresultat ligger inom ett angivet intervall, vilket vanligtvis uttrycks som standardfel (1 standardfel motsvarar till exempel 68 % sannolikhet, 2 standardfel motsvarar 95,4 % sannolikhet). (Källa: `http://www.magazine.org/research/3410.cfm`)
+Sannolikheten för att samplingsfelet i ett undersökningsresultat ligger inom ett angivet intervall, vilket vanligtvis uttrycks som standardfel (1 standardfel motsvarar till exempel 68 % sannolikhet, 2 standardfel motsvarar 95,4 % sannolikhet). (Källa: `https://www.magazine.org/research/3410.cfm`)
 
 **Konverteringskarta**
 
@@ -238,7 +238,7 @@ En relation mellan två datamått där ett enskilt element i en dimension är (e
 
 **Ordningstal**
 
-Vara eller beteckna en numerisk ordning i en serie. (Källa: `http://wordnet.princeton.edu/perl/webwn?s=ordinal`) Om en dimension sorteras ordalt i data workbench visas elementen i dimensionen i den ordning som de representeras internt.
+Vara eller beteckna en numerisk ordning i en serie. (Källa: `https://wordnet.princeton.edu/perl/webwn?s=ordinal`) Om en dimension sorteras ordalt i data workbench visas elementen i dimensionen i den ordning som de representeras internt.
 
 **Extrafunktioner**
 

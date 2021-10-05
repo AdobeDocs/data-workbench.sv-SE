@@ -3,7 +3,7 @@ description: Reguljära uttryck används i alla sökfält i en workbench för da
 title: Reguljära uttryck
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 1%
@@ -44,17 +44,17 @@ Litteral matchning tar en litteral sträng utan escape-tecken och söker i måls
 
 I det här exemplet ser du hur literal matchning fungerar. Tänk på en situation där data samlas in från webbplatstrafiken och fältet cs(reference) innehåller följande värde:
 
-`http://www.abc.com/adventurenews/today.html?ad=123AZ45`
+`https://www.abc.com/adventurenews/today.html?ad=123AZ45`
 
 För att avgöra om referenten representerar någon som klickat på någon av annonserna måste du se om referenten innehåller strängannonsen. Du kan helt enkelt använda strängen literal för att söka efter målsträngen och avgöra om en annons användes för att dirigera trafiken till webbplatsen. Detta skulle matcha målsträngen, men skulle matcha på två platser och är därför tvetydigt och kan leda till falskt positiva resultat.
 
 Följande URL innehåller strängen och på två olika platser:
 
-`http://www.abc.com/ad vertnews/today.html?ad =123AZ45`
+`https://www.abc.com/ad vertnews/today.html?ad =123AZ45`
 
 Om du försöker avgöra vilka sessioner som inleddes till följd av en viss annonskampanj räcker det alltså inte att bara använda literalannonsen eftersom det reguljära uttrycket är helt klart inte. Om du ändrar literalen till &quot;ad=&quot; tas den här tvetydigheten bort, vilket resulterar i att uttrycket bara gör en enda matchning. Även detta kanske inte räcker för att se till att den som hänvisar till ska vara en del av annonskampanjen. Tänk på följande hänvisare:
 
-`http://www.xyz.com/hello.html?pad=something`
+`https://www.xyz.com/hello.html?pad=something`
 
 Du har ingen kontroll över de URL:er som andra kan använda för att skapa länkar till webbplatsen. Litteral matchning är en för enkel mekanism för att hitta sessioner som startats som ett resultat av annonskampanjen. I följande avsnitt beskrivs hur du kan använda metatecken för mer flexibel och kraftfull matchning.
 
@@ -74,27 +74,27 @@ Ytterligare vanliga reguljära uttryck kan också användas för att skapa mer k
 
 Med litteral matchning kan du söka efter en enda sträng, men med hakparenteser, streck och rör kan du definiera en lista med saker som ska sökas efter i målsträngen.
 
-<table id="table_18B86955EC3748079E7C176273ADE92B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> För det här metatecknet.. </th> 
-   <th colname="col2" class="entry"> Processor för reguljära uttryck kommer att... </th> 
-  </tr> 
+<table id="table_18B86955EC3748079E7C176273ADE92B">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> För det här metatecknet.. </th>
+   <th colname="col2" class="entry"> Processor för reguljära uttryck kommer att... </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Hakparenteser ([ ]) </td> 
-   <td colname="col2"> Matcha något av tecknen inom parentesen med en enda teckenposition. Till exempel är [AB] en instruktion att matcha antingen bokstaven A eller bokstaven B och [0123456789] säger matcha något tecken i intervallet 0 till 9. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Streck (-) </td> 
-   <td colname="col2"> <p>Matcha ett intervall med tecken. I stället för att skriva [0123456789] kunde vi helt enkelt skriva [0-9]. </p> <p> Detta kan utökas till intervall med tecken och till flera intervall inom en uppsättning hakparenteser. Till exempel matchar [0-9A-C] tecknen 0 till 9 och A till C. </p> <p> <p>Obs!  Om du vill testa ett bindestreck (-) som en litteral inuti parenteserna måste det komma först eller sist. Till exempel testar [-0-9] för - och 0 till 9. </p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Pipe (|) </td> 
-   <td colname="col2"> Matcha ett av två alternativ till en angiven målsträng. Exempel: b|nat matchar antingen bat eller nat. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> Hakparenteser ([ ]) </td>
+   <td colname="col2"> Matcha något av tecknen inom parentesen med en enda teckenposition. Till exempel är [AB] en instruktion att matcha antingen bokstaven A eller bokstaven B och [0123456789] säger matcha något tecken i intervallet 0 till 9. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Streck (-) </td>
+   <td colname="col2"> <p>Matcha ett intervall med tecken. I stället för att skriva [0123456789] kunde vi helt enkelt skriva [0-9]. </p> <p> Detta kan utökas till intervall med tecken och till flera intervall inom en uppsättning hakparenteser. Till exempel matchar [0-9A-C] tecknen 0 till 9 och A till C. </p> <p> <p>Obs!  Om du vill testa ett bindestreck (-) som en litteral inuti parenteserna måste det komma först eller sist. Till exempel testar [-0-9] för - och 0 till 9. </p> </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Pipe (|) </td>
+   <td colname="col2"> Matcha ett av två alternativ till en angiven målsträng. Exempel: b|nat matchar antingen bat eller nat. </td>
+  </tr>
+ </tbody>
 </table>
 
 Titta på följande exempel:
@@ -103,7 +103,7 @@ Titta på följande exempel:
 |---|---|---|
 | Win9`[58]` | OS=Win95 | Win95 |
 | Win95 | 8 | OS=Win98 | Win98 |
-| `[0-9]` | Mozilla/3.0 | 1 |
+| `[0-9]` | Mozilla/3.0 | 3 |
 | Lektion`[A-Z]` | Lektion | Ingen matchning eftersom&quot;a&quot; med lägre placering inte ligger inom intervallet för&quot;A till och med Z&quot;. |
 
 **Negation**
@@ -135,35 +135,35 @@ Perioden (.) är ett metatecken som matchar alla tecken i målsträngen. Det reg
 
 Med iterationsmetatecken kan du matcha ett mönster mer än en gång.
 
-<table id="table_6A14333D6C264A48ADF1EBBAF687CADD"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> För det här metatecknet.. </th> 
-   <th colname="col2" class="entry"> Processor för reguljära uttryck kommer att... </th> 
-  </tr> 
+<table id="table_6A14333D6C264A48ADF1EBBAF687CADD">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> För det här metatecknet.. </th>
+   <th colname="col2" class="entry"> Processor för reguljära uttryck kommer att... </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Frågetecken (?) </td> 
-   <td colname="col2"> Matcha inga instanser eller en instans av tecknet direkt före metatecknet (?). Mönsterområdet?d matchar rött och läst. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Asterisk (*) </td> 
-   <td colname="col2"> Matcha noll eller flera förekomster av tecknet direkt före metatecknet (*). Mönstret [0-9]* matchar till exempel valfritt antal tecken från 0 till 9 (ett heltal). </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Plus (+) </td> 
-   <td colname="col2"> Matcha en eller flera förekomster av föregående tecken eller intervall. Mönstret där+ matchar till exempel tre men inte igenom. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> {n} </td> 
-   <td colname="col2"> <p>Matcha det inledande tecknet eller intervallet exakt n gånger. Följande mönster matchar telefonnummer från USA: <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> Det är inte ett optimalt mönster, men det avgör om målsträngen har rätt format. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> {n,m} </td> 
-   <td colname="col2"> Matcha föregående tecken minst n gånger och högst m gånger. fo{1,2}d matchar till exempel mat och mat, men inte mat. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> Frågetecken (?) </td>
+   <td colname="col2"> Matcha inga instanser eller en instans av tecknet direkt före metatecknet (?). Mönsterområdet?d matchar rött och läst. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Asterisk (*) </td>
+   <td colname="col2"> Matcha noll eller flera förekomster av tecknet direkt före metatecknet (*). Mönstret [0-9]* matchar till exempel valfritt antal tecken från 0 till 9 (ett heltal). </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Plus (+) </td>
+   <td colname="col2"> Matcha en eller flera förekomster av föregående tecken eller intervall. Mönstret där+ matchar till exempel tre men inte igenom. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> {n} </td>
+   <td colname="col2"> <p>Matcha det inledande tecknet eller intervallet exakt n gånger. Följande mönster matchar telefonnummer från USA: <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> Det är inte ett optimalt mönster, men det avgör om målsträngen har rätt format. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> {n,m} </td>
+   <td colname="col2"> Matcha föregående tecken minst n gånger och högst m gånger. fo{1,2}d matchar till exempel mat och mat, men inte mat. </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Mönsterextrahering {#section-4389779653b64f6cb7c47615b25c1a79}
@@ -172,39 +172,39 @@ Mönstermatchning är bara en del av kraften i reguljära uttryck. Med reguljär
 
 Titta på följande exempel på mönsterextrahering:
 
-<table id="table_BC8D471B966844049FFFCDEC0F183941"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Mönster </th> 
-   <th colname="col2" class="entry"> Sträng </th> 
-   <th colname="col3" class="entry"> Matcha </th> 
-   <th colname="col4" class="entry"> Extrahering </th> 
-  </tr> 
+<table id="table_BC8D471B966844049FFFCDEC0F183941">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Mönster </th>
+   <th colname="col2" class="entry"> Sträng </th>
+   <th colname="col3" class="entry"> Matcha </th>
+   <th colname="col4" class="entry"> Extrahering </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Win(9[58]) </td> 
-   <td colname="col2"> OS=Win95 </td> 
-   <td colname="col3"> Win95 </td> 
-   <td colname="col4"> %1% = 95 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> (Win)(95|8) </td> 
-   <td colname="col2"> OS=Win98 </td> 
-   <td colname="col3"> Win98 </td> 
-   <td colname="col4"> <p>%1% = Win </p> <p> %2% = 98 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Mozilla/([0-9]).([0-9]) </td> 
-   <td colname="col2"> Mozilla/3.0 </td> 
-   <td colname="col3"> Mozilla/3.03 </td> 
-   <td colname="col4"> <p>%1% = 3 </p> <p> %2% = 0 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> lektion([A-Z]) </td> 
-   <td colname="col2"> Lektion </td> 
-   <td colname="col3"> Ingen matchning eftersom"a" med lägre placering inte ligger inom intervallet för"A" till"Z" </td> 
-   <td colname="col4"> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> Win(9[58]) </td>
+   <td colname="col2"> OS=Win95 </td>
+   <td colname="col3"> Win95 </td>
+   <td colname="col4"> %1% = 95 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> (Win)(95|8) </td>
+   <td colname="col2"> OS=Win98 </td>
+   <td colname="col3"> Win98 </td>
+   <td colname="col4"> <p>%1% = Win </p> <p> %2% = 98 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Mozilla/([0-9]).([0-9]) </td>
+   <td colname="col2"> Mozilla/3.0 </td>
+   <td colname="col3"> Mozilla/3.03 </td>
+   <td colname="col4"> <p>%1% = 3 </p> <p> %2% = 0 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> lektion([A-Z]) </td>
+   <td colname="col2"> Lektion </td>
+   <td colname="col3"> Ingen matchning eftersom"a" med lägre placering inte ligger inom intervallet för"A" till"Z" </td>
+   <td colname="col4"> </td>
+  </tr>
+ </tbody>
 </table>

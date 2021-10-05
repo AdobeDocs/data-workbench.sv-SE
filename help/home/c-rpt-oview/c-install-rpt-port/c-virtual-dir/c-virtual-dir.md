@@ -3,7 +3,7 @@ description: Om du vill konfigurera rapportportalen måste du mappa dess program
 title: Mappa rapportportalsidor till virtuella kataloger
 uuid: 75ca85d5-d526-48f9-b2c4-ca77c903c6af
 exl-id: 13e457d4-7039-491a-a65d-f23ad7e9fe77
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
@@ -18,7 +18,7 @@ En virtuell katalog definierar den adress som webbläsarklienter använder för 
 
 Namnet på den virtuella katalog som du tilldelar till [!DNL Report Portal] måste matcha namnet som du använde för mappen VSVirtualPortalName i steg 3 i föregående avsnitt. Om du till exempel vill använda&quot;Portal&quot; som namn på [!DNL Report Portal] måste du mappa portalfilerna till en virtuell katalog med namnet&quot;Portal&quot;. I följande exempel visas den URI som klienter använder för att komma åt en [!DNL Report Portal] som tilldelats den virtuella katalogen [!DNL VisualReportPortal] på en server som heter myWebServer:
 
-[!DNL http://myWebServer/VisualReportPortal]
+[!DNL https://myWebServer/VisualReportPortal]
 
 Följande procedurer beskriver hur du mappar [!DNL Report Portal] till en virtuell katalog i IIS 5.0, 6.0 och 7.0 eller senare.
 

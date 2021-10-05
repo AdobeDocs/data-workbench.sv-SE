@@ -3,7 +3,7 @@ description: Identifiera minimikrav och rekommendationer för Data Workbench (ti
 title: Systemkrav för server
 uuid: c4487c76-03b9-4755-893b-555d451b1e69
 exl-id: 6dd78331-8370-400e-b580-9b9bad13e62c
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 0%
@@ -40,55 +40,55 @@ Om en enskild datauppsättning begränsas av kapaciteten eller hastigheten för 
 
 För att få bästa möjliga prestanda från DPU-investeringen rekommenderar Adobe följande högpresterande komponenter som beskrivs i följande tabell:
 
-<table id="table_DA0A60CFBA7D4EF98B5ED5A3D8D6777B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> </th> 
-   <th colname="col2" class="entry"> Obligatoriskt </th> 
-   <th colname="col3" class="entry"> Rekommenderas </th> 
-  </tr> 
+<table id="table_DA0A60CFBA7D4EF98B5ED5A3D8D6777B">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> </th>
+   <th colname="col2" class="entry"> Obligatoriskt </th>
+   <th colname="col3" class="entry"> Rekommenderas </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Operativsystem </p> </td> 
-   <td colname="col2"> <p>Microsoft Windows Server 2008 x64 </p> </td> 
-   <td colname="col3"> <p>Microsoft Windows Server 2012 x64 </p> <p> Microsoft Windows Server 2016 x64 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>CPU </p> </td> 
-   <td colname="col2"> <p>Se rekommendationer. </p> </td> 
-   <td colname="col3"> Den senaste generationens processorer med fyra kärnor+ från Intel eller AMD rekommenderas. 8 kärnor för optimala prestanda, 4 kärnor rekommenderas för en kompromiss mellan hastighet och kostnad. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>RAM </p> </td> 
-   <td colname="col2"> <p>8 GB </p> </td> 
-   <td colname="col3"> <p>12 GB </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Aktuell datalagring </p> </td> 
-   <td colname="col2"> <p>1 TB+ total logisk tillfällig lagring. </p> <p>Åtkomst till diskundersystemet med låg fördröjning </p> </td> 
-   <td colname="col3"> <p>För tillfällig lagring rekommenderar Adobe antingen: </p> 
-    <ul id="ul_F3D033B90CF94F44A2A773B3F6852283"> 
-     <li id="li_B902CF7CC6A44F02838B285ADC725A75">(4 till 8) * (750 GB eller mer) SATA-hårddiskar (3,5-tumsfack.) </li> 
-     <li id="li_A378F4E1443F4BB2B54DC7E8372EE572">(6 till 10) * (300 GB eller mer) SATA-hårddiskar (2,5-tumsfack.) </li> 
-    </ul> <p>Dessa bör konfigureras i en JBOD-matris. Om bruttodiskkapaciteten överstiger 2 TB kan du även använda en matris med RAID1-volymer på 2 diskar. Du kan till exempel konfigurera sex diskar som ett 3*(2*750 GB RAID 1-par.) </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Systemdatalagring </p> </td> 
-   <td colname="col2"> <p>Dessutom kräver Adobe lagring med hög tillgänglighet och en måttlig storlek (20 GB) för operativsystemet, DPU-programmet och andra systemprogram. </p> </td> 
-   <td colname="col3"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Klustring av maskinvara </p> </td> 
-   <td colname="col2"> <p>Se rekommendationer. </p> </td> 
-   <td colname="col3"> <p>Använd en homogen uppsättning servrar. I ett DPU-kluster minskar den långsammaste servern prestanda för hela datauppsättningen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Nätverksprestanda för kluster </td> 
-   <td colname="col2"> En Ethernet-anslutning med växlad gigabit eller mer. </td> 
-   <td colname="col3"> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>Operativsystem </p> </td>
+   <td colname="col2"> <p>Microsoft Windows Server 2008 x64 </p> </td>
+   <td colname="col3"> <p>Microsoft Windows Server 2012 x64 </p> <p> Microsoft Windows Server 2016 x64 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>CPU </p> </td>
+   <td colname="col2"> <p>Se rekommendationer. </p> </td>
+   <td colname="col3"> Den senaste generationens processorer med fyra kärnor+ från Intel eller AMD rekommenderas. 8 kärnor för optimala prestanda, 4 kärnor rekommenderas för en kompromiss mellan hastighet och kostnad. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>RAM </p> </td>
+   <td colname="col2"> <p>8 GB </p> </td>
+   <td colname="col3"> <p>12 GB </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Aktuell datalagring </p> </td>
+   <td colname="col2"> <p>1 TB+ total logisk tillfällig lagring. </p> <p>Åtkomst till diskundersystemet med låg fördröjning </p> </td>
+   <td colname="col3"> <p>För tillfällig lagring rekommenderar Adobe antingen: </p>
+    <ul id="ul_F3D033B90CF94F44A2A773B3F6852283">
+     <li id="li_B902CF7CC6A44F02838B285ADC725A75">(4 till 8) * (750 GB eller mer) SATA-hårddiskar (3,5-tumsfack.) </li>
+     <li id="li_A378F4E1443F4BB2B54DC7E8372EE572">(6 till 10) * (300 GB eller mer) SATA-hårddiskar (2,5-tumsfack.) </li>
+    </ul> <p>Dessa bör konfigureras i en JBOD-matris. Om bruttodiskkapaciteten överstiger 2 TB kan du även använda en matris med RAID1-volymer på 2 diskar. Du kan till exempel konfigurera sex diskar som ett 3*(2*750 GB RAID 1-par.) </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Systemdatalagring </p> </td>
+   <td colname="col2"> <p>Dessutom kräver Adobe lagring med hög tillgänglighet och en måttlig storlek (20 GB) för operativsystemet, DPU-programmet och andra systemprogram. </p> </td>
+   <td colname="col3"> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Klustring av maskinvara </p> </td>
+   <td colname="col2"> <p>Se rekommendationer. </p> </td>
+   <td colname="col3"> <p>Använd en homogen uppsättning servrar. I ett DPU-kluster minskar den långsammaste servern prestanda för hela datauppsättningen. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Nätverksprestanda för kluster </td>
+   <td colname="col2"> En Ethernet-anslutning med växlad gigabit eller mer. </td>
+   <td colname="col3"> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Alternativa diskdelsystem {#section-6f984eabe8074759aa9deaf17e3a68b7}
@@ -116,35 +116,35 @@ Adobe kan inte tillhandahålla någon garanti eller representation avseende den 
 
 Serverns filserverenhet (FSU, File Serving Unit) är den huvudsakliga datalagrings- och hanteringskomponenten för Data Workbench. FSU:n fungerar som en filserver för råkälldata till DPU:n och koordinerar vid behov klustringen av DPU:er. Varje FSU är licensierad att leverera källdata till upp till fem (5) DPU:er.
 
-<table id="table_45CF36583DFE4536BB31F6A1F6CC181E"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> FSU-komponenter </th> 
-   <th colname="col2" class="entry"> Rekommendationer </th> 
-   <th colname="col3" class="entry"> </th> 
-  </tr> 
+<table id="table_45CF36583DFE4536BB31F6A1F6CC181E">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> FSU-komponenter </th>
+   <th colname="col2" class="entry"> Rekommendationer </th>
+   <th colname="col3" class="entry"> </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Operativsystem, CPU, RAM </p> </td> 
-   <td colname="col2"> <p>Dessa krav är desamma som för DPU. För FSU rekommenderar Adobe dock att man använder minimikraven i stället för att följa rekommendationerna. </p> </td> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>Operativsystem, CPU, RAM </p> </td>
+   <td colname="col2"> <p>Dessa krav är desamma som för DPU. För FSU rekommenderar Adobe dock att man använder minimikraven i stället för att följa rekommendationerna. </p> </td>
    <td colname="col3"> </td>
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Disksystem </p> <p>FSU kräver högtillgänglig, redundant lagring för stora datavolymer. Adobe kommer att arbeta tillsammans med dig för att fastställa dina exakta krav. </p> </td> 
-   <td colname="col1"> <p>Adobe rekommenderar: </p> 
-    <ul id="ul_FFEEE5052FFD4876BA9A6476DD096539"> 
-     <li id="li_F98750D509D640C68885D53FC691ED43">(12 eller fler) * (750 GB eller mer) SATA-hårddiskar i en RAID 5/6-konfiguration. </li> 
-     <li id="li_3F84F63F9541476987015C27FDE8251B">Högpresterande SAN-anslutning som stöder 100 MB/s+ kontinuerlig bandbredd. </li> 
-    </ul> <p>Eftersom FSU lagrar råkälldata skulle eventuella förluster inte kunna återvinnas och Adobe föreslår att dessa data säkerhetskopieras regelbundet. </p> </td> 
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Disksystem </p> <p>FSU kräver högtillgänglig, redundant lagring för stora datavolymer. Adobe kommer att arbeta tillsammans med dig för att fastställa dina exakta krav. </p> </td>
+   <td colname="col1"> <p>Adobe rekommenderar: </p>
+    <ul id="ul_FFEEE5052FFD4876BA9A6476DD096539">
+     <li id="li_F98750D509D640C68885D53FC691ED43">(12 eller fler) * (750 GB eller mer) SATA-hårddiskar i en RAID 5/6-konfiguration. </li>
+     <li id="li_3F84F63F9541476987015C27FDE8251B">Högpresterande SAN-anslutning som stöder 100 MB/s+ kontinuerlig bandbredd. </li>
+    </ul> <p>Eftersom FSU lagrar råkälldata skulle eventuella förluster inte kunna återvinnas och Adobe föreslår att dessa data säkerhetskopieras regelbundet. </p> </td>
    <td colname="col2"> </td>
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Nätverksprestanda </p> </td> 
-   <td colname="col2"> <p>Adobe kräver Ethernet-anslutningar med växlade gigabit mellan FSU:er och DPU:er som fungerar tillsammans. </p> </td> 
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Nätverksprestanda </p> </td>
+   <td colname="col2"> <p>Adobe kräver Ethernet-anslutningar med växlade gigabit mellan FSU:er och DPU:er som fungerar tillsammans. </p> </td>
    <td colname="col3"> </td>
-  </tr> 
- </tbody> 
+  </tr>
+ </tbody>
 </table>
 
 ## Sensorkrav{#sensor-requirements}
@@ -155,74 +155,74 @@ Data Workbench Sensor samlar in händelsedata från webb-, program- och datainsa
 
 I följande tabell beskrivs systemrekommendationerna för [!DNL Sensor]:
 
-<table id="table_A132E06D6B8146C1B199B82464EA0898"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Funktioner </th> 
-   <th colname="col2" class="entry"> Rekommenderas </th> 
-  </tr> 
+<table id="table_A132E06D6B8146C1B199B82464EA0898">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Funktioner </th>
+   <th colname="col2" class="entry"> Rekommenderas </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Disklagring </p> </td> 
-   <td colname="col2"> <p>Minst 512 MB. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>RAM </p> </td> 
-   <td colname="col2"> <p>32 MB RAM måste vara tillgängligt för <span class="wintitle"> sensor </span> på HTTP-servern eller någon annan serverdator som är dess värd. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Nätverksprestanda </p> </td> 
-   <td colname="col2"> <p>1 Mbit/s eller bättre nätverksanslutning till en upprepande server eller <span class="keyword"> data workbench server </span>. <span class="wintitle"> Sensorn förbrukar  </span> vanligtvis betydligt mindre bandbredd än en (1) Mbit/s. Dina Adobe-konsulter hjälper dig att uppskatta den faktiska bandbredd som skulle behövas rutinmässigt. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Nätverksportar och brandväggar </p> </td> 
-   <td colname="col2"> <p> <span class="wintitle"> Sensorn  </span> ansluter till  <span class="keyword"> data workbench-servern  </span> med HTTPS (vanligtvis port 443, även om detta är konfigurerbart) eller HTTP (vanligtvis port 80, även om detta är konfigurerbart). </p> <p>Lämplig port på en brandvägg som finns mellan en <span class="wintitle">-sensor </span> och målservern <span class="keyword"> för data workbench </span> eller en upprepande server ska bara öppnas mellan respektive <span class="wintitle">-sensor </span>-värddator och <span class="keyword"> data workbench server </span> eller en upprepande server innan <span class="wintitle">-servern startas installationsprocess för ensor </span>. <span class="wintitle"> Sensorn  </span> gör en enkelriktad HTTPS- eller HTTP-anslutning till en  <span class="keyword"> data workbench-server  </span> eller en upprepande server. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Nätverkshanteringssystem </p> </td> 
-   <td colname="col2"> <p>Befintliga nätverkshanteringssystem bör övervaka hälsotillståndet för den underliggande datormaskinvaran (till exempel diskutrymme, nätverkstjänst) och nätverksanslutning samt Windows-händelseloggen eller UNIX-syslog. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Servertidssynkronisering </p> </td> 
-   <td colname="col2"> <p>Kontrollera att datorns systemtid är kontinuerligt synkroniserad på alla datorer som är värdar för en <span class="wintitle">-sensor </span>. Webbserverprogrammen och datorerna som övervakas av <span class="wintitle">-sensorn </span> måste ha synkroniserade systemtider för att händelsedata som samlas in från dem ska vara korrekta. Se dokumentationen för ditt operativsystem för hur du synkroniserar systemtider fortlöpande med NTP eller andra tidssynkroniseringsfunktioner. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Användning av DNS-namn </p> </td> 
-   <td colname="col2"> <p>Adobe rekommenderar att <span class="wintitle">-sensorer </span> använder ett DNS-namn (i stället för en IP-adress) för att matcha nätverksadressen för en <span class="keyword"> data workbench-server </span> eller en upprepande server. När en <span class="wintitle">-sensor </span> använder ett DNS-namn måste värdwebbserverns DNS-fil eller lokala värdfil konfigureras för att matcha namnet på <span class="keyword">-data workbench-servern </span> eller den upprepade servern. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>Disklagring </p> </td>
+   <td colname="col2"> <p>Minst 512 MB. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>RAM </p> </td>
+   <td colname="col2"> <p>32 MB RAM måste vara tillgängligt för <span class="wintitle"> sensor </span> på HTTP-servern eller någon annan serverdator som är dess värd. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Nätverksprestanda </p> </td>
+   <td colname="col2"> <p>1 Mbit/s eller bättre nätverksanslutning till en upprepande server eller <span class="keyword"> data workbench server </span>. <span class="wintitle"> Sensorn förbrukar  </span> vanligtvis betydligt mindre bandbredd än en (1) Mbit/s. Dina Adobe-konsulter hjälper dig att uppskatta den faktiska bandbredd som skulle behövas rutinmässigt. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Nätverksportar och brandväggar </p> </td>
+   <td colname="col2"> <p> <span class="wintitle"> Sensorn  </span> ansluter till  <span class="keyword"> data workbench-servern  </span> med HTTPS (vanligtvis port 443, även om detta är konfigurerbart) eller HTTP (vanligtvis port 80, även om detta är konfigurerbart). </p> <p>Lämplig port på en brandvägg som finns mellan en <span class="wintitle">-sensor </span> och målservern <span class="keyword"> för data workbench </span> eller en upprepande server ska bara öppnas mellan respektive <span class="wintitle">-sensor </span>-värddator och <span class="keyword"> data workbench server </span> eller en upprepande server innan <span class="wintitle">-servern startas installationsprocess för ensor </span>. <span class="wintitle"> Sensorn  </span> gör en enkelriktad HTTPS- eller HTTP-anslutning till en  <span class="keyword"> data workbench-server  </span> eller en upprepande server. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Nätverkshanteringssystem </p> </td>
+   <td colname="col2"> <p>Befintliga nätverkshanteringssystem bör övervaka hälsotillståndet för den underliggande datormaskinvaran (till exempel diskutrymme, nätverkstjänst) och nätverksanslutning samt Windows-händelseloggen eller UNIX-syslog. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Servertidssynkronisering </p> </td>
+   <td colname="col2"> <p>Kontrollera att datorns systemtid är kontinuerligt synkroniserad på alla datorer som är värdar för en <span class="wintitle">-sensor </span>. Webbserverprogrammen och datorerna som övervakas av <span class="wintitle">-sensorn </span> måste ha synkroniserade systemtider för att händelsedata som samlas in från dem ska vara korrekta. Se dokumentationen för ditt operativsystem för hur du synkroniserar systemtider fortlöpande med NTP eller andra tidssynkroniseringsfunktioner. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Användning av DNS-namn </p> </td>
+   <td colname="col2"> <p>Adobe rekommenderar att <span class="wintitle">-sensorer </span> använder ett DNS-namn (i stället för en IP-adress) för att matcha nätverksadressen för en <span class="keyword"> data workbench-server </span> eller en upprepande server. När en <span class="wintitle">-sensor </span> använder ett DNS-namn måste värdwebbserverns DNS-fil eller lokala värdfil konfigureras för att matcha namnet på <span class="keyword">-data workbench-servern </span> eller den upprepade servern. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Support Server-programvara {#section-d6071706539f49d9a861d87b98e6f382}
 
 I följande tabell visas de vanligaste kombinationerna som [!DNL Sensor] har stöd för:
 
-<table id="table_99EA23BBC1A148B49643F4B5E4341C08"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Webbserverprogramvara </th> 
-   <th colname="col2" class="entry"> Operativsystem </th> 
-  </tr> 
+<table id="table_99EA23BBC1A148B49643F4B5E4341C08">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Webbserverprogramvara </th>
+   <th colname="col2" class="entry"> Operativsystem </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Apache Server/IBM HTTP Server 2.2 </p> </td> 
-   <td colname="col2"> <p>Microsoft Windows Server 2003 eller senare; RedHat Enterprise Linux 6.x eller senare; Sun Solaris 8.x eller senare; IBM AIX 5.1x eller senare. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Apache Server 2.4 </p> </td> 
-   <td colname="col2"> <p>RedHat Enterprise Linux 6.x eller senare </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Microsoft IIS </p> </td> 
-   <td colname="col2"> <p>Microsoft Windows Server 2003 eller senare </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Java-programservrar (Tomcat, JBoss, iPlanet, Weblogic) </p> </td> 
-   <td colname="col2"> <p>Microsoft Windows Server 2003 eller senare; RedHat Enterprise Linux 6.x eller senare; Sun Solaris 8.x eller senare; IBM AIX 5.1x eller senare. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>Apache Server/IBM HTTP Server 2.2 </p> </td>
+   <td colname="col2"> <p>Microsoft Windows Server 2003 eller senare; RedHat Enterprise Linux 6.x eller senare; Sun Solaris 8.x eller senare; IBM AIX 5.1x eller senare. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Apache Server 2.4 </p> </td>
+   <td colname="col2"> <p>RedHat Enterprise Linux 6.x eller senare </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Microsoft IIS </p> </td>
+   <td colname="col2"> <p>Microsoft Windows Server 2003 eller senare </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Java-programservrar (Tomcat, JBoss, iPlanet, Weblogic) </p> </td>
+   <td colname="col2"> <p>Microsoft Windows Server 2003 eller senare; RedHat Enterprise Linux 6.x eller senare; Sun Solaris 8.x eller senare; IBM AIX 5.1x eller senare. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 För andra kombinationer av server och operativsystem, se Adobe angående tillgängligheten. Alla funktioner i [!DNL Sensor] är inte tillgängliga för alla kombinationer av webb-/programserver och operativsystem. Mer information om [!DNL Sensor]-versioner får du av Adobe Support.
@@ -235,7 +235,7 @@ Följande krav gäller för [!DNL report server]:
 
 * Åtkomst till filsystem för utdata av data (nätverksresurs eller lokal enhet).
 * Åtkomst till konfigurerad SMTP-server.
-* Microsoft Excel 2003 eller senare installerat på [!DNL report]-servern. Mer information finns i [Att tänka på vid serverautomatisering av Office](http://support.microsoft.com/kb/257757).
+* Microsoft Excel 2003 eller senare är installerat på [!DNL report]-servern. Mer information finns i [Att tänka på vid serverautomatisering av Office](https://support.microsoft.com/kb/257757).
 
 ## Nätverkshantering{#network-management}
 

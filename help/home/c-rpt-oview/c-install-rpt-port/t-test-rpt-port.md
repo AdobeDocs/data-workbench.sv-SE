@@ -3,7 +3,7 @@ description: Steg för att öppna rapportportalen och se till att du kan visa ra
 title: Testa rapportportalen
 uuid: eee0df5e-78e0-49b2-853c-40f1b332328b
 exl-id: 197ff815-9234-4dce-b30f-b9cacf259634
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
@@ -20,9 +20,9 @@ Steg för att öppna rapportportalen och se till att du kan visa rapporterna fö
 
 1. Öppna [!DNL Report Portal] i din webbläsare med följande URI-format:
 
-   http://*Serveradress*/*PortalName*
+   https://*Serveradress*/*PortalName*
 
-   Exempel: [!DNL http://localhost/VisualReportPortal]
+   Exempel: [!DNL https://localhost/VisualReportPortal]
 
 1. Om [!DNL Report Portal] frågar efter inloggningsuppgifter anger du ett kontonamn och ett lösenord (till exempel konto&quot;test&quot; och lösenord&quot;user&quot; för standardkontot).
 1. När [!DNL Report Portal] visas kontrollerar du att:

@@ -3,7 +3,7 @@ description: Steg för att mappa rapportportalen till en virtuell katalog (IIS 7
 title: Mappa rapportportalen till en virtuell katalog (IIS 7.0 eller senare)
 uuid: 9d18fb85-f9d7-48b6-a19b-1e7b68a5adca
 exl-id: 2fa3439a-1fe5-4a20-83db-d233ae8b5263
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -54,11 +54,11 @@ För närvarande har de flesta klienter för hanterade tjänster servrar med ope
 1. Klicka på **[!UICONTROL Advanced Settings]** och välj True för Aktivera 32-bitarsprogram.
 1. För att [!DNL Portal] ska fungera måste du konvertera den till ett program. När du har konfigurerat de virtuella katalogerna högerklickar du på den virtuella katalogen för portalen och väljer **[!UICONTROL Convert to Application]**.
 
-## Ytterligare tips och tricks {#section-ff84ab3f66c94620a6a11f0e60471d44}
+## Fler tips och tricks {#section-ff84ab3f66c94620a6a11f0e60471d44}
 
 * Du kan hämta [!DNL Portal] från Softdocs under **[!UICONTROL Softdocs]** > **[!UICONTROL Report Portal]**. Du kan bara hämta [!DNL ReportPortal-Release-1-0-0-7.zip].
 
 * Du behöver inte längre [!DNL ReportPortalSetup.xml], så den kan tas bort.
 * För standardiseringens skull bör du placera innehållet i zip-filen i [!DNL E:\Portal].
 * Du kan ta reda på vilken SMTP-server du använder för klienter med hanterade tjänster här.
-* Ange en begäran med NetOps om att ändra domännamnsposten i IIS för rapportservern till något mer användarvänligt - till exempel [!DNL reports.clientname.insight.omniture.com], så att den övergripande portalwebbadressen är [!DNL http://reports.clientname.insight.omniture.com/Portal]. Konfigurera din [!DNL email.asa]-fil när den här ändringen har gjorts.
+* Ange en begäran med NetOps om att ändra domännamnsposten i IIS för rapportservern till något mer användarvänligt - till exempel [!DNL reports.clientname.insight.omniture.com], så att den övergripande portalwebbadressen är [!DNL https://reports.clientname.insight.omniture.com/Portal]. Konfigurera din [!DNL email.asa]-fil när den här ändringen har gjorts.

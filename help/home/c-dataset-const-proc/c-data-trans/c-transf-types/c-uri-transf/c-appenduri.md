@@ -3,7 +3,7 @@ description: Med AppendURI-omvandlingen kan du lägga till information till stan
 title: AppendURI
 uuid: 8334d4f9-2bf6-4bd0-af65-8f2b0959652d
 exl-id: 0d5901c0-bd13-4499-8e26-44839aeb7413
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Omvandlingen [!DNL AppendURI] fungerar bara när den definieras i filen [!DNL Tr
 
 Tänk dig en webbplats som har skapats med en traditionell modell-View-Controller-metod. I sådana system är det vanligt att ha en enda webbsida som är den punkt där man får åtkomst till systemet. För en sådan webbplats skulle en visualisering av trafikmönster i systemet vara mycket ointressant och skulle inte ge några insikter om besökaranvändning och trafikflöde. Ta till exempel en webbplats som samlar alla webbförfrågningar via en URI i följande format:
 
-* [!DNL http://www.examplesite.com/modelview.asp?id=login&name=bob]
+* [!DNL https://www.examplesite.com/modelview.asp?id=login&name=bob]
 
 ASP-sidan för modellvyn tar emot all trafik och fastställer dess åtgärder baserat på värdet för ID-fältet i frågan. Som standard innehåller URI-dimensionen en enda post:
 

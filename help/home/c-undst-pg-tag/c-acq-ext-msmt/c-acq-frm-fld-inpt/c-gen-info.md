@@ -3,7 +3,7 @@ description: Värden som anges i ett formulär på en webbsida kan samlas in och
 title: Allmän information
 uuid: 401816a5-1d95-48e6-bedf-ee2a5dbd2d50
 exl-id: 9effc72b-e75f-423c-87ec-6ac25edee8d6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
@@ -17,40 +17,40 @@ Värden som anges i ett formulär på en webbsida kan samlas in och läggas till
 Detta visas i följande exempel. Inkludera detta JavaScript efter alla formulärvalideringsskript som används på HTML-sidorna.
 
 ```
-<html> 
-<head> 
-</head> 
-<script language="JavaScript"> 
- 
-function AppendFormValues() 
-{ 
- 
-for(var i = 0; i < document.formname.length; i++) 
-{ 
-var item = document.formname.elements[i]; 
-var formitem = “v_”+i; 
-var formvalue = item.value; 
-formvalues += formitem + '=' + formvalue + '&'; 
-} 
-document.formname.action = document.formname.action + '?' + formvalues; 
- 
-} 
-</script> 
-<body> 
-<form name="formname" action="thankyou.asp" method="POST" onSubmit="AppendFormValues();"> 
-<input name="NAME" size="50" value=""></input>name<br/> 
-<input name="CITY" size="50" value=""></input>city<br/> 
-<input name="STATE" size="50" value=""></input>state<br/> 
-<input name="ZIP" size="10" value=""></input>zip<br /> 
-<input type="submit" name="submit" value="submit"/> 
-</body> 
-</html> 
+<html>
+<head>
+</head>
+<script language="JavaScript">
+
+function AppendFormValues()
+{
+
+for(var i = 0; i < document.formname.length; i++)
+{
+var item = document.formname.elements[i];
+var formitem = “v_”+i;
+var formvalue = item.value;
+formvalues += formitem + '=' + formvalue + '&';
+}
+document.formname.action = document.formname.action + '?' + formvalues;
+
+}
+</script>
+<body>
+<form name="formname" action="thankyou.asp" method="POST" onSubmit="AppendFormValues();">
+<input name="NAME" size="50" value=""></input>name<br/>
+<input name="CITY" size="50" value=""></input>city<br/>
+<input name="STATE" size="50" value=""></input>state<br/>
+<input name="ZIP" size="10" value=""></input>zip<br />
+<input type="submit" name="submit" value="submit"/>
+</body>
+</html>
 ```
 
 I det här exemplet läggs värdena som anges i formuläret av webbläsaranvändaren till den efterföljande&quot;thankyou.asp&quot;-sidan som anges i värdet för FORM-åtgärd enligt följande:
 
 ```
-http://www.myserver.com/thankyou.asp?v_1=John Smith&v_2=Los Angeles&v_3=California&v_4=90210
+https://www.myserver.com/thankyou.asp?v_1=John Smith&v_2=Los Angeles&v_3=California&v_4=90210
 ```
 
 Följande utökade mått skulle erhållas med denna begäran utöver de baslinjemått som samlats in av [!DNL Sensor]:

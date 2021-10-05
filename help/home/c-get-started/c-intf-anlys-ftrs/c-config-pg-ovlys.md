@@ -3,7 +3,7 @@ description: Sidövertäckningar konfigureras bara i programmet Plats, men de ka
 title: Konfigurera en sidövertäckning
 uuid: c4c612ed-5154-4b20-96ab-24b74fba19a2
 exl-id: 4e0dfce8-def2-49f3-93e8-41d82922fb88
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Sidövertäckningar konfigureras bara i programmet Plats, men de kan konfigurera
 
 Kontakta Adobe Consulting Services om du vill ha information om hur du konfigurerar sidövertäckning för ett annat program.
 
-Visualisering av sidövertäckning är ett verktyg för HTML-länkanalys. När du begär en övertäckning för en viss sida tar Datan Workbench en ögonblicksbild av den faktiska sidan så som den skulle visas i en webbläsare och tolkar HTML-koden som representerar länkar enligt en lista med reguljära uttryck som du definierar. För varje länk på den valda sidan försöker programmet hitta ett mönster för reguljära uttryck genom att arbeta nedåt i listan tills den första matchningen hittas. Om det finns en matchning visas länken markerad i sidövertäckningen.
+Visualisering av sidövertäckning är ett verktyg för länkanalys i HTML. När du begär en övertäckning för en viss sida tar Datan Workbench en ögonblicksbild av den faktiska sidan så som den skulle visas i en webbläsare och tolkar den HTML-kod som representerar länkar enligt en lista med reguljära uttryck som du definierar. För varje länk på den valda sidan försöker programmet hitta ett mönster för reguljära uttryck genom att arbeta nedåt i listan tills den första matchningen hittas. Om det finns en matchning visas länken markerad i sidövertäckningen.
 
 Sidövertäckningen visar endast data när du lägger till en färgförklaring på arbetsytan som innehåller sidövertäckningen.
 
@@ -37,7 +37,7 @@ Om du vill konfigurera sidövertäckning för [!DNL Site] måste du redigera tv�
 * **[!DNL Page Overlay.vw]:** Den här filen är en mallfil för att skapa visualiseringar för sidövertäckning. Minst en mallfil måste finnas i den profil som du konfigurerar sidövertäckning för.
 * **[!DNL Page Overlay Link Templates.cfg]:** När sidövertäckningsvisualiseringen läser in en sida identifierar den automatiskt länkarna på sidan och deras mål. Om du vill koppla dessa länkar till element i data måste du definiera en uppsättning reguljära uttryck i den här filen.
 
-   Du kan definiera flera reguljära uttryck som matchar elementen i dimensionen. Den ordning i vilken du definierar uttrycken är viktig. När du begär en övertäckning för en viss sida tar Datan Workbench en ögonblicksbild av den faktiska sidan så som den skulle visas i en webbläsare och tolkar HTML-koden som representerar länkar enligt en lista med reguljära uttryck som du definierar. För varje länk på den valda sidan försöker programmet hitta ett mönster för reguljära uttryck genom att arbeta nedåt i listan tills den första matchningen hittas. Det första uttrycket som matchar ett dimensionselement är det som används. Därför är det bäst att först lista det reguljära uttrycket med det mest specifika matchande mönstret, följt av mindre specifika uttryck. Om det finns en matchning visas länken markerad i sidövertäckningsvisualiseringen.
+   Du kan definiera flera reguljära uttryck som matchar elementen i dimensionen. Den ordning i vilken du definierar uttrycken är viktig. När du begär en övertäckning för en viss sida tar Datan Workbench en ögonblicksbild av den faktiska sidan så som den skulle visas i en webbläsare och tolkar den HTML-kod som representerar länkar enligt en lista med reguljära uttryck som du definierar. För varje länk på den valda sidan försöker programmet hitta ett mönster för reguljära uttryck genom att arbeta nedåt i listan tills den första matchningen hittas. Det första uttrycket som matchar ett dimensionselement är det som används. Därför är det bäst att först lista det reguljära uttrycket med det mest specifika matchande mönstret, följt av mindre specifika uttryck. Om det finns en matchning visas länken markerad i sidövertäckningsvisualiseringen.
 
 **Konfigurera sidövertäckning för webbplatsen**
 
@@ -54,11 +54,11 @@ Om du vill konfigurera sidövertäckning för [!DNL Site] måste du redigera tv�
 1. Ange domän (och webbläsarhöjd om det behövs).
 
    ```
-   window = simpleBorderWindow: 
-     client = scrollWindow: 
-       client = PageOverlay: 
-         URI Template = string: http://%Domain%%Element%
-         URI Parameters = map: 
+   window = simpleBorderWindow:
+     client = scrollWindow:
+       client = PageOverlay:
+         URI Template = string: https://%Domain%%Element%
+         URI Parameters = map:
            Domain = string: domain name
            Element = ref: Element/Name
          Dim = ref: wdata/model/dim/URI
@@ -68,9 +68,9 @@ Om du vill konfigurera sidövertäckning för [!DNL Site] måste du redigera tv�
          Browser Height = int: browser height
      pos = v3d: (518, 202, 0)
      size = v3d: (810, 610, 0)
-     titleBar = editor: 
+     titleBar = editor:
        size = v3d: (61, 19, 0)
-       text = string: 
+       text = string:
    ```
 
 1. Spara filen.
@@ -88,27 +88,27 @@ Om du vill konfigurera sidövertäckning för [!DNL Site] måste du redigera tv�
 1. Högerklicka på **[!UICONTROL Link Templates]** och klicka på **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
 1. Redigera parametrarna för LinkRegex-vektorn efter behov:
 
-<table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> För den här parametern.. </th> 
-   <th colname="col2" class="entry"> Ange den här informationen... </th> 
+<table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> För den här parametern.. </th>
+   <th colname="col2" class="entry"> Ange den här informationen... </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Dimension </p> </td> 
-   <td colname="col2"> <p>Dimensionen (vanligtvis dimensionen Nästa URI) som representeras av länken. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Uttryck </p> </td> 
-   <td colname="col2"> <p>Det reguljära uttryck som används för att markera den relevanta delen av HTML-länken för att hitta nästa element från Dimensionen. Det reguljära uttrycket måste vara en exakt matchning och det önskade utdatamönstret grupperas med parenteser. Mer information om reguljära uttryck finns i <i>Konfigurationshandboken för datauppsättningar</i>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Utdatamönster </p> </td> 
-   <td colname="col2"> <p>Utdatamönstret för det reguljära uttryck som används för att extrahera det resulterande elementet i Dimension-parametern. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>Dimension </p> </td>
+   <td colname="col2"> <p>Dimensionen (vanligtvis dimensionen Nästa URI) som representeras av länken. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Uttryck </p> </td>
+   <td colname="col2"> <p>Det reguljära uttryck som används för att markera den relevanta delen av länken HTML för att hitta nästa element från Dimensionen. Det reguljära uttrycket måste vara en exakt matchning och det önskade utdatamönstret grupperas med parenteser. Mer information om reguljära uttryck finns i <i>Konfigurationshandboken för datauppsättningar</i>. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Utdatamönster </p> </td>
+   <td colname="col2"> <p>Utdatamönstret för det reguljära uttryck som används för att extrahera det resulterande elementet i Dimension-parametern. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 I följande exempelfil visas tre reguljära uttryck:

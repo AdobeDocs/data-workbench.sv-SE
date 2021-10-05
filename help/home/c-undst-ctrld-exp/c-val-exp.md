@@ -4,14 +4,14 @@ solution: Analytics,Analytics
 title: Validera experimentversionen
 uuid: 59769f5b-4175-479e-ad7d-7226e9c666af
 exl-id: 6dfd01ca-288d-40fd-aad4-75a588902ebd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 0%
 
 ---
 
-# Validerar experimentet{#validating-the-experiment}
+# Validera experimentversionen{#validating-the-experiment}
 
 När du har driftsatt ditt experiment bör du verifiera att experimentet fungerar som det ska.
 
@@ -27,17 +27,17 @@ Varje gång du vill testa en ny grupp måste du rensa dina cookies för webbplat
 
 Om du vill placera dig själv i en viss grupp inom ett specifikt experiment begär du testsidan med en frågesträng i följande format:
 
-[!DNL http://] *&lt; [!DNL sitename/?Experiment Name=Group Name]>*
+[!DNL https://] *&lt; [!DNL sitename/?Experiment Name=Group Name]>*
 
 Exempel:
 
-[!DNL http://www.omniture.com/setcookie.htm?New_Homepage=index2]
+[!DNL https://www.omniture.com/setcookie.htm?New_Homepage=index2]
 
 När den virtuella URL-begäran skickas till servern identifierar [!DNL Sensor] dig som medlem i den angivna gruppen i det angivna experimentet och dirigerar sedan om dig till webbplatsens rot. Nu kan du navigera till rätt plats på webbplatsen för att kontrollera om rätt innehåll visas för det experimentet och gruppen.
 
 Om du skrev in följande i webbläsaren skulle webbläsaren visa webbplatsens hemsida och placera dig i gruppen index2 i New_Homepage-experimentet:
 
-[!DNL http://www.omniture.com/setcookie.htm?New_Homepage=index2]
+[!DNL https://www.omniture.com/setcookie.htm?New_Homepage=index2]
 
 När besökare i index2-gruppen begär hemsidan visas den grafiska länken &quot;Begär en demo&quot; högre upp på sidan, som i följande bild:
 

@@ -3,18 +3,18 @@ description: Det sista steget är att köra kontrollpanelen för första gången
 title: Initierar kontrollpanelen
 uuid: 847ba63e-29d8-4950-aa74-22d825388e2b
 exl-id: 47098d73-d8c4-4d14-964f-108a731d3733
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
 
 ---
 
-# Initierar instrumentpanelen{#initializing-the-dashboard}
+# Initierar kontrollpanelen{#initializing-the-dashboard}
 
 Det sista steget är att köra kontrollpanelen för första gången så att den kan initieras.
 
-1. Öppna en webbläsare och ange URL:en till den nyligen distribuerade webbplatsen (till exempel http://localhost/dashboard).
+1. Öppna en webbläsare och ange URL:en till den nyligen distribuerade webbplatsen (till exempel https://localhost/dashboard).
 1. När du ansluter för första gången skapas databastabellerna, vilket kan medföra en fördröjning.
 1. Inloggningsuppgifterna är:
 

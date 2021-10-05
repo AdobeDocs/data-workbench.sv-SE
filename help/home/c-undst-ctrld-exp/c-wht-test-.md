@@ -4,7 +4,7 @@ solution: Analytics,Analytics
 title: Vad ska jag testa?
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
 exl-id: 0f06ff0f-b385-4614-8007-afdb85191a85
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -42,6 +42,6 @@ För att uppnå dessa mål stöder Site följande typer av metoder för kontroll
 >
 >Kontrollerade experiment baseras på URI-ersättning, inte frågesträngsersättning. URI:n i en viss URL-adress markeras i följande exempel:
 >
->`http://www.omniture.com/index.asp?id=1`
+>`https://www.omniture.com/index.asp?id=1`
 >
 >I ditt kontrollerade experiment kan du till exempel ange att kontrollgruppens URI [!DNL index.asp] ska ersättas med testgruppens URI [!DNL index2.asp] för att avgöra vilken siddesign som ger ett större värde.

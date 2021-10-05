@@ -3,7 +3,7 @@ description: För att vissa funktioner i Report Server ska fungera måste du til
 title: Innan du börjar
 uuid: cb464fb6-3109-4eff-9c95-f0cf1f8a8c66
 exl-id: 5c8bb4c3-fe76-4b4e-960d-113a9927ad59
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Följande krav gäller för rapportservern:
 
 * Åtkomst till filsystem för utdata av data (nätverksresurs eller lokal enhet).
 * Åtkomst till konfigurerad SMTP-server.
-* Microsoft Excel 2010 64-bitars eller senare installerat på [!DNL Report]-servern. Mer information finns i [Att tänka på vid serverautomatisering av Office](http://support.microsoft.com/kb/257757).
+* 64-bitars Microsoft Excel 2010 eller senare installerat på [!DNL Report]-servern. Mer information finns i [Att tänka på vid serverautomatisering av Office](https://support.microsoft.com/kb/257757).
 
 ## Ytterligare krav {#section-f53d4388656a4dfc90aefe29dfabef89}
 
@@ -32,6 +32,6 @@ Följande krav gäller för rapportservern:
 
    >[!NOTE]
    >
-   >När du genererar rapporter som Excel-filer öppnar du en ny instans av Excel. Mer information om den här processen finns i [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757).
+   >När du genererar rapporter som Excel-filer öppnar du en ny instans av Excel. Mer information om den här processen finns i [https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757).
 
 * **Ge åtkomst till en SMTP-server för att distribuera rapporter via e-post.** Om du vill distribuera rapporter via e-post måste Report Server kunna ansluta till en SMTP-server och rätt portar till e-postvidarebefordringstjänsten måste öppnas.

@@ -3,7 +3,7 @@ description: Du kan exportera en arbetsyta som en PNG-bildfil eller exportera da
 title: Exportera en arbetsyta
 uuid: 59ea6e46-d2e9-41f9-9c8f-e3071eb65424
 exl-id: 87416ddf-2ac0-4f95-ae8e-71051061c757
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 0%
@@ -41,15 +41,14 @@ Om du vill exportera arbetsytor och enskilda fönster till Microsoft Excel måst
 
 >[!NOTE]
 >
->* När du exporterar data som Excel-filer öppnar du en ny instans av Excel. Mer information om den här processen finns i [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757).
->* Även om Data Workbench har stöd för fler än 256 kolumner och 65 536 rader med data, har versioner av Microsoft Excel före 8.0 inte det.
+>* När du exporterar data som Excel-filer öppnar du en ny instans av Excel. Mer information om den här processen finns i [https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757).
+>* Data Workbench stöder över 256 kolumner och 65 536 rader, men versioner av Microsoft Excel före 8.0 gör det inte.
 >
-
 
 
 Om dessa krav uppfylls startar Datan Workbench automatiskt Microsoft Excel och exporterar data till en ny Excel-arbetsbok. Data exporteras inte från följande visualiseringar: diagram, webbläsare för sökvägar, processkartor, punktdiagram och glober.
 
-## Använd anpassade titlar {#section-a332e157554546cb8e88922a8d7a4fa2}
+## Använda anpassade titlar {#section-a332e157554546cb8e88922a8d7a4fa2}
 
 Om du inte har angett en anpassad rubrik för fönstret på menyn [!UICONTROL Export] används [!UICONTROL Export title] som listas (till exempel Citatförteckning) som kalkylbladsnamn.
 

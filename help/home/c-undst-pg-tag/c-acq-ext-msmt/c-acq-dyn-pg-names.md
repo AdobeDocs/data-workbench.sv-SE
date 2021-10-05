@@ -3,14 +3,14 @@ description: För vissa webbplatser är det nödvändigt att använda inbäddade
 title: Hämta dynamiska sidnamn
 uuid: eaa35023-bbfa-4eb9-9ab7-3986187e5537
 exl-id: cd94caf0-b0dc-46c1-8f59-3ebb2f703286
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
 
 ---
 
-# Hämtar dynamiska sidnamn{#acquiring-dynamic-page-names}
+# Hämta dynamiska sidnamn{#acquiring-dynamic-page-names}
 
 För vissa webbplatser är det nödvändigt att använda inbäddade objektbegäranden för att skicka information till webbservern så att information om vilken sida som faktiskt betjänades kan hämtas av sensorn och användas för rapportering och analys.
 
@@ -23,25 +23,25 @@ För att [!DNL Sensor] ska kunna samla in ett användbart namn för den sida som
 I allmänhet bör objektbegäran som är inbäddad på varje sådan HTML-sida se ut så här:
 
 ```
-<!-- BEGIN REFERENCE PAGE TAG--> 
-<script language="javascript"> 
-var vlc = "0" //Capture Link Click  1=TRUE, 0=FALSE 
-var v = {}; 
-v["_pn"] = "Application Form"; 
-</script> 
- 
-<script language="javascript" src=”http://www.myserver.com/path/to/zig.js" type="text/javascript"></script> 
- 
-<noscript> 
-<img src="/path/to/zag.gif?Log=1&v_jd=1" border="0" width="1" height="1"/> 
-</noscript> 
- 
+<!-- BEGIN REFERENCE PAGE TAG-->
+<script language="javascript">
+var vlc = "0" //Capture Link Click  1=TRUE, 0=FALSE
+var v = {};
+v["_pn"] = "Application Form";
+</script>
+
+<script language="javascript" src=”https://www.myserver.com/path/to/zig.js" type="text/javascript"></script>
+
+<noscript>
+<img src="/path/to/zag.gif?Log=1&v_jd=1" border="0" width="1" height="1"/>
+</noscript>
+
 <!-- END REFERENCE PAGE TAG-->
 ```
 
 [!DNL Log=1] säkerställer att  [!DNL Sensor] loggar begäran trots  [!DNL Sensor] filterreglerna för innehållstyp, som filtrering från JavaScript och bildbegäranden innan de lagras. Den deklarerade variabeln v_pn identifierar namnet på det faktiska sidinnehåll som betjänas så att [!DNL Site] känner till namnet på sidan som besökaren faktiskt visade. v_pn-värdet kan etableras manuellt eller av annan skript eller programkod.
 
-När värdet har samlats in kan du konfigurera data workbench-servern så att den använder innehållet i frågesträngvariabeln (namn=värde-par, till exempel v_pn=Application Form) som läggs till i [!DNL zag.gif]-URI:n (till exempel [!DNL http://www.mysite.com/pageserved.asp?v_pn=Application%20Form]) som en utökning av [!DNL zag.gif]-URI:n. Förutom de baslinjemått som erhållits vid varje HTTP-begäran, skulle en utökad mätning erhållas med denna begäran.
+När värdet har samlats in kan du konfigurera data workbench-servern så att den använder innehållet i frågesträngvariabeln (namn=värde-par, till exempel v_pn=Application Form) som läggs till i [!DNL zag.gif]-URI:n (till exempel [!DNL https://www.mysite.com/pageserved.asp?v_pn=Application%20Form]) som en utökning av [!DNL zag.gif]-URI:n. Förutom de baslinjemått som erhållits vid varje HTTP-begäran, skulle en utökad mätning erhållas med denna begäran.
 
 | Insamlade data | Förklaring | Exempel |
 |---|---|---|

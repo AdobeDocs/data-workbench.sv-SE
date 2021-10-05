@@ -1,16 +1,16 @@
 ---
 description: Information för att generera rapporter som Excel-filer.
-title: Genererar rapporter som Microsoft Excel-filer
+title: Generera rapporter som Microsoft Excel-filer
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
 exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
 
 ---
 
-# Genererar rapporter som Microsoft Excel-filer{#generating-reports-as-microsoft-excel-files}
+# Generera rapporter som Microsoft Excel-filer{#generating-reports-as-microsoft-excel-files}
 
 Information för att generera rapporter som Excel-filer.
 
@@ -22,10 +22,10 @@ Följande krav måste vara uppfyllda:
    >[!NOTE]
    >
    >
-   >    
-   >    
-   >    * När du genererar rapporter som Excel-filer öppnar du en ny instans av Excel. Mer information om den här processen finns i [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757).
-   >    * Även om data workbench har stöd för fler än 256 kolumner och 65 536 rader med data, har inte Microsoft Excel det.
+   >
+   >
+   >    * När du genererar rapporter som Excel-filer öppnar du en ny instans av Excel. Mer information om den här processen finns i [https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757).
+   >    * Även om data workbench har stöd för mer än 256 kolumner och 65 536 rader data, har inte Microsoft Excel det.
 
 
 Om dessa krav uppfylls startar [!DNL Report Server] automatiskt Microsoft Excel och matar ut data från vissa visualiseringar, dimensioner och värdesförklaringar samt textanteckningar till en ny Excel-arbetsbok med en visualisering per kalkylblad.

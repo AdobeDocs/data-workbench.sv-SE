@@ -3,7 +3,7 @@ description: I rapportportalen används informationen i en konfigurationsfil som
 title: Redigera sessionskonfigurationsfilen
 uuid: c1bcd4d2-9bf5-425a-bda2-7f805983cdc6
 exl-id: 98cf2e11-afb8-4530-aaa4-ea3c913effc1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -30,8 +30,8 @@ När du installerar [!DNL Report Portal] måste du redigera den här filen enlig
 1. Spara filen.
 1. Kontrollera att [!DNL Report Portal]-filerna har installerats korrekt och kan nås via den virtuella katalogen genom att öppna följande sida i webbläsaren:
 
-   http://*DinServeradress*/*DittPortalNamn*
+   https://*DinServeradress*/*DittPortalNamn*
 
-   Exempel: [!DNL http://localhost/VisualReportPortal]
+   Exempel: [!DNL https://localhost/VisualReportPortal]
 
    Om ASP:erna [!DNL Report Portal] har installerats korrekt bör du se portalinloggningssidan. Om du inte ser den här sidan kontrollerar du att ASP är aktiverat på din IIS och dubbelkontrollerar dina virtuella katalogmappningar.
