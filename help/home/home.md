@@ -4,9 +4,9 @@ title: Hjälp om Data Workbench
 feature: Reports & Analytics Basics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 3a446ecb2ad7f16d840dbd2bfde44e3298bc588f
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '262'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 [Data ](https://www.adobe.com/solutions/digital-analytics/data-workbench.html) Workperformance är en del av  [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html). Den har mycket flexibla, kraftfulla flerkanalsfunktioner som är utformade för att samla in, bearbeta, analysera och visualisera data från kundinteraktioner online och offline, för alla typer av webb, CRM, POS och andra datatyper. Med interaktiva rapporter i Data Workbench kan ni analysera och reagera på relevant statistisk information för att övervaka aktivitet och förutse kundtrender.
 
-* ![analysikon ](assets/analytics-icon-24.png) [Analysdokumentation](https://experienceleague.adobe.com/docs/analytics/landing/home.html)
+* ![analysikon ](assets/analytics-icon-24.png) [Analysdokumentation](https://experienceleague.adobe.com/docs/analytics.html)
 * ![pdf-](assets/pdf_icon.png) [ikonLadda ned all Data Workbench-dokumentation i PDF](/help/home/assets/data-workbench.pdf)
 
 ## Viktiga ämnen
@@ -35,7 +35,7 @@ Datan Workbench innehåller följande prediktiva analysfunktioner, datavisualise
 
 ## Fler användarhandböcker för Analytics
 
-[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html)
+[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics.html)
 
 ## Versionsinformation om Data Workbench och nya funktioner
 
