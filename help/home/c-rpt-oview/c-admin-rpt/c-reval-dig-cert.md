@@ -1,20 +1,20 @@
 ---
 description: Efter installationen fungerar det digitala certifikatet som utfärdas av Adobe som en nyckel som gör att du kan köra Report Server.
-title: Validera det digitala certifikatet igen
+title: Återvalidera det digitala certifikatet (översikt)
 uuid: 6c8533df-f459-41eb-84ac-344bad9fecdc
 exl-id: 810e3057-26a9-413c-b77c-525035d37756
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
 
-# Validerar det digitala certifikatet på nytt{#re-validating-the-digital-certificate}
+# Validera det digitala certifikatet igen{#re-validating-the-digital-certificate}
 
 Efter installationen fungerar det digitala certifikatet som utfärdas av Adobe som en nyckel som gör att du kan köra Report Server.
 
-**Rekommenderad frekvens:** efter behov
+**Rekommenderad frekvens:** Vid behov
 
 Ett digitalt certifikat måste vara aktuellt för att fungera korrekt.
 

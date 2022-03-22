@@ -1,11 +1,11 @@
 ---
 description: Skapa Dimensioner som definieras av måttattribut (Måttdimensioner) med en steg-för-steg-guide. Testa, förhandsgranska och spara sedan den nya Metrisk Dim-metoden i listan Dimensioner.
-title: Guiden Metrisk dim
+title: Guiden för metrisk dim (Dimensioner)
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 exl-id: 4d283a00-409c-4d74-a558-40744caba71c
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '486'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Med en metrisk toning omvandlas ett mått till en ny dimension. Om du t.ex. anv�
 
 1. Öppna guiden Metrisk dim.
 
-   Högerklicka på en arbetsyta och välj **[!UICONTROL Tools]** > **[!UICONTROL Create Metric Dim]**.
+   Högerklicka och välj på en arbetsyta **[!UICONTROL Tools]** > **[!UICONTROL Create Metric Dim]**.
 
 1. Ange namnet Metrisk dim.
 
@@ -50,7 +50,7 @@ Med en metrisk toning omvandlas ett mått till en ny dimension. Om du t.ex. anv�
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   Du kan lägga till ett eget [måttuttryck](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) eller klippa ut och klistra in från en annan måttredigerare eller visualisering. Syntaxfel, formelfel, odefinierade filter och andra fel rapporteras i guiden.
+   Du kan lägga till egna [metriskt uttryck](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) eller klippa ut och klistra in från en annan måttredigerare eller visualisering. Syntaxfel, formelfel, odefinierade filter och andra fel rapporteras i guiden.
 
 1. Klicka på **[!UICONTROL Next]**.
 
@@ -60,26 +60,26 @@ Med en metrisk toning omvandlas ett mått till en ny dimension. Om du t.ex. anv�
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   Formatet definierar hur måttet presenteras när det öppnas i en visualisering. Dessa format är valda [utskriftsstandarder](https://www.cplusplus.com/reference/cstdio/printf/), som definieras nedan:
+   Formatet definierar hur måttet presenteras när det öppnas i en visualisering. Dessa format är markerade [tryckstandarder](https://www.cplusplus.com/reference/cstdio/printf/), definieras nedan:
 
    ```
    %[flags][width][.precision][length][specifier]
    % 0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   I fältet **[!UICONTROL Preview]** visas ett värde baserat på det valda måttet och formatet.
+   I **[!UICONTROL Preview]** visas ett värde baserat på det valda måttet och formatet.
 
 1. Uttryck för Lägg till antal buffertar.
 
-   Du kan definiera en måtttoning med olika intervall, eller intervall. Detta returnerar delmängder av element baserat på storlek, t.ex. [0-4], [5-10],..). Elementen på Dimensionen Nivå relaterar till de element vars intervall innehåller måttvärdet. Se beskrivningen av bucket-uttrycket på [Syntax for Dimension Expressions](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
+   Du kan definiera en måtttoning med olika intervall, eller intervall. Detta returnerar deluppsättningar av element baserat på storlek, som [0-4], [5-10]...). Elementen på Dimensionen Nivå relaterar till de element vars intervall innehåller måttvärdet. Se beskrivningen av bucket-uttrycket på [Syntax för Dimension-uttryck](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
 
-1. Klicka på **[!UICONTROL Preview]** för att öppna tabellen med värden för Metrisk Dim innan du sparar.
+1. Klicka **[!UICONTROL Preview]** om du vill öppna tabellen med värden för Metrisk Dim innan du sparar.
 
    ![](assets/6_4_workstation_metricdim_preview.png)
 
    Registret innehåller mätvärden per metrisk dim.
 
-1. Klicka på **[!UICONTROL Show in Dimension Menu]** för att lägga till den nya dimensionen på fliken **Dimension** i **Finder**.
+1. Klicka **[!UICONTROL Show in Dimension Menu]** för att lägga till den nyligen skapade dimensionen i **Dimension** i **Finder**.
 
 1. Klicka på **[!UICONTROL Next]**.
 
@@ -93,6 +93,6 @@ Med en metrisk toning omvandlas ett mått till en ny dimension. Om du t.ex. anv�
    | **[!UICONTROL Launch Graph]** | Starta en PNG-bild av tabellen. |
    | **[!UICONTROL Launch Table]** | Starta en tabell på arbetsytan med värden i kolumner som visar värden för den nya metriska dim-metoden jämfört med värdena för det valda måttet. |
 
-1. Klicka på **[!UICONTROL Finish]** och spara.
+1. Klicka **[!UICONTROL Finish]** och spara.
 
    En dialogruta öppnas där du kan spara filen. De valda alternativen för att visa värden öppnas på arbetsytan.

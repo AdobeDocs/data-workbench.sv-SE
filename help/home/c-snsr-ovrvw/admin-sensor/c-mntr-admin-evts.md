@@ -1,11 +1,11 @@
 ---
 description: För att upptäcka sensorfel så snart som möjligt och åtgärda dem innan de orsakar större problem eller avbrott bör du regelbundet övervaka dina händelseloggar.
-title: Övervaka administrativa händelser
+title: Övervaka administrativa händelser (sensor)
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
 exl-id: 70894074-b8aa-4f6c-87d1-d0403f4c3319
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1093'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 För att upptäcka sensorfel så snart som möjligt och åtgärda dem innan de orsakar större problem eller avbrott bör du regelbundet övervaka dina händelseloggar.
 
-**Rekommenderad frekvens:** minst en timme
+**Rekommenderad frekvens:** Minst en timme
 
-Du kan övervaka dessa händelser med Windows Event Viewer- eller Unix Syslog-filen och [!DNL *.sensor-log]-filerna som finns som standard i mappen [!DNL Logs] i installationskatalogen för [!DNL Sensor]. Dessa filer indikerar att det finns fel under datainsamlingen, särskilt om en [!DNL Sensor] inte kan ansluta till målet [!DNL data workbench server] och startar köa data.
+Du kan övervaka dessa händelser med Windows Event Viewer- eller Unix Syslog-filen och [!DNL *.sensor-log] filer som finns som standard i [!DNL Logs] i [!DNL Sensor] installationskatalog. De här filerna visar att det finns fel under datainsamlingen, särskilt om en [!DNL Sensor] kan inte ansluta till målet [!DNL data workbench server] och börjar köa data.
 
 ## Övervaka händelser i Windows {#section-7c0443a356af4381bf22259654f5cd17}
 
@@ -26,13 +26,13 @@ Meddelanden loggas som &quot;Information&quot;, &quot;Varning&quot; eller &quot;
 
 **Så här öppnar du Windows Event Viewer**:
 
-* Klicka på **Start > Kontrollpanelen > Administrationsverktyg > Loggboken**.
+* Klicka **Start > Control Panel > Administrative Tools > Event Viewer**.
 
 ## Övervakningshändelser på Unix {#section-5de3947891fb47ac88b7c855e545d54a}
 
-Sensorn loggar fel till daemon-händelsen [!DNL syslog].
+Sensorn loggar fel på [!DNL syslog] daemon.
 
-Synkdaemon skriver felmeddelanden för att logga filer baserat på reglerna som du angav i filen syslog.conf. Fel loggas med flaggorna &quot;LOG_DAEMON&quot; och antingen &quot;LOG_NOTICE&quot; eller &quot;LOG_ERR&quot; beroende på allvarlighetsgraden.
+Synkdaemon skriver felmeddelanden för att logga filer baserat på reglerna som du angav i filen syslog.conf. Fel loggas med flaggorna &quot;LOG_DAEMON&quot; och antingen &quot;LOG_NOTICE&quot; eller &quot;LOG_ERR&quot; beroende på allvarlighetsgrad.
 
 **Så här öppnar du Unix-syslog**
 
@@ -58,11 +58,11 @@ Alla sensormeddelanden innehåller strängen &quot;Sensor&quot; och är numrerad
 
 Ditt nätverkshanteringsverktyg kan ställas in så att du kan övervaka dina meddelanden var 5:10:e minut för att se om det finns fel med Sensor-källan och informera lämplig personal om problem som kan kräva åtgärder. Du kan välja att övervaka systemet endast för vissa typer av händelsemeddelanden, till exempel strängen &quot;Sensorfel&quot;. Du kan också använda olika regler för händelser som är prefekterade med strängarna &quot;Sensorinformation&quot;, &quot;Sensorvarning&quot; och &quot;Sensorfel&quot;.
 
-## Identifierar viktiga meddelanden {#section-5a20f5dc18ca4012931d194db855e54e}
+## Identifiera viktiga meddelanden {#section-5a20f5dc18ca4012931d194db855e54e}
 
 I händelseloggarna bör du vara särskilt uppmärksam på och omedelbart ta itu med eventuella meddelanden om köstorlek.
 
-Meddelanden som &quot;[!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot; behöver till exempel åtgärdas.
+Till exempel meddelanden som &quot; [!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot; behöver uppmärksamhet.
 
 ## Svara på meddelanden om sensorhändelser {#section-0004c4a169dc4a8882d9bd87dd326ad4}
 
@@ -139,7 +139,7 @@ Tabeller som beskriver sensorhändelser och föreslagna åtgärder för de webbs
    <td colname="col2"> Kontakta Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfel 4022: Det går inte att mappa minnesblock med längden &lt;x&gt; vid förskjutningen &lt;y&gt; </td> 
+   <td colname="col1"> Sensorfel 4022: Det går inte att mappa minnesblock med längden &lt;x&gt; vid förskjutning &lt;y&gt; </td> 
    <td colname="col2"> Kontakta Adobe ClientCare. </td> 
   </tr> 
   <tr> 
@@ -181,7 +181,7 @@ Tabeller som beskriver sensorhändelser och föreslagna åtgärder för de webbs
  </tbody> 
 </table>
 
-**Apache/IBM HTTP-server**
+**Apache/IBM HTTP Server**
 
 | Händelsemeddelande | Föreslagen åtgärd |
 |---|---|
@@ -193,10 +193,10 @@ Tabeller som beskriver sensorhändelser och föreslagna åtgärder för de webbs
 
 | Händelsemeddelande | Föreslagen åtgärd |
 |---|---|
-| Sensorfel 3015: ns/server/[server]/module/[module]-avsnittet saknas i konfigurationsfilen för AOLServer. | Detta är ett konfigurationsfel. Korrigera enligt felmeddelandet. |
+| Sensorfel 3015: ns/server/[server]/module/[modul] -avsnittet saknas i konfigurationsfilen för AOLServer. | Detta är ett konfigurationsfel. Korrigera enligt felmeddelandet. |
 | Sensorfel 3019: vys-cookie anropades inte före vys-log. Kontakta supporten. Kontakta Adobe ClientCare. | Kontakta supporten. Kontakta Adobe ClientCare. |
-| Sensorfel 3020: VisualSciencesConfig saknas som första post i [avsnittet] i konfigurationsfilen för AOLServer. | Detta är ett konfigurationsfel. Korrigera enligt felmeddelandet. |
-| Sensorfel 3021: VisualSciencesConfig saknar ett värde i [avsnittet] i konfigurationsfilen för AOLServer. | Detta är ett konfigurationsfel. Korrigera enligt felmeddelandet. |
+| Sensorfel 3020: VisualSciencesConfig saknas som första post i [section] i konfigurationsfilen för AOLServer. | Detta är ett konfigurationsfel. Korrigera enligt felmeddelandet. |
+| Sensorfel 3021: VisualSciencesConfig saknar ett värde i [section] i konfigurationsfilen för AOLServer. | Detta är ett konfigurationsfel. Korrigera enligt felmeddelandet. |
 
 **Webbservrar för iPlanet och Java System**
 

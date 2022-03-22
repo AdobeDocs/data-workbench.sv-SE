@@ -1,11 +1,11 @@
 ---
 description: Du bör regelbundet övervaka tillgängligt diskutrymme så att alla Insight Server-datorer fortsätter att fungera på högsta möjliga nivå.
-title: Övervaka diskutrymme
+title: Övervaka diskutrymme (Insight Server)
 uuid: 13248e36-4e88-4212-816e-bcc12deefcb4
 exl-id: c2198edc-3961-4845-97cf-0ebe039f9a66
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '126'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Du bör regelbundet övervaka tillgängligt diskutrymme så att alla Insight Server-datorer fortsätter att fungera på högsta möjliga nivå.
 
-Varje [!DNL Insight Server]-dator lagrar följande typer av data:
+Varje [!DNL Insight Server] datorn lagrar följande typer av data:
 
 * Datauppsättningsdata
 * Händelsedata
@@ -23,7 +23,7 @@ Varje [!DNL Insight Server]-dator lagrar följande typer av data:
 * Utdata
 * Systemdata
 
-Mer information om krav för datalagring än vad som anges i det här avsnittet finns i dokumentet *Minimum System Requirements*.
+Mer information om krav för datalagring finns i *Lägsta systemkrav* -dokument.
 
 >[!NOTE]
 >
