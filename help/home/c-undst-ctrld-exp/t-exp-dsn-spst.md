@@ -1,17 +1,17 @@
 ---
 description: Den här filen fungerar inte bara som ett kalkylblad, utan också som en referens till dina beslut om experimentet.
-solution: Analytics,Analytics
+solution: Analytics
 title: Experimentera med kalkylblad
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
 exl-id: 554790ab-1182-4481-87b0-e768ea769ddf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Experimentera i designkalkylblad{#experiment-design-spreadsheet}
+# Experimentera med kalkylblad{#experiment-design-spreadsheet}
 
 Den här filen fungerar inte bara som ett kalkylblad, utan också som en referens till dina beslut om experimentet.
 
@@ -21,7 +21,7 @@ Kalkylbladet för experimentell design kan endast ge användbara statistiska slu
 
 **Utforma ett experiment med hjälp av designfilen för experimentet**
 
-1. Om du har administratörsåtkomst till dina webb- eller programservrar navigerar du till installationsmappen för [!DNL Sensor] på valfri [!DNL Sensor]-dator i webbklustret. Om du inte har administratörsåtkomst kontaktar du kontohanteraren i Adobe för att begära filen.
+1. Om du har administratörsåtkomst till dina webb- eller programservrar går du till [!DNL Sensor] installationsmapp på alla [!DNL Sensor] datorn i ditt webbkluster. Om du inte har administratörsåtkomst kontaktar du kontohanteraren i Adobe för att begära filen.
 1. Öppna filen VS Controlled Experiment Design.xls. (Du kan ändra namn på filen om du vill.)
 
    Kalkylbladet på följande sida är ett exempel på hur du skulle slutföra kalkylbladet när du förbereder testning av exempelhypotesen som används i hela den här guiden.
@@ -56,7 +56,7 @@ Kalkylbladet för experimentell design kan endast ge användbara statistiska slu
   </tr> 
   <tr> 
    <td colname="col1"> Måttdefinition </td> 
-   <td colname="col2"> <p>Definitionen av det mätvärde som experimentet baseras på. </p> <p>Format: Besökare[X]/Besökare </p> <p>Exempel: <span class="filepath"> Besökare[URI='conversionpage.asp']/Visitors</span></p> </td> 
+   <td colname="col2"> <p>Definitionen av det mätvärde som experimentet baseras på. </p> <p>Format: Besökare[X]/Besökare </p> <p>Exempel: <span class="filepath"> Besökare[URI='conversionpage.asp']/Besökare</span></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Avsedd starttid </td> 
@@ -154,7 +154,7 @@ Du måste titta på värdet i fältet Minimum Visitors Required (Test+Control Gr
 
 ![](assets/Experiment_Design_Min_Visitors.png)
 
-och jämför det med värdet i fältet Total i kolumnen [!DNL Visitors].
+och jämföra det med värdet i fältet Total i [!DNL Visitors] kolumn.
 
 ![](assets/Experiment_Design_Total_Visitors.png)
 
@@ -164,4 +164,4 @@ Med tanke på de inmatningar du fått visar exempeltabellen att 10 475 besökare
 
 Om du behåller antalet dagar kan du öka konfidensnivån så länge det totala antalet besökare fortsätter att uppfylla eller överskrida det obligatoriska minimiantalet.
 
-1. Spara filen för referens och använd sedan informationen från filen för att konfigurera experimentet med hjälp av kalkylbladet för experimentkonfiguration. Mer information om det här kalkylbladet finns i [Konfigurera och distribuera Experimentet](../../home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md#concept-50f1de0242904698937bb72b3ea1b429).
+1. Spara filen för referens och använd sedan informationen från filen för att konfigurera experimentet med hjälp av kalkylbladet för experimentkonfiguration. Mer information om detta kalkylblad finns i [Konfigurera och distribuera experimentet](../../home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md#concept-50f1de0242904698937bb72b3ea1b429).

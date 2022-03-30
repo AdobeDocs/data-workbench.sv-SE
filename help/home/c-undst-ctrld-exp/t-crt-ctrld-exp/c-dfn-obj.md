@@ -1,10 +1,10 @@
 ---
 description: Definiera målets primära funktion och målgruppen.
-solution: Analytics,Analytics
+solution: Analytics
 title: Definiera målet
 uuid: 4957b249-8790-4275-98ab-9c6398039a63
 exl-id: 6ee140ff-3cfb-45f8-9bce-f360fbb19322
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
@@ -21,8 +21,8 @@ De gemensamma webbplatsmålen omfattar bland annat att konvertera fler besökare
 
 Vanliga mål för webbplatsprocessen är bland annat att förbättra stegen eller sidorna i en process som gör att besökarna överger processen, ta bort onödiga och förvirrande alternativ i processen som gör att besökarna inte når slutet av processen eller konsolidera eller utöka processen för att eliminera eller lägga till steg eller sidor.
 
-Tänk noga på vad du vill veta om din webbplats. Genom att noggrant planera ditt experiment blir resultatet mycket mer meningsfullt för ert företag.
+Tänk noga på vad du vill veta om din webbplats. Genom att noggrant planera ditt experiment blir resultatet mer meningsfullt för ert företag.
 
-**Mål:** För att öka antalet besökare på vår webbplats som begär en demonstration av vår produkt via den grafiska länken&quot;Begär en demo&quot;, som visas i följande bild:
+**Mål:** För att öka antalet besökare på vår webbplats som vill ha en demonstration av vår produkt via den grafiska länken&quot;Begär en demo&quot;, som visas i följande bild:
 
 ![](assets/ControlPage.png)

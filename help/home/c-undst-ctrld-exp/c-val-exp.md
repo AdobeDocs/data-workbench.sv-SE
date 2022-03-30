@@ -1,10 +1,10 @@
 ---
 description: När du har driftsatt ditt experiment bör du verifiera att experimentet fungerar som det ska.
-solution: Analytics,Analytics
+solution: Analytics
 title: Validera experimentversionen
 uuid: 59769f5b-4175-479e-ad7d-7226e9c666af
 exl-id: 6dfd01ca-288d-40fd-aad4-75a588902ebd
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 När du har driftsatt ditt experiment bör du verifiera att experimentet fungerar som det ska.
 
-Som nämndes i [Ändra ExpCookieURL-parametern (Valfritt)](../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md#concept-215bf86bab4e4ec0b0cc803ec48a8fcf) kan sidan som anges i parametern ExpCookieURL i konfigurationsfilen [!DNL Sensor] användas för att placera dig själv i en specifik experimentgrupp.
+Som beskrivs i [Ändra parametern ExpCookieURL (valfritt)](../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md#concept-215bf86bab4e4ec0b0cc803ec48a8fcf), sidan som anges i parametern ExpCookieURL i [!DNL Sensor] konfigurationsfilen kan användas för att placera dig själv i en specifik experimentgrupp.
 
 Den virtuella standardsidan är [!DNL /setcookie.htm], men du måste använda det värde som du anger i parametern ExpCookieURL.
 
@@ -33,7 +33,7 @@ Exempel:
 
 [!DNL https://www.omniture.com/setcookie.htm?New_Homepage=index2]
 
-När den virtuella URL-begäran skickas till servern identifierar [!DNL Sensor] dig som medlem i den angivna gruppen i det angivna experimentet och dirigerar sedan om dig till webbplatsens rot. Nu kan du navigera till rätt plats på webbplatsen för att kontrollera om rätt innehåll visas för det experimentet och gruppen.
+När den virtuella URL-begäran skickas till servern, [!DNL Sensor] identifierar dig som medlem i den angivna gruppen i det angivna experimentet och dirigerar sedan om dig till webbplatsens rot. Nu kan du navigera till rätt plats på webbplatsen för att kontrollera om rätt innehåll visas för det experimentet och gruppen.
 
 Om du skrev in följande i webbläsaren skulle webbläsaren visa webbplatsens hemsida och placera dig i gruppen index2 i New_Homepage-experimentet:
 
