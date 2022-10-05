@@ -2,7 +2,7 @@
 description: Integrera Data Workbench med Adobe Target. Exportera datasegment och fyll i exportfiler automatiskt.
 title: Integrering av Data Workbench med Adobe Target
 exl-id: e7c41e7a-aae6-4b5c-8b14-7ae97b62d70b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 4ab43bfbad96096fb2cebd77a8be8fa6d49fa7dc
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -10,6 +10,8 @@ ht-degree: 0%
 ---
 
 # Integrering av Data Workbench med Adobe Target
+
+{{eol}}
 
 Integrationen av Adobe Data Workbench med Adobe Target har blivit enklare tack vare Datan Workbench som exporterar datasegment och automatiskt fyller i exportfiler.
 
@@ -19,11 +21,11 @@ En besökare söker till exempel efter skor på webbplatsen men konverterar inte
 
 ## Konfigurera Data Workbench med Adobe Target
 
-1. Högerklicka på rubriken i [!UICONTROL Detail Table]-fönstret.
+1. Högerklicka på rubriken i [!UICONTROL Detail Table] -fönstret.
 
    ![](assets/insight-to-tnt.png)
 
-1. Välj **[!UICONTROL New Target Export]** och ange namnet på en ny exportfil under kommandot **[!UICONTROL Save As]** på menyn.
+1. Välj **[!UICONTROL New Target Export]** och ange namnet på en ny exportfil under **[!UICONTROL Save As]** på menyn.
 
 1. Klicka på **[!UICONTROL Save Export File]**.
 
@@ -31,27 +33,27 @@ En besökare söker till exempel efter skor på webbplatsen men konverterar inte
 
    All Adobe Target-information fylls i automatiskt. Den skapar parameterlistan baserat på vad du placerar i segmentexporten. När det är klart skickar Datan Workbench data till Adobe Target-servern.
 
-   **Obs!** Mallfilen bör konfigureras av  [!UICONTROL Profile Architect]. Du måste ange [!UICONTROL Client Name], [!UICONTROL Domain Postfix], [!UICONTROL Mbox Host] och [!UICONTROL Mbox Name]. Om du har flera webbplatser kan du fylla i flera mallar och spara dem på servern. Mallarna från Profilhanteraren finns i `Context\FileNew\Detail Table\Export\Copy`.
+   **Obs!** Mallfilen bör konfigureras av [!UICONTROL Profile Architect]. The [!UICONTROL Client Name], [!UICONTROL Domain Postfix], [!UICONTROL Mbox Host]och [!UICONTROL Mbox Name] måste anges. Om du har flera webbplatser kan du fylla i flera mallar och spara dem på servern. Mallarna från Profilhanteraren finns i `Context\FileNew\Detail Table\Export\Copy`.
 
    ![](assets/insight-to-tnt1.png)
 
-1. Ange frågeparametern [!UICONTROL mboxPC].
+1. Ange [!UICONTROL mboxPC] frågeparameter.
 
-   Om namnet på attributet Data Workbench är något annat än [!UICONTROL mboxPC] måste du redigera rätt frågeparameter och ändra dess namn till _mboxPC_.
+   Om Datan Workbench-attributets namn är något annat än [!UICONTROL mboxPC]måste du redigera rätt frågeparameter och byta namn på den till _mboxPC_.
 
    ![](assets/insight-to-tnt2.png)
 
-   När du sparar exportfilen på servern börjar exporten. När det är klart startas [!UICONTROL TnTSend.exe]-programmet och data skickas till Target-kontot.
+   När du sparar exportfilen på servern börjar exporten. När du är klar visas [!UICONTROL TnTSend.exe] startas och skickas till Target-kontot.
 
 ## Konfigurera Data Workbench för mål
 
 Utför följande uppgifter i Adobe Target:
 
-Datan Workbench skickar användarprofiler till Adobe Target. Om du vill konfigurera för export till Target måste du konfigurera och aktivera dess API och ange parametrarna **[!UICONTROL clientname]** och **[!UICONTROL domain postfix]** för exportkonfigurationsfilen (`export.cfg`).
+Datan Workbench skickar användarprofiler till Adobe Target. Om du vill konfigurera för export till Target måste du konfigurera och aktivera dess API och ange **[!UICONTROL clientname]** och **[!UICONTROL domain postfix]** parametrar för exportkonfigurationsfilen (`export.cfg`).
 
-Ett nytt booleskt alternativ med namnet **[!UICONTROL Oneshot]** har lagts till i segmentexportfiler. Det här alternativet ingår i mallfilen som distribueras med den nya profilen. Om [!UICONTROL Oneshot] är inställt på _true_ ändras namnet på `.export`-filen till `.export.done-TIMESTAMP` när exporten är slutförd, så att segmentet aldrig exporteras mer än en gång. Detta är viktigt när du exporterar till Adobe Target.
+Ett nytt booleskt alternativ anropades **[!UICONTROL Oneshot]** har lagts till i segmentexportfiler. Det här alternativet ingår i mallfilen som distribueras med den nya profilen. If [!UICONTROL Oneshot] är inställd på _true_ och sedan `.export` filen byter namn till `.export.done-TIMESTAMP` när exporten är klar, så att segmentet aldrig exporteras mer än en gång. Detta är viktigt när du exporterar till Adobe Target.
 
-**Obs!** Ett anrop från Data Workbench till Adobe Target räknas som ett  [!UICONTROL mbox] samtal, vilket kräver ett anrop för varje skickad profil. Följaktligen ökar kostnaderna om det krävs flera samtal mellan de båda lösningarna.
+**Obs!** Ett samtal från Datan Workbench till Adobe Target räknas som [!UICONTROL mbox] anrop, kräver ett samtal för varje skickad profil. Följaktligen ökar kostnaderna om det krävs flera samtal mellan de båda lösningarna.
 
 En ofullständig konfiguration ger följande felmeddelande i loggen:
 
@@ -63,18 +65,18 @@ ClientName,MboxHost,MboxName
 
 ## Konfigurera Adobe Target för Data Workbench
 
-Inom Adobe Target behövs ingen specialkonfiguration för att en kund ska kunna skicka profildata. Profilinformationen för en användare skickas vanligtvis i den vanliga [!UICONTROL mbox]-begäran, och servrarna gör profilparametrarna tillgängliga för en målinriktad kampanjkonfiguration som standardfunktioner utan ytterligare konfiguration.
+Inom Adobe Target behövs ingen specialkonfiguration för att en kund ska kunna skicka profildata. Profilinformationen för en användare skickas vanligtvis i den vanliga [!UICONTROL mbox] förfrågan, och servrarna kommer att göra profilparametrarna tillgängliga för en målinriktad kampanjkonfiguration som standardfunktioner utan ytterligare konfiguration.
 
 Adobe Target har inbyggda funktioner för integrering av Data Workbench, som kan aktiveras från sidan Klientinformation för superanvändare. Om du aktiverar alternativet kommer segment som delas från Datan Workbench i Adobe Target att visas för målinriktning.
 
 ## Ange HTTP-loggrapportering i ExportIntegration.exe
 
-Minska den långa rapporteringen till [!UICONTROL HTTP.log] när du använder [!UICONTROL ExportIntegration.exe] för att exportera Adobe Target-integreringsfiler.
+Minska långa rapporter till [!UICONTROL HTTP.log] när [!UICONTROL ExportIntegration.exe] för att exportera Adobe Target integreringsfiler.
 
-Med en ny [!UICONTROL httpLoggingEI.cfg]-konfigurationsfil (som finns på `server\Admin\Export\httpLoggingEI.cfg`) kan du minska den utförliga loggningen till [!UICONTROL HTTP.log]-filen när du exporterar data med [!UICONTROL ExportIntegration.exe]. På så sätt kan du stoppa utförlig loggning av begäranden/svar.
+En ny [!UICONTROL httpLoggingEI.cfg] konfigurationsfil (finns på `server\Admin\Export\httpLoggingEI.cfg`) kan du reducera utförlig loggning till [!UICONTROL HTTP.log] fil för när data exporteras med [!UICONTROL ExportIntegration.exe]. På så sätt kan du stoppa utförlig loggning av begäranden/svar.
 
-Utförlig loggning har redan hämtats i [!UICONTROL TnTSend.log]-filer.
+Utförlig loggning har redan hämtats in [!UICONTROL TnTSend.log] filer.
 
-_Truesets_ loggar utförligt och  __ Flash stoppar utförligt loggning till  [!UICONTROL HTTP.log] fil.
+_True_ anger utförlig loggning, och _Falskt_ stoppar utförlig loggning till [!UICONTROL HTTP.log] -fil.
 
-I inställningen Falskt skickas bara ett varningsmeddelande till filen [!UICONTROL HTTP.log] (Info-innehåll skickas inte).
+I inställningen Falskt skickas endast ett varningsmeddelande till [!UICONTROL HTTP.log] fil (Info-innehållet skickades inte).

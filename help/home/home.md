@@ -4,7 +4,7 @@ title: Hjälp om Data Workbench
 feature: Reports & Analytics Basics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
-source-git-commit: 3a446ecb2ad7f16d840dbd2bfde44e3298bc588f
+source-git-commit: 541751e1b8966a0816b7a42e117f4c69db1ed002
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 3%
@@ -15,10 +15,12 @@ ht-degree: 3%
 
 ![Banderoll](/help/home/assets/doc_banner_workbench.png)
 
-[Data ](https://www.adobe.com/solutions/digital-analytics/data-workbench.html) Workperformance är en del av  [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html). Den har mycket flexibla, kraftfulla flerkanalsfunktioner som är utformade för att samla in, bearbeta, analysera och visualisera data från kundinteraktioner online och offline, för alla typer av webb, CRM, POS och andra datatyper. Med interaktiva rapporter i Data Workbench kan ni analysera och reagera på relevant statistisk information för att övervaka aktivitet och förutse kundtrender.
+{{eol}}
 
-* ![analysikon ](assets/analytics-icon-24.png) [Analysdokumentation](https://experienceleague.adobe.com/docs/analytics.html)
-* ![pdf-](assets/pdf_icon.png) [ikonLadda ned all Data Workbench-dokumentation i PDF](/help/home/assets/data-workbench.pdf)
+[Data Workbench](https://www.adobe.com/solutions/digital-analytics/data-workbench.html) är en del av [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html). Den har mycket flexibla, kraftfulla flerkanalsfunktioner som är utformade för att samla in, bearbeta, analysera och visualisera data från kundinteraktioner online och offline, för alla typer av webb, CRM, POS och andra datatyper. Med interaktiva rapporter i Data Workbench kan ni analysera och reagera på relevant statistisk information för att övervaka aktivitet och förutse kundtrender.
+
+* ![analysikon](assets/analytics-icon-24.png) [Analysdokumentation](https://experienceleague.adobe.com/docs/analytics.html)
+* ![pdf-ikon](assets/pdf_icon.png) [Ladda ned all Data Workbench-dokumentation i PDF](/help/home/assets/data-workbench.pdf)
 
 ## Viktiga ämnen
 
@@ -43,20 +45,20 @@ Datan Workbench innehåller följande prediktiva analysfunktioner, datavisualise
 
 [Data Workbench 6.6](/help/home/c-release-notes-insight/c-6-6.md) har släppts. Den innehåller uppdateringar av Propensity Score och en ny Segment Export Wizard.
 
-[Data Workbench 6.52 ](/help/home/c-release-notes-insight/c-6-52.md) släpps. Den innehåller en AVRO-uppgradering för bearbetning av datakällloggfiler.
+[Data Workbench 6.52](/help/home/c-release-notes-insight/c-6-52.md) släpps. Den innehåller en AVRO-uppgradering för bearbetning av datakällloggfiler.
 
-[Data Workbench 6.51 ](/help/home/c-release-notes-insight/c-6-51.md) släpps. Den innehåller en ny AVRO-feed och övertoningsövertäckningar till stapeldiagramvisningen.
+[Data Workbench 6.51](/help/home/c-release-notes-insight/c-6-51.md) släpps. Den innehåller en ny AVRO-feed och övertoningsövertäckningar till stapeldiagramvisningen.
 
-[Data Workbench 6.5 ](/help/home/c-release-notes-insight/c-6-5.md) släpps. Installera den senaste versionen av Datan Workbench med nya funktioner, bland annat:
+[Data Workbench 6.5](/help/home/c-release-notes-insight/c-6-5.md) släpps. Installera den senaste versionen av Datan Workbench med nya funktioner, bland annat:
 
-* [Associations ](/help/home/c-get-started/c-analysis-vis/associations-visualization.md) Table and  [Associations ](/help/home/c-get-started/c-analysis-vis/associations-chord.md) Chordvisualiserings.
-* [Regressionsträd ](/help/home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-regression.md) och andra uppdateringar för beslutsträd.
+* [Associationstabell](/help/home/c-get-started/c-analysis-vis/associations-visualization.md) och [Associationspaket](/help/home/c-get-started/c-analysis-vis/associations-chord.md) visualiseringar.
+* [Alternativet Regressionsträd](/help/home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-regression.md) och andra uppdateringar av beslutsträden.
 
-[Data Workbench 6.4](/help/home/c-release-notes-insight/c-6-4/c-6-4.md) innehåller följande:
+[Data Workbench 6.4](/help/home/c-release-notes-insight/c-6-4/c-6-4.md) innehåller:
 
 * [Exportera till bastjänsterna i Analytics](/help/home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
 * [Guiden Installera arbetsstation](/help/home/c-install-insight/install-setup/dwb-client-installer.md)
 * [Presentation Layer for Annotating Visualizations](/help/home/c-get-started/c-vis/c-present-layer.md)
 * [Guiden Metrisk dim](/help/home/c-get-started/c-vis/dwb-create-metricdim/dwb-create-metricdim.md)
 
-*Senast uppdaterad*:  **9/30/2019**
+*Senast uppdaterad*: **9/30/2019**

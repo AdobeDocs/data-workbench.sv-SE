@@ -3,7 +3,7 @@ description: Trafikprofilen innehåller följande mått som hjälper till att id
 title: Dimensioner för trafikprofiler
 uuid: 9c0dabfc-67c9-4772-99ac-4c503c06ea78
 exl-id: 1e7d2904-aa5d-4848-a398-5d4669953be9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 4ab43bfbad96096fb2cebd77a8be8fa6d49fa7dc
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # Dimensioner för trafikprofiler{#traffic-profile-dimensions}
 
+{{eol}}
+
 Trafikprofilen innehåller följande mått som hjälper till att identifiera besöksåtgärder.
 
-Dimensionerna i följande tabell definieras i omformningsdatauppsättningen och innehåller filer i mappen Traffic\Dataset\Transformation directory.
+Dimensionerna i följande tabell definieras i omformningsdatauppsättningen och innehåller filer i katalogen Traffic\Dataset\Transformation.
 
 | Namn | Typ | Nivå | Beskrivning |
 |---|---|---|---|
@@ -26,7 +28,7 @@ Dimensionerna i följande tabell definieras i omformningsdatauppsättningen och 
 | Månad | Enkel | Session | Månad för den första loggposten i en session. |
 | Sidvisning | Inventerbar | Session | En loggpost eller&quot;Händelsedatapost&quot; som uppfyller villkoren för sidvisning. |
 | Referent | Enkel | Session | Den andra nivådomänen för referenten för den första loggposten i sessionen (eller Ingen om det är en intern referensdomän). |
-| Session | Inventerbar | Besökare | En period av närliggande aktiviteter som en besökare relaterar till. Den avgränsas av en 30-minuters inaktivitetsperiod och en extern referensdomän eller en maximal 48-timmars sessionstid. Både dessa tidsgränser och den uppsättning domäner som betraktas som interna kan konfigureras i [!DNL Transformation.cfg]-filen. |
+| Session | Inventerbar | Besökare | En period av närliggande aktiviteter som en besökare relaterar till. Den avgränsas av en 30-minuters inaktivitetsperiod och en extern referensdomän eller en maximal 48-timmars sessionstid. Både dessa tidsgränser och den uppsättning domäner som betraktas som interna kan konfigureras i [!DNL Transformation.cfg] -fil. |
 | URI | Enkel | Sidvisning | URI-stammen för en sidvy. URI-dimensionen kan definieras om med omformningarna ReplaceURI, PrependURI och AppendURI. |
 | Besökare | Inventerbar | Ej tillämpligt | Ett unikt värde för x-trackingid. Motsvarar vanligtvis en unik webbläsare om beständiga cookies används. x-trackingid kan i övrigt baseras på IP-nummer eller någon annan unik identifierare, till exempel x.509-namn. |
 | Vecka | Enkel | Session | Veckan för den första loggposten i en session. |
