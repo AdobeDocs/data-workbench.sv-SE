@@ -1,9 +1,9 @@
 ---
-description: Identifiera minimikrav och rekommendationer för Data Workbench (tidigare [!DNL Insight])-serverkomponenter innan du planerar och implementerar systemet.
+description: Identifiera minimikrav och rekommendationer för Data Workbench (tidigare [!DNL Insight]) serverkomponenter innan du planerar och implementerar systemet.
 title: Systemkrav för server
 uuid: c4487c76-03b9-4755-893b-555d451b1e69
 exl-id: 6dd78331-8370-400e-b580-9b9bad13e62c
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Systemkrav för server{#server-system-requirements}
+
+{{eol}}
 
 Identifiera minimikrav och rekommendationer för Data Workbench-serverkomponenter innan du planerar och implementerar systemet.
 
@@ -20,15 +22,14 @@ DPU (server Data Processing Unit) är huvudkomponenten i Datan Workbench för da
 
 ### Licensierad kapacitet {#section-71850e13783443798b3df9eb22cc63dc}
 
-Se servicebeskrivningen i *Adobe [!DNL Data Workbench (Insight)]-serviceavtalet* för information om licenskapacitet.
+Läs servicebeskrivningen i *Adobe [!DNL Data Workbench (Insight)] Serviceavtal* för information om licenskapacitet.
 
 >[!NOTE]
 >
->För *MS System Center Endpoint Protection* på Windows 2012-servrar måste dessa körbara filer läggas till i ***Exkluderade processer:*** >
+>För *MS System Center Endpoint Protection* i Windows 2012-servrar måste dessa körbara filer läggas till i ***Exkluderade processer:*** >
 >* [!DNL InsightServer64.exe]
 >* [!DNL ReportServer.exe]
 >* [!DNL ExportIntegration.exe]
-
 >
 
 
@@ -169,15 +170,15 @@ I följande tabell beskrivs systemrekommendationerna för [!DNL Sensor]:
   </tr>
   <tr>
    <td colname="col1"> <p>RAM </p> </td>
-   <td colname="col2"> <p>32 MB RAM måste vara tillgängligt för <span class="wintitle"> sensor </span> på HTTP-servern eller någon annan serverdator som är dess värd. </p> </td>
+   <td colname="col2"> <p>32 MB RAM måste vara tillgängligt för <span class="wintitle"> Sensor </span> på HTTP-servern eller en annan serverdator som är dess värd. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Nätverksprestanda </p> </td>
-   <td colname="col2"> <p>1 Mbit/s eller bättre nätverksanslutning till en upprepande server eller <span class="keyword"> data workbench server </span>. <span class="wintitle"> Sensorn förbrukar  </span> vanligtvis betydligt mindre bandbredd än en (1) Mbit/s. Dina Adobe-konsulter hjälper dig att uppskatta den faktiska bandbredd som skulle behövas rutinmässigt. </p> </td>
+   <td colname="col2"> <p>1 Mbit/s eller bättre nätverksanslutning till en upprepande server eller <span class="keyword"> data workbench-server </span>. <span class="wintitle"> Sensor </span> förbrukar vanligtvis mycket mindre bandbredd än en (1) Mbit/s. Dina Adobe-konsulter hjälper dig att uppskatta den faktiska bandbredd som skulle behövas rutinmässigt. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Nätverksportar och brandväggar </p> </td>
-   <td colname="col2"> <p> <span class="wintitle"> Sensorn  </span> ansluter till  <span class="keyword"> data workbench-servern  </span> med HTTPS (vanligtvis port 443, även om detta är konfigurerbart) eller HTTP (vanligtvis port 80, även om detta är konfigurerbart). </p> <p>Lämplig port på en brandvägg som finns mellan en <span class="wintitle">-sensor </span> och målservern <span class="keyword"> för data workbench </span> eller en upprepande server ska bara öppnas mellan respektive <span class="wintitle">-sensor </span>-värddator och <span class="keyword"> data workbench server </span> eller en upprepande server innan <span class="wintitle">-servern startas installationsprocess för ensor </span>. <span class="wintitle"> Sensorn  </span> gör en enkelriktad HTTPS- eller HTTP-anslutning till en  <span class="keyword"> data workbench-server  </span> eller en upprepande server. </p> </td>
+   <td colname="col2"> <p> <span class="wintitle"> Sensor </span> ansluter till <span class="keyword"> data workbench-server </span> med HTTPS (vanligtvis port 443, även om detta är konfigurerbart) eller HTTP (vanligtvis port 80, även om detta är konfigurerbart). </p> <p>Lämplig port på en brandvägg som finns mellan en <span class="wintitle"> Sensor </span> och målet <span class="keyword"> data workbench-server </span> eller en upprepande server ska bara öppnas mellan respektive <span class="wintitle"> Sensor </span> värddator och <span class="keyword"> data workbench-server </span> eller en upprepande server innan du börjar <span class="wintitle"> Sensor </span> installationsprocessen. <span class="wintitle"> Sensor </span> gör en enkelriktad HTTPS- eller HTTP-anslutning till en <span class="keyword"> data workbench-server </span> eller en upprepande server. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Nätverkshanteringssystem </p> </td>
@@ -185,18 +186,18 @@ I följande tabell beskrivs systemrekommendationerna för [!DNL Sensor]:
   </tr>
   <tr>
    <td colname="col1"> <p>Servertidssynkronisering </p> </td>
-   <td colname="col2"> <p>Kontrollera att datorns systemtid är kontinuerligt synkroniserad på alla datorer som är värdar för en <span class="wintitle">-sensor </span>. Webbserverprogrammen och datorerna som övervakas av <span class="wintitle">-sensorn </span> måste ha synkroniserade systemtider för att händelsedata som samlas in från dem ska vara korrekta. Se dokumentationen för ditt operativsystem för hur du synkroniserar systemtider fortlöpande med NTP eller andra tidssynkroniseringsfunktioner. </p> </td>
+   <td colname="col2"> <p>Se till att datorns systemtid synkroniseras kontinuerligt på alla datorer som är värdar för en <span class="wintitle"> Sensor </span>. Webbserverprogram och datorer som övervakas av <span class="wintitle"> Sensor </span> måste ha synkroniserade systemtider för att händelsedata som samlas in från dem ska vara korrekta. Se dokumentationen för ditt operativsystem för hur du synkroniserar systemtider fortlöpande med NTP eller andra tidssynkroniseringsfunktioner. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Användning av DNS-namn </p> </td>
-   <td colname="col2"> <p>Adobe rekommenderar att <span class="wintitle">-sensorer </span> använder ett DNS-namn (i stället för en IP-adress) för att matcha nätverksadressen för en <span class="keyword"> data workbench-server </span> eller en upprepande server. När en <span class="wintitle">-sensor </span> använder ett DNS-namn måste värdwebbserverns DNS-fil eller lokala värdfil konfigureras för att matcha namnet på <span class="keyword">-data workbench-servern </span> eller den upprepade servern. </p> </td>
+   <td colname="col2"> <p>Adobe rekommenderar att <span class="wintitle"> Sensorer </span> använda ett DNS-namn (i stället för en IP-adress) för att matcha nätverksadressen för en <span class="keyword"> data workbench-server </span> eller en upprepande server. När en <span class="wintitle"> Sensor </span> använder ett DNS-namn, värdwebbserverns DNS-fil eller lokala värdfil måste konfigureras för att matcha namnet på <span class="keyword"> data workbench-server </span> eller en upprepande server. </p> </td>
   </tr>
  </tbody>
 </table>
 
 ### Support Server-programvara {#section-d6071706539f49d9a861d87b98e6f382}
 
-I följande tabell visas de vanligaste kombinationerna som [!DNL Sensor] har stöd för:
+I följande tabell visas de vanligaste kombinationerna som [!DNL Sensor] stöder:
 
 <table id="table_99EA23BBC1A148B49643F4B5E4341C08">
  <thead>
@@ -225,7 +226,7 @@ I följande tabell visas de vanligaste kombinationerna som [!DNL Sensor] har st�
  </tbody>
 </table>
 
-För andra kombinationer av server och operativsystem, se Adobe angående tillgängligheten. Alla funktioner i [!DNL Sensor] är inte tillgängliga för alla kombinationer av webb-/programserver och operativsystem. Mer information om [!DNL Sensor]-versioner får du av Adobe Support.
+För andra kombinationer av server och operativsystem, se Adobe angående tillgängligheten. Inte alla funktioner i [!DNL Sensor] är tillgängliga med alla kombinationer av webb-/programserver och operativsystem. Mer information om [!DNL Sensor] releaser, kontakta Adobe Support.
 
 ## Krav för rapportservern{#report-server-requirements}
 
@@ -235,7 +236,7 @@ Följande krav gäller för [!DNL report server]:
 
 * Åtkomst till filsystem för utdata av data (nätverksresurs eller lokal enhet).
 * Åtkomst till konfigurerad SMTP-server.
-* Microsoft Excel 2003 eller senare är installerat på [!DNL report]-servern. Mer information finns i [Att tänka på vid serverautomatisering av Office](https://support.microsoft.com/kb/257757).
+* Microsoft Excel 2003 eller senare installerat på [!DNL report] server. Se [Att tänka på vid automatisering av Office på serversidan](https://support.microsoft.com/kb/257757) för ytterligare information.
 
 ## Nätverkshantering{#network-management}
 
@@ -259,6 +260,6 @@ Tänk på detta när du arbetar med DPU- och FSU-nätverk.
 
 * För nätverksdistribution av loggfiler måste alla värdloggfiler för nätverkslagringssystem tillhandahålla minst 10 MB per DPU med kontinuerlig bandbredd.
 * DPU, FSU och Data Workbench kommunicerar dubbelriktat via HTTP eller HTTPS på port 80 eller 443 (som standard). portar kan konfigureras alternativt).
-* Datan Workbench [!DNL Sensor(s)] måste kunna ansluta (envägs) till servrarna.
+* Data Workbench [!DNL Sensor(s)] måste kunna ansluta (envägs) till servrarna.
 * Om DPU:n ska kunna skicka varningsmeddelanden via SMTP måste den kunna kontakta den konfigurerade SMTP-servern.
 * Adobe rekommenderar att FSU och DPU får nätverksnamn som FSU01.CLIENT.COM för att undvika omkonfigurering om en IP-adress ändras.

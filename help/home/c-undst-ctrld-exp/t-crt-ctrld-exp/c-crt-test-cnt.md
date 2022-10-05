@@ -4,7 +4,7 @@ solution: Analytics
 title: Skapa testinnehåll
 uuid: d7996522-38a6-4bb8-9736-d71157c17b45
 exl-id: fd46c6af-37e8-452a-880d-147b7d0cfe21
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Skapa testinnehåll{#creating-the-test-content}
+
+{{eol}}
 
 Innan du konfigurerar experimentet bör du skapa det alternativa innehåll som du vill använda i experimentet.
 

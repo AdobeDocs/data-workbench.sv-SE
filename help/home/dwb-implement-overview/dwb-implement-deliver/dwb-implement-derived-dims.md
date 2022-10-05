@@ -1,22 +1,26 @@
 ---
-description: De olika typerna av härledda (klientsidans) dimensioner och hur du konfigurerar dem i Data Workbench.
-title: Inställningar för härledda dimensioner
+description: De olika typerna av härledda Dimensioner (klientsidan) och hur du konfigurerar dem i Datan Workbench.
+title: Inställningar för härledda Dimensioner
 uuid: 9d2416fb-1c29-45a8-91d0-ddca575224ad
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 79c72135-e527-4755-b43f-eacc63d765aa
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '2100'
+ht-degree: 0%
 
 ---
 
+# Inställningar för härledda Dimensioner{#derived-dimensions-setup}
 
-# Inställningar för härledda dimensioner{#derived-dimensions-setup}
+{{eol}}
 
-De olika typerna av härledda (klientsidans) dimensioner och hur du konfigurerar dem i Data Workbench.
+De olika typerna av härledda Dimensioner (klientsidan) och hur du konfigurerar dem i Datan Workbench.
 
-## Typer av härledda dimensioner {#section-33e6dcc9ab9745de9b830cecb2427ca3}
+## Typer av härledda Dimensioner {#section-33e6dcc9ab9745de9b830cecb2427ca3}
 
-**Måttmått**
+**Dimensioner**
 
-Med Måttdimension kan du gruppera mätvärden efter en viss nivå. Du kan också gruppera mätvärden på en viss nivå. När du har skapat en måttdimension kan du segmentera data baserat på måttvärdet.
+Med Dimensionen Metrisk kan du gruppera måttantal efter en viss nivå. Du kan också gruppera mätvärden på en viss nivå. När en metrisk Dimension har skapats kan du segmentera data baserat på måttvärdet.
 
 Exempel 1: Du är ett reseföretag och du vill förstå skillnaden i beteendeaktiviteter på webbplatsen mellan dina flygblad och kunder som har bokat flygresan mindre än fem gånger, hur skulle du göra det?
 
@@ -26,7 +30,7 @@ Exempel 2: Du är en bank och du vill gruppera dina kunder baserat på hur mång
 
 Den information du har är mätvärden som ger dig antal CD-investeringar - hur skapar du Trött kundsegment för din analys?
 
-*Skapa mått - via arbetsstationen*
+*Skapa metrisk Dimension via Workstation*
 
 Markera en av OOB-måttdimensionerna som lokal och byt namn på dimensionen med ett anpassat namn/Skapa lokal kopia av RenameDim.example och byt namn på den till rätt dimensionsnamn med tillägget .dim
 
@@ -36,7 +40,7 @@ Mått - Mått som ska grupperas
 
 Nivå - Nivå som mätvärden grupperas på
 
-Bucketstart - Startelementet för måttdimensionen. Ange samma värde i förskjutning.
+Bucket Start - Startelementet för Dimensionen Metric. Ange samma värde i förskjutning.
 
 Bucket Size - Grouping size of metric. Ange samma värde i skalan
 
@@ -44,7 +48,7 @@ Antal hakparenteser - maximalt antal element som ska visas i dimensionen
 
 Spara den nya dimensionen på servern om du vill dela den med andra.
 
-**Prefixdimensioner**
+**Prefix-Dimensioner**
 
 Huvudsyftet med dimensionen Prefix är att gruppera element i den ursprungliga dimensionen och att ge användarvänliga namn till grupperade element.
 
@@ -52,21 +56,21 @@ Du äger till exempel en detaljhandelsplats och din webbplats har olika webbplat
 
 Samma analys kan göras enkelt om det finns en Prefix-dimension med sidor från ett webbplatsavsnitt grupperade som ett enskilt element.
 
-Skapar prefixdimension:
+Skapa prefix-Dimension:
 
 Öppna en 2D-processkarta på menyn Visualisering.
 
 Ändra följande parametrar för prefixdimensionen baserat på kraven.
 
-Ändra kartdimension - Den dimension som du vill använda för 2D-processmappning (t.ex.: SMS-typologi)
+Dimensionen Ändra karta - Den Dimension som du vill använda för 2D-processkarta (t.ex.: SMS-typologi)
 
-Ändra kartnivådimension - nivån för den ovannämnda dimensionen
+Dimensionen Ändra kartnivå - nivån för den ovannämnda dimensionen
 
-Ändra kartklippsdimension - den räkningsbara nivå där du vill titta på data.
+Ändra Dimension för kartklipp - den räkningsbara nivå där du vill titta på data.
 
 Ändra kartmått - Det mått som du vill titta på.
 
-När 2D-processkartan är inställd öppnar du den dimension som du nämnde i parametern Ändra kartdimension.
+När 2D-processkartan är inställd öppnar du den dimension som du nämnde i Dimensionen Ändra karta.
 
 Markera de element som du vill gruppera. Använd CTRL+ALT och dra och släpp elementen på processkartan.
 
@@ -74,30 +78,30 @@ Högerklicka på den punkt som visas och byt namn på gruppen. Om du har markera
 
 Högerklicka på dispositionen av visualiseringen och spara dimensionen på menyn som visas.
 
-**Ändra namn på dimensioner**
+**Byt namn på Dimensioner**
 
-Byt namn på dimensioner skapas av en befintlig dimension. Huvudsyftet med dimensionen Byt namn är att ge dimensionens element användarvänliga namn. Utsidan av rutan Byt namn är siddimensionen som skapas av URI-dimensionen. URI-dimensionen kan vara förvirrande för en person som inte känner till sidornas tekniska namn och det är därför du kan byta namn på element i URI-dimensionen med siddimensionen.
+Byt namn på Dimensioner skapas från en befintlig dimension. Huvudsyftet med dimensionen Byt namn är att ge dimensionens element användarvänliga namn. Utsidan av rutan Byt namn är siddimensionen som skapas av URI-dimensionen. URI-dimensionen kan vara förvirrande för en person som inte känner till sidornas tekniska namn och det är därför du kan byta namn på element i URI-dimensionen med siddimensionen.
 
-SKAPA ANPASSADE DIMENSIONER FÖR ÄNDRING AV NAMN:
+SKAPA ANPASSADE BYTA NAMN PÅ DIMENSIONER:
 
-Elementen i den ändrade dimensionen har en 1:1-mappning med elementen i den ursprungliga basdimensionen. Du kan verifiera detta genom att öppna dim-filen för Ändra namn på dimension i arbetsstation/anteckningsrutan. Du kommer att märka att varje element i den ursprungliga dimensionen endast har ett värde (Byt namn på sträng) i filen.
+Elementen i den ändrade dimensionen har en 1:1-mappning med elementen i den ursprungliga basdimensionen. Du kan verifiera detta genom att öppna dim-filen för Dimensionen Byt namn i arbetsstation/anteckningsrutan. Du kommer att märka att varje element i den ursprungliga dimensionen endast har ett värde (Byt namn på sträng) i filen.
 
 Om du har färre element för att byta namn, Du kan skapa en dim-fil på arbetsstationen och ändra namn på de enskilda elementen enligt stegen nedan.
 
-Steg för att skapa en dim-fil för en Ändra namn på dimension - Använda arbetsstationen
+Steg för att skapa en dim-fil för en Byt namn på Dimension - Använda arbetsstationen
 
 Använd det här alternativet om antalet element som ska namnändras är färre.
 
 1. Öppna en tom arbetsyta och öppna Dimensions Manager. Högerklicka>Admin>Profil>Profilhanteraren.
-1. Expandera mappen Dimensions i kolumnen File.
+1. Expandera mappen Dimensioner i kolumnen Arkiv.
 1. Expandera sidmappen i kolumnen Arkiv och högerklicka på filen Page.dim i kolumnen Sekunder till sista (kolumnen representerar vanligtvis profilnamnet) och klicka på alternativet Gör lokal.
-1. Högerklicka på Page.dim i kolumnen &quot;User&quot; och klicka på alternativet Copy och klistra in den kopierade .dim-filen i den önskade mappen i Dimensions-katalogen.
+1. Högerklicka på Page.dim i kolumnen &quot;User&quot; och klicka på alternativet Copy och klistra in den kopierade .dim-filen i den önskade mappen under Dimensions-katalogen.
 1. Klicka på OK i felmeddelandet.
-1. Nu kommer du att märka att det finns två Page.dim-filer i mappen Dimensions. Den ena är den ursprungliga filen i katalogen Dimensions\Page och den andra kopierar du som du just klistrar in i steg 4.
+1. Nu kommer du att märka att det finns två Page.dim-filer under mappen Dimensioner. Den ena är originalfilen under Dimensioner\Page och den andra är den som du just kopierade och klistrade in i steg 4.
 1. Högerklicka på den senast inklistrade Page.dim-filen under kolumnen Användare och klicka på den blå/grå inmatningsrutan Page.dim. Inmatningsrutan blir grön med markören blinkande, vilket anger att den kan ändras. Skriv namnet på den Byt namn på dimension som du vill skapa.
 1. Du kommer att märka att filen Page.dim i kolumnen File har ändrats till det nya filnamnet som du angav i steg 7. Högerklicka på filen new.dim i kolumnen Användare (sista kolumnen) och välj Öppna > I arbetsstation.
-1. När .dim-filen har öppnats på arbetsstationen, klicka på plustecknet (+) bredvid enheten och expandera den. Observera värdet som finns i fältet &quot;Överordnad&quot;, det reflekterar dimensionen &quot;URI&quot;. Det visar&quot;wdata/model/dim/URI&quot; Klicka på den blå/grå indatarutan för att ändra URI:n till namnet på dimensionen vars element du vill byta namn på.
-1. Kontrollera att den dimension som du vill byta namn på finns i datauppsättningen. Dimensionsnamn är skiftlägeskänsliga, så behåll skiftläget för den ursprungliga dimensionen.
+1. När .dim-filen har öppnats i arbetsstationen, klicka på plustecknet (+) bredvid enheten och expandera den. Observera värdet som finns i fältet &quot;Överordnad&quot;, det reflekterar dimensionen &quot;URI&quot;. Det visar&quot;wdata/model/dim/URI&quot; Klicka på den blå/grå indatarutan för att ändra URI:n till namnet på dimensionen vars element du vill byta namn på.
+1. Kontrollera att den dimension som du vill byta namn på finns i datauppsättningen. Dimensionens namn är skiftlägeskänsliga, så du behåller skiftläget för den ursprungliga dimensionen.
 1. Lägg märke till att &quot;ändrat&quot; visas bredvid dimensionsnamnet. Detta anger att den ursprungliga dimensionen har ändrats. Att behålla de ändringar som gjorts i steg 9. Högerklicka på new.dim (ändrad) och klicka på alternativet Spara som.
 1. När dimensionen har sparats per steg 10 är den nya namnändringsdimensionen för kampanjer nu tillgänglig för dig för namnbyte. Detta är endast tillgängligt lokalt.
 1. För att andra ska kunna se den dimension som du har skapat måste den sparas i profilen. Högerklicka på dim-filen för den nya dimensionen i kolumnen &quot;Användare&quot; (sista kolumnen) och klicka på &quot;Spara till>profilnamn&quot; där du vill spara dimensionen.
@@ -105,16 +109,16 @@ Använd det här alternativet om antalet element som ska namnändras är färre.
 
 Verktyget för att skapa prefix och byta namn på toning
 
-Adobe har ett Excel-verktyg för att generera Prefix och Ändra namn på dimensioner.
+Adobe har ett Excel-verktyg för att generera Dimensionerna Prefix och Rename.
 
 Nedan följer stegen för att generera måtten Prefix/Byt namn med verktyget:
 
-1. Spara Excel-verktyget *Adobe_DWB_Dimension_Generator.xlsm* i en mapp. Kontakta Adobes kundtjänst om du vill hämta verktyget.
+1. Spara Excel-verktyget *Adobe_DWB_Dimension_Generator.xlsm* i en mapp. Kontakta Adobe kundtjänst om du vill hämta verktyget.
 1. Öppna verktyget och aktivera makron: ![](assets/dwb_impl_derived_dims2.png)
 
 1. Fyll databladet med de värden som ska användas.
 
-   Vi skapar t.ex. en produktprofilsprefixdimension som baseras på produktdimension. I databladet hämtas följande information: ![](assets/dwb_impl_derived_dims3.png)
+   Vi skapar t.ex. en produktprofilsprefixdimension som baseras på Dimensionen Produkt. I databladet hämtas följande information: ![](assets/dwb_impl_derived_dims3.png)
 
    Varje produkt tilldelas ett varumärke i databladet.
 
@@ -124,27 +128,27 @@ Nedan följer stegen för att generera måtten Prefix/Byt namn med verktyget:
 
    Typ: Prefix/Byt namn
 
-   Källdim: Ursprunglig dimension
+   Källdim: Ursprunglig Dimension
 
    Matcha kolumn: Kolumn som ska matchas
 
    Resultatkolumn: Värde som ska användas för ny dimension.
 
-1. Klicka på knappen *Klicka här*. ![](assets/dwb_impl_derived_dims5.png)
+1. Klicka på knappen med namnet *Klicka här*. ![](assets/dwb_impl_derived_dims5.png)
 
 1. Tona ned-filen genereras i samma mapp som verktyget sparades i. ![](assets/dwb_impl_derived_dims6.png)
 
    Använd Profilhanteraren och spara dim-filen i mappen Dimension.
 
-**Skift-dimensioner**
+**Flytta Dimensioner**
 
-Med Skift-dimensioner kan du titta på det n:e elementet i en dimension i en viss räkningsbar dimension.
+Med Skift-dimensioner kan du titta på det n:te elementet i en dimension i en viss räkningsbar Dimension.
 
-De ger dig även möjlighet att titta tillbaka på -n-elementet av valfri dimension inom en viss Räkningsbar dimension
+De ger dig även möjlighet att titta tillbaka på -n-elementet i alla dimensioner inom en viss räkningsbar Dimension
 
 Exempel 1:
 
-* Den n:e sidan i en session -Nästa siddimension
+* Den n:e sidan i en session -Dimensionen Nästa sida
 * Den n:e sidan för en besökare -Nästa sida för besökare -över alla sessioner
 * Det n:e anropet till en användare
 
@@ -158,17 +162,17 @@ Nästa URI är en av OOB Shift-dimensionerna som kan användas som mall. Exemple
 
 Här betyder förskjutning 1 att du kan titta åt höger framåt i händelsen
 
-Andra OOB-flyttningsdimensioner
+Andra OOB Shift-Dimensioner
 
 *Nästa sida:*
 
-Nästa sida som visas i en session efter den valda sidan i siddimensionen
+Nästa sida som visas i en session efter den markerade sidan på Dimensionen Sida
 
 Den här förskjutningen är 1, Nivå är Sidvy, Tona är sida och Klippet är session
 
 *Föregående sida:*
 
-Föregående sida visades i en session före den valda sidan i siddimensionen
+Föregående sida visades i en session före den markerade sidan på Dimensionen Sida
 
 Den här förskjutningen är -1, Nivå är Sidvy, Tona är sida och Klippet är session
 
@@ -176,7 +180,7 @@ Vad kommer den tidigare kampanjen att visas innan den för närvarande väljs av
 
 Den här förskjutningen är -1, Nivå är kampanjsvar, Dim är ett attributvärde för kampanjsvar och Clip är Visitor
 
-*Skapa skifttdimension - via arbetsstation*
+*Skapa Shift-Dimension - via arbetsstation*
 
 * Markera en av OOB-skiftdimensionerna som lokal
 * Byt namn på dimensionen med ett anpassat namn
@@ -185,14 +189,14 @@ Den här förskjutningen är -1, Nivå är kampanjsvar, Dim är ett attributvär
 
    * Nivåräkningsbar dimension
    * Förskjutning - Du vill se framåt bakåt
-   * Dimma - Dimension vars element du vill analysera
+   * Tona ned -Dimension vars element du vill analysera
    * Det går att räkna klipp i som du vill visa.
 
 * Spara den nya dimensionen på servern om du vill dela den med andra.
 
-**Senaste N-dimension**
+**Senaste N-Dimensionen**
 
-Senaste N-dimensioner fungerar bara på tidsdimensionen och på Från och med-tiden för systemet. OOB-tidsmåtten är dag, vecka, timme och månad. Du kan skapa dimensionen Last N för var och en av dessa grundtidsdimensioner, som de senaste 10 dagarna, de senaste 72 timmarna, de senaste 8 veckorna, de senaste 6 månaderna osv. Senaste N-dimension beräknar Senaste N baserat på systemets aktuella rapporttidsmått eller Från och med. ![](assets/dwb_impl_derived_dims8.png)
+De senaste N-Dimensionerna fungerar endast på Dimensionen Time och på Från och med. OOB-tidsmåtten är dag, vecka, timme och månad. Du kan skapa dimensionen Last N för var och en av dessa grundtidsdimensioner, som de senaste 10 dagarna, de senaste 72 timmarna, de senaste 8 veckorna, de senaste 6 månaderna osv. Senaste N-Dimensionen beräknar Senaste N baserat på systemets aktuella rapporttidsmått eller Från och med. ![](assets/dwb_impl_derived_dims8.png)
 
 Antal - Totalt antal element som ska visas i dimensionen
 
@@ -204,7 +208,7 @@ None.dim är en Alias-dimension. Den används för att skapa alias från utökad
 
 Exempel:
 
-I filen None.dim definieras entiteten som &quot;wdata/model/dim/Parent/+name&quot; (den kan ändras), vilket innebär att dimensionen skapas utifrån namnet på dimensionsfilen. Om vi skapar en kopia av filen None.dim under mappen Dimension (till exempel kopiering och namnändring av filen None.dim under mappen Visitor Profile) och byter namn på den till &quot;Log Source ID.dim&quot;, visas en ny härledd dimension med Log Source ID på menyn under Visitor Profile enligt nedan:
+I filen None.dim definieras entiteten som &quot;wdata/model/dim/Parent/+name&quot; (den kan ändras), vilket innebär att dimensionen skapas utifrån namnet på dimensionsfilen. Om vi skapar en kopia av filen None.dim under Dimensionen (till exempel kopiering och namnändring av filen None.dim under mappen Visitor Profile) och byter namn på den till &quot;Log Source ID.dim&quot;, visas en ny härledd dimension med Log Source ID på menyn under Visitor Profile enligt nedan:
 
 Före ändringar: ![](assets/dwb_impl_derived_dims9.png)
 
@@ -214,9 +218,8 @@ Enheten kan ändras till det utökade dimensionsnamnet, i det här fallet en ann
 
 I det här exemplet har &quot;Source Name.dim&quot; följande innehåll: ![](assets/dwb_impl_derived_dims11.png)
 
-Ett annat namn på dimensionskällan som pekar på Loggkälla-ID visas. ![](assets/dwb_impl_derived_dims12.png)
+Ett annat källnamn för Dimensionen som pekar på Loggkälla-ID visas. ![](assets/dwb_impl_derived_dims12.png)
 
-**Dölja härledda dimensioner**
+**Dölja härledda Dimensioner**
 
-Om du vill dölja den härledda dimensionen anger du egenskapen *Visa* till &quot;false&quot;. ![](assets/dwb_impl_derived_dims13.png)
-
+Om du vill dölja den härledda Dimensionen anger du *Visa* -egenskapen till &quot;false&quot;. ![](assets/dwb_impl_derived_dims13.png)

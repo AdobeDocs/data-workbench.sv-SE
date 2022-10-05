@@ -3,7 +3,7 @@ description: Om du arbetar med webbdata kan du använda ExtractValue-omformninge
 title: ExtractValue
 uuid: 305827a2-04e6-421f-82cb-923d62b02e70
 exl-id: 5bafe64f-081a-49ec-997e-68e8f6915a71
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # ExtractValue{#extractvalue}
+
+{{eol}}
 
 Om du arbetar med webbdata kan du använda ExtractValue-omformningen för att extrahera ett värde från en frågesträng, cookie-fil eller liknande kodade fält i webbplatsdata.
 
@@ -42,7 +44,7 @@ Observera att namnen som motsvarar värdet som ska extraheras kan vara olika i v
   </tr> 
   <tr> 
    <td colname="col1"> Indatanamn </td> 
-   <td colname="col2"> <p>Namnet/namnen på de fält som ska extraheras från indatafrågan. </p> <p> <p>Obs!  Om indatanamnet är en vektor (d.v.s. det finns flera namn) extraheras bara ett värde. </p> </p> </td> 
+   <td colname="col2"> <p>Namnet/namnen på de fält som ska extraheras från indatafrågan. </p> <p> <p>Obs! Om indatanamnet är en vektor (d.v.s. det finns flera namn) extraheras bara ett värde. </p> </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -58,8 +60,8 @@ Observera att namnen som motsvarar värdet som ska extraheras kan vara olika i v
  </tbody> 
 </table>
 
-Om du vill extrahera en sökfras kan du extrahera hela frasen och, om du vill, dela frasen i söktermer med en [!DNL Tokenize]-omformning. Mer information om [!DNL Tokenize]-omformningen finns i [Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c).
+Om du vill extrahera en sökfras kan du extrahera hela frasen och, om du vill, dela frasen i söktermer med en [!DNL Tokenize] omformning. Mer information om [!DNL Tokenize] omformning, se [Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c).
 
-I det här exemplet konfigureras en [!DNL ExtractValue]-omformning så att värden i fältet x-v-search-querynames extraheras från cs(reference-query) och lagras i fältet x-search-phrase.
+Det här exemplet konfigurerar en [!DNL ExtractValue] omformning för att extrahera värden i x-v-search-querynames-fältet från cs(reference-query) och lagra dem i x-search-phrase-fältet.
 
 ![](assets/cfg_TransformationType_ExtractValue.png)

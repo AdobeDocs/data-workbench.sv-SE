@@ -3,7 +3,7 @@ description: En många-till-många-dimension har en många-till-många-relation 
 title: Många-till-många-Dimensioner
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
 exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Många-till-många-Dimensioner{#many-to-many-dimensions}
+
+{{eol}}
 
 En många-till-många-dimension har en många-till-många-relation med sin överordnade räkningsbara dimension.
 
@@ -49,7 +51,7 @@ Många-till-många-dimensioner definieras av följande parametrar:
   </tr> 
   <tr> 
    <td colname="col1"> Indata </td> 
-   <td colname="col2"> <p>Värdet som är relaterat till den överordnade dimensionen (överordnad). Om det här fältet är en vektor med strängar har varje element i vektorn en egen relation till den överordnade. </p> <p> <p>Obs!  Om indatavärdet för varje loggpost för ett element i den överordnade dimensionen är tomt kommer inget element i många-till-många-dimensionen att relatera till det elementet i den överordnade dimensionen. </p> </p> </td> 
+   <td colname="col2"> <p>Värdet som är relaterat till den överordnade dimensionen (överordnad). Om det här fältet är en vektor med strängar har varje element i vektorn en egen relation till den överordnade. </p> <p> <p>Obs! Om indatavärdet för varje loggpost för ett element i den överordnade dimensionen är tomt kommer inget element i många-till-många-dimensionen att relatera till det elementet i den överordnade dimensionen. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

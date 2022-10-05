@@ -3,22 +3,24 @@ description: Detaljerade anvisningar för installation och konfigurering av Sens
 title: WebSphere i AIX
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
 exl-id: e560d265-dc84-4ff2-ac86-7a2ac5261451
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 0%
 
 ---
 
-# WebSphere på AIX{#websphere-on-aix}
+# WebSphere i AIX{#websphere-on-aix}
+
+{{eol}}
 
 Detaljerade anvisningar för installation och konfigurering av Sensor för WebSphere 5.x som körs i AIX 5.1 eller senare.
 
-Programfilerna för [!DNL Sensor] paketeras i en installationsfil som du får från hämtningsplatsen för Adobe. Om du inte redan har installationsfilen [!DNL Sensor] för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
+Programfiler för [!DNL Sensor] är paketerade i en installationsfil som du får från hämtningsplatsen för Adobe. Om du inte redan har [!DNL Sensor] installationsfilen för din webbserver kan du hämta den (eller hämta den från din Adobe-representant) innan du börjar med följande procedurer.
 
 >[!NOTE]
 >
->[!DNL Sensor] för WebSphere-servrar har inte stöd för kontrollerade försök. Mer information om kontrollerade försök finns i *handboken om Data Workbench-kontrollerade experiment.*
+>The [!DNL Sensor] för WebSphere-servrar saknar stöd för kontrollerade försök. Mer information om kontrollerade försök finns i *Handbok för Data Workbench-kontrollerade experiment.*
 
 ## Installera programfilerna {#section-86f69127278c41bc90b97b68bb40bc6e}
 
@@ -99,7 +101,7 @@ Om du vill återställa behörigheterna till de rekommenderade standardinställn
 
 Om du vill använda andra behörigheter än de som rekommenderas läser du informationen i Sensor UNIX File Permissions för att vara säker på att du förstår hur dessa filer används.
 
-## Redigera sensorkonfigurationsfilen {#section-283c8a92fa8841c1b6034e5f834ef4e7}
+## Redigera filen för sensorkonfiguration {#section-283c8a92fa8841c1b6034e5f834ef4e7}
 
 Filen txlogd.conf innehåller konfigurationsparametrarna för Sensor.
 
@@ -145,7 +147,7 @@ För WebSphere-servrar fungerar insamlaren som ett filter i serverbehållaren.
 Om du vill lägga till insamlaren i webbprogrammet lägger du till filtret i webbprogrammets web.xml-distributionsbeskrivning och startar om webbprogrammet.
 
 1. Öppna filen web.xml med en textredigerare för webbservern vars händelser Sensor fångar.
-1. Lägg till följande `<filter>`- och `<filter-mapping>`-element i beskrivningsfilen. Om du inte har installerat txlogd.conf i katalogen /etc måste du ange rätt sökväg till filen i `<param-value>`-elementet.
+1. Lägg till följande `<filter>` och `<filter-mapping>` -element till beskrivningsfilen. Om du inte har installerat txlogd.conf i katalogen /etc måste du ange rätt sökväg till filen i `<param-value>` -element.
 
    ```
    <filter>
@@ -173,7 +175,7 @@ Om du vill lägga till insamlaren i webbprogrammet lägger du till filtret i web
 
 1. Starta om webbprogrammet. Insamlaren läses in med programmet och börjar samla in händelsedata och skriva dem till diskkön.
 
-## Deklarera platsen för filerna för samlaren och det delade objektet {#section-e641f08999d34a648aaee2111b69ca25}
+## Ange platsen för filerna för samlaren och det delade objektet {#section-e641f08999d34a648aaee2111b69ca25}
 
 Procedur för att redigera WebSphere-startskriptet för att deklarera platsen för filerna J2EECollector.jar och libvisual_Sciences.so.
 
@@ -190,7 +192,7 @@ Procedur för att redigera WebSphere-startskriptet för att deklarera platsen f�
    WAS_LIBPATH="$WAS_LIBPATH":/usr/local/visual_sciences
    ```
 
-1. Spara [!DNL setupCmdLine.sh]-filen.
+1. Spara [!DNL setupCmdLine.sh] -fil.
 
 ## Testa sensorn {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
 
@@ -240,7 +242,7 @@ J2EE-insamlaren kan till exempel användas för att samla in kostnadsdata per kl
 
 När en sensor för J2EE-plattformen tar emot en begäran, anropas en samlingsklass som importerar funktionen appendToLog. Funktionen appendToLog lägger till frågesträngsparametrarna som anges i funktionen appendToLog till den första begäran. Detta resulterar i URI:n för den initiala begäran som innehåller ytterligare par med namn/värde för frågesträngar som motsvarar namnen och värdena på de data som hämtas. CPC=20 skulle till exempel läggas till den första begäran när värdet för en viss annonsplacering eller klicklänken är 20 cent. Insight Server bearbetar dessa värden i datauppsättningen för analys. En annan fördel med den här samlingsmetoden är att den tillåter insamling av ytterligare data utan att skapa extra loggposter, vilket kan vara fallet med sidtaggningsmetoder.
 
-Mer information om bearbetning finns i *Konfigurationshandboken för datauppsättningar*.
+Mer information om bearbetning finns i *Konfigurationshandbok för datauppsättning*.
 
 1. Lägg till följande kod högst upp på .jsp-sidan där du vill hämta data:
 

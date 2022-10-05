@@ -3,7 +3,7 @@ description: Som standard visas staplar i diagramvisualiseringar, men du kan enk
 title: Ändra visning av diagram
 uuid: 8448afab-a2b0-4f96-a0e5-920013e83905
 exl-id: b8d8d403-0432-42e1-8019-2d2d0a891e55
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Ändra visning av diagram{#change-a-graph-display}
+
+{{eol}}
 
 Som standard visas staplar i diagramvisualiseringar, men du kan enkelt visa staplarna som linjer och tvärtom.
 
@@ -26,7 +28,7 @@ Högerklicka på dimensionsetiketten längst ned i diagrammet och klicka på **[
 
 **Övertoningsövertäckning i ett diagram**
 
-Du kan högerklicka och välja en **övertoningsövertäckning** på menyn för att bättre visa diagramelement.
+Du kan högerklicka och välja en **Övertoningsövertäckning** på menyn för att bättre visa diagramelement.
 
 ![](assets/6_51_gradient_graph.png)
 

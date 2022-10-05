@@ -3,7 +3,7 @@ description: Du kan skapa ett vektorlager som refererar till en eller flera vekt
 title: Definiera vektorlager som refererar till vektorfiler
 uuid: fe6639fb-98fb-4246-9cc1-1a928df6ae0a
 exl-id: d78fa7ea-e2a9-42b7-9071-5f72409c5b7a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -12,25 +12,27 @@ ht-degree: 0%
 
 # Definiera vektorlager som refererar till vektorfiler{#define-vector-layers-referencing-vector-files}
 
+{{eol}}
+
 Du kan skapa ett vektorlager som refererar till en eller flera vektorfiler (.vec), som innehåller data som definierar vektorerna som ska ritas på jorden.
 
-Om du vill definiera ett vektorlager som refererar till en eller flera [!DNL .vec]-filer måste du ha följande:
+Definiera ett vektorlager som refererar till ett eller flera lager [!DNL .vec] -filer måste du ha följande:
 
-* **En eller flera  [!DNL .vec]** filer som innehåller de data som används för att rita vektorerna på jorden.
-
-   >[!NOTE]
-   >
-   >Om du vill få [!DNL .vec]-filer att använda med dina vektorlager kontaktar du Adobe.
-
-* **En lagerfil** som anger platsen för  [!DNL .vec] filerna. Mer information om vilket format lagerfilen ska ha finns i [Vektorlagerfilformat](../../../../home/c-get-started/c-im-layers/c-vctr-layers/c-ref-vctr-files.md#section-83a0077cf0c8479b9e7b2939bc761af1).
+* **En eller flera [!DNL .vec] filer** som innehåller de data som används för att rita vektorerna på jorden.
 
    >[!NOTE]
    >
-   >Filen [!DNL Boundaries.layer], som ingår i profilen [!DNL Geography], är ett vektorlager som refererar till filerna [!DNL mwnation.vec], [!DNL mwstate.vec], [!DNL mwcoast.vec], [!DNL mwlake.vec] och [!DNL mwisland.vec].
+   >För att få [!DNL .vec] ska du kontakta Adobe.
 
-## Vektorlagerfilformat {#section-83a0077cf0c8479b9e7b2939bc761af1}
+* **En lagerfil** som anger platsen för [!DNL .vec] filer. Mer information om vilket format lagerfilen ska ha finns i [Vektorlagerfilformat](../../../../home/c-get-started/c-im-layers/c-vctr-layers/c-ref-vctr-files.md#section-83a0077cf0c8479b9e7b2939bc761af1).
 
-Varje vektorlagerfil som refererar till [!DNL .vec]-filer måste formateras med följande mall:
+   >[!NOTE]
+   >
+   >The [!DNL Boundaries.layer] fil, som tillhandahålls med [!DNL Geography] profil, är ett vektorlager som refererar till [!DNL mwnation.vec], [!DNL mwstate.vec], [!DNL mwcoast.vec], [!DNL mwlake.vec]och [!DNL mwisland.vec] filer.
+
+## Filformat för vektorlager {#section-83a0077cf0c8479b9e7b2939bc761af1}
+
+Varje vektorlagerfil som refererar till [!DNL .vec] filer måste formateras med följande mall:
 
 ```
 Layer = VectorLayer:
@@ -47,13 +49,13 @@ Layer = VectorLayer:
 
 | Parameter | Beskrivning |
 |---|---|
-| Vec-filer | Sökväg(er) till [!DNL .vec]-filen/filerna som innehåller vektordata. |
-| Färg | RGB-färgvektorn, som uttrycks som (röd, grön, blå). För varje färg i vektorn kan du ange ett värde mellan 0,0 och 1,0. (1.0, 0.0, 0.0) är till exempel ljusröd och (0.5, 0.5, 0.5) är grå. |
+| Vec-filer | Sökvägar till [!DNL .vec] filer som innehåller vektordata. |
+| Färg | Färgvektorn RGB, som uttrycks som (röd, grön, blå). För varje färg i vektorn kan du ange ett värde mellan 0,0 och 1,0. (1.0, 0.0, 0.0) är till exempel ljusröd och (0.5, 0.5, 0.5) är grå. |
 | Alfa | Styr genomskinligheten för vektorerna som visas på jorden. Intervallet är 0 till 1, där 0 är det mest genomskinliga. |
 | Bredd | Valfritt. Anger datans bredd i pixlar. Rekommenderat intervall är 1 till 4. |
 | Felfaktor | Styr hur exakt vektorerna ritas. För större värden ritas vektorerna mindre exakt men snabbare. Standardvärdet är 5. |
 
-Filen [!DNL Boundaries.layer] har följande format:
+The [!DNL Boundaries.layer] filen har följande format:
 
 ```
  Boundaries.layer file is formatted as follows:

@@ -3,7 +3,7 @@ description: DeviceAtlas JSON-filen kommer nu att distribueras i en .bundle-fil 
 title: DeviceAtlas-distribution
 uuid: 1eb76c61-6696-4e6c-a3fd-61c00cc17b0a
 exl-id: e9671810-d32c-4ec4-a1cb-54b71c6f101c,333507bb-3e8b-4da1-8218-b35fcf8d5f80,aa811c7b-ef80-4f23-b395-0cbb7d2677a9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # DeviceAtlas-distribution{#deviceatlas-distribution}
+
+{{eol}}
 
 DeviceAtlas JSON-filen kommer nu att distribueras i en .bundle-fil (en namnändrad .tar.gz) tillsammans med filerna DeviceAtlas.dll och DeviceAtlas64.dll.
 
@@ -22,7 +24,7 @@ Filen DeviceAtlas.bundle extraheras till [!DNL Server\Lookups\DeviceAtlas].
 
 Filen DeviceAtlas.bundle ska placeras i en katalog som är synkroniserad med DPU:erna, och filen DeviceAtlas.cfg som motsvarar den nya DeviceAtlasComponent ska placeras i katalogen Components for Processing Servers på synkroniseringsöverordnad. När filen DeviceAtlas.bundle ändras får det allra nästa DeviceAtlas-sökanrop resultat baserat på den uppdaterade API- och/eller JSON-filen.
 
-## Ändra Transformation.cfg-filen {#section-394823348f5740028666e62e2bd42754}
+## Ändra filen Transformation.cfg {#section-394823348f5740028666e62e2bd42754}
 
 DeviceAtlas-omformningar behöver inte längre ange sökvägen till JSON-filen. Alla tidigare DeviceAtlasTransformation som definieras i filen transformation.cfg ska inte längre innehålla parametern File som pekar på den dolda JSON-filen.
 
@@ -58,7 +60,7 @@ User Agent = string: x-ua
 
 ## Ändra filen DeviceAtlas.cfg {#section-10b43705a6c846fd9ec54ea6be249f88}
 
-Detta är ett exempel på det [!DNL component]-argument som krävs i filen DeviceAtlas.cfg.
+Detta är ett exempel på [!DNL component] argument krävs i filen DeviceAtlas.cfg.
 
 ```
 component = DeviceAtlasComponent: 
@@ -78,8 +80,8 @@ Korrekt konfiguration gör stor skillnad i den tid som krävs för omformning. O
 
 Kör omformningarna två gånger.
 
-1. Slå bara upp fältet [!DNL mobile id] och sedan
-1. Skapa villkor för att ignorera [!DNL mobile id] och slå sedan upp resten av fälten.
+1. Slå bara upp [!DNL mobile id] fält, sedan
+1. Skapa villkor som ignorerar [!DNL mobile id] och därefter leta upp resten av fälten.
 
 **Om den distribueras med Transformation.cfg**:
 

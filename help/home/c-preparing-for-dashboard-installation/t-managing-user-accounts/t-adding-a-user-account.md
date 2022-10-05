@@ -3,7 +3,7 @@ description: Lägga till ett användarkonto
 title: Lägga till ett användarkonto
 uuid: c322eeaa-a3f4-41e8-b38c-dd892ec29a87
 exl-id: c99f3189-4d89-443a-be5b-84352c4ec6e8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -12,7 +12,9 @@ ht-degree: 0%
 
 # Lägga till ett användarkonto{#adding-a-user-account}
 
-1. Klicka på **[!UICONTROL Add User]** för att visa **[!UICONTROL New User]**-frågan.
+{{eol}}
+
+1. Klicka **[!UICONTROL Add User]** för att ta fram **[!UICONTROL New User]** fråga.
 
    ![](assets/add_user_account.png)
 

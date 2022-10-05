@@ -3,14 +3,16 @@ description: Information om teståtgärdsvillkor, inklusive jämför, inte tom, 
 title: Villkor för teståtgärd
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 exl-id: 6c1f521b-a6b9-4bb7-bdfa-56c615b0c916
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 2%
 
 ---
 
-# Teståtgärdsvillkor{#test-operation-conditions}
+# Villkor för teståtgärd{#test-operation-conditions}
+
+{{eol}}
 
 Information om teståtgärdsvillkor, inklusive jämför, inte tom, omfång, reguljära uttryck och strängmatchning.
 
@@ -22,9 +24,9 @@ Information om teståtgärdsvillkor, inklusive jämför, inte tom, omfång, regu
 
 ## Jämför {#section-fb2bdb3838504099b324b9838cdeeaac}
 
-Villkoret [!DNL Compare] jämför strängar eller numeriska värden. Vid jämförelser av strängvärden kan du ange om skiftläge ska beaktas.
+The [!DNL Compare] villkor jämför sträng- eller numeriska värden. Vid jämförelser av strängvärden kan du ange om skiftläge ska beaktas.
 
-Parametrarna för villkoret [!DNL Compare] beskrivs i följande tabell:
+Parametrarna för [!DNL Compare] villkor beskrivs i följande tabell:
 
 <table id="table_05B1FBB2AED242D99081E62BE2FBEC60"> 
  <thead> 
@@ -61,8 +63,8 @@ Parametrarna för villkoret [!DNL Compare] beskrivs i följande tabell:
      <ul id="ul_74F3C298E9CC4FE89897BA0052A9EB9F"> 
       <li id="li_1605FA73474E404A84056D40E7082623"> = eller == (Indata A är lika med indata B) </li> 
       <li id="li_F694A262ED7A4787B2A68B877339620C"> &lt;&gt; eller != (Indata A är inte lika med indata B) </li> 
-      <li id="li_1A75437E23B64BEB92297E1C771092B0"> &lt;&gt; </li> 
-      <li id="li_B80ED6BE9DEA41FE84BC6BA3B7759276"> &lt;&gt; </li> 
+      <li id="li_1A75437E23B64BEB92297E1C771092B0"> &lt; (Indata A är mindre än indata B) </li> 
+      <li id="li_B80ED6BE9DEA41FE84BC6BA3B7759276"> &lt;= (Indata A är mindre än eller lika med indata B) </li> 
       <li id="li_93148F34065F489E8E198DFB9F9F0E70"> &gt; (Indata A är större än indata B) </li> 
       <li id="li_8A98EE9AED2445429805169040BB253D"> &gt;= (Indata A är större än eller lika med indata B) </li> 
      </ul> </p> </td> 
@@ -70,21 +72,21 @@ Parametrarna för villkoret [!DNL Compare] beskrivs i följande tabell:
   </tr> 
   <tr> 
    <td colname="col1"> Typ </td> 
-   <td colname="col2">Den typ av jämförelse som ska göras. Tillgängliga typer är <span class="wintitle"> LEXICAL</span>, <span class="wintitle"> NUMERIC</span> och <span class="wintitle"> DATETIME</span>. Beskrivningar av typerna finns i <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> Testtyper för teståtgärder</a>. </td> 
+   <td colname="col2">Den typ av jämförelse som ska göras. Tillgängliga typer är <span class="wintitle"> LEXICAL</span>, <span class="wintitle"> NUMERIC</span>och <span class="wintitle"> DATETIME</span>. Beskrivningar av typerna finns i <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> Testtyper för teståtgärder</a>. </td> 
    <td colname="col3"> <span class="wintitle"> LEXICAL</span> </td> 
   </tr> 
  </tbody> 
 </table>
 
-I det här exemplet används ett [!DNL Compare]-villkor för att definiera [!DNL Log Entry Condition]. När data workbench-servern läser varje händelsedatapost jämförs de numeriska värdena x-age och 55. Om x-age för en given loggpost är mindre än eller lika med 55, inkluderas loggposten i datauppsättningens konstruktionsprocess.
+I det här exemplet används en [!DNL Compare] villkor för att definiera [!DNL Log Entry Condition]. När data workbench-servern läser varje händelsedatapost jämförs de numeriska värdena x-age och 55. Om x-age för en given loggpost är mindre än eller lika med 55, inkluderas loggposten i datauppsättningens konstruktionsprocess.
 
 ![](assets/cfg_Condition_CompareCondition.png)
 
 ## Inte tom {#section-1decb9d887894073a1b6b3d985729ac8}
 
-Villkoret [!DNL Not Empty] kontrollerar om ett fält innehåller ett värde eller är tomt. Villkoret är uppfyllt för alla loggposter vars värde för fältet [!DNL Input] inte är tomt.
+The [!DNL Not Empty] villkoret kontrollerar om ett fält innehåller ett värde eller är tomt. Villkoret är uppfyllt för alla loggposter vars värde är [!DNL Input] fältet är inte tomt.
 
-Parametrarna för villkoret [!DNL Not Empty] beskrivs i följande tabell:
+Parametrarna för [!DNL Not Empty] villkor beskrivs i följande tabell:
 
 | Parameter | Beskrivning | Standard |
 |---|---|---|
@@ -97,9 +99,9 @@ I det här exemplet används x-some-fält som indata och testas om fältet inte 
 
 ## Intervall {#section-1db31583bb09418b8f49481a897b08a6}
 
-Villkoret [!DNL Range] tar ett indatafält och avgör om värdet i det fältet, inklusive, faller inom de angivna parametervärdena för minimum (min) och maximum (max).
+The [!DNL Range] villkoret tar ett indatafält och avgör om värdet i det fältet, inklusive, faller inom de angivna parametervärdena för minimum (Min) och maximum (Max).
 
-Parametrarna för villkoret [!DNL Range] beskrivs i följande tabell:
+Parametrarna för [!DNL Range] villkor beskrivs i följande tabell:
 
 <table id="table_1587D8D333804FC28024C0DFC2F2D4D3"> 
  <thead> 
@@ -112,7 +114,7 @@ Parametrarna för villkoret [!DNL Range] beskrivs i följande tabell:
  <tbody> 
   <tr> 
    <td colname="col1"> Skiftlägeskänslig </td> 
-   <td colname="col2">Sant eller falskt. Används endast om <span class="wintitle">-typen</span> är <span class="wintitle"> LEXICAL</span>. Om värdet är false betraktas gemener och versaler som lika. </td> 
+   <td colname="col2">Sant eller falskt. Används endast om <span class="wintitle"> Typ</span> är <span class="wintitle"> LEXICAL</span>. Om värdet är false betraktas gemener och versaler som lika. </td> 
    <td colname="col3"> sant </td> 
   </tr> 
   <tr> 
@@ -127,23 +129,23 @@ Parametrarna för villkoret [!DNL Range] beskrivs i följande tabell:
   </tr> 
   <tr> 
    <td colname="col1"> Min </td> 
-   <td colname="col2"> <p>Lägre intervall. </p> <p> Parameterns värde måste vara ett literalt värde eller en sträng - inte ett fältnamn. Om du använder ett datum för det här fältet måste du ange en tidszon. En lista över förkortningar av tidszoner som stöds finns i <a href="../../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> Tidszonskoder</a>. </p> </td> 
+   <td colname="col2"> <p>Lägre intervall. </p> <p> Parameterns värde måste vara ett literalt värde eller en sträng - inte ett fältnamn. Om du använder ett datum för det här fältet måste du ange en tidszon. En lista över förkortningar av tidszoner som stöds finns på <a href="../../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> Tidszonskoder</a>. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Max </td> 
-   <td colname="col2"> <p>Intervallets övre gräns. </p> <p> <p>Obs! Parameterns värde måste vara ett literalt värde eller en sträng - inte ett fältnamn. Om du använder ett datum för det här fältet måste du ange en tidszon. En lista över förkortningar av tidszoner som stöds finns i <a href="../../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> Tidszonskoder</a>. </p> </p> </td> 
+   <td colname="col2"> <p>Intervallets övre gräns. </p> <p> <p>Obs! Parameterns värde måste vara ett literalt värde eller en sträng - inte ett fältnamn. Om du använder ett datum för det här fältet måste du ange en tidszon. En lista över förkortningar av tidszoner som stöds finns på <a href="../../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> Tidszonskoder</a>. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Typ </td> 
-   <td colname="col2">Den typ av jämförelse som ska göras. Tillgängliga typer är <span class="wintitle"> LEXICAL</span>, <span class="wintitle"> NUMERIC</span> och <span class="wintitle"> DATETIME</span>. Beskrivningar av typerna finns i <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> Testtyper för teståtgärder</a>. </td> 
+   <td colname="col2">Den typ av jämförelse som ska göras. Tillgängliga typer är <span class="wintitle"> LEXICAL</span>, <span class="wintitle"> NUMERIC</span>och <span class="wintitle"> DATETIME</span>. Beskrivningar av typerna finns i <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> Testtyper för teståtgärder</a>. </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-I det här exemplet används ett [!DNL Range]-villkor för att definiera [!DNL Log Entry Condition]. När data workbench-servern läser varje [!DNL event data]-post jämförs de numeriska värdena x-age och 55. Om x-age för en viss loggpost är minst 55, inkluderas loggposten i datauppsättningens konstruktionsprocess. I det här exemplet utförs samma funktion som i villkorsexemplet [!DNL Compare]. Se [Jämför](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-fb2bdb3838504099b324b9838cdeeaac).
+I det här exemplet används en [!DNL Range] villkor för att definiera [!DNL Log Entry Condition]. När data workbench-servern läser varje [!DNL event data] jämför de numeriska värdena x-age och 55. Om x-age för en viss loggpost är minst 55, inkluderas loggposten i datauppsättningens konstruktionsprocess. Det här exemplet utför samma funktion som [!DNL Compare] villkorsexempel. Se [Jämför](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-fb2bdb3838504099b324b9838cdeeaac).
 
 >[!NOTE]
 >
@@ -153,11 +155,11 @@ I det här exemplet används ett [!DNL Range]-villkor för att definiera [!DNL L
 
 ## Reguljärt uttryck {#section-ae9c016502cb44128760c58f2d2d5297}
 
-I villkorstestet [!DNL Regular Expression] används mönstermatchning för reguljära uttryck (se [Reguljära uttryck](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)) för att avgöra om värdet för det angivna inmatningsfältet innehåller en sträng som matchar ett av de mönster som anges i parametern Matchar.
+The [!DNL Regular Expression] villkorstestet använder mönstermatchning för reguljära uttryck (se [Reguljära uttryck](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)) för att avgöra om värdet för det angivna indatafältet innehåller en sträng som matchar ett av de mönster som anges i parametern Matchar.
 
-Om indata är en vektor med strängar används bara det första värdet i vektorn för testet. Villkoret [!DNL Regular Expression] utför fullständiga strängjämförelser. Om du vill identifiera delsträngar måste du lägga till&quot; före och efter.*&quot; till strängen.
+Om indata är en vektor med strängar används bara det första värdet i vektorn för testet. The [!DNL Regular Expression] villkoret utför fullständiga strängjämförelser. Om du vill identifiera delsträngar måste du lägga till&quot; före och efter.&#42;&quot; till strängen.
 
-Parametrarna för villkoret [!DNL Regular Expression] beskrivs i följande tabell:
+Parametrarna för [!DNL Regular Expression] villkor beskrivs i följande tabell:
 
 <table id="table_0BF5F89F87C9493B8DABA97620074FAD"> 
  <thead> 
@@ -187,8 +189,8 @@ Parametrarna för villkoret [!DNL Regular Expression] beskrivs i följande tabel
    <td colname="col1"> Matchar </td> 
    <td colname="col2"> <p>Mönster för reguljära uttryck som ska matchas mot indatafältets värde. </p> <p> <b> Lägga till ett mönster för reguljära uttryck</b> 
      <ol id="ol_6D6467FF74334DEA8E8625C3B155D11D"> 
-      <li id="li_9E13A63558FF44749C2E49BD50B7F770">Högerklicka på <span class="uicontrol"> Matchar</span>. </li> 
-      <li id="li_195A2F3B6B9442F5B1DACDE0FC96CE5C">Klicka på <span class="uicontrol"> Lägg till nytt</span> &gt; <span class="uicontrol"> Reguljärt uttryck</span>. </li> 
+      <li id="li_9E13A63558FF44749C2E49BD50B7F770">Högerklicka <span class="uicontrol"> Matchar</span>. </li> 
+      <li id="li_195A2F3B6B9442F5B1DACDE0FC96CE5C">Klicka <span class="uicontrol"> Lägg till ny</span> &gt; <span class="uicontrol"> Reguljärt uttryck</span>. </li> 
       <li id="li_225E98F8EF39426A9483B86EA2CFE6DF">Ange det reguljära uttrycket i textrutan. </li> 
      </ol> </p> </td> 
    <td colname="col3"> </td> 
@@ -196,13 +198,13 @@ Parametrarna för villkoret [!DNL Regular Expression] beskrivs i följande tabel
  </tbody> 
 </table>
 
-I det här exemplet visas hur du använder villkoret [!DNL Regular Expression] för att matcha ett fält med data som samlats in från webbplatstrafiken. Villkoret returnerar bara true om fältet cs(reference-query) innehåller en sträng som matchar det reguljära uttrycket `campaign=C[1-9][0-9]{4}`. Det här reguljära uttrycket matchar alla strängar som innehåller `campaign=C12345`. Mönstret matchar dock inte strängen `campaign=C0123&` eftersom det första tecknet efter `C` inte är i intervallet `1-9`.
+I det här exemplet visas hur du använder [!DNL Regular Expression] villkor för att matcha ett fält med data som samlats in från webbplatstrafiken. Villkoret returnerar bara true om fältet cs(reference-query) innehåller en sträng som matchar det reguljära uttrycket `campaign=C[1-9][0-9]{4}`. Det reguljära uttrycket matchar alla strängar som innehåller `campaign=C12345`. Mönstret matchar dock inte strängen `campaign=C0123&` därför att det första tecknet efter `C` ligger inte inom intervallet `1-9`.
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
 ## Strängmatchning {#section-f8d132085c6b4500bfbe4515b848142f}
 
-Villkoret [!DNL String Match] testar strängens likhet. Det tar ett angivet fält som indata och testar värdet för det fältet i varje loggpost mot strängarna som anges i operationens Matchar-parameter. Om någon av dessa skiftlägeskänsliga matchningssträngar är densamma som värdet i det angivna indatafältet returnerar åtgärden true. Om [!DNL StringCondition] inte innehåller några matchande strängar returnerar villkoret false. Om indata är en vektor med strängar används bara det första värdet (strängen) i vektorn för testet.
+The [!DNL String Match] villkorstester för strängens likhet. Det tar ett angivet fält som indata och testar värdet för det fältet i varje loggpost mot strängarna som anges i operationens Matchar-parameter. Om någon av dessa skiftlägeskänsliga matchningssträngar är densamma som värdet i det angivna indatafältet returnerar åtgärden true. Om [!DNL StringCondition] innehåller inga matchande strängar, villkoret returnerar false. Om indata är en vektor med strängar används bara det första värdet (strängen) i vektorn för testet.
 
 <table id="table_BD599BAA5DD54B278813B6C38AC8DE6B"> 
  <thead> 
@@ -232,8 +234,8 @@ Villkoret [!DNL String Match] testar strängens likhet. Det tar ett angivet fäl
    <td colname="col1"> Matchar </td> 
    <td colname="col2"> <p>Strängen/strängarna som ska matchas mot indatafältets värde. </p> <p> <b>Lägga till en sträng</b> 
      <ol id="ol_9E32218C771445D88357960475FAD6EB"> 
-      <li id="li_A700747858D0470491783E9B3933DAFE">Högerklicka på <span class="uicontrol"> Matchar</span>. </li> 
-      <li id="li_9D1A2462EA404B0F84426176737CAFED">Klicka på <span class="uicontrol"> Lägg till ny</span> &gt; <span class="uicontrol"> Sträng</span>. </li> 
+      <li id="li_A700747858D0470491783E9B3933DAFE">Högerklicka <span class="uicontrol"> Matchar</span>. </li> 
+      <li id="li_9D1A2462EA404B0F84426176737CAFED">Klicka <span class="uicontrol"> Lägg till ny</span> &gt; <span class="uicontrol"> Sträng</span>. </li> 
       <li id="li_E84D2439B59548E5B1803C64A295A18E">Ange önskad sträng i textrutan. </li> 
      </ol> </p> </td> 
    <td colname="col3"> </td> 
@@ -241,6 +243,6 @@ Villkoret [!DNL String Match] testar strängens likhet. Det tar ett angivet fäl
  </tbody> 
 </table>
 
-I det här exemplet används data som samlats in från webbplatstrafik för att illustrera användningen av villkoret [!DNL String Match]. Villkoret testar om indatafältet (cs-uri-stam) matchar någon av de två strängarna som anges i parametern Matches, och det fungerar om fältet cs-uri-stam antingen är den exakta strängen [!DNL /navigation/footer.asp] eller den exakta strängen [!DNL /navigation/header.asp].
+I det här exemplet används data som samlats in från webbplatstrafiken för att illustrera användningen av [!DNL String Match] villkor. Villkoret testar om indatafältet (cs-uri-stam) matchar någon av de två strängarna som anges i parametern Matches och det fungerar om fältet cs-uri-stam antingen är den exakta strängen [!DNL /navigation/footer.asp] eller den exakta strängen [!DNL /navigation/header.asp].
 
 ![](assets/cfg_Condition_StringMatch.png)

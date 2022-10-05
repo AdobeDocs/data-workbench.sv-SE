@@ -3,7 +3,7 @@ description: Använd den historiska profilen för data workbench för att se hur
 title: Arbetsytan Historik för Data Workbench
 uuid: 61c45cae-f255-4d20-bb6b-f318c8dd8214
 exl-id: e6d7e924-641e-468c-a828-16ebe1c8724f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -12,17 +12,19 @@ ht-degree: 0%
 
 # Arbetsytan Historik för Data Workbench{#data-workbench-historic-workspace}
 
+{{eol}}
+
 Använd den historiska profilen för data workbench för att se hur konfiguration, maskinvara och andra förändringar påverkar prestanda, stabilitet och serverkapacitet över tid.
 
-Den historiska profilen innehåller en profilbaserad [profilprestation](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-184a86f9de054970bf68515bb9dea85d)-datauppsättning och den serverbaserade [serverprestandadatamängden](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5dad5870384b40e094d50173fcd90a09) på fliken **[!UICONTROL Performance]**. Det här är de vanligaste datauppsättningarna som visas för ett tidigare perspektiv av data workbench-serverns prestanda. Dessutom kan du visa [komponenterna](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) och [Bearbetningsläget](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) genom att välja fliken **[!UICONTROL Up Time]**.
+Den historiska profilen innehåller en profilbaserad [Profilprestanda](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-184a86f9de054970bf68515bb9dea85d) datauppsättning och serverbaserad [Serverprestanda](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5dad5870384b40e094d50173fcd90a09) datauppsättning under **[!UICONTROL Performance]** -fliken. Det här är de vanligaste datauppsättningarna som visas för ett tidigare perspektiv av data workbench-serverns prestanda. Dessutom kan du visa [Komponenter](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) och [Bearbetningsläge](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) genom att välja **[!UICONTROL Up Time]** -fliken.
 
 ![](assets/Historic_Performance.png)
 
-Dessutom kan du visa [komponenterna](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) och [Bearbetningsläget](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) genom att välja fliken **[!UICONTROL Up Time]**.
+Dessutom kan du visa [Komponenter](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) och [Bearbetningsläge](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) genom att välja **[!UICONTROL Up Time]** -fliken.
 
-Mer referensinformation om dimensionerna som används i historikprofilen för data workbench finns i [Dimensioner i historikprofilen för Insight.](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
+Mer referensinformation om de dimensioner som används i historikprofilen för data workbench finns i [Dimensioner i Insight History-profilen.](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
 
-## Arbetsytan Profilprestanda {#section-184a86f9de054970bf68515bb9dea85d}
+## Profilprestanda, arbetsyta {#section-184a86f9de054970bf68515bb9dea85d}
 
 Den här datamängden innehåller följande relevanta mått för övervakning av data workbench.
 
@@ -35,7 +37,7 @@ Den här datamängden innehåller följande relevanta mått för övervakning av
 >
 >Om du vill göra en riktig prestandautvärdering av din profil ska du titta på priset i stället för den förflutna kalendertiden. Frekvensen mäts som de ändrade värdena mellan avsökningen var tionde minut.
 
-## Serverprestandaarbetsyta {#section-5dad5870384b40e094d50173fcd90a09}
+## Arbetsyta för serverprestanda {#section-5dad5870384b40e094d50173fcd90a09}
 
 Den här datauppsättningen övervakar servermått utanför omfånget för inkluderade profiler och innehåller följande relevanta servermått för övervakning av data workbench-data.
 
@@ -44,7 +46,7 @@ Den här datauppsättningen övervakar servermått utanför omfånget för inklu
 
 ![](assets/Historic_Server_Performance.png)
 
-## Komponentarbetsytan {#section-5be7223abb384784bafe7b37c764ea66}
+## Arbetsytan Komponenter {#section-5be7223abb384784bafe7b37c764ea66}
 
 Den här datauppsättningen finns under fliken Starttid.
 
@@ -57,7 +59,7 @@ Komponentdatamängden innehåller två aspekter för komponenthälsa:
 
 ![](assets/Up_Time_components.png)
 
-## Arbetsytan för behandlingsläge {#section-3e1dedb9474e4b4ba513240943e76817}
+## Arbetsytan Bearbetningsläge {#section-3e1dedb9474e4b4ba513240943e76817}
 
 Den här arbetsytan finns under fliken Starttid. På den här arbetsytan kan du se hur mycket tid som tas i snabb inmatning, snabb sammanslagning och realtidsläge.
 

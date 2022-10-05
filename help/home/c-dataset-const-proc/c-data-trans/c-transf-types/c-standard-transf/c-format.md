@@ -3,7 +3,7 @@ description: Formatomformningen tar en uppsättning indata och formaterar dem f�
 title: Format
 uuid: c596902e-21bc-4ce6-9ca4-7ca86dfc0a6c
 exl-id: 842b502e-cd16-45b3-ada8-6f2d899f1d54
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Format{#format}
+
+{{eol}}
 
 Formatomformningen tar en uppsättning indata och formaterar dem för att skapa en utdatafil som matchar den angivna strukturen.
 
@@ -47,7 +49,7 @@ Omformningen fungerar på enkla strängar eller strängvektorer och skapar utdat
   </tr> 
   <tr> 
    <td colname="col1"> Indata </td> 
-   <td colname="col2"> <p>Fält som innehåller enkla strängar eller strängvektorer. När det gäller strängvektorer som indata blir utdata också en strängvektor som är ett resultat av att parametern <span class="wintitle"> Format</span> används för varje uppsättning indatavärden. </p> <p> <p>Obs!  Numreringen av indata börjar på 0, men numreringen av formatersättningsvärdena börjar på %1%. </p> </p> </td> 
+   <td colname="col2"> <p>Fält som innehåller enkla strängar eller strängvektorer. När det gäller strängvektorer som indata blir utdata också en strängvektor som är ett resultat av att <span class="wintitle"> Format</span> parametern till varje uppsättning indatavärden. </p> <p> <p>Obs! Numreringen av indata börjar på 0, men numreringen av formatersättningsvärdena börjar på %1%. </p> </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 

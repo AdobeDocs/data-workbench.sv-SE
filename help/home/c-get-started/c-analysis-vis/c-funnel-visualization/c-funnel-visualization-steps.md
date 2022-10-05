@@ -3,7 +3,7 @@ description: Följ de här stegen för att skapa en ny kanalvisualisering
 title: Bygga en tratt
 uuid: 88afa09d-42ff-4e3b-b5cc-d74e01f4fc39
 exl-id: 24b63998-3aad-4ddf-b2d2-78dd0df9a510
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Bygga en tratt{#building-a-funnel}
+
+{{eol}}
 
 Följ de här stegen för att skapa en ny kanalvisualisering
 
@@ -46,6 +48,6 @@ Följ de här stegen för att skapa en ny kanalvisualisering
 
    ![](assets/last-image-funnel.png)
 
-Från tratten kan ni identifiera bortfall och nedgång i takt med att kunderna konverterar försäljningen och efterföljande kampanjer eller innehållsvägar. Om du vill ha mer information kan du öppna en [sökvägsläsare](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) för att se en detaljerad lista över de sidor som tagits innan de anländer till den valda sidan samt de sökvägar som har tagits efter att de har lämnat sidan.
+Från tratten kan ni identifiera bortfall och nedgång i takt med att kunderna konverterar försäljningen och efterföljande kampanjer eller innehållsvägar. Om du vill ha mer information kan du öppna en [Sökvägsläsaren](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) om du vill visa en detaljerad lista över de sidor som tagits innan den valda sidan kom fram och de banor som tagits efter att de lämnat sidan.
 
 Se ytterligare [Funktioner](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3).

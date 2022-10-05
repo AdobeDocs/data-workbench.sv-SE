@@ -2,16 +2,17 @@
 description: Detaljerade anvisningar för installation och konfigurering av Sensor för en Apache Server 1.3.x i RedHat Linux 7.x eller senare, SUSE Linux 9.x eller senare, Sun Solaris SPARC 2.6 eller senare, Sun Solaris x86 9 eller senare, FreeBSD 4 eller senare eller Mac OS X PowerPC.
 title: Apache Server 1.3.x i Linux, Sun Solaris, FreeBSD eller Mac OS X
 uuid: bd46dd0f-fe36-4f8b-a87c-8ca7b64da609
-translation-type: tm+mt
-source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+exl-id: 087494fb-c8f0-457c-b3db-d9147a739998
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 0%
 
 ---
 
-
 # Apache Server 1.3.x i Linux, Sun Solaris, FreeBSD eller Mac OS X{#apache-server-x-on-linux-sun-solaris-freebsd-or-mac-os-x}
+
+{{eol}}
 
 Detaljerade anvisningar för installation och konfigurering av Sensor för en Apache Server 1.3.x i RedHat Linux 7.x eller senare, SUSE Linux 9.x eller senare, Sun Solaris SPARC 2.6 eller senare, Sun Solaris x86 9 eller senare, FreeBSD 4 eller senare eller Mac OS X PowerPC.
 
@@ -94,7 +95,7 @@ Som standard har programfilerna i tjärfilen följande behörigheter. Beroende p
 
 ## Redigera Sensor-konfigurationsfilen {#section-3f22a1c91d7d43b6b4c30f1b7448b17f}
 
-Filen innehåller [!DNL txlogd.conf] konfigurationsparametrarna för sensorn.
+The [!DNL txlogd.conf] filen innehåller konfigurationsparametrarna för sensorn.
 
 Du måste redigera filen för att bland annat ange storleken på diskkön, adressen till Insight Server och det ID som ska kopplas till data som produceras av den här sensorn.
 
@@ -138,7 +139,7 @@ Om du vill lägga till insamlaren på webbservern måste du redigera httpd.conf-
 
 Om sensorn hämtar data för flera webbservrar på serverdatorn måste du utföra följande procedur för varje webbserver.
 
-1. Använd en textredigerare och öppna filen för den webbserver vars händelser Sensor hämtar. [!DNL httpd.conf]
+1. Använd en textredigerare för att öppna [!DNL httpd.conf] för webbservern vars händelser Sensor fångar.
 1. Lägg till följande rader i slutet av filen:
 
    ```
@@ -172,9 +173,9 @@ Starta sändaren och verifiera att den kan ansluta till Insight Server och över
 1. Om sensorn inte kan överföra data kontrollerar du att:
 
    * Målservern för Insight körs.
-   * Parametrarna [!DNL ServerAddress] och [!DNL ServerPort] anges korrekt i [!DNL txtlogd.conf].
+   * The [!DNL ServerAddress] och [!DNL ServerPort] parametrar anges korrekt i [!DNL txtlogd.conf].
 
-   * Om du angav [!DNL ServerAddress] med ett servernamn kan du försöka använda den numeriska IP-adressen i stället. Värdet på [!DNL CertName] parametern matchar det vanliga namnet som visas i det digitala certifikatet för målservern Insight exakt.
+   * Om du angav [!DNL ServerAddress] med ett servernamn kan du försöka använda den numeriska IP-adressen i stället. Värdet för [!DNL CertName] parametern matchar det vanliga namnet som visas i det digitala certifikatet för målservern Insight exakt.
 
 ## Lägg till sändaren i systemstartskriptet {#section-4e1ffa6e043941ab91411d91d596477a}
 
@@ -198,4 +199,3 @@ Det här kommandot startar sändaren som ett daemon. Åtgärds- och felmeddeland
 >```
 >
 >Standardinställningen för Solaris är 60. Baserat på tester utförda med Sensor, som använder tre semaforer för varje instans, rekommenderar Adobe att du använder 1024 som inställning. Det här antalet är tillräckligt högt för att sensorn ska fungera tillsammans med andra program på servern som kan kräva semaforer, men som inte påverkar prestandan. Som stöd för denna rekommendation noterar ni att Adrian Cockcroft angav följande i sin bok Sun Performance and Tuning (Prentice Hall, oktober 1994): &quot;Databaser använder ofta många delade minnes- och semaforinställningar. Dessa påverkar inte prestanda. så länge de är tillräckligt stora kommer programmen att köras.&quot;
-

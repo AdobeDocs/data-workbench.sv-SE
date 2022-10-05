@@ -3,7 +3,7 @@ description: Textanteckningar är fönster där du kan ange godtycklig text för
 title: Textanteckningar
 uuid: 08dd7f57-ccab-430a-b2a3-469f86b86dd2
 exl-id: 6915b341-d7a0-4e17-a260-223c0cb26422
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 # Textanteckningar{#text-annotations}
 
+{{eol}}
+
 Textanteckningar är fönster där du kan ange godtycklig text för att lägga till beskrivande information eller kommentarer på en arbetsyta.
 
 Du flyttar eller ändrar textanteckningar på en arbetsyta på samma sätt som andra typer av visualiseringar. Du kan också formatera utseendet på texten samt namnge, redigera och spara alla textanteckningar som du lägger till på en arbetsyta. Textanteckningar kan också exporteras till Microsoft Excel och genereras och distribueras av [!DNL Report].
 
-Mer information om [!DNL Reports] finns i *Insight Report Guide*.
+Mer information om [!DNL Reports], se *Guide till insiktsrapport*.
 
-## Lägg till eller redigera text {#section-8ecc44e0eeb24c5990050102013c0aed}
+## Lägga till eller redigera text {#section-8ecc44e0eeb24c5990050102013c0aed}
 
 * Klicka i texten för att växla till redigeringsläge och börja skriva.
 
@@ -33,7 +35,7 @@ Mer information om [!DNL Reports] finns i *Insight Report Guide*.
 
 ![](assets/mnu_Text_Paragraph.png)
 
-## Använd formatering på markeringar {#section-4032ecbcc0064e5c96504c15b6f481bf}
+## Använda formatering på markeringar {#section-4032ecbcc0064e5c96504c15b6f481bf}
 
 1. Klicka och dra i texten för att markera texten som du vill formatera.
 1. Högerklicka på markeringen och klicka på **[!UICONTROL Change Selection Style]** > *&lt;**[!UICONTROL text style]**>*.
@@ -44,11 +46,11 @@ Mer information om [!DNL Reports] finns i *Insight Report Guide*.
 
 Det här alternativet styr om och hur texten i anteckningen figursätts runt visualiseringarna på arbetsytan.
 
-* Högerklicka i texten, klicka på **[!UICONTROL Options]** > **[!UICONTROL Word Wrap]** och klicka sedan på önskat alternativ:
+* Högerklicka i texten, klicka **[!UICONTROL Options]** > **[!UICONTROL Word Wrap]** och klicka sedan på önskat alternativ:
 
    * **Ingen:** Det här alternativet tar bort automatisk radbrytning från den här anteckningen.
    * **Båda sidor:** Med det här alternativet kan texten i anteckningen figursättas runt båda sidor om visualiseringar på arbetsytan.
-   * **Bästa sida:** Det här alternativet gör att texten i anteckningen endast kan figursättas runt en sida av visualiseringar på arbetsytan.
+   * **Bästa sida:** Med det här alternativet kan texten i anteckningen endast figursättas runt en sida av visualiseringar på arbetsytan.
 
 ![](assets/mnu_Text_OptionsWrap.png)
 
@@ -56,13 +58,13 @@ Det här alternativet styr om och hur texten i anteckningen figursätts runt vis
 
 Det här alternativet styr hur många kolumner texten i anteckningen ska visas i.
 
-* Högerklicka i texten, klicka på **[!UICONTROL Options]** > **[!UICONTROL Columns]** och klicka sedan på önskat alternativ:
+* Högerklicka i texten, klicka **[!UICONTROL Options]** > **[!UICONTROL Columns]** och klicka sedan på önskat alternativ:
 
-   * **Auto:** Det här alternativet väljer den kolumnlayout som passar bäst för textens bredd och längd.
+   * **Auto:** Med det här alternativet väljs den kolumnlayout som passar bäst för textens bredd och längd.
    * **1-4:** Med dessa alternativ kan du visa texten i en, två, tre eller fyra kolumner.
 
 ![](assets/mnu_Text_OptionsColumns.png)
 
 ## Exportera till Microsoft Excel {#section-b239057b822348849fd17a83c3a03c22}
 
-Mer information om att exportera fönster finns i [Exportera fönsterdata](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Mer information om att exportera fönster finns i [Exporterar fönsterdata](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

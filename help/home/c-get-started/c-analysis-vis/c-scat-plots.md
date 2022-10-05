@@ -3,7 +3,7 @@ description: Punktdiagram visar elementen i en datamängd (till exempel Sida ell
 title: 2D-punktdiagram
 uuid: 73c23d22-3c3a-4535-b66b-0e3508bd904c
 exl-id: 340f8c18-ce47-4f3a-aba4-3d6124505313
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # 2D-punktdiagram{#d-scatter-plots}
+
+{{eol}}
 
 Punktdiagram visar elementen i en datamängd (till exempel Sida eller Ort) i ett rutnät där x- och y-axlarna representerar olika mätvärden.
 
@@ -24,7 +26,7 @@ Punktdiagram kan också användas för att visa att data är konsekventa. I föl
 
 ![](assets/vis_ScatterPlot_SessionDuration.png)
 
-Storleken på varje punkt på punktytan bestäms av radiemätningen. Standardradiemått skiljer sig för varje Adobe-program. I [!DNL Site] baseras radiemått på sessioner som standard. Du kan ändra radiemått så att punkterna i dina punktdiagram representerar alla tillgängliga mätvärden. Anvisningar om hur du gör detta finns i [Ändra radiemätningar](../../../home/c-get-started/c-analysis-vis/c-scat-plots.md#section-fd80576d583c430cb469daf12e39aa2a) Punktens färg baseras på den färgförklaring som är öppen i arbetsytan. Mer information om färgteckenförklaringar finns i [Färgförklaringar](../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
+Storleken på varje punkt på punktytan bestäms av radiemätningen. Standardradiemått skiljer sig för varje Adobe-program. I [!DNL Site], baseras radiemätningen på sessioner som standard. Du kan ändra radiemått så att punkterna i dina punktdiagram representerar alla tillgängliga mätvärden. Anvisningar om hur du gör detta finns i [Ändra radiemätningar](../../../home/c-get-started/c-analysis-vis/c-scat-plots.md#section-fd80576d583c430cb469daf12e39aa2a) Punktens färg baseras på den färgförklaring som är öppen på arbetsytan. Mer information om färgteckenförklaringar finns i [Färgförklaringar](../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
 
 ## Markera punkter {#section-4b4d45f39b884d54bb7407b3b2f4ea50}
 
@@ -44,7 +46,7 @@ Storleken på varje punkt på punktytan bestäms av radiemätningen. Standardrad
 
 * Högerklicka på måttets etikett högst upp i diagrammet och klicka på **[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>*.
 
-## Ändra mått {#section-44b8be9215cd4039b1eeb98ae1b31445}
+## Ändra mätvärden {#section-44b8be9215cd4039b1eeb98ae1b31445}
 
 **Ändra måtten som visas på x- eller y-axeln i ett punktdiagram**
 

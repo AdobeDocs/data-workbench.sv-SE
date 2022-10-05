@@ -3,7 +3,7 @@ description: Du bör regelbundet övervaka tillgängligt diskutrymme så att all
 title: Övervaka diskutrymme (Insight Server)
 uuid: 13248e36-4e88-4212-816e-bcc12deefcb4
 exl-id: c2198edc-3961-4845-97cf-0ebe039f9a66
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Övervaka diskutrymme{#monitoring-disk-space}
+
+{{eol}}
 
 Du bör regelbundet övervaka tillgängligt diskutrymme så att alla Insight Server-datorer fortsätter att fungera på högsta möjliga nivå.
 

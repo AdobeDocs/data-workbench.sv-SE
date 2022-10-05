@@ -3,7 +3,7 @@ description: Kodexempel för rapportindexet.
 title: Exempelrapportindex
 uuid: 38711240-8434-4f8f-81da-6c223064613b
 exl-id: 33a038c0-c3d1-4458-a2dd-8ec5155396b5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '18'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Exempelrapportindex{#sample-report-index}
+
+{{eol}}
 
 Kodexempel för rapportindexet.
 

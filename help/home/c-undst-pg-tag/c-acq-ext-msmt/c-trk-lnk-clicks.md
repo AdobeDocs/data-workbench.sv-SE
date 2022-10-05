@@ -3,7 +3,7 @@ description: Steg som används för att underlätta samlingen av länkklick med 
 title: Spåra länkklick
 uuid: e4c492d2-9c90-4ed7-b997-6c50bdf98f93
 exl-id: 0cb743e6-5c6e-4f80-bc77-83d1e706c92b
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 # Spåra länkklick{#tracking-link-clicks}
 
+{{eol}}
+
 Steg som används för att underlätta samlingen av länkklick med hjälp av taggen för referenssidan.
 
-Genom att distribuera [!DNL Reference Page Tag] är det möjligt att samla in mätdata som betecknar de länkar (eller href-värden) som besökarna klickar på när de besöker vissa sidor. Vanligtvis innebär inte den här samlingen att ytterligare länkidentifierare implementeras på HTML-sidorna.
+Genom driftsättningen av [!DNL Reference Page Tag]är det möjligt att samla in mätdata som anger vilka länkar (eller href-värden) som besökarna klickar på när de besöker vissa sidor. Vanligtvis innebär inte den här samlingen att ytterligare länkidentifierare implementeras på HTML-sidorna.
 
-Gör så här för att underlätta samlingen av Länkklickningar med hjälp av [!DNL Reference Page Tag]:
+För att underlätta insamlingen av länkklick med [!DNL Reference Page Tag]utför du följande steg:
 
-1. Kopiera följande kod till den befintliga filen [!DNL zig.js]:
+1. Kopiera följande kod till den befintliga filen med namnet [!DNL zig.js]:
 
    ```
    //REFERENCE LINK AND FORM CLICK PAGE TAG
@@ -77,12 +79,12 @@ Gör så här för att underlätta samlingen av Länkklickningar med hjälp av [
    //END FORM CLICK CAPTURE PAGE TAG
    ```
 
-1. Skapa eller placera bildfilen med 1 x 1 pixel och namnet [!DNL zag2.gif] i en katalog som finns på webbservern.
-1. Ändra variabeln [!DNL lc.src] så att den refererar till rätt domän på webbplatsen från vilken [!DNL zag2.gif]filen refereras.
+1. Skapa eller montera en bildfil med namnet 1 x 1 pixel [!DNL zag2.gif] till en katalog som finns på webbservern.
+1. Ändra [!DNL lc.src] variabel som refererar till rätt domän på webbplatsen från vilken [!DNL zag2.gif]filen refereras.
 
-1. Kontrollera att rätt cachekontrollhuvuden har skapats för filerna [!DNL zag.gif] och [!DNL zig.js].
+1. Se till att rätt cachekontrollhuvuden har skapats för [!DNL zag.gif] och [!DNL zig.js] filer.
 
-1. I de HTML-filer som du vill samla in länkklickvärden från måste [!DNL Reference Page Tag Execution Call] ändras för att informera [!DNL Page Tag Execution Script] om att hämta länkklickningar för den . Om du vill göra det ändrar du variabelvärdet vlc till &quot;1&quot; enligt följande kodexempel:
+1. I de HTML-filer som du vill samla in länkklickvärden från finns [!DNL Reference Page Tag Execution Call] måste ändras för att informera [!DNL Page Tag Execution Script] om du vill hämta länkklick för den sidan. Om du vill göra det ändrar du variabelvärdet vlc till &quot;1&quot; enligt följande kodexempel:
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG-->

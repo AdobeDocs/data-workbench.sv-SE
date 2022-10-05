@@ -3,7 +3,7 @@ description: Information om hur du kommer åt dina kontoinställningar och ändr
 title: Hantering av användarkonto
 uuid: 13fab0e2-e2db-442e-b139-e7b576d04dbb
 exl-id: b985a21b-6244-4e7d-86c2-14935c005335
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Hantering av användarkonto{#user-account-management}
+
+{{eol}}
 
 Information om hur du kommer åt dina kontoinställningar och ändrar ditt lösenord.
 
@@ -24,6 +26,6 @@ Ett fönster med information om ditt konto visas. Detta inkluderar ditt använda
 
 ![](assets/account_settings2.png)
 
-## Ändra lösenordet {#section-4ba1ee3d5d584455a1a77e992b7b876c}
+## Ändra ditt lösenord {#section-4ba1ee3d5d584455a1a77e992b7b876c}
 
-Om du vill ändra ditt lösenord måste du först få tillgång till din kontoinformation. Om du vill få åtkomst till din kontoinformation väljer du **[!UICONTROL Account Settings]** på **[!UICONTROL User]**-menyn. Klicka på **[!UICONTROL Change Password]**.
+Om du vill ändra ditt lösenord måste du först få tillgång till din kontoinformation. Om du vill komma åt din kontoinformation väljer du **[!UICONTROL Account Settings]** från **[!UICONTROL User]** -menyn. Klicka på **[!UICONTROL Change Password]**.

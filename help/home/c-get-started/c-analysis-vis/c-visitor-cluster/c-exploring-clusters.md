@@ -3,7 +3,7 @@ description: När du har skapat en Dimension för kluster kan du spara den och g
 title: Utforska kluster
 uuid: b0a07525-c586-466a-ac5e-7c7674cb58f8
 exl-id: d144f51c-8103-428d-801c-a12fb3ec5866
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Utforska kluster{#exploring-clusters}
+
+{{eol}}
 
 När du har skapat en Dimension för kluster kan du spara den och granska den med hjälp av Klusterutforskaren.
 

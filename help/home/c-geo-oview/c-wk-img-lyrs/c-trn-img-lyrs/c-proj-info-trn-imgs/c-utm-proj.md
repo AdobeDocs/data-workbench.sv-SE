@@ -3,7 +3,7 @@ description: UTM-projektionen (Universal Transverse Mercator) definieras av ått
 title: Universal Transverse Mercator Projection
 uuid: 55421412-5c68-4a4f-88d6-650d5999a77c
 exl-id: 7d7610c3-14e7-474e-b792-ad413c86a2ef
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -12,19 +12,21 @@ ht-degree: 0%
 
 # Universal Transverse Mercator Projection{#universal-transverse-mercator-projections}
 
+{{eol}}
+
 UTM-projektionen (Universal Transverse Mercator) definieras av åtta parametrar.
 
 När du anger en Universal Transverse Mercator-projektion för ett terrängbildslager måste dina terrängbildfiler justeras med false (projiceras) norrut mot bildens överkant och false österut till bildens högra del.
 
-Om du vill ange en UTM-projektion för en terrängbildskälla måste du öppna filen [!DNL Terrain Images.cfg] i en textredigerare som Anteckningar, ange parametern Projektionsinformation till TransverseMercatorProjection och lägga till inställningar för UTM-projektionen.
+Om du vill ange en UTM-projektion för en terrängbildskälla måste du öppna [!DNL Terrain Images.cfg] i en textredigerare som Anteckningar anger du parametern Projection Info till till TransverseMercatorProjection och lägger till inställningar för UTM-projektionen.
 
 **Ange en Universal Transverse Mercator-projektion**
 
-1. Klicka på **[!UICONTROL Components]** i [!DNL Server Files Manager] för att visa innehållet. Filen [!DNL Terrain Images.cfg] finns i den här katalogen.
+1. I [!DNL Server Files Manager], klicka **[!UICONTROL Components]** för att visa innehållet. The [!DNL Terrain Images.cfg] filen finns i den här katalogen.
 
-1. Högerklicka på bockmarkeringen i kolumnen *servernamn* för [!DNL Terrain Images.cfg] och klicka sedan på **[!UICONTROL Make Local]**. En bock visas i kolumnen [!DNL Temp] för [!DNL Terrain Images.cfg].
+1. Högerklicka på bockmarkeringen i dialogrutan *servernamn* kolumn för [!DNL Terrain Images.cfg]och sedan klicka **[!UICONTROL Make Local]**. En bock visas i [!DNL Temp] kolumn för [!DNL Terrain Images.cfg].
 
-1. Högerklicka på den nya bockmarkeringen i kolumnen [!DNL Temp] och klicka på **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Filen [!DNL Terrain Images.cfg]visas i ett fönster med anteckningar.
+1. Högerklicka på den nya bockmarkeringen i dialogrutan [!DNL Temp] kolumn och klicka **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. The [!DNL Terrain Images.cfg]-filen visas i ett Anteckningsfönster.
 
 1. Redigera parametrarna för projektionsinformation med följande exempelfilfragment och parametertabell som stödlinjer. Var noga med att specificera projektionstypen så som den markeras nedan.
 

@@ -3,7 +3,7 @@ description: Mätvärdena kan redigeras med Metrisk redigerare och sparas i kata
 title: Syntax för metriska uttryck
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Syntax för metriska uttryck{#syntax-for-metric-expressions}
+
+{{eol}}
 
 Mätvärdena kan redigeras med Metrisk redigerare och sparas i katalogen Metrics för en profil.
 
@@ -21,7 +23,7 @@ Anteckningar:
 1. Understrukna ord ska anges bokstavligen i uttryckstexten.
 1. Formuläret `{TEXT}?` representerar valfri text.
 1. Formuläret `{TEXT}*` representerar text som kan förekomma noll eller flera gånger.
-1. Formuläret `{A | B | C |...}` representerar text som består av exakt ett av de angivna alternativen, till exempel A eller B eller C...
+1. Formuläret `{A | B | C |...}` representerar text som består av exakt ett av de angivna alternativen, t.ex. A eller B eller C...
 1. Formuläret `[A,B)` representerar ett nummerintervall, från A till men inte B.
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
@@ -56,7 +58,7 @@ Anteckningar:
   </tr> 
   <tr> 
    <td colname="col1"> <p>konfidensgrad (mått) </p> </td> 
-   <td colname="col2"> <p>En uppskattning av standardavvikelsen för mätvärdet. Detta beräknas med hjälp av en provtagningsmetod som kallas schakknivning. </p> <p>Detta mått är minneskrävande och bör inte användas i stora tabeller. </p> <p>Om du vill använda den här syntaxen måste du ha en knivdimension (kallad"kniv") med lämpliga egenskaper. Mer information får du av Adobe Consulting Services. </p> <p>Exempel: trust(Average_Score) </p> <p> <p>Obs!  Typerna av konfidensmått, inklusive konfidensmått (mått) och konfidensintervall (mått, omfångsnivå), är särskilt användbara när du använder Adobe:s kontrollerade experimenteringsfunktioner. Om ett mätvärde hoppar från 12 % till 16 % under ett kontrollerat experiment kan du använda en självsäker pratbubbla för att beräkna sannolikheten för att hoppet berodde på slumpmässiga variationer. Detta kan hjälpa er att undvika att dra fel slutsatser av begränsade bevis och å andra sidan försäkra er om att en tvivelaktig förändring faktiskt är verklig. </p> </p> </td> 
+   <td colname="col2"> <p>En uppskattning av standardavvikelsen för mätvärdet. Detta beräknas med hjälp av en provtagningsmetod som kallas schakknivning. </p> <p>Detta mått är minneskrävande och bör inte användas i stora tabeller. </p> <p>Om du vill använda den här syntaxen måste du ha en knivdimension (kallad"kniv") med lämpliga egenskaper. Mer information får du av Adobe Consulting Services. </p> <p>Exempel: trust(Average_Score) </p> <p> <p>Obs! Typerna av konfidensmått, inklusive konfidensmått (mått) och konfidensintervall (mått, omfångsnivå), är särskilt användbara när du använder Adobe:s kontrollerade experimenteringsfunktioner. Om ett mätvärde hoppar från 12 % till 16 % under ett kontrollerat experiment kan du använda en självsäker pratbubbla för att beräkna sannolikheten för att hoppet berodde på slumpmässiga variationer. Detta kan hjälpa er att undvika att dra fel slutsatser av begränsade bevis och å andra sidan försäkra er om att en tvivelaktig förändring faktiskt är verklig. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>konfidensnivå (mätinstrument, jackkniv) </p> </td> 

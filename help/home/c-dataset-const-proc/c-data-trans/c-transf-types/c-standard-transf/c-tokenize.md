@@ -3,7 +3,7 @@ description: Transformeringen Tokenize använder iterativt ett reguljärt uttryc
 title: Tokenize
 uuid: f8430e6c-ec14-4ba6-aeae-92c9f2520a63
 exl-id: c1f39b5b-4717-44f6-99c7-4e6a215f3542
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 1%
@@ -12,9 +12,11 @@ ht-degree: 1%
 
 # Tokenize{#tokenize}
 
+{{eol}}
+
 Transformeringen Tokenize använder iterativt ett reguljärt uttryck mot indatasträngen.
 
-Till skillnad från [!DNL RETransform] behöver [!DNL Tokenize] inte matcha hela strängen: det reguljära uttrycket som används för omformningen [!DNL Tokenize] kan matcha en delmängd av indata. När en matchning har hittats använder [!DNL Tokenize] det reguljära uttrycket igen, med början vid tecknet efter slutet av den sista matchningen.
+Till skillnad från [!DNL RETransform], [!DNL Tokenize] behöver inte matcha hela strängen: det reguljära uttryck som används för [!DNL Tokenize] kan matcha en delmängd av indata. När en matchning har hittats [!DNL Tokenize] använder det reguljära uttrycket igen, med början vid tecknet efter slutet av den sista matchningen.
 
 | Parameter | Beskrivning | Standard |
 |---|---|---|
@@ -26,7 +28,7 @@ Till skillnad från [!DNL RETransform] behöver [!DNL Tokenize] inte matcha hela
 | Uttryck | Det reguljära uttryck som används för matchning. |  |
 | Utdata | Namnen på utdatasträngarna. Du kan ha flera utdata för en given indatasträng. Antalet utdata måste motsvara antalet hämtade delmönster i det reguljära uttrycket. |  |
 
-I följande exempel använder omformningen [!DNL Tokenize] ett reguljärt uttryck för att hämta namnen på frågesträngarna (i cs-uri-query) och returnerar det hämtade delmönstret (frågenamnet) till x-pull-query-name.
+I följande exempel [!DNL Tokenize] I omformningen används ett reguljärt uttryck för att fånga namnen på frågesträngarna (i cs-uri-query) och skriva ut det hämtade delmönstret (frågenamnet) till x-pull-query-name.
 
 ![](assets/cfg_TransformationType_Tokenize.png)
 

@@ -3,7 +3,7 @@ description: En värdeförklaring visar definierade värdehändelser.
 title: Värdeförklaringar
 uuid: 7779f442-2f45-4bf8-a62a-585aaceaeb3a
 exl-id: b28ba604-93ef-4081-ae55-937fb537c068
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # Värdeförklaringar{#value-legends}
 
+{{eol}}
+
 En värdeförklaring visar definierade värdehändelser.
 
-Värdeförklaringen är bara konfigurerad i HBX- och [!DNL Site]-programmen, men kan konfigureras för andra program. Mer information får du av Adobe Consulting Services.
+Värdeförklaringen är bara konfigurerad i HBX och [!DNL Site] -program, men de kan konfigureras för andra program. Mer information får du av Adobe Consulting Services.
 
-I HBX och [!DNL Site] definieras en värdehändelse som en session som genererade ett affärsvärde. Händelsedataposterna som är kopplade till särskilda sidvyer (t.ex. en tacksida eller en avslutningssida för en order) kan till exempel representera värdehändelser för en affärsorganisation.
+I HBX och [!DNL Site]definieras en värdehändelse som en session som genererade ett affärsvärde. Händelsedataposterna som är kopplade till särskilda sidvyer (t.ex. en tacksida eller en avslutningssida för en order) kan till exempel representera värdehändelser för en affärsorganisation.
 
 Med värdehändelser kan du mäta och spåra mängden värde som genereras av webbplatsen. Du kan utvärdera affärsvärdet i dollar för varje evenemang och svara på frågor som:
 
@@ -35,7 +37,7 @@ I följande tabell visas de mått som relateras till värdehändelser.
 
 Du kan enkelt definiera allt som besökarna gör på webbplatsen som en värdefull händelse: publicera en kundtjänstförfrågan, fylla i en ansökan, visa en del av innehållet eller slutföra ett köp. Varje värdehändelse motsvarar en användare som öppnar en viss sida eller uppsättning sidor på webbplatsen och är kopplad till ett affärsvärde i dollar. Du kan till exempel anta att varje användare som når sidan&quot;Tack för att du köpt&quot; genererar en täckningsmarginal på i genomsnitt 20 USD. Du definierar en värdehändelse för den sidan som har värdet 20 USD.
 
-## Definiera händelser för nya värden {#section-2ea4d168336e4d2e98b22b636ed43853}
+## Definiera nya värdehändelser {#section-2ea4d168336e4d2e98b22b636ed43853}
 
 **Definiera en ny värdehändelse i HBX eller[!DNL Site]**
 
@@ -57,7 +59,7 @@ När du skapar en värdehändelse drar du webbsidor som representerar värde fr�
 
 1. Tilldela ett affärsvärde till varje session som händelsen inträffar för i värdesförklaringen:
 
-   1. Klicka i kolumnen [!DNL Value per Event] på cellen som motsvarar sidan som du har lagt till som en värdehändelse.
+   1. I [!DNL Value per Event] klickar du på cellen som motsvarar sidan som du har lagt till som en värdehändelse.
    1. Ange det dollarbelopp som ska tilldelas värdet för händelsen och tryck på Retur.
 
    ![](assets/lgd_ValueLegend_Value.png)
@@ -74,8 +76,8 @@ När du har definierat minst en värdehändelse blir värdesegmentsdimensionen t
 
 >[!NOTE]
 >
->Datan Workbench beräknar mätvärden för hela uppsättningen data som är tillgängliga för profilen som du använder. Som standard beräknar [!DNL Data Workbench Server] värden som Värde, Värdehändelser, Medelvärde och Konvertering för alla data i analysdatauppsättningen, även om data inte kommer från samma logiska källa.
+>Datan Workbench beräknar mätvärden för hela uppsättningen data som är tillgängliga för profilen som du använder. Som standard är [!DNL Data Workbench Server] beräknar värden som Värde, Värdehändelser, Genomsnittligt värde och Konvertering för alla data i analysdatauppsättningen, även om data inte kommer från samma logiska källa.
 
 ## Exportera till Microsoft Excel {#section-feaa7a8eb8124fafbc74169bebaed6d8}
 
-Mer information om att exportera fönster finns i [Exportera fönsterdata](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Mer information om att exportera fönster finns i [Exporterar fönsterdata](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

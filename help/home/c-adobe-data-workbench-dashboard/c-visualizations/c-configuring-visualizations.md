@@ -3,7 +3,7 @@ description: Visar hur du konfigurerar rubrik, profil, Dimension, mått, filter,
 title: Konfigurera visualiseringar
 uuid: aca77188-8f28-4554-8913-412b252f688c
 exl-id: 153adf94-5689-4917-9d71-625caef49903
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Konfigurera visualiseringar{#configuring-visualizations}
+
+{{eol}}
 
 Visar hur du konfigurerar rubrik, profil, Dimension, mått, filter, Visa överkant, Sortera efter och Tidsperiod.
 
@@ -22,7 +24,7 @@ Varje visualisering på kontrollpanelens arbetsyta har en egen konfiguration. N�
 
 ## Visualiseringstitel {#section-0414844283d745ae912e85f8ea14a51d}
 
-I det här fältet kan du anpassa den titel som visas högst upp i visualiseringen. Som standard är rubriken inställd på **[!UICONTROL Automatic Title]**, vilket automatiskt genererar en titel för visualiseringsfönstret. Genom att rensa knappen **[!UICONTROL Automatic Title]** kan du placera valfri titel i det här fältet. (Det här fältet gäller för alla visualiseringar.)
+I det här fältet kan du anpassa den titel som visas högst upp i visualiseringen. Som standard är rubriken inställd på **[!UICONTROL Automatic Title]**, som automatiskt genererar en titel för visualiseringsfönstret. Genom att rensa **[!UICONTROL Automatic Title]** kan du placera valfri titel i det här fältet. (Det här fältet gäller för alla visualiseringar.)
 
 ![](assets/title.png)
 
@@ -64,7 +66,7 @@ Klicka på önskade mätvärden och klicka sedan på **[!UICONTROL Select]**. (D
 
 ## Filter {#section-f8619ae2f8e54735a2c1b0fbb8bb1281}
 
-Välj de filter som du vill använda för visualiseringen. I filterurvalsfönstret kan du välja flera filter från filterlistan. Listan fylls i från listan med tillgängliga filter från den profil som valts i fältet Profil. Klicka på önskat filter och sedan på **[!UICONTROL Select]**.
+Välj de filter som du vill använda för visualiseringen. I filterurvalsfönstret kan du välja flera filter från filterlistan. Listan fylls i från listan med tillgängliga filter från den profil som valts i fältet Profil. Klicka på önskat filter och klicka sedan på **[!UICONTROL Select]**.
 
 >[!NOTE]
 >
@@ -94,9 +96,9 @@ På så sätt kan du ange hur data ska sorteras när de visas inom visualisering
 
 Med den här visualiseringen kan du ange önskat start- och/eller slutdatum för de data som ska visas i visualiseringen.
 
-Om du väljer **[!UICONTROL All Dates]**visas hela datumintervallet som är tillgängligt i profilen.
+Markera **[!UICONTROL All Dates]**visar hela det tillgängliga datumintervallet i profilen.
 
-Om du väljer **[!UICONTROL Range]** visas endast de data som ligger inom ett angivet intervall. Om du vill ange datumintervallet kan du skriva in start- och/eller slutdatumet eller använda en kalenderinmatning genom att välja kalenderikonen.
+Markera **[!UICONTROL Range]** visar bara de data som ligger inom ett angivet intervall. Om du vill ange datumintervallet kan du skriva in start- och/eller slutdatumet eller använda en kalenderinmatning genom att välja kalenderikonen.
 
 (Det här fältet gäller inte för Rich Text-visualiseringar.)
 

@@ -3,7 +3,7 @@ description: Kontrollpanelen kräver flera ytterligare Microsoft-komponenter fö
 title: Hämta nödvändiga och valfria komponenter
 uuid: 1feed776-56a6-4ffb-8b17-274f89037cfa
 exl-id: 58130da5-04c4-4e33-b7df-27b10bc9216a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Hämta nödvändiga och valfria komponenter{#download-required-and-optional-components}
+
+{{eol}}
 
 Kontrollpanelen kräver flera ytterligare Microsoft-komponenter för att fungera.
 

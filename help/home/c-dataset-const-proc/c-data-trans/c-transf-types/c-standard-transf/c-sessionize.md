@@ -3,7 +3,7 @@ description: Om du arbetar med data som samlats in från webbplatstrafiken kan d
 title: Skändis
 uuid: c6e2487a-80e5-4e00-b4d4-2ce013fac3ea
 exl-id: bb25cb4b-7185-4524-8ff5-740b672e1cd9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 0%
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 # Skändis{#sessionize}
 
+{{eol}}
+
 Om du arbetar med data som samlats in från webbplatstrafiken kan du använda Sessionsomvandling för att avgöra hur sessioner definieras.
 
 Omvandlingen tar som indata en tidsstämpel och ett spårnings-ID och skickar ett sessionsnummer för varje loggpost. Sessionsnumret är &quot;1&quot; för den första sessionen med ett visst spårnings-ID, &quot;2&quot; för den andra sessionen med samma spårnings-ID osv. Utdata kan användas direkt som en sessionsnyckel eftersom den har ett unikt värde för varje session.
 
 >[!NOTE]
 >
->För att [!DNL Sessionize]-omformningen ska fungera måste data sorteras i tid och grupperas med spårnings-ID:t i källdata. Därför fungerar [!DNL Sessionize] bara när den definieras i filen [!DNL Transformation.cfg] eller i en [!DNL Transformation Dataset Include]-fil.
+>För att arbeta [!DNL Sessionize] för omformning krävs att data ordnas i tid och grupperas med spårnings-ID:t i källdata. Därför [!DNL Sessionize] fungerar bara när det definieras i [!DNL Transformation.cfg] eller i en [!DNL Transformation Dataset Include] -fil.
 
 <table id="table_34984DF9340149C0A5016F08EABAD158"> 
  <thead> 
@@ -56,7 +58,7 @@ Omvandlingen tar som indata en tidsstämpel och ett spårnings-ID och skickar et
   </tr> 
   <tr> 
    <td colname="col1"> <p>Maximal sessionstid </p> </td> 
-   <td colname="col2">Den längsta sessionstiden innan en ny session startas. (Detta håller webbsidor med automatiskt innehåll uppdaterat från att skapa sessioner som är godtyckligt långa.) Om tidsgränsvillkoret <span class="wintitle"></span> är uppfyllt och referenten för ett klick är inställd på en av posterna i parametern Intern domän, används Maximal sessionstid för att definiera slutet av en session. Ingen session får vara längre än den angivna maximala sessionslängden, oavsett hur många klick den innehåller. Rekommenderat värde är 48 timmar. Mer information om parametrarna Maximal sessionsvaraktighet och Interna domäner finns i <a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> Konfigurationsinställningar för webbdata</a>. </td> 
+   <td colname="col2">Den längsta sessionstiden innan en ny session startas. (Detta håller webbsidor med automatiskt innehåll uppdaterat från att skapa sessioner som är godtyckligt långa.) Om <span class="wintitle"> Timeout-villkor</span> är nöjd och referenten för ett klick är inställd på en av posterna i parametern Intern domän. Maximal sessionstid används för att definiera slutet av en session. Ingen session får vara längre än den angivna maximala sessionslängden, oavsett hur många klick den innehåller. Rekommenderat värde är 48 timmar. Mer information om parametrarna Maximal sessionsvaraktighet och Interna domäner finns i <a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> Konfigurationsinställningar för webbdata</a>. </td> 
    <td colname="col3"> 48 timmar </td> 
   </tr> 
   <tr> 
@@ -85,10 +87,10 @@ En ny session börjar när någon av följande situationer inträffar:
 
 >[!NOTE]
 >
->Om du redan har definierat Maximal sessionstid och Timeout för session som parametrar i [!DNL Session Parameters.cfg]-filen ska du inte ange värden för dem i konfigurationen. Du kan referera till parametrarna genom att skriva *$(parameternamn)* enligt följande exempel. Mer information om de här parametrarna finns i [Konfigurationsinställningar för webbdata](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
+>Om du redan har definierat Maximal sessionstid och Sessionstimeout som parametrar i [!DNL Session Parameters.cfg] ska du inte ange värden för dem i konfigurationen. Du kan referera till parametrarna genom att skriva *$(parameternamn)* som i följande exempel. Mer information om de här parametrarna finns i [Konfigurationsinställningar för webbdata](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
 
-Omvandlingen [!DNL Sessionize] i det här exemplet tar x-timestamp- och x-trackingid-fälten som indata och registrerar sessionsnumret för varje loggpost i x-session-nyckelfältet. Omvandlingens [!DNL Timeout Condition] är baserad på ett [!DNL Neither]-villkor: Om fältet cs(reference-domain) för en loggpost matchar en medlem i parametern Internal Domains utvärderas villkoret till false. Observera referenserna till parametrarna Interna domäner och Tidsgräns för session.
+The [!DNL Sessionize] omformningen i det här exemplet tar x-timestamp- och x-trackingid-fälten som indata och registrerar sessionsnumret för varje loggpost i x-session-nyckelfältet. Omvandlingen [!DNL Timeout Condition] baseras på en [!DNL Neither] villkor: Om fältet cs(reference-domain) för en loggpost matchar en medlem i parametern Internal Domains utvärderas villkoret till false. Observera referenserna till parametrarna Interna domäner och Tidsgräns för session.
 
-Mer information om [!DNL NeitherCondition] finns i [Villkor](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md). Mer information om parametrarna för interna domäner och timeout för sessioner finns i [Konfigurationsinställningar för webbdata](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
+Mer information om [!DNL NeitherCondition], se [Villkor](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md). Mer information om parametrarna för interna domäner och timeout för sessioner finns i [Konfigurationsinställningar för webbdata](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
 
 ![](assets/cfg_TransformationType_Sessionize.png)

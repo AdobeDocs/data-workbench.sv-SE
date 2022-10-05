@@ -3,7 +3,7 @@ description: Sensorn hämtar alla mätdata som finns på sidförfrågningar (GET
 title: Hämtar data för sidbegäran
 uuid: 06cf2b14-8d2c-483e-8a75-ce772798978f
 exl-id: e42566a3-d5b4-4f1a-b8cd-1ea646041101
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 1%
@@ -12,15 +12,17 @@ ht-degree: 1%
 
 # Hämtar data för sidbegäran{#acquiring-page-request-data}
 
+{{eol}}
+
 Sensorn hämtar alla mätdata som finns på sidförfrågningar (GET-förfrågningar) som görs till de webbservrar där den har installerats.
 
-[!DNL Sensor] hämtar mätdata via webbserverns programmeringsgränssnitt, direkt från instansen eller instanserna av webbserverprogrammet som körs på webbservern. [!DNL Sensor] har inte åtkomst till webbservergenererade loggfiler. När [!DNL Sensor] och data workbench-servern har installerats och testats kan webbserverns inbyggda loggningsfunktion inaktiveras utan att datainsamlingen påverkas. Om du inaktiverar loggning av filer till de lokala diskarna på själva webbserverdatorerna förbättras i många fall kapaciteten för sidbetjäning på dessa webbservrar eftersom det finns en ganska stor mängd fast disk-I/O som krävs för att logga informationen till den lokala disken på webbserverdatorn.
+[!DNL Sensor] hämtar mätdata via webbserverns programmeringsgränssnitt, direkt från instansen eller instanserna av webbserverprogrammet som körs på webbservern. [!DNL Sensor] har inte åtkomst till webbservergenererade loggfiler. Faktum är, efter [!DNL Sensor] och data workbench-servern har installerats och testats kan webbserverns inbyggda loggningsfunktion inaktiveras utan att datainsamlingen påverkas. Om du inaktiverar loggning av filer till de lokala diskarna på själva webbserverdatorerna förbättras i många fall kapaciteten för sidbetjäning på dessa webbservrar eftersom det finns en ganska stor mängd fast disk-I/O som krävs för att logga informationen till den lokala disken på webbserverdatorn.
 
-[!DNL Sensor] samlar in mätnings- och webbförfrågningsdata direkt från varje webbserverprocess och virtuell webbserverprocess (om tillämpligt) och skriver tillfälligt data till en köfil, en feltolerant minneskö med fast diskuppbackning, på webbserverdatorn. Tjänsten Sensor Transmitter (eller daemon beroende på plattform) hämtar data från köfilen och komprimerar och krypterar dem sedan innan de skickas till data workbench-servern för långtidslagring. Med [!DNL Sensor] samlas data bara in på webbserverdatorerna i köfilen om du har ett nätverk eller något annat problem som förhindrar att den skickas. Köfilen gör att det går att effektivt lagra timmar till dagar med webbförfrågningsdata för att skydda data om ett nätverks- eller systemfel inte tillåter att data överförs till Workbench-servern i realtid.
+[!DNL Sensor] samlar in mätnings- och webbförfrågningsdata direkt från varje webbserverprocess och virtuell webbserverprocess (om tillämpligt) och skriver tillfälligt data till en köfil, en feltolerant minneskö med fast diskuppbackning, på webbserverdatorn. Tjänsten Sensor Transmitter (eller daemon beroende på plattform) hämtar data från köfilen och komprimerar och krypterar dem sedan innan de skickas till data workbench-servern för långtidslagring. Med [!DNL Sensor], samlas data bara in på webbserverdatorerna i köfilen om du har ett nätverk eller något annat problem som förhindrar att den skickas. Köfilen gör att det går att effektivt lagra timmar till dagar med webbförfrågningsdata för att skydda data om ett nätverks- eller systemfel inte tillåter att data överförs till Workbench-servern i realtid.
 
 [!DNL Sensor] samlar in mätdata från varje fysisk och logisk webbserverprocess, filtrerar dem efter innehållstyp, komprimerar dem, krypterar dem och direktuppspelar dem till data workbench-servern.
 
-Följande tabell innehåller fält med logginformation som hämtas av [!DNL Sensor] för varje GET-begäran som inte filtreras ut baserat på konfigurationsfilen [!DNL Sensor’s]:
+Följande tabell innehåller fälten med logginformation som hämtas av [!DNL Sensor] för varje GET-begäran som inte filtreras bort baserat på [!DNL Sensor’s] konfigurationsfil:
 
 <table id="table_5F65474150EC41648B35D0B031FB9B15">
  <thead>
@@ -35,7 +37,7 @@ Följande tabell innehåller fält med logginformation som hämtas av [!DNL Sens
   <tr>
    <td colname="col1"> x-trackingid </td>
    <td colname="col2"> Spåra identifierare (unik besökare) </td>
-   <td colname="col3"> Identifieraren läste från en cookie som placerats i användarens webbläsare av <span class="wintitle"> sensor </span> på besökarens ursprungliga begäran </td>
+   <td colname="col3"> Identifieraren läser från en cookie som placerats i användarens webbläsare av <span class="wintitle"> Sensor </span> på besökarens ursprungliga begäran </td>
    <td colname="col4"> V1st=3C94007B4E01F9C2 </td>
   </tr>
   <tr>
@@ -60,7 +62,7 @@ Följande tabell innehåller fält med logginformation som hämtas av [!DNL Sens
    <td colname="col1"> cs-uri-dator </td>
    <td colname="col2"> URI-stam </td>
    <td colname="col3"> Stamdelen av URI:n som begärts av klienten </td>
-   <td colname="col4"> <span class="filepath"> pagedir/page.asp  </span> </td>
+   <td colname="col4"> <span class="filepath"> pagedir/page.asp </span> </td>
   </tr>
   <tr>
    <td colname="col1"> c-ip </td>
@@ -72,13 +74,13 @@ Följande tabell innehåller fält med logginformation som hämtas av [!DNL Sens
    <td colname="col1"> s-dns </td>
    <td colname="col2"> Serverdomännamn </td>
    <td colname="col3"> Domännamn för webbservern som bearbetar begäran </td>
-   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> www.domain.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(reference) </td>
    <td colname="col2"> Refererande URL </td>
    <td colname="col3"> Innehåll i HTTP-referensfältet som skickas av klienten </td>
-   <td colname="col4"> <span class="filepath"> https://www.referringsite.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> https://www.referringsite.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(user-agent) </td>

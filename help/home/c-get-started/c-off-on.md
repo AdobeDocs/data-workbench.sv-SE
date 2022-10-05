@@ -3,7 +3,7 @@ description: Information om hur du arbetar med Datan Workbench offline eller onl
 title: Arbeta offline och online
 uuid: 613699d4-6d06-4c3c-b0aa-620933ae4d67
 exl-id: 1c9e0f4f-3172-40d3-b751-ebe6f9f57f8a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Arbeta offline och online{#working-offline-and-online}
+
+{{eol}}
 
 Information om hur du arbetar med Datan Workbench offline eller online.
 
@@ -22,18 +24,18 @@ På grund av möjligheten att arbeta offline är Datan Workbench stor att hanter
 
 **Arbeta online eller offline**
 
-Klicka på inställningen **[!UICONTROL Connection]** i sidofältet och klicka på **[!UICONTROL Work Online]**.
+Klicka på **[!UICONTROL Connection]** ange och klicka **[!UICONTROL Work Online]**.
 
 ![](assets/sidebar_work_online.png)
 
 När du arbetar online ansluter Datan Workbench till Datan Workbench och synkroniserar informationen på datorn med profilen och dess datauppsättningsinformation som finns på Datan Workbench.
 
-Standardkonfigurationen för Data Workbench är att arbeta offline, men enligt beskrivningen i följande avsnitt kan varje användare ändra sin [!DNL Insight.cfg]-fil så att instansen av Data Workbench fungerar online som standard.
+Standardkonfigurationen för Data Workbench är att arbeta offline, men enligt beskrivningen i följande avsnitt kan varje användare ändra sin [!DNL Insight.cfg] -fil så att deras förekomst av Data Workbench fungerar online som standard.
 
 **Arbeta online som standard**
 
 1. Navigera till installationskatalogen för Insight.
-1. Öppna [!DNL Insight.cfg]-filen i en textredigerare.
+1. Öppna [!DNL Insight.cfg] i en textredigerare.
 1. Lägg till den markerade raden i filen enligt följande exempel:
 
 ```

@@ -3,7 +3,7 @@ description: Med Insight Server kan du definiera räkneliga, enkla, många-till-
 title: Typer av utökade Dimensioner
 uuid: 68f42903-0599-43f2-8b5b-da9e171d77b1
 exl-id: 13a52ece-b68b-45bc-ac2d-d68c91742c9d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Typer av utökade Dimensioner{#types-of-extended-dimensions}
+
+{{eol}}
 
 Med Insight Server kan du definiera räkneliga, enkla, många-till-många, numeriska, denorala och tidsmässiga dimensioner som ska ingå i datauppsättningen.
 
@@ -22,4 +24,4 @@ När Insight Server använder den överordnade dimensionen för att avgöra vilk
 
 >[!NOTE]
 >
->Om en loggpost inte uppfyller villkoren för en utökad dimension ersätter Insight Server tomma värden för alla fält i loggposten. Den faktiska loggposten finns fortfarande och den angivna åtgärden avgör om det tomma värdet för fältet [!DNL Input] används.
+>Om en loggpost inte uppfyller villkoren för en utökad dimension ersätter Insight Server tomma värden för alla fält i loggposten. Den faktiska loggposten finns fortfarande och den angivna åtgärden avgör om det tomma värdet för [!DNL Input] fältet används.

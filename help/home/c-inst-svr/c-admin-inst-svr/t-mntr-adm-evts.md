@@ -3,7 +3,7 @@ description: Du bör regelbundet övervaka dina händelseloggfiler för att spå
 title: Övervaka administrativa händelser (Insight Server)
 uuid: 92d71478-0857-4af8-909c-0cf800b081f4
 exl-id: e468a7d0-ed09-4367-88ce-b68964511e76
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Övervaka administrativa händelser{#monitoring-administrative-events}
+
+{{eol}}
 
 Du bör regelbundet övervaka dina händelseloggfiler för att spåra händelsemeddelanden i Insight Server, som loggas på `<YYYYMMDD>-event.txt` filer som finns som standard i mappen Events i installationskatalogen för Insight Server.
 

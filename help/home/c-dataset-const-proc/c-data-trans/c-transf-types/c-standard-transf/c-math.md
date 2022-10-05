@@ -3,7 +3,7 @@ description: Med matematisk omformning kan du använda aritmetiska åtgärder p�
 title: Matematik
 uuid: 9e1a5950-8fb2-48e9-b9a1-82c5165fba10
 exl-id: d8b9cacd-67d1-447c-94dd-7028aa371dfa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Matematik{#math}
+
+{{eol}}
 
 Med matematisk omformning kan du använda aritmetiska åtgärder på fält i loggposterna.
 
@@ -74,4 +76,4 @@ I det här exemplet, som använder fält med data som samlats in från webbplats
 
 ![](assets/cfg_TransformationType_Math.png)
 
-Mer information om villkoret [!DNL Not Empty] finns i [Villkor](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md).
+Mer information om [!DNL Not Empty] villkor, se [Villkor](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md).

@@ -3,14 +3,16 @@ description: Statistikpratbubblor mäter meningsfulla relationer för att identi
 title: Statistiska bildtexter
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
 exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 0%
 
 ---
 
-# Statistiska pratbubblor{#statistical-callouts}
+# Statistiska bildtexter{#statistical-callouts}
+
+{{eol}}
 
 Statistikpratbubblor mäter meningsfulla relationer för att identifiera dolda möjligheter och variabler av intresse, vilket ger mer avancerade datautvinningsfunktioner i målgruppsklustring och poängsättning av besökarrespons.
 
@@ -19,7 +21,7 @@ Statistiska hänvisningar utökar algoritmerna så att fler typer av data kan ko
 Så här lägger du till statistiska hänvisningar:
 
 1. Högerklicka på måttrubriken i en tabell.
-1. Välj **[!UICONTROL Statistics]** och markera eller avmarkera sedan bockmarkeringarna för varje obligatorisk inställning. Alla i Bildtext är markerade som standardinställning.
+1. Välj **[!UICONTROL Statistics]** och markera eller avmarkera sedan bockmarkeringarna för varje önskad inställning. Alla i Bildtext är markerade som standardinställning.
 
    ![](assets/statistical_callouts.png)
 

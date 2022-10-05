@@ -3,7 +3,7 @@ description: Om du vill övervaka implementeringen mer noggrant kan du övervaka
 title: Övervaka portar och program
 uuid: 63d92718-81df-49eb-adda-8b49bde57a9d
 exl-id: 418b2e5c-42ec-40f0-9cae-375194288143
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
@@ -12,16 +12,18 @@ ht-degree: 0%
 
 # Övervaka portar och program{#monitoring-ports-and-applications}
 
+{{eol}}
+
 Om du vill övervaka implementeringen mer noggrant kan du övervaka alla portar på serverdatorerna samt de programvaruprodukter som körs på var och en av dessa portar.
 
-**Rekommenderad frekvens:** var 5-10:e minut
+**Rekommenderad frekvens:** Var 5-10:e minut
 
 Med ett program eller skript kan du övervaka den TCP-port som varje program körs på (vanligtvis port 80 eller 443) för att se till att programmet är bundet till den porten. Om du vill göra det begär du en programstatussida från datorn som du vill övervaka.
 
 **Så här begär du statussidan för programmet**
 
 1. Ändra åtkomstkontrollerna på den dator som du vill övervaka så att övervakningsprogrammet eller skriptet kan komma åt datorn. Instruktioner finns i [Konfigurera åtkomstkontroll](../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md#concept-ac385e870dbe4b57a72bf7266b60f93d).
-1. Anslut till [!DNL https://IP Address/Status/], där IP-adressen är IP-adressen för datorn som du vill ta emot status för.
+1. Anslut till [!DNL https://IP Address/Status/], där IP-adressen är IP-adressen för datorn som du vill få status för.
 
    Exempel: [!DNL https://127.0.0.1/Status/]
 

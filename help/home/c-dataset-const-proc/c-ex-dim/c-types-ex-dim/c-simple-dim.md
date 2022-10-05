@@ -3,7 +3,7 @@ description: En enkel dimension har en 1:N-relation med dess överordnade räkni
 title: Enkla Dimensioner
 uuid: 3bca2354-02c4-4739-a7da-acccdb0efdfd
 exl-id: 2acad750-7c48-40f1-8130-ab056ac8bf0d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Enkla Dimensioner{#simple-dimensions}
+
+{{eol}}
 
 En enkel dimension har en 1:N-relation med dess överordnade räkningsbara dimension.
 
@@ -69,7 +71,7 @@ Enkla dimensioner definieras av följande parametrar:
       <li id="li_0FBE7F0B7B9744D994ECEDAA08F0045C"> FÖRSTA RADEN: Värdet för den första loggposten som är relaterad till det överordnade dimensionselementet används, även om indata är tomma. Om indata är ett vektorfält används den första raden i vektorn för den aktuella loggposten. Om värdet är tomt eller inte är ett tal, eller om den relevanta loggposten inte uppfyller dimensionens villkor, används inget värde. </li> 
       <li id="li_C17190BC699D4A099DC5326C07D1044D"> SENASTE NONBLANK: Det sista icke-tomma indatavärdet används, oavsett om det kommer från den sista loggposten eller inte. Om indata är ett vektorfält används den första raden i vektorn för den aktuella loggposten. </li> 
       <li id="li_00BAE86F12004C098F6A455908DB7062"> SISTA RADEN: Värdet för den sista loggposten som hör till det överordnade dimensionselementet används, även om indata är tomma. Om indata är ett vektorfält används den första raden i vektorn för den aktuella loggposten. Om värdet är tomt eller inte är ett tal, eller om den relevanta loggposten inte uppfyller dimensionens villkor, används inget värde. </li> 
-     </ul> </p> <p> <p>Obs!  Om åtgärden inte ger något värde eller ett tomt värde för en viss loggpost, kommer motsvarande element i den överordnade dimensionen att relatera till elementet "Inget" för den enkla dimensionen. </p> </p> <p> Du bör ange en åtgärd för att se till att dimensionen definieras som tänkt. </p> </td> 
+     </ul> </p> <p> <p>Obs! Om åtgärden inte ger något värde eller ett tomt värde för en viss loggpost, kommer motsvarande element i den överordnade dimensionen att relatera till elementet "Inget" för den enkla dimensionen. </p> </p> <p> Du bör ange en åtgärd för att se till att dimensionen definieras som tänkt. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -84,7 +86,7 @@ I det här exemplet illustreras definitionen av en enkel dimension med händelse
 
 Ta ett exempel på en omröstning om webbplatsbesökarnas favoritkakor Girl Scout. En webbsida hämtar den här rösten och returnerar den till webbservern i namnvärdespar som favoritcookie. Endast en röst per besökare räknas, men besökarna kan ändra sig och rösta igen om de vill. Det här är en 1:N-relation: en besökare kan ha många röster, men varje röst är endast kopplad till en besökare. Därför är dimensionens överordnade besökare (endast en röst per besökare) och operationen är LAST ROW (så att de kan ändra sig och rösta igen).
 
-Platshållare måste finnas för alla typer av cookies så att cookie-typer som inte får några röster visas i data workbench-skärmen. Därför har en inläsningsfil definierats som innehåller listan med cookie-typer som kan väljas. Den här filens innehåll, som har sparats i en fil med namnet [!DNL cookietypes.txt], ser ut ungefär så här:
+Platshållare måste finnas för alla typer av cookies så att cookie-typer som inte får några röster visas i data workbench-skärmen. Därför har en inläsningsfil definierats som innehåller listan med cookie-typer som kan väljas. Den här filens innehåll, sparat i en fil med namnet [!DNL cookietypes.txt], ser ut ungefär så här:
 
 Djurskatter
 

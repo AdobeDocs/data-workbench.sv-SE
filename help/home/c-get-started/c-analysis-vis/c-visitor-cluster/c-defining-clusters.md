@@ -3,7 +3,7 @@ description: Välj indatavariabler, antalet kluster och en målpopulation (om du
 title: Byggkluster
 uuid: f8462445-b7d2-48ae-aed7-2a3abc491cfb
 exl-id: 60bc75bf-2f89-455b-8be9-aa20bb837752
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%
@@ -12,29 +12,31 @@ ht-degree: 0%
 
 # Byggkluster{#building-clusters}
 
+{{eol}}
+
 Välj indatavariabler, antalet kluster och en målpopulation (om du vill) för att definiera kluster i datauppsättningen.
 
 **Byggkluster**
 
 1. Öppna **[!UICONTROL Cluster Builder]**.
 
-   Klicka på **Visualisering** > **Predictive Analytics** > **Klustring** > **Cluster Builder**.
+   Klicka **Visualisering** > **Prediktiv analys** > **Klustring** > **Cluster Builder**.
 
    ![](assets/cluster-builder-step1.png)
 
 1. Välj indatavariabler.
 
-   * Lägg till mätvärden i **[!UICONTROL Input Variables]**-listan genom att välja på **[!UICONTROL Metric]**-menyn i verktygsfältet.
+   * Lägg till mätvärden i **[!UICONTROL Input Variables]** genom att välja i **[!UICONTROL Metric]** i verktygsfältet.
 
       ![](assets/cluster_metric_select.png)
 
-   * Lägg till dimensionselement i **[!UICONTROL Input Variables]**-listan genom att dra dem från en Dimensions tabell.
+   * Lägg till dimensionselement i **[!UICONTROL Input Variables]** genom att dra dem från en Dimensions tabell.
 
-      Tryck på **[!UICONTROL Ctrl + Alt]** och dra de markerade dimensionselementen till listan **[!UICONTROL Input Variables]** eller till rutan **[!UICONTROL Element]** i verktygsfältet.
+      Tryck **[!UICONTROL Ctrl + Alt]** och dra markerade dimensionselement till **[!UICONTROL Input Variables]** eller till **[!UICONTROL Element]** i verktygsfältet.
 
       ![](assets/cluster_dim_select.png)
-   Som standard utförs klustring på hela datauppsättningen. Du kan se alla indatavariabler i den vänstra **[!UICONTROL Preprocessing]**-rutan.
-1. Använd menyn **[!UICONTROL Options]** för att välja önskat antal kluster.
+   Som standard utförs klustring på hela datauppsättningen. Du kan se alla indatavariabler till vänster **[!UICONTROL Preprocessing]** fönster.
+1. Använd **[!UICONTROL Options]** för att välja önskat antal kluster.
 
    ![](assets/build_cluster_2.png)
 
@@ -42,11 +44,11 @@ Välj indatavariabler, antalet kluster och en målpopulation (om du vill) för a
 
    ![](assets/build_cluster_3.png)
 
-   Börja med att definiera önskad delmängd med hjälp av markeringar på arbetsytan eller med **[!UICONTROL Filter Editor]**. När du har markerat önskad delmängd anger du målpopulationen på menyn **[!UICONTROL Options]**. Vi rekommenderar att du ger målgruppen ett ID-namn.
+   Börja med att definiera önskad delmängd med hjälp av markeringar på arbetsytan eller med hjälp av **[!UICONTROL Filter Editor]**. När du har markerat önskad delmängd anger du målpopulationen i dialogrutan **[!UICONTROL Options]** -menyn. Vi rekommenderar att du ger målgruppen ett ID-namn.
 
-   Menyn **[!UICONTROL Options]** innehåller även inställningar som styr det maximala antalet pass och det godtagbara tröskelvärdet för centreringskonvergens.
+   The **[!UICONTROL Options]** -menyn har även inställningar som styr det maximala antalet omgångar och det godtagbara tröskelvärdet för centrerad konvergens.
 
-1. När indata och alternativ har konfigurerats klickar du på knappen **Gå** för att köra klustringen lokalt eller på **[!UICONTROL Submit]** för att skicka aktiviteten till Predictive Analytics Server. Inskickat material till servern sparar den resulterande dimensionen i datauppsättningen när konverteringen är klar.
+1. När indata och alternativ har konfigurerats klickar du på **Gå** om du vill köra klustret lokalt eller trycka på **[!UICONTROL Submit]** för att skicka uppgiften till Predictive Analytics Server. Inskickat material till servern sparar den resulterande dimensionen i datauppsättningen när konverteringen är klar.
 
    När du kör lokalt ser du hur Klusterbyggaren rör sig genom fyra klustringssteg för canopy när den definierar intelligenta center baserat på indata.
 
@@ -72,10 +74,10 @@ Välj indatavariabler, antalet kluster och en målpopulation (om du vill) för a
 
    ![](assets/build_cluster_6.png)
 
-1. Om du vill använda den här klusterdimensionen i andra visualiseringar kan du **[!UICONTROL Save]** den lokalt eller **[!UICONTROL Submit]** den till servern.
+1. Om du vill använda den här klusterdimensionen i andra visualiseringar kan du **[!UICONTROL Save]** lokalt eller **[!UICONTROL Submit]** till servern.
 
 Om du vill köra konvergens igen eller se relevansen för indata kan Klusterbyggaren även läsa in befintliga klusterdimensioner.
 
 >[!TIP]
 >
->När **[!UICONTROL Reset]** är markerat kommer alla indatavariabler att frisläppas och en tom klusterbyggarvisualisering att utföras för att definiera nya kluster.
+>När du har valt **[!UICONTROL Reset]** kommer att släppa alla indatavariabler fullständigt och ge dig en tom klusterbyggarvisualisering för att definiera nya kluster.

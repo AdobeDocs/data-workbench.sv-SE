@@ -2,13 +2,17 @@
 description: Information om startkommandon för Sensor-sändare för UNIX och Windows.
 title: Kommandoradsalternativ för sensorsändare
 uuid: 8d077d76-a709-494e-a176-07ca3e761662
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: f4b27859-8fab-42cd-bad0-b32f87764668
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 0%
 
 ---
 
-
 # Kommandoradsalternativ för sensorsändare{#sensor-transmitter-command-line-options}
+
+{{eol}}
 
 Information om startkommandon för Sensor-sändare för UNIX och Windows.
 
@@ -42,4 +46,3 @@ Om du vill starta sensorn och registrera den som en tjänst i ett Windows-system
 ```
 txlog /regserver
 ```
-

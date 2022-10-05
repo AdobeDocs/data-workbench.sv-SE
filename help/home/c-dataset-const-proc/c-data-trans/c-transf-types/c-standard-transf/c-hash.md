@@ -3,7 +3,7 @@ description: Hash-omformningen skapar en nästan unik sträng som representerar 
 title: Hash
 uuid: 13bc14e6-75e2-4711-8f98-50fd18802be5
 exl-id: 6912a1d2-9ae8-42ba-94bd-a7a28cbdfae6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 1%
@@ -12,13 +12,15 @@ ht-degree: 1%
 
 # Hash{#hash}
 
+{{eol}}
+
 Hash-omformningen skapar en nästan unik sträng som representerar ett 64-bitars tal från indatavärdena.
 
 Den här omformningen ger samma hash-värde när samma indata anges.
 
 >[!NOTE]
 >
->Resultatvärdet är nästan unikt eftersom omformningen använder ett 64-bitars tal som utrymme för möjliga hash-värden. För en miljon unika indata i [!DNL hash]-omformningen finns det en risk att få ett duplicerat hash-värde på 1 av 38 000 000.
+>Resultatvärdet är nästan unikt eftersom omformningen använder ett 64-bitars tal som utrymme för möjliga hash-värden. För en miljon unika indata till [!DNL hash] -omformning finns det en chans på 38 000 000 att få ett duplicerat hash-värde.
 
 | Parameter | Beskrivning | Standard |
 |---|---|---|

@@ -2,23 +2,27 @@
 description: Nu kan du använda CSV-, TSV-, segmentexport- och segmentexport med Header med hjälp av FTP- och SFTP-protokoll för att exportera segmentfiler från klienten (arbetsstationen) till servern.
 title: Exportera ett segment med hjälp av S/FTP-leverans
 uuid: 4d654368-cbf7-4e7f-8ab9-82f4e0261ac6
-translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+exl-id: 0f1dc0a1-f376-47fb-887c-612a654ed0f0
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 0%
 
 ---
 
-
 # Exportera ett segment med hjälp av S/FTP-leverans{#export-a-segment-using-s-ftp-delivery}
+
+{{eol}}
 
 Nu kan du använda CSV-, TSV-, segmentexport- och segmentexport med Header med hjälp av FTP- och SFTP-protokoll för att exportera segmentfiler från klienten (arbetsstationen) till servern.
 
 **Konfigurera konfigurationsfiler för S/FTP-export**
 
-För att ställa in exportkonfigurationen lades två nya exportkonfigurationsfiler till för att ställa in en FTP- eller SFTP-anslutning, vilket gör att serverinformationen kan hämtas från *filen FTPServerInfo.cfg* och inloggningsuppgifterna hämtas från mappen *FTPUserCredentials* (motsvarande servernamnet som anges i kommandoargumenten).
+För att ställa in exportkonfigurationen lades två nya exportkonfigurationsfiler till för att ställa in en FTP- eller SFTP-anslutning så att serverinformationen kan hämtas från *FTPServerInfo.cfg* och inloggningsuppgifterna hämtas från *FTPUserCredentials* (motsvarar servernamnet som anges i kommandoargumenten).
 
-* Ange **filen FTPServerInfo.cfg** .
+* Ange **FTPServerInfo.cfg** -fil.
 
-   Ange FTP-serverinformationen och ange tillåtna anslutningsförsök från arbetsstationen. Redigera från arbetsstationen eller servern i **[!DNL FTPServerInfo.cfg]** filen [!DNL Server\Addresses\Export\].
+   Ange FTP-serverinformationen och ange tillåtna anslutningsförsök från arbetsstationen. Redigera från arbetsstationen eller servern på&#x200B; [!DNL Server\Addresses\Export\] **[!DNL FTPServerInfo.cfg]**-fil.
 
    ```
    FTP Servers = vector: 1 items 
@@ -32,9 +36,9 @@ För att ställa in exportkonfigurationen lades två nya exportkonfigurationsfil
        Server Name = string:
    ```
 
-* Ange **filen FTPUserCredentials.cfg** .
+* Ange **FTPUserCredentials.cfg** -fil.
 
-   Ange inloggningsuppgifter för att ansluta till servrar med hjälp av **[!DNL FTPUserCredentials.cfg]** filen [!DNL Server\Admin\Export\]. Den här filen innehåller de inloggningsuppgifter som krävs för att ansluta till servrar och kan bara redigeras från servern och inte från arbetsstationen (klienten).
+   Ange användarautentiseringsuppgifter för att ansluta till servrar med  [!DNL Server\Admin\Export\] **[!DNL FTPUserCredentials.cfg]**-fil. Den här filen innehåller de inloggningsuppgifter som krävs för att ansluta till servrar och kan bara redigeras från servern och inte från arbetsstationen (klienten).
 
    ```
    FTP User Credentials = vector: 1 items 
@@ -53,11 +57,12 @@ För att ställa in exportkonfigurationen lades två nya exportkonfigurationsfil
    >
    >Exempel på generering av SSH-nycklar med hjälp av nyckelord:
    >
-   >```
+   >
+   ```
    >ssh-keygen -t rsa -b 4096 -C "<label>"
    >```
 
-   Det finns sex parametrar i **filen FTPUserCredentials.cfg** som krävs för olika FTP- eller SFTP-överföringar.
+   Det finns sex parametrar i **FTPUserCredentials.cfg** fil som krävs för olika FTP- eller SFTP-överföringar.
 
    1. *Användarnamn*
    1. *Lösenord*
@@ -65,6 +70,7 @@ För att ställa in exportkonfigurationen lades två nya exportkonfigurationsfil
    1. *Sökväg till offentlig nyckel*
    1. *Sökväg till privat nyckel*
    1. *Lösenfras*
+
    <table id="table_4EB416DC770D4D1AA4FAD9676C0D680C"> 
     <thead> 
       <tr> 
@@ -92,15 +98,15 @@ För att ställa in exportkonfigurationen lades två nya exportkonfigurationsfil
 
 1. Öppna en exporttabell.
 
-   I arbetsstationen högerklickar du på en *detaljtabell* och väljer en av exporttyperna CSV, TSV, Segmentexport eller Segmentexport med huvud. Eller öppna filen från en kommandotolk och redigera den (se [!DNL .export] Konfigurera segment för export [](../../../home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md#task-8857f221fa66463990ec9b60db6db372)).
+   Högerklicka på en *Detaljtabell* och välj en av exporttyperna - CSV, TSV, Segmentexport eller Segmentexport med huvud. Eller öppna [!DNL .export] från en kommandotolk och redigera (se [Konfigurera segment för export](../../../home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md#task-8857f221fa66463990ec9b60db6db372)).
 
-1. I *kommandofältet* anger du att den ska peka på den körbara exportfilen:
+1. I *Kommando* anger du att den ska peka på den körbara exportfilen:
 
    ```
    ExportIntegration.exe
    ```
 
-1. Ange fälten *Kommandoargument* enligt nedan för det protokoll och den autentisering som krävs:
+1. Ange *Kommandoargument* fält enligt nedan för protokoll och autentisering som krävs:
 
    **FTP**
 
@@ -133,16 +139,16 @@ Alla kommandoargument är obligatoriska och måste anges som de visas.
 
 Om du vill implementera FTP- och SFTP-export med privata och offentliga nycklar placerar du konfigurationsfilerna i följande mappar:
 
-* Placera **FTPServerInfo.cfg** i [!DNL Server/Addresses/Export/] mappen.
-* Placera **FTPUserCredentials.cfg** i [!DNL Server/Admin/Export/] mappen.
+* Montera **FTPServerInfo.cfg** i [!DNL Server/Addresses/Export/] mapp.
+* Montera **FTPUserCredentials.cfg** i [!DNL Server/Admin/Export/] mapp.
 
-Det finns sex parametrar i **filen FTPServerInfo.cfg** :
+Sex parametrar ingår i **FTPServerInfo.cfg** fil:
 
 1. *Användarnamn*
 1. *Lösenord*
 1. *Servernamn*
 1. *Sökväg till offentlig nyckel*
-1. *Sökväg till privat nyckel —* Placera sökvägen till den privata nyckeln i konfigurationsfilen utan tillägget, till exempel:
+1. *Sökväg till privat nyckel —* Placera sökvägen för den privata nyckeln i konfigurationsfilen utan tillägget, till exempel:
 
 [!DNL Private Key Path = string: E:\\Server\\campaign\\campaignprivatekey]
 
@@ -160,4 +166,4 @@ Konfigurationsfilerna måste finnas på rätt plats.
 
 >[!NOTE]
 >
->De publika nycklarna måste peka på en **.pem** -fil och inte på en mapplats. Du kan skapa nycklar med hjälp av en SSH-nyckelgenereringsfunktion från program som Cygwin. (Putty genererar nycklar i ett .ppk-format som inte stöds.)
+>De publika nycklarna måste peka på en **.pem** och inte till en mapplats. Du kan skapa nycklar med hjälp av en SSH-nyckelgenereringsfunktion från program som Cygwin. (Putty genererar nycklar i ett .ppk-format som inte stöds.)

@@ -3,7 +3,7 @@ description: Formateringsinformation om elementets punktlagerfil.
 title: Filformat för elementpunktslager
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
 exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 1%
@@ -12,9 +12,11 @@ ht-degree: 1%
 
 # Filformat för elementpunktslager{#element-point-layer-file-format}
 
+{{eol}}
+
 Formateringsinformation om elementets punktlagerfil.
 
-Varje elementpunktslager [!DNL .layer] som refererar till en uppslagsfil måste formateras med följande mall:
+Varje elementpunktslager [!DNL .layer] fil som refererar till en uppslagsfil måste formateras med följande mall:
 
 ```
 Layer = ElementPointLayer:
@@ -57,11 +59,11 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Nyckelkolumn </td> 
-   <td colname="col2"> <p>Namnet på kolumnen i uppslagsfilen som innehåller data för den gemensamma nyckeln, vilket gör att data-workbench-servern kan integrera data i uppslagsfilen i datauppsättningen. Detta måste vara den första kolumnen i sökfilen. </p> <p>Varje rad i den här kolumnen är ett element i en dimension. Den här dimensionen måste definieras i filen <span class="filepath"> Transformation.cfg</span> eller en inkluderingsfil för en transformeringsdatamängd och anges i Dimension-parametern för den här filen. Mer information om transformeringskonfigurationsfiler finns i <i>Konfigurationshandboken för datauppsättningar</i>. </p> </td> 
+   <td colname="col2"> <p>Namnet på kolumnen i uppslagsfilen som innehåller data för den gemensamma nyckeln, vilket gör att data-workbench-servern kan integrera data i uppslagsfilen i datauppsättningen. Detta måste vara den första kolumnen i sökfilen. </p> <p>Varje rad i den här kolumnen är ett element i en dimension. Dimensionen måste definieras i <span class="filepath"> Transformation.cfg</span> -filen eller en transformeringsdatauppsättning innehåller en fil och anges i Dimension-parametern för den här filen. Mer information om omvandlingskonfigurationsfiler finns i <i>Konfigurationshandbok för datauppsättning</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimension </td> 
-   <td colname="col2">Namnet på dimensionen (definierad i en transformeringskonfigurationsfil) som innehåller element som motsvarar dataraderna i kolumnen <span class="wintitle"> Key</span>. </td> 
+   <td colname="col2">Namnet på dimensionen (definierad i en transformeringskonfigurationsfil) som innehåller element som motsvarar dataraderna i <span class="wintitle"> Nyckel</span> kolumn. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mått </td> 
@@ -73,7 +75,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Färg </td> 
-   <td colname="col2"> Valfritt. RGB-färgvektorn, som uttrycks som (röd, grön, blå). För varje färg i vektorn kan du ange ett värde mellan 0,0 och 1,0. (1.0, 0.0, 0.0) är till exempel ljusröd och (0.5, 0.5, 0.5) är grå. </td> 
+   <td colname="col2"> Valfritt. Färgvektorn RGB, som uttrycks som (röd, grön, blå). För varje färg i vektorn kan du ange ett värde mellan 0,0 och 1,0. (1.0, 0.0, 0.0) är till exempel ljusröd och (0.5, 0.5, 0.5) är grå. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Återgivningsläge </td> 
@@ -87,7 +89,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Filen [!DNL Zip Points.layer] har följande format:
+The [!DNL Zip Points.layer] filen har följande format:
 
 ```
 Layer = ElementPointLayer:

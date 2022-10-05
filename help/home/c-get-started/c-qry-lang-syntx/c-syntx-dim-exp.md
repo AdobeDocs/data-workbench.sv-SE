@@ -3,7 +3,7 @@ description: Dimension-uttryck används aldrig ensam, men kan användas var som 
 title: Syntax för dimensionsuttryck
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
 exl-id: 58609e31-8ad8-418b-9a9f-40462d6443f7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 0%
@@ -12,12 +12,14 @@ ht-degree: 0%
 
 # Syntax för dimensionsuttryck{#syntax-for-dimension-expressions}
 
+{{eol}}
+
 Dimension-uttryck används aldrig ensam, men kan användas var som helst där en dimension anropas i ett metrisk uttryck eller filteruttryck.
 
 1. Understrukna ord ska anges bokstavligen i uttryckstexten.
 1. Formuläret `{TEXT}?` representerar valfri text.
 1. Formuläret `{TEXT}*` representerar text som kan förekomma noll eller flera gånger.
-1. Formuläret `{A | B | C |...}` representerar text som består av exakt ett av de angivna alternativen, till exempel A eller B eller C...
+1. Formuläret `{A | B | C |...}` representerar text som består av exakt ett av de angivna alternativen, t.ex. A eller B eller C...
 1. Formuläret `[A,B)` representerar ett nummerintervall, från A till men inte B.
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
@@ -32,7 +34,7 @@ Dimension-uttryck används aldrig ensam, men kan användas var som helst där en
   </tr> 
   <tr> 
    <td colname="col1"> <p>Tona ned efter nivå </p> </td> 
-   <td colname="col2"> <p>Definierar en dimension som har samma element som dimensionen Dim, men som relaterar till andra dimensioner via dimensionsnivån. </p> <p>Ett element i den nya dimensionen avser samma nivåelement som samma element i Dim, och gäller de element i andra dimensioner som hör till någon av dessa nivåelement. </p> <p>Exempel: Sessioner[ (sida av besökare)="/hem" ] är antalet sessioner med besökare som besökt sidan "/home". </p> </td> 
+   <td colname="col2"> <p>Definierar en dimension som har samma element som dimensionen Dim, men som relaterar till andra dimensioner via dimensionsnivån. </p> <p>Ett element i den nya dimensionen avser samma nivåelement som samma element i Dim, och gäller de element i andra dimensioner som hör till någon av dessa nivåelement. </p> <p>Exempel: Sessioner[ (sida av besökare)="/hemsida" ] är antalet sessioner med besökare som besökt sidan "/hemsida". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>shift(Dim,Nivå,Grupp,N) </p> </td> 

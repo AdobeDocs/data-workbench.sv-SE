@@ -3,7 +3,7 @@ description: Webbläsare för sökvägar kan konfigureras för att fungera med v
 title: Konfigurera en sökvägsläsare
 uuid: 1ba3fb6e-b76f-428f-b6ec-077669c3b305
 exl-id: be6a68f7-e3e3-4207-a112-3a4fdd5c5f57
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 0%
@@ -12,16 +12,18 @@ ht-degree: 0%
 
 # Konfigurera en sökvägsläsare{#configure-a-path-browser}
 
+{{eol}}
+
 Webbläsare för sökvägar kan konfigureras för att fungera med valfri kombination av grunddimension, gruppdimension, nivådimension och mätvärden som passar ditt program och din datauppsättning.
 
-När du har konfigurerat en sökvägsläsare visas den med andra sökvägsläsare på menyn [!DNL Add Visualization].
+När du har konfigurerat en sökvägsläsare visas den med andra sökvägsläsare i [!DNL Add Visualization] -menyn.
 
-1. I [!DNL Profile Manager] klickar du på **[!UICONTROL Menu]** och sedan på **[!UICONTROL Add Visualization]** och **[!UICONTROL Path Browser]**.
+1. I [!DNL Profile Manager], klicka **[!UICONTROL Menu]** och sedan klicka **[!UICONTROL Add Visualization]** och **[!UICONTROL Path Browser]**.
 
-   Minst en [!DNL *.vw]-fil finns i katalogen Sökväg.
+   Minst en [!DNL *.vw] filen finns i katalogen Path Browser.
 
 1. Högerklicka på bockmarkeringen för den önskade filen och klicka på **[!UICONTROL Make Local]**.
-1. Högerklicka på bockmarkeringen för filen i kolumnen [!DNL User] och klicka på **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Högerklicka på bockmarkeringen för filen i dialogrutan [!DNL User] kolumn och klicka **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Redigera filens parametrar med följande exempelfil och tabell som stödlinjer:
 
    ```
@@ -69,12 +71,12 @@ När du har konfigurerat en sökvägsläsare visas den med andra sökvägsläsar
 >
 >Mer information om basdimension, gruppdimension, nivådimension och mått för en sökvägsläsare finns i [Sökvägsläsare](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b).
 
-1. I Anteckningar klickar du på **[!UICONTROL File]** > **[!UICONTROL Save As]** för att spara filen med ett nytt namn baserat på gruppdimensionen, det vill säga *gruppdimensionsnamn*.vw.
+1. I Anteckningar klickar du på **[!UICONTROL File]** > **[!UICONTROL Save As]** att spara filen med ett nytt namn som baseras på gruppdimensionen, det vill säga *Gruppdimensionsnamn*.vw.
 
    Se till att du sparar filen i katalogen Sökväg.
 
    >[!NOTE]
    >
-   >Om du vill vara säker på att sökvägsläsaren sparas som en [!DNL *.vw]-fil anger du Spara som typ till Alla filer i fönstret [!DNL Save As].
+   >Så här ser du till att din sökvägsläsare sparas som en [!DNL *.vw] -filen, i [!DNL Save As] anger du Spara som typ till Alla filer.
 
-1. (Valfritt) Om du vill göra ändringarna tillgängliga för alla användare av arbetsprofilen högerklickar du i [!DNL Profile Manager] på bockmarkeringen för filen i kolumnen [!DNL User] och klickar på **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. (Valfritt) Om du vill göra ändringarna tillgängliga för alla användare av arbetsprofilen går du till [!DNL Profile Manager]högerklickar du på bockmarkeringen för filen i dialogrutan [!DNL User] kolumn och klicka **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

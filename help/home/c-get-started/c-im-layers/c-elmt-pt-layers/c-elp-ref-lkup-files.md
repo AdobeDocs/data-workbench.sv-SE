@@ -1,18 +1,20 @@
 ---
-description: När du skapar ett elementpunktslager som refererar till en uppslagsfil för att få latitud- och longituddata, hämtas platsen för punkten genom att varje element och dess associerade latitud och longitud hämtas från uppslagsfilen.
+description: När du skapar ett elementpunktslager som refererar till en sökfil för att få latitud- och longituddata, hämtas platsen för punkten genom att varje element och dess associerade latitud och longitud hämtas från sökfilen.
 title: Definiera elementpunktslager som refererar till sökfiler
 uuid: 32c8de7a-4316-4f91-9810-7f584bc7fb0b
 exl-id: 2275fa8e-82fe-49e4-ab3e-91ec6ecb6233
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 0%
 
 ---
 
-# Definiera elementpunktslager som refererar till uppslagsfiler{#define-element-point-layers-referencing-lookup-files}
+# Definiera elementpunktslager som refererar till sökfiler{#define-element-point-layers-referencing-lookup-files}
 
-När du skapar ett elementpunktslager som refererar till en uppslagsfil för att få latitud- och longituddata, hämtas platsen för punkten genom att varje element och dess associerade latitud och longitud hämtas från uppslagsfilen.
+{{eol}}
+
+När du skapar ett elementpunktslager som refererar till en sökfil för att få latitud- och longituddata, hämtas platsen för punkten genom att varje element och dess associerade latitud och longitud hämtas från sökfilen.
 
 >[!NOTE]
 >
@@ -20,29 +22,29 @@ När du skapar ett elementpunktslager som refererar till en uppslagsfil för att
 
 Om du vill definiera ett elementpunktslager som refererar till en sökfil måste du skapa eller redan ha tillgång till följande:
 
-* **En** dimension som definieras i  [!DNL Transformation.cfg file] eller i en  [!DNL transformation dataset include] fil. Mer information om omvandlingskonfigurationsfiler finns i *Konfigurationshandboken för datauppsättningar*.
+* **En dimension** definieras i [!DNL Transformation.cfg file] eller en [!DNL transformation dataset include] -fil. Mer information om omvandlingskonfigurationsfiler finns i *Konfigurationshandbok för datauppsättning*.
 
-* **En uppslagsfil** som innehåller de data som används för att rita varje datapunkt. Den här filen måste innehålla minst tre kolumner med data för varje datapunkt: nyckeln, longituden och latituden. Mer information om det format som krävs för sökfilen finns i [Elementpunktslagerfilformat](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
+* **En sökfil** som innehåller de data som används för att rita varje datapunkt. Den här filen måste innehålla minst tre kolumner med data för varje datapunkt: nyckeln, longituden och latituden. Mer information om vilket format som krävs för sökfilen finns i [Filformat för elementpunktslager](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
 
-* **En** lagerfil som anger platsen för sökfilen och identifierar relaterade mått och mått samt kolumnnamnen nyckel, longitud och latitud i sökfilen. Mer information om vilket format som krävs för lagerfilen finns i [Elementpunktslagerfilformat](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
+* **En lagerfil** som anger platsen för sökfilen och identifierar relaterade mått och mått samt nyckel-, longitud- och latitudkolumnnamn i sökfilen. Mer information om vilket format lagerfilen ska ha finns i [Filformat för elementpunktslager](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
 
    >[!NOTE]
    >
-   >Filen [!DNL Zip Points.layer], som ingår i profilen [!DNL Geography], är ett elementpunktslager som identifierar filen [!DNL Zipcode.dim], filen [!DNL Sessions.metric], uppslagsfilen [!DNL Zip Points.txt] samt namnen på kolumnerna key, longitude, latitude och name i sökfilen.
+   >The [!DNL Zip Points.layer] fil, som tillhandahålls med [!DNL Geography] profil, är ett elementpunktslager som identifierar [!DNL Zipcode.dim] -filen, [!DNL Sessions.metric] -filen, [!DNL Zip Points.txt] sökfilen och namnen på kolumnerna key, longitud, latitude och name i sökfilen.
 
-## Filformatet {#section-0bc8c652c1bd40eb84078f2af71a5c06} för elementpunktssökning
+## Filformat för elementpunktssökning {#section-0bc8c652c1bd40eb84078f2af71a5c06}
 
 Sökfilen för elementpunktslagret måste innehålla minst följande tre kolumner:
 
-* **[!DNL Key]kolumn:** Den här kolumnen ska innehålla data för vanlig nyckel, vilket gör att sökservern kan ansluta data i sökfilen till data i datauppsättningen. Kolumnen [!DNL key] måste vara den första kolumnen i sökfilen. Varje rad i den här kolumnen identifierar ett element i dimensionen.
+* **[!DNL Key]kolumn:** Den här kolumnen bör innehålla data för en vanlig nyckel, vilket gör att sökservern kan ansluta data i sökfilen till data i datauppsättningen. The [!DNL key] -kolumnen måste vara den första kolumnen i sökfilen. Varje rad i den här kolumnen identifierar ett element i dimensionen.
 
-* **[!DNL Longitude]kolumn:** Den här kolumnen ska innehålla longitud för varje datapunkt i  [!DNL Key] kolumnen.
+* **[!DNL Longitude]kolumn:** Denna kolumn ska innehålla longituden för varje datapunkt i [!DNL Key] kolumn.
 
-* **[!DNL Latitude]kolumn:** Den här kolumnen ska innehålla latituden för varje datapunkt i  [!DNL Key] kolumnen.
+* **[!DNL Latitude]kolumn:** Den här kolumnen ska innehålla latituden för varje datapunkt i [!DNL Key] kolumn.
 
-* **[!DNL Name]kolumn (valfritt):** Om du vill ange ett namn som ska visas på kartan för varje datapunkt, kan du ta med en  [!DNL Name] kolumn i sökfilen.
+* **[!DNL Name]kolumn (valfritt):** Om du vill ange ett namn som ska visas på kartan för varje datapunkt kan du inkludera en [!DNL Name] -kolumnen i sökfilen.
 
-Varje rad i [!DNL Zip Points.txt]-sökfilen innehåller en ZIP-kod i den första kolumnen följt av longitud, latitud och associerat stadsnamn.
+Varje rad i [!DNL Zip Points.txt] Uppslagsfilen innehåller en ZIP-kod i den första kolumnen följt av longitud, latitud och associerat stadsnamn.
 
 ```
 tude, and associated city name.
@@ -52,9 +54,9 @@ ZIP_CODE LATITUDE LONGITUDE NAME
 ...
 ```
 
-## Elementpunktslagerfilformat {#section-52d7e92be8354d979af9e7a2210b76f2}
+## Lagerfilformat för elementpunkt {#section-52d7e92be8354d979af9e7a2210b76f2}
 
-Varje elementpunktslager [!DNL .layer] som refererar till en uppslagsfil måste formateras med följande mall:
+Varje elementpunktslager [!DNL .layer] fil som refererar till en uppslagsfil måste formateras med följande mall:
 
 ```
 Layer = ElementPointLayer:
@@ -97,11 +99,11 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Nyckelkolumn </td> 
-   <td colname="col2"> <p>Namnet på den kolumn i uppslagsfilen som innehåller data för den gemensamma nyckeln, vilket gör att Datan Workbench kan integrera data i uppslagsfilen i datauppsättningen. Detta måste vara den första kolumnen i sökfilen. </p> <p>Varje rad i den här kolumnen är ett element i en dimension. Den här dimensionen måste definieras i filen <span class="filepath"> Transformation.cfg</span> eller en <span class="wintitle">-transformeringsdatauppsättning som innehåller</span>-filen och anges i Dimension-parametern för den här filen. Mer information om transformeringskonfigurationsfiler finns i <i>Konfigurationshandboken för datauppsättningar</i>. </p> </td> 
+   <td colname="col2"> <p>Namnet på den kolumn i uppslagsfilen som innehåller data för den gemensamma nyckeln, vilket gör att Datan Workbench kan integrera data i uppslagsfilen i datauppsättningen. Detta måste vara den första kolumnen i sökfilen. </p> <p>Varje rad i den här kolumnen är ett element i en dimension. Dimensionen måste definieras i <span class="filepath"> Transformation.cfg</span> eller en <span class="wintitle"> inkluderar</span> och anges i Dimension-parametern för den här filen. Mer information om omvandlingskonfigurationsfiler finns i <i>Konfigurationshandbok för datauppsättning</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimension </td> 
-   <td colname="col2">Namnet på dimensionen (definierad i en transformeringskonfigurationsfil) som innehåller element som motsvarar dataraderna i kolumnen <span class="wintitle"> Key</span>. </td> 
+   <td colname="col2">Namnet på dimensionen (definierad i en transformeringskonfigurationsfil) som innehåller element som motsvarar dataraderna i <span class="wintitle"> Nyckel</span> kolumn. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mått </td> 
@@ -113,7 +115,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Färg </td> 
-   <td colname="col2"> Valfritt. RGB-färgvektorn, som uttrycks som (röd, grön, blå). För varje färg i vektorn kan du ange ett värde mellan 0,0 och 1,0. (1.0, 0.0, 0.0) är till exempel ljusröd och (0.5, 0.5, 0.5) är grå. </td> 
+   <td colname="col2"> Valfritt. Färgvektorn RGB, som uttrycks som (röd, grön, blå). För varje färg i vektorn kan du ange ett värde mellan 0,0 och 1,0. (1.0, 0.0, 0.0) är till exempel ljusröd och (0.5, 0.5, 0.5) är grå. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Återgivningsläge </td> 
@@ -127,7 +129,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Filen [!DNL Zip Points.layer] har följande format:
+The [!DNL Zip Points.layer] filen har följande format:
 
 ```
 Layer = ElementPointLayer:

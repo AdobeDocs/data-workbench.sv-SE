@@ -3,7 +3,7 @@ description: Nedan visas de mätvärden som ingår i den historiska övervakning
 title: Mätvärden i Datans Workbench historiska övervakningsprofil
 uuid: 47b874f7-8acb-4593-9ac9-5997d5279e52
 exl-id: 65f0f605-f128-45bb-8f6c-95284b2da740
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Mätvärden i Datans Workbench historiska övervakningsprofil{#metrics-in-the-data-workbench-historical-monitoring-profile}
+
+{{eol}}
 
 Nedan visas de mätvärden som ingår i den historiska övervakningsprofilen för data workbench och hur de härleds.
 
@@ -49,6 +51,6 @@ Nedan visas de mätvärden som ingår i den historiska övervakningsprofilen fö
 | **Utdatarader** | Summan av utdatarader för varje ping dividerat med Pings-måttet, multiplicerat med 100000. |
 | **Realtidsläge** | Antalet Pings där Bearbetningsläget är lika med &quot;realtid&quot;, dividerat med Pings-måttet, multiplicerat med 100. |
 | **Återbearbetningsläge** | 100 minus antalet Pings där Bearbetningsläge är lika med &quot;realtid&quot; dividerat med Pings-måttet, multiplicerat med 100. |
-| **Stängd** | Summan av Bearbetningsdimensionen som är installerad i profilen [Profilstatus](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64). |
+| **Stängd** | Summan av Bearbetningsdimensionen som har fasats in i insikten [Profilstatus](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64) profil. |
 | **Tillfällig DB** | Summan av det tillfälliga DB-utrymmet i procent för varje Ping, dividerat med Pings-måttet. |
 | **Omformning** | Summan av omformningsprocenten för varje Ping dividerat med Pings-måttet dividerat med 10. |

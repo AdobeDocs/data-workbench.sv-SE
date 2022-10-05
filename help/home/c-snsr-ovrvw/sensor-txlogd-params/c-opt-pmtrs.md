@@ -3,7 +3,7 @@ description: Information om valfria parametrar för filen txlogd.conf för senso
 title: Valfria parametrar
 uuid: 8515a571-93ce-49cd-9ded-c9273259d0ee
 exl-id: 5141f215-979c-4eb8-8c2c-94eef5815743
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Valfria parametrar{#optional-parameters}
+
+{{eol}}
 
 Information om valfria parametrar för filen txlogd.conf för sensorn.
 
@@ -32,7 +34,7 @@ Information om valfria parametrar för filen txlogd.conf för sensorn.
   </tr> 
   <tr> 
    <td colname="col1"> DebugLogPath </td> 
-   <td colname="col2"> <p>Ange bara den här parametern när du arbetar med Adobe konsulttjänster. </p> <p>Aktiverar felsökningsloggning för webbmodulen och sändaren. </p> <p>Du använder den här parametern när <span class="wintitle">-sensorn</span> inte fungerar som den ska. När den här parametern har angetts måste du skapa en tom fil på den angivna sökvägen och ge skrivrättigheter till den för alla användare. (i ett unikt skal på webbservern): 
+   <td colname="col2"> <p>Ange bara den här parametern när du arbetar med Adobe konsulttjänster. </p> <p>Aktiverar felsökningsloggning för webbmodulen och sändaren. </p> <p>Du använder den här parametern när <span class="wintitle"> Sensor</span> fungerar inte korrekt. När den här parametern har angetts måste du skapa en tom fil på den angivna sökvägen och ge skrivrättigheter till den för alla användare. (i ett unikt skal på webbservern): 
      <ul id="ul_7A067014A78048BF9D2F23DC66FF9E24"> 
       <li id="li_11C51EB9B9CC431585ECE9E8648F6122"><span class="filepath"> % cd /var/log</span> </li> 
       <li id="li_C56B2B5D49A543DBB258C5DE099B4AE5"><span class="filepath"> % touch vslog.txt</span> </li> 
@@ -66,11 +68,11 @@ Information om valfria parametrar för filen txlogd.conf för sensorn.
   </tr> 
   <tr> 
    <td colname="col1"> ExpCookieURL </td> 
-   <td colname="col2"> <p>Resurs som, när den begärs, genererar ett nytt spårnings-ID och användaren placeras i en experimentgrupp. </p> <p> <p>Obs!  Den här resursen behöver inte finnas fysiskt på webbservern. </p> </p> <p>Exempel: <span class="filepath"> ExpCookieURL /setcookie.htm</span> </p> </td> 
+   <td colname="col2"> <p>Resurs som, när den begärs, genererar ett nytt spårnings-ID och användaren placeras i en experimentgrupp. </p> <p> <p>Obs! Den här resursen behöver inte finnas fysiskt på webbservern. </p> </p> <p>Exempel: <span class="filepath"> ExpCookieURL /setcookie.htm</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ExpPartialMatch </td> 
-   <td colname="col2"> <p>Om du vill att dina kontrollerade experiment ska kunna mappa hela platsen eller en hel underkatalog till en annan plats anger du den här parametern till "on". Standardvärdet är "off". </p> <p>Exempel: <span class="filepath"> ExpPartialMatch av</span> </p> <p> <p>Obs!  Var mycket försiktig när du ställer in den här parametern på "on". </p> </p> </td> 
+   <td colname="col2"> <p>Om du vill att dina kontrollerade experiment ska kunna mappa hela platsen eller en hel underkatalog till en annan plats anger du den här parametern till "on". Standardvärdet är "off". </p> <p>Exempel: <span class="filepath"> ExpPartialMatch av</span> </p> <p> <p>Obs! Var mycket försiktig när du ställer in den här parametern på "on". </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> LogAllNewUsers </td> 
@@ -78,19 +80,19 @@ Information om valfria parametrar för filen txlogd.conf för sensorn.
   </tr> 
   <tr> 
    <td colname="col1"> MaxPageLoadTime </td> 
-   <td colname="col2"> <p>Den tid i sekunder som sändaren väntar på att skicka nästa grupp med paket. </p> <p>Standardvärdet är 15. </p> <p>Exempel: <span class="filepath"> MaxPageLoadTime 15</span> </p> <p> <p>Obs!  Ändra inte det här parametervärdet utan att först kontakta Adobe Consulting Services. </p> </p> </td> 
+   <td colname="col2"> <p>Den tid i sekunder som sändaren väntar på att skicka nästa grupp med paket. </p> <p>Standardvärdet är 15. </p> <p>Exempel: <span class="filepath"> MaxPageLoadTime 15</span> </p> <p> <p>Obs! Ändra inte det här parametervärdet utan att först kontakta Adobe Consulting Services. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> PrivacyID </td> 
-   <td colname="col2"> <p>Gör att du kan inaktivera besöksspårning, som kan användas för att följa avanmälningsprinciper. </p> <p>När det här alternativet är aktiverat loggar <span class="wintitle">-sensorn</span> inte något paket för någon besökare vars V1st-cookie är inställd på angivet PrivacyID. Eftersom ingen information har loggats för besökarna skickas ingen information om besökarna till <span class="keyword"> data workbench-servern</span> för behandling. </p> <p>Om du vill aktivera den här funktionen måste du utföra följande steg: 
+   <td colname="col2"> <p>Gör att du kan inaktivera besöksspårning, som kan användas för att följa avanmälningsprinciper. </p> <p>När det är aktiverat <span class="wintitle"> Sensor</span> loggar inte något "paket" för någon besökare vars V1st-cookie är inställd på angivet PrivacyID. Eftersom ingen information har loggats för besökarna skickas ingen information om besökarna till <span class="keyword"> data workbench-server</span> för bearbetning. </p> <p>Om du vill aktivera den här funktionen måste du utföra följande steg: 
      <ol id="ol_5D658C5E4AB14F419029E0FFC52F1310"> 
-      <li id="li_BF056439F92148169BF592731264C3CD"> PrivacyID måste definieras med värdet 0 (noll) i filen <span class="filepath"> txlogd.conf</span> för <span class="wintitle">-sensorn</span>. <p>Exempel: <span class="filepath"> PrivacyID 0</span> </p> </li> 
-      <li id="li_3E20F068C2F94512A92F284C80273B1C">Webbplatsägare måste skriva kod för att ange besökares (V1st) cookies så att cookie-ID-värdet matchar PrivacyID-värdet som definieras "<span class="filepath"> txlogd.conf</span>." </li> 
+      <li id="li_BF056439F92148169BF592731264C3CD"> PrivacyID måste definieras med värdet 0 (noll) i <span class="filepath"> txlogd.conf</span> filen för <span class="wintitle"> Sensor</span>. <p>Exempel: <span class="filepath"> PrivacyID 0</span> </p> </li> 
+      <li id="li_3E20F068C2F94512A92F284C80273B1C">Webbplatsägare måste skriva kod för att ställa in besökarens (V1st) cookies så att cookie-ID-värdet matchar PrivacyID-värdet som definierats "<span class="filepath"> txlogd.conf</span>." </li> 
      </ol> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SiteTest </td> 
-   <td colname="col2"> <p>Plats dit sändaren (txlogd) regelbundet skickar begäranden för att se om webbplatsen fungerar som den ska. </p> <p>Observera att platsen anges i följande format, inte som en URL-adress: </p> <p>http,<i>serveradress, port,/resurs</i> </p> <p>där <i>serverAddress</i> är servernamn eller IP-adress, är <i>port</i> serverns HTTP-lyssningsport och <i>resource</i> den specifika resurs som ska begäras (kan innehålla en frågesträng). </p> <p>Du kan ange flera SiteTest-rader. </p> <p>Exempel: <span class="filepath"> SiteTest http,localhost,80,/test.html</span> </p> <p> <p>Obs!  Endast http stöds för närvarande. </p> </p> </td> 
+   <td colname="col2"> <p>Plats dit sändaren (txlogd) regelbundet skickar begäranden för att se om webbplatsen fungerar som den ska. </p> <p>Observera att platsen anges i följande format, inte som en URL-adress: </p> <p>http,<i>serverAdress,port/resurs</i> </p> <p>där <i>serverAddress</i> är servernamn eller IP-adress, <i>port</i> är serverns HTTP-lyssningsport, och <i>resurs</i> är den specifika resurs som ska begäras (kan innehålla en frågesträng). </p> <p>Du kan ange flera SiteTest-rader. </p> <p>Exempel: <span class="filepath"> SiteTest http,localhost,80,/test.html</span> </p> <p> <p>Obs! Endast http stöds för närvarande. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> TrackingCookie </td> 
@@ -98,7 +100,7 @@ Information om valfria parametrar för filen txlogd.conf för sensorn.
   </tr> 
   <tr> 
    <td colname="col1"> VerifyCertName </td> 
-   <td colname="col2"> <p>Anger om servern ska valideras mot parametern CertName </p> <p>Standardvärdet är "on". </p> <p>Exempel: <span class="filepath"> VerifyCertName på</span> </p> </td> 
+   <td colname="col2"> <p>Anger om servern ska valideras mot parametern CertName </p> <p>Standardvärdet är "on". </p> <p>Exempel: <span class="filepath"> VerifyCertName on</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -113,15 +115,15 @@ Information om valfria parametrar för filen txlogd.conf för sensorn.
  <tbody> 
   <tr> 
    <td colname="col1"> IISCaptureBytesSent </td> 
-   <td colname="col2"> <p>Ange bara den här parametern när du arbetar med Adobe konsulttjänster. </p> <p>Anger IIS <span class="wintitle">-sensorn</span> som av två möjliga loggningskopplingar ska användas för att logga ett paket </p> <p>Använd den här parametern när IIS <span class="wintitle">-sensorn</span> inte loggar paket korrekt. Den här parametern skulle anges till "off" om standardloggningkroken inte fungerade korrekt. Standardvärdet är "on". </p> <p>Exempel: <span class="filepath"> IISCaptureBytesSent på</span> </p> </td> 
+   <td colname="col2"> <p>Ange bara den här parametern när du arbetar med Adobe konsulttjänster. </p> <p>Kontrollerar IIS <span class="wintitle"> Sensor</span> vilken av två möjliga loggningsmetoder som "krokar" ska användas för att logga ett paket </p> <p>Använd den här parametern när IIS <span class="wintitle"> Sensor</span> loggar inte paket korrekt. Den här parametern skulle anges till "off" om standardloggningkroken inte fungerade korrekt. Standardvärdet är "on". </p> <p>Exempel: <span class="filepath"> IISCaptureBytesSkickat den</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> IISUseAlternateHandler </td> 
-   <td colname="col2"> <p>Ange bara den här parametern när du arbetar med Adobe konsulttjänster. </p> <p>Anger <span class="wintitle">-sensorn</span> vilken av två möjliga "krokar" som ska användas för att ställa in v1st-cookien. </p> <p>Du använder den här parametern när IIS <span class="wintitle">-sensorn</span> inte ställer in v1st-cookien korrekt. Den här parametern ställs in på "yes" om standardkroken inte ställer in v1st-cookien korrekt. Standardvärdet är "no". </p> <p>Exempel: <span class="filepath"> IISUseAlternateHandler no</span> </p> </td> 
+   <td colname="col2"> <p>Ange bara den här parametern när du arbetar med Adobe konsulttjänster. </p> <p>Tells the <span class="wintitle"> Sensor</span> vilken av två möjliga "krokar" som ska användas för att ställa in v1st-cookien. </p> <p>Du använder den här parametern när IIS <span class="wintitle"> Sensor</span> ställer inte in v1st-cookien korrekt. Den här parametern ställs in på "yes" om standardkroken inte ställer in v1st-cookien korrekt. Standardvärdet är "no". </p> <p>Exempel: <span class="filepath"> IISUseAlternateHandler no</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>NewUserCacheControl </p> <p>CacheControl </p> </td> 
-   <td colname="col2"> <p>Som standard skickar <span class="wintitle"> Sensor</span> svarsrubriker för cachekontroll vid varje begäran. När funktionen för cachekontroll är aktiverad <span class="wintitle"> Sensor</span> skickar en Expires-rubrik med värdet Thu, 16:00:00 GMT, 10 december 1994 till webbläsaren. </p> <p>Du kan ändra svarssträngarna efter behov genom att redigera följande två rader i filen <span class="filepath"> txlogd.conf</span>: </p> <p> <span class="filepath"> </span> <i>&lt;&gt; NewUserCacheControlstring1</span>&gt;</i><span class="filepath"> </span></p> <p> <span class="filepath"> </span> <i>&lt;&gt; CacheControlstring2</span>&gt;</i><span class="filepath"> </span></p> <p>Exempel: </p> <p> <span class="filepath"> NewUserCacheControl no-cache=Set-Cookie</span> </p> <p> <span class="filepath"> CacheControl private,max-age=0,must-revalidate</span> </p> <p>Om du vill inaktivera sändning av svarsrubriker för cachekontroll skriver du ett bindestreck för varje rad enligt nedan: </p> <p> <span class="filepath"> NewUserCacheControl -</span> </p> <p> <span class="filepath"> CacheControl -</span> </p> </td> 
+   <td colname="col2"> <p>Som standard <span class="wintitle"> Sensor</span> skickar svarsrubriker för cachekontroll vid varje begäran. När funktionen för cachekontroll är aktiverad <span class="wintitle"> Sensor</span> skickar en Expires-rubrik med värdet Thu, 16 dec 1994:00:00 GMT till webbläsaren. </p> <p>Du kan ändra svarssträngarna genom att redigera de två följande raderna i dialogrutan <span class="filepath"> txlogd.conf</span> fil: </p> <p> <span class="filepath"> NewUserCacheControl</span> <i>&lt;<span class="filepath"> string1</span>&gt;</i> </p> <p> <span class="filepath"> CacheControl</span> <i>&lt;<span class="filepath"> string2</span>&gt;</i> </p> <p>Exempel: </p> <p> <span class="filepath"> NewUserCacheControl no-cache=Set-Cookie</span> </p> <p> <span class="filepath"> CacheControl private,max-age=0,must-revalidate</span> </p> <p>Om du vill inaktivera sändning av svarsrubriker för cachekontroll skriver du ett bindestreck för varje rad enligt nedan: </p> <p> <span class="filepath"> NewUserCacheControl -</span> </p> <p> <span class="filepath"> CacheControl -</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -136,15 +138,15 @@ Information om valfria parametrar för filen txlogd.conf för sensorn.
  <tbody> 
   <tr> 
    <td colname="col1"> ApacheUseAlternateHandler </td> 
-   <td colname="col2"> <p>Ange bara den här parametern när du arbetar med Adobe konsulttjänster. </p> <p>Anger <span class="wintitle">-sensorn</span> vilken av två möjliga "krokar" som ska användas för att ställa in v1st-cookien. </p> <p>Du använder den här parametern när Apache <span class="wintitle">-sensorn</span> inte ställer in v1st-cookien korrekt. Den här parametern ställs in på "yes" om standardkroken inte ställer in v1st-cookien korrekt. Standardvärdet är "no". </p> <p>Exempel: <span class="filepath"> ApacheUseAlternateHandler no</span> </p> </td> 
+   <td colname="col2"> <p>Ange bara den här parametern när du arbetar med Adobe konsulttjänster. </p> <p>Tells the <span class="wintitle"> Sensor</span> vilken av två möjliga "krokar" som ska användas för att ställa in v1st-cookien. </p> <p>Du använder den här parametern när Apache <span class="wintitle"> Sensor</span> ställer inte in v1st-cookien korrekt. Den här parametern ställs in på "yes" om standardkroken inte ställer in v1st-cookien korrekt. Standardvärdet är "no". </p> <p>Exempel: <span class="filepath"> ApacheUseAlternateHandler no</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ApacheUsebothHandlers </td> 
-   <td colname="col2"> <p>Ange bara den här parametern när du arbetar med Adobe konsulttjänster. </p> <p>Instruerar <span class="wintitle">-sensorn</span> att försöka ställa in v1st-cookien i båda krokarna. </p> <p>Du använder den här parametern när Apache <span class="wintitle">-sensorn</span> inte ställer in v1st-cookien korrekt. Standardvärdet är"ja". </p> <p>Om värdet är ja och v1st-cookien inte är korrekt inställd i den första kroken används den andra kroken. Om värdet är "no" skulle du ställa in parametern ApacheUseAlternateHandler så att den anger vilken krok som ska användas för att ställa in v1st-cookien. </p> <p>Exempel: <span class="filepath"> ApacheUsebothHandlers yes</span> </p> </td> 
+   <td colname="col2"> <p>Ange bara den här parametern när du arbetar med Adobe konsulttjänster. </p> <p>Instruerar <span class="wintitle"> Sensor</span> för att försöka ställa in v1st-cookien i båda krokarna. </p> <p>Du använder den här parametern när Apache <span class="wintitle"> Sensor</span> ställer inte in v1st-cookien korrekt. Standardvärdet är"ja". </p> <p>Om värdet är ja och v1st-cookien inte är korrekt inställd i den första kroken används den andra kroken. Om värdet är "no" skulle du ställa in parametern ApacheUseAlternateHandler så att den anger vilken krok som ska användas för att ställa in v1st-cookien. </p> <p>Exempel: <span class="filepath"> ApacheUsebothHandlers - ja</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>NewUserCacheControl </p> <p>CacheControl </p> </td> 
-   <td colname="col2"> <p>Som standard skickar <span class="wintitle"> Sensor</span> svarsrubriker för cachekontroll vid varje begäran. När funktionen för cachekontroll är aktiverad <span class="wintitle"> Sensor</span> skickar en Expires-rubrik med värdet Thu, 16:00:00 GMT, 10 december 1994 till webbläsaren. </p> <p>Du kan ändra svarssträngarna efter behov genom att redigera följande två rader i filen <span class="filepath"> txlogd.conf</span>: </p> <p> <span class="filepath"> </span> <i>&lt;&gt; NewUserCacheControlstring1</span>&gt;</i><span class="filepath"> </span></p> <p> <span class="filepath"> </span> <i>&lt;&gt; CacheControlstring2</span>&gt;</i><span class="filepath"> </span></p> <p>Exempel: </p> <p> <span class="filepath"> NewUserCacheControl no-cache=Set-Cookie</span> </p> <p> <span class="filepath"> CacheControl private,max-age=0,must-revalidate</span> </p> <p>Om du vill inaktivera sändning av svarsrubriker för cachekontroll skriver du ett bindestreck för varje rad enligt nedan: </p> <p> <span class="filepath"> NewUserCacheControl -</span> </p> <p> <span class="filepath"> CacheControl -</span> </p> <p> <p>Obs!  Adobe rekommenderar att du inte inaktiverar den här funktionen. </p> </p> </td> 
+   <td colname="col2"> <p>Som standard <span class="wintitle"> Sensor</span> skickar svarsrubriker för cachekontroll vid varje begäran. När funktionen för cachekontroll är aktiverad <span class="wintitle"> Sensor</span> skickar en Expires-rubrik med värdet Thu, 16 dec 1994:00:00 GMT till webbläsaren. </p> <p>Du kan ändra svarssträngarna genom att redigera de två följande raderna i dialogrutan <span class="filepath"> txlogd.conf</span> fil: </p> <p> <span class="filepath"> NewUserCacheControl</span> <i>&lt;<span class="filepath"> string1</span>&gt;</i> </p> <p> <span class="filepath"> CacheControl</span> <i>&lt;<span class="filepath"> string2</span>&gt;</i> </p> <p>Exempel: </p> <p> <span class="filepath"> NewUserCacheControl no-cache=Set-Cookie</span> </p> <p> <span class="filepath"> CacheControl private,max-age=0,must-revalidate</span> </p> <p>Om du vill inaktivera sändning av svarsrubriker för cachekontroll skriver du ett bindestreck för varje rad enligt nedan: </p> <p> <span class="filepath"> NewUserCacheControl -</span> </p> <p> <span class="filepath"> CacheControl -</span> </p> <p> <p>Obs! Adobe rekommenderar att du inte inaktiverar den här funktionen. </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -159,11 +161,11 @@ Information om valfria parametrar för filen txlogd.conf för sensorn.
  <tbody> 
   <tr> 
    <td colname="col1"> ApacheUseAlternateHandler </td> 
-   <td colname="col2"> <p>Ange bara den här parametern när du arbetar med Adobe konsulttjänster. </p> <p>Anger <span class="wintitle">-sensorn</span> vilken av två möjliga "krokar" som ska användas för att ställa in v1st-cookien. </p> <p>Du använder den här parametern när Apache <span class="wintitle">-sensorn</span> inte ställer in v1st-cookien korrekt. Den här parametern ställs in på "yes" om standardkroken inte ställer in v1st-cookien korrekt. Standardvärdet är "no". </p> <p>Exempel: <span class="filepath"> ApacheUseAlternateHandler no</span> </p> </td> 
+   <td colname="col2"> <p>Ange bara den här parametern när du arbetar med Adobe konsulttjänster. </p> <p>Tells the <span class="wintitle"> Sensor</span> vilken av två möjliga "krokar" som ska användas för att ställa in v1st-cookien. </p> <p>Du använder den här parametern när Apache <span class="wintitle"> Sensor</span> ställer inte in v1st-cookien korrekt. Den här parametern ställs in på "yes" om standardkroken inte ställer in v1st-cookien korrekt. Standardvärdet är "no". </p> <p>Exempel: <span class="filepath"> ApacheUseAlternateHandler no</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ApacheUsebothHandlers </td> 
-   <td colname="col2"> <p>Ange bara den här parametern när du arbetar med Adobe konsulttjänster. </p> <p>Instruerar <span class="wintitle">-sensorn</span> att försöka ställa in v1st-cookien i båda krokarna. </p> <p>Du använder den här parametern när Apache <span class="wintitle">-sensorn</span> inte ställer in v1st-cookien korrekt. Standardvärdet är"ja". </p> <p>Om värdet är ja och v1st-cookien inte är korrekt inställd i den första kroken används den andra kroken. Om värdet är "no" skulle du ställa in parametern ApacheUseAlternateHandler så att den anger vilken krok som ska användas för att ställa in v1st-cookien. </p> <p>Exempel: <span class="filepath"> ApacheUsebothHandlers yes</span> </p> </td> 
+   <td colname="col2"> <p>Ange bara den här parametern när du arbetar med Adobe konsulttjänster. </p> <p>Instruerar <span class="wintitle"> Sensor</span> för att försöka ställa in v1st-cookien i båda krokarna. </p> <p>Du använder den här parametern när Apache <span class="wintitle"> Sensor</span> ställer inte in v1st-cookien korrekt. Standardvärdet är"ja". </p> <p>Om värdet är ja och v1st-cookien inte är korrekt inställd i den första kroken används den andra kroken. Om värdet är "no" skulle du ställa in parametern ApacheUseAlternateHandler så att den anger vilken krok som ska användas för att ställa in v1st-cookien. </p> <p>Exempel: <span class="filepath"> ApacheUsebothHandlers - ja</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>

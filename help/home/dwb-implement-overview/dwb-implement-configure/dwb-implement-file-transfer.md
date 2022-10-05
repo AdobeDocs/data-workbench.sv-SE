@@ -3,7 +3,7 @@ description: En snabbguide för olika filöverföringsmetoder i DWB.
 title: Filöverföringsstyrning
 uuid: a3e19f8a-1cc4-437c-9661-408f675109c0
 exl-id: a0ecd8e1-6d6f-4811-9869-092837dc9e55
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Filöverföringsstyrning{#file-transfer-governance}
+
+{{eol}}
 
 En snabbguide för olika filöverföringsmetoder i DWB.
 
@@ -20,7 +22,7 @@ Filöverföringsstyrning är en standardprocess för att överföra filer från 
 
 1. AWS (Amazon Web Services)
 
-   1. Räck upp en biljett för att installera AWS kommandoradsgränssnitt på servern om det inte redan är installerat (se [https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)).
+   1. Höja upp en biljett för att installera AWS kommandoradsgränssnitt på servern om det inte redan är installerat (se [https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)).
    1. Hur du kontrollerar? Försök att konfigurera AWS med kommandotolken (se [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)).
 
 1. Överför filer från FTP-servern till NAS-katalogen.
@@ -53,10 +55,10 @@ Filöverföringsstyrning är en standardprocess för att överföra filer från 
 
       >[!NOTE]
       >
-      >Om mappen Scripository inte är tillgänglig kan du läsa [Bearbeta ](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295) varje vecka för att hämta mappen.
+      >Om mappen Scripositing inte är tillgänglig finns mer information i [Ombearbeta varje vecka](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295) för att hämta mappen.
 
    1. Schemalägg skriptet baserat på filtillgänglighet på ftp_address.
-   1. Namnkonventionen för filen ska vara YYMMDD-&lt;offline_feed_name>-00.*
+   1. Namngivningskonventionen för filen ska vara ÅÅÅMMDD-&lt;offline_feed_name>-00.&#42;
 
 1. Överför filer från NAS-katalogen till FTP-servern.
 
@@ -228,12 +230,12 @@ Filöverföringsstyrning är en standardprocess för att överföra filer från 
       ```
 
    1. Schemalägg skriptet baserat på filtillgänglighet på ftp_address.
-   1. Namnkonventionen för filen ska vara YYMMDD-&lt;offline_feed_name>-00.*
+   1. Namngivningskonventionen för filen ska vara ÅÅÅMMDD-&lt;offline_feed_name>-00.&#42;
 
 1. Överför filer från en NAS-katalog till en annan NAS-katalog.
 
    1. Kopiera och klistra in en fil som ansluter direkt till en NAS-katalog från en annan. Följ processen nedan:)
 
-      inloggning på server -> gå till Kör -> \\server_name\E$ [den nya mappen öppnas och kopierar eller flyttar filerna direkt]
+      inloggning till server -> gå till Kör -> \\servernamn\E$ [den nya mappen öppnas och kopierar eller flyttar filerna direkt]
 
    1. Använd skriptet &quot;copy_files.pl&quot; för att kopiera filer från en server till en annan eller &quot;move_files.pl&quot; för att flytta filer från en server till en annan. (De här filerna finns i E:\scripts\Scripository)

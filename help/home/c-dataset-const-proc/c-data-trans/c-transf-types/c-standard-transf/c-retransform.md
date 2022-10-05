@@ -3,7 +3,7 @@ description: Omformningen RETransform (reguljärt uttryck) är en mönstermatchn
 title: RETransform
 uuid: 60b5b60e-678a-416d-b5c3-57b1bbefce7d
 exl-id: 2595f782-0efb-4a2a-84bd-fdb04baf0852
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 # RETransform{#retransform}
 
+{{eol}}
+
 Omformningen RETransform (reguljärt uttryck) är en mönstermatchningsomformning som använder reguljära uttryck för att ange ett mönster att söka efter och hämta i indata och lagrar den hämtade strängen i ett angivet utdatafält.
 
 Reguljära uttryck utvärderas mot hela indatasträngen. Om indata inte matchar mönstret som anges i det reguljära uttrycket hämtas inga data. En kort guide till hur du använder reguljära uttryck finns i [Reguljära uttryck](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
 
 >[!NOTE]
 >
->Omvandlingen [!DNL RETransform] fungerar på liknande sätt som omformningen [!DNL REMatch] (se [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)), som skapar ett utdatafält för varje hämtat delmönster i det reguljära uttrycket. Du kan tänka dig [!DNL RETransform] som en kombination av [!DNL REMatch] och [!DNL Format]-omformningar. Om åtgärdsparametern (se Åtgärd i följande tabell) är inställd på &quot;RESULTS&quot; fungerar [!DNL RETransform] som en kombination av [!DNL REMatch] och [!DNL Union]-omformningar.
+>The [!DNL RETransform] omformningen fungerar på liknande sätt som [!DNL REMatch] omformning (se [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)), som skapar ett utdatafält för varje hämtat delmönster i det reguljära uttrycket. Du kan komma på [!DNL RETransform] som en kombination av [!DNL REMatch] och [!DNL Format] omformningar. Om åtgärdsparametern (se Åtgärd i följande tabell) är inställd på &quot;RESULTS&quot;, [!DNL RETransform] fungerar som en kombination av [!DNL REMatch] och [!DNL Union] omformningar.
 
 <table id="table_51B7342E6A5E4E31913BD0F6A6ACC424"> 
  <thead> 

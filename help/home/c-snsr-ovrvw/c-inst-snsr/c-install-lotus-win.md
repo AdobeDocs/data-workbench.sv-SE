@@ -2,17 +2,21 @@
 description: Instruktioner om hur du installerar och konfigurerar Sensor för Lotus Sametime för Windows 3.1 eller senare som körs med Microsoft Windows Server 2000 eller senare.
 title: Lotus Sametime på Windows Server 2000 eller senare
 uuid: 5e24da54-7ef6-42cf-b693-cc4fd267af93
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 9292bfca-ad3b-436d-9d22-be67a61b8c05
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '1023'
+ht-degree: 0%
 
 ---
 
-
 # Lotus Sametime på Windows Server 2000 eller senare{#lotus-sametime-on-windows-server-or-later}
+
+{{eol}}
 
 Instruktioner om hur du installerar och konfigurerar Sensor för Lotus Sametime för Windows 3.1 eller senare som körs med Microsoft Windows Server 2000 eller senare.
 
-Programfilerna för Sensor paketeras i en installationsfil som du får från Adobes nedladdningswebbplats. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
+Programfilerna för Sensor paketeras i en installationsfil som du får från hämtningsplatsen för Adobe. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
 
 Om du vill installera och konfigurera sensorn måste du utföra följande steg på hög nivå:
 
@@ -86,12 +90,12 @@ Du måste redigera den här filen för att bland annat ange storlek och plats f�
 
 Konfigurationsfilen innehåller obligatoriska parametrar och valfria parametrar.
 
-* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensorn. Utan dessa inställningar kan sensorn inte köras.
+* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensor. Utan dessa inställningar kan sensorn inte köras.
 * **Valfria parametrar** är inställningar som är standard för fördefinierade värden (som du kan ändra) eller aktivera valfria funktioner.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-* Öppna `<Sensor directory>/txlogd.conf` filen i en textredigerare och ange de obligatoriska parametrarna samt eventuella valfria parametrar.
+* Öppna `<Sensor directory>/txlogd.conf` i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 * Spara och stäng filen.
 
 ## Starta sändaren och skapa diskkön {#section-55630de65f264274aefd771da2002852}
@@ -123,8 +127,8 @@ När du har konfigurerat filen txlogd.conf kan du starta överföringsprogrammet
    >Kommandosekvensen kan variera beroende på vilken version av Windows du använder.
 
    1. Välj programloggen i den vänstra rutan i fönstret för Loggboken.
-   1. I den högra rutan söker du efter händelser med&quot;Adobe&quot; i kolumnen Källa.
-   1. Om du hittar ett fel från&quot;Adobe&quot; dubbelklickar du på felet för att visa fönstret Händelseegenskaper. Det här fönstret innehåller detaljerad information om felet.
+   1. I den högra rutan söker du efter händelser med Adobe i kolumnen Källa.
+   1. Om du hittar ett fel från &quot;Adobe&quot; dubbelklickar du på felet för att visa fönstret Händelseegenskaper. Det här fönstret innehåller detaljerad information om felet.
 
 1. Stäng Loggboken när du är klar med granskningen av programloggen.
 1. Kontrollera att sändaren har skapat diskkön (Diskq2000.log) i den katalog där du installerade Sensor-programfilerna och att det är den storlek som du angav i parametern QueueSize i filen txlogd.conf.
@@ -144,4 +148,3 @@ När du har konfigurerat filen txlogd.conf kan du starta överföringsprogrammet
       Sändaren är utformad för att köras kontinuerligt. Om du startar om datorn startas sändaren om automatiskt. Om du behöver starta och stoppa sändaren manuellt kan du göra det med hjälp av kontrollpanelen Tjänster i Windows.
 
 1. Starta om Lotus Domino Server och loggningstjänsten för Sametime-chatt.
-

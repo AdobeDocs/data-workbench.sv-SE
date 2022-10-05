@@ -3,7 +3,7 @@ description: Tabeller
 title: Kontrollpanelstabeller
 uuid: 3bfb5be4-5510-456b-8b3d-6e57cb93949e
 exl-id: 215ad990-92af-4c36-9946-89dbe36bbb8c
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Tabeller{#tables}
+
+{{eol}}
 
 Tabeller är de mest detaljorienterade visualiseringar som finns i kontrollpanelsprogrammet. Med tabeller kan du visualisera mått- och dimensionsdata där varje dataelement representeras som en rad i en tabell. En kolumn innehåller dimensionsvärdena, medan de andra kolumnerna innehåller motsvarande måttvärden. Flera mått kan visas och det finns ingen begränsning för hur många dimensionsvärden som kan visas i en tabell. Alla värden för en vald dimension som finns i data workbench-data visas i tabellen.
 

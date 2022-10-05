@@ -3,7 +3,7 @@ description: Linjediagram
 title: Linjediagram
 uuid: 6f525c49-6679-4234-886b-52a3c7df98ff
 exl-id: 75532aff-15ff-4be8-8000-f503b2bf60a2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Linjediagram{#line-charts}
+
+{{eol}}
 
 Med linjediagramvisualiseringar kan du visualisera mått- och dimensionsdata där varje dataelement representeras som en punkt på en x-y-axel och linjer som förbinder intilliggande punkter. Med linjediagram kan upp till 200 unika dataelement visas i diagrammet samtidigt. Dimensionsvärdena etiketteras längs x-axeln, medan måttskalevärdena anges längs y-axeln. Om du placerar musen över en punkt i linjediagrammet visas det exakta måttvärdet vid den punkten.
 

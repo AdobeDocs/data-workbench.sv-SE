@@ -3,7 +3,7 @@ description: Datan Workbench är extremt flexibel när det gäller antalet sätt
 title: Anpassa Data Workbench lokalt
 uuid: 9d04ebbf-fa48-4594-9b59-8b7e4c85fe6a
 exl-id: 07ad2744-2dd3-4db0-92ab-05346f74a076
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Anpassa Data Workbench lokalt{#customize-data-workbench-locally}
+
+{{eol}}
 
 Datan Workbench är extremt flexibel när det gäller antalet sätt att anpassa den.
 

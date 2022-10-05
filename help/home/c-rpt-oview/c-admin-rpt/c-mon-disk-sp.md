@@ -3,7 +3,7 @@ description: Du bör regelbundet övervaka tillgängligt diskutrymme så att all
 title: Övervaka diskutrymme (rapportserver)
 uuid: 590c8239-d20e-470e-b633-7785b75daaa6
 exl-id: 0debd601-494f-4d4e-9452-c4d32678dc95
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Övervaka diskutrymme{#monitoring-disk-space}
+
+{{eol}}
 
 Du bör regelbundet övervaka tillgängligt diskutrymme så att alla rapportserverdatorer fortsätter att fungera på högsta möjliga nivå.
 

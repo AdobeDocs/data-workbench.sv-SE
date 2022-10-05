@@ -3,7 +3,7 @@ description: När du har konfigurerat Transform måste du konfigurera det så at
 title: Nästa steg (Omforma)
 uuid: 359f24da-6367-4992-9153-66d872ed6b21
 exl-id: 316458ab-26a1-4963-9e90-8e8cd7b9881c
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Nästa steg{#next-steps}
+
+{{eol}}
 
 När du har konfigurerat Transform måste du konfigurera det så att det exporterar loggkälldata för användning i andra program.
 

@@ -3,7 +3,7 @@ description: Information om datatjänstalternativ för mappning av IP-adresser.
 title: Om datatjänsterna
 uuid: 60fa12b9-4b64-457d-b0d4-1d7eb44f19b2
 exl-id: 330c6fb6-c579-45fb-ae5a-22649dc006aa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -12,9 +12,11 @@ ht-degree: 0%
 
 # Om datatjänsterna{#about-the-data-services}
 
+{{eol}}
+
 Information om datatjänstalternativ för mappning av IP-adresser.
 
-Om du använder ett Adobe-program, har en licensierad data workbench [!DNL Geography] och vill mappa IP-adresser på världen eller skapa visualiseringar som visar geografiskt relaterade datamängder (till exempel riktnummer, tidszon, MSA) som baseras på IP-adress, kan du prenumerera på en av två valfria datatjänster:
+Om du använder ett Adobe-program måste du ha en licensierad data workbench [!DNL Geography]och vill mappa IP-adresser på jorden eller skapa visualiseringar som visar geografiskt relaterade mått för data (till exempel riktnummer, tidszon, MSA) som baseras på IP-adress, kan du prenumerera på en av två valfria datatjänster:
 
 * IP Geo-Intelligence-datatjänst (erbjuds av Adobe, tillhandahålls av Digital Envoy)
 * IP Geo-location-datatjänst (erbjuds av Adobe, tillhandahålls av Quova)

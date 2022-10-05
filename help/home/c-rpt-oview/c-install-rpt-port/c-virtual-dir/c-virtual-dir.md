@@ -3,7 +3,7 @@ description: Om du vill konfigurera rapportportalen måste du mappa dess program
 title: Mappa rapportportalsidor till virtuella kataloger
 uuid: 75ca85d5-d526-48f9-b2c4-ca77c903c6af
 exl-id: 13e457d4-7039-491a-a65d-f23ad7e9fe77
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # Mappa rapportportalsidor till virtuella kataloger{#map-the-report-portal-pages-to-virtual-directories}
 
+{{eol}}
+
 Om du vill konfigurera rapportportalen måste du mappa dess programfiler till virtuella kataloger.
 
-En virtuell katalog definierar den adress som webbläsarklienter använder för att hitta en fysisk resurs på IIS-programservern. För att få åtkomst till [!DNL Report Portal] pekar klienterna i sina webbläsare mot den virtuella katalog som du tilldelar portalen.
+En virtuell katalog definierar den adress som webbläsarklienter använder för att hitta en fysisk resurs på IIS-programservern. För åtkomst [!DNL Report Portal], pekar klienterna på sina webbläsare mot den virtuella katalog som du tilldelar portalen.
 
-Namnet på den virtuella katalog som du tilldelar till [!DNL Report Portal] måste matcha namnet som du använde för mappen VSVirtualPortalName i steg 3 i föregående avsnitt. Om du till exempel vill använda&quot;Portal&quot; som namn på [!DNL Report Portal] måste du mappa portalfilerna till en virtuell katalog med namnet&quot;Portal&quot;. I följande exempel visas den URI som klienter använder för att komma åt en [!DNL Report Portal] som tilldelats den virtuella katalogen [!DNL VisualReportPortal] på en server som heter myWebServer:
+Namnet på den virtuella katalog som du tilldelar till [!DNL Report Portal] måste matcha namnet som du använde för mappen VSVirtualPortalName i steg 3 i föregående avsnitt. Om du till exempel vill använda&quot;Portal&quot; som namn på [!DNL Report Portal]måste du mappa portalens filer till en virtuell katalog med namnet&quot;Portal&quot;. I följande exempel visas den URI som klienter använder för att få åtkomst till en [!DNL Report Portal] som tilldelats till den virtuella katalogen [!DNL VisualReportPortal] på en server med namnet myWebServer:
 
 [!DNL https://myWebServer/VisualReportPortal]
 

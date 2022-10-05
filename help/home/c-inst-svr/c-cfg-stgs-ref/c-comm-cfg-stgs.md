@@ -3,7 +3,7 @@ description: Instruktioner för att konfigurera kommunikation för Insight Serve
 title: Inställningar för kommunikationskonfiguration
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 exl-id: a35788d1-de36-4350-a107-eee392e44503
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Inställningar för kommunikationskonfiguration{#communications-configuration-settings}
+
+{{eol}}
 
 Instruktioner för att konfigurera kommunikation för Insight Server eller Repeater.
 
@@ -32,11 +34,11 @@ Slutför parametrarna i följande fil:
  <tbody> 
   <tr> 
    <td colname="col1"> Åtkomstkontrollfil </td> 
-   <td colname="col2"> <p>Sökväg till filen <span class="filepath"> Access Control.cfg </span>. Standardplatsen är mappen <span class="filepath"> Access Control </span> i installationskatalogen för <span class="keyword"> Insight Server </span> eller <span class="wintitle"> Repeater </span>. </p> <p>Exempel: <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
+   <td colname="col2"> <p>Platsen för <span class="filepath"> Åtkomstkontroll.cfg </span> -fil. Standardplatsen är <span class="filepath"> Åtkomstkontroll </span> i <span class="keyword"> Insight Server </span> eller <span class="wintitle"> Upprepare </span> installationskatalog. </p> <p>Exempel: <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Åtkomstloggkatalog </td> 
-   <td colname="col2"> <p>Mappen som du vill mappa granskningsloggarna till. </p> <p>Exempel: <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Obs!  Du kan mappa granskningsloggar till en annan lokal enhet (exempel: <span class="filepath"> sträng: P:\\Audit\\ </span>), men mappa inte granskningsloggar till en nätverksenhet. </p> </p> </td> 
+   <td colname="col2"> <p>Mappen som du vill mappa granskningsloggarna till. </p> <p>Exempel: <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Obs! Du kan mappa granskningsloggar till en annan lokal enhet (exempel: <span class="filepath"> sträng: P:\\Audit\\ </span>), men mappa inte granskningsloggar till en nätverksenhet. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Utförlig åtkomstlogg </td> 
@@ -48,7 +50,7 @@ Slutför parametrarna i följande fil:
   </tr> 
   <tr> 
    <td colname="col1"> Port </td> 
-   <td colname="col2"> <p>Icke-säker (HTTP) port som <span class="keyword"> Insight Server </span> eller <span class="wintitle"> Repeater </span> lyssnar på. Standardporten är 80. Om du anger värdet 0 inaktiveras anslutningar som inte är säkra. </p> <p>Exempel: <code>Port = int: 80</code> </p> </td> 
+   <td colname="col2"> <p>Icke-säker (HTTP) port som <span class="keyword"> Insight Server </span> eller <span class="wintitle"> Upprepare </span> lyssnar. Standardporten är 80. Om du anger värdet 0 inaktiveras anslutningar som inte är säkra. </p> <p>Exempel: <code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL-cifer </td> 
@@ -56,7 +58,7 @@ Slutför parametrarna i följande fil:
   </tr> 
   <tr> 
    <td colname="col1"> SSL-port </td> 
-   <td colname="col2"> <p>Säker port (via SSL) på vilken <span class="keyword"> Insight Server </span> eller <span class="wintitle"> Repeater </span> lyssnar. Standardporten är 443. Om du anger värdet 0 inaktiveras säkra anslutningar. </p> <p>Exempel: <span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
+   <td colname="col2"> <p>Säker port (via SSL) på vilken <span class="keyword"> Insight Server </span> eller <span class="wintitle"> Upprepare </span> lyssnar. Standardporten är 443. Om du anger värdet 0 inaktiveras säkra anslutningar. </p> <p>Exempel: <span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
@@ -70,20 +72,20 @@ Slutför parametrarna i följande fil:
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Lokal sökväg = sträng: Loggar\\ </p> </td> 
    <td colname="col2"> <p>Mappen där du vill lagra loggfilerna. </p> <p>Exempel: </p> <code> 9&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>För att kunna komma åt den här mappen från <span class="wintitle">-serverfilshanteraren </span> måste platsen som anges i den här parametern matcha platsen som du anger i parametern Loggsökvägar i filen <span class="filepath"> Log Processing.cfg </span>. Mer information om hur du ändrar loggkatalogen i filen <span class="filepath"> Log Processing.cfg </span> finns i kapitlet om konfigurationsfil för loggbearbetning i <i>konfigurationsguiden för datauppsättningar</i>. </p> </td> 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>För att få åtkomst till den här mappen från <span class="wintitle"> Serverfilhanteraren </span>måste platsen som anges i den här parametern matcha platsen som du anger i parametern Loggsökvägar i <span class="filepath"> Loggbearbetning.cfg </span> -fil. Mer information om hur du ändrar loggkatalogen finns i <span class="filepath"> Loggbearbetning.cfg </span> -filen, se kapitlet Loggbearbetningskonfigurationsfil i <i>Konfigurationshandbok för datauppsättning</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Lokal sökväg = sträng: Granskning\\ </p> </td> 
    <td colname="col2"> <p>Mappen som du vill mappa granskningsloggarna till. </p> <p>Exempel: </p> <code> 5&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>Obs!  <p>Du kan mappa granskningsloggar till en annan lokal enhet (exempel: <span class="filepath"> sträng: P:\\Audit\\ </span>), men mappa inte granskningsloggar till en nätverksenhet. </p> <p>Om du vill kunna komma åt den här mappen från <span class="wintitle"> Server Files Manager </span> måste platsen som anges i den här parametern matcha platsen som du har i parametern Åtkomstloggkatalog i den här filen. </p> </p> </td> 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>Obs!  <p>Du kan mappa granskningsloggar till en annan lokal enhet (exempel: <span class="filepath"> sträng: P:\\Audit\\ </span>), men mappa inte granskningsloggar till en nätverksenhet. </p> <p>För att få åtkomst till den här mappen från <span class="wintitle"> Serverfilhanteraren </span>måste den plats som anges i den här parametern matcha den plats som du har i parametern Åtkomstloggkatalog i den här filen. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>NormalizeServer: </td> 
-   <td colname="col2"> <p>Den här parametern gäller bara för <span class="keyword"> Insight Server </span>. </p> <p>Mer information om hur du anger den centraliserade normaliseringsservern för ditt <span class="keyword"> Insight Server </span>-kluster finns i kapitlet om konfigurationsfil för loggbearbetning i <i>konfigurationsguiden för datauppsättningar</i>. </p> </td> 
+   <td colname="col2"> <p>Den här parametern gäller endast för <span class="keyword"> Insight Server </span>. </p> <p>Mer information om hur du anger den centraliserade normaliseringsservern för <span class="keyword"> Insight Server </span> kluster, se kapitlet i konfigurationsfilen för loggbearbetning i <i>Konfigurationshandbok för datauppsättning</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>ReportStatusServer: </p> <p> URI = sträng: /ReportStatus.vsp </p> </td> 
-   <td colname="col2"> <p>Den här parametern gäller bara för <span class="keyword"> Insight Server </span>. </p> <p>Gör att du kan visa <span class="keyword">-rapportens </span>-status i gränssnittet Detaljerad status för <span class="keyword"> Insight Server </span>. </p> </td> 
+   <td colname="col2"> <p>Den här parametern gäller endast för <span class="keyword"> Insight Server </span>. </p> <p>Gör att du kan visa <span class="keyword"> Rapport </span> status i gränssnittet Detaljerad status för <span class="keyword"> Insight Server </span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

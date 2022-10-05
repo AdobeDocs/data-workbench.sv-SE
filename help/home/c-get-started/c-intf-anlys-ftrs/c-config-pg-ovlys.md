@@ -3,7 +3,7 @@ description: Sidövertäckningar konfigureras bara i programmet Plats, men de ka
 title: Konfigurera en sidövertäckning
 uuid: c4c612ed-5154-4b20-96ab-24b74fba19a2
 exl-id: 4e0dfce8-def2-49f3-93e8-41d82922fb88
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Konfigurera en sidövertäckning{#configure-a-page-overlay}
+
+{{eol}}
 
 Sidövertäckningar konfigureras bara i programmet Plats, men de kan konfigureras för andra program.
 
@@ -26,13 +28,13 @@ Sidövertäckningen visar endast data när du lägger till en färgförklaring p
 
 Sidövertäckningen föreslår till sin natur den mentala modellen där användaren klickar. Om de data som ligger till grund för visualiseringen inte överensstämmer med den här modellen är risken för missförstånd hög.
 
-I [!DNL Site] representerar en länk vanligtvis ett element från dimensionen Nästa URI eller Nästa länk, men du kan mappa en länk till en dimension som är lämplig för din analys. Kontakta Adobe Consulting Services om du vill ha information om hur du konfigurerar sidövertäckning för andra dimensioner.
+I [!DNL Site], en länk representerar vanligtvis ett element från dimensionerna Nästa URI eller Nästa länk, men du kan mappa en länk till en dimension som är lämplig för din analys. Kontakta Adobe Consulting Services om du vill ha information om hur du konfigurerar sidövertäckning för andra dimensioner.
 
 >[!NOTE]
 >
 >Du bör inte använda siddimensionen för sidövertäckning. Användare kan byta namn på elementen i siddimensionerna och på så sätt ändra länksyntaxen som sidövertäckningsfunktionen är beroende av.
 
-Om du vill konfigurera sidövertäckning för [!DNL Site] måste du redigera två filer:
+Konfigurera sidövertäckning för [!DNL Site]måste du redigera två filer:
 
 * **[!DNL Page Overlay.vw]:** Den här filen är en mallfil för att skapa visualiseringar för sidövertäckning. Minst en mallfil måste finnas i den profil som du konfigurerar sidövertäckning för.
 * **[!DNL Page Overlay Link Templates.cfg]:** När sidövertäckningsvisualiseringen läser in en sida identifierar den automatiskt länkarna på sidan och deras mål. Om du vill koppla dessa länkar till element i data måste du definiera en uppsättning reguljära uttryck i den här filen.
@@ -43,13 +45,13 @@ Om du vill konfigurera sidövertäckning för [!DNL Site] måste du redigera tv�
 
 1. I
 
-   Gå till **[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]** i [!DNL Profile Manager].
+   n [!DNL Profile Manager], navigera till **[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]**.
 
    >[!NOTE]
    >
    >Katalogen Dimension Element innehåller de snabbmenyalternativ som visas när du högerklickar på ett dimensionselement. Öppna till exempel en URI-tabell och välj sedan ett URI-element. Högerklicka på URI:n så visas sidövertäckning.
 
-1. Högerklicka på bockmarkeringen bredvid filen [!DNL Page Overlay.vw] i URI-mappen och klicka på **[!UICONTROL Make Local]**. En bock för den här filen visas i kolumnen [!DNL User].
+1. I URI-mappen högerklickar du på bockmarkeringen bredvid [!DNL Page Overlay.vw] och klicka på **[!UICONTROL Make Local]**. En bock för den här filen visas i [!DNL User] kolumn.
 1. Högerklicka på den nya bockmarkeringen och klicka på **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Ange domän (och webbläsarhöjd om det behövs).
 
@@ -74,18 +76,18 @@ Om du vill konfigurera sidövertäckning för [!DNL Site] måste du redigera tv�
    ```
 
 1. Spara filen.
-1. Om du vill göra den här ändringen tillgänglig för alla användare av arbetsprofilen högerklickar du i [!DNL Profile Manager] på bockmarkeringen för filen [!DNL .vw] i kolumnen [!DNL User] och klickar på **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. Om du vill göra den här ändringen tillgänglig för alla användare av arbetsprofilen går du till [!DNL Profile Manager]högerklickar du på bockmarkeringen för [!DNL .vw] i [!DNL User] kolumn och klicka **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
 
    >[!NOTE]
    >
    >Du kan skapa ytterligare mallfiler för andra platser eller underdomäner. Varje mall som du skapar visas i [!DNL Page Overlay menu].
 
-1. Högerklicka på bockmarkeringen intill [!DNL Page Overlay Link Templates.cfg]-filen i mappen Context i [!DNL Profile Manager] och klicka på **[!UICONTROL Make Local]**.
+1. I mappen Context i [!DNL Profile Manager]högerklickar du på bockmarkeringen bredvid [!DNL Page Overlay Link Templates.cfg] och klicka på **[!UICONTROL Make Local]**.
 
-   En bock för den här filen visas i kolumnen [!DNL User].
+   En bock för den här filen visas i [!DNL User] kolumn.
 
 1. Högerklicka på den nya bockmarkeringen och klicka på **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
-1. Högerklicka på **[!UICONTROL Link Templates]** och klicka på **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
+1. Högerklicka **[!UICONTROL Link Templates]** och klicka **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
 1. Redigera parametrarna för LinkRegex-vektorn efter behov:
 
 <table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B">
@@ -102,7 +104,7 @@ Om du vill konfigurera sidövertäckning för [!DNL Site] måste du redigera tv�
   </tr>
   <tr>
    <td colname="col1"> <p>Uttryck </p> </td>
-   <td colname="col2"> <p>Det reguljära uttryck som används för att markera den relevanta delen av länken HTML för att hitta nästa element från Dimensionen. Det reguljära uttrycket måste vara en exakt matchning och det önskade utdatamönstret grupperas med parenteser. Mer information om reguljära uttryck finns i <i>Konfigurationshandboken för datauppsättningar</i>. </p> </td>
+   <td colname="col2"> <p>Det reguljära uttryck som används för att markera den relevanta delen av länken HTML för att hitta nästa element från Dimensionen. Det reguljära uttrycket måste vara en exakt matchning och det önskade utdatamönstret grupperas med parenteser. Mer information om reguljära uttryck finns i <i>Konfigurationshandbok för datauppsättning</i>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Utdatamönster </p> </td>
@@ -115,5 +117,5 @@ I följande exempelfil visas tre reguljära uttryck:
 
 ![](assets/cfg_PageOverlayLinkTemplates_Example.png)
 
-1. Om du vill spara filen högerklickar du på **[!UICONTROL (modified)]** längst upp i fönstret och klickar på **[!UICONTROL Save]**.
-1. Om du vill göra den här ändringen tillgänglig för alla användare av arbetsprofilen högerklickar du på bockmarkeringen för [!DNL Page Overlay Link Templates.cfg] i kolumnen [!DNL User] och klickar på **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. Om du vill spara filen högerklickar du **[!UICONTROL (modified)]** längst upp i fönstret och klicka på **[!UICONTROL Save]**.
+1. Om du vill göra den här ändringen tillgänglig för alla användare i arbetsprofilen högerklickar du på bockmarkeringen för [!DNL Page Overlay Link Templates.cfg] i [!DNL User] kolumn och klicka **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

@@ -2,17 +2,21 @@
 description: Detaljerade anvisningar för installation och konfigurering av Sensor för J2EE-implementeringar som körs på RedHat Linux 7.x eller senare, Sun Solaris SPARC 2.6 eller senare eller Sun Solaris x86 9 eller senare.
 title: JBoss-, Tomcat- och WebLogic-servrar i RedHat Linux eller Sun Solaris
 uuid: 7977fb9b-1737-4e1d-80c6-aabf968974dd
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 09c2f266-2ecc-42fc-98b6-b91f8883af0c
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '1823'
+ht-degree: 0%
 
 ---
 
-
 # JBoss-, Tomcat- och WebLogic-servrar i RedHat Linux eller Sun Solaris{#jboss-tomcat-and-weblogic-servers-on-redhat-linux-or-sun-solaris}
+
+{{eol}}
 
 Detaljerade anvisningar för installation och konfigurering av Sensor för J2EE-implementeringar som körs på RedHat Linux 7.x eller senare, Sun Solaris SPARC 2.6 eller senare eller Sun Solaris x86 9 eller senare.
 
-Programfilerna för Sensor paketeras i en installationsfil som du får från Adobes nedladdningswebbplats. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
+Programfilerna för Sensor paketeras i en installationsfil som du får från hämtningsplatsen för Adobe. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
 
 J2EE-implementeringar som stöds omfattar:
 
@@ -97,23 +101,23 @@ Procedur för att extrahera och installera programfilerna för Sensor.
 
 ## Redigera sensorkonfigurationsfilen {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
 
-Filen innehåller [!DNL txlogd.conf] konfigurationsparametrarna för sensorn.
+The [!DNL txlogd.conf] filen innehåller konfigurationsparametrarna för sensorn.
 
 Du måste redigera den här filen för att bland annat ange storlek och plats för diskköfilen, adressen till Insight Server och det ID som ska kopplas till händelsedata som skapas av den här sensorn.
 
 Konfigurationsfilen innehåller obligatoriska parametrar och valfria parametrar.
 
-* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensorn. Utan dessa inställningar kan sensorn inte köras.
+* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensor. Utan dessa inställningar kan sensorn inte köras.
 * **Valfria parametrar** är inställningar som är standard för fördefinierade värden (som du kan ändra) eller aktivera valfria funktioner.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-* Öppna [!DNL /etc/txlogd.conf] filen i en textredigerare och ange de obligatoriska parametrarna samt eventuella valfria parametrar.
+* Öppna [!DNL /etc/txlogd.conf] i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 * Spara och stäng filen.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-1. Öppna [!DNL /etc/txlogd.conf] filen i en textredigerare och ange de obligatoriska parametrarna samt eventuella valfria parametrar.
+1. Öppna [!DNL /etc/txlogd.conf] i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 1. Spara och stäng filen.
 
 ## Starta sändaren och skapa diskkön {#section-55630de65f264274aefd771da2002852}
@@ -132,6 +136,7 @@ När du har konfigurerat filen txlogd.conf kan du starta överföringsprogrammet
    * Alternativet &quot;i&quot; i det här kommandot startar sändaren i &quot;interaktivt läge&quot;. I det här läget visas sändarmeddelanden på skärmen och du kan även använda tangentbordskommandon för att interagera med sändaren.
    * Alternativet &quot;c&quot; dirigerar sändaren till diskkön.
    * Alternativet &quot;f&quot; anger platsen för konfigurationsfilen.
+
    Mer information om de alternativ du kan använda när du startar sändaren finns i Kommandoradsalternativ för sensorsändaren.
 
 1. Kontrollera att sändaren har skapat diskkön på den plats som anges i parametern QueueFile och med den storlek som anges i parametern QueueSize.
@@ -145,14 +150,14 @@ När du har konfigurerat filen txlogd.conf kan du starta överföringsprogrammet
 
 För Apache-servrar är samlaren ett dynamiskt delat objekt som du läser in i webbserverprocessen.
 
-Om du vill lägga till insamlaren på webbservern måste du redigera [!DNL httpd.conf] filen enligt beskrivningen nedan och starta om webbservern.
+Om du vill lägga till insamlaren på webbservern måste du redigera [!DNL httpd.conf] så som beskrivs nedan och starta om webbservern.
 
 >[!NOTE]
 >
 >Om sensorn hämtar data för flera webbservrar på serverdatorn måste du utföra följande procedur för varje webbserver.
 
-1. Använd en textredigerare och öppna [!DNL httpd.conf]filen för webbservern vars händelser sensorn fångar.
-1. Lägg till följande `<filter>` och `<filter-mapping>` element i beskrivningsfilen. Om du inte har installerat txlogd.conf i katalogen /etc måste du ange rätt sökväg till den här filen i `<param-value>` elementet:
+1. Använd en textredigerare för att öppna [!DNL httpd.conf]för webbservern vars händelser Sensor fångar.
+1. Lägg till följande `<filter>` och `<filter-mapping>` -element till beskrivningsfilen. Om du inte har installerat txlogd.conf i katalogen /etc måste du ange rätt sökväg till filen i `<param-value>` element:
 
    ```
    <filter>
@@ -206,7 +211,7 @@ Kontrollera att insamlaren samlar in händelsedata och att sändaren skickar dem
 
 Information om automatisk inläsning av sändaren till systemets startskript.
 
-För att säkerställa att sändaren läses in automatiskt när webbserverdatorn startas om lägger du till följande kommando (som startar sändaren) i systemets startskript:
+För att se till att sändaren läses in automatiskt när webbserverdatorn startas om lägger du till följande kommando (som startar sändaren) i systemets startskript:
 
 ```
 /usr/local/bin/txlogd -f /etc/txlogd.conf
@@ -258,4 +263,3 @@ Mer information om bearbetning finns i konfigurationsguiden för datauppsättnin
    Resultat från begäran-URI är /index.jsp?A=1&amp;B=2.
 
 1. Upprepa den här proceduren för varje .jsp-sida från vilken du vill hämta ytterligare data.
-

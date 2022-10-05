@@ -2,21 +2,25 @@
 description: Med presentationslagret kan du markera och kommentera arbetsytans visualiseringar och sedan publicera med dina utlysningar och kommentarer. Lägg till textbeskrivningar, grafiska objekt, pratbubblingspilar, färgkodning, bilder och andra funktioner i en övertäckning för att lägga till kommentarer och förtydliga viktiga datapunkter, och dela sedan med andra intressenter.
 title: Anteckna visualiseringar
 uuid: f296b04e-4c02-4ee3-93cb-dd1163b855de
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 6adb7971-ef09-4e90-873b-586ae1d55f96
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 0%
 
 ---
 
-
 # Anteckna visualiseringar{#annotating-visualizations}
+
+{{eol}}
 
 Med presentationslagret kan du markera och kommentera arbetsytans visualiseringar och sedan publicera med dina utlysningar och kommentarer. Lägg till textbeskrivningar, grafiska objekt, pratbubblingspilar, färgkodning, bilder och andra funktioner i en övertäckning för att lägga till kommentarer och förtydliga viktiga datapunkter, och dela sedan med andra intressenter.
 
 **Lägg till anteckningar i dina visualiseringar:**
 
 1. Öppna en arbetsyta.
-1. Gå till **Arkiv** > **Presentationslager**.
-1. Klicka på **Tillåt presentationslager**.
+1. Gå till **Fil** > **Presentationslager**.
+1. Klicka **Tillåt presentationslager**.
 
    Växla kommando på den här menyn om du vill tillåta eller inte tillåta generering av ett presentationslager. En bock visas när presentationslagret tillåts.
 
@@ -24,13 +28,13 @@ Med presentationslagret kan du markera och kommentera arbetsytans visualiseringa
 
    När du tillåter presentationslagret visas en klickbar ikon till höger i verktygsfältet.
 
-   ![](assets/dwb_presentation_icon2.png) Den här klickbara ikonen visar att du är i läget **Dölj presentationslager** men inte kan se anteckningar.
+   ![](assets/dwb_presentation_icon2.png) Den här klickbara ikonen visar att du är i **Göm presentationslager** läge, men det går inte att se anteckningar.
 
 1. Klicka på ikonen för att växla till **Visa presentationslager**.
 
    Visa anteckningar i presentationslagret.
 
-   ![](assets/dwb_presentation_icon3.png) Den här klickbara ikonen visar att du är i läget **Visa presentationslager** men inte kan redigera.
+   ![](assets/dwb_presentation_icon3.png) Den här klickbara ikonen visar att du är i **Visa presentationslager** läge, men det går inte att redigera.
 
    >[!NOTE]
    >
@@ -42,7 +46,7 @@ Med presentationslagret kan du markera och kommentera arbetsytans visualiseringa
 
    Klicka på ikonen igen för att hämta en statisk representation av arbetsytevisualiseringen och öppna en övertäckning för att lägga till eller redigera anteckningar.
 
-   ![](assets/dwb_presentation_icon1.png) Den här klickbara ikonen visar att du är i läget **Redigera presentationslager** för att lägga till och redigera anteckningar.
+   ![](assets/dwb_presentation_icon1.png) Den här klickbara ikonen visar att du är i **Redigera presentationslager** läge för att lägga till och redigera anteckningar.
 
    En grå övertäckning visas i redigeringsläge.
 
@@ -58,11 +62,11 @@ Med presentationslagret kan du markera och kommentera arbetsytans visualiseringa
 
    ![](assets/6_4_presentation_layer_options.png)
 
-1. **Lägg till bilder på arbetsytan**.
+1. **Lägga till bilder på arbetsytan**.
 
    Högerklicka för att lägga till PNG- och JPG-bilder i övertäckningen och ändra storlek.
 
-1. **Tilldela färger till grafikobjekt**.
+1. **Tilldela färger till grafiska objekt**.
 
    Du kan markera objekt i presentationslagret och tilldela färger med färgväljaren. ![](assets/dwb_presentation_colorpicker.png)
 
@@ -70,4 +74,4 @@ Med presentationslagret kan du markera och kommentera arbetsytans visualiseringa
 
    När du har kommenterat arbetsytans visualiseringar kan du exportera presentationslagret med visualiseringar och dela det som en PNG-grafikfil.
 
-   Klicka på **Exportera** > **Exportera PNG**.
+   Klicka **Exportera** > **Exportera PNG**.

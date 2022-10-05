@@ -3,7 +3,7 @@ description: Hantera användargrupper
 title: Hantera användargrupper
 uuid: e1ece130-f135-48d8-aa30-5032b161b2ea
 exl-id: 51a6b39e-8305-475b-b62f-9c695e229aaa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '27'
 ht-degree: 0%
@@ -12,4 +12,6 @@ ht-degree: 0%
 
 # Hantera användargrupper{#managing-user-groups}
 
-Hantering av användargrupper utförs i **[!UICONTROL Group Manager]**-avsnittet i **[!UICONTROL Administration Console]**. Alla åtgärder nedan utförs på fliken **[!UICONTROL Group Manager]**.
+{{eol}}
+
+Hantering av användargrupper utförs inom **[!UICONTROL Group Manager]** i **[!UICONTROL Administration Console]**. Alla åtgärder nedan utförs i **[!UICONTROL Group Manager]** -fliken.

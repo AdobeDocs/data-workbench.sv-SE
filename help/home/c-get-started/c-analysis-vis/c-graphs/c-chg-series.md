@@ -3,7 +3,7 @@ description: Element i en dimension kan färgkodas som en serie i ett linjediagr
 title: Ändra en serie
 uuid: 4e9630c6-a663-486d-ae82-f6d25f74a41c
 exl-id: 7a639a7f-e526-4916-a957-b005277bdd2d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Ändra en serie{#change-a-series}
+
+{{eol}}
 
 Element i en dimension kan färgkodas som en serie i ett linjediagram så att varje element lättare kan spåras i andra visualiseringar på arbetsytan.
 
@@ -22,7 +24,7 @@ När en serie är aktiv visas data för de olika elementen i dimensionen i omvä
 
 **Aktivera en serie**
 
-* Högerklicka på ett element eller dimensionens etikett och klicka på **[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]**>*.
+* Högerklicka på ett element eller dimensionsetiketten och klicka på **[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]**>*.
 
 **Så här inaktiverar du en serie**
 

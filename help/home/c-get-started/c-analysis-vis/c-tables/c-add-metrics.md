@@ -3,14 +3,16 @@ description: Information om hur du lägger till och ändrar mätvärden.
 title: Lägga till och ändra ett mått
 uuid: fa4c1f8a-628e-4f51-b088-a398d6d7c315
 exl-id: 5b7d8880-4bd4-4086-8212-c3c23f6af972
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 0%
 
 ---
 
-# Lägg till och ändra ett mått{#add-and-change-a-metric}
+# Lägga till och ändra ett mått{#add-and-change-a-metric}
+
+{{eol}}
 
 Information om hur du lägger till och ändrar mätvärden.
 

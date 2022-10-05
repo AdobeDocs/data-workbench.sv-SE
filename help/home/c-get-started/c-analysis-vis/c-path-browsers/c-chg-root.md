@@ -3,14 +3,16 @@ description: Du kan ändra roten för en sökvägsläsare genom att antingen ang
 title: Ändra roten för sökvägsläsaren
 uuid: 0bb9b004-9736-411b-bd22-cac04f4733a6
 exl-id: 09842b93-af26-42b9-9395-a02b86978b21
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# Ändra sökvägen till webbläsarens rot{#change-the-path-browser-s-root}
+# Ändra roten för sökvägsläsaren{#change-the-path-browser-s-root}
+
+{{eol}}
 
 Du kan ändra roten för en sökvägsläsare genom att antingen ange ett element som visas som rot eller lägga till ett nytt element till visualiseringen.
 
@@ -34,8 +36,8 @@ Du kan ändra roten för en sökvägsläsare genom att antingen ange ett element
    >
    >Du kan ändra den basdimension som är kopplad till en sökvägsläsare genom att dra ett element i den önskade dimensionen till sökvägsläsaren. Det här elementet blir den nya roten i sökvägsläsaren, och etiketten i det övre vänstra hörnet i sökvägsläsaren ändras så att den återspeglar dimensionerna för det här elementet.
 
-   Anta till exempel att du skapar en sidsökvägswebbläsare som visar sidsekvensen för varje session. Om du drar ett element i söktermdimensionen till sökvägsläsaren blir söktermselementet den nya roten och etiketten visar nu sekvensen av söktermer för varje session.
+   Anta till exempel att du skapar en sidsökvägswebbläsare som visar sidsekvensen för varje session. Om du drar ett element i söktermdimensionen till sökvägsläsaren blir söktermelementet den nya roten och etiketten visar nu sekvensen av söktermer för varje session.
 
    >[!NOTE]
    >
-   >Om du drar ett element till en sökvägsläsare kan det ändra grunddimensionen som är kopplad till sökvägsläsaren, men det påverkar inte nivådimensionen, gruppdimensionen eller måttet. Därför måste du vara försiktig när du väljer en basdimension som är bra när du använder den tillsammans med webbläsarens nivådimension, gruppdimension och mätvärden. Om du vill ändra nivådimensionen, gruppdimensionen eller måttet måste du redigera sökvägen till webbläsarens [!DNL *.vw]-fil i en textredigerare som Anteckningar. Se [Konfigurera sökvägsläsare](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
+   >Om du drar ett element till en sökvägsläsare kan det ändra grunddimensionen som är kopplad till sökvägsläsaren, men det påverkar inte nivådimensionen, gruppdimensionen eller måttet. Därför måste du vara försiktig när du väljer en basdimension som är bra när du använder den tillsammans med webbläsarens nivådimension, gruppdimension och mätvärden. Om du vill ändra nivådimensionen, gruppdimensionen eller måttet måste du redigera sökvägsläsarens [!DNL *.vw] i en textredigerare som Anteckningar. Se [Konfigurera sökvägsläsare](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).

@@ -2,13 +2,17 @@
 description: Beslutsträd-menyn innehåller funktioner för att ställa in positiv användning, filter, alternativ för bladdistribution, förvirringsmatris och andra avancerade alternativ.
 title: Alternativ för beslutsträd
 uuid: 6439c6d4-60ac-4324-b870-b452a63b7ba1
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: e139562d-4613-4159-a858-2a78a2e896dd
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 0%
 
 ---
 
-
 # Alternativ för beslutsträd{#decision-tree-options}
+
+{{eol}}
 
 Beslutsträd-menyn innehåller funktioner för att ställa in positiv användning, filter, alternativ för bladdistribution, förvirringsmatris och andra avancerade alternativ.
 
@@ -32,9 +36,9 @@ Beslutsträd-menyn innehåller funktioner för att ställa in positiv användnin
    <td colname="col1"> Spara </td> 
    <td colname="col2"><b>Spara beslutsträdet</b>. Du kan spara beslutsträdet i olika format: 
     <ul id="ul_F7C7836C06D64912893113E8EEA05704"> 
-     <li id="li_D2D8451A679243F1BC67C3B80CA5F83F"><b>PMML</b>(Predictive Markup Language), ett XML-baserat filformat som används av program för att beskriva och utbyta beslutsträdsmodeller. </li> 
-     <li id="li_88C4B3E050CA4EFC9B7FA8BD446A9C55"><b>Text</b> som visar enkla kolumner och rader med true eller false, procentandelar, antal medlemmar och indatavärden. </li> 
-     <li id="li_3F871B88F3FA41E9B95EFF5A181E3D57">En <b>dimension</b> med förgreningar som motsvarar förväntade resultatelement. </li> 
+     <li id="li_D2D8451A679243F1BC67C3B80CA5F83F">Predictive Markup Language (<b>PMML</b>), ett XML-baserat filformat som används av program för att beskriva och utbyta beslutsträdsmodeller. </li> 
+     <li id="li_88C4B3E050CA4EFC9B7FA8BD446A9C55"><b>Text</b> visa enkla kolumner och rader med true eller false, procentandelar, antal medlemmar och indatavärden. </li> 
+     <li id="li_3F871B88F3FA41E9B95EFF5A181E3D57">A <b>Dimension</b> med förgreningar som motsvarar förväntade resultatelement. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -70,13 +74,13 @@ Beslutsträd-menyn innehåller funktioner för att ställa in positiv användnin
   </tr> 
   <tr> 
    <td colname="col1"> Matrix för förvrängning </td> 
-   <td colname="col2"> <p>Klicka på <span class="uicontrol"> Alternativ</span> &gt; <span class="uicontrol"> Matrix</span> för förvrängning för att visa värdena Accuracy, Recall, Precision och F-Score. Ju närmare 100 procent, desto bättre blir poängen. </p> <p>Med konfusionsmatrisen får du fyra noggrannhetsvärden för modellen med en kombination av värden: 
+   <td colname="col2"> <p>Klicka <span class="uicontrol"> Alternativ</span> &gt; <span class="uicontrol"> Matrix för förvrängning</span> för att visa värdena Accuracy, Recall, Precision och F-Score. Ju närmare 100 procent, desto bättre blir poängen. </p> <p>Med konfusionsmatrisen får du fyra noggrannhetsvärden för modellen med en kombination av värden: 
      <ul id="ul_D9D512F5D74B44BDBD27B1912DF4CB02"> 
       <li id="li_28C541DF1CB543FEAF2D13C2F329DB52">Faktiskt positivt (AP) </li> 
       <li id="li_56233006A1544D95A72CE096CA55C1E6">Förutsedd positiv (PP) </li> 
       <li id="li_375FB2D6A0A3418A9AD377C9EBB65386">Verkligt negativ (AN) </li> 
       <li id="li_07A5D23A36BA4D448C25C1414836EB8E">Förutsedd negativ (PN) </li> 
-     </ul> </p> <p>Tips:  Dessa siffror erhålls genom att använda den resulterande poängmodellen för de 20-procentiga testdata som behålls och som redan kallas det sanna svaret. Om poängen är större än 50 procent förutspås det som ett positivt skiftläge (som matchar det definierade filtret). Sedan, Accuracy = (TP + TN)/(TP + FP + TN + FN), Recall = TP / (TP + FN) och Precision = TP / (TP + FP). </p> </td> 
+     </ul> </p> <p>Tips: Dessa siffror erhålls genom att använda den resulterande poängmodellen för de 20-procentiga testdata som behålls och som redan kallas det sanna svaret. Om poängen är större än 50 procent förutspås det som ett positivt skiftläge (som matchar det definierade filtret). Sedan, Accuracy = (TP + TN)/(TP + FP + TN + FN), Recall = TP / (TP + FN) och Precision = TP / (TP + FP). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Visa förklaring </td> 
@@ -115,4 +119,3 @@ Beslutsträd-menyn innehåller funktioner för att ställa in positiv användnin
   </tr> 
  </tbody> 
 </table>
-

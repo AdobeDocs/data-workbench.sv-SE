@@ -4,7 +4,7 @@ solution: Analytics
 title: Validera experimentversionen
 uuid: 59769f5b-4175-479e-ad7d-7226e9c666af
 exl-id: 6dfd01ca-288d-40fd-aad4-75a588902ebd
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Validera experimentversionen{#validating-the-experiment}
+
+{{eol}}
 
 När du har driftsatt ditt experiment bör du verifiera att experimentet fungerar som det ska.
 

@@ -3,7 +3,7 @@ description: Kontrollpanelen för Adobe data workbench innehåller dessa funktio
 title: Funktioner
 uuid: 89f52af1-10a7-4510-838e-3b759f9c7d7b
 exl-id: 2a6bb179-67a0-4b21-a9cc-20b53d960e39
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # Funktioner{#features}
 
+{{eol}}
+
 Kontrollpanelen för Adobe data workbench innehåller dessa funktioner.
 
 * Utför direktanalys av datauppsättningar i Adobe Data Workbench.
 * Öka detaljnivån och segmentera data med ett enkelt musdrivet gränssnitt.
-* Skapa och spara flera analyspaneler.
+* Skapa och spara flera analytiska paneler.
 * Utbyt analyspaneler med andra.
 * Åtkomst till instrumentpaneler som skapats av andra användare.
 * Exportera data för användning i andra program, t.ex. Microsoft® Excel®.

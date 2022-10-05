@@ -3,7 +3,7 @@ description: I rapportportalen finns en sökfunktion för att hitta rapporter ba
 title: Avancerad sökning i rapportportalen
 uuid: 3b5262fb-ea42-449f-8ef9-897806a310a8
 exl-id: 891d51ad-8477-4a1a-9fe5-97e1210f11d5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 # Avancerad sökning i rapportportalen{#advanced-search-in-the-report-portal}
 
+{{eol}}
+
 I rapportportalen finns en sökfunktion för att hitta rapporter baserat på en trädvy över mappar, trädvy över rapportdatum och en ad hoc-sökning.
 
-1. Klicka på fliken **[!UICONTROL Search]** i den vänstra rutan i rapportportalen.
+1. Klicka på **[!UICONTROL Search]** i den vänstra rutan i rapportportalen.
 
    ![](assets/report_portal_search_button.png)
 
-   En ny webbsida öppnas och sidan **[!UICONTROL Search]** visas med alternativet **[!UICONTROL Folder Tree]** som standardvy.
+   En ny webbsida öppnas med **[!UICONTROL Search]** sida med **[!UICONTROL Folder Tree]** som standardvy.
 
    ![](assets/report_portal_search_headers.png)
 
@@ -34,7 +36,7 @@ I rapportportalen finns en sökfunktion för att hitta rapporter baserat på en 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Mappträd </p> </td> 
-   <td colname="col2"> <p>Välj rapporter baserat på den anpassade hierarkin för rapportmappar. De här mapparna definieras och ordnas som en <a href="../../home/c-rpt-oview/c-work-rpt-sets/c-work-rpt-sets.md#concept-a5f078668e1245e684cb2a778c8803d5">-rapportuppsättning</a>. </p> </td> 
+   <td colname="col2"> <p>Välj rapporter baserat på den anpassade hierarkin för rapportmappar. De här mapparna är definierade och ordnade som <a href="../../home/c-rpt-oview/c-work-rpt-sets/c-work-rpt-sets.md#concept-a5f078668e1245e684cb2a778c8803d5"> rapportuppsättning</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Datumträd </p> </td> 
@@ -44,8 +46,8 @@ I rapportportalen finns en sökfunktion för att hitta rapporter baserat på en 
    <td colname="col1"> <p>Sök </p> </td> 
    <td colname="col2"> <p>Sök i alla rapporter. Om du känner till rapportens fullständiga namn kan du ange det direkt i sökrutan. </p> <p>Dessutom: </p> 
     <ul id="ul_EAE30AAA865942078D0C6C0AE527C07C"> 
-     <li id="li_F5213977442F4B89A62CA6BC315F95BE">Ange en &lt;space&gt;-nyckel om du vill visa en nedrullningsbar lista med inledande tecken eller namn för alla befintliga rapporter. </li> 
-     <li id="li_C28799438777471290B424CAFFCAF810">Ange rapportens förnamn och skriv en &lt;space&gt;-nyckel för att visa en nedrullningsbar lista där du kan fylla i namnet automatiskt för en befintlig rapport. </li> 
+     <li id="li_F5213977442F4B89A62CA6BC315F95BE">Skriv a &lt;space&gt; om du vill visa en nedrullningsbar lista med inledande tecken eller namn för alla befintliga rapporter. </li> 
+     <li id="li_C28799438777471290B424CAFFCAF810">Ange rapportens förnamn och skriv ett &lt;space&gt; om du vill se en nedrullningsbar lista där du kan fylla i namnet automatiskt för en befintlig rapport. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -54,7 +56,7 @@ I rapportportalen finns en sökfunktion för att hitta rapporter baserat på en 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Visa markerade </p> </td> 
-   <td colname="col2">Klicka här om du vill visa rapporter som har valts i mappträdet eller i datumträdvyn. Rapportportalen öppnas i ett nytt fönster och visar varje rapport som en PNG-fil. Om flera rapporter är markerade kan varje enskild rapport väljas från en flik högst upp på sidan. <p>Klicka på knappen <span class="uicontrol"> Skriv ut</span> på den här sidan om du vill skriva ut den markerade rapporten eller klicka på <span class="uicontrol"> Hämta</span> om du vill lagra lokalt. </p> </td> 
+   <td colname="col2">Klicka här om du vill visa rapporter som har valts i mappträdet eller i datumträdvyn. Rapportportalen öppnas i ett nytt fönster och visar varje rapport som en PNG-fil. Om flera rapporter är markerade kan varje enskild rapport väljas från en flik högst upp på sidan. <p>Klicka på <span class="uicontrol"> Skriv ut</span> på den här sidan om du vill skriva ut den markerade rapporten eller klicka på <span class="uicontrol"> Hämta</span> för att lagra lokalt. </p> </td> 
   </tr> 
  </tbody> 
 </table>

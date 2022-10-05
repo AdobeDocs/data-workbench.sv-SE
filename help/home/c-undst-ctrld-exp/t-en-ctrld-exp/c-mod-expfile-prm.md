@@ -4,7 +4,7 @@ solution: Analytics
 title: Ändra parametern ExpFile
 uuid: bf146f46-f541-4969-8d90-af1a0c969344
 exl-id: 9c527ef9-aeda-4d83-8b98-a7dccbd55fe8
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Ändra parametern ExpFile{#modifying-the-expfile-parameter}
+
+{{eol}}
 
 ExpFile-parametern pekar på platsen för experimentets konfigurationsfil, som definierar ditt experiment.
 

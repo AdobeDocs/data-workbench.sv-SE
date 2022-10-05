@@ -2,17 +2,21 @@
 description: Samla in och beskriv de affärsfrågor som passar er marknadsföringsmiljö när ni implementerar Data Workbench.
 title: Data Workbench Discovery och krav
 uuid: 436f0c32-b4e2-41dd-a8e9-531e0a195276
-translation-type: tm+mt
-source-git-commit: 6443bdf8856ba51252685fa0c1ed65f831142956
+exl-id: 25cc2940-800a-4ad2-a7bb-c343e3d65500
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 4%
 
 ---
 
-
 # Data Workbench Discovery och krav{#data-workbench-discovery-and-requirements}
+
+{{eol}}
 
 Samla in och beskriv de affärsfrågor som passar er marknadsföringsmiljö när ni implementerar Data Workbench.
 
-I det här avsnittet kan ni samla in information om de frågor och uppgifter som krävs för att ta fram lösningar i Data Workbench (DWB), som kan ta upp dessa frågor på ett korrekt, entydigt och teknologiskt oberoende sätt, med referenser till företagsterminologin och Adobe Analytics Premium-lösningen. Detta avsnitt innehåller information om dessa mål och tillhörande krav.
+I det här avsnittet kan du samla in information om de frågor och uppgifter som krävs för att ta fram lösningar i Data Workbench (DWB), som kan ta upp dessa frågor på ett korrekt, entydigt och teknikoberoende sätt, med referenser till affärsterminologi och Adobe Analytics Premium lösning. Detta avsnitt innehåller information om dessa mål och tillhörande krav.
 
 ## Fas 1: Viktiga affärsmål/mål {#section-bb8f3d6071bf48d9a546ac2b80341e1d}
 
@@ -39,8 +43,8 @@ Analyskonstruktion
    <td colname="col2"> Lägg till namn på arbetsyta </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Arbetsytans mått och mått behövs </p> </td> 
-   <td colname="col2"> <p>Identifiera dimensioner: </p> <p>Identifiera mått: </p> </td> 
+   <td colname="col1"> <p>Dimensioner och mått för arbetsytan krävs </p> </td> 
+   <td colname="col2"> <p>Identifiera Dimensioner: </p> <p>Identifiera mått: </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Filter, flaggor och verktyg för arbetsytan som behövs </td> 
@@ -99,7 +103,7 @@ Förstå andra datakällor och kanaler och lär dig hur dessa kommer att relater
      Exempel på namn på arbetsyta </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Arbetsytans mått och mått behövs </p> </td> 
+   <td colname="col1"> <p>Dimensioner och mått för arbetsytan krävs </p> </td> 
    <td colname="col2"> <p>Dimensioner: Definiera nödvändiga dimensioner. </p> <p>Mätvärden: Definiera mått som behövs. </p> </td> 
   </tr> 
   <tr> 

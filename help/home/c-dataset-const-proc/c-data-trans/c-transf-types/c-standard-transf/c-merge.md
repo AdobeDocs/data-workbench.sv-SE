@@ -3,14 +3,16 @@ description: Sammanfogningsomformningen tar värden från indatafältet (vanligt
 title: Sammanfoga
 uuid: 9ca2ab22-d854-47b0-8189-f563c1e83d1c
 exl-id: 75fa824b-f68d-4ec4-a75d-0f742a7bb1ba
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '253'
 ht-degree: 1%
 
 ---
 
 # Sammanfoga{#merge}
+
+{{eol}}
 
 Sammanfogningsomformningen tar värden från indatafältet (vanligtvis en vektor med strängar), kombinerar dem till en enda sträng avgränsad med den angivna avgränsaren och placerar den resulterande strängen i det angivna utdatafältet.
 
@@ -45,7 +47,7 @@ Sammanfogningsomformningen tar värden från indatafältet (vanligtvis en vektor
   </tr> 
   <tr> 
    <td colname="col1"> Avgränsare </td> 
-   <td colname="col2"> <p>Sträng som används för att separera de enskilda elementen i indatasträngsvektorn i den enskilda utdatasträngen. </p> <p> Om du håller ned Ctrl-tangenten och högerklickar i avgränsarparametern visas en <span class="wintitle"> Infoga</span>-meny. Den här menyn innehåller en lista med specialtecken som ofta används som avgränsare. </p> </td> 
+   <td colname="col2"> <p>Sträng som används för att separera de enskilda elementen i indatasträngsvektorn i den enskilda utdatasträngen. </p> <p> Om du håller ned Ctrl-tangenten och högerklickar i parametern Avgränsare visas ett <span class="wintitle"> Infoga</span> visas. Den här menyn innehåller en lista med specialtecken som ofta används som avgränsare. </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 

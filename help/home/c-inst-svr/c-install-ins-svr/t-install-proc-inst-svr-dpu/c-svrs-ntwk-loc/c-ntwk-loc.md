@@ -3,7 +3,7 @@ description: Adressfilen har samma syfte som ETC&bsol;HOSTS-filen på en nätver
 title: Nätverksplatser
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 exl-id: 938217da-8935-4f2a-b5f8-9afc1dd489f3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Nätverksplatser{#network-locations}
+
+{{eol}}
 
 Adressfilen har samma syfte som ETC&amp;bsol;HOSTS-filen på en nätverksansluten dator.
 

@@ -3,7 +3,7 @@ description: Installera och konfigurera Sensor för Microsoft IIS 7.x eller 8.x 
 title: Microsoft IIS på Windows Server 2008 eller senare
 uuid: 7fd8da68-1553-4395-b13e-b08a6ee1948e
 exl-id: cc909daa-60c0-4188-8e90-035c41bf3105
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1589'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Microsoft IIS på Windows Server 2008 eller senare{#microsoft-iis-on-windows-server-or-later}
+
+{{eol}}
 
 Installera och konfigurera Sensor för Microsoft IIS 7.x eller 8.x som körs med Microsoft Windows Server 2008 eller senare.
 
@@ -83,20 +85,20 @@ Filen txlogd.conf innehåller konfigurationsparametrarna för Sensor.
 
 Du måste redigera filen för att bland annat ange storleken på diskkön, adressen till Insight Server och det ID som ska kopplas till data som produceras av den här sensorn. Konfigurationsfilen innehåller obligatoriska parametrar och valfria parametrar.
 
-* **Obligatoriska** parametrar är inställningar som du måste ange när du installerar sensor. Utan dessa inställningar kan sensorn inte köras.
-* **Valfria** parametrar är inställningar som är standard för fördefinierade värden (som du kan ändra) eller aktivera valfria funktioner.
+* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensor. Utan dessa inställningar kan sensorn inte köras.
+* **Valfria parametrar** är inställningar som är standard för fördefinierade värden (som du kan ändra) eller aktivera valfria funktioner.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-1. Öppna `<SensorDirectory>/txlogd.conf`-filen i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
+1. Öppna `<SensorDirectory>/txlogd.conf` i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 
-   Beskrivningar av [!DNL txlogd.conf]-parametrar finns i [Filparametrar för sensor Txlogd.conf](../../../home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md#concept-4bb629f058894b4abc65a31eb02eebed).
+   För beskrivningar av [!DNL txlogd.conf] parametrar, se [Filparametrar för sensortext.conf](../../../home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md#concept-4bb629f058894b4abc65a31eb02eebed).
 
 1. Spara och stäng filen.
 
 ## Starta sändaren och skapa diskkön {#section-2b8dfd06996d4ab49998eeb99bd9f5f0}
 
-När du har konfigurerat [!DNL txlogd.conf]filen kan du starta överföringsprogrammet, registrera det som en Windows-tjänst och skapa diskkön.
+När du har konfigurerat [!DNL txlogd.conf]kan du starta överföringsprogrammet, registrera det som en Windows-tjänst och skapa diskkön.
 
 1. Välj Tillbehör > Kommandotolk på Start-menyn i Windows.
 1. I kommandotolkfönstret navigerar du till katalogen där du installerade Sensor och kör följande kommando:
@@ -148,14 +150,14 @@ Sändaren är utformad för att köras kontinuerligt. Om du startar om datorn st
 För IIS är insamlaren ett ISAPI-filter som du lägger till på webbservern i IIS.
 
 1. Öppna IIS-hanteraren med **Start > Administrationsverktyg > IIS-hanteraren (Internet Information Services)**.
-1. Expandera noderna **Lokal dator** och **Platser**.
-1. Markera webbplatsen och dubbelklicka på **ISAPI-filter** i den högra rutan.
-1. Klicka på **Lägg till** under rutan **Åtgärder**.
+1. Expandera **Lokal dator** och **Webbplatser** noder.
+1. Markera webbplatsen och dubbelklicka i den högra rutan **ISAPI-filter**.
+1. Under **Åtgärder** ruta, klicka **Lägg till**.
 
-1. I fältet **Filternamn** anger du ett visningsnamn för filtret. Det föreslagna filternamnet är &quot;Sensor&quot;.
-1. Klicka på **Bläddra**, markera filen qlog.dll (finns i den katalog där du installerade Sensor) och klicka på **OK**.
+1. I **Filternamn** anger du ett visningsnamn för filtret. Det föreslagna filternamnet är &quot;Sensor&quot;.
+1. Klicka **Bläddra**, markerar filen qlog.dll (finns i den katalog där du installerade Sensor) och klickar på **OK**.
 
-1. Klicka på **OK** för att lägga till filtret.
+1. Klicka **OK** för att lägga till filtret.
 
    När du har lagt till filtret kan insamlaren användas direkt och kan samla in data.
 
@@ -167,9 +169,9 @@ Om den gröna pilen inte visas efter trafikflödet till insamlaren utför du fö
    >
    >Kommandosekvensen kan variera beroende på vilken version av Windows du använder.
 
-1. Välj loggen **Application** i den vänstra rutan i Loggboken.
-1. I den högra rutan söker du efter händelser med Adobe i kolumnen **Källa**.
-1. Om du hittar ett fel dubbelklickar du på felet för att visa fönstret **Händelseegenskaper**.
+1. I den vänstra rutan i Loggboken väljer du **Program** log.
+1. I den högra rutan letar du efter händelser med &quot;Adobe&quot; i **Källa** kolumn.
+1. Om du hittar ett fel dubbelklickar du på felet för att visa **Egenskaper för händelse** -fönstret.
 
 ## Hämta ytterligare data {#section-98db9625efdc4b60bfd76f7adf4af74d}
 

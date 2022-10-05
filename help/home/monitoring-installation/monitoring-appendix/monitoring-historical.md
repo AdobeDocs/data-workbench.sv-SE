@@ -3,7 +3,7 @@ description: Följande dimensioner är tillgängliga för användning i den hist
 title: Dimensioner i Datans Workbench historikprofil
 uuid: 6d93fba4-986b-46a4-9479-aeb54853dff5
 exl-id: 9df1f317-a985-4132-b32e-f2263e0c23b2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Dimensioner i Datans Workbench historikprofil{#dimensions-in-the-data-workbench-historic-profile}
+
+{{eol}}
 
 Följande dimensioner är tillgängliga för användning i den historiska profilen för data workbench.
 
@@ -22,7 +24,7 @@ Följande dimensioner är tillgängliga för användning i den historiska profil
  <tbody> 
   <tr> 
    <td colname="col1"> <b>Blockera</b> </td> 
-   <td colname="col2">Detta är den enda räkningsbara konfigurationen, den är roten för alla dimensioner. Ett block kan betraktas som en server. Det använder x-trackingid-fältet. <p>Obs!  Blockets ID är en hash av servernamnet plus värdnamnet, så det kommer att finnas ungefär ett block per server och profil. </p></td> 
+   <td colname="col2">Detta är den enda räkningsbara konfigurationen, den är roten för alla dimensioner. Ett block kan betraktas som en server. Det använder x-trackingid-fältet. <p>Obs! Blockets ID är en hash av servernamnet plus värdnamnet, så det kommer att finnas ungefär ett block per server och profil. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Ping</b> </td> 
@@ -82,19 +84,19 @@ Följande dimensioner är tillgängliga för användning i den historiska profil
   </tr> 
   <tr> 
    <td colname="col1"> <b>Beräknad svep deksekunder</b> </td> 
-   <td colname="col2"> Fältet för x-Estimated-sweep-dekaseconds används i den här numeriska Dimensionen. Detta är den uppskattade sveptiden för servrarna dividerat med tio (minskad upplösning för svepmätning för att göra måttet mer rimligt stort). <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Fältet för x-Estimated-sweep-dekaseconds används i den här numeriska Dimensionen. Detta är den uppskattade sveptiden för servrarna dividerat med tio (minskad upplösning för svepmätning för att göra måttet mer rimligt stort). <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Mega-indata per minut</b> </td> 
-   <td colname="col2"> Värdet cs-uri-query(bj) används för den här dimensionen. Den sista raden för ett block används som värde för dimensionen. Om datauppsättningen är i snabb inmatning visar den numeriska Dimensionens värde den MB per minut som systemet matar in data med. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Värdet cs-uri-query(bj) används för den här dimensionen. Den sista raden för ett block används som värde för dimensionen. Om datauppsättningen är i snabb inmatning visar den numeriska Dimensionens värde den MB per minut som systemet matar in data med. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Mega-byte för snabb sammanslagning per minut</b> </td> 
-   <td colname="col2">Värdet cs-uri-query(bk) används för den här dimensionen. Den sista raden för ett block används som värde för dimensionen. Om datauppsättningen är i snabb sammanslagning visar den här numeriska Dimensionens värde den MB per minut som systemet sammanfogas med. <p><p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></p></td> 
+   <td colname="col2">Värdet cs-uri-query(bk) används för den här dimensionen. Den sista raden för ett block används som värde för dimensionen. Om datauppsättningen är i snabb sammanslagning visar den här numeriska Dimensionens värde den MB per minut som systemet sammanfogas med. <p><p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>GigaBytes-fält</b> </td> 
-   <td colname="col2">Värdet cs-uri-query(bg) används för den här dimensionen. Värdet divideras med 1000 och avrundas till närmaste heltal. Den här numeriska Dimensionens värde visar mängden utrymme som används för fälten i datauppsättningen. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2">Värdet cs-uri-query(bg) används för den här dimensionen. Värdet divideras med 1000 och avrundas till närmaste heltal. Den här numeriska Dimensionens värde visar mängden utrymme som används för fälten i datauppsättningen. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Grupp</b> </td> 
@@ -110,31 +112,31 @@ Följande dimensioner är tillgängliga för användning i den historiska profil
   </tr> 
   <tr> 
    <td colname="col1"> <b>Läs in medel</b> </td> 
-   <td colname="col2"> Detta är en numerisk dimension som använder den sista raden för en viss servers cs-uri-query(i)-värde. Den villkoras av att cs-uri-query(k) inte är tom. Denna dimension används för att beräkna den genomsnittliga belastningen på servrarna i det system som övervakas. <p><p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></p></td> 
+   <td colname="col2"> Detta är en numerisk dimension som använder den sista raden för en viss servers cs-uri-query(i)-värde. Den villkoras av att cs-uri-query(k) inte är tom. Denna dimension används för att beräkna den genomsnittliga belastningen på servrarna i det system som övervakas. <p><p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Loggläsningsprocent</b> </td> 
-   <td colname="col2">Värdet cs-uri-query(be) används för den här numeriska dimensionen, som har skapats på Ping-nivå. Den här dimensionen används för att beräkna hur många procent av loggarna som ska läsas. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2">Värdet cs-uri-query(be) används för den här numeriska dimensionen, som har skapats på Ping-nivå. Den här dimensionen används för att beräkna hur många procent av loggarna som ska läsas. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Procent av minnessidfil</b> </td> 
-   <td colname="col2"> Det här är en numerisk dimension som använder cs-uri-query(o)-värde som skapats på Ping-nivå. Den villkoras av att cs-uri-query(k) inte är tom och cs-uri-query(a) matchar "1". Den här dimensionen används för att beräkna procentandelen av sidfilens minnesanvändning. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Det här är en numerisk dimension som använder cs-uri-query(o)-värde som skapats på Ping-nivå. Den villkoras av att cs-uri-query(k) inte är tom och cs-uri-query(a) matchar "1". Den här dimensionen används för att beräkna procentandelen av sidfilens minnesanvändning. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Totalt antal fysiska megabyte</b> </td> 
-   <td colname="col2">Detta är en numerisk dimension som använder värdet cs-uri-query(ag), som skapats på Ping-nivå. Den villkoras av att cs-uri-query(k) inte är tom och cs-uri-query(a) matchar "1". <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2">Detta är en numerisk dimension som använder värdet cs-uri-query(ag), som skapats på Ping-nivå. Den villkoras av att cs-uri-query(k) inte är tom och cs-uri-query(a) matchar "1". <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Fysisk procent minne</b> </td> 
-   <td colname="col2">Detta är en numerisk dimension som använder värdet cs-uri-query(ag), som skapats på Ping-nivå. Den villkoras av att cs-uri-query(k) inte är tom och cs-uri-query(a) matchar "1". Den här dimensionen används för att beräkna procentandelen fysiskt minnesutnyttjande för varje server. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2">Detta är en numerisk dimension som använder värdet cs-uri-query(ag), som skapats på Ping-nivå. Den villkoras av att cs-uri-query(k) inte är tom och cs-uri-query(a) matchar "1". Den här dimensionen används för att beräkna procentandelen fysiskt minnesutnyttjande för varje server. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Procent för minnesfråga</b> </td> 
-   <td colname="col2"> Detta är en numerisk dimension som använder värdet för cs-uri-query (cs) på Ping-nivå. Den villkoras av att cs-uri-query(k) inte är tom och cs-uri-query(a) matchar "1". Den här dimensionen används för att beräkna procentandelen frågeminnesanvändning för varje server. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Detta är en numerisk dimension som använder värdet för cs-uri-query (cs) på Ping-nivå. Den villkoras av att cs-uri-query(k) inte är tom och cs-uri-query(a) matchar "1". Den här dimensionen används för att beräkna procentandelen frågeminnesanvändning för varje server. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Nätverksanslutningar</b> </td> 
-   <td colname="col2"> Detta är en numerisk dimension som använder värdet cs-uri-query(q) som har skapats på Ping-nivå. Den villkoras av att cs-uri-query(k) inte är tom och cs-uri-query(a) matchar "1". Detta används för att visa antalet nätverksanslutningar som finns för en viss server. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Detta är en numerisk dimension som använder värdet cs-uri-query(q) som har skapats på Ping-nivå. Den villkoras av att cs-uri-query(k) inte är tom och cs-uri-query(a) matchar "1". Detta används för att visa antalet nätverksanslutningar som finns för en viss server. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Utdatarader</b> </td> 
@@ -146,11 +148,11 @@ Följande dimensioner är tillgängliga för användning i den historiska profil
   </tr> 
   <tr> 
    <td colname="col1"> <b>Centisekunder för fördröjning av omröstning</b> </td> 
-   <td colname="col2">Värdet cs-uri-query(m) divideras med 10 för att minska dimensionsstorleken och kopieras till fältet x-poll-latency-centiseconds. Det här är en numerisk dimension som skapats på Ping-nivå, med villkoret att cs-uri-query(k) inte är tom, och cs-uri-query(a) matchar "1"/ Den här dimensionen används för att beräkna fördröjningen för avsökningen. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2">Värdet cs-uri-query(m) divideras med 10 för att minska dimensionsstorleken och kopieras till fältet x-poll-latency-centiseconds. Det här är en numerisk dimension som skapats på Ping-nivå, med villkoret att cs-uri-query(k) inte är tom, och cs-uri-query(a) matchar "1"/ Den här dimensionen används för att beräkna fördröjningen för avsökningen. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>ID för bearbetningsläge</b> </td> 
-   <td colname="col2"> cs-uri-query(bb)-värdet används för den här enkla Dimensionen som skapas på Ping-nivå. Det är villkorat att cs-uri-query(bb) inte är tom och att cs-uri-query(a) matchar "2" Bearbetningsläge-ID gör att man kan se vilket bearbetningsläge systemet är i (Fast Input, Fast Merge, Real Time). <p>Obs!  Dimensionen är dold och sedan återexponerad med egna värden i dimensionshanteringsläget på klientsidan. </p></td> 
+   <td colname="col2"> cs-uri-query(bb)-värdet används för den här enkla Dimensionen, som skapas på Ping-nivå. Det är villkorat att cs-uri-query(bb) inte är tom och att cs-uri-query(a) matchar "2" Bearbetningsläge-ID gör att man kan se vilket bearbetningsläge systemet är i (Fast Input, Fast Merge, Real Time). <p>Obs! Dimensionen är dold och sedan återexponerad med egna värden i dimensionshanteringsläget på klientsidan. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Profil</b> </td> 
@@ -174,11 +176,11 @@ Följande dimensioner är tillgängliga för användning i den historiska profil
   </tr> 
   <tr> 
    <td colname="col1"> <b>Procentvärde för temporärt databasutrymme</b> </td> 
-   <td colname="col2">Numerisk Dimension som skapats med cs-uri-query(an)-värdet, som skapats på Ping-nivå. Det är villkorat att cs-uri-query(k) inte är tom och cs-uri-query(a) matchar "1". Den används för att beräkna procentandelen använt temporärt DB-utrymme på en given server. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2">Numerisk Dimension som skapats med cs-uri-query(an)-värdet, som skapats på Ping-nivå. Det är villkorat att cs-uri-query(k) inte är tom och cs-uri-query(a) matchar "1". Den används för att beräkna procentandelen använt temporärt DB-utrymme på en given server. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Omformningsprocent</b> </td> 
-   <td colname="col2">Värdet cs-uri-query(bf) används för den här numeriska dimensionen. Den är byggd på Ping-nivå. Den här dimensionen används för att beräkna procentandelen av fullständig dataomvandling. <p><p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></p></td> 
+   <td colname="col2">Värdet cs-uri-query(bf) används för den här numeriska dimensionen. Den är byggd på Ping-nivå. Den här dimensionen används för att beräkna procentandelen av fullständig dataomvandling. <p><p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Datans Workbench version</b> </td> 

@@ -2,27 +2,29 @@
 description: När du skapar ett vektorlager som refererar till en tabbseparerad värdefil (.tsv), hämtas vektordata genom att både ritinstruktioner och longitud- och latituddata hämtas från .tsv-filen.
 title: Vektorlager som refererar till filer med tabbseparerade värden
 uuid: 42607b34-e9f2-420a-ba5a-05562598b480
-exl-id: be16ba73-4a98-472b-98f1-1b32e671b763,7b0b0286-072b-4b31-b6ec-ced322da5236
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+exl-id: be16ba73-4a98-472b-98f1-1b32e671b763
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
 
 ---
 
-# Vektorlager som refererar till tabbseparerade värdefiler{#vector-layers-referencing-tab-separated-values-files}
+# Vektorlager som refererar till filer med tabbseparerade värden{#vector-layers-referencing-tab-separated-values-files}
+
+{{eol}}
 
 När du skapar ett vektorlager som refererar till en tabbseparerad värdefil (.tsv), hämtas vektordata genom att både ritinstruktioner och longitud- och latituddata hämtas från .tsv-filen.
 
-Om du vill definiera ett vektorlager som refererar till en [!DNL .tsv]-fil måste du ha följande:
+Definiera ett vektorlager som refererar till ett [!DNL .tsv] -filer måste du ha följande:
 
-* **En  [!DNL .tsv]** fil som innehåller de data som används för att rita vektorerna på jorden, inklusive longitud- och latituddata. Mer information om det format som krävs för filen [!DNL .tsv] finns i [Vector TSV-filformat](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-a29012c9ff4444ac8a6d41c68482828e).
+* **A [!DNL .tsv] fil** som innehåller de data som används för att rita vektorerna på jorden, inklusive longitud- och latituddata. Mer information om vilket format som krävs för [!DNL .tsv] -fil, se [Vector TSV-filformat](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-a29012c9ff4444ac8a6d41c68482828e).
 
-* **En lagerfil** som anger platsen för  [!DNL .tsv] filen. Mer information om vilket format lagerfilen ska ha finns i [Vektorlagerfilformat](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-c430923f341f4c93852e9f24b61e82bf).
+* **En lagerfil** som anger platsen för [!DNL .tsv] -fil. Mer information om vilket format lagerfilen ska ha finns i [Vektorlagerfilformat](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-c430923f341f4c93852e9f24b61e82bf).
 
-## Vector TSV-filformat {#section-a29012c9ff4444ac8a6d41c68482828e}
+## Vector TSV, filformat {#section-a29012c9ff4444ac8a6d41c68482828e}
 
-Filen [!DNL .tsv] måste innehålla följande tre tabbavgränsade kolumner:
+The [!DNL .tsv] filen måste innehålla följande tre tabbavgränsade kolumner:
 
 * **[!DNL Begin]:** Den här kolumnen ska ange om en ny rad ska börja. Värdena i den här kolumnen kan vara 0 (börja inte en ny rad) eller 1 (börja en ny rad).
 * **[!DNL Longitude]:** Den här kolumnen ska innehålla longitudvärden.
@@ -32,13 +34,13 @@ Filen [!DNL .tsv] måste innehålla följande tre tabbavgränsade kolumner:
 >
 >Eventuella ytterligare kolumner ignoreras.
 
-Nedan följer ett exempel på en [!DNL .tsv]-fil som innehåller data för ett vektorlager:
+Här följer ett exempel [!DNL .tsv] fil som innehåller data för ett vektorlager:
 
 ![](assets/tsv_vectorlayer.png)
 
-## Vektorlagerfilformat {#section-c430923f341f4c93852e9f24b61e82bf}
+## Filformat för vektorlager {#section-c430923f341f4c93852e9f24b61e82bf}
 
-Varje vektorlagerfil som refererar till [!DNL .tsv]-filer måste formateras med följande mall:
+Varje vektorlagerfil som refererar till [!DNL .tsv] filer måste formateras med följande mall:
 
 ```
 Layer = VectorLayer:
@@ -63,11 +65,11 @@ Layer = VectorLayer:
  <tbody> 
   <tr> 
    <td colname="col1"> TSV-filer </td> 
-   <td colname="col2"> <p>Sökväg(er) till <span class="filepath"> .tsv</span>-filen/filerna som innehåller vektordata. </p> <p>Exempel: <span class="filepath"> Maps\\USVectorData.tsv</span> </p> </td> 
+   <td colname="col2"> <p>Sökvägar till <span class="filepath"> .tsv</span> filer som innehåller vektordata. </p> <p>Exempel: <span class="filepath"> Maps\\USVectorData.tsv</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Färg </td> 
-   <td colname="col2"> RGB-färgvektorn, som uttrycks som (röd, grön, blå). För varje färg i vektorn kan du ange ett värde mellan 0,0 och 1,0. (1.0, 0.0, 0.0) är till exempel ljusröd och (0.5, 0.5, 0.5) är grå. </td> 
+   <td colname="col2"> Färgvektorn RGB, som uttrycks som (röd, grön, blå). För varje färg i vektorn kan du ange ett värde mellan 0,0 och 1,0. (1.0, 0.0, 0.0) är till exempel ljusröd och (0.5, 0.5, 0.5) är grå. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Alfa </td> 

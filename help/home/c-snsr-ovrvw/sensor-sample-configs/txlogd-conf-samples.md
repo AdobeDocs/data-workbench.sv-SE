@@ -2,13 +2,17 @@
 description: Exempel på txlogd.conf-filer för de webbservrar/operativsystem som stöds.
 title: Exempel på filen Txlogd.conf
 uuid: ba8f3938-b7d6-44bd-93ca-eb66f509ef4e
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 3bbb794f-c771-43c6-9ebf-8892c1d9a707
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
 
-
 # Exempel på filen Txlogd.conf{#txlogd-conf-file-samples}
+
+{{eol}}
 
 Exempel på txlogd.conf-filer för de webbservrar/operativsystem som stöds.
 
@@ -193,7 +197,7 @@ SiteTest http,localhost,80,/test.html
 
 ## Lotus Domino på Windows Server 2000 eller senare {#section-d2fd9e0684fe460bbccaaabc4197bb48}
 
-Exempel på filen txlogd.conf som krävs för Sensor för Lotus Domino som körs i Microsoft Windows Server 2000 eller senare.
+Exempel på filen txlogd.conf som krävs för Sensor för Lotus Domino som körs med Microsoft Windows Server 2000 eller senare.
 
 ```
 # sample txlogd configuration file for Lotus Domino
@@ -271,9 +275,9 @@ SpecialLogField cs(dn)=vars.X509SubjectName vys_log
 SpecialLogField cs(cert)=vars.certificate vys_log
 ```
 
-## IBM HTTP Server på IBM AIX 5.2 {#section-d7c88cc65b0b4c7a877bf7a084cbf4fb}
+## IBM HTTP Server on IBM AIX 5.2 {#section-d7c88cc65b0b4c7a877bf7a084cbf4fb}
 
-Exempel på filen txlogd.conf som krävs för Sensor för IBM HTTP Server 2.0.x som körs under IBM AIX 5.2.
+Exempel på filen txlogd.conf som krävs för Sensor för IBM HTTP Server 2.0.x som körs med IBM AIX 5.2.
 
 ```
 # sample txlogd configuration file for IHS 2.0.x
@@ -554,7 +558,7 @@ CacheControl private,max-age=0,must-revalidate
 
 ## Apache Server 1.3.x på Windows 2000 Server eller senare {#section-d225f200da28441895fb90a64c2a2ffd}
 
-Exempel på filen txlogd.conf som krävs för Sensor för Apache Server 1.3.x som körs i Microsoft Windows Server 2000 eller senare.
+Exempel på filen txlogd.conf som krävs för Sensor för Apache Server 1.3.x som körs med Microsoft Windows Server 2000 eller senare.
 
 ```
 # sample txlogd configuration file for Apache 1.3
@@ -844,7 +848,7 @@ CacheControl private,max-age=0,must-revalidate
 
 ## Apache Server 2.0.x eller 2.2 i Windows Server 2000 eller senare {#section-a1749d32a8aa4ca0b81f8b95c8dc511c}
 
-Exempel på filen txlogd.conf som krävs för Sensor för Apache Server 2.0.x eller 2.2 som körs i Microsoft Windows Server 2000 eller senare.
+Exempel på filen txlogd.conf som krävs för Sensor för Apache Server 2.0.x eller 2.2 som körs med Microsoft Windows Server 2000 eller senare.
 
 ```
 # sample txlogd configuration file for Apache 2.0.x or 2.2
@@ -990,4 +994,3 @@ CacheControl private,max-age=0,must-revalidate
 ```
 
 ## Avsnittstitel {#section-f25d181e181e4bb7bf46d4410756e945}
-

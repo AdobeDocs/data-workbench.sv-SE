@@ -3,14 +3,16 @@ description: Beslutsträd är en visualisering för prediktiv analys som använd
 title: Beslutsträdsbyggaren
 uuid: 1f7e91ea-e5d9-4d8e-9fcf-cae4de42dfdd
 exl-id: d93e6a34-be59-4af5-84c3-c13deb98b57b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
 
 ---
 
-# Beslutsträdeskaparen{#decision-tree-builder}
+# Beslutsträdsbyggaren{#decision-tree-builder}
+
+{{eol}}
 
 Beslutsträd är en visualisering för prediktiv analys som används för att utvärdera besökares egenskaper och relationer. Beslutsträdsbyggaren genererar en beslutsträdsvisualisering baserad på ett angivet positivt fall och en uppsättning indata.
 
@@ -23,7 +25,7 @@ Ett beslutsträd byggs genom att man undersöker indata på varje nivå och väl
 
 Använd beslutsträd för att
 
-* Genomför meningsfulla analyser och tolkningar på kortare tid.
+* Utför meningsfull analys och tolkning på kortare tid.
 * Använd automatiserad segmentgenerering.
 * Skapa snabbt slutsatser utifrån en modell som bygger på en stor mängd data.
 
@@ -32,9 +34,9 @@ Använd beslutsträd för att
 <table id="table_FCC5D63EF8A843D79B2338BD951025EA"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b>Verktygsfält och menyer</b> </p> <p>Verktygsfältet innehåller knappar och menykommandon för beslutsträdet, inklusive funktioner för att ställa in positiv skiftläge och lägga till inmatningslistor. </p> <p>I likhet med andra visualiseringar kan du dra och släppa Dimension och element i rutan <span class="uicontrol"> element</span>, men du kan även dra direkt från rutan Finders. </p> <p>Mer information finns i <a href="../../../../home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md#concept-bfc4e80651a243d3966cc770b205606c"> Alternativ för beslutsträd</a>. </p> </td> 
+   <td colname="col1"> <p><b>Verktygsfält och menyer</b> </p> <p>Verktygsfältet innehåller knappar och menykommandon för beslutsträdet, inklusive funktioner för att ställa in positiv skiftläge och lägga till inmatningslistor. </p> <p>I likhet med andra visualiseringar <span class="uicontrol"> Element</span> I kan du dra och släppa Dimension och element, men du kan också dra direkt från Finders-rutan. </p> <p>Mer information finns i <a href="../../../../home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md#concept-bfc4e80651a243d3966cc770b205606c"> Alternativ för beslutsträd</a>. </p> </td> 
    <td colname="col2"> <p><b>Inmatningslista</b> </p> <p>I det här området visas indata i trädmodellen. De är färgkodade så att de matchar noderna i trädvisningsområdet. </p> <p>Om du högerklickar på en inmatning kan du ta bort inmatningen från modellen och återställa den. </p> <p>Om du hovrar över en trädnod visas delningsvillkoren längs grenen till den noden och förutsägelsen vid den noden med dess konfidensvärde. </p> </td> 
-   <td colname="col3"> <p><b>Trädvisning</b> </p> <p>I det här området visas trädmodellen med lövnoder som är färgkodade baserat på dess förutsägelse: grönt för en True-förutsägelse av det positiva fallet och rött för en False-förutsägelse. </p> <p>De delade noderna färgkodas enligt de indata som matchar deras markeringsvillkor. När du hovrar över en nod visas information om delningen och inmatningslistan expanderas så att de delade punkterna visas längs grenen och kursens distribution. </p> <p>Noder under ett tröskelvärde visas inte som standard. Klicka på en utökningsbar nod (indikeras av symbolen +) för att utforska en gren. Klicka på rotnoden för att återgå till den fullständiga trädvisningen. </p> </td> 
+   <td colname="col3"> <p><b>Trädvisning</b> </p> <p>I det här området visas trädmodellen med lövnoder som är färgkodade baserat på dess förutsägelse: grönt för en True-förutsägelse av det positiva fallet och rött för en False-förutsägelse. </p> <p>De delade noderna färgkodas enligt de indata som matchar deras markeringsvillkor. När du hovrar över en nod visas information om delningen och inmatningslistan expanderas så att de delade punkterna visas längs grenen och kursens distribution. </p> <p>Noder under ett tröskelvärde visas inte som standard. Klicka på en expanderbar nod (indikeras av symbolen +) för att utforska en gren. Klicka på rotnoden för att återgå till den fullständiga trädvisningen. </p> </td> 
   </tr> 
  </tbody> 
 </table>

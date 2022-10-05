@@ -3,7 +3,7 @@ description: Följ de här stegen för att starta introduktionsprocessen för Ad
 title: Grundläggande introduktionsinstruktioner för DWB Managed Services
 uuid: ad44a4eb-00ea-49c7-8401-58976d8fe39e
 exl-id: 49fb6afe-b417-4554-9238-fd6381c00029
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Grundläggande introduktionsinstruktioner för DWB Managed Services{#basic-onboarding-instructions-for-dwb-managed-services}
+
+{{eol}}
 
 Följ de här stegen för att starta introduktionsprocessen för Adobe Data Workbench (DWB), en komponent i Adobe Analytics Premium (AAP).
 
@@ -23,7 +25,7 @@ Adobe kommer att kontakta dig för att
 * Identifiera en primär användare för DWB för att generera ett certifikat specifikt för den användaren i nätverkskatalogen. Den primära användaren fungerar också som kontaktperson för att interagera med Adobe kundtjänst.
 * Identifiera den rapportsvit som ska läsas in i DWB.
 
-Adobe Digital Marketing-team tar sedan med er information för att skapa profiler, ställa in konton och leverera en konfigurationsfil för DWB.
+Adobe Digital Marketing-team använder sedan informationen för att skapa profiler, ställa in konton och leverera en konfigurationsfil för DWB.
 
 **Adobe introduktionsuppgifter**
 
@@ -55,12 +57,12 @@ Du får dessa installationsfiler från Adobe Customer Care för att installera D
    >
    >Din webbläsare kan uppmana dig att presentera ett digitalt certifikat just nu. Om så är fallet klickar du på Avbryt för att stänga dialogrutan.
 
-1. Leta reda på certifikatet som utfärdats för din instans av Adobe Data Workbench (`<PrimaryUser>`.pem) i hämtningsavsnittet och hämta det.
+1. Leta reda på certifikatet som utfärdats för din instans av Adobe Data Workbench (`<PrimaryUser>`.pem) i nedladdningsavsnittet och nedladdningen.
 1. Leta reda på standardklientinstallationsprogrammet i hämtningsavsnittet för att hämta DWB Setup Wizard (InsightSetup-x.xx.exe file).
 1. När du har tagit emot och laddat ned filer från Adobe kundtjänst kör du installationsguiden för DWB för att installera arbetsstationsprogramvaran på klientdatorn.
 
 >[!NOTE]
-Installationsguiden för DWB hjälper dig att installera DWB-klientarbetsstationen och hitta filerna Insight.cfg och `<PrimaryUser>`.pem som ska placeras i de mappar som krävs. Filen Insight.cfg finns i filen Insight.exe som finns på din installerade klientdator. Filen `<PrimaryUser>`.pem finns i mappen Certificates med filen trust_ca_cert.pem. Alla certifikat- och konfigurationsfiler måste finnas för att DWB ska fungera.
+Installationsguiden för DWB hjälper dig att installera DWB-klientdatorn och hitta Insight.cfg och `<PrimaryUser>`.pem-filer som ska placeras i de mappar som krävs. Filen Insight.cfg finns i filen Insight.exe som finns på din installerade klientdator. The `<PrimaryUser>`.pem-filen finns i mappen Certificates med filen trust_ca_cert.pem. Alla certifikat- och konfigurationsfiler måste finnas för att DWB ska fungera.
 
 Mer information finns i [DWB Setup Wizard](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html).
 

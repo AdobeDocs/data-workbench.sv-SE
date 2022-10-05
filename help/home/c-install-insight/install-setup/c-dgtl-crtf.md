@@ -3,7 +3,7 @@ description: När du har installerat programfilerna för Insight måste du hämt
 title: Hämta och installera det digitala certifikatet (Insight)
 uuid: 93ab2222-a977-4279-9e1e-71038b1d1cfa
 exl-id: 0dff95ae-880b-45d5-96df-4eb6bea58891
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Hämta och installera det digitala certifikatet{#downloading-and-installing-the-digital-certificate}
+
+{{eol}}
 
 När du har installerat programfilerna för Insight måste du hämta och installera det digitala certifikatet som du fått från Adobe.
 
@@ -240,7 +242,7 @@ Följande instruktioner beskriver de procedurer som ska följas för att använd
       ```
 
    1. Certifikatet har CN, O, OU osv. som krävs för den här klienten i serverns [!DNL Access Control.cfg] -fil.
-   1. Certifikatet har utfärdats med en *syfte **** av *klient* (eller båda *server* **och** *klient*).
+   1. Certifikatet har utfärdats med en *syfte&#42;&#42;&#42;* av *klient* (eller båda *server* **och** *klient*).
 
       Följande kommandon kan användas för att verifiera att ett certifikat har en avsedd kod som server och/eller klient:
 

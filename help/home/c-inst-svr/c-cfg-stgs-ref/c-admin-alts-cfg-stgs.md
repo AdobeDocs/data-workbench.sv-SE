@@ -3,7 +3,7 @@ description: Instruktioner för att konfigurera administrativa varningar för In
 title: Konfigurationsinställningar för administrativa aviseringar
 uuid: c2be2d1e-d81d-4d9f-ac94-4b642dad90b9
 exl-id: c75e442e-33e6-4fc8-8368-29482f09e1cc
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Konfigurationsinställningar för administrativa aviseringar{#administrative-alerts-configuration-settings}
+
+{{eol}}
 
 Instruktioner för att konfigurera administrativa varningar för Insight Server, Repeater eller Transform.
 
@@ -36,7 +38,7 @@ Slutför parametrarna i följande fil:
   </tr> 
   <tr> 
    <td colname="col1"> Fel i kategoriseringsfil </td> 
-   <td colname="col2"> <p>Namnet på filen som du vill använda för att kategorisera varje varning. Du skapar den här filen med Anteckningar. Filen ska ha tre kolumner på varje rad, avgränsade med tabbar. Den första kolumnen är en sträng som matchar i fel. Ett ^-tecken matchar början och ett $ matchar slutet av strängen. alla andra tecken ordagrant matchas. Den andra kolumnen är en kategori för matchande fel, som finns i Felkategorier. Det tredje är ett alternativt meddelande som läggs till i det faktiska felmeddelandet i e-postmeddelanden som skickas. Om ingen fil anges kategoriseras alla fel som standard. </p> <p>Ett exempel på den här filen finns i filen <span class="filepath"> Error Categories.txt </span> i katalogen Lookups. </p> </td> 
+   <td colname="col2"> <p>Namnet på filen som du vill använda för att kategorisera varje varning. Du skapar den här filen med Anteckningar. Filen ska ha tre kolumner på varje rad, avgränsade med tabbar. Den första kolumnen är en sträng som matchar i fel. Ett ^-tecken matchar början och ett $ matchar slutet av strängen. alla andra tecken ordagrant matchas. Den andra kolumnen är en kategori för matchande fel, som finns i Felkategorier. Det tredje är ett alternativt meddelande som läggs till i det faktiska felmeddelandet i e-postmeddelanden som skickas. Om ingen fil anges kategoriseras alla fel som standard. </p> <p>Ett exempel på den här filen finns i <span class="filepath"> Felkategorier.txt </span> i katalogen Lookups. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Från </td> 
@@ -48,7 +50,7 @@ Slutför parametrarna i följande fil:
   </tr> 
   <tr> 
    <td colname="col1"> Tidsgräns för sensorvarning (min) </td> 
-   <td colname="col2"> <p>Servern genererar en e-postavisering när den inte har fått några data från en konfigurerad och tidigare ansluten <span class="wintitle">-sensor </span> inom det här tidsfönstret. Standardvärdet är 15. </p> <p> <p>Obs!  <span class="wintitle"> Sensor </span> Varningstimeout fungerar bara om en befintlig anslutning till en <span class="wintitle">-sensor </span> släpps. Om servertjänsten stoppas och startas om och <span class="wintitle">-sensorer </span> inte ansluter, genererar servern inga e-postaviseringar. </p> </p> </td> 
+   <td colname="col2"> <p>Servern genererar en e-postavisering när den inte har fått några data från en konfigurerad och tidigare ansluten <span class="wintitle"> Sensor </span> inom det här tidsfönstret. Standardvärdet är 15. </p> <p> <p>Obs!  <span class="wintitle"> Sensor </span> Aviseringstimeout fungerar bara om en befintlig anslutning till en <span class="wintitle"> Sensor </span> tas bort. Om servertjänsten stoppas och startas om och <span class="wintitle"> Sensorer </span> ansluter inte, servern genererar inga e-postaviseringar. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Serveradress </td> 

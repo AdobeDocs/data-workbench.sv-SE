@@ -3,7 +3,7 @@ description: Installation av arbetsstation
 title: Installation av arbetsstation
 uuid: 1dadddec-f157-4d66-845b-9d4047363d69
 exl-id: 177d48b6-9b0d-48f5-9dd2-17cb5a27d2b2
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Installation av arbetsstation{#workstation-setup}
+
+{{eol}}
 
 Detta avsnitt innehåller följande ämnen:
 

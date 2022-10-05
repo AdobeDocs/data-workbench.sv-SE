@@ -3,7 +3,7 @@ description: Webbsidor är ofta strukturerade med programmeringsspråket ASP (Ac
 title: ASP-specifik information
 uuid: 552288cb-b775-4121-8869-322f2a26932b
 exl-id: f73235e1-d44a-4056-b1f4-a86879c19483
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # ASP-specifik information{#asp-specific-information}
+
+{{eol}}
 
 Webbsidor är ofta strukturerade med programmeringsspråket ASP (Active Server Pages).
 
@@ -32,7 +34,7 @@ Response.AppendToLog("&v_3=" +  sState);
 Response.AppendToLog("&v_4=" +  sZip);
 ```
 
-Den här processen skulle lägga till formulärvärdena som definierats till begärandedata för sidan [!DNL Form Processing]. I loggdata är de tillagda värdena tillgängliga som frågesträngar på [!DNL Form Processing]-sidan enligt bilden nedan. v_1, v_2, v_3 och v_4 skulle nu vara frågesträngar som innehåller data som anges i rätt formulärfält. Syntaxen som beskrivs i exemplet ovan kan dupliceras för alla ytterligare formulärfält och värden som du vill hämta.
+Den här processen lägger till formulärvärdena enligt definitionen i begärandedata för [!DNL Form Processing] sida. I loggdata är de tillagda värdena tillgängliga som frågesträngar för [!DNL Form Processing] sida enligt nedan. v_1, v_2, v_3 och v_4 skulle nu vara frågesträngar som innehåller data som anges i rätt formulärfält. Syntaxen som beskrivs i exemplet ovan kan dupliceras för alla ytterligare formulärfält och värden som du vill hämta.
 
 ```
 https://www.myserver.com/path/to/formprocessingpage.asp?v_1=John+Smith&v_2=Los+Angeles&v_3=California&v_4=90210
@@ -45,7 +47,7 @@ var formvalues = Response.Form;
 Response.AppendToLog(formvalues);
 ```
 
-Det här exemplet tar alla formulärfält som finns i HTML tillsammans med deras respektive värden och lägger till dem som frågesträngar i loggposten för sidan [!DNL Form Processing]. Observera att detta inkluderar alla dolda fält i formuläret.
+I det här exemplet används alla formulärfält som finns i HTML tillsammans med deras respektive värden och de läggs till som frågesträngar i loggposten för [!DNL Form Processing] sida. Observera att detta inkluderar alla dolda fält i formuläret.
 
 Loggdata ska utökas enligt följande tabell:
 

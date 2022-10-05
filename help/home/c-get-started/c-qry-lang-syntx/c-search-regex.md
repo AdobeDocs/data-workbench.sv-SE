@@ -3,7 +3,7 @@ description: Data workbench använder reguljära uttryck (regex) för sök- och 
 title: Reguljära uttryck
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
 exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
@@ -12,9 +12,11 @@ ht-degree: 0%
 
 # Reguljära uttryck{#regular-expressions}
 
+{{eol}}
+
 Data workbench använder reguljära uttryck (regex) för sök- och sorteringsåtgärder.
 
-I fältet **[!UICONTROL Search]** kan du utföra en sökning efter satsen &quot;re:&quot; med vanliga uttryck, till exempel:
+I **[!UICONTROL Search]** fält kan du utföra en sökning efter satsen&quot;re:&quot; med vanliga uttryck, till exempel:
 
 ```
 <b>re: *.s</b>
@@ -45,4 +47,4 @@ I fältet **[!UICONTROL Search]** kan du utföra en sökning efter satsen &quot;
 
 Ytterligare vanliga reguljära uttryck kan också användas för att skapa mer komplexa söksträngar. Reguljära uttryck används i alla sökfält för Data Workbench, inklusive frågans entitetspaneler.
 
-Mer detaljerad information finns i [reguljära uttryck](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).
+Mer information finns på [reguljära uttryck](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).

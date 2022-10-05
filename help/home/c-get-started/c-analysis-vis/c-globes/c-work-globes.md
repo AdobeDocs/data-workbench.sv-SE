@@ -3,7 +3,7 @@ description: När du för musen över kartan visas alla tillgängliga data som m
 title: Arbeta med glober
 uuid: 8aa3ad86-8129-47f6-8af9-d645ff9c566b
 exl-id: 2dc410fd-e452-4d03-88b9-fe1027b54e9c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Arbeta med glober{#working-with-globes}
+
+{{eol}}
 
 När du för musen över kartan visas alla tillgängliga data som motsvarar den geografiska positionen för pekarens position i det övre högra hörnet av visualiseringen.
 
@@ -38,4 +40,4 @@ Du kan också zooma och rotera världen för att fokusera på ett önskat geogra
 
 Du kan slå på eller stänga av ljuset i en glob baserat på solens position vid den aktuella tidpunkten. Tiden anges av Datan Workbench.
 
-* Högerklicka i visualiseringen och klicka på **[!UICONTROL Toggle Lighting]**. Ett X till vänster om menyalternativet anger att ljus är aktiverat.
+* Högerklicka i visualiseringen och klicka **[!UICONTROL Toggle Lighting]**. Ett X till vänster om menyalternativet anger att ljus är aktiverat.

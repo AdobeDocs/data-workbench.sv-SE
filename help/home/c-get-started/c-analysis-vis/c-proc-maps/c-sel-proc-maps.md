@@ -3,14 +3,16 @@ description: Du kan markera i processkartor för att skapa filter som innehålle
 title: Göra en markering från en processkarta
 uuid: 7fd00090-c9ab-4bb6-8584-7de7b6f4b68c
 exl-id: 8ede395f-906a-49e0-8ff8-b43a326275e5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
 
 ---
 
-# Gör ett val från en processkarta{#make-a-selection-from-a-process-map}
+# Göra en markering från en processkarta{#make-a-selection-from-a-process-map}
+
+{{eol}}
 
 Du kan markera i processkartor för att skapa filter som innehåller eller exkluderar data som är kopplade till en viss nod.
 
@@ -30,9 +32,9 @@ När du gör en markering baserat på en nod i en processkarta, markerar du alla
 1. Högerklicka på en nod i en processkarta.
 1. Klicka på något av följande alternativ för att göra ett val baserat på noden:
 
-   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL through node name]**: Filtrerar data så att de innehåller alla element i gruppdimensionen som passerat noden genom att filtrera bort alla sessioner som inte gick igenom noden.
+   * **[!UICONTROL Select]*** **[!UICONTROL group dimension name +s]*** **[!UICONTROL through node name]**: Filtrerar data så att de innehåller alla element i gruppdimensionen som passerat noden genom att filtrera bort alla sessioner som inte gick igenom noden.
 
-   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL NOT through node name]**: Filtrerar data så att de innehåller alla element i gruppdimensionen som inte gick igenom noden genom att filtrera bort alla sessioner som passerat genom noden.
+   * **[!UICONTROL Select]*** **[!UICONTROL group dimension name +s]*** **[!UICONTROL NOT through node name]**: Filtrerar data så att de innehåller alla element i gruppdimensionen som inte gick igenom noden genom att filtrera bort alla sessioner som passerat genom noden.
 
 ![](assets/vis_2DProcessMap_Selections_Movie.png)
 

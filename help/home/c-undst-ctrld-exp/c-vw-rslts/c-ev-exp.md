@@ -4,7 +4,7 @@ solution: Analytics
 title: Utvärdera experimentet
 uuid: 88fd81bc-b944-48ea-bd4d-8716979ec69e
 exl-id: 5add2168-f6bc-45c5-bf1d-1191a38c5bac
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Utvärdera experimentet{#evaluating-the-experiment}
+
+{{eol}}
 
 När du har kört experimentet tills det minsta antal besökare som krävs har deltagit i experimentet kan du vara säker på att du har tillräcklig statistisk tillförlitlighet för att utvärdera resultatet av ditt experiment.
 

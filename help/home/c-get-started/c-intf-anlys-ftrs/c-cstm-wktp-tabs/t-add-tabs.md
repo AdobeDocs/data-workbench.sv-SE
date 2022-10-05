@@ -3,31 +3,33 @@ description: Lägg till en flik i skrivbordet för att snabbt få åtkomst till 
 title: Lägga till en flik i datorn
 uuid: 3c8b459d-4824-4678-871d-1a577235957a
 exl-id: 30201eb9-1006-42b0-9d73-0962e41192ce
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
-# Lägg till en flik i datorn{#add-a-tab-to-the-worktop}
+# Lägga till en flik i datorn{#add-a-tab-to-the-worktop}
+
+{{eol}}
 
 Lägg till en flik i skrivbordet för att snabbt få åtkomst till en arbetsyta.
 
-Du kan lägga till en arbetsyta som en flik i arbetsytan. Du kan till exempel lägga till en **besökare**-flik för snabb åtkomst till en översikt över trafiken.
+Du kan lägga till en arbetsyta som en flik i arbetsytan. Du kan till exempel lägga till en **Besökare** för snabb åtkomst till en översikt över trafiken.
 
 ![](assets/client-tab.png)
 
 **Lägga till en mapp i Profilhanteraren**
 
-1. Öppna arbetsytan som du vill associera med den nya fliken och högerklicka sedan på **Admin** > **Profilhanteraren**.
-1. Klicka på **[!UICONTROL Workspaces]** i [!DNL Profile Manager] för att visa innehållet.
-1. Högerklicka i kolumnen [!DNL User] för [!DNL Workspaces] och välj **[!UICONTROL Create]** > **[!UICONTROL Folder]**.
+1. Öppna arbetsytan som du vill associera med den nya fliken och högerklicka sedan **Administratör** > **Profilhanteraren**.
+1. I [!DNL Profile Manager], klicka **[!UICONTROL Workspaces]** för att visa innehållet.
+1. Högerklicka i dialogrutan [!DNL User] kolumn för [!DNL Workspaces] och markera **[!UICONTROL Create]** > **[!UICONTROL Folder]**.
 
    ![](assets/tabs_on_worktop.png)
 
    Då skapas en ny undermapp som innehåller de filer som du vill ska vara tillgängliga via den nya fliken. En ny mapp visas med namnet Ny mapp.
-1. Om du vill byta namn högerklickar du i kolumnen [!DNL User] för den nya mappen och skriver ett namn i parametern Dir.
+1. Om du vill byta namn högerklickar du i dialogrutan [!DNL User] -kolumnen för Ny mapp och skriv ett namn i Dir-parametern.
 
    ![](assets/tabs_on_workto_1.png)
 
@@ -35,6 +37,6 @@ Du kan lägga till en arbetsyta som en flik i arbetsytan. Du kan till exempel l�
 
    ![](assets/tabs_on_workto_2.png)
 
-1. (Valfritt) Om du vill göra ändringarna tillgängliga för alla användare av arbetsprofilen högerklickar du på den vita bockmarkeringen för filen [!DNL .vw] i kolumnen [!DNL User] och klickar på **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. (Valfritt) Om du vill göra ändringarna tillgängliga för alla användare av arbetsprofilen högerklickar du på den vita bockmarkeringen för [!DNL .vw] i [!DNL User] kolumn och klicka **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
 
-   Om du bara vill visa den fullstora versionen av arbetsytan för beskrivning och inte miniatyrbilden av den här arbetsytan, måste du spara arbetsytan i arbetsprofilen. I [!DNL Profile Manager] högerklickar du på den vita bockmarkeringen för filen [!DNL description.vw] i kolumnen [!DNL User] och sedan på **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+   Om du bara vill visa den fullstora versionen av arbetsytan för beskrivning och inte miniatyrbilden av den här arbetsytan, måste du spara arbetsytan i arbetsprofilen. Om du vill göra det går du till [!DNL Profile Manager]högerklickar du på den vita bockmarkeringen för [!DNL description.vw] i [!DNL User] kolumn och klicka sedan på **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

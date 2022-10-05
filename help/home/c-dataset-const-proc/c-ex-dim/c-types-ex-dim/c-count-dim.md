@@ -3,14 +3,16 @@ description: En räkningsbar dimensions element kan räknas av systemet.
 title: Räkningsbara Dimensioner
 uuid: 3312f5eb-69b9-43af-b32a-5c40e3050b29
 exl-id: c607c15d-de85-4daf-af76-79b460f51b38
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
 
 ---
 
-# Räknade Dimensioner{#countable-dimensions}
+# Räkningsbara Dimensioner{#countable-dimensions}
+
+{{eol}}
 
 En räkningsbar dimensions element kan räknas av systemet.
 
@@ -60,7 +62,7 @@ Räknbara dimensioner definieras med följande parametrar:
   </tr> 
   <tr> 
    <td colname="col1"> Överordnad </td> 
-   <td colname="col2"> <p>Namnet på den överordnade dimensionen. Alla räkningsbara dimensioner kan vara en överordnad dimension. Om du vill göra en dimension till den översta nivån i datasetens schema anger du parametern till "root". Den definierade dimensionen blir den räkningsbara rotdimensionen för datauppsättningen. Om du till exempel arbetar med Plats är dimensionen Visitor den räkningsbara rotdimensionen för datauppsättningen. </p> <p> <p>Obs!  Även om din räkningsbara rotdimension inte behöver kopplas till spårnings-ID:n i data rekommenderar Adobe att du konfigurerar datamängdens räkningsbara rotdimension så att spårnings-ID-fältet (x-trackingid) används som Key. Därför kopplas varje element i roträkningsbar till ett unikt värde för x-trackingid, och alla data om varje element grupperas tillsammans. Om du vill konfigurera datauppsättningen på ett annat sätt kontaktar du Adobe. </p> </p> </td> 
+   <td colname="col2"> <p>Namnet på den överordnade dimensionen. Alla räkningsbara dimensioner kan vara en överordnad dimension. Om du vill göra en dimension till den översta nivån i datasetens schema anger du parametern till "root". Den definierade dimensionen blir den räkningsbara rotdimensionen för datauppsättningen. Om du till exempel arbetar med Plats är dimensionen Visitor den räkningsbara rotdimensionen för datauppsättningen. </p> <p> <p>Obs! Även om din räkningsbara rotdimension inte behöver kopplas till spårnings-ID:n i data rekommenderar Adobe att du konfigurerar datamängdens räkningsbara rotdimension så att spårnings-ID-fältet (x-trackingid) används som Key. Därför kopplas varje element i roträkningsbar till ett unikt värde för x-trackingid, och alla data om varje element grupperas tillsammans. Om du vill konfigurera datauppsättningen på ett annat sätt kontaktar du Adobe. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
@@ -70,6 +72,6 @@ I det här exemplet illustreras definitionen av en räkningsbar dimension med h�
 
 ![](assets/cfg_Transformation_Dim_Countable.png)
 
-I det här exemplet visas också definitionen av en räkningsbar dimension med händelsedata som samlats in från webbplatstrafiken, men det har en definierad Key-parameter. Den räkningsbara dimensionen för session använder fältet x-session som nyckel. (x-session-nyckelfältet är utdata från [!DNL Sessionize]-omformningen och har ett unikt värde för varje session.) Alla unika kombinationer av ett element i besökardimensionen (det överordnade elementet) och x-session-nyckelfältet är ett element i sessionsdimensionen.
+I det här exemplet visas också definitionen av en räkningsbar dimension med händelsedata som samlats in från webbplatstrafiken, men det har en definierad Key-parameter. Den räkningsbara dimensionen för session använder fältet x-session som nyckel. (x-session-nyckelfältet är utdata från [!DNL Sessionize] och har ett unikt värde för varje session.) Alla unika kombinationer av ett element i besökardimensionen (det överordnade elementet) och x-session-nyckelfältet är ett element i sessionsdimensionen.
 
 ![](assets/cfg_Transformation_Dim_Countable2.png)

@@ -3,14 +3,16 @@ description: Vi rekommenderar att du skapar en kontrollpanel även för kortsikt
 title: Skapa en kontrollpanel
 uuid: 5b9e9db2-d7ac-4c97-8df0-74a9e5a0c496
 exl-id: bd51d4c0-bcf2-4ba6-8b32-de06c74f359f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
 
 ---
 
-# Skapa en instrumentpanel{#creating-a-dashboard}
+# Skapa en kontrollpanel{#creating-a-dashboard}
+
+{{eol}}
 
 Vi rekommenderar att du skapar en kontrollpanel även för kortsiktiga, ad hoc-analyser.
 
@@ -38,4 +40,4 @@ Bestäm sedan vilken typ av data du vill visa och hur du vill visa den. Det är 
 
 ![](assets/after_configure.png)
 
-Från och med nu kan du utföra analysen och ta bort instrumentpanelen eller välja att spara instrumentpanelen på servern för återanvändning och/eller delning. Information om hur du interagerar med en kontrollpanel för att utföra analys finns i avsnittet [Göra markeringar på kontrollpanelen](../../../home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-making-selections-within-the-dashboard.md#concept-0989862de0044cc4bbfd7f4441275fc4).
+Från och med nu kan du utföra analysen och ta bort instrumentpanelen eller välja att spara instrumentpanelen på servern för återanvändning och/eller delning. Mer information om hur du interagerar med en kontrollpanel för att utföra analyser finns i avsnittet [Göra markeringar på kontrollpanelen](../../../home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-making-selections-within-the-dashboard.md#concept-0989862de0044cc4bbfd7f4441275fc4).

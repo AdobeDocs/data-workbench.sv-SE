@@ -3,7 +3,7 @@ description: Det finns flera typer av dimensioner på data workbench-servern. D�
 title: Dimensioner
 uuid: 07659373-8d9b-473d-8daa-ca8e7ac4afe8
 exl-id: cbc25504-2c1c-4622-adc1-c9bbac8e12fb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Dimensioner{#dimension-types}
+
+{{eol}}
 
 Det finns flera typer av dimensioner på data workbench-servern. Därför är det viktigt att du känner till dimensionstypen när du använder en dimension för att skapa mått, filter eller härledda dimensioner.
 
@@ -34,7 +36,7 @@ Insight Server kan skapa och underhålla följande typer av dimensioner:
   </tr> 
   <tr> 
    <td colname="col1"> Numeriskt </td> 
-   <td colname="col2">En dimension som har sorterat numeriska värden och en 1:N-relation med en överordnad räkningsbar dimension. En numerisk dimension kan tolkas som att den representerar en numerisk egenskap för elementen i dess överordnade dimension. Numeriska dimensioner används ofta för att definiera summamått. <p>Exempel: Den numeriska dimensionen Sessionsintäkt definierar intäkten, i dollar, för varje session. Varje session har ett enda intäktsbelopp, men ett valfritt antal sessioner kan ha samma intäkt, så sessionsintäkten är"en-till-många" med session. Ett mått för "Intäkt" kan definieras som <span class="filepath"> summa(Session_Revenue, Session)</span>, vilket ger den totala intäkten för de valda sessionerna. </p></td> 
+   <td colname="col2">En dimension som har sorterat numeriska värden och en 1:N-relation med en överordnad räkningsbar dimension. En numerisk dimension kan tolkas som att den representerar en numerisk egenskap för elementen i dess överordnade dimension. Numeriska dimensioner används ofta för att definiera summamått. <p>Exempel: Den numeriska dimensionen Sessionsintäkt definierar intäkten, i dollar, för varje session. Varje session har ett enda intäktsbelopp, men ett valfritt antal sessioner kan ha samma intäkt, så sessionsintäkten är"en-till-många" med session. Måttet "Intäkter" kan definieras som <span class="filepath"> sum(Session_Revenue, Session)</span>, med det totala intäktsbeloppet för de valda sessionerna. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Många-till-många </td> 

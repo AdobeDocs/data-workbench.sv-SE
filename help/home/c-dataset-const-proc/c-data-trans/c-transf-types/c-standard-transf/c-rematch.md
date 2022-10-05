@@ -3,7 +3,7 @@ description: Omformningen REMatch är en mönstermatchningsomformning som använ
 title: REMatch
 uuid: 8ef80bfa-aea2-45a1-a7d9-38ad33043886
 exl-id: 571e6f1c-f557-49c3-9e7c-c31f06132ec7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 1%
@@ -12,15 +12,17 @@ ht-degree: 1%
 
 # REMatch{#rematch}
 
+{{eol}}
+
 Omformningen REMatch är en mönstermatchningsomformning som använder reguljära uttryck för att ange ett eller flera mönster att söka efter och hämta i indata.
 
 Omvandlingen skapar ett utdatafält för varje hämtat delmönster i det reguljära uttrycket. Om det reguljära uttrycket inte matchar indatafältet är utdata tomma och om utdatafältet redan finns ersätts värdena med tomma värden. En kort guide till hur du använder reguljära uttryck finns i [Reguljära uttryck](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
 
 >[!NOTE]
 >
->Transformeringen [!DNL REMatch] fungerar på ungefär samma sätt som omformningen [!DNL RETransform] (se [RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)), som använder reguljära uttryck för att hämta en sträng och lagrar strängen i ett enda utdatafält.
+>The [!DNL REMatch] omformningen fungerar på liknande sätt som [!DNL RETransform] omformning (se [RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)), som använder reguljära uttryck för att hämta en sträng och lagrar strängen i ett enda utdatafält.
 
-[!DNL REMatch] tolkar en sträng mer effektivt än flera  [!DNL RETransform] omformningar eller en enda  [!DNL RETransform] omformning följt av en  [!DNL Flatten] omformning. Se [Förenkla](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce).
+[!DNL REMatch] tolkar en sträng mer effektivt än flera [!DNL RETransform] omformningar eller en enda [!DNL RETransform] omformning följt av [!DNL Flatten] omformning. Se [Förenkla](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce).
 
 <table id="table_7077578512B249E986BC79AE770CBD9A"> 
  <thead> 
@@ -73,6 +75,6 @@ Omvandlingen skapar ett utdatafält för varje hämtat delmönster i det regulj�
 >
 >[!DNL REMatch] omvandlingar kan vara mycket långsamma och kan stå för mycket av databehandlingstiden.
 
-I det här exemplet tolkar en [!DNL REMatch]-omformning ett datum med formatet YYY-MM-DD i fälten x-year, x-month och x-day. För datumet 2007-01-02 är värdena för x-year, x-month och x-day 2007, 01 och 02.
+I det här exemplet [!DNL REMatch] Vid omformningen tolkas ett datum med formatet ÅÅÅ-MM-DD till fälten x-year, x-month och x-day. För datumet 2007-01-02 är värdena för x-year, x-month och x-day 2007, 01 och 02.
 
 ![](assets/cfg_TransformationType_REMatch.png)

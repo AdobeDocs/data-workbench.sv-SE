@@ -3,7 +3,7 @@ description: Latensdimensioner skapas från en överordnad räkningsbar dimensio
 title: Skapa en latensdimension
 uuid: 531d8bf6-a66f-4b02-9d81-05664fb9c988
 exl-id: 38b470ef-9409-455b-b2b8-b0391f80b800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -12,15 +12,17 @@ ht-degree: 0%
 
 # Skapa en latensdimension{#create-a-latency-dimension}
 
+{{eol}}
+
 Latensdimensioner skapas från en överordnad räkningsbar dimension, till exempel sessioner, och en tidsdimension, till exempel Dag.
 
 När du skapar en latenstabell i Data Workbench lägger du automatiskt till en latensdimension i visualiseringsfilen (.vw). Du kan redigera en tabells fördröjningsdimension genom att följa stegen nedan.
 
 **Redigera en fördröjningsdimension**
 
-1. Öppna latenstabellen som du skapade i en textredigerare som Anteckningar. Den finns i mappen User > `working profile name` > Work i Datans Workbench installationskatalog.
+1. Öppna latenstabellen som du skapade i en textredigerare som Anteckningar. Den finns i Användare > `working profile name` > Arbetsmapp i Datans Workbench installationskatalog.
 
-   Den definierade latensdimensionen innehåller de parametrar som visas i följande exempel. (Definitionen av din fördröjningsdimension kan innehålla ytterligare parametrar.) [!DNL line entity = LatencyDim:] anger början på latensdimensionens definition.
+   Den definierade latensdimensionen innehåller de parametrar som visas i följande exempel. (Definitionen av din fördröjningsdimension kan innehålla ytterligare parametrar.) The [!DNL line entity = LatencyDim:] anger början på latensdimensionens definition.
 
    ```
    entity = LatencyDim:
@@ -55,7 +57,7 @@ När du skapar en latenstabell i Data Workbench lägger du automatiskt till en l
    </tr> 
    <tr> 
       <td colname="col1"> <p>Klipp </p> </td> 
-      <td colname="col2"> <p>En räkningsbar dimension som har en 1:N-relation med latensdimensionens nivå. Latens beräknas inte över dimensionens gränser. Om du till exempel anger en nivå i sidvyn och ett klipp med sessioner, beräknas fördröjningar för de sidvyer som inträffade under samma session som händelsen. </p> <p>Mer information om enkla 1:N-dimensioner finns i <i>Konfigurationshandboken för datauppsättningar</i>. </p> </td> 
+      <td colname="col2"> <p>En räkningsbar dimension som har en 1:N-relation med latensdimensionens nivå. Latens beräknas inte över dimensionens gränser. Om du till exempel anger en nivå i sidvyn och ett klipp med sessioner, beräknas fördröjningar för de sidvyer som inträffade under samma session som händelsen. </p> <p>Mer information om enkla 1:N-dimensioner finns i <i>Konfigurationshandbok för datauppsättning</i>. </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> <p>Tid </p> </td> 
@@ -80,7 +82,7 @@ När du skapar en latenstabell i Data Workbench lägger du automatiskt till en l
    </tbody> 
    </table>
 
-1. Spara [!DNL .vw]-filen i användar-\*arbetsprofilens namn*\Arbetsmapp.
+1. Spara [!DNL .vw] till användar-\*arbetsprofilens namn*\Arbetsmapp.
 
    Här följer inställningarna för standardfördröjningsdimensionen:
 

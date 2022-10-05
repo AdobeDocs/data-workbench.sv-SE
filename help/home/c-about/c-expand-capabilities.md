@@ -3,7 +3,7 @@ description: Med Data Workbench kan du skapa mätvärden, filter och dimensioner
 title: Expandera mått, Dimensioner och filter
 uuid: eaec0731-1916-4063-9fda-3a92ee325024
 exl-id: 5a7719a3-ba2e-4361-87e0-4d0df23196df
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Expandera mått, Dimensioner och filter{#expanding-metrics-dimensions-and-filters}
+
+{{eol}}
 
 Med Data Workbench kan du skapa mätvärden, filter och dimensioner för att utöka den information som finns i ett program eller enkelt anpassa definitionerna i programmet efter dina behov. Den öppna datatypen, måtten och filtren gör att du kan besvara fler frågor när du lägger till nya mätvärden och dimensioner.
 

@@ -3,7 +3,7 @@ description: Visar alla webbläsare som stöds.
 title: Webbläsare som stöds
 uuid: 7add01cc-905f-46e8-8e0d-3e9d458c466c
 exl-id: 5f1dcd53-c0ee-436f-ad7c-8d669008a61c
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Webbläsare som stöds{#supported-browsers}
+
+{{eol}}
 
 Visar alla webbläsare som stöds.
 

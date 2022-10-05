@@ -2,13 +2,17 @@
 description: Exempelfiler för konfigurationsfilerna.
 title: Exempel på konfigurationsfiler
 uuid: 9bc5c0a9-e67a-4c63-952d-9a39d75e6975
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 8a9abadb-228b-4da6-bfe6-8e828bb6ace9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 0%
 
 ---
 
-
 # Exempel på konfigurationsfiler{#sample-configuration-files}
+
+{{eol}}
 
 Exempelfiler för konfigurationsfilerna.
 
@@ -94,4 +98,3 @@ Exempel på en fullständig obj.conf-fil för webbservern Netscape Enterprise Se
   PathCheck fn="check-acl" acl="es-internal"
 </Object>
 ```
-

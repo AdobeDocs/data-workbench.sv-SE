@@ -4,7 +4,7 @@ solution: Analytics
 title: Visa experimentresultat
 uuid: c0468cad-fb8d-4ecf-8912-bf80b44b0a65
 exl-id: cada693c-79cb-4f49-a2f0-6ff60425be1c
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Visa experimentresultat{#viewing-the-experiment-results}
+
+{{eol}}
 
 När du har lagt till det nya fältet i Log Processing.cfg och skapat den nya delade omvandlingen och den utökade dimensionen, kan du visa den nya utökade dimensionen som du skapade så fort som den snabba inmatningsfasen av databearbetningen har slutförts.
 

@@ -3,7 +3,7 @@ description: Resursövervakarens vektor innehåller Minnesbudgetövervakaren och
 title: Resursövervakare för frågekö
 uuid: 6b516bed-7f9a-4821-869e-19e720f20313
 exl-id: 6d445a4d-a415-41ce-9d45-1bdd0e726edd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Resursövervakare för frågekö{#query-queue-resource-monitors}
+
+{{eol}}
 
 Resursövervakarens vektor innehåller Minnesbudgetövervakaren och Antal frågor-övervakaren.
 
@@ -38,7 +40,7 @@ I följande tabell beskrivs de resursövervakningsfält som används för fråge
   <tr> 
    <td colname="col1"> <p>Låg tröskel </p> </td> 
    <td colname="col2"> <p>double </p> </td> 
-   <td colname="col3"> <p>Det låga tröskelvärdet för minnesanvändning (byte). Om värdet <span class="wintitle"> för Minnesbudgetövervakaren</span> är under det här värdet tillåts nya buntar att schemaläggas och schemalagda buntar tillåts växa. Paketen växer till exempel när en användare lägger till en visualisering på en arbetsyta. </p> </td> 
+   <td colname="col3"> <p>Det låga tröskelvärdet för minnesanvändning (byte). If <span class="wintitle"> Minnesbudgetövervakare</span> värdet är under det här värdet, nya buntar tillåts att schemaläggas och schemalagda buntar tillåts växa. Paketen växer till exempel när en användare lägger till en visualisering på en arbetsyta. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Reaktionstid </p> </td> 
@@ -58,7 +60,7 @@ I följande tabell beskrivs de resursövervakningsfält som används för fråge
   <tr> 
    <td colname="col1"> <p>Låg tröskel </p> </td> 
    <td colname="col2"> </td> 
-   <td colname="col3"> <p>Det låga tröskelvärdet för minnesanvändning (byte). Om <span class="wintitle">-värdet för Minnesbudgetövervakaren</span> är under det här värdet kan nya buntar schemaläggas och schemalagda buntar kan växa. </p> </td> 
+   <td colname="col3"> <p>Det låga tröskelvärdet för minnesanvändning (byte). If <span class="wintitle"> Minnesbudgetövervakare</span> värdet är under det här värdet, nya buntar kan schemaläggas och schemalagda buntar kan växa. </p> </td> 
   </tr> 
  </tbody> 
 </table>

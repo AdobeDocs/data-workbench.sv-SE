@@ -2,16 +2,17 @@
 description: Instruktioner för installation och konfigurering av Sensor för Sun Java System Application Server Standard Edition 7 som körs i Windows Server 2000 eller senare.
 title: Sun Java Server på Windows Server 2000 eller senare
 uuid: 43f3eee0-2633-4bda-af6c-6c15433dd539
-translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+exl-id: 33f24073-8eff-4bf6-8f83-7a122d1505d8
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
 
 ---
 
-
 # Sun Java Server på Windows Server 2000 eller senare{#sun-java-server-on-windows-server-or-later}
+
+{{eol}}
 
 Instruktioner för installation och konfigurering av Sensor för Sun Java System Application Server Standard Edition 7 som körs i Windows Server 2000 eller senare.
 
@@ -71,23 +72,23 @@ Procedur för att extrahera och installera programfilerna för Sensor till serve
 
 ## Redigera sensorkonfigurationsfilen {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
 
-Filen innehåller [!DNL txlogd.conf] konfigurationsparametrarna för sensorn.
+The [!DNL txlogd.conf] filen innehåller konfigurationsparametrarna för sensorn.
 
 Du måste redigera den här filen för att bland annat ange storlek och plats för diskköfilen, adressen till Insight Server och det ID som ska kopplas till händelsedata som skapas av den här sensorn.
 
 Konfigurationsfilen innehåller obligatoriska parametrar och valfria parametrar.
 
-* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensorn. Utan dessa inställningar kan sensorn inte köras.
+* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensor. Utan dessa inställningar kan sensorn inte köras.
 * **Valfria parametrar** är inställningar som är standard för fördefinierade värden (som du kan ändra) eller aktivera valfria funktioner.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-* Öppna [!DNL /etc/txlogd.conf] filen i en textredigerare och ange de obligatoriska parametrarna samt eventuella valfria parametrar.
+* Öppna [!DNL /etc/txlogd.conf] i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 * Spara och stäng filen.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-1. Öppna [!DNL /etc/txlogd.conf] filen i en textredigerare och ange de obligatoriska parametrarna samt eventuella valfria parametrar.
+1. Öppna [!DNL /etc/txlogd.conf] i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 1. Spara och stäng filen.
 
 ## Starta sändaren och skapa diskkön {#section-55630de65f264274aefd771da2002852}
@@ -137,11 +138,10 @@ funcs="vys-cookie,vys-log,vys-init,vys-content-type"
 Init fn="vys-init" config-file="C:/VisualSciences/txlogd.conf"
 ```
 
-I filen obj.conf (t.ex. C:\Sun\AppServer7\domains\domain1\server1\config\ server1-obj.conf) lägger du till följande rader direkt under den befintliga `<Object name="default">` raden:
+I filen obj.conf (t.ex. C:\Sun\AppServer7\domains\domain1\server1\config\ server1-obj.conf) lägger du till följande rader direkt under den befintliga `<Object name="default">` rad:
 
 ```
 NameTrans fn="vys-cookie" 
 ObjectType fn="vys-content-type" 
 AddLog fn="vys-log"
 ```
-

@@ -2,17 +2,21 @@
 description: Instruktioner för installation och konfigurering av sensor för Apache Server 1.3, Apache Server 2.0.42 eller senare eller Apache Server 2.2 som körs med Microsoft Windows Server 2000 eller senare.
 title: Apache Server 1.3, 2, 2.2 eller 2.4 i Windows Server 2000 eller senare
 uuid: e159ed83-6004-4f65-a3b7-502cac1d0862
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: d1bd0fc1-da5b-4183-8270-73c46195f724
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '971'
+ht-degree: 0%
 
 ---
 
-
 # Apache Server 1.3, 2, 2.2 eller 2.4 i Windows Server 2000 eller senare{#apache-server-or-on-windows-server-or-later}
+
+{{eol}}
 
 Instruktioner för installation och konfigurering av sensor för Apache Server 1.3, Apache Server 2.0.42 eller senare eller Apache Server 2.2 som körs med Microsoft Windows Server 2000 eller senare.
 
-Programfilerna för Sensor paketeras i en installationsfil som du får från Adobes nedladdningswebbplats. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
+Programfilerna för Sensor paketeras i en installationsfil som du får från hämtningsplatsen för Adobe. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
 
 * Apache Server 1.3
 * Apache Server 2.0.42 eller senare
@@ -73,23 +77,23 @@ Om du vill installera och konfigurera sensorn måste du utföra följande steg:
 
 ## Redigera sensorkonfigurationsfilen {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
 
-Filen innehåller [!DNL txlogd.conf] konfigurationsparametrarna för sensorn.
+The [!DNL txlogd.conf] filen innehåller konfigurationsparametrarna för sensorn.
 
 Du måste redigera den här filen för att bland annat ange storlek och plats för diskköfilen, adressen till Insight Server och det ID som ska kopplas till händelsedata som skapas av den här sensorn.
 
 Konfigurationsfilen innehåller obligatoriska parametrar och valfria parametrar.
 
-* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensorn. Utan dessa inställningar kan sensorn inte köras.
+* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensor. Utan dessa inställningar kan sensorn inte köras.
 * **Valfria parametrar** är inställningar som är standard för fördefinierade värden (som du kan ändra) eller aktivera valfria funktioner.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-* Öppna [!DNL /etc/txlogd.conf] filen i en textredigerare och ange de obligatoriska parametrarna samt eventuella valfria parametrar.
+* Öppna [!DNL /etc/txlogd.conf] i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 * Spara och stäng filen.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-1. Öppna [!DNL /etc/txlogd.conf] filen i en textredigerare och ange de obligatoriska parametrarna samt eventuella valfria parametrar.
+1. Öppna [!DNL /etc/txlogd.conf] i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 1. Spara och stäng filen.
 
 ## Starta sändaren och skapa diskkön {#section-55630de65f264274aefd771da2002852}
@@ -108,6 +112,7 @@ När du har konfigurerat filen txlogd.conf kan du starta överföringsprogrammet
    * Alternativet &quot;i&quot; i det här kommandot startar sändaren i &quot;interaktivt läge&quot;. I det här läget visas sändarmeddelanden på skärmen och du kan även använda tangentbordskommandon för att interagera med sändaren.
    * Alternativet &quot;c&quot; dirigerar sändaren till diskkön.
    * Alternativet &quot;f&quot; anger platsen för konfigurationsfilen.
+
    Mer information om de alternativ du kan använda när du startar sändaren finns i Kommandoradsalternativ för sensorsändaren.
 
 1. Kontrollera att sändaren har skapat diskkön på den plats som anges i parametern QueueFile och med den storlek som anges i parametern QueueSize.
@@ -121,13 +126,13 @@ När du har konfigurerat filen txlogd.conf kan du starta överföringsprogrammet
 
 För Apache-servrar är samlaren ett dynamiskt delat objekt som du läser in i webbserverprocessen.
 
-Om du vill lägga till insamlaren på webbservern måste du redigera [!DNL httpd.conf] filen enligt beskrivningen nedan och starta om webbservern.
+Om du vill lägga till insamlaren på webbservern måste du redigera [!DNL httpd.conf] så som beskrivs nedan och starta om webbservern.
 
 >[!NOTE]
 >
 >Om sensorn hämtar data för flera webbservrar på serverdatorn måste du utföra följande procedur för varje webbserver.
 
-1. Använd en textredigerare och öppna [!DNL httpd.conf]filen för webbservern vars händelser sensorn fångar.
+1. Använd en textredigerare för att öppna [!DNL httpd.conf]för webbservern vars händelser Sensor fångar.
 1. Lägg till följande två rader i slutet av filen:
 
    ```
@@ -140,4 +145,3 @@ Om du vill lägga till insamlaren på webbservern måste du redigera [!DNL httpd
    >Linjerna är skiftlägeskänsliga. Skriv dem exakt som de visas ovan.
 
 1. Starta om webbserverprocessen (du behöver inte starta om hela serverdatorn, utan bara starta om webbserverprocessen). Insamlaren läses in med webbservern och börjar samla in händelsedata och skriva dem till diskkön.
-

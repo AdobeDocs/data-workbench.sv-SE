@@ -3,20 +3,22 @@ description: Öppna Best Fit Attribution från Premium-menyn och följ de här s
 title: Skapa en modell för bästa passform
 uuid: d1fd0340-1917-41bc-9a08-e78a79d084e7
 exl-id: e0a42374-2500-46a3-a72a-708ab2d228db
-source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
 
 # Skapa en modell för bästa passform{#build-a-best-fit-attribution-model}
 
+{{eol}}
+
 Öppna Best Fit Attribution från Premium-menyn och följ de här stegen för att skapa en Best Fit Attribution-modell.
 
-Se en översikt över [Best Fit Attribution](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-algorithmic.md#concept-237feb6e9c4d49efaf75399297dcb9d1).
+Se en översikt över [Attribut för bästa passform](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-algorithmic.md#concept-237feb6e9c4d49efaf75399297dcb9d1).
 
-1. Öppna **Attribution för bästa passform**.
+1. Öppna **Attribut för bästa passform**.
 
    Öppna en arbetsyta och klicka på **[!UICONTROL Premium]** > **[!UICONTROL Best Fit Attribution]**.
 
@@ -24,35 +26,35 @@ Se en översikt över [Best Fit Attribution](../../../../home/c-get-started/c-at
 
    >[!NOTE]
    >
-   >Best Fit Attribution är en Adobe Analytics Premium-funktion som kräver att du aktiverar Premium i din profil. Du måste uppdatera certifikatet och lägga till Premium-profilen i filen profile.cfg. Se [DWB Server upgrade: 6.2 till 6.3](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md) för DWB 6.3.
+   >Best Fit Attribution är en Adobe Analytics Premium-funktion som kräver att du aktiverar Premium i din profil. Du måste uppdatera certifikatet och lägga till Premium-profilen i filen profile.cfg. Se [DWB Server-uppgradering: 6.2 till 6.3](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md) för DWB 6.3.
 
-1. Ange **[!UICONTROL Success]**-måttet.
+1. Ange **[!UICONTROL Success]** mätvärden.
 
    >[!NOTE]
    >
-   >Du kan antingen dra ett mätvärde från en **[!UICONTROL Finder]**-tabell till den vänstra rutan i attribueringsvisualiseringen, eller välja från menyn **Indata**.
+   >Du kan antingen dra ett mått från en **[!UICONTROL Finder]** tabellen till vänster om attributvisualiseringen, eller välj från **Indata** -menyn.
 
    Klicka på **[!UICONTROL Inputs]** > **[!UICONTROL Set Success]**. Måttmenyn öppnas. ![](assets/attrib_set_success_metric.png)
 
    Välj ett mätvärde som identifierar en lyckad konvertering.
 
-1. (valfritt) Ange **Intäkter**-måttet.
+1. (valfritt) Ange **Intäkter** mätvärden.
 
    Ange ett mätvärde för att utvärdera intäkterna under konverteringsprocessen.
 
-1. Ange **touchmåttet**.
+1. Ange **Touch** mätvärden.
 
    >[!NOTE]
    >
    >Du behöver bara ange ett Touch-mått om du försöker att automatiskt skapa Success-mått genom att dra dimensionselement till visualiseringen.
 
-   Klicka på menyn **[!UICONTROL Inputs]** och välj **Ange beröring** eller dra ett mått från Finder. ![](assets/attrib_set_touch.png)
+   Klicka på **[!UICONTROL Inputs]** meny och välj **Ange beröring** eller dra ett mått från Finder. ![](assets/attrib_set_touch.png)
 
    Detta används för att härleda kanalmått när dimensionselement används som indata.
 
-1. Ange ett **fönster** lyckades.
+1. Ange en **Lyckades** -fönstret.
 
-   Klicka på [!DNL Inputs > Success Window]. Välj ett datumintervall från en tabell och ge sedan fönstret Slutfört ett namn. Klicka på **[!UICONTROL Workspace Selection]** så tilldelas de markerade datumen som tidsintervall för mätningen Slutfört.
+   Klicka på [!DNL Inputs > Success Window]. Välj ett datumintervall från en tabell och ge sedan fönstret Slutfört ett namn. Klicka **[!UICONTROL Workspace Selection]** och de valda datumen tilldelas som tidsintervall för mätningen Slutfört.
 
    ![](assets/attrib_set_success_window.png)
 
@@ -60,17 +62,17 @@ Se en översikt över [Best Fit Attribution](../../../../home/c-get-started/c-at
    >
    >Eftersom fönstret Success är ett val av arbetsstation kan du inkludera alla dimensioner i fönstret Success.
 
-1. Ange **[!UICONTROL Touch Window]**.
+1. Ange en **[!UICONTROL Touch Window]**.
 
-   Klicka på [!DNL Inputs > Touch Window]. Välj ett datumintervall från en tabell och ge sedan pekfönstret ett namn. Klicka på **[!UICONTROL Workspace Selection]** så tilldelas de markerade datumen som tidsintervall för mätningen Slutfört.
+   Klicka på [!DNL Inputs > Touch Window]. Välj ett datumintervall från en tabell och ge sedan pekfönstret ett namn. Klicka **[!UICONTROL Workspace Selection]** och de valda datumen tilldelas som tidsintervall för mätningen Slutfört.
 
    ![](assets/attrib_set_touch_window.png)
 
-   Som standard ställs fönstret **Touch** in på samma tidsperiod som fönstret **[!UICONTROL Success]**.
+   Som standard är **Touch** fönstret anges till samma tidsperiod som **[!UICONTROL Success]** -fönstret.
 
 1. (valfritt) Ange ett utbildningsfilter.
 
-   Du kan också ange ett **utbildningsfilter** på arbetsytan för att filtrera besöksdata.
+   Du kan också ange en **Utbildningsfilter** på arbetsytan för att filtrera besöksdata.
 
    >[!NOTE]
    >
@@ -84,29 +86,29 @@ Se en översikt över [Best Fit Attribution](../../../../home/c-get-started/c-at
 
 1. Ange kanalmått som representerar beröringar.
 
-   Dra mätvärden till visualiseringen eller välj dem på menyn [!DNL Inputs] > [!DNL Add Channel]. Om ni inte redan har definierade mätvärden för kampanjer eller kanaler, men har dimensioner som representerar kanaler, kan visualiseringen skapa dem automatiskt med hjälp av en specifikation av ett Touch-mått.
+   Dra mätvärden till visualiseringen eller välj dem på menyn [!DNL Inputs] > [!DNL Add Channel] -menyn. Om ni inte redan har definierade mätvärden för kampanjer eller kanaler, men har dimensioner som representerar kanaler, kan visualiseringen skapa dem automatiskt med hjälp av en specifikation av ett Touch-mått.
 
-   Med Touch-måttet inställt på [!DNL Hits] och givet ett [!DNL dimension] som heter [!DNL Media Type] med element som innehåller exempelvis [!DNL Email], [!DNL Press Release], [!DNL Print Ad] och [!DNL Social Media], genererar visualiseringen kanalmått i formatet [!DNL Hits where Media Type = Email] när du drar och släpper elementen till visualiseringen.
+   Med Touch-måttet inställt på [!DNL Hits]och som [!DNL dimension] anropad [!DNL Media Type] med element som innehåller [!DNL Email], [!DNL Press Release], [!DNL Print Ad]och [!DNL Social Media]genererar visualiseringen kanalmått för formuläret [!DNL Hits where Media Type = Email] när du drar och släpper elementen till visualiseringen.
 
-1. Tryck på **Gå**.
+1. Tryck **Gå**.
 
    Analysprocessen för bästa passform körs och ett diagram visar attribut per kanal baserat på valda indata.
 
    >[!NOTE]
    >
-   >Högerklicka på **Model Complete** på den färdiga analysen för att se statistik för attribueringsmodellen.
+   >Högerklicka **Modellen är klar** på den färdiga analysen för att se statistik för attribueringsmodellen.
 
    ![](assets/attrib_visualization.png)
 
-När diagrammet är klart visas en attribueringsmodell som beräknas per kanal och en fördelning av *intäkten*-måttet (om det har angetts). Modellen kan sparas internt eller exporteras till andra system.
+När diagrammet är klart visas en attribueringsmodell som beräknas per kanal och en fördelning av *Intäkter* mått (om de anges). Modellen kan sparas internt eller exporteras till andra system.
 
 >[!NOTE]
 >
->**[!UICONTROL Streaming]**,  **[!UICONTROL Online]** och  **[!UICONTROL Offline]** lägen ger olika effekter när du skapar en attribueringsmodell som baseras på fördröjningen för de data som utvärderas. I direktuppspelningsläge visas detaljmeddelandet **[!UICONTROL Model Complete]**. I online- och offlinelägen visas informationen **[!UICONTROL Local Model Complete]**.
+>**[!UICONTROL Streaming]**, **[!UICONTROL Online]** och **[!UICONTROL Offline]** olika lägen ger olika effekter när du skapar en attribueringsmodell baserat på fördröjningen för de data som utvärderas. I direktuppspelningsläget är detaljerna **[!UICONTROL Model Complete]** visas. I online- och offlinelägen visas detaljerna **[!UICONTROL Local Model Complete]** kommer att visas.
 
 ## Alternativ-menyn {#section-22288867f6c8483a8a38410f4b948346}
 
-Menyn **Alternativ** innehåller avancerade funktioner för att ställa in och visa analysen för bästa passform.
+The **Alternativ** -menyn innehåller avancerade funktioner för att ställa in och visa Best Fit Attribution-analys.
 
 <table id="table_8F6F517B7DBF4259814BEC6D07A72EAC">
  <thead>
@@ -117,32 +119,32 @@ Menyn **Alternativ** innehåller avancerade funktioner för att ställa in och v
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"><span class="uicontrol"> Ange utbildningsfilter  </span> </td>
-   <td colname="col2"> Utbildningsfiltret används med fönstret Slutfört för att filtrera populationen när attribueringsmodellen skapas. Detta ger en delmängd av data som bara innehåller de besökare som du vill analysera. <p>Obs! Erfarna användare kan också utnyttja flexibiliteten i filter för att fokusera bortom tidslinjen i Success och Touch Windows. Förutom att välja ett tidsintervall kan du välja en uppsättning <i>Refererande domäner</i> om du bara vill undersöka attributet för användare från dessa domäner. </p> </td>
+   <td colname="col1"><span class="uicontrol"> Ange utbildningsfilter </span> </td>
+   <td colname="col2"> Utbildningsfiltret används med fönstret Slutfört för att filtrera populationen när attribueringsmodellen skapas. Detta ger en delmängd av data som bara innehåller de besökare som du vill analysera. <p>Obs! Erfarna användare kan också utnyttja flexibiliteten i filter för att fokusera bortom tidslinjen i Success och Touch Windows. Förutom att välja ett tidsintervall kan du till exempel välja en uppsättning <i>Refererande domäner</i> för att endast undersöka attribueringen för användare från dessa domäner. </p> </td>
   </tr>
   <tr>
-   <td colname="col1"><span class="uicontrol"> Visa beskrivning av komplext filter  </span> </td>
+   <td colname="col1"><span class="uicontrol"> Visa beskrivning av komplext filter </span> </td>
    <td colname="col2"> Visar filterkoden för utbildningsfiltret, fönstret Slutfört och pekfönstret. </td>
   </tr>
   <tr>
-   <td colname="col1"><span class="uicontrol"> Spara modell  </span> </td>
+   <td colname="col1"><span class="uicontrol"> Spara modell </span> </td>
    <td colname="col2"> Sparar den aktuella attribueringsmodellen för framtida bruk. </td>
   </tr>
   <tr>
-   <td colname="col1"><span class="uicontrol"> Läs in modell  </span> </td>
+   <td colname="col1"><span class="uicontrol"> Läs in modell </span> </td>
    <td colname="col2"> Öppnar en tidigare sparad attribueringsmodell. </td>
   </tr>
   <tr>
-   <td colname="col1"><span class="uicontrol"> Presentationsvy  </span> </td>
+   <td colname="col1"><span class="uicontrol"> Presentationsvy </span> </td>
    <td colname="col2"> Döljer den översta menyraden för presentation. </td>
   </tr>
   <tr>
-   <td colname="col1"> <p><b>Alternativ &gt; </b> Avancerat innehåller funktioner för att ställa in storleken på kursuppsättningen och ange vilken metod som ska användas vid klassobalans. </p> </td>
+   <td colname="col1"> <p><b>Alternativ &gt; Avancerat</b> innehåller funktioner för att ställa in storleken på utbildningsmaterialet och ange vilken metod som ska användas vid klassobalans. </p> </td>
    <td colname="col2"> </td>
   </tr>
   <tr>
-   <td colname="col1"><span class="uicontrol"> Avancerat &gt; Utbildningsstorlek  </span> </td>
-   <td colname="col2"> <p>Anger utbildningens uppsättningsstorlek. </p> <p>Obs!  Standardstorleken för utbildning är Stor för 250 000 besökare. </p>
+   <td colname="col1"><span class="uicontrol"> Avancerat &gt; Utbildningsstorlek </span> </td>
+   <td colname="col2"> <p>Anger utbildningens uppsättningsstorlek. </p> <p>Obs! Standardstorleken för utbildning är Stor för 250 000 besökare. </p>
     <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD">
      <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">Liten = 50 000 </li>
      <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">Liten = 75 000 </li>
@@ -152,7 +154,7 @@ Menyn **Alternativ** innehåller avancerade funktioner för att ställa in och v
     </ul> </td>
   </tr>
   <tr>
-   <td colname="col1"><b>Avancerat &gt; Klasssaldo  </b> </td>
+   <td colname="col1"><b>Avancerat &gt; Klasssaldo </b> </td>
    <td colname="col2"> <p>Identifierar och definierar antalet indataposter som ska genereras för ett klassproblem baserat på datamängdens storlek. </p> </td>
   </tr>
  </tbody>
@@ -160,7 +162,7 @@ Menyn **Alternativ** innehåller avancerade funktioner för att ställa in och v
 
 | Alternativ för att återställa och ta bort | Beskrivning |
 |---|---|
-| **[!UICONTROL Reset Model]** | På **[!UICONTROL Reset]**-menyn väljer du **[!UICONTROL Reset Model]** för att rensa visualiseringen men behålla indatavärden. |
-| **[!UICONTROL Reset All]** | På menyn **[!UICONTROL Reset]** väljer du **[!UICONTROL Reset All]** för att rensa visualisering och indatamätningar. |
-| **[!UICONTROL Remove]** | Högerklicka på en inmatning och välj **[!UICONTROL Remove]** för att rensa måttet från den valda inmatningen. |
-| **[!UICONTROL Remove All]** | Högerklicka på *Kanaler* och välj **[!UICONTROL Remove All]** om du vill ta bort alla indatavärden. |
+| **[!UICONTROL Reset Model]** | Från **[!UICONTROL Reset]** meny, välja **[!UICONTROL Reset Model]** för att rensa visualiseringen men behålla indatamätningar. |
+| **[!UICONTROL Reset All]** | Från **[!UICONTROL Reset]** meny, välja **[!UICONTROL Reset All]** för att rensa visualisering och indatavärden. |
+| **[!UICONTROL Remove]** | Högerklicka på indata och välj **[!UICONTROL Remove]** för att rensa måttet från de valda indata. |
+| **[!UICONTROL Remove All]** | Högerklicka på *Kanaler* och markera **[!UICONTROL Remove All]** för att rensa alla indatamått. |

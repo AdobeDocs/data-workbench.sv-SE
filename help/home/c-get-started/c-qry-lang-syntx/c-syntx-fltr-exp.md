@@ -3,7 +3,7 @@ description: Ett filter är ett uttryck som definierar en delmängd av data i en
 title: Syntax för filteruttryck
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
 exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 0%
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 # Syntax för filteruttryck{#syntax-for-filter-expressions}
 
+{{eol}}
+
 Ett filter är ett uttryck som definierar en delmängd av data i en datauppsättning.
 
 Ett filter antingen tillåter eller avvisar varje element i varje dimension enligt relationen mellan dimensionerna.
 
 Filter kan redigeras med [!DNL Filter Editor]. Se [Filterredigerare](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
 
-I följande tabell innehåller varje syntaxbeskrivning ett exempel på ett metriskt uttryck som använder det filtret. Sessioner[Sant] är till exempel ett mått som definieras med filtret &quot;Sant&quot;. Sessionerna[Sant]-måttet är samma som sessionsmätningen eftersom filtret Sant tillåter alla element i sessionsdimensionen.
+I följande tabell innehåller varje syntaxbeskrivning ett exempel på ett metriskt uttryck som använder det filtret. Till exempel sessioner[True] är ett mått som definieras med filtret &quot;Sant&quot;. Sessionerna[True] Måttet är detsamma som värdet för sessioner eftersom True-filtret tillåter alla element i Session-dimensionen.
 
 <table id="table_5D66E6C11B384460BAAA7A6130214594"> 
  <tbody> 

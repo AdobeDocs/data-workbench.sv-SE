@@ -3,14 +3,16 @@ description: Steg för att installera rapportserverprogramfilerna.
 title: Installera rapportprogramfiler
 uuid: 9c250783-7080-4c27-bd8c-add208b2b1bf
 exl-id: 8f871e5c-1267-4564-a168-398f9dc793a4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
 
 ---
 
-# Installerar rapportprogramfiler{#installing-the-report-program-files}
+# Installera rapportprogramfiler{#installing-the-report-program-files}
+
+{{eol}}
 
 Steg för att installera rapportserverprogramfilerna.
 
@@ -31,4 +33,4 @@ Report Server är en klient till Data Workbench Server och är licensierad att k
 1. Välj **[!UICONTROL Security]**.
 1. Klicka på **[!UICONTROL Edit]**.
 1. Lägg till **[!UICONTROL Everyone]**.
-1. Bevilja fullständig kontroll för **[!UICONTROL Everyone]**.
+1. Bevilja full kontroll för **[!UICONTROL Everyone]**.

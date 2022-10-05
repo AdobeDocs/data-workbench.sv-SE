@@ -3,14 +3,16 @@ description: Den vanligaste terminologin och funktionerna i Adobe data workbench
 title: Ordlista
 uuid: 9c832e10-f518-4a76-b06e-2fd7ea1fd985
 exl-id: 0fcc348a-8963-4473-a19d-0235c993c19a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Ordlista{#glossary}
+
+{{eol}}
 
 Den vanligaste terminologin och funktionerna i Adobe data workbench, inklusive kontrollpanelen.
 
@@ -18,7 +20,7 @@ Den vanligaste terminologin och funktionerna i Adobe data workbench, inklusive k
 
 Profiler definierar en datauppsättning. En profil innehåller data om ett visst ämne samt en uppdelning av dessa data i användarvänliga analyskomponenter. Profiler skapas och hanteras i Adobe data workbench och görs tillgängliga via kontrollpanelsprogrammet. Profiler är vanligtvis utformade för att uppfylla ett visst syfte (till exempel att analysera marknadsförings- och webbplatstrafik) och definiera en uppsättning analyskomponenter som kallas Dimensioner, mått och filter.
 
-## Dimensioner {#section-f126625e45524d59b8b5db47d4d1d0dd}
+## Mått {#section-f126625e45524d59b8b5db47d4d1d0dd}
 
 Dimensioner är kategorier av liknande datatyper. Dimensionen Dagar i veckan består till exempel av följande dataelement: Söndag, måndag, tisdag, onsdag, torsdag, fredag och lördag. Dimensionerna anger i synnerhet vad som mäts. I kontrollpanelen definieras dimensioner i Adobe data workbench och görs tillgängliga via kontrollpanelsprogrammet. Varje dimension har ett unikt namn i kontrollpanelens gränssnitt.
 

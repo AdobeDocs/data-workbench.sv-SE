@@ -3,14 +3,16 @@ description: Information om olika typer av processkartor.
 title: Olika typer av processkartor
 uuid: 19473b77-13c1-4829-b018-d3316e434ba4
 exl-id: 8bac7036-c7fe-4566-8e59-08e1ddc7ddb7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 0%
 
 ---
 
-# Typer av processkartor{#types-of-process-maps}
+# Olika typer av processkartor{#types-of-process-maps}
+
+{{eol}}
 
 Information om olika typer av processkartor.
 
@@ -32,9 +34,9 @@ Du kan göra något av följande i en 2D-processöversikt:
 
 ![](assets/vis_2DProcessMap_MovieNodes.png)
 
-I exemplet är storleken på varje nod och tjockleken och intensiteten för varje pil proportionell mot graderingsmåttet, som är antalet graderingar som en film har fått. Därför har en film med en stor nod, som *Självständighetsdagen*, fler omdömen än en film med en liten nod, som *HändelseHorisont*. Du kan också se att fler filmtittare betygsatte *Självständighetsdagen* före *Cold Mountain* än betygsatte samma filmer i motsatt ordning. Observera att pilarna inte anger att tittarna rankade *Självständighetsdagen* och sedan rankade *Cold Mountain* omedelbart därefter, eller vice versa. Visningsprogrammen kan ha klassificerat andra filmer däremellan, men dessa filmer visas inte på kartan.
+I exemplet är storleken på varje nod och tjockleken och intensiteten för varje pil proportionell mot graderingsmåttet, som är antalet graderingar som en film har fått. Därför är en film med en stor nod, som *Självständighetsdagen*, har fler omdömen än en film med en liten nod, som *Händelsehorisonter*. Du kan också se att fler filmtittare betygsätter *Självständighetsdagen* före *Cold Mountain* än klassificerade samma filmer i motsatt ordning. Observera att pilarna inte anger att tittare betygsätter *Självständighetsdagen* och sedan betygsätta *Cold Mountain* omedelbart därefter, eller tvärtom. Visningsprogrammen kan ha klassificerat andra filmer däremellan, men dessa filmer visas inte på kartan.
 
-## 2D-måttscheman {#section-a9b846fc71224058918fbc378315effe}
+## 2D-mätkartor {#section-a9b846fc71224058918fbc378315effe}
 
 Tvådimensionella metriska kartor är en typ av 2D-processmappning som placerar noder baserat på värdet för ett visst mått. I många fall är det mätvärde som används med 2D-måttschemat antingen Konvertering eller Behåll. Konverterings- och kvarhållningskartor hjälper er att förstå vilka steg i processerna i era kundcentrerade kanaler som påverkar kundkonverteringen och kundlojaliteten.
 

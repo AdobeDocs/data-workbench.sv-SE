@@ -3,7 +3,7 @@ description: Med en tidsdimension kan du skapa en uppsättning periodiska eller 
 title: Dimensioner
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
 exl-id: f9534b24-3a16-4220-bac2-bc541e121005
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Dimensioner{#time-dimensions}
+
+{{eol}}
 
 Med en tidsdimension kan du skapa en uppsättning periodiska eller absoluta mått för lokal tid (t.ex. Dag, Veckodag, Timme på dagen, Reservationstid osv.) baserat på ett tidsstämpelfält som du anger för parametern Indatatid (1970 epok).
 
@@ -57,7 +59,7 @@ Tidsdimensionerna definieras av följande parametrar:
   </tr> 
   <tr> 
    <td colname="col1"> Indatatid (1970 epok) </td> 
-   <td colname="col2"> <p>Namnet på det tidsstämpelfält som ska användas som indata. </p> <p> <p>Obs!  Fältets värden måste representera antalet sekunder sedan 1 januari 1970, 00:00:01. Om indatatiden inte är en giltig tid (1970 till 2037) misslyckas omvandlingsprocessen och data workbench-servern genererar ett fel. </p> </p> </td> 
+   <td colname="col2"> <p>Namnet på det tidsstämpelfält som ska användas som indata. </p> <p> <p>Obs! Fältets värden måste representera antalet sekunder sedan 1 januari 1970, vid 00:00:01. Om indatatiden inte är en giltig tid (1970 till 2037) misslyckas omvandlingsprocessen och data workbench-servern genererar ett fel. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

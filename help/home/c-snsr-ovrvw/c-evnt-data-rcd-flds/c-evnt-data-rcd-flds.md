@@ -3,7 +3,7 @@ description: Loggfiler (.vsl) innehåller fält med händelsedata som samlas in 
 title: Händelsedatapostfält (.vsl-filer)
 uuid: ad9e773c-a128-4094-9e20-45a6de025c8f
 exl-id: d48b593f-5a3a-4a4e-9a71-3b91024c9a48
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Fält för händelsedatapost{#event-data-record-fields}
+
+{{eol}}
 
 Loggfiler (.vsl) innehåller fält med händelsedata som samlas in från servrar av sensorer och som används av data workbench-servern i datauppsättningsprocessen.
 

@@ -3,7 +3,7 @@ description: Så här skapar du en indatacell.
 title: Skapa en indatacell
 uuid: 9b2883e4-b12a-4279-9894-37a1df6c34b3
 exl-id: 1e55696e-fcc8-4521-b37b-f52409229e6d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -12,9 +12,11 @@ ht-degree: 0%
 
 # Skapa en indatacell{#create-an-input-cell}
 
+{{eol}}
+
 Så här skapar du en indatacell.
 
-När cell B1 är formaterad som en indatacell (genom att högerklicka på cellen och klicka på **[!UICONTROL Format]** > **[!UICONTROL Input Cell]**) och du låser visualiseringen (genom att högerklicka på den övre kanten och klicka på **[!UICONTROL Locked]**), kan du ändra värdet på indatacellen för att visa resultaten direkt.
+När cell B1 är formaterad som en indatacell (genom att högerklicka på cellen och klicka på **[!UICONTROL Format]** > **[!UICONTROL Input Cell]**) och du låser visualiseringen (genom att högerklicka på den övre kanten och klicka på **[!UICONTROL Locked]**) kan du ändra värdet för indatacellen så att resultatet visas&quot;direkt.&quot;
 
 I följande exempel visas ett kalkylblad som visar formeln för en indatacell.
 

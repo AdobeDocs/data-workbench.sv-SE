@@ -3,7 +3,7 @@ description: Med Data Workbench kan du exportera filer som kan integreras med pr
 title: Export av överordnad marknadsföringsprofil
 uuid: bae0f0c5-a452-4afd-9f2c-5f3ab69a12d2
 exl-id: 9fc89815-d31d-41a7-a0c0-de1e84b24baa
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # Export av överordnad marknadsföringsprofil{#master-marketing-profile-export}
 
+{{eol}}
+
 Med Data Workbench kan du exportera filer för integrering med profiler och målgrupper som en del av en integrerad Adobe Experience Cloud.
 
 <!-- <a id="section_731922BC8628479198A41EF3EA72F2FF"></a> -->
 
-Profiler och målgrupper ingår i [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html), en bastjänst i [!DNL Adobe Experience Cloud]. Exporten Profiler och Publiker gör att målgrupper kan delas över hela Experience Cloud med ett unikt Experience Cloud-ID (ECID) som tilldelas alla besökare och sedan används av [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html). [!DNL ExportIntegration.exe]-programmet ( [!DNL E:\Server\Scripts]) används för att generera både MMP- och Adobe Target-exporter.
+Profiler och målgrupper ingår i [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html), en kärntjänst i [!DNL Adobe Experience Cloud]. Exporten av profiler och målgrupper gör det möjligt att dela målgrupper över hela Experience Cloud med hjälp av ett unikt Experience Cloud-ID (ECID) som tilldelas varje besökare och sedan används av [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html). The [!DNL ExportIntegration.exe] program ( [!DNL E:\Server\Scripts]) används för att generera både MMP- och Adobe Target-exporter.
 
 **Konfigurera FSU-servern för användning av profiler och målgrupper**
 
@@ -51,7 +53,7 @@ Profiler och målgrupper ingår i [Experience Cloud Identity Service](https://ex
 
    >[!NOTE]
    >
-   >Med [!DNL MMPExport.cfg]filen kan du även ta alla poster, dela upp dem i uppsättningar och skapa delningar av poster. Posterna exporteras sedan till Amazon S3. Tre obligatoriska parametrar krävs för att skapa grupper av poster: [!DNL numRecordsPerChunk], [!DNL numThreads] och [!DNL maxRetriesOnSendFailure].
+   >The [!DNL MMPExport.cfg]kan du också ta med alla poster, dela upp dem i uppsättningar och skapa grupper med poster. Posterna exporteras sedan till Amazon S3. Tre obligatoriska parametrar krävs för att skapa grupper av poster: [!DNL numRecordsPerChunk], [!DNL numThreads]och [!DNL maxRetriesOnSendFailure].
 
 **Definition av parametrar**
 
@@ -65,15 +67,15 @@ Profiler och målgrupper ingår i [Experience Cloud Identity Service](https://ex
  <tbody> 
   <tr> 
    <td colname="col1"> <i>s3 Bucket</i> </td> 
-   <td colname="col2"> AWS S3-bucket dit exporten överförs. </td> 
+   <td colname="col2"> Den AWS S3-bucket dit exporten överförs. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>s3 Object Directory</i> </td> 
-   <td colname="col2"> En sökväg där s3-filer sparas. Detta stöder underkataloger. <p> <p>Viktigt:  Blanksteg och flerbytetecken tillåts inte i sökvägen och kommer att skapa fel i exporten. (Intensiteten är tillåten). </p> </p> </td> 
+   <td colname="col2"> En sökväg där s3-filer sparas. Detta stöder underkataloger. <p> <p>Viktigt: Blanksteg och flerbytetecken tillåts inte i sökvägen och kommer att skapa fel i exporten. (Intensiteten är tillåten). </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>s3-region</i> </td> 
-   <td colname="col2"> AWS s3-regionen dit exporten skickas. Exempel. us-east-1 </td> 
+   <td colname="col2"> Den AWS s3-region dit exporten skickas. Exempel. us-east-1 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>s3-åtkomstnyckel</i> </td> 
@@ -81,7 +83,7 @@ Profiler och målgrupper ingår i [Experience Cloud Identity Service](https://ex
   </tr> 
   <tr> 
    <td colname="col1"> <i>s3 hemlig nyckel</i> </td> 
-   <td colname="col2"> AWS s3 Hemlig nyckel </td> 
+   <td colname="col2"> AWS s3 Secret Key </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>dataproviderns namn</i> </td> 
@@ -105,7 +107,7 @@ Profiler och målgrupper ingår i [Experience Cloud Identity Service](https://ex
   </tr> 
   <tr> 
    <td colname="col1"> <i>numRecordsPerChunk</i> </td> 
-   <td colname="col2"> <p>Anger segmentstorleken i antal poster. </p> <p>Implementeringen klipper av det värde som användaren anger till min = 1 000 poster&amp;nbsp;(~50 kB-segment)&amp;nbsp;och max = 50 000 poster (~2,5 MB segment).&amp;nbsp;Standardvärdet 10000 används om användaren inte anger den här konfigurationsegenskapen. </p> </td> 
+   <td colname="col2"> <p>Anger segmentstorleken i antal poster. </p> <p>Implementeringen klipper av det värde som användaren anger till min = 1000 records&amp;nbsp;(~50 kB chunks)&amp;nbsp; och max = 50000 records (~2,5 MB chunks).&amp;nbsp;Standardvärdet 10000 används om användaren inte anger den här konfigurationsegenskapen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>numThreads</i> </td> 
@@ -120,22 +122,22 @@ Profiler och målgrupper ingår i [Experience Cloud Identity Service](https://ex
 
 **Genererar MMP-export från klienten**
 
-1. Öppna en arbetsyta i klienten och högerklicka på **[!UICONTROL Tools]**> **[!UICONTROL Detail Table]**.
-1. Lägg till **nivå**.
+1. Öppna en arbetsyta i klienten och högerklicka **[!UICONTROL Tools]**> **[!UICONTROL Detail Table]**.
+1. Lägg till **Nivå**.
 1. Högerklicka på rubriken och välj **Lägg till attribut**.
-1. Högerklicka på rubriken och välj **Export av ny Överordnad marknadsföringsprofil**. ![](assets/mmp_mmp_export.png)
+1. Högerklicka på rubriken och välj **Ny export av Överordnad marknadsföringsprofil**. ![](assets/mmp_mmp_export.png)
 1. Expandera **Fråga**.
 
    ![](assets/mmp_mmp_query.png)
 
 1. Expandera **MMP-konfiguration**.
-1. (obligatoriskt) Ange **MMP-segmentnamn** och **MMP Visitor ID-fält**. Dessa parametrar får inte vara tomma.
-1. **MMP-segmentnamnet** ska matcha det segment-ID som definierats i MMP.
-1. **MMP Visitor ID** är den attributkolumn som definieras i steg 4 och som motsvarar **besökar-ID**.
-1. När du har angett dessa fält kan du spara exporten genom att högerklicka på rubriken för exporten och välja **Spara** som &quot;Användare\.export&quot;.
-1. Öppna **Admin** > **Profilhanteraren** och spara exporten till profilen.
+1. (obligatoriskt) Ange **MMP-segmentnamn** och **MMP-besökarfält**. Dessa parametrar får inte vara tomma.
+1. The **MMP-segmentnamn** ska matcha det segment-ID som definieras i MMP.
+1. The **MMP-besökar-ID** är den attributkolumn som definieras i steg 4 och som motsvarar **Besökar-ID**.
+1. När du har angett dessa fält kan du spara exporten genom att högerklicka på rubriken för exporten och välja **Spara** som &quot;User\.export&quot;.
+1. Öppna **Administratör** > **Profilhanteraren** och spara exporten till profilen.
 
-   Om alla data anges korrekt genereras en exportfil i FSU ([!DNL Server/Exports]) och exporten överförs också till AWS med hjälp av informationen i [!DNL MMPExport.cfg]. Loggen för detta finns i [!DNL Server/Trace/]. t.ex. [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
+   Om alla data anges korrekt genereras en exportfil i FSU ([!DNL Server/Exports]) och den kommer också att överföra exporten till AWS med hjälp av informationen i [!DNL MMPExport.cfg]. Loggen för detta finns i [!DNL Server/Trace/]. t.ex., [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
 
 ```
 Query = SegmentExportQuery: 

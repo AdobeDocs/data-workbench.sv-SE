@@ -3,7 +3,7 @@ description: I det här dokumentet beskrivs profilerna med de fält, dimensioner
 title: Dimensioner och mått för Datans Workbench profil
 uuid: 42ef154f-fd8b-4609-8685-96d9dbf32a3d
 exl-id: cfad9897-2ea3-47e4-aa36-416e0fde9358
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Dimensioner och mått för Datans Workbench profil{#data-workbench-profile-dimensions-and-metrics}
+
+{{eol}}
 
 I det här dokumentet beskrivs profilerna med de fält, dimensioner och mått som används av Data Workbench Monitoring Profile.
 
@@ -25,6 +27,6 @@ Dessa profiler tillhandahåller mått och mätvärden som gör att du kan visa s
 * [Dimensioner i Insight History-profilen](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
 * [Mätvärden i profilen för historisk övervakning av insikt](../../../home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md#concept-8fece88b1f014637bbc7c8372ee93203)
 
-Med statusprofilerna kan du se hur data workbench för närvarande fungerar ur ett funktionellt perspektiv. Profilens **status**-profil och **serverstatus**-profilen samlar in data från Detaljerad status och data workbench-servrarna. Alla insamlade data placeras i `cs-uri-query`-fältet för användning.
+Med statusprofilerna kan du se hur data workbench för närvarande fungerar ur ett funktionellt perspektiv. The **Profilstatus** och **Serverstatus** samlar in data från Detaljerad status och data workbench-servrarna. Alla insamlade data placeras i `cs-uri-query` fält som ska användas.
 
-Med de **historiska profilerna** kan du bedöma påverkan av konfigurations- och maskinvaruändringar med hjälp av historiska data. Den historiska profilen kan vara den mest användbara eftersom den gör det möjligt att bedöma hur konfigurationen och maskinvaruändringarna påverkas över tiden.
+The **Historiska profiler** gör att du kan bedöma påverkan av konfigurations- och maskinvaruändringar med hjälp av historiska data. Den historiska profilen kan vara den mest användbara eftersom den gör det möjligt att bedöma hur konfigurationen och maskinvaruändringarna påverkas över tiden.

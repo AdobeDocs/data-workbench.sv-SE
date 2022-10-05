@@ -3,7 +3,7 @@ description: Med alternativet Anpassa till fönster kan datakolumnerna i en tabe
 title: Anpassa data till ett fönster
 uuid: a45283e1-56df-4110-a052-2135baeaf709
 exl-id: 79eb1177-11bd-44ad-aafc-4de6f961f78f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Anpassa data till ett fönster{#fit-data-to-a-window}
+
+{{eol}}
 
 Med alternativet Anpassa till fönster kan datakolumnerna i en tabell automatiskt expanderas eller krympas för att passa fönstret varje gång du ändrar storlek på det.
 

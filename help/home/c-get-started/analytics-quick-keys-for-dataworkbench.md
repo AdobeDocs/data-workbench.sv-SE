@@ -1,14 +1,18 @@
 ---
 description: Använd dessa kortkommandon för arbetsytor och konfigurationsfiler.
-title: Kortkommandon för Data Workbench-klienten
+title: Kortkommandon för Data Workbench Client
 uuid: 134bcf04-767c-4170-b375-545862b2d333
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 77b02661-d084-4860-8d28-97fb37b82332
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 0%
 
 ---
 
+# Kortkommandon för Data Workbench Client{#keyboard-shortcuts-for-the-data-workbench-client}
 
-# Kortkommandon för Data Workbench-klienten{#keyboard-shortcuts-for-the-data-workbench-client}
+{{eol}}
 
 Använd dessa kortkommandon för arbetsytor och konfigurationsfiler.
 
@@ -42,8 +46,8 @@ Importerar en arbetsyta
    <td colname="col2"><b>Ctrl plus</b> <p>Ctrl + (på knappsats) </p> <p><i>eller</i> </p> <p>Ctrl Skift + (på tangentbordet) </p> </td> 
    <td colname="col3"> 
     <ul id="ul_C7C731B894D946D9916F50806F015857"> 
-     <li id="li_452B4C119B1A40038A408CFFC53653A9"><span class="uicontrol"> Arkiv</span> &gt; <span class="uicontrol"> Sidstorlek</span> &gt; <span class="uicontrol"> Fyll skärmen</span> <p><i>följt av</i> </p> </li> 
-     <li id="li_DE9B8B31B9F24A6AA68A1D0DB886B501"><span class="uicontrol"> Arkiv</span> &gt; <span class="uicontrol"> Anpassa arbetsytan</span> </li> 
+     <li id="li_452B4C119B1A40038A408CFFC53653A9"><span class="uicontrol"> Fil</span> &gt; <span class="uicontrol"> Sidstorlek</span> &gt; <span class="uicontrol"> Fyllningsskärm</span> <p><i>följt av</i> </p> </li> 
+     <li id="li_DE9B8B31B9F24A6AA68A1D0DB886B501"><span class="uicontrol"> Fil</span> &gt; <span class="uicontrol"> Refit Workspace</span> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -113,10 +117,10 @@ Importerar en arbetsyta
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ctrl + E </p> </td> 
-   <td colname="col2"> <p>Öppna en konfigurationsfil (.cfg) i en arbetsyta. Som standard visas cfg-filer, men du kan även öppna andra .dim-, .metric- eller .vw-filer efter behov (när du väljer alternativet <b>Alla filer</b> ). </p> </td> 
+   <td colname="col2"> <p>Öppna en konfigurationsfil (.cfg) i en arbetsyta. Som standard visas .cfg-filer, men du kan även öppna andra .dim-, .metric- eller .vw-filer efter behov (när du väljer <b>Alla filer</b> ). </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>Lägg till &gt; Öppna</b> och <b>lägg till &gt; Redigera</b> , öppna snabbt nyligen öppnade eller fästa filer på en arbetsyta. </p> </td> 
+   <td colname="col1"> <p><b>Lägg till &gt; Öppna</b> och <b>Lägg till &gt; Redigera</b> Öppna snabbt nyligen öppnade eller fästa filer på en arbetsyta. </p> </td> 
    <td colname="col2"> <p>Öppna filer som du nyligen har använt (de tio senaste filerna sparas) eller filer som du har sparat eller "fäst" på den nya menyn. Du kan klicka på nålikonen bredvid menyalternativet för att spara länken på menyn. </p> </td> 
   </tr> 
  </tbody> 
@@ -132,11 +136,11 @@ Importerar en arbetsyta
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Högerklicka på en nod och klicka på <span class="uicontrol"> Klistra in</span> </p> </td> 
-   <td colname="col2"> <p>Klistrar in en nod i en <span class="filepath"> .cfg</span> -fil </p> </td> 
+   <td colname="col2"> <p>Klistrar in en nod i en <span class="filepath"> .cfg</span> fil </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Högerklicka på vektorn och klicka på <span class="uicontrol"> Klistra in som underordnad</span> </p> </td> 
-   <td colname="col2"> <p>Klistrar in en vektor i en <span class="filepath"> .cfg</span> -fil på vektornivå </p> </td> 
+   <td colname="col2"> <p>Klistrar in en vektor i en <span class="filepath"> .cfg</span> på vektornivå </p> </td> 
   </tr> 
  </tbody> 
 </table>

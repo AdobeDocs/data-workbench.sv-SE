@@ -3,7 +3,7 @@ description: Förutom att göra enkla, men ändå kraftfulla, peka-och-klicka-ma
 title: Välja data med andra metoder
 uuid: 0e2b8e6d-d696-4597-9f85-1968b18cfbc8
 exl-id: d6ef163e-1faa-4b0f-b69b-9e559f6f34fb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Välja data med andra metoder{#selecting-data-using-other-methods}
+
+{{eol}}
 
 Förutom att göra enkla, men ändå kraftfulla, peka-och-klicka-markeringar i visualiseringar finns det tre metoder i Adobe som du kan använda för att markera data och arbeta med dessa markerade data.
 
@@ -22,7 +24,7 @@ Var och en av dessa metoder är lämplig för särskilda situationer:
 
    Om du använder ett segment påverkas bara den arbetsyta där du använder segmentdimensionen. Läs mer i [Segment](../../../../home/c-get-started/c-analysis-vis/c-seg/c-seg.md#concept-71a333e5c7334e0489c76fca95862fbc).
 
-* **Filter:** Filterredigeraren gör att du kan göra komplexa datamarkeringar och se urvalskriterierna som är tydligt angivna i redigeraren. Du kan också spara alla filter och använda dem igen.
+* **Filter:** Filterredigeraren gör att du kan göra komplexa datamarkeringar och se urvalskriterierna som anges tydligt i redigeraren. Du kan också spara alla filter och använda dem igen.
 
    Exempel: Ni vill analysera data som är relaterade till kunder från Kalifornien som gjort mer än fem beställningar på en månad.
 

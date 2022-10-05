@@ -2,13 +2,17 @@
 description: 'Sensorn består av tre huvudkomponenter: Datainsamling, Diskkö och Dataöverföring.'
 title: Vad är grundläggande komponenter?
 uuid: 32e6e8d9-90ee-4db1-8883-dbdf245df26f
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: aee6a601-590a-43e0-aeeb-42a4522e55c8
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 0%
 
 ---
 
-
 # Vad är grundläggande komponenter?{#what-are-basic-components}
+
+{{eol}}
 
 Sensorn består av tre huvudkomponenter: Datainsamlare, diskkö och dataöverföringstjänst.
 
@@ -18,7 +22,7 @@ Sensorn består av tre huvudkomponenter: Datainsamlare, diskkö och dataöverfö
 
 Datainsamlaren (insamlaren) är en NSAPI-, ISAPI-, J2EE-filterserver eller Apache-modul som körs i webbserverprocessen.
 
-Den samlar in råa händelsedata om varje HTTP-begäran som webbservern bearbetar och placerar informationen i diskkön. Om du kör flera instanser av en webbserver på samma dator läser varje instans in sin egen instans av insamlarmodulen. Alla instanser av insamlaren skriver emellertid sina händelsedata till samma diskkö.
+Den samlar in råhändelsedata om varje HTTP-begäran som webbservern bearbetar och placerar informationen i diskkön. Om du kör flera instanser av en webbserver på samma dator läser varje instans in sin egen instans av insamlarmodulen. Alla instanser av insamlaren skriver emellertid sina händelsedata till samma diskkö.
 
 ## Diskkö {#section-41aac77ab30e48478d1b31eac288df05}
 
@@ -53,10 +57,10 @@ Ditt val av köstorlek beror till stor del på den önskade nivån av systemöve
 >
 >Större köfilstorlekar påverkar inte prestanda.
 
-Kontakta Adobes konsulttjänster om du vill veta mer om hur du ändrar storlek på kön.
+Kontakta Adobe Consulting Services om du vill ha mer information om hur du ändrar storlek på kön.
 
 ## Dataöverföring {#section-2dc03d37d73b4cc6bdd5af6b346350d4}
 
 Sändaren är en oberoende process (till exempel en daemon på en UNIX-baserad dator eller en tjänst på en Windows-dator) som körs på samma dator som webbservern.
 
-Sändaren läser händelsedata från diskkön, komprimerar dem och skickar dem via HTTP/S till den angivna Insight-servern, där de bearbetas och lagras i **.vsl** -filer.
+Sändaren läser händelsedata från diskkön, komprimerar dem och skickar dem via HTTP/S till den angivna Insight-servern där de bearbetas och lagras i **.vsl** filer.

@@ -3,7 +3,7 @@ description: Tabell som definierar parametrarna för användargruppen.
 title: Användargrupper för frågekö
 uuid: 90d9058c-1809-4579-a8c6-930a07affc83
 exl-id: e9586ad4-4c0b-48b7-b533-4d23a0f4a216
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Användargrupper för frågekö{#query-queue-user-groups}
+
+{{eol}}
 
 Tabell som definierar parametrarna för användargruppen.
 
@@ -38,19 +40,19 @@ Tabell som definierar parametrarna för användargruppen.
    <td colname="col2"> </td> 
    <td colname="col3"> <p>En standardprincip säkerställer att användare med låg prioritet flyttas uppåt i kön och schemaläggs, även om användare med högre prioritet går in i kön. Du kan lägga till flera profiler av samma typ i en grupp och deras effekt är kumulativ. 
      <ul id="ul_F7F60D23DC934F61AF2183177A11FA65"> 
-      <li id="li_805ED3E740814FAEBFF2B411BAB3D248"><b>Prioritetsgräns:</b> Den gräns över vilken prioriteten inte ökas. Högsta prioritetsvärde. Du kan använda det här värdet om du vill behålla prioriteter som genereras av den här principen i ett visst intervall (till exempel så att prioriteter för en annan grupp alltid är högre eller så att de inte stiger över prioriteten Ej berörbart. </li> 
+      <li id="li_805ED3E740814FAEBFF2B411BAB3D248"><b>Prioritetsgräns:</b> Gränsen över vilken prioriteten inte ökas. Högsta prioritetsvärde. Du kan använda det här värdet om du vill behålla prioriteter som genereras av den här principen i ett visst intervall (till exempel så att prioriteter för en annan grupp alltid är högre eller så att de inte stiger över prioriteten Ej berörbart. </li> 
      </ul> </p> <p> <b>Standardpolicysteg</b> </p> <p>Inställningarna för stegvis ökning för standardregeln ökar prioriteten för ett frågebunt allt eftersom tiden går. Detta medför inte att buncherna måste schemaläggas, men du kan använda dessa inställningar för att prioritera användare som har väntat länge. Parametrarna som står i kö påverkar frågor som är i kö (t.ex. parkerade på grund av otillräckliga resurser för att slutföra dem). De schemalagda parametrarna påverkar frågor som besvaras. Prioriteten för en fråga ökar med det tal som anges i fälten för öknings- och ökningsintervall: 
      <ul id="ul_7A5EE18CE10E4484A203B938525C806C"> 
-      <li id="li_4B5CD827AF3848DA811A96C851340518"><b>Ökning i kö:</b> Anger prioritetsökning per uppdatering i kö. Den här inställningen ser till att användare med låg prioritet flyttas upp i schemaläggningskön. </li> 
-      <li id="li_91CA798235234A1CAC7AB32A7FB1CE84"><b>Ökningsintervall i kö:</b> Anger antalet sekunder mellan uppdateringar i kö. </li> 
-      <li id="li_079275E21ABA43B796A853624A6BDC29"><b>Schemalagd ökning:</b> Anger prioritetsökningen per uppdatering när den är schemalagd. </li> 
-      <li id="li_3AE2EC3EBE6C4670BA0FA1BBD03FEBBD"><b>Schemalagt ökningsintervall:</b> Anger antalet sekunder mellan schemalagda uppdateringar. <p> <p>Obs!  Om du ställer in öknings- och intervalluppdateringshastigheterna högre för buntar som står i kö än för schemalagda buntar kan det orsaka oscillation. (Anta till exempel att du anger värdet 100 för Ökning i kö och 0 för Ökningsintervall i schemalagt läge, och att värdet 1 för Ökningsintervall i kö är 1 och att Prioriteten för oberörbart är hög. Om två frågebuntar kommer in med en basprioritet på 0, och det inte finns tillräckligt med resurser för att köra båda frågorna samtidigt, schemaläggs en av dem. Efter en sekund har frågan som inte var schemalagd en prioritet på 100 och föregriper den som var schemalagd. Efter ytterligare två sekunder har den som förväntades nu prioriteten 200, och de två switcharna placeras igen. Ingen av frågorna avslutas eftersom den fråga som beräknas föregås varannan sekund så att den andra frågan kan köras.) </p> </p> </li> 
+      <li id="li_4B5CD827AF3848DA811A96C851340518"><b>Ökning i kö:</b> Anger prioritetsökningen per uppdatering som står i kö. Den här inställningen ser till att användare med låg prioritet flyttas upp i schemaläggningskön. </li> 
+      <li id="li_91CA798235234A1CAC7AB32A7FB1CE84"><b>Ökningsintervall i kö:</b> Anger antalet sekunder mellan uppdateringar när de står i kö. </li> 
+      <li id="li_079275E21ABA43B796A853624A6BDC29"><b>Schemalagd ökning:</b> Anger prioritetsökningen per uppdatering vid schemalagd tidpunkt. </li> 
+      <li id="li_3AE2EC3EBE6C4670BA0FA1BBD03FEBBD"><b>Schemalagt ökningsintervall:</b> Anger antalet sekunder mellan uppdateringar när de är schemalagda. <p> <p>Obs! Om du ställer in öknings- och intervalluppdateringshastigheterna högre för buntar som står i kö än för schemalagda buntar kan det orsaka oscillation. (Anta till exempel att du anger värdet 100 för Ökning i kö och 0 för Ökningsintervall i schemalagt läge, och att värdet 1 för Ökningsintervall i kö är 1 och att Prioriteten för oberörbart är hög. Om två frågebuntar kommer in med en basprioritet på 0, och det inte finns tillräckligt med resurser för att köra båda frågorna samtidigt, schemaläggs en av dem. Efter en sekund har frågan som inte var schemalagd en prioritet på 100 och föregriper den som var schemalagd. Efter ytterligare två sekunder har den som förväntades nu prioriteten 200, och de två switcharna placeras igen. Ingen av frågorna avslutas eftersom den fråga som beräknas föregås varannan sekund så att den andra frågan kan köras.) </p> </p> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Princip för dagligt schema </p> </td> 
    <td colname="col2"> </td> 
-   <td colname="col3"> <p>Gör att du kan ändra prioriteten vid specifika tidpunkter på dagen. Det här schemat är användbart för automatiserade klienter, till exempel <span class="wintitle"> Report Server</span>, och när användare av systemet bor i olika tidszoner. </p> </td> 
+   <td colname="col3"> <p>Gör att du kan ändra prioriteten vid specifika tidpunkter på dagen. Det här schemat är användbart för automatiserade klienter, som <span class="wintitle"> Rapportserver</span>och när användare av systemet bor i olika tidszoner. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ändringar </p> </td> 
@@ -65,7 +67,7 @@ Tabell som definierar parametrarna för användargruppen.
   <tr> 
    <td colname="col1"> <p>Användare </p> </td> 
    <td colname="col2"> <p>vektor </p> </td> 
-   <td colname="col3"> <p>Visar de användare som är medlemmar i gruppen. </p> <p> <b>Namn:</b> Användarens namn så som det visas i fältet Gemensamt namn i användarens certifikat. </p> <p> <b>Extra prioritet:</b> Anger ytterligare prioritet till användargruppens basprioritet för att fastställa startprioritet för den användaren. </p> </td> 
+   <td colname="col3"> <p>Visar de användare som är medlemmar i gruppen. </p> <p> <b>Namn:</b> Användarens namn så som det visas i fältet Gemensamt namn i användarens certifikat. </p> <p> <b>Extra prioritet:</b> Ger ytterligare prioritet till användargruppens basprioritet för att fastställa startprioriteten för den användaren. </p> </td> 
   </tr> 
  </tbody> 
 </table>

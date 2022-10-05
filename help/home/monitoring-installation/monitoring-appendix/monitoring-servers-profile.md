@@ -3,7 +3,7 @@ description: Följande dimensioner är tillgängliga för användning i serverst
 title: Dimensioner i Datans Workbench serverstatusprofil
 uuid: 4cfe882a-2797-4af9-bd6d-75bc31ee909c
 exl-id: 002f6b95-f151-41d9-ae28-9c01c1f621ee
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Dimensioner i Datans Workbench serverstatusprofil{#dimensions-in-the-data-workbench-server-status-profile}
+
+{{eol}}
 
 Följande dimensioner är tillgängliga för användning i serverstatusprofilen för data workbench.
 
@@ -50,11 +52,11 @@ Följande dimensioner är tillgängliga för användning i serverstatusprofilen 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Miljö</b> </td> 
-   <td colname="col2">Värdet cs-uri-query(c) används för miljö-ID. Den sista raden för ett block används som värde för dimensionen. Den här enkla Dimensionen visar miljön där dina servrar körs (förutsatt att den är korrekt konfigurerad). <p><p>Obs!  Den här dimensionen anges i insight_monitor_agent.cfg. </p></p></td> 
+   <td colname="col2">Värdet cs-uri-query(c) används för miljö-ID. Den sista raden för ett block används som värde för dimensionen. Den här enkla Dimensionen visar miljön där dina servrar körs (förutsatt att den är korrekt konfigurerad). <p><p>Obs! Den här dimensionen anges i insight_monitor_agent.cfg. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Beräknad svep deksekunder</b> </td> 
-   <td colname="col2"> Fältet för x-Estimated-sweep-dekaseconds används i den här numeriska Dimensionen. Detta är den uppskattade sveptiden för servrarna dividerat med tio (minskad upplösning för svepmätning för att göra måttet mer rimligt stort). <p><p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></p></td> 
+   <td colname="col2"> Fältet för x-Estimated-sweep-dekaseconds används i den här numeriska Dimensionen. Detta är den uppskattade sveptiden för servrarna dividerat med tio (minskad upplösning för svepmätning för att göra måttet mer rimligt stort). <p><p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Värd</b> </td> 
@@ -66,31 +68,31 @@ Följande dimensioner är tillgängliga för användning i serverstatusprofilen 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Läs in medel</b> </td> 
-   <td colname="col2"> Detta är en numerisk dimension som använder den sista raden för en viss servers cs-uri-query(i)-värde. Den villkoras av att cs-uri-query(k) inte är tom. Denna dimension används för att beräkna den genomsnittliga belastningen på servrarna i det system som övervakas. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Detta är en numerisk dimension som använder den sista raden för en viss servers cs-uri-query(i)-värde. Den villkoras av att cs-uri-query(k) inte är tom. Denna dimension används för att beräkna den genomsnittliga belastningen på servrarna i det system som övervakas. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Procent av minnessidfil</b> </td> 
-   <td colname="col2"> Detta är en numerisk dimension som använder den sista raden för en viss servers cs-uri-query(o)-värde. Den villkoras av att cs-uri-query(k) inte är tom. Den här dimensionen används för att beräkna procentandelen av sidfilens minnesanvändning. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Detta är en numerisk dimension som använder den sista raden för en viss servers cs-uri-query(o)-värde. Den villkoras av att cs-uri-query(k) inte är tom. Den här dimensionen används för att beräkna procentandelen av sidfilens minnesanvändning. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Totalt antal fysiska megabyte</b> </td> 
-   <td colname="col2"> Detta är en numerisk dimension som använder den sista raden för en viss servers värde cs-uri-query(ag). Den villkoras av att cs-uri-query(k) inte är tom. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Detta är en numerisk dimension som använder den sista raden för en viss servers värde cs-uri-query(ag). Den villkoras av att cs-uri-query(k) inte är tom. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Fysisk procent minne</b> </td> 
-   <td colname="col2"> Detta är en numerisk dimension som använder den sista raden för en viss servers värde cs-uri-query(ag). Den villkoras av att cs-uri-query(k) inte är tom. Den här dimensionen används för att beräkna procentandelen fysiskt minnesutnyttjande för varje server. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Detta är en numerisk dimension som använder den sista raden för en viss servers värde cs-uri-query(ag). Den villkoras av att cs-uri-query(k) inte är tom. Den här dimensionen används för att beräkna procentandelen fysiskt minnesutnyttjande för varje server. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Procent för minnesfråga</b> </td> 
-   <td colname="col2"> Detta är en numerisk dimension som använder den sista raden för en viss servers cs-uri-query(s)-värde. Den villkoras av att cs-uri-query(k) inte är tom. Den här dimensionen används för att beräkna procentandelen frågeminnesanvändning för varje server. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Detta är en numerisk dimension som använder den sista raden för en viss servers cs-uri-query(s)-värde. Den villkoras av att cs-uri-query(k) inte är tom. Den här dimensionen används för att beräkna procentandelen frågeminnesanvändning för varje server. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Nätverksanslutningar</b> </td> 
-   <td colname="col2"> Detta är en numerisk dimension som använder den sista raden för en viss servers cs-uri-query(q)-värde. Den villkoras av att cs-uri-query(k) inte är tom. Detta används för att visa antalet nätverksanslutningar som finns för en viss server. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Detta är en numerisk dimension som använder den sista raden för en viss servers cs-uri-query(q)-värde. Den villkoras av att cs-uri-query(k) inte är tom. Detta används för att visa antalet nätverksanslutningar som finns för en viss server. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Centisekunder för fördröjning av omröstning</b> </td> 
-   <td colname="col2"> Den här dimensionen används för att beräkna avsökningsfördröjningen. Värdet cs-uri-query(m) divideras med 10 för att minska dimensionsstorleken och kopieras till fältet x-poll-latency-centiseconds. Detta är en numerisk dimension som tar den sista raden för en viss server. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Den här dimensionen används för att beräkna avsökningsfördröjningen. Värdet cs-uri-query(m) divideras med 10 för att minska dimensionsstorleken och kopieras till fältet x-poll-latency-centiseconds. Detta är en numerisk dimension som tar den sista raden för en viss server. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Snabbkontrollen lyckades</b> </td> 
@@ -98,7 +100,7 @@ Följande dimensioner är tillgängliga för användning i serverstatusprofilen 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Procentvärde för temporärt databasutrymme</b> </td> 
-   <td colname="col2"> Den sista raden i värdet för cs-uri-query(an) kopieras till fältet x-temp-db-space-percentage. Detta är en numerisk Dimension som används för att beräkna procentandelen använt temporärt DB-utrymme på en viss server. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Den sista raden i värdet för cs-uri-query(an) kopieras till fältet x-temp-db-space-percentage. Detta är en numerisk Dimension som används för att beräkna procentandelen använt temporärt DB-utrymme på en viss server. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Insight Version</b> </td> 
@@ -106,7 +108,7 @@ Följande dimensioner är tillgängliga för användning i serverstatusprofilen 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Grupp</b> </td> 
-   <td colname="col2"> Grupperingsord som ger dig ett annat sätt att filtrera den resulterande datauppsättningen. <p>Obs!  Den här dimensionen anges i insight_monitor_agent.cfg. </p></td> 
+   <td colname="col2"> Grupperingsord som ger dig ett annat sätt att filtrera den resulterande datauppsättningen. <p>Obs! Den här dimensionen anges i insight_monitor_agent.cfg. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Mätvärden</b> </td> 

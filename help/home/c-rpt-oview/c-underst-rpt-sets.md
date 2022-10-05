@@ -3,7 +3,7 @@ description: En rapportuppsättning är en samling arbetsytor som genereras av R
 title: Rapportuppsättningar
 uuid: 421055d7-0cf0-4664-b944-327a254a97a4
 exl-id: 95609a1a-e70c-41e2-ace3-0cb09f77705a
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
@@ -12,12 +12,14 @@ ht-degree: 0%
 
 # Rapportuppsättningar{#understanding-report-sets}
 
+{{eol}}
+
 En rapportuppsättning är en samling arbetsytor som genereras av Report Server baserat på de värden som anges i en Report.cfg-konfigurationsfil.
 
-I installationsmappen för [!DNL Insight] representerar varje undermapp i mappen &lt;*arbetsprofilnamn*>\Reports en rapportuppsättning som har skapats. Varje rapportuppsättning har en egen [!DNL Report.cfg]-konfigurationsfil i den undermappen.
+I [!DNL Insight] installationsmapp, varje undermapp i &lt;*arbetsprofilsnamn*>\Reports-mappen representerar en rapportuppsättning som har skapats. Varje rapportuppsättning har en egen [!DNL Report.cfg] i den undermappen.
 
 >[!NOTE]
 >
->I Datan Workbench [!DNL Profile Manager] visas rapportuppsättningar som undermappar i mappen [!DNL Reports]. Mer information om [!DNL Profile Manager] finns i [Datans Workbench användarhandbok](https://experienceleague.adobe.com/docs/data-workbench/using/home.html#Data_Workbench_Help).
+>I [!DNL Profile Manager] i Data Workbench visas rapportuppsättningar som undermappar i [!DNL Reports] mapp. Mer information om [!DNL Profile Manager], se [Användarhandbok för Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html#Data_Workbench_Help).
 
-Genom att definiera specifika konfigurationsinställningar för en rapportuppsättning i dess [!DNL Report.cfg]-fil kan du schemalägga skapandet och distributionen av rapporterna, inklusive vem som tar emot vilka rapporter och i vilka format.
+Genom att definiera specifika konfigurationsinställningar för en rapportuppsättning i dess [!DNL Report.cfg] kan du schemalägga framtagning och distribution av rapporterna, inklusive vem som tar emot rapporter och i vilka format.

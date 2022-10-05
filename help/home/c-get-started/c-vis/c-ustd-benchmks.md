@@ -3,7 +3,7 @@ description: Benchmarks visar kvalitativa skillnader i data genom att jämföra 
 title: Benchmarks
 uuid: 2e5255cd-eafd-45de-a16f-70d719d2ac0c
 exl-id: 6294c4f9-a338-409a-a157-86cdfbbb6f76
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Benchmarks{#benchmarks}
+
+{{eol}}
 
 Benchmarks visar kvalitativa skillnader i data genom att jämföra fördelningen av ett mätvärde baserat på alla data med fördelningen av ett mätvärde baserat på en markering i data.
 

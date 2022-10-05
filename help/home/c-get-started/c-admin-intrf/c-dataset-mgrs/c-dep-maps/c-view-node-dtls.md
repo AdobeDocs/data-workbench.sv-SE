@@ -3,7 +3,7 @@ description: Information om hur du visar identifieringsinformation om en profilk
 title: Visa nodinformation
 uuid: 2016a650-b021-4295-8313-d6287578ed10
 exl-id: f8ce7741-8ba2-484d-ac35-5c286b65f098
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Visa nodinformation{#view-node-details}
+
+{{eol}}
 
 Information om hur du visar identifieringsinformation om en profilkomponent.
 
@@ -36,7 +38,7 @@ Omvandlingens typ och namn, namnet på filen som omformningen är definierad i o
 
 >[!NOTE]
 >
->Prestandainformation för omvandlingen visas bara om alternativet [!DNL Show Performance Data] är aktiverat för beroendemappningen. Mer information finns i [Visa prestandadata](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
+>Prestandainformation för omvandlingen visas bara om [!DNL Show Performance Data] är aktiverat för beroendekartan. Mer information finns i [Visa prestandadata](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **Utökad Dimension**
 
@@ -46,7 +48,7 @@ Den utökade dimensionens namn och typ, namnet på filen där dimensionen defini
 
 >[!NOTE]
 >
->Prestandainformation för den utökade dimensionen visas bara om alternativet [!DNL Show Performance Data] är aktiverat för beroendekartan. Mer information finns i [Visa prestandadata](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
+>Prestandainformation för den utökade dimensionen visas bara om [!DNL Show Performance Data] är aktiverat för beroendekartan. Mer information finns i [Visa prestandadata](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **Mått**
 

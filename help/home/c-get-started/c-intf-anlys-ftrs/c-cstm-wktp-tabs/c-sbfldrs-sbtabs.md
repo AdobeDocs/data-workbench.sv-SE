@@ -3,7 +3,7 @@ description: Som standard visar nyligen skapade flikar undermapparna i den assoc
 title: Visa undermappar som underflikar
 uuid: b4d7c6dd-d5ad-4b93-ba67-65a69e11eefc
 exl-id: 6a05852b-3efc-4e71-9782-d4cc3a687a26
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
@@ -12,15 +12,17 @@ ht-degree: 0%
 
 # Visa undermappar som underflikar{#display-subfolders-as-subtabs}
 
+{{eol}}
+
 Som standard visar nyligen skapade flikar undermapparna i den associerade katalogen som hierarkiska, nedrullningsbara underkataloger i stället för som undermappar.
 
-Du kan visa undermappar som underflikar (vilket visas i följande exempel) genom att placera en [!DNL empty folder.useTabs]-fil i *arbetsprofilens namn*\Workspaces\*tfliknamnsmapp* i Datans Workbench installationskatalog.
+Du kan visa undermappar som underflikar (vilket visas i följande exempel) genom att montera en [!DNL empty folder.useTabs] i *arbetsprofilsnamn*\Workspaces\*tab name folder* i Datans Workbench installationskatalog.
 
-I följande exempel visas fliken [!DNL Custom] med underkataloger i listrutor.
+I följande exempel visas [!DNL Custom] med nedrullningsbara underkataloger.
 
 ![](assets/client-sub.png)
 
-Om du placerar en [!DNL empty folder.useTabs]-fil i mappen Workspaces\Custom visas alla undermappar i mappen Custom i mappen [!DNL Worktop] som underflikar, vilket visas i följande exempel:
+Om du monterar en [!DNL empty folder.useTabs] i mappen Workspaces\Custom visas alla undermappar i mappen Custom i [!DNL Worktop] som undertabbar, vilket visas i följande exempel:
 
 ![](assets/client-sub2.png)
 
@@ -28,9 +30,9 @@ Om du placerar en [!DNL empty folder.useTabs]-fil i mappen Workspaces\Custom vis
 
 >[!NOTE]
 >
->Varje katalognivå måste ha en [!DNL Tab Name.useTabs]-fil för att innehållet i undermappen ska visas som underflikar i stället för hierarkiska underkataloger.
+>Varje katalognivå måste ha en [!DNL Tab Name.useTabs] för att innehållet i undermappen ska visas som underflikar i stället för som hierarkiska, nedrullningsbara underkataloger.
 
-1. Klicka på **[!UICONTROL Workspaces]** i [!DNL Profile Manager] för att visa innehållet.
-1. Högerklicka på bockmarkeringen för en av [!DNL folder.useTabs]-filerna i kolumnen *arbetsprofilnamn* och klicka på **[!UICONTROL Copy]**.
-1. Högerklicka i kolumnen [!DNL User] för mappen Workspaces\*fliknamn* och klicka på **[!UICONTROL Paste]**. Undermapparna på den fliken visas nu som underflikar.
-1. (Valfritt) Om du vill göra den här ändringen tillgänglig för alla användare av arbetsprofilen högerklickar du på den vita bockmarkeringen för filen [!DNL new folder.useTabs] i kolumnen [!DNL User] och klickar på **[!UICONTROL Save to]** > &lt; **[!UICONTROL working profile name]**>.
+1. I [!DNL Profile Manager], klicka **[!UICONTROL Workspaces]** för att visa innehållet.
+1. I *arbetsprofilsnamn* högerklicka på bockmarkeringen för en av [!DNL folder.useTabs] filer och klicka på **[!UICONTROL Copy]**.
+1. Högerklicka i dialogrutan [!DNL User] kolumn för arbetsytorna\*fliknamn* och klicka på **[!UICONTROL Paste]**. Undermapparna på den fliken visas nu som underflikar.
+1. (Valfritt) Om du vill göra den här ändringen tillgänglig för alla användare av arbetsprofilen högerklickar du på den vita bockmarkeringen för [!DNL new folder.useTabs] i [!DNL User] kolumn och klicka **[!UICONTROL Save to]** > &lt; **[!UICONTROL working profile name]**>.

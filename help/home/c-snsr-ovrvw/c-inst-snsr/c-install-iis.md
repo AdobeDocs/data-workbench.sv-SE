@@ -3,7 +3,7 @@ description: Instruktioner om hur du installerar och konfigurerar Sensor för In
 title: Microsoft IIS på Windows Server 2000 eller senare
 uuid: 26da0638-82c8-424f-9f00-aab3a940e5a9
 exl-id: e4b5ac44-b0ac-43be-9b9c-180a64354081
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Microsoft IIS på Windows Server 2000 eller senare{#microsoft-iis-on-windows-server-or-later}
+
+{{eol}}
 
 Instruktioner om hur du installerar och konfigurerar Sensor för Internet Information Services (IIS) 5.x eller 6.x som körs med Microsoft Windows Server 2000 eller senare.
 
@@ -79,12 +81,12 @@ Filen txlogd.conf innehåller konfigurationsparametrarna för Sensor.
 
 Du måste redigera filen för att bland annat ange storleken på diskkön, adressen till Insight Server och det ID som ska kopplas till data som produceras av den här sensorn. Konfigurationsfilen innehåller obligatoriska parametrar och valfria parametrar.
 
-* **Obligatoriska** parametrar är inställningar som du måste ange när du installerar sensor. Utan dessa inställningar kan sensorn inte köras.
-* **Valfria** parametrar är inställningar som är standard för fördefinierade värden (som du kan ändra) eller aktivera valfria funktioner.
+* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensor. Utan dessa inställningar kan sensorn inte köras.
+* **Valfria parametrar** är inställningar som är standard för fördefinierade värden (som du kan ändra) eller aktivera valfria funktioner.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-1. Öppna `<SensorDirectory>/txlogd.conf`-filen i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
+1. Öppna `<SensorDirectory>/txlogd.conf` i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 
    Mer information om parametrarna txlogd.conf finns i Filparametrar för sensorn Txlogd.conf.
 

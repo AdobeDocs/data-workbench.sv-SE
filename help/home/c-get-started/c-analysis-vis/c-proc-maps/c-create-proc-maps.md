@@ -3,7 +3,7 @@ description: Du kan skapa 2D- och 3D-processkartor genom att dra och släppa ele
 title: Skapa en processkarta
 uuid: dbcde637-0411-4296-99ca-5510e0285e4b
 exl-id: 2e417a8e-5b1c-4dce-9e4e-ac7ed044564c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Skapa en processkarta{#create-a-process-map}
+
+{{eol}}
 
 Du kan skapa 2D- och 3D-processkartor genom att dra och släppa element från stapeldiagram, tabeller och hierarkivvyer till en tom karta.
 
@@ -39,7 +41,7 @@ De element som du kan lägga till måste vara element i processmappningens basdi
    >
    >De element som du kan lägga till måste vara element i processmappningens basdimension.
 
-   Om du drar ett enskilt element till en processkarta skapas en mappningsnod för endast det elementet, men om du markerar flera element (en grupp) eller en mapp som innehåller flera element skapas en enda nod för gruppen eller mappen om du drar från hierarkin. Om du till exempel arbetar med webbplatsdata och drar en mapp med namnet [!DNL site.com/cgi-bin] till en karta skapas en nod med namnet [!DNL site.com/cgi-bin/*], som representerar alla sidor och kataloger som är underordnade den mappen.
+   Om du drar ett enskilt element till en processkarta skapas en mappningsnod för endast det elementet, men om du markerar flera element (en grupp) eller en mapp som innehåller flera element skapas en enda nod för gruppen eller mappen om du drar från hierarkin. Om du till exempel arbetar med webbplatsdata drar du en mapp med namnet [!DNL site.com/cgi-bin] på en karta gör en nod som kallas [!DNL site.com/cgi-bin/*], som representerar alla sidor och kataloger som är underordnade den mappen.
 
 Mer information om sidhierarkivyer finns i [Använda hierarkivyer](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff).
 

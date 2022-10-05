@@ -3,18 +3,20 @@ description: Nedan följer krav och rekommendationer för hur du installerar arb
 title: Krav på arbetsstation
 uuid: 3c4ba2e8-efbc-45fe-8ac1-923d070bc710
 exl-id: 35e259e3-3d6d-45c8-a923-2f8de117489d
-source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
 # Krav på arbetsstation{#workstation-requirements}
 
+{{eol}}
+
 Nedan följer krav och rekommendationer för hur du installerar arbetsstationen (klienten) i Datan Workbench.
 
-Mer information om systemkrav för Data Workbench finns i [Systemkrav för serversystem](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/c-msr-server.html?lang=en).
+Se [Systemkrav för server](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/c-msr-server.html?lang=en) för ytterligare systemkrav för Data Workbench.
 
 >[!IMPORTANT]
 >
@@ -24,7 +26,7 @@ Mer information om systemkrav för Data Workbench finns i [Systemkrav för serve
 
 Kontrollera att du har utfört de här åtgärderna innan du installerar Data Workbench Workstation (Client):
 
-* **** ***AddExcluded-*** processer för  *MS System Center Endpoint Protection i Windows 2012-* servrar för följande körbara filer:
+* **Lägg till** ***Exkluderade processer*** for *MS System Center Endpoint Protection i Windows 2012-servrar* för följande körbara filer:
 
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
@@ -32,17 +34,17 @@ Kontrollera att du har utfört de här åtgärderna innan du installerar Data Wo
 
    Detta aktiverar tillåtelselista-rättigheter för dessa korsande körbara filer.
 
-* **Installera Microsoft Excel om du vill exportera analysdata.** Om du vill exportera data från arbetsytor som Microsoft Excel-filer (  [!DNL .xls] eller  [!DNL .xlsx]) måste Excel vara installerat och registrerat på den dator där du installerar Data Workbench. Om Excel inte har registrerats och Datan Workbench försöker få åtkomst till det för första gången visas en registreringsdialogruta. Om du är osäker på om kopian är registrerad startar du Excel manuellt och slutför registreringsprocessen om en registreringsdialogruta visas.
+* **Installera Microsoft Excel om du vill exportera analysdata.** Exportera data från arbetsytor som Microsoft Excel ( [!DNL .xls] eller [!DNL .xlsx]) måste Excel vara installerat och registrerat på den dator där du installerar Data Workbench. Om Excel inte har registrerats och Datan Workbench försöker få åtkomst till det för första gången visas en registreringsdialogruta. Om du är osäker på om kopian är registrerad startar du Excel manuellt och slutför registreringsprocessen om en registreringsdialogruta visas.
 
    >[!NOTE]
    >
-   >I och med Data Workbench 6.4 har stödet för Excel 2007 upphört. Eftersom Data Workbench endast kan köras i Microsoft Windows med 64-bitarsarkitektur rekommenderar vi att du också installerar en 64-bitarsversion av Microsoft Excel.
+   >I och med Data Workbench 6.4 har stödet för Excel 2007 upphört. Eftersom Data Workbench endast kan köras i Microsoft Windows för 64-bitarsarkitektur rekommenderar vi att du även installerar en 64-bitarsversion av Microsoft Excel.
 
-* **Installera Adobe  [!DNL Acrobat] för utskrift av skalade arbetsytor till PDF.** Om du vill skriva ut skalade arbetsytor till Adobe PDF-format måste du ha Adobe  [!DNL Acrobat] installerat på den dator där du har installerat Data Workbench.
+* **Installerar Adobe [!DNL Acrobat] för utskrift av skalade arbetsytor till PDF.** Om du vill skriva ut skalade arbetsytor till Adobe PDF-format måste den dator där du har installerat Data Workbench ha Adobe [!DNL Acrobat] installerade.
 
 * **Ger åtkomst till en skrivare för utskrift av arbetsytor.** Om du vill skriva ut arbetsytor från Datan Workbench måste den dator där du installerar Data Workbench ha tillgång till en skrivare. Data Workbench kan skriva ut arbetsytor till färgskrivare eller svartvita skrivare och kräver inte PostScript-funktioner eller andra avancerade skrivarfunktioner. För bästa resultat rekommenderar Adobe att du skriver ut arbetsytor i färg.
 * **Genomföra säkerhetsåtgärder.** Du bör följa företagets vanliga företagssäkerhetsregler för Data Workbench. För att Datan Workbench ska fungera i första hand behöver den bara kunna ansluta till en server (via port 80 och 443) och till servrar som samlar in data. Du kan använda Datans Workbench maskinvara för andra ändamål så länge du underhåller Datan Workbench och tilldelar minst 10 GB lagringsutrymme för Data Workbench.
-* Om du vill återge visualiseringar korrekt måste datorn där du installerar workbench ha ett lämpligt **grafikkort** installerat (se Krav för grafikkort nedan).
+* För att visualiseringar ska kunna återges korrekt måste datorn där du installerar workbench ha en lämplig **grafikkort** installerat (se kraven för grafikkort nedan).
 
 **Datans Workbench klientkrav**
 

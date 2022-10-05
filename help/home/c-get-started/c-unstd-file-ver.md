@@ -3,7 +3,7 @@ description: Med arbetsytan är det enkelt att avgöra var varje arbetsyta är l
 title: Filversionshantering
 uuid: 5e7430f3-1425-41d2-828b-bc8f5786bf3b
 exl-id: 82a70d51-a95c-4ddd-8d3c-cd0364940693
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Filversionshantering{#file-versioning}
+
+{{eol}}
 
 Med arbetsytan är det enkelt att avgöra var varje arbetsyta är lagrad, oavsett om den finns på Datan Workbench, på den lokala datorn eller båda.
 
@@ -30,7 +32,7 @@ En lokal arbetsyta är den lokala versionen av en serverarbetsyta. En lokal arbe
 
 ![](assets/wsp_thumb_local.png)
 
-Lokala arbetsytor lagras som standard i namnmappen [!DNL User\working profile name\Workspaces\tab] i installationskatalogen för Data Workbench (eller Insight).
+Lokala arbetsytor lagras som standard i [!DNL User\working profile name\Workspaces\tab] namnmappen i installationskatalogen för Datan Workbench (eller Insight).
 
 >[!NOTE]
 >
@@ -42,4 +44,4 @@ En användararbetsyta är en arbetsyta som skapades på och som bara finns på d
 
 ![](assets/wsp_thumb_user.png)
 
-Arbetsytor för användare lagras som standard i mappen User\*workprofile name*\Workspaces\*tab name* i installationskatalogen för Insight.
+Arbetsytor sparas som standard i mappen User\*workspaces*\Workspaces\*tab name* i installationskatalogen för Insight.

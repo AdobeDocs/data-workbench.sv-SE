@@ -3,7 +3,7 @@ description: Omvandlingen LookupRows söker efter andra loggposter med samma sp�
 title: Uppslagsrader
 uuid: 4cff7cf1-00c8-4ab1-8adc-3805518226d3
 exl-id: caa9a311-b056-4fe8-bb11-1605cc690375
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # Uppslagsrader{#lookuprows}
 
+{{eol}}
+
 Omvandlingen LookupRows söker efter andra loggposter med samma spårnings-ID och ställer in värdet för utdatafältet till värdet för ett visst fält i indataraden.
 
-Eftersom [!DNL LookupRows]-omformningen utför sin sökning på loggposter och inte på sökfiler, liknar den [!DNL CrossRows]-omformningen. Se [Korsrader](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2).
+På grund av [!DNL LookupRows] omvandlingen utför sökningen på loggposter och inte på sökfiler, den liknar [!DNL CrossRows] omformning. Se [Korsrader](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2).
 
-För att [!DNL LookupRows]-omformningen ska fungera måste data sorteras i tid och grupperas med spårnings-ID:t i källdata. Därför fungerar [!DNL LookupRows] bara när den definieras i filen [!DNL Transformation.cfg] eller i en [!DNL Transformation Dataset Include]-fil.
+För att arbeta [!DNL LookupRows] för omformning krävs att data ordnas i tid och grupperas med spårnings-ID:t i källdata. Därför [!DNL LookupRows] fungerar bara när det definieras i [!DNL Transformation.cfg] eller i en [!DNL Transformation Dataset Include] -fil.
 
 Kom ihåg följande när du granskar parameterbeskrivningarna i följande tabell:
 
@@ -49,7 +51,7 @@ Kom ihåg följande när du granskar parameterbeskrivningarna i följande tabell
   </tr> 
   <tr> 
    <td colname="col1"> Indatavillkor </td> 
-   <td colname="col2">Accepterar indata för omformningen från endast vissa indatarader. Om villkoret <span class="wintitle"> Indata</span> inte uppfylls för en viss indatarad, ignoreras indatafältet från den raden och påverkar inte andra utdatarader. Utdatafältet från den raden ändras dock fortfarande enligt det angivna villkoret. </td> 
+   <td colname="col2">Accepterar indata för omformningen från endast vissa indatarader. Om <span class="wintitle"> Indata</span> Villkoret uppfylls inte för en viss indatarad. Indatafältet från den raden ignoreras och påverkar inte andra utdatarader. Utdatafältet från den raden ändras dock fortfarande enligt det angivna villkoret. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -64,7 +66,7 @@ Kom ihåg följande när du granskar parameterbeskrivningarna i följande tabell
   </tr> 
   <tr> 
    <td colname="col1"> Åtgärd </td> 
-   <td colname="col2"> <p>En åtgärd som, för varje utdatarad, tillämpas på alla indatarader som uppfyller alla villkor som definieras av parametrarna <span class="wintitle"> Input</span> Condition och Input Row Key Input för att skapa en utdatafil: 
+   <td colname="col2"> <p>En åtgärd som, för varje utdatarad, tillämpas på alla indatarader som uppfyller alla villkor som definieras av <span class="wintitle"> Indata</span> Indataparametrar för villkors- och indatarader för att skapa utdata: 
      <ul id="ul_16FB152CB558497794DDED72A2F05CDD"> 
       <li id="li_22DA9F814E4E42D0B21E90B63A2A7A0E"> FIRST returnerar värdet för fältet i Indataradens värdeindataparameter från den första matchande indataraden i data (inte den första matchande raden efter utdataraden). </li> 
       <li id="li_45E00C3DE0494A1CB5C09B942088F161"> LAST returnerar fältets värde i Indataradens värdeindataparameter från den sista indataraden i data (inte den sista matchande raden före utdataraden). </li> 
@@ -78,7 +80,7 @@ Kom ihåg följande när du granskar parameterbeskrivningarna i följande tabell
   </tr> 
   <tr> 
    <td colname="col1"> Utdataradsvärde </td> 
-   <td colname="col2">Namnet på det fält i utdataraden vars värde kopieras från fältet i indataradsparametern om alla villkor uppfylls. Alla utdatarader med samma x-trackingid- och <span class="wintitle">-utdataradnyckelindata </span>värden har samma <span class="wintitle">-utdataradsvärde</span>. </td> 
+   <td colname="col2">Namnet på det fält i utdataraden vars värde kopieras från fältet i indataradsparametern om alla villkor uppfylls. Alla utdatarader med samma x-trackingid och <span class="wintitle"> Nyckelindata för utdatarad </span>värden har samma <span class="wintitle"> Utdataradsvärde</span> värde. </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
@@ -98,15 +100,15 @@ Om du vill förstå hur omvandlingen fungerar bättre kan du titta på följande
 
 * och ange utdataradens utdataradvärde som indataradens indataradvärde.
 
-Att tänka på för [!DNL LookupRows]
+Att tänka på [!DNL LookupRows]
 
-* Tomma nyckelvärden matchar aldrig något. Även om det finns indatarader med tomma nycklar och icke-tomma värden som matchar [!DNL Input Condition], kommer en [!DNL Output Row Key Input] av &quot;&quot; alltid att generera [!DNL Output Row Value Output] av &quot;&quot;.
+* Tomma nyckelvärden matchar aldrig något. Även om det finns indatarader med tomma nycklar och icke-tomma värden som matchar [!DNL Input Condition], en [!DNL Output Row Key Input] av &quot;&quot; alltid skapar [!DNL Output Row Value Output] av &quot;&quot;.
 
-* Om det inte förbjuds av [!DNL Input Condition] kan en rad slås upp om dess [!DNL Input Row Key Input]- och [!DNL Output Row Key Input]-värden är desamma.
+* Om det inte förbjuds av [!DNL Input Condition], kan en rad slås upp själv om dess [!DNL Input Row Key Input] och [!DNL Output Row Key Input] värdena är desamma.
 
-Om du har flera nyckelvärden kan du kombinera dem med en [!DNL Format]-omformning (se [Format](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md#concept-3de04869181e4694ab072b092186684b)) innan du använder en [!DNL LookupRows]-omformning.
+Om du har flera nyckelvärden kan du kombinera dem med en [!DNL Format] omformning (se [Format](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md#concept-3de04869181e4694ab072b092186684b)) innan du använder [!DNL LookupRows] omformning.
 
-Anta att du har en webbplats med en registreringssida för husdjur, där namnet och rasen anges, och en senare&quot;köpleksak&quot;-sida där endast namnet på djuret används. Du vill kunna länka husdjursnamnet till den husdjursras som anges på registreringssidan. Om du vill göra det kan du skapa följande [!DNL LookupRows]-omformning:
+Anta att du har en webbplats med en registreringssida för husdjur, där namnet och rasen anges, och en senare&quot;köpleksak&quot;-sida där endast namnet på djuret används. Du vill kunna länka husdjursnamnet till den husdjursras som anges på registreringssidan. Om du vill göra det kan du skapa följande [!DNL LookupRows] omformning:
 
 ![](assets/cfg_TransformationType_LookupRows.png)
 
@@ -122,4 +124,4 @@ Låt oss analysera det här exemplet med föregående kontur:
 
 * och ange värdet för x-pet-raden för utdataraden till värdet för cs-uri-query(petbreed) för indataraden.
 
-I [!DNL LookupRows]-omvandlingen används husdjursnamnet (nyckeln) för att se till att husdjursrasen är kopplad till både husdjursregistreringen och köpa leksakssidor så att du kan analysera leksaker som köpts för varje djurras, även för besökare med flera husdjur.
+The [!DNL LookupRows] Transformeringen använder djurnamnet (nyckeln) för att se till att husdjursrasen är kopplad till både passmärkesregistreringen och köpa leksakssidor så att du kan analysera de leksaker som köpts för varje djurras, även för besökare med flera husdjur.

@@ -2,13 +2,17 @@
 description: Information om Sensor UNIX-filbehörigheter som insamlarmodulen, överföringsprocessen, konfigurationsfilen och mycket annat.
 title: UNIX-filbehörigheter för sensor
 uuid: 04d159b5-6569-48b6-a2db-9a0b40118ffe
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 07cbc7df-c628-437d-9ca1-b006da8de242
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 1%
 
 ---
 
-
 # UNIX-filbehörigheter för sensor{#sensor-unix-file-permissions}
+
+{{eol}}
 
 Information om Sensor UNIX-filbehörigheter som insamlarmodulen, överföringsprocessen, konfigurationsfilen och mycket annat.
 
@@ -24,7 +28,7 @@ Information om Sensor UNIX-filbehörigheter som insamlarmodulen, överföringspr
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Filnamn </p> </td> 
-   <td colname="col2"> <p>mod_visual_sciences.so (på Apache-webbservrar och IBM HTTP-servrar) </p> <p>libvisual_Sciences.so och J2EECollector.jar (på J2EE-servrar) </p> <p>aol_visual_Sciences.so (på AOL-webbservrar) </p> <p>saf_visual_Sciences.so (på Sun Java-webbservrar) </p> </td> 
+   <td colname="col2"> <p>mod_visual_sciences.so (på Apache-webbservrar och IBM HTTP-servrar) </p> <p>libvisual_Sciences.so och J2EECollector.jar (på J2EE-servrar) </p> <p>aol_visual_Sciences.so (på AOL-webbservrar) </p> <p>saf_visual_sciences.so (på Sun Java-webbservrar) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Standardbehörigheter </p> </td> 
@@ -36,7 +40,7 @@ Information om Sensor UNIX-filbehörigheter som insamlarmodulen, överföringspr
   </tr> 
   <tr> 
    <td colname="col1"> <p>Kör som </p> </td> 
-   <td colname="col2"> <p>En underordnad process på webbservern </p> <p>Underordnade processer körs med ett användarkonto som anges i webbserverkonfigurationen. På många servrar är detta ett särskilt konto med mycket begränsad behörighet som kallas"ingen", men inte alla webbservrar använder det här kontot. Kontrollera webbserverns konfigurationsfil för att se vilket användarkonto som är inställt. </p> </td> 
+   <td colname="col2"> <p>En underordnad process på webbservern </p> <p>Underordnade processer körs med ett användarkonto som anges i webbserverkonfigurationen. På många servrar är detta ett särskilt konto med mycket begränsad behörighet som kallas "ingen", men inte alla webbservrar använder det här kontot. Kontrollera webbserverns konfigurationsfil för att se vilket användarkonto som är inställt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Läser från </p> </td> 
@@ -73,7 +77,7 @@ Information om Sensor UNIX-filbehörigheter som insamlarmodulen, överföringspr
   </tr> 
   <tr> 
    <td colname="col1"> Skrivet av </td> 
-   <td colname="col2"> -- </td> 
+   <td colname="col2"> — </td> 
   </tr> 
  </tbody> 
 </table>
@@ -131,7 +135,7 @@ Information om Sensor UNIX-filbehörigheter som insamlarmodulen, överföringspr
   </tr> 
   <tr> 
    <td colname="col1"> Skrivet av </td> 
-   <td colname="col2"> -- </td> 
+   <td colname="col2"> — </td> 
   </tr> 
  </tbody> 
 </table>
@@ -164,4 +168,3 @@ Information om Sensor UNIX-filbehörigheter som insamlarmodulen, överföringspr
   </tr> 
  </tbody> 
 </table>
-

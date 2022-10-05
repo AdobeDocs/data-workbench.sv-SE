@@ -3,14 +3,16 @@ description: Statusprofilen för data workbench-profilen ger aktuell information
 title: Datans Workbench profilstatus, arbetsyta
 uuid: b54713c8-863d-4376-8ebf-4a2985e28c76
 exl-id: 40b9b0bf-4fd9-48d8-875b-514921c520cd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
 
 ---
 
-# Datans Workbench profilstatus-arbetsyta{#data-workbench-profile-status-workspace}
+# Datans Workbench profilstatus, arbetsyta{#data-workbench-profile-status-workspace}
+
+{{eol}}
 
 Statusprofilen för data workbench-profilen ger aktuell information om tillståndet för data workbench-servern baserat på profilen i stället för servermått eller historiska data.
 
@@ -18,7 +20,7 @@ Statusprofilen för data workbench-profilen ger aktuell information om tillstån
 
 Den här statusprofilen ger den aktuella data workbench-serverinformationen, men inte helt i realtid, eftersom agenten avfrågas var tionde minut och rapporteringen alltid innehåller denna fördröjning på tio minuter. Mer exakt är att de datauppsättningar som genereras av den här profilen ger den senaste observationen av servern från agenten, som oftast har en standardavsökningsperiod på tio minuter.
 
-Mer referensinformation om de dimensioner som används i data workbench Profile Status Profile finns i [Statusprofil för insight Profile](../../../home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md#concept-d4cd7da41c8a42bab4aea25418264e64).
+Mer referensinformation om dimensionerna som används i data workbench Profile Status profile finns i [Statusprofil för insiktsprofil](../../../home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md#concept-d4cd7da41c8a42bab4aea25418264e64).
 
 ![](assets/Status_General_Status.png)
 

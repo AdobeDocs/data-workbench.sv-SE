@@ -2,17 +2,21 @@
 description: Instruktioner för installation och konfigurering av Sensor på de webbservrar som utvecklats från den ursprungliga Netscape Enterprise Web Server som körs på Linux- eller Solaris-datorer. Innefattar Netscape Enterprise, iPlanet, Sun ONE och Sun Java System Servers i Linux eller Solaris.
 title: Netscape Enterprise på Linux eller Solaris
 uuid: 47ea614c-d45c-4ab4-a8fe-ed9227da4582
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: bd2e50b9-94fe-4f05-b227-11e83eb0a665
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '1494'
+ht-degree: 0%
 
 ---
 
-
 # Netscape Enterprise på Linux eller Solaris{#netscape-enteprise-on-linux-or-solaris}
+
+{{eol}}
 
 Instruktioner för installation och konfigurering av Sensor på de webbservrar som utvecklats från den ursprungliga Netscape Enterprise Web Server som körs på Linux- eller Solaris-datorer. Innefattar Netscape Enterprise, iPlanet, Sun ONE och Sun Java System Servers i Linux eller Solaris.
 
-Programfilerna för Sensor paketeras i en installationsfil som du får från Adobes nedladdningswebbplats. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
+Programfilerna för Sensor paketeras i en installationsfil som du får från hämtningsplatsen för Adobe. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
 
 Sensorn stöder följande servrar som körs under RedHat Linux 7.x eller senare eller Sun Solaris SPARC 2.6 eller senare:
 
@@ -30,7 +34,7 @@ Sensorn stöder följande servrar som körs under Sun Solaris x86 9 eller senare
 
 >[!NOTE]
 >
->Installationsfilen för den här webbserverfamiljen visas som &quot;Netscape Solaris Sensor&quot; eller &quot;Netscape LINUX Sensor&quot; på Adobes nedladdningssida.
+>Installationsfilen för den här webbserverfamiljen visas som &quot;Netscape Solaris Sensor&quot; eller &quot;Netscape LINUX Sensor&quot; på hämtningswebbplatsen för Adobe.
 
 Om du vill installera och konfigurera sensorn måste du utföra följande steg:
 
@@ -102,23 +106,23 @@ Procedur för att extrahera och installera programfilerna för Sensor.
 
 ## Redigera sensorkonfigurationsfilen {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
 
-Filen innehåller [!DNL txlogd.conf] konfigurationsparametrarna för sensorn.
+The [!DNL txlogd.conf] filen innehåller konfigurationsparametrarna för sensorn.
 
 Du måste redigera den här filen för att bland annat ange storlek och plats för diskköfilen, adressen till Insight Server och det ID som ska kopplas till händelsedata som skapas av den här sensorn.
 
 Konfigurationsfilen innehåller obligatoriska parametrar och valfria parametrar.
 
-* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensorn. Utan dessa inställningar kan sensorn inte köras.
+* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensor. Utan dessa inställningar kan sensorn inte köras.
 * **Valfria parametrar** är inställningar som är standard för fördefinierade värden (som du kan ändra) eller aktivera valfria funktioner.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-* Öppna [!DNL /etc/txlogd.conf] filen i en textredigerare och ange de obligatoriska parametrarna samt eventuella valfria parametrar.
+* Öppna [!DNL /etc/txlogd.conf] i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 * Spara och stäng filen.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-1. Öppna [!DNL /etc/txlogd.conf] filen i en textredigerare och ange de obligatoriska parametrarna samt eventuella valfria parametrar.
+1. Öppna [!DNL /etc/txlogd.conf] i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 1. Spara och stäng filen.
 
 ## Starta sändaren och skapa diskkön {#section-55630de65f264274aefd771da2002852}
@@ -137,6 +141,7 @@ När du har konfigurerat filen txlogd.conf kan du starta överföringsprogrammet
    * Alternativet &quot;i&quot; i det här kommandot startar sändaren i &quot;interaktivt läge&quot;. I det här läget visas sändarmeddelanden på skärmen och du kan även använda tangentbordskommandon för att interagera med sändaren.
    * Alternativet &quot;c&quot; dirigerar sändaren till diskkön.
    * Alternativet &quot;f&quot; anger platsen för konfigurationsfilen.
+
    Mer information om de alternativ du kan använda när du startar sändaren finns i Kommandoradsalternativ för sensorsändaren.
 
 1. Kontrollera att sändaren har skapat diskkön på den plats som anges i parametern QueueFile och med den storlek som anges i parametern QueueSize.
@@ -208,7 +213,7 @@ Kontrollera att insamlaren samlar in händelsedata och att sändaren skickar dem
 
 Information om automatisk inläsning av sändaren till systemets startskript.
 
-För att säkerställa att sändaren läses in automatiskt när webbserverdatorn startas om lägger du till följande kommando (som startar sändaren) i systemets startskript:
+För att se till att sändaren läses in automatiskt när webbserverdatorn startas om lägger du till följande kommando (som startar sändaren) i systemets startskript:
 
 ```
 /usr/local/bin/txlogd -f /etc/txlogd.conf

@@ -3,7 +3,7 @@ description: Följande mått är tillgängliga för användning i data workbench
 title: Dimensioner i Datans Workbench profilstatusprofil
 uuid: bd84a3e5-d1ea-4768-9dac-62f5dfbad49a
 exl-id: 57b3ff16-26db-4292-819b-f6cd8e024c2a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Dimensioner i Datans Workbench profilstatusprofil{#dimensions-in-the-data-workbench-profile-status-profile}
+
+{{eol}}
 
 Följande mått är tillgängliga för användning i data workbench Profile Status profile profile profile profile profile.
 
@@ -30,15 +32,15 @@ Följande mått är tillgängliga för användning i data workbench Profile Stat
   </tr> 
   <tr> 
    <td colname="col1"> <b>Mega-indata per minut</b> </td> 
-   <td colname="col2"> Värdet cs-uri-query(bj) används för den här dimensionen. Den sista raden för ett block används som värde för dimensionen. Om datauppsättningen är i snabb inmatning visar den numeriska Dimensionens värde den MB per minut som systemet matar in data med. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Värdet cs-uri-query(bj) används för den här dimensionen. Den sista raden för ett block används som värde för dimensionen. Om datauppsättningen är i snabb inmatning visar den numeriska Dimensionens värde den MB per minut som systemet matar in data med. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Mega-byte för snabb sammanslagning per minut</b> </td> 
-   <td colname="col2">Värdet cs-uri-query(bk) används för den här dimensionen. Den sista raden för ett block används som värde för dimensionen. Om datauppsättningen är i snabb sammanslagning visar den här numeriska Dimensionens värde den MB per minut som systemet sammanfogas med. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2">Värdet cs-uri-query(bk) används för den här dimensionen. Den sista raden för ett block används som värde för dimensionen. Om datauppsättningen är i snabb sammanslagning visar den här numeriska Dimensionens värde den MB per minut som systemet sammanfogas med. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>GigaBytes-fält</b> </td> 
-   <td colname="col2"> Värdet cs-uri-query(bg) används för den här dimensionen. Värdet divideras med 1000 och avrundas till närmaste heltal. Den här numeriska Dimensionens värde visar mängden utrymme som används för fälten i datauppsättningen. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Värdet cs-uri-query(bg) används för den här dimensionen. Värdet divideras med 1000 och avrundas till närmaste heltal. Den här numeriska Dimensionens värde visar mängden utrymme som används för fälten i datauppsättningen. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Värd</b> </td> 
@@ -46,19 +48,19 @@ Följande mått är tillgängliga för användning i data workbench Profile Stat
   </tr> 
   <tr> 
    <td colname="col1"> <b>Senaste ping</b> </td> 
-   <td colname="col2">x-last-ping är x-unixtime dividera med 10 (för att passa storleksbegränsningarna för numeriska dimensioner). Senaste Ping är den sista raden för ett visst block, och det representerar den senaste gången övervakningsagenten loggade systemhälsan. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2">x-last-ping är x-unixtime dividera med 10 (för att passa storleksbegränsningarna för numeriska dimensioner). Senaste Ping är den sista raden för ett visst block, och det representerar den senaste gången övervakningsagenten loggade systemhälsan. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Loggläsningsprocent</b> </td> 
-   <td colname="col2">Värdet cs-uri-query(be) används för den här numeriska dimensionen. Det är sista raden för ett visst block. Den här dimensionen används för att beräkna hur många procent av loggarna som ska läsas. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2">Värdet cs-uri-query(be) används för den här numeriska dimensionen. Det är sista raden för ett visst block. Den här dimensionen används för att beräkna hur många procent av loggarna som ska läsas. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>ID för bearbetningsläge</b> </td> 
-   <td colname="col2"> Värdet cs-uri-query(bb) används för den här enkla Dimensionen. Det är sista raden för ett visst block. Med ett ID för bearbetningsläge kan du se vilket bearbetningsläge systemet har (snabb inmatning, snabb sammanslagning, realtid). <p>Obs!  Dimensionen är dold och sedan återexponerad med egna värden i dimensionshanteringsläget på klientsidan. </p></td> 
+   <td colname="col2"> Värdet cs-uri-query(bb) används för den här enkla Dimensionen. Det är sista raden för ett visst block. Med ett ID för bearbetningsläge kan du se vilket bearbetningsläge systemet har (snabb inmatning, snabb sammanslagning, realtid). <p>Obs! Dimensionen är dold och sedan återexponerad med egna värden i dimensionshanteringsläget på klientsidan. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Bearbetningen har avbrutits</b> </td> 
-   <td colname="col2"> Fältet för x-bearbetning-fast skapas med olika villkor för att ange om profilen körs eller inte. Det är en enkel dimension. <p>Obs!  Denna dimension fungerar bäst när det finns ett stort antal indataloggar som ska fördelas jämnt mellan DPU:erna. Om det t.ex. bara finns en stor fil inläst per dag kan data workbench se ut som"stall" under en timme eller mer, vilket ger en falsk positiv läsning från den här dimensionen. </p></td> 
+   <td colname="col2"> Fältet för x-bearbetning-fast skapas med olika villkor för att ange om profilen körs eller inte. Det är en enkel dimension. <p>Obs! Denna dimension fungerar bäst när det finns ett stort antal indataloggar som ska fördelas jämnt mellan DPU:erna. Om det t.ex. bara finns en stor fil inläst per dag kan data workbench se ut som"stall" under en timme eller mer, vilket ger en falsk positiv läsning från den här dimensionen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Profil</b> </td> 
@@ -70,7 +72,7 @@ Följande mått är tillgängliga för användning i data workbench Profile Stat
   </tr> 
   <tr> 
    <td colname="col1"> <b>Omformningsprocent</b> </td> 
-   <td colname="col2"> Värdet cs-uri-query(bf) används för den här numeriska dimensionen. Det är sista raden för ett visst block. Den här dimensionen används för att beräkna procentandelen av fullständig dataomvandling. <p>Obs!  Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
+   <td colname="col2"> Värdet cs-uri-query(bf) används för den här numeriska dimensionen. Det är sista raden för ett visst block. Den här dimensionen används för att beräkna procentandelen av fullständig dataomvandling. <p>Obs! Den här dimensionen är dold eftersom den bara är användbar när den genereras till ett mått. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Dimensioner</b> </td> 

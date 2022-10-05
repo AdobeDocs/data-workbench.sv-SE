@@ -1,18 +1,22 @@
 ---
-description: Detaljerade anvisningar för installation och konfigurering av Sensor för JBoss Server 4.0.5 eller senare som körs i Microsoft Windows Server 2000 eller senare.
+description: Detaljerade anvisningar för installation och konfigurering av Sensor för JBoss Server 4.0.5 eller senare som körs med Microsoft Windows Server 2000 eller senare.
 title: JBoss Server på Windows Server 2000 eller senare
 uuid: b0501749-9479-484b-8876-fe3001825f8d
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: d9001bc4-f3ef-4d26-9190-807194d20ada
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '1190'
+ht-degree: 0%
 
 ---
 
-
 # JBoss Server på Windows Server 2000 eller senare{#jboss-server-on-windows-server-or-later}
 
-Detaljerade anvisningar för installation och konfigurering av Sensor för JBoss Server 4.0.5 eller senare som körs i Microsoft Windows Server 2000 eller senare.
+{{eol}}
 
-Programfilerna för Sensor paketeras i en installationsfil som du får från Adobes nedladdningswebbplats. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
+Detaljerade anvisningar för installation och konfigurering av Sensor för JBoss Server 4.0.5 eller senare som körs med Microsoft Windows Server 2000 eller senare.
+
+Programfilerna för Sensor paketeras i en installationsfil som du får från hämtningsplatsen för Adobe. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
 
 J2EE-implementeringar som stöds omfattar:
 
@@ -70,23 +74,23 @@ Procedur för att extrahera och installera programfilerna för Sensor.
 
 ## Redigera sensorkonfigurationsfilen {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
 
-Filen innehåller [!DNL txlogd.conf] konfigurationsparametrarna för sensorn.
+The [!DNL txlogd.conf] filen innehåller konfigurationsparametrarna för sensorn.
 
 Du måste redigera den här filen för att bland annat ange storlek och plats för diskköfilen, adressen till Insight Server och det ID som ska kopplas till händelsedata som skapas av den här sensorn.
 
 Konfigurationsfilen innehåller obligatoriska parametrar och valfria parametrar.
 
-* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensorn. Utan dessa inställningar kan sensorn inte köras.
+* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensor. Utan dessa inställningar kan sensorn inte köras.
 * **Valfria parametrar** är inställningar som är standard för fördefinierade värden (som du kan ändra) eller aktivera valfria funktioner.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-* Öppna [!DNL /etc/txlogd.conf] filen i en textredigerare och ange de obligatoriska parametrarna samt eventuella valfria parametrar.
+* Öppna [!DNL /etc/txlogd.conf] i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 * Spara och stäng filen.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-1. Öppna [!DNL /etc/txlogd.conf] filen i en textredigerare och ange de obligatoriska parametrarna samt eventuella valfria parametrar.
+1. Öppna [!DNL /etc/txlogd.conf] i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 1. Spara och stäng filen.
 
 ## Starta sändaren och skapa diskkön {#section-55630de65f264274aefd771da2002852}
@@ -114,8 +118,8 @@ När du har konfigurerat filen txlogd.conf kan du starta överföringsprogrammet
 1. Om du vill kontrollera om sändaren råkade ut för fel under starten klickar du på Start > Kontrollpanelen > Administrationsverktyg > Loggboken för att öppna Loggboken.
 
    1. Välj programloggen i den vänstra rutan i fönstret för Loggboken.
-   1. I den högra rutan söker du efter händelser med&quot;Adobe&quot; i kolumnen Källa.
-   1. Om du hittar ett fel från&quot;Adobe&quot; dubbelklickar du på felet för att visa fönstret Händelseegenskaper. Det här fönstret innehåller detaljerad information om felet.
+   1. I den högra rutan söker du efter händelser med Adobe i kolumnen Källa.
+   1. Om du hittar ett fel från &quot;Adobe&quot; dubbelklickar du på felet för att visa fönstret Händelseegenskaper. Det här fönstret innehåller detaljerad information om felet.
 
 1. Stäng Loggboken när du är klar med granskningen av programloggen.
 1. Kontrollera att sändaren har skapat diskkön (Diskq2000.log) i den katalog där du installerade Sensor-programfilerna och att det är den storlek som du angav i parametern QueueSize i filen txlogd.conf.
@@ -138,10 +142,10 @@ Sändaren är utformad för att köras kontinuerligt. Om du startar om datorn st
 
 För JBoss-servrar fungerar insamlaren som ett filter i serverbehållaren.
 
-Om du vill lägga till insamlaren på webbservern måste du redigera [!DNL web.xml] filen enligt beskrivningen nedan och starta om webbprogrammet.
+Om du vill lägga till insamlaren på webbservern måste du redigera [!DNL web.xml] så som beskrivs nedan och starta om webbprogrammet.
 
-1. Använd en textredigerare och öppna filen för den webbserver vars händelser Sensor hämtar. [!DNL web.xml]
-1. Lägg till följande `<filter>` och `<filter-mapping>` element i beskrivningsfilen. Om du inte har installerat txlogd.conf i katalogen /etc måste du ange rätt sökväg till den här filen i `<param-value>` elementet:
+1. Använd en textredigerare för att öppna [!DNL web.xml] för webbservern vars händelser Sensor fångar.
+1. Lägg till följande `<filter>` och `<filter-mapping>` -element till beskrivningsfilen. Om du inte har installerat txlogd.conf i katalogen /etc måste du ange rätt sökväg till filen i `<param-value>` element:
 
    ```
    <filter>
@@ -173,7 +177,7 @@ Om du vill lägga till insamlaren på webbservern måste du redigera [!DNL web.x
 
 Kontrollera att variabeln JAVA_HOME är definierad i Windows-miljön innan du ändrar startskriptet.
 
-I [!DNL run.bat] filen (t.ex. C:\jboss-4.0.5.GA\bin\run.bat) lägger du till följande rader i slutet av filen precis före &quot;eko&quot;-raderna som föregår JBoss-serverns startkommando:
+I [!DNL run.bat] -fil (t.ex. C:\jboss-4.0.5.GA\bin\run.bat) lägger du till följande rader i slutet av filen precis före &quot;echo&quot;-raderna som föregår JBoss-serverns startkommando:
 
 ```
 set JBOSS_CLASSPATH=%JBOSS_CLASSPATH%;C:\jboss-4.0.5.GA\server\default\lib\javax.servlet.jar;C:\VisualSciences\J2EECollector.jar 
@@ -208,4 +212,3 @@ Du kan samla in ytterligare mätdata från J2EE-baserade webbprogram med hjälp 
    Resultat från begäran-URI är /index.jsp?A=1&amp;B=2.
 
 1. Upprepa den här proceduren för varje .jsp-sida från vilken du vill hämta ytterligare data.
-

@@ -3,7 +3,7 @@ description: Med en sökvägsläsare kan du analysera den sekvens i vilken en vi
 title: Webbläsare
 uuid: 548091dc-935f-41ac-b67c-39080988f1ea
 exl-id: 563cf0e3-39d7-49b7-b808-b0233169fb1a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # Webbläsare{#path-browsers}
 
+{{eol}}
+
 Med en sökvägsläsare kan du analysera den sekvens i vilken en viss dimensions element användes.
 
 Du skapar en sökvägsläsare genom att dra och släppa ett element av en dimension på en tom visualisering i en sökvägsläsare. Det element som du drar och släpper till sökvägsläsaren blir roten i sökvägsläsaren. I sökvägsläsaren visas sökvägar som passerar genom roten, vilket gör att du kan se sekvensen med element som öppnats före och efter roten.
 
-I följande sökvägsläsare visas den filmsekvens som tittarna betygsatt före och efter att filmen *The Aviator*, som är roten i sökvägsläsaren. Varje filmnamn är ett element i dimensionen Film, som definieras i en datamängd som består av filmdata som innehåller filmernas namn och tittarnas omdömen om filmerna.
+I följande sökvägsläsare visas den filmsekvens som tittarna betygsatt före och efter filmens klassificering *The Aviator*, som är roten i sökvägsläsaren. Varje filmnamn är ett element i dimensionen Film, som definieras i en datamängd som består av filmdata som innehåller filmernas namn och tittarnas omdömen om filmerna.
 
 ![](assets/vis_PathBrowser_Movies.png)
 
@@ -37,7 +39,7 @@ Varje sökvägsläsare har en associerad basdimension, gruppdimension, nivådime
    >
    >Sökvägsläsaren ignorerar elementen i nivådimensionen utan tillhörande basdimensionselement. Detta kan inträffa när du skapar en sökvägsläsare från en processkarta. Se [Skapa sökvägsläsare](../../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-create-path-browsers.md#concept-e120de6a740d4b6f98dda9e2b638f6ff).
 
-* **Gruppdimension:** Gruppdimensionen bestämmer hur elementen i nivådimensionen grupperas för att bilda sökvägarna i en sökvägsläsare. De nivådimensionselement som är kopplade till en enskild sökväg i en sökvägsläsare kan inte omfatta mer än ett element i en gruppdimension.
+* **Gruppdimension:** Gruppdimensionen bestämmer hur elementen i nivådimensionen grupperas för att bilda banorna i en sökvägsläsare. De nivådimensionselement som är kopplade till en enskild sökväg i en sökvägsläsare kan inte omfatta mer än ett element i en gruppdimension.
 
    För att förstå detta bör du överväga ett exempel med webbdata. Anta att bas-, nivå- och gruppdimensionerna för sökvägsläsaren är Sida, Sidvy respektive Session. En sökväg i sökvägsläsaren visar sidsekvensen A > B > C. Gruppdimensionen (session) anger att sidvyerna (element i sidvisningsdimensionen) som är kopplade till sidsekvensen A > B > C inträffade under en session. Det är viktigt att notera att det kan finnas flera sessioner under vilka det fanns sidvyer för sidsekvensen A > B > C. Sökvägen som visar sidsekvensen A > B > C representerar därför alla enskilda sessioner där sidvyerna för den sekvensen inträffade.
 
@@ -53,4 +55,4 @@ Genom att högerklicka på ett element i sökvägsläsaren kan du se namnet på 
 
 >[!NOTE]
 >
->Du kan ändra standardmåtten och måtten för en sökvägsläsare. Instruktioner om hur du konfigurerar visualisering för sökvägsläsare finns i [Konfigurera sökvägsläsare](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
+>Du kan ändra standardmåtten och måtten för en sökvägsläsare. Instruktioner om hur du konfigurerar visualisering för en webbläsare finns i [Konfigurera sökvägsläsare](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).

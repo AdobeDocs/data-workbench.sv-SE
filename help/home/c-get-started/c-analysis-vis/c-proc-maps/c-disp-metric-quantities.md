@@ -3,7 +3,7 @@ description: En 2D-processmappning kan visa de mätvärden som representerar akt
 title: Visa en måttkvantitet
 uuid: ec336af1-ff5b-4c0a-86a5-8186d76cdf07
 exl-id: fbe40dfa-0597-4d78-8673-4e9b63581c47
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Visa en måttkvantitet{#display-a-metric-quantity}
+
+{{eol}}
 
 En 2D-processmappning kan visa de mätvärden som representerar aktivitetsmängden till eller från en nod på kartan.
 
@@ -27,7 +29,7 @@ Aktivitetssekvensen kan ha inkluderat noder som inte har lagts till på kartan. 
 **Välj hur kvantiteten ska visas**
 
 1. Högerklicka på en nod och klicka på **[!UICONTROL Options]** > **[!UICONTROL Quantify Links]**.
-1. Klicka på **[!UICONTROL Percentage]**, **[!UICONTROL Absolute Value]** eller **[!UICONTROL Off]**.
+1. Klicka **[!UICONTROL Percentage]**, **[!UICONTROL Absolute Value]**, eller **[!UICONTROL Off]**.
 
    ![](assets/mnu_2DProcessMap_quantifyLinks.png)
 

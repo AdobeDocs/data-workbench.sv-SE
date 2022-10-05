@@ -3,7 +3,7 @@ description: Innan du kan generera rapporter och varningar måste du konfigurera
 title: Konfigurera anslutningen till Insight Server
 uuid: 2018b67e-90a6-41d7-b628-4b463869df6e
 exl-id: a398a665-fe09-448a-977c-b0f9de4add09
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Konfigurera anslutningen till Insight Server{#configuring-the-connection-to-the-insight-server}
+
+{{eol}}
 
 Innan du kan generera rapporter och varningar måste du konfigurera Report Server så att adressen till Insight-servern anges och de profiler som du vill att den ska rapportera till identifieras.
 
@@ -21,9 +23,9 @@ Innan du kan generera rapporter och varningar måste du konfigurera Report Serve
 **Så här konfigurerar du rapportservern**
 
 1. I Utforskaren i Windows navigerar du till katalogen där du installerade Report Server.
-1. Öppna filen [!DNL ReportServer.cfg] i Anteckningar och ändra filen efter behov.
+1. Öppna [!DNL ReportServer.cfg] i Anteckningar och ändra filen efter behov.
 
-   Följande exempel [!DNL Report Server.cfg] innehåller bara de parametrar som ingår i [!DNL Report Server.cfg]-filen som standard (och markerar de parameterinställningar som krävs). Om du kontaktar Adobe licensserver via en proxyserver måste du lägga till licensvektorn och dess parametrar. Mer information finns i [Report Server.cfg parameters](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06).
+   Följande exempel [!DNL Report Server.cfg] innehåller endast de parametrar som ingår i [!DNL Report Server.cfg] som standard (och markerar de obligatoriska parameterinställningarna). Om du kontaktar Adobe licensserver via en proxyserver måste du lägga till licensvektorn och dess parametrar. Se [Report Server.cfg, parametrar](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) om du vill ha en detaljerad beskrivning.
 
    ```
    Fonts = vector: 0 items

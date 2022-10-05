@@ -2,17 +2,21 @@
 description: Detaljerade anvisningar för installation och konfigurering av Sensor för Apache Jakarta Tomcat 4.1 eller senare som körs med Windows Server 2000 eller senare.
 title: Tomcat Server på Windows Server 2000 eller senare
 uuid: 58feec67-ffbb-4f25-8f22-3d109d464e9a
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 6f4f1592-2b7d-434a-b292-9333e170f851
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '1199'
+ht-degree: 0%
 
 ---
 
-
 # Tomcat Server på Windows Server 2000 eller senare{#tomcat-server-on-windows-server-or-later}
+
+{{eol}}
 
 Detaljerade anvisningar för installation och konfigurering av Sensor för Apache Jakarta Tomcat 4.1 eller senare som körs med Windows Server 2000 eller senare.
 
-Programfilerna för Sensor paketeras i en installationsfil som du får från Adobes nedladdningswebbplats. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
+Programfilerna för Sensor paketeras i en installationsfil som du får från hämtningsplatsen för Adobe. Om du inte redan har installationsfilen för sensorn för din webbserver hämtar du den (eller hämtar den från din Adobe-representant) innan du börjar med följande procedurer.
 
 J2EE-implementeringar som stöds omfattar:
 
@@ -75,23 +79,23 @@ Procedur för att extrahera och installera programfilerna för Sensor.
 
 ## Redigera sensorkonfigurationsfilen {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
 
-Filen innehåller [!DNL txlogd.conf] konfigurationsparametrarna för sensorn.
+The [!DNL txlogd.conf] filen innehåller konfigurationsparametrarna för sensorn.
 
 Du måste redigera den här filen för att bland annat ange storlek och plats för diskköfilen, adressen till Insight Server och det ID som ska kopplas till händelsedata som skapas av den här sensorn.
 
 Konfigurationsfilen innehåller obligatoriska parametrar och valfria parametrar.
 
-* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensorn. Utan dessa inställningar kan sensorn inte köras.
+* **Obligatoriska parametrar** är inställningar som du måste ange när du installerar sensor. Utan dessa inställningar kan sensorn inte köras.
 * **Valfria parametrar** är inställningar som är standard för fördefinierade värden (som du kan ändra) eller aktivera valfria funktioner.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-* Öppna [!DNL /etc/txlogd.conf] filen i en textredigerare och ange de obligatoriska parametrarna samt eventuella valfria parametrar.
+* Öppna [!DNL /etc/txlogd.conf] i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 * Spara och stäng filen.
 
 **Så här redigerar du Sensor-konfigurationsfilen**
 
-1. Öppna [!DNL /etc/txlogd.conf] filen i en textredigerare och ange de obligatoriska parametrarna samt eventuella valfria parametrar.
+1. Öppna [!DNL /etc/txlogd.conf] i en textredigerare och ange obligatoriska parametrar samt eventuella valfria parametrar.
 1. Spara och stäng filen.
 
 ## Starta sändaren och skapa diskkön {#section-55630de65f264274aefd771da2002852}
@@ -119,8 +123,8 @@ När du har konfigurerat filen txlogd.conf kan du starta överföringsprogrammet
 1. Om du vill kontrollera om sändaren råkade ut för fel under starten klickar du på Start > Kontrollpanelen > Administrationsverktyg > Loggboken för att öppna Loggboken.
 
    1. Välj programloggen i den vänstra rutan i fönstret för Loggboken.
-   1. I den högra rutan söker du efter händelser med&quot;Adobe&quot; i kolumnen Källa.
-   1. Om du hittar ett fel från&quot;Adobe&quot; dubbelklickar du på felet för att visa fönstret Händelseegenskaper. Det här fönstret innehåller detaljerad information om felet.
+   1. I den högra rutan söker du efter händelser med Adobe i kolumnen Källa.
+   1. Om du hittar ett fel från &quot;Adobe&quot; dubbelklickar du på felet för att visa fönstret Händelseegenskaper. Det här fönstret innehåller detaljerad information om felet.
 
 1. Stäng Loggboken när du är klar med granskningen av programloggen.
 1. Kontrollera att sändaren har skapat diskkön (Diskq2000.log) i den katalog där du installerade Sensor-programfilerna och att det är den storlek som du angav i parametern QueueSize i filen txlogd.conf.
@@ -143,10 +147,10 @@ Sändaren är utformad för att köras kontinuerligt. Om du startar om datorn st
 
 För JBoss-servrar fungerar insamlaren som ett filter i serverbehållaren.
 
-Om du vill lägga till insamlaren på webbservern måste du redigera [!DNL web.xml] filen enligt beskrivningen nedan och starta om webbprogrammet.
+Om du vill lägga till insamlaren på webbservern måste du redigera [!DNL web.xml] så som beskrivs nedan och starta om webbprogrammet.
 
-1. Använd en textredigerare och öppna filen för den webbserver vars händelser Sensor hämtar. [!DNL web.xml]
-1. Lägg till följande `<filter>` och `<filter-mapping>` element i beskrivningsfilen. Om du inte har installerat txlogd.conf i katalogen /etc måste du ange rätt sökväg till den här filen i `<param-value>` elementet:
+1. Använd en textredigerare för att öppna [!DNL web.xml] för webbservern vars händelser Sensor fångar.
+1. Lägg till följande `<filter>` och `<filter-mapping>` -element till beskrivningsfilen. Om du inte har installerat txlogd.conf i katalogen /etc måste du ange rätt sökväg till filen i `<param-value>` element:
 
    ```
    <filter> 
@@ -187,7 +191,7 @@ Instruktioner för att lägga till visual_Sciences.dll i Tomcat java-bibliotekss
    -Djava.library.path=C:\Sensor directory
    ```
 
-   Där [!DNL C:\Sensor] katalogen är den katalog som innehåller [!DNL visual_sciences.dll] filen.
+   Där [!DNL C:\Sensor] är den katalog som innehåller [!DNL visual_sciences.dll] -fil.
 
 ## Hämta ytterligare data {#section-9483b663cbd0432daaca50c1089c7fca}
 
@@ -217,4 +221,3 @@ Du kan samla in ytterligare mätdata från J2EE-baserade webbprogram med hjälp 
    Resultat från begäran-URI är /index.jsp?A=1&amp;B=2.
 
 1. Upprepa den här proceduren för varje .jsp-sida från vilken du vill hämta ytterligare data.
-

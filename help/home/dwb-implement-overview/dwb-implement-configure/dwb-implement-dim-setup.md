@@ -3,7 +3,7 @@ description: I det här avsnittet förklaras de olika typerna av Dimensioner och
 title: Dimension
 uuid: 5b40cb43-7790-4b87-a0bb-be395a420157
 exl-id: 04afd773-e938-49f7-83c9-1d706a6dc525
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Dimension{#dimension-setup}
+
+{{eol}}
 
 I det här avsnittet förklaras de olika typerna av Dimensioner och hur du konfigurerar dem i DWB.
 
@@ -20,7 +22,7 @@ På den mest grundläggande nivån är dimensioner kategorier där data i dataup
 
 God praxis: Dimensioner i dataschemat kan anges med vilket namn som helst. De namn på Dimensioner som används och förklaras i kursen anses vara bästa praxis. Dimensioner kan namnges på ett annat sätt. När du exponeras för andra datauppsättningar börjar du se skillnader i datauppsättningar. Det är viktigt att förstå syftet med dimensionerna i stället för deras namn. Oavsett om det till exempel heter&quot;Besökare&quot;,&quot;Kund&quot;,&quot;Person&quot;,&quot;Kund&quot; eller&quot;Användare&quot;, är det viktigt att förstå att dessa termer vanligtvis används för att referera till den högsta räkningsbara dimensionen som används för att samla information om en person.
 
-Fullständig information finns i guiden [Datauppsättningskonfiguration](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html).
+Fullständig information finns i [Datauppsättningskonfiguration](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html) guide.
 
 ## Typer av Dimensioner i DWB {#section-a4fbb7bf2bde44528ac0f94a96465862}
 
@@ -69,7 +71,7 @@ Många-till-många-dimensioner har en många-till-många-relation med en överor
 **4) Numeriska Dimensioner**
 
 Numeriska dimensioner är en typ av enkel dimension som har ett numeriskt värde. Numeriska dimensioner skapas ofta för att användas i mätvärden. Exempel på numeriska dimensioner är Intäkter, Beställningar och Enheter. I exemplet ovan är &#39;Kundorder&#39; en numerisk dimension.
-**5)** Denorala dimensionerDenorala dimensioner är dimensioner som har en 1:1-relation med en överordnad räkningsbar dimension. Denormala dimensioner används ofta med dimensioner som har hög kardinalitet (många unika element) som identifieringsdata. En besökare kan till exempel bara ha ett användar-ID och ett användar-ID kan bara tillhöra en besökare. Detta är alltså en-till-en-relation och kan vara en normal dimension.
+**5) Dekorativa Dimensioner** Denormala dimensioner är dimensioner som har en 1:1-relation med en överordnad räkningsbar dimension. Denormala dimensioner används ofta med dimensioner som har hög kardinalitet (många unika element) som identifieringsdata. En besökare kan till exempel bara ha ett användar-ID och ett användar-ID kan bara tillhöra en besökare. Detta är alltså en-till-en-relation och kan vara en normal dimension.
 
 Geometrixx webbanvändar-ID är till exempel en normal dimension på kundnivå. Eftersom det är normalt har det en-till-en-relation med den överordnade dimensionen, vilket innebär att varje webb-ID har en kund och varje kund bara har ett webb-användar-ID. Därför kan kundens mätvärde bara vara 1 för varje element i Geometrixx webbanvändar-ID.
 
@@ -79,7 +81,7 @@ Med tidsdimensioner kan du skapa en uppsättning periodiska eller absoluta lokal
 
 >[!NOTE]
 >
->De %-undantag som används för visningsformatering är samma som standardbiblioteket för C *strftime*.
+>De %-undantag som används för visningsformatering är samma som standardbiblioteket i C *strftime*.
 
 ## Definiera utökade Dimensioner {#section-38ee124ec74b43fb95f13194a9582b97}
 
@@ -87,7 +89,7 @@ Steg för att definiera utökad Dimension:
 
 1. Öppna profilhanteraren när du arbetar i datauppsättningsprofilen och klicka på Datauppsättning för att visa innehållet.
 1. Öppna filen Transformation.cfg eller filen Transformation Dataset Include som du vill definiera den utökade dimensionen i.
-1. Högerklicka på Omvandlingar och klicka på Lägg till ny > `<Extended dimension type>`.
+1. Högerklicka på Omvandlingar och klicka på Lägg till nya > `<Extended dimension type>`.
 1. Ange lämplig information för den utökade dimensionen. Beskrivningar av omformningstyperna och information om deras parametrar finns i följande avsnitt:
 
    * [Räkningsbara Dimensioner](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-count-dim.html)
@@ -97,7 +99,7 @@ Steg för att definiera utökad Dimension:
    * [Dimensioner](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-denormal-dim.html)
    * [Dimensioner](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-time-dim.html)
 
-1. För alla utökade dimensioner som du definierar kan du lägga till en eller flera kommentarsrader i kommentarsparametern för att ytterligare beskriva dimensionen eller lägga till anteckningar om dess användning. Om du vill lägga till en kommentar högerklickar du på etiketten *Kommentarer* och klickar på* Lägg till ny > Kommentarsrad*.
+1. För alla utökade dimensioner som du definierar kan du lägga till en eller flera kommentarsrader i kommentarsparametern för att ytterligare beskriva dimensionen eller lägga till anteckningar om dess användning. Om du vill lägga till en kommentar högerklickar du på *Kommentarer* label and click* Add new > Comment Line*.
 
 1. När du har definierat de utökade dimensionerna i konfigurationsfilen sparar du filen lokalt och sparar den i datauppsättningsprofilen på DWB-servern.
 

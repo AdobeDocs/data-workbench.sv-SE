@@ -3,7 +3,7 @@ description: Marknadsföring av din webbplats kan innebära att annonser placera
 title: Mäta annonsintryckt
 uuid: ca2bd6bf-4f49-406c-b47a-18d6abfb48a4
 exl-id: 77cd816e-63a4-4080-ac65-0661e1de4ec0
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # Mäta annonsintryckt{#measuring-advertisement-impression}
 
+{{eol}}
+
 Marknadsföring av din webbplats kan innebära att annonser placeras i form av bilder eller andra multimediefiler (från din webbserver) på tredjepartswebbplatser.
 
 I sådana fall kanske du vill mäta både intrycket av annonsen i en webbläsare och den efterföljande klickningen, om en sådan inträffar, till annonsens mål-URL på webbplatsen.
 
-Om du lägger till [!DNL Log=1] i frågesträngen för annonser i form av bilder blir det en bildförfrågan, och därmed även ett reklamintryck, som spelas in av [!DNL Sensor] i analyssyfte.
+För annonser i form av bilder, bifoga [!DNL Log=1] till frågesträngen resulterar i bildbegäran och därmed i reklamintrycket, som hämtas av [!DNL Sensor] för analys.
 
 ```
 <!—REFERENCE IMPRESSION TAG->
@@ -30,7 +32,7 @@ Om du lägger till [!DNL Log=1] i frågesträngen för annonser i form av bilder
 | v_ica= | Värde som anger Impression Campaign Asset | v_ica=&quot;72890ab&quot; |
 | v_icr= | Värde som anger Impression Campaign Referer | v_icr=&quot;https://money.cnn.com/markets/ |
 
-Förutom att lägga till [!DNL Log=1] i bildbegäran bör en identifierare läggas till i webbadressen som leder från annonsen till målsidan på webbplatsen för att spåra annonsen som ledde fram till klickningen och spåra klickningen tillbaka till den specifika kampanjen för annonsen.
+Förutom att lägga till [!DNL Log=1] På bildbegäran bör en identifierare läggas till i webbadressen som leder från annonsen till målsidan på webbplatsen för att spåra annonsen som ledde till klickningen och för att spåra klickningen tillbaka till kampanjen för annonsen.
 
 ```
 <a href=”www.mysite.com/path/to/landingpage?Log=1&v_c=CAMPAIGN&v_ca=72890ab&v_cr=https://money.cnn.com/markets/”>

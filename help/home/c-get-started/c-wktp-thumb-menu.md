@@ -3,14 +3,16 @@ description: Så här exporterar, kopierar och bokmärker du från skrivbordet.
 title: Använda menyn Arbetsminiatyrbilder
 uuid: bada2260-3ae7-4fb6-938a-40b7acb1ffa7
 exl-id: 2220051d-5c53-48ed-8e13-62883819f22a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
 
 ---
 
-# Använda menyn Arbetets miniatyrbild{#using-the-worktop-thumbnail-menu}
+# Använda menyn Arbetsminiatyrbilder{#using-the-worktop-thumbnail-menu}
+
+{{eol}}
 
 Så här exporterar, kopierar och bokmärker du från skrivbordet.
 
@@ -20,9 +22,9 @@ Högerklicka på en arbetsyta för att exportera, kopiera och bokmärka funktion
 
 ## Gränssnittsbeskrivningar {#section-fd027dd94b7d4cb6b933d70c08ccd3e2}
 
-Följande element är tillgängliga på miniatyrbildsmenyn [!DNL Worktop]:
+Följande element är tillgängliga i [!DNL Worktop] miniatyrmeny:
 
-**Serverarbetsyta:** *namn*
+**Serverarbetsyta:** *name*
 
 Visas endast för oredigerade serverarbetsytor. Identifierar den namngivna arbetsytan som samma som arbetsytan på servern.
 
@@ -34,7 +36,7 @@ Datum och tid då arbetsytan senast öppnades.
 
 Visas endast för lokala versioner av serverarbetsytor. Identifierar den namngivna arbetsytan som en redigerad, lokal version av en arbetsyta som lagras på servern.
 
-**användararbetsyta:** *namn*
+**Användararbetsyta:** *name*
 
 Visas endast för användararbetsytor. Identifierar den namngivna arbetsytan som en arbetsyta som bara finns på den lokala datorn.
 
@@ -43,7 +45,7 @@ Visas endast för användararbetsytor. Identifierar den namngivna arbetsytan som
 Visas bara när du arbetar online. Behåller frågorna i den valda arbetsytan som körs i bakgrunden medan du fortsätter arbeta. När du väljer det här alternativet visas följande information i miniatyrbilden, som anger frågeförloppet:
 
 * Arbetar: *n%* - anger att frågan bearbetas och hur stor procentandel av bearbetningen som är slutförd.
-* *nMB* Läs in fråga - frågeresultatets totala storlek. Frågebelastningen är proportionerlig till den totala minnesbelastningen på Datan Workbench, men korrelerar inte direkt. Som vägledning kan en belastning på 10 MB eller mer belasta systemet. Den listade frågelasten tar inte hänsyn till kluster.
+* *n* MB Läs in fråga - frågeresultatets totala storlek. Frågebelastningen är proportionerlig till den totala minnesbelastningen på Datan Workbench, men korrelerar inte direkt. Som vägledning kan en belastning på 10 MB eller mer belasta systemet. Den listade frågelasten tar inte hänsyn till kluster.
 
    >[!NOTE]
    >
@@ -67,14 +69,14 @@ Visas endast för lokala versioner av serverarbetsytor. Tar bort den lokala kopi
 
 **Ta bort**
 
-Visas endast för användararbetsytor. Tar bort användarens arbetsyta, som bara finns på den lokala datorn. Mer information om hur du tar bort arbetsytor från den anslutna Datan Workbench finns i [Ta bort filer från din arbetsprofil](../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b).
+Visas endast för användararbetsytor. Tar bort användarens arbetsyta, som bara finns på den lokala datorn. Mer information om hur du tar bort arbetsytor från den anslutna Datan Workbench finns i [Tar bort filer från din arbetsprofil](../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b).
 
 **Spara på server**
 
-Visas endast för lokala versioner av serverarbetsytor och användararbetsytor och fungerar bara för de användare som har rätt behörighet. Sparar den lokala kopian av arbetsytan på servern. Som standard sparas arbetsytorna i lämplig `<profile name>\Workspaces\<tab name>`-mapp.
+Visas endast för lokala versioner av serverarbetsytor och användararbetsytor och fungerar bara för de användare som har rätt behörighet. Sparar den lokala kopian av arbetsytan på servern. Som standard sparas arbetsytorna i lämplig arbetsyta `<profile name>\Workspaces\<tab name>` mapp.
 
 **Bokmärke**
 
 Skapa ett bokmärke för en arbetsyta som snabbt kan hämtas senare.
 
-En bokmärkesikon ![](assets/bookmark_icon.png) visas ovanför arbetsytan på skrivbordet och arbetsytans namn visas på bokmärkespanelen. ![](assets/bookmark_worktop.png)
+En bokmärkesikon ![](assets/bookmark_icon.png) visas ovanför arbetsytan på arbetsytan och arbetsytans namn visas på bokmärkespanelen. ![](assets/bookmark_worktop.png)

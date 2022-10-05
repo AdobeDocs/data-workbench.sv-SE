@@ -2,16 +2,17 @@
 description: Skapa anpassade kolumnexportrubriker för segmentexportfilerna för att enkelt lägga till lättförstådda beskrivningar för exporterade segment. Med den här exportfunktionen kan du också exportera som TSV- och CSV-filer.
 title: Segmentexport med anpassade rubriker
 uuid: 186e7868-13b2-42e1-b83f-5a752ee9b407
-translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+exl-id: 1d27f926-35e1-4886-b7a6-702d9947dabb
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
-
 # Segmentexport med anpassade rubriker{#segment-export-with-custom-headers}
+
+{{eol}}
 
 Skapa anpassade kolumnexportrubriker för segmentexportfilerna för att enkelt lägga till lättförstådda beskrivningar för exporterade segment. Med den här exportfunktionen kan du också exportera som TSV- och CSV-filer.
 
@@ -38,7 +39,7 @@ Du kan skapa kolumnrubriker för dina exportfiler.
    >
    >Fältet Kolumnnamn får inte vara tomt eller så finns inte rubriken.
 
-1. Högerklicka och namnge segmentet och klicka sedan **[!UICONTROL Save Export File]**.
+1. Högerklicka och namnge segmentet och klicka sedan på **[!UICONTROL Save Export File]**.
 
    Ett exportfönster öppnas.
 
@@ -49,4 +50,3 @@ Du kan skapa kolumnrubriker för dina exportfiler.
 1. Högerklicka [!DNL Admin] > [!DNL Profile Manager] > [!DNL Expand Export]. Hitta den exportfil du just skapade och spara den i en befintlig profil.
 
    ![](assets/segment_export_headers_8.png)
-

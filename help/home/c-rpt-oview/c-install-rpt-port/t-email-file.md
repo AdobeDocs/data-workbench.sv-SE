@@ -3,7 +3,7 @@ description: Åtkomst till och behörigheter i rapportportalen styrs med enskild
 title: Redigera filen Email.asp
 uuid: 18251170-0317-4a32-b9e1-4ebf2d7ad123
 exl-id: e984f12f-362a-4dee-9af3-6d7a38a178a4
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -12,17 +12,19 @@ ht-degree: 0%
 
 # Redigera filen Email.asp{#edit-the-email-asp-file}
 
+{{eol}}
+
 Åtkomst till och behörigheter i rapportportalen styrs med enskilda användar- och gruppkonton.
 
-Varje gång du lägger till ett nytt konto eller redigerar ett befintligt konto kan ett bekräftelsemeddelande skickas till den e-postadress som du anger för det kontot (se [Arbeta med konton](../../../home/c-rpt-oview/c-admin-rpt/c-work-accts/c-work-accts.md#concept-c933a1940bda4a3489d61d8af315e45d)) och kopieras till de e-postadresser som du anger i filen [!DNL email.asp].
+Varje gång du lägger till ett nytt konto eller redigerar ett befintligt konto kan ett bekräftelsemeddelande skickas till den e-postadress som du anger för det kontot (se [Arbeta med konton](../../../home/c-rpt-oview/c-admin-rpt/c-work-accts/c-work-accts.md#concept-c933a1940bda4a3489d61d8af315e45d)) och kopieras till de e-postadresser du anger i dialogrutan [!DNL email.asp] -fil.
 
 >[!NOTE]
 >
->E-postmeddelanden skickas till kontoanvändare endast när du har angett en e-postadress för kontot och konfigurerat [!DNL email.asp]-filen korrekt. Om du inte vill att e-postmeddelanden ska skickas för ett konto lämnar du kontots e-postfält tomt.
+>E-postmeddelanden skickas till kontoanvändare endast när du har angett en e-postadress för kontot och konfigurerat de [!DNL email.asp] -fil. Om du inte vill ha e-postmeddelanden från ett konto lämnar du kontots e-postfält tomt.
 
-Den här filen finns i mappen `\*PortalName*\PortalASP`.
+Den här filen finns i `\*PortalName*\PortalASP` mapp.
 
-1. Öppna [!DNL email.asp]-filen i en textredigerare, t.ex. Anteckningar, på den dator där IIS körs.
+1. Öppna [!DNL email.asp] i en textredigerare som Anteckningar.
 1. Ange följande variabler:
 
 <table id="table_44F52DA266364DF993C40678A28E0F0D">
@@ -47,12 +49,12 @@ Den här filen finns i mappen `\*PortalName*\PortalASP`.
   </tr>
   <tr>
    <td colname="col1"> smtpconnectiontimeout </td>
-   <td colname="col2">Den tid som <span class="wintitle"> ska vänta på ett svar från SMTP-servern innan anslutningen avbryts.</span> </td>
+   <td colname="col2">Den tid som <span class="wintitle"> Rapport</span> ska vänta på ett svar från SMTP-servern innan anslutningen avbryts. </td>
   </tr>
  </tbody>
 </table>
 
-1. Ange följande variabler för funktionerna [!DNL NewUserEmail()] och [!DNL UpdateUserEmail()]:
+1. För [!DNL NewUserEmail()] och [!DNL UpdateUserEmail()] funktioner, ange följande variabler:
 
    <table id="table_91C5E36B84A94C4097EE5993592BE587">
    <thead>
@@ -64,11 +66,11 @@ Den här filen finns i mappen `\*PortalName*\PortalASP`.
    <tbody>
    <tr>
       <td colname="col1"> Från </td>
-      <td colname="col2">Den text som du vill ska visas på Från-rubrikraden i bekräftelsemeddelandena. Det här värdet kan vara samma som värdet för <span class="wintitle"> CC</span>. </td>
+      <td colname="col2">Den text som du vill ska visas på Från-rubrikraden i bekräftelsemeddelandena. Detta värde kan vara detsamma som <span class="wintitle"> CC</span> värde. </td>
    </tr>
    <tr>
       <td colname="col1"> CC </td>
-      <td colname="col2"> <p>Valfritt. Den giltiga e-postadressen till den person eller det alias som ska få en kopia av alla meddelanden om nya och ändrade användarkonton. Du kan ange flera e-postadresser genom att separera adresserna med kommatecken (inga blanksteg). </p> <p>Till exempel: <span class="filepath"> admin@company.com,joemanager@company.com</span></p> <p> <p>Obs!  Mottagarna får kopior av e-postmeddelanden som innehåller användarlösenord. </p> </p> </td>
+      <td colname="col2"> <p>Valfritt. Den giltiga e-postadressen till den person eller det alias som ska få en kopia av alla meddelanden om nya och ändrade användarkonton. Du kan ange flera e-postadresser genom att separera adresserna med kommatecken (inga blanksteg). </p> <p>Till exempel: <span class="filepath"> admin@company.com,joemanager@company.com</span></p> <p> <p>Obs! Mottagarna får kopior av e-postmeddelanden som innehåller användarlösenord. </p> </p> </td>
    </tr>
    <tr>
       <td colname="col1"> Ämne </td>
@@ -85,7 +87,7 @@ Den här filen finns i mappen `\*PortalName*\PortalASP`.
       <li id="li_7CBCC5CFF9E04776BBC893278785AEE7">Din inloggningsinformation för webbportalen anges nedan: </li>
       <li id="li_5346F0AB3568444B88117C295D8E99C5"><p>Användarnamn: användarnamn </p><p>Nytt lösenord: lösenord </p></li>
       <li id="li_B0D1FAE818BA42CF8546796800A1AA08"><p>Du kan komma åt portalen via följande URL: </p><p><span class="filepath"> https://WebPath</span></p></li>
-      <li id="li_7CD71EBDFA1D418F960040569CD511EB">När du har loggat in på portalen kan du ändra ditt lösenord på fliken <span class="wintitle"> Admin</span>. </li>
+      <li id="li_7CD71EBDFA1D418F960040569CD511EB">När du har loggat in på portalen kan du ändra ditt lösenord på <span class="wintitle"> Administratör</span> -fliken. </li>
       </ul></p> </td>
    </tr>
    </tbody>

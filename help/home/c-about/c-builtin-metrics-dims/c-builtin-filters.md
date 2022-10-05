@@ -3,7 +3,7 @@ description: Profilfilter begränsar omfattningen av de data som är tillgängli
 title: Inbyggda profilfilter
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Inbyggda profilfilter{#built-in-profile-filters}
+
+{{eol}}
 
 Profilfilter begränsar omfattningen av de data som är tillgängliga från en datauppsättning.
 
@@ -51,4 +53,4 @@ entity = derived_filter:
 
 Som standard tillämpas filtret för bruten session på arbetsytorna både på urvalet och deras riktmärken, och du kan aktivera det genom att högerklicka på arbetsytan och klicka på Data > Brutet sessionsfilter.
 
-Det går att referera till filtret för bruten session i filteruttryck som Broken_Session_Filter, även om det inte är aktiverat för den aktuella arbetsytan. Mer information finns i [filteruttryck](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers).
+Det går att referera till filtret för bruten session i filteruttryck som Broken_Session_Filter, även om det inte är aktiverat för den aktuella arbetsytan. Se [filteruttryck](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) för ytterligare information.

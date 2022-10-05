@@ -3,25 +3,27 @@ description: Uppgraderar serverkomponenter för Data Workbench 6.3.
 title: DWB Server upgrade 6.2 to 6.3
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
 exl-id: 5106d9a3-179a-49f1-915a-c03b36ed5257
-source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
 
 # DWB Server-uppgradering: 6.2 till 6.3{#dwb-server-upgrade-to}
 
+{{eol}}
+
 Uppgraderar serverkomponenter för Data Workbench 6.3.
 
 **Uppgraderingsserver**
 
-Om du har anpassade profiler som har företräde framför standardfilerna i [!DNL Base]-paketet måste du uppdatera de anpassade filerna:
+Om du har anpassade profiler som har företräde framför standardfilerna i [!DNL Base] måste du uppdatera dessa anpassade filer:
 
-* **Uppdatera Meta.cfg-filen** ()  [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]för att ange uppdaterad lösenordskryptering för FSU-servern (File System Unit) och för att lägga till poster för Namnvärdespar för att dra nytta av  [frågesträngsgrupperingar](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0).
+* **Uppdatera filen Meta.cfg** ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]för att ange uppdaterad lösenordskryptering för filsystemenheten (FSU-servern) och för att lägga till poster för namnvärdesparsomformningarna för att dra nytta av [Frågesträngsgrupperingar](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0).
 
-   1. Öppna filen [!DNL meta.cfg] på FSU:n.
-   1. Ändra datatypen för **[!UICONTROL Proxy Password]** från [!DNL string"] till [!DNL EncryptedString] i avsnittet *Konfiguration av arbetsstation*.
+   1. Öppna [!DNL meta.cfg] på FSU:n.
+   1. Ändra datatypen för **[!UICONTROL Proxy Password]** från &quot; [!DNL string"] till &quot; [!DNL EncryptedString]&quot; i *Konfiguration av arbetsstation* -avsnitt.
 
       ```
         Proxy User Name = string:
@@ -32,23 +34,23 @@ Om du har anpassade profiler som har företräde framför standardfilerna i [!DN
 
    1. Lägg till nya poster för att aktivera de nya Namnvärdespar-omformningarna: *BuildNameValuePair* och *ExtractNameValuePairs*.
 
-      Öppna en arbetsyta och högerklicka på **Admin** > **Profilhanteraren**.
+      Öppna en arbetsyta och högerklicka **Administratör** > **Profilhanteraren**.
 
-      Under **Kontext** klickar du på filen **meta.cfg** i kolumnen **Bas** och sedan på **Skapa lokalt**. I kolumnen med användartabellen högerklickar du och väljer **Öppna** > **i Workstation**.
+      Under **Kontext** klickar du på **meta.cfg** i **Bas** kolumn och klicka sedan på **Gör lokal**. Högerklicka och välj i kolumnen i tabellen Användare **Öppna** > **i Workstation**.
 
       ![](assets/meta_cfg.png)
 
-      * Klicka på **metadata** i det nya fönstret och lägg till godkända underordnade mallar.
+      * Klicka på **metadata** och lägg till godtagbara underordnade mallar.
 
          ![](assets/meta_cfg_child.png)
 
-      * Öppna **omvandling** och lägg till nya mallar.
+      * Öppna **omformning** och lägg till nya mallar.
 
          ![](assets/meta_cfg_template.png)
 
 * **Uppdatering för snabbsammanslagningsförbättringar**. Lägg till parametrar eller ändra värden i följande konfigurationsfiler för att utnyttja hastighetsförbättringarna i Datan Workbench under en omformning.
 
-   * **Communications.cfg** (  [!DNL E:\Server\Components\Communications.cfg])
+   * **Communications.cfg** ( [!DNL E:\Server\Components\Communications.cfg])
 
       ```
       18 = SourceListServer:
@@ -57,7 +59,7 @@ Om du har anpassade profiler som har företräde framför standardfilerna i [!DN
       <new>)
       ```
 
-   * **Disk Files.cfg** (at  [!DNL E:\Server\Components] och  [!DNL E:\Server\Components for Processing Servers])
+   * **Disk Files.cfg** (på [!DNL E:\Server\Components] och [!DNL E:\Server\Components for Processing Servers])
 
       ```
       Disk Cache Size (MB) = double: 1024
@@ -66,7 +68,7 @@ Om du har anpassade profiler som har företräde framför standardfilerna i [!DN
       <(new)>
       ```
 
-   * **Log Processing Mode.cfg** (  [!DNL E:\Server\Profiles\<your profile>\Dataset\Log Processing Mode.cfg])
+   * **Loggbehandlingsläge.cfg** ( [!DNL E:\Server\Profiles\<your profile>\Dataset\Log Processing Mode.cfg])
 
       ```
       <(changed)
@@ -95,7 +97,7 @@ Om du har anpassade profiler som har företräde framför standardfilerna i [!DN
    >
    >Om du vill dra nytta av förbättringarna av Snabbsammanslagning måste du ha minst 8 GB RAM per DPU.
 
-* **Adobe Target med DWB-integreringsuppdatering**. En ny exportfil, [!DNL ExportIntegration.exe], ersätter den befintliga [!DNL TnTSend.exe]-filen på Insight Server (`E:\Server\Scripts\TnTSend.exe`). Den nya exportfilen har stöd för både [Adobe Target](https://www.adobe.com/marketing/target.html)-integrering och samordning med den nya Överordnad marknadsföringsprofilen (MMP) och [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html).
+* **Adobe Target med DWB-integrationsuppdatering**. En ny exportfil, [!DNL ExportIntegration.exe], ersätter befintlig [!DNL TnTSend.exe] på Insight Server (`E:\Server\Scripts\TnTSend.exe`). Den nya exportfilen stöder båda [Adobe Target](https://www.adobe.com/marketing/target.html) integrering och samordning med den nya Överordnad marknadsföringsprofilen (MMP) och [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html).
 
    Du måste uppdatera följande kommandon för Adobe Target-export.
 
@@ -116,13 +118,13 @@ Om du har anpassade profiler som har företräde framför standardfilerna i [!DN
    Du kan också prova följande för att använda den gamla exportprocessen:
 
    * Skapa en ny test- och målexport på arbetsstationen.
-   * Ändra den gamla Test- och Target-exporten i [!DNL Server/Profiles/`<your profile>`/Export.]
+   * Ändra den gamla Test- och Target-exporten som finns i [!DNL Server/Profiles/`<your profile>`/Exportera.]
 
-* **Uppdatera Adobe SC-profilen.** Ändringar i  [!DNL Exclude Hit.cfg] filen kräver att ett fält deklareras i den associerade  [!DNL Decoding Instructions.cfg] filen.
+* **Uppdatera Adobe SC-profilen.** Ändringar i [!DNL Exclude Hit.cfg] filen kräver att ett fält deklareras i den associerade [!DNL Decoding Instructions.cfg] -fil.
 
    >[!NOTE]
    >
-   >Om din Adobe SC-profil innehåller en anpassad [!DNL Decoding Instructions.cfg]-fil måste du ta med en [!DNL DelimitedDecoder]-parameter till den anpassade filen.
+   >Om din Adobe SC-profil innehåller en anpassad [!DNL Decoding Instructions.cfg] måste du ta med en [!DNL DelimitedDecoder] -parameter till din anpassade fil.
 
    ```
    0 = DelimitedDecoder:
@@ -135,4 +137,4 @@ Om du har anpassade profiler som har företräde framför standardfilerna i [!DN
    5 = string: x-hit_source
    ```
 
-   Genom att lägga till fältet [!DNL DelimitedDecoder] kan du dra nytta av funktionsuppdateringar och undvika eventuella loggbearbetningsproblem som uppstår till följd av dessa uppdateringar.
+   Lägga till [!DNL DelimitedDecoder] kan du dra nytta av funktionsuppdateringar och undvika eventuella loggbearbetningsproblem som uppstår till följd av dessa uppdateringar.

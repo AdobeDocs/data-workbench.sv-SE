@@ -3,7 +3,7 @@ description: På samma sätt som AppendURI-omformningen påverkar PrependURI-omf
 title: PrependURI
 uuid: 3f2fb1a7-83f7-481e-b892-0937acd379f9
 exl-id: c39d9241-ed66-446e-b59d-fdb11942d0e8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # PrependURI{#prependuri}
 
+{{eol}}
+
 På samma sätt som AppendURI-omformningen påverkar PrependURI-omformningen det interna fält som används av data workbench-servern för att skapa URI-dimensionen.
 
-[!DNL PrependURI]-omformningen fungerar genom att lägga till värdet i det identifierade indatafältet framför det aktuella värdet i URI:n.
+The [!DNL PrependURI] omvandlingen fungerar genom att lägga till värdet i det identifierade indatafältet framför det värde som för närvarande finns i URI:n.
 
 | Parameter | Beskrivning | Standard |
 |---|---|---|

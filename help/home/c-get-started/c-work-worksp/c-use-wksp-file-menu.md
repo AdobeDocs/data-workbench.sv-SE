@@ -3,18 +3,20 @@ description: Information om de menyalternativ som finns på arbetsytans filmeny.
 title: Arkiv-menyn Arbetsyta
 uuid: abbdb2db-d918-4edf-977c-1daaf8a71721
 exl-id: b2bb7d89-249c-40f5-85aa-02fea0b0fc61
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
 
 ---
 
-# Arbetsytans filmeny{#workspace-file-menu}
+# Arkiv-menyn Arbetsyta{#workspace-file-menu}
+
+{{eol}}
 
 Information om de menyalternativ som finns på arbetsytans filmeny.
 
-Klicka på **[!UICONTROL File]** på arbetsytan.
+Klicka på **[!UICONTROL File]**.
 
 ![](assets/mnu_file.png)
 
@@ -40,7 +42,7 @@ Sparar arbetsytan med ett annat namn eller på en annan plats. Se [Spara arbetsy
 
 Anger en arbetssidstorlek för en arbetsyta. Du kan välja Helskärm, Standard eller någon av de särskilda storlekarna för datorskärmar, utskrivna sidor eller rapporter. Helskärmsläge fyller just din skärm och Standard är en inställning som kan konfigureras för att passa organisationens standardskärmstorlek. Standardinställningen fyller skärmen när upplösningen 1 024 x 768 används.
 
-Arbetsytor som kopieras, sparas som [!DNL .png]-filer eller skrivs ut använder också den här sidstorleken för utdata. Sidstorlekar som är större än Datans Workbench visualisering använder rullningslister, medan mindre storlekar centreras på skärmen och har en ljusgrå kant runt arbetsytan.
+Arbetsytor som kopieras, sparas som [!DNL .png] filer, eller utskrifter, använder även den här sidstorleken för utdata. Sidstorlekar som är större än Datans Workbench visualisering använder rullningslister, medan mindre storlekar centreras på skärmen och har en ljusgrå kant runt arbetsytan.
 
 **Beskrivning**
 
@@ -51,7 +53,7 @@ Gör att du kan skapa eller redigera en textbeskrivning av arbetsytan. Den här 
 (Visas bara när du arbetar online.) Behåller frågorna i den valda arbetsytan som körs i bakgrunden medan du fortsätter arbeta. När du väljer det här alternativet visas följande information i miniatyrbilden, som anger frågeförloppet:
 
 * Arbetar: *n%* - anger att frågan bearbetas och hur stor procentandel av bearbetningen som är slutförd.
-* *nMB* Läs in fråga - frågeresultatets totala storlek. Frågebelastningen är proportionerlig till den totala minnesbelastningen på Datan Workbench, men korrelerar inte direkt. Som vägledning kan en belastning på 10 MB eller mer belasta systemet. Den listade frågelasten tar inte hänsyn till kluster.
+* *n* MB Läs in fråga - frågeresultatets totala storlek. Frågebelastningen är proportionerlig till den totala minnesbelastningen på Datan Workbench, men korrelerar inte direkt. Som vägledning kan en belastning på 10 MB eller mer belasta systemet. Den listade frågelasten tar inte hänsyn till kluster.
 
 >[!NOTE]
 >
@@ -59,9 +61,9 @@ Gör att du kan skapa eller redigera en textbeskrivning av arbetsytan. Den här 
 
 **Stäng**
 
-Stänger arbetsytan. Klicka på **[!UICONTROL Close]** > **[!UICONTROL Save]** om du vill spara de ändringar du har gjort på arbetsytan, eller klicka på **[!UICONTROL Close]** > **[!UICONTROL Don’t Save]** om du vill återgå till [!DNL Worktop] utan att spara de ändringar du har gjort på arbetsytan.
+Stänger arbetsytan. Klicka **[!UICONTROL Close]** > **[!UICONTROL Save]** om du vill spara de ändringar du har gjort på arbetsytan, eller klicka på **[!UICONTROL Close]** > **[!UICONTROL Don’t Save]** för att gå tillbaka till [!DNL Worktop] utan att spara de ändringar du har gjort på arbetsytan.
 
-Du kan också spara ändringarna, stänga arbetsytan och återgå till [!DNL Worktop] på något av följande sätt:
+Du kan också spara ändringarna, stänga arbetsytan och gå tillbaka till [!DNL Worktop] med någon av följande metoder:
 
 * Klicka på Datans Workbench logotyp i det övre vänstra hörnet av arbetsytan.
 * Om musen har navigeringsknappar klickar du på bakåtknappen på musen.

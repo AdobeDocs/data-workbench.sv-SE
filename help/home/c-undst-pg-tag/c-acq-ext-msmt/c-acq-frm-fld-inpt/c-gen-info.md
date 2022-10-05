@@ -3,7 +3,7 @@ description: Värden som anges i ett formulär på en webbsida kan samlas in och
 title: Allmän information
 uuid: 401816a5-1d95-48e6-bedf-ee2a5dbd2d50
 exl-id: 9effc72b-e75f-423c-87ec-6ac25edee8d6
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Allmän information{#general-information}
+
+{{eol}}
 
 Värden som anges i ett formulär på en webbsida kan samlas in och läggas till i frågesträngen på den efterfrågade sidan (när formuläret skickas) med hjälp av JavaScript.
 
@@ -53,7 +55,7 @@ I det här exemplet läggs värdena som anges i formuläret av webbläsaranvänd
 https://www.myserver.com/thankyou.asp?v_1=John Smith&v_2=Los Angeles&v_3=California&v_4=90210
 ```
 
-Följande utökade mått skulle erhållas med denna begäran utöver de baslinjemått som samlats in av [!DNL Sensor]:
+Följande utökade mått skulle erhållas med denna begäran, utöver de baslinjemått som samlats in av [!DNL Sensor]:
 
 | Insamlade data | Förklaring | Exempel |
 |---|---|---|

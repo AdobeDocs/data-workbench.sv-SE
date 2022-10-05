@@ -3,7 +3,7 @@ description: Konceptuell information om bildlager.
 title: Om bildlager
 uuid: a8b00bda-c5b2-4f27-8c15-2d319b3bfa70
 exl-id: c6d30747-70d2-4489-ad64-fd131e76a7a2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Om bildlager{#about-imagery-layers}
+
+{{eol}}
 
 Konceptuell information om bildlager.
 
@@ -30,26 +32,26 @@ I Data Workbench kan du välja vilka av dessa lager du vill visa för en viss an
 
 ## Geografiska profillager {#section-d04ab9f1a8cd4c6580e48ce44ac51898}
 
-Profilen [!DNL Geography] innehåller en uppsättning standardbildlager som lagras i mappen Profiles\Geography\Maps folder within the Data Workbench server installation directory:
+The [!DNL Geography] Med profilen får du en uppsättning standardbildlager som lagras i mappen Profiler\Geography\Maps i Datans Workbench installationskatalog:
 
-* **[!UICONTROL Blue Marble 2km]:** Det här terrängbildslagret skapar en 3D-karta över hela världen, vilket är vad som visas när du lägger till globala visualiseringar på en arbetsyta. När det här lagret inte är markerat visas inte glöden, men de andra lagren visas fortfarande. Filen [!DNL Blue Marble 2km.layer] refererar till filen [!DNL Blue Marble 2km.tsi].
+* **[!UICONTROL Blue Marble 2km]:** Det här terrängbildslagret skapar en 3D-karta över världen, vilket är vad som visas när du lägger till globala visualiseringar på en arbetsyta. När det här lagret inte är markerat visas inte glöden, men de andra lagren visas fortfarande. The [!DNL Blue Marble 2km.layer] filen refererar till [!DNL Blue Marble 2km.tsi] -fil.
 
-* **[!UICONTROL Zip Points]:** Med det här elementpunktslagret kan du mappa platser i datauppsättningen med hjälp av en ZIP-kod i USA. Uppslagsfilen [!DNL Zip Points.txt] (tillhandahålls av Adobe) innehåller en lista över alla USA:s ZIP-koder och varje ZIP-kods latitud och longitud. Filen [!DNL Zip Points.layer] refererar till filen [!DNL Zip Points.txt] och filen [!DNL Zipcode.dim] och innehåller de konfigurationsparametrar som behövs för att visa platserna i världen. Varje element i ZIP-koddimensionen ( [!DNL Zipcode.dim]) som du definierar i datauppsättningen mappas på jorden med den latitud och longitud som listas för den ZIP-koden i [!DNL Zip Points.txt]-sökfilen.
+* **[!UICONTROL Zip Points]:** Med det här elementpunktslagret kan du mappa platser i datauppsättningen med hjälp av en ZIP-kod i USA. The [!DNL Zip Points.txt] Uppslagsfilen (tillhandahålls av Adobe) innehåller en lista över alla amerikanska ZIP-koder och varje ZIP-kods latitud och longitud. The [!DNL Zip Points.layer] filen refererar till [!DNL Zip Points.txt] -filen och [!DNL Zipcode.dim] filen och innehåller de konfigurationsparametrar som behövs för att visa platserna i världen. Varje element i postnummer-dimensionen ( [!DNL Zipcode.dim]) som du definierar i datauppsättningen mappas på jorden med latitud och longitud som listas för den ZIP-koden i [!DNL Zip Points.txt] sökfil.
 
-   Mer information om hur du definierar dimensioner finns i *Konfigurationshandboken för datauppsättningar*.
+   Mer information om hur du definierar dimensioner finns i *Konfigurationshandbok för datauppsättning*.
 
-* **[!UICONTROL Boundaries]:** Det här vektorlagret utgör världens största politiska gränser, till exempel länder, liksom gränserna för jordens naturliga fysiska egenskaper, till exempel sjöar och öar. Filen [!DNL Boundaries.layer] refererar till en eller flera av filerna [!DNL mwcoast.vec], [!DNL mwisland.vec], [!DNL mwlake.vec], [!DNL mwnation.vec], [!DNL mwriver.vec], [!DNL mwstate.vec], [!DNL US states.vec] och [!DNL world boundaries.vec].
+* **[!UICONTROL Boundaries]:** Det här vektorskiktet utgör världens största politiska gränser, till exempel länder, liksom gränserna för jordens naturliga fysiska egenskaper, till exempel sjöar och öar. The [!DNL Boundaries.layer] filen refererar till en eller flera av [!DNL mwcoast.vec], [!DNL mwisland.vec], [!DNL mwlake.vec], [!DNL mwnation.vec], [!DNL mwriver.vec], [!DNL mwstate.vec], [!DNL US states.vec]och [!DNL world boundaries.vec] filer.
 
-* **[!UICONTROL IP Coordinates]:** Det här elementpunktslagret använder dynamiska punkter för att mappa platser i datauppsättningen med hjälp av IP-adresser. Filen [!DNL IP Coordinates.layer] refererar till dimensionen Koordinater ( [!DNL Coordinates.dim]) och anger Visitors-måttet som det mätvärde som ska användas för att bestämma storleken på punkterna i världen för varje koordinat.
+* **[!UICONTROL IP Coordinates]:** I det här elementpunktslagret används dynamiska punkter för att mappa platser i datauppsättningen med hjälp av IP-adresser. The [!DNL IP Coordinates.layer] filen refererar till dimensionen Koordinater ( [!DNL Coordinates.dim]) och anger Visitors-måttet som det mätvärde som ska användas för att bestämma storleken på punkterna i världen för varje koordinat.
 
-Din [!UICONTROL NL Geography]-profil eller andra profiler i din installation kan innehålla ytterligare bildlager som Adobe har tillhandahållit eller som ditt företag har skapat.
+Dina [!UICONTROL NL Geography] profiler eller andra profiler i installationen kan innehålla ytterligare bildlager som Adobe har skapat eller som företaget har skapat.
 
 ## Skapa ett nytt lager {#section-b5313773316c4e0fa748f7376a8e7f0b}
 
-Du kan skapa nya bildlager genom att kopiera lämplig typ av lagerfil som finns i [!DNL Geography]-profilen till valfri Profil\*profilnamn*\Kartor-mapp och sedan ändra namn på och redigera filen efter behov. Alla nya lager måste uppfylla följande krav:
+Du kan skapa nya bildlager genom att kopiera lämplig typ av lagerfil som finns i [!DNL Geography] till en profil\*profilnamn*\Mappar och byter sedan namn på och redigerar filen efter behov. Alla nya lager måste uppfylla följande krav:
 
-* Filen [!DNL .layer] måste följa formatet för en av de lagertyper som stöds.
-* Filen [!DNL .layer] måste referera till rätt uppslags- och dimensionsfiler, om det behövs.
-* Den refererade sökfilen måste också lagras i Datans Workbench serverinstallationskatalog, och sökvägen måste anges korrekt i [!DNL .layer]-filen.
+* The [!DNL .layer] filen måste följa formatet för en av de lagertyper som stöds.
+* The [!DNL .layer] filen måste referera till rätt sök- och dimensionsfiler, om det behövs.
+* Den refererade sökfilen måste också lagras i Datans Workbench serverinstallationskatalog, och sökvägen måste anges korrekt i [!DNL .layer] -fil.
 
 Mer information om format och parametrar för varje typ av lagerfil och tillhörande filer finns i avsnittet om lämplig lagertyp i det här kapitlet.

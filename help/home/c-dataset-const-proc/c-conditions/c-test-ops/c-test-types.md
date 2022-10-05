@@ -3,18 +3,20 @@ description: Villkoret Jämför och Intervall kräver att du anger vilken typ av
 title: Testtyper för teståtgärder
 uuid: dc0433dd-a35e-472e-8975-f58347512c11
 exl-id: 8abed46e-e76d-47c0-bbe9-cf98cf2d61e8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
 
 # Testtyper för teståtgärder{#test-types-for-test-operations}
 
+{{eol}}
+
 Villkoret Jämför och Intervall kräver att du anger vilken typ av jämförelse som ska göras för villkoret.
 
-I följande tabell beskrivs de tillgängliga typerna ( [!DNL LEXICAL], [!DNL NUMERIC] och [!DNL DATETIME]).
+I följande tabell beskrivs de tillgängliga typerna ( [!DNL LEXICAL], [!DNL NUMERIC]och [!DNL DATETIME]).
 
 <table id="table_1B3AD8BDF0414D0AB8EE0E6D1B53E2CE"> 
  <thead> 

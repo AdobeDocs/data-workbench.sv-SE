@@ -3,7 +3,7 @@ description: Lift- och Gain-diagrammen erbjuder visualiseringar för att utvärd
 title: Ökning av benägenhet och börskursdiagram
 uuid: 4f08277e-deea-48d3-ab15-214c43ad6664
 exl-id: 5ac08512-ac9c-4e85-a4f9-ea6d819095d8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -12,24 +12,26 @@ ht-degree: 0%
 
 # Ökning av benägenhet och börskursdiagram{#propensity-gain-and-lift-charts}
 
+{{eol}}
+
 Lift- och Gain-diagrammen erbjuder visualiseringar för att utvärdera den potentiella prestandan hos en poängsatt modell för att utvärdera prestanda jämfört med definierade delar av målgruppen.
 
 Vinst- och lyftdiagram är visualiseringar som byggs för att utvärdera den poängsatta modellens potentiella prestanda. Dessa diagram utvärderar prestanda för varje del av populationen.
 
 **Öppna ett lyft- eller magasin-diagram**
 
-1. Välj [!DNL Add Visualization > Predictive Analytics > Scoring].
+1. Välj [!DNL Add Visualization > Predictive Analytics > Scoring] .
 1. Hovra över **[!UICONTROL Model Complete]** av en sparad poäng.
 
 ![](assets/propensity_lift_gain_1.png)
 
 **Om Lyft och förstärkning**
 
-Lyft och förstärkning av diagram är användbara visuella verktyg för att mäta värdet i en prediktiv modell. Båda diagrammen består av en lyftkurva (grön) och en baslinje (rosa). För **Gain-diagrammet** representerar avståndet mellan lyftkurvan och baslinjen hur mycket du kan förbättra prestandan i svar (eller ökningen) genom att använda det prediktiva läget. Ökningen uppnås genom att man prioriterar och målgruppsanpassar de potentiella kunder (kunder/besökare) som är mest benägna att konvertera, i stället för att marknadsföring görs till kunder/besökare på måfå. På så sätt kan du kvantifiera det förväntade värdet av att använda den prediktiva modellen för att välja vilka potentiella kunder som ska kontaktas.
+Lyft och förstärkning av diagram är användbara visuella verktyg för att mäta värdet i en prediktiv modell. Båda diagrammen består av en lyftkurva (grön) och en baslinje (rosa). För **Vinst**, representerar avståndet mellan lyftkurvan och baslinjen hur mycket du kan förbättra prestandan i svar (eller &quot;ökningen&quot;) jämfört med att använda det prediktiva läget. Ökningen uppnås genom att man prioriterar och målgruppsanpassar de potentiella kunder (kunder/besökare) som är mest benägna att konvertera, i stället för att marknadsföring görs till kunder/besökare på måfå. På så sätt kan du kvantifiera det förväntade värdet av att använda den prediktiva modellen för att välja vilka potentiella kunder som ska kontaktas.
 
-I likhet med Gain-diagrammet visar **Lyft-diagrammet** hur mycket större sannolikheten är att du får positiva svar än om du kontaktade potentiella kunder på måfå ett slumpmässigt sätt. Ni vill att avståndet mellan lyftkurvan och baslinjen ska vara så stort som möjligt, vilket motsvarar större förväntade vinster av att använda den prediktiva modellen för att kontakta kunderna. Matematiskt definieras öknings- och lyftdiagram enligt följande:
+Liknar Gain-diagrammet, **Lyft diagram** visar hur mycket större sannolikheten är att du får positiva svar än om du kontaktade potentiella kunder på måfå. Ni vill att avståndet mellan lyftkurvan och baslinjen ska vara så stort som möjligt, vilket motsvarar större förväntade vinster av att använda den prediktiva modellen för att kontakta kunderna. Matematiskt definieras öknings- och lyftdiagram enligt följande:
 
-* **Gain** = (förväntade svar med prediktiv modell för kontaktpotentiella kunder) / (förväntade svar från slumpmässiga kontaktpotentiella kunder)
+* **Ökning** = (Förväntat svar med prediktiv modell för kontaktpotentiell kund) / (Förväntat svar från slumpmässigt kontaktande potentiell kund)
 * **Lyft** = (Förväntat svar bland en specifik gruppstorlek för potentiella kunder som identifieras med prediktiv modell) / (Förväntat svar bland samma specifika gruppstorlek för potentiella kunder som identifieras slumpmässigt)
 
 **Exempel på Lyft och förstärkning av diagram**

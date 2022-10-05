@@ -3,7 +3,7 @@ description: Med detaljtabeller kan du visa ytterligare information om en delmä
 title: Detaljtabell
 uuid: 2becff5e-c78d-4ac7-8cda-814ad0193efd
 exl-id: d7f0b768-f341-41e8-904b-ec98a25f7aa9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Detaljtabell{#detail-table}
+
+{{eol}}
 
 Med detaljtabeller kan du visa ytterligare information om en delmängd av data, som definieras av de val du gör i andra visualiseringar.
 
@@ -55,10 +57,10 @@ Om du vill visa den information som beskrivs ovan måste du utföra följande st
 
 1. Högerklicka i detaljtabellen och klicka på **[!UICONTROL Add Level]** > **[!UICONTROL Visitor]**.
 1. Högerklicka i detaljtabellen och klicka på **[!UICONTROL Add Level]** > **[!UICONTROL Page View]**.
-1. Högerklicka på nivårubriken **[!UICONTROL Visitors]** och klicka på **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL Domain]**.
+1. Högerklicka på **[!UICONTROL Visitors]** nivårubrik och klicka **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL Domain]**.
 1. Högerklicka i rubriken på besökarnivån och klicka på **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL City]**.
 1. Högerklicka i rubriken på besökarnivån och klicka på **[!UICONTROL Add Metric]** > **[!UICONTROL Page Views]**.
-1. Högerklicka i rubriken för sidvisningsnivån och klicka på **[!UICONTROL Add Attribute]** > **[!UICONTROL Page]** > **[!UICONTROL Page]**.
+1. Högerklicka i rubriken på sidvisningsnivån och klicka på **[!UICONTROL Add Attribute]** > **[!UICONTROL Page]** > **[!UICONTROL Page]**.
 
 I följande exempelarbetsyta visas de relaterade detaljerna för ett slumpmässigt urval av sex besökare på webbplatsen under den tidsperiod som du angav.
 
@@ -66,7 +68,7 @@ I följande exempelarbetsyta visas de relaterade detaljerna för ett slumpmässi
 
 ## Lägg till en nivå {#section-f948d3361fd84906ac4d9ebce520bfd0}
 
-* Högerklicka i detaljtabellen och klicka på **[!UICONTROL Add Level]** > *&lt;**[!UICONTROL dimension name]**>*.
+* Högerklicka i detaljtabellen och klicka **[!UICONTROL Add Level]** > *&lt;**[!UICONTROL dimension name]**>*.
 
 ![](assets/mnu_DetailsTable_AddLevel.png)
 
@@ -76,9 +78,9 @@ I följande exempelarbetsyta visas de relaterade detaljerna för ett slumpmässi
 
 ![](assets/mnu_DetailsTable_Level.png)
 
-## Lägg till attribut och mått {#section-cdda2df3c9a448d5b9770686c8b8efb3}
+## Lägg till attribut och mätvärden {#section-cdda2df3c9a448d5b9770686c8b8efb3}
 
-* Högerklicka på ett attribut eller en måttrubrik och klicka på **[!UICONTROL Add Attribute]** > *&lt;**[!UICONTROL attribute name]**>* eller **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*.
+* Högerklicka på ett attribut eller en metrisk rubrik och klicka på **[!UICONTROL Add Attribute]** > *&lt;**[!UICONTROL attribute name]**>* eller **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
 ![](assets/mnu_DetailsTable.png)
 
@@ -90,4 +92,4 @@ I följande exempelarbetsyta visas de relaterade detaljerna för ett slumpmässi
 
 ## Exportera till Microsoft Excel {#section-a9eaba63c88a4598836a34669ba8cac1}
 
-Mer information om att exportera fönster finns i [Exportera fönsterdata](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Mer information om att exportera fönster finns i [Exporterar fönsterdata](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

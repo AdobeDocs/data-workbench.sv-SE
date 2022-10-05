@@ -3,7 +3,7 @@ description: Text eller uttryck kan anges i valfri cell i ett kalkylblad.
 title: Arbeta med data i kalkylblad
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
 exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # Arbeta med data i kalkylblad{#work-with-data-in-worksheets}
 
+{{eol}}
+
 Text eller uttryck kan anges i valfri cell i ett kalkylblad.
 
-Alla uttryck i ett kalkylblad föregås av ett likhetstecken (=) såvida du inte använder [!DNL eval( )], vilket behandlar texten i den refererade cellen som ett uttryck.
+Alla uttryck i ett kalkylblad föregås av ett likhetstecken (=) om inte [!DNL eval( )], som behandlar texten i den refererade cellen som ett uttryck.
 
-En fullständig lista över metrisk syntax, dimensioner och filtersyntaxregler finns i [Query Language Syntax](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+En fullständig lista över mätvärden, dimensioner och filtersyntaxregler finns på [Syntax för frågespråk](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 **Skriva data i ett kalkylblad**
 
@@ -34,7 +36,7 @@ Data Workbench uppdaterar automatiskt referenserna i den nya cellen så att de r
 
 1. Markera cellerna som innehåller de data som du vill kopiera.
 1. Högerklicka på cellerna som innehåller de data som du vill kopiera och klicka på **[!UICONTROL Copy]**.
-1. Högerklicka på den första cellen där du vill börja klistra in kopierade data och klicka på **[!UICONTROL Paste]**. Data klistras in i den första cellen och under den.
+1. Högerklicka på den första cellen där du vill börja klistra in kopierade data och klicka sedan på **[!UICONTROL Paste]**. Data klistras in i den första cellen och under den.
 
 Data Workbench uppdaterar automatiskt referenserna i den nya cellen så att de refererar till rätt kolumner och rader.
 
@@ -48,7 +50,7 @@ Data Workbench uppdaterar automatiskt referenserna i den nya cellen så att de r
 
 **Infoga en rad**
 
-* Högerklicka på en rad och klicka på **[!UICONTROL Insert Row]**. Den nya raden infogas ovanför den markerade raden.
+* Högerklicka på en rad och klicka **[!UICONTROL Insert Row]**. Den nya raden infogas ovanför den markerade raden.
 
 **Ta bort en rad**
 
@@ -77,30 +79,30 @@ Data Workbench uppdaterar automatiskt referenserna i den nya cellen så att de r
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Nummer </p> </td> 
-   <td colname="col2"> <p>Tillämpar det markerade numeriska formatet på data, t.ex. tid, datum, procent eller decimal. </p> <p>Klicka på <span class="uicontrol"> Standard</span> om du vill ta bort den markerade formateringen. </p> </td> 
+   <td colname="col2"> <p>Tillämpar det markerade numeriska formatet på data, t.ex. tid, datum, procent eller decimal. </p> <p>Klicka <span class="uicontrol"> Standard</span> om du vill ta bort den markerade formateringen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Justera </p> </td> 
-   <td colname="col2"> <p>Justerar data i cellen åt vänster, mitten eller höger. Standardjusteringen är kvar. </p> <p>Klicka på <span class="uicontrol"> Standard</span> om du vill ta bort den markerade formateringen. </p> </td> 
+   <td colname="col2"> <p>Justerar data i cellen åt vänster, mitten eller höger. Standardjusteringen är kvar. </p> <p>Klicka <span class="uicontrol"> Standard</span> om du vill ta bort den markerade formateringen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Färg </p> </td> 
-   <td colname="col2"> <p>Den valda teckenfärgen används på cellens data. Standardteckenfärgen är vit. </p> <p>Klicka på <span class="uicontrol"> Standard</span> om du vill ta bort den markerade formateringen. </p> </td> 
+   <td colname="col2"> <p>Den valda teckenfärgen används på cellens data. Standardteckenfärgen är vit. </p> <p>Klicka <span class="uicontrol"> Standard</span> om du vill ta bort den markerade formateringen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Indikator </p> </td> 
-   <td colname="col2"> <p>Skapar en måttindikator med den här cellen. Mer information finns i <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Skapa måttindikatorer</a>. </p> <p>Klicka på <span class="uicontrol"> Standard</span> om du vill ta bort den markerade formateringen. </p> </td> 
+   <td colname="col2"> <p>Skapar en måttindikator med den här cellen. Mer information finns i <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Skapar måttindikatorer</a>. </p> <p>Klicka <span class="uicontrol"> Standard</span> om du vill ta bort den markerade formateringen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Indatacell </p> </td> 
-   <td colname="col2"> <p>Gör den markerade cellen till en indatacell. Mer information finns i <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Skapa indataceller</a>. </p> <p>Klicka på <span class="uicontrol"> Standard</span> om du vill ta bort den markerade formateringen. </p> </td> 
+   <td colname="col2"> <p>Gör den markerade cellen till en indatacell. Mer information finns i <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Skapa indataceller</a>. </p> <p>Klicka <span class="uicontrol"> Standard</span> om du vill ta bort den markerade formateringen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Kortkommandon {#section-05301f4d2c60418e86902635a7aeee20}
 
-I kalkylblad kan du använda många av de grundläggande kortkommandona för redigering som du kan använda i valfri textredigerare, t.ex. Anteckningar eller Microsoft Word.
+I kalkylblad kan du använda många av de grundläggande kortkommandona för redigering som du kan använda i valfri textredigerare, till exempel Anteckningar eller Microsoft Word.
 
 I följande tabell visas de grundläggande kortkommandona som du kan använda när du anger data i ett kalkylblad.
 

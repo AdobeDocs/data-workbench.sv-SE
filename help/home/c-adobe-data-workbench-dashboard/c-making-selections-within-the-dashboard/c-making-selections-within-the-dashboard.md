@@ -3,7 +3,7 @@ description: Data på en kontrollpanel kan enkelt segmenteras och utforskas med 
 title: Göra markeringar på kontrollpanelen
 uuid: b28bcc11-8fd3-4431-98ba-8adbd42a73d5
 exl-id: 18475e5c-97f4-42fd-883a-f822432b5301
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Göra markeringar på kontrollpanelen{#making-selections-within-the-dashboard}
+
+{{eol}}
 
 Data på en kontrollpanel kan enkelt segmenteras och utforskas med hjälp av markeringar.
 

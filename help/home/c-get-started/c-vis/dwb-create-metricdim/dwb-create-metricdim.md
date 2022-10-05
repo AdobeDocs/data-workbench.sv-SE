@@ -3,7 +3,7 @@ description: Använd guiden Metrisk nedtoning för att skapa en ny Dimension.
 title: Guiden Metrisk dim
 uuid: 77b9bc8e-7625-4fef-9de4-f113f9b2debd
 exl-id: 109fbefc-5608-493d-aec9-8337f21eaa70
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -12,17 +12,19 @@ ht-degree: 0%
 
 # Guiden Metrisk dim{#metric-dim-wizard}
 
+{{eol}}
+
 Använd guiden Metrisk nedtoning för att skapa en ny Dimension.
 
 Med en metrisk toning omvandlas ett mått till en ny dimension. Om du t.ex. använder en måttenhet som bygger på måtten för sidvyer och nivån för besökare visas dimensionselement baserat på den totala sidvyn för varje besökare. Med den kan du utöka ett definierat mått baserat på dimensionselement för att skapa och spara som en ny dimension.
 
 ## Steg 1: välj dimension och mått {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
 
-1. **Öppna guiden** Metrisk dim.
+1. **Öppna guiden Metrisk dim**.
 
-   Högerklicka på en arbetsyta och välj **Verktyg** > **Skapa metrisk dim**.
+   Högerklicka och välj på en arbetsyta **verktyg** > **Skapa metrisk dim**.
 
-1. **Ange namnet Metrisk dim**.
+1. **Namnge måttet**.
 
    Som standard fylls namnfältet i automatiskt baserat på nivå- och måttval.
 
@@ -48,19 +50,19 @@ Med en metrisk toning omvandlas ett mått till en ny dimension. Om du t.ex. anv�
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   Du kan lägga till ett eget [måttuttryck](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) eller klippa ut och klistra in från en annan måttredigerare eller visualisering. Syntaxfel, formelfel, odefinierade filter och andra fel rapporteras i guiden.
+   Du kan lägga till egna [metriskt uttryck](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) eller klippa ut och klistra in från en annan måttredigerare eller visualisering. Syntaxfel, formelfel, odefinierade filter och andra fel rapporteras i guiden.
 
-1. Klicka på **Nästa**.
+1. Klicka **Nästa**.
 
 ## Steg 2: formatera och ange bucklar {#section-5bddf3cd306545d7806a501637f80f77}
 
 Du kan välja måttformat och ange bucketvärden för ett dimensionsuttryck.
 
-1. Välj **Format** för den nya måttdim.
+1. Välj en **Format** för den nya metriska tonen.
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   Formatet definierar hur måttet presenteras när det öppnas i en visualisering. Dessa format är valda [utskriftsstandarder](https://www.cplusplus.com/reference/cstdio/printf/), som definieras nedan:
+   Formatet definierar hur måttet presenteras när det öppnas i en visualisering. Dessa format är markerade [tryckstandarder](https://www.cplusplus.com/reference/cstdio/printf/), definieras nedan:
 
    ```
    %[flags][width][.precision][length][specifier]
@@ -68,20 +70,20 @@ Du kan välja måttformat och ange bucketvärden för ett dimensionsuttryck.
    0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   I fältet **Förhandsgranska** visas ett värde baserat på det valda måttet och formatet.
+   I **Förhandsgranska** visas ett värde baserat på det valda måttet och formatet.
 
-1. Lägg till uttrycket **Antal buffertar**.
+1. Lägg till **Antal buffertar** -uttryck.
 
-   Du kan definiera en måtttoning med olika intervall, eller intervall. Detta returnerar delmängder av element baserat på storlek, t.ex. [0-4], [5-10],..). Elementen på Dimensionen Nivå relaterar till de element vars intervall innehåller måttvärdet. Se beskrivningen av bucket-uttrycket på [Syntax for Dimension Expressions](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
+   Du kan definiera en måtttoning med olika intervall, eller intervall. Detta returnerar deluppsättningar av element baserat på storlek, som [0-4], [5-10]...). Elementen på Dimensionen Nivå relaterar till de element vars intervall innehåller måttvärdet. Se beskrivningen av bucket-uttrycket på [Syntax för Dimension-uttryck](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
 
-1. Klicka på **Förhandsgranska** om du vill öppna tabellen med värden för Metrisk Dim innan du sparar.
+1. Klicka **Förhandsgranska** om du vill öppna tabellen med värden för Metrisk Dim innan du sparar.
 
    ![](assets/6_4_workstation_metricdim_preview.png)
 
    Registret innehåller mätvärden per metrisk dim.
 
-1. Klicka på **Visa på Dimension-menyn** för att lägga till den nyligen skapade dimensionen på fliken **Dimension** i **Finder**.
-1. Klicka på **Nästa**.
+1. Klicka **Visa på Dimension-menyn** för att lägga till den nyligen skapade dimensionen i **Dimension** i **Finder**.
+1. Klicka **Nästa**.
 
 ## Steg 3: avsluta och spara {#section-d9043235b18a425f9de0db668d4b1683}
 
@@ -93,6 +95,6 @@ Du kan välja måttformat och ange bucketvärden för ett dimensionsuttryck.
    | Starta diagram | Starta en PNG-bild av tabellen. |
    | Starta tabell | Starta en tabell på arbetsytan med värden i kolumner som visar värden för den nya metriska dim-metoden jämfört med värdena för det valda måttet. |
 
-1. Klicka på **Slutför** och spara.
+1. Klicka **Slutför** och spara.
 
    En dialogruta öppnas där du kan spara filen. De valda alternativen för att visa värden öppnas på arbetsytan.

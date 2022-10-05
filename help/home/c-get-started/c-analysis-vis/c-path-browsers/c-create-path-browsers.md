@@ -3,7 +3,7 @@ description: Du kan skapa en sökvägsläsare från ett diagram, en tabell eller
 title: Skapa sökvägsläsare
 uuid: 84a5e587-fb02-461b-aec8-1b6ad473ebc3
 exl-id: 9fa11b84-da73-447a-8b10-7eab381e3f66
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Skapa sökvägsläsare{#creating-path-browsers}
+
+{{eol}}
 
 Du kan skapa en sökvägsläsare från ett diagram, en tabell eller ett processdiagram.
 
@@ -22,7 +24,7 @@ Du kan skapa en sökvägsläsare från ett diagram, en tabell eller ett processd
 
 >[!NOTE]
 >
->Om du drar ett element till en sökvägsläsare kan det ändra grunddimensionen som är kopplad till sökvägsläsaren, men det påverkar inte nivådimensionen, gruppdimensionen eller måttet. Därför måste du vara försiktig när du väljer en basdimension som är bra när du använder den tillsammans med webbläsarens nivådimension, gruppdimension och mätvärden. Om du vill ändra nivådimensionen, gruppdimensionen eller måttet måste du redigera sökvägen till webbläsarens [!DNL *.vw]-fil i en textredigerare som Anteckningar. Se [Konfigurera sökvägsläsare](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
+>Om du drar ett element till en sökvägsläsare kan det ändra grunddimensionen som är kopplad till sökvägsläsaren, men det påverkar inte nivådimensionen, gruppdimensionen eller måttet. Därför måste du vara försiktig när du väljer en basdimension som är bra när du använder den tillsammans med webbläsarens nivådimension, gruppdimension och mätvärden. Om du vill ändra nivådimensionen, gruppdimensionen eller måttet måste du redigera sökvägsläsarens [!DNL *.vw] i en textredigerare som Anteckningar. Se [Konfigurera sökvägsläsare](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
 
 **Skapa en sökvägsläsare från en processkarta**
 

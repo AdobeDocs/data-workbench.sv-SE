@@ -3,7 +3,7 @@ description: Skapa en användargrupp
 title: Skapa en användargrupp
 uuid: 8a474480-81fa-4a86-9937-2fb82e949436
 exl-id: 8af9d635-ff07-486f-845a-44541d577fad
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 2%
@@ -12,7 +12,9 @@ ht-degree: 2%
 
 # Skapa en användargrupp{#creating-a-user-group}
 
-1. Klicka på **[!UICONTROL Create Group]** för att öppna formuläret **[!UICONTROL New Group]**.
+{{eol}}
+
+1. Klicka **[!UICONTROL Create Group]** för att ta fram **[!UICONTROL New Group]** formulär.
 
    ![](assets/create_user_group.png)
 
@@ -37,14 +39,14 @@ ht-degree: 2%
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Behörigheter</strong></td> 
-    <td class="chdesc stentry"> <p> <span class="uicontrol"> Administratör</span>: Spara, visa, ändra och ta bort alla instrumentpaneler för alla profiler. Med administratörsbehörighet kan en användare logga in i administrationsområdet och utföra alla administrativa funktioner. </p> <p> <span class="uicontrol"> Skrivskyddad</span>: Begränsa behörigheter till skrivskyddad för instrumentpaneler. Användaren kan inte lägga till eller ändra visualiseringar eller spara instrumentpaneler. </p> <p> <b>Inga behörigheter har kontrollerats  </b>(standard): Inga markerade behörigheter ger gruppen vanliga användarbehörigheter. Dessa användare kan skapa och ändra visualiseringar, spara kontrollpaneler och visa de kontrollpaneler de har tillgång till. </p> </td> 
+    <td class="chdesc stentry"> <p> <span class="uicontrol"> Administratör</span>: Spara, visa, ändra och ta bort alla instrumentpaneler för alla profiler. Med administratörsbehörighet kan en användare logga in i administrationsområdet och utföra alla administrativa funktioner. </p> <p> <span class="uicontrol"> Skrivskyddad</span>: Begränsa behörigheter till skrivskyddad för instrumentpaneler. Användaren kan inte lägga till eller ändra visualiseringar eller spara instrumentpaneler. </p> <p> <b>Inga behörigheter har kontrollerats </b>(standard): Inga markerade behörigheter ger gruppen vanliga användarbehörigheter. Dessa användare kan skapa och ändra visualiseringar, spara kontrollpaneler och visa de kontrollpaneler de har tillgång till. </p> </td> 
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Tillgängliga användare/gruppmedlemmar</strong></td> 
-    <td class="chdesc stentry">Dra och släpp användare från listan <span class="uicontrol"> Tillgängliga användare</span> till <span class="uicontrol"> Gruppmedlemmar </span>. Gruppmedlemmarna kan ändras när som helst. </td> 
+    <td class="chdesc stentry">Dra och släpp användare från listan med <span class="uicontrol"> Tillgängliga användare</span> till <span class="uicontrol"> Gruppmedlemmar </span>-avsnitt. Gruppmedlemmarna kan ändras när som helst. </td> 
     </tr> 
     </table>
 
-1. Klicka på **[!UICONTROL Create Group]** för att skapa användargruppen.
+1. Klicka **[!UICONTROL Create Group]** för att skapa användargruppen.
 
    Om åtgärden lyckades visas ett meddelande om att användargruppen skapades.

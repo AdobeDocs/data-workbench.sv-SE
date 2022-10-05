@@ -3,7 +3,7 @@ description: Information om baslinjehändelsedatapostfält som registrerats av s
 title: Fält för baslinjedatapost för händelser
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Fält för baslinjedatapost för händelser{#baseline-event-data-record-fields}
+
+{{eol}}
 
 Information om baslinjehändelsedatapostfält som registrerats av sensorn.
 
@@ -72,13 +74,13 @@ Information om baslinjehändelsedatapostfält som registrerats av sensorn.
   </tr>
   <tr>
    <td colname="col1"> x-timestamp </td>
-   <td colname="col2"> <p>Datum och tid (GMT) då begäran togs emot av servern. </p> <p>Tiden uttrycks som antalet 100 nanosekunder sedan 1 januari 1600. </p> <p>Exempel: 127710989320000000 skulle vara x-timestamp-värdet för 11:28:52.000000 på tisdagen den 13 september 2005. </p> </td>
+   <td colname="col2"> <p>Datum och tid (GMT) då begäran togs emot av servern. </p> <p>Tiden uttrycks som antalet 100 nanosekunder sedan 1 januari 1600. </p> <p>Exempel: 12771098932000000 skulle vara x-timestamp-värdet för 11:28:52.000000 på tisdag den 13 september 2005. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-trackingid </td>
-   <td colname="col2"> <p>64-bitars hexadecimalt värde för den unika webbläsaridentifieraren som finns i en beständig cookie som anges av en <span class="wintitle">-sensor </span> och som tillhandahålls av klienten med en begäran till en server. </p> <p>Exempel: 42FDF66DE610CF36 </p> </td>
+   <td colname="col2"> <p>Det 64-bitars hexadecimala värdet för den unika webbläsaridentifieraren som finns i en beständig cookie som anges av en <span class="wintitle"> Sensor </span> och tillhandahålls av klienten med en begäran till en server. </p> <p>Exempel: 42FDF66DE610CF36 </p> </td>
   </tr>
  </tbody>
 </table>
 
-[!DNL data workbench server] kan härleda ett antal variabler från baslinjehändelsedatafälten. Mer information finns i *Konfigurationshandboken för datauppsättningar*.
+The [!DNL data workbench server] kan härleda ett antal variabler från baslinjehändelsedatafälten. Mer information finns i *Konfigurationshandbok för datauppsättning*.

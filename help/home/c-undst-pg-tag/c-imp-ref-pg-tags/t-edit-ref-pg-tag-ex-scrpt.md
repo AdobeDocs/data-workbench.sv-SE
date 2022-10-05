@@ -3,7 +3,7 @@ description: Taggen för referenssidan består av ett körningsskript för sidta
 title: Redigera körningsskript för referenssidans tagg
 uuid: 0db00b89-e420-423d-9b88-8b724baa828f
 exl-id: bc922b59-716e-4e92-84b5-59a52620df03
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # Redigera körningsskript för referenssidans tagg{#editing-the-reference-page-tag-execution-script}
 
+{{eol}}
+
 Taggen för referenssidan består av ett körningsskript för sidtaggar som finns på en webbserver, och när den anropas samlas alla klientdata för sidan som begärts av besökaren.
 
-Du kan ändra [!DNL Reference Page Tag Execution Script] om du vill samla in ytterligare information som kan identifieras under möten med Adobe Consulting Services-teamet. [!DNL Reference Page Tag Execution Script] är relativt liten för att undvika stora nedladdningstillägg på dina webbsidor.
+Du kan ändra [!DNL Reference Page Tag Execution Script] Samla in ytterligare information som kan identifieras under kravsammankomster och samla in möten med Adobe konsulttjänster. The [!DNL Reference Page Tag Execution Script] är relativt liten för att undvika stora nedladdningstillägg på webbsidorna.
 
-Du får följande [!DNL Reference Page Tag Execution Script]-kod i en fil med namnet [!DNL zig.js]:
+Följande [!DNL Reference Page Tag Execution Script] koden finns i en fil med namnet [!DNL zig.js]:
 
 ```
 //REFERENCE PAGE TAG 
@@ -60,19 +62,19 @@ document.write(ct,cd,cu,vo,ce);
 //END REFERENCE PAGE TAG 
 ```
 
-Gör så här för att underlätta datainsamling med [!DNL Reference Page Tag]:
+Att underlätta datainsamling genom att använda [!DNL Reference Page Tag]utför du följande steg:
 
-1. Skapa eller placera bildfilen med 1 x 1 pixel och namnet [!DNL zag.gif] i en katalog som finns på webbservern.
-1. Ändra cd-variabeln så att den refererar till rätt domän för webbplatsen eller den Adobe-hanterade tjänstdomänen som [!DNL zag.gif]-filen refereras till från. Referensen till filen skapas genom att köra filfunktionerna i [!DNL zig.js]. Exempel:
+1. Skapa eller montera en bildfil med namnet 1 x 1 pixel [!DNL zag.gif] till en katalog som finns på webbservern.
+1. Ändra cd-variabeln så att den refererar till rätt domän för din webbplats eller Adobe-hanterade tjänstdomän som den [!DNL zag.gif] filen refereras. Referensen till filen skapas genom att körningen av [!DNL zig.js] filfunktioner. Exempel:
 
    ```
    //www.mysite.com
    ```
 
-1. Ändra cu-variabeln så att den refererar till rätt sökväg till platsen för [!DNL zag.gif]-filen. Exempel
+1. Ändra Cu-variabeln så att den refererar till rätt sökväg till platsen för [!DNL zag.gif] -fil. Exempel
 
    ```
    /scripts
    ```
 
-1. Kontrollera att rätt cachekontrollhuvuden har skapats för filerna [!DNL zag.gif] och [!DNL zig.js].
+1. Se till att rätt cachekontrollhuvuden har skapats för [!DNL zag.gif] och [!DNL zig.js] filer.

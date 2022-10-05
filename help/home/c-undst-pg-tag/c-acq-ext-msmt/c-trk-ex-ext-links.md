@@ -3,7 +3,7 @@ description: Samla in aktivitet över webbplatslänkar från tredje part för at
 title: Spåra avslut till externa länkar
 uuid: 523f5b4c-4600-4d44-82e7-4a8b2db2d266
 exl-id: fd7434e9-cd66-408e-baa9-6a0df4039786
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Spåra avslut till externa länkar{#tracking-exits-to-external-links}
+
+{{eol}}
 
 Samla in aktivitet över webbplatslänkar från tredje part för att aktivera analys av slutmål.
 
@@ -20,7 +22,7 @@ Webbsidor kan innehålla länkar till tredjepartswebbplatser, och aktivitet öve
 <A HREF=”https://www.myserver.com/PageExit.htm?v_eurl=https://www.othersite.com”>
 ```
 
-Den refererade [!DNL PageExit.htm]-filen måste skapas och ska struktureras så att den innehåller följande skript:
+Den refererade [!DNL PageExit.htm] filen måste skapas och ska struktureras så att den innehåller följande skript:
 
 ```
 <html>
@@ -51,7 +53,7 @@ location.replace(getExitURLQuery("v_eurl"));
 </html>
 ```
 
-Genom att göra en begäran för filen [!DNL PageExit.htm] samlas v_eurl-värdet in i analyssyfte. När [!DNL PageExit.htm] har lästs in dirigeras den dessutom omedelbart om till den angivna v_eurl-målplatsen.
+Genom att göra en förfrågan om [!DNL PageExit.htm] filen, samlas v_eurl-värdet in för analysändamål. Dessutom, när [!DNL PageExit.htm] läses in, dirigeras omedelbart om till den angivna v_eurl-målplatsen.
 
 | Insamlade data | Förklaring | Exempel |
 |---|---|---|

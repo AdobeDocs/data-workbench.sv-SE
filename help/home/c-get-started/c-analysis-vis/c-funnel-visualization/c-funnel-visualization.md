@@ -3,7 +3,7 @@ description: Funnel-visualisering gör att ni kan identifiera var kunderna över
 title: Trattvisualisering
 uuid: 7973a7a9-ed17-4d3d-be14-37b3c17fa371
 exl-id: 2fc261fa-7c93-4de1-af32-ae5b9cbcdc0e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Trattvisualisering{#funnel-visualization}
+
+{{eol}}
 
 Funnel-visualisering gör att ni kan identifiera var kunderna överger en marknadsföringskampanj eller avviker från en definierad konverteringsväg när ni interagerar med er webbplats eller flerkanalskampanj.
 
@@ -30,7 +32,7 @@ Trattvisualiseringen ger olika datanivåer:
 
 * **[!UICONTROL Funnel by Visit]**. Den här tratten bygger på en interaktion per besök.
 * **[!UICONTROL Funnel by Visitor]**. Den här tratten baseras på en&quot;per besökare&quot;-interaktion. I den här vyn visas data baserat på besöksordningen.
-* Dimensionen **Klipp** och dimensionen **Nivå**. Trattdimensionerna kan ändras genom att du väljer måtten Klickning, Träff, Produkt, Besök eller Besöksnivå.
+* The **Klipp** dimension och **Nivå** dimension. Trattdimensionerna kan ändras genom att du väljer måtten Klickning, Träff, Produkt, Besök eller Besöksnivå.
 
 * **Mätvärden**. Du kan ändra de underliggande trattmåtten från besök som används för att skapa tratten till valfritt mätvärde i din profil. Med Trattvisualisering kan ni fördjupa er i era data och analysera mönstren för besökare med flera baslinjevärden.
 

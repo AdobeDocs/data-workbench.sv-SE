@@ -2,20 +2,21 @@
 description: Följ de här stegen för att uppgradera till Data Workbench v6.4.
 title: Uppgraderar 6.3 till 6.4
 uuid: 2461c1ab-cf99-4fb5-b431-d7062df7a53d
-translation-type: tm+mt
-source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+exl-id: 540deb86-2463-4820-b67a-a32d68b4346e
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
-
 # Uppgraderar 6.3 till 6.4{#upgrading-to}
+
+{{eol}}
 
 Följ de här stegen för att uppgradera till Data Workbench v6.4.
 
-## Krav och rekommendationer för uppgradering {#section-8704a9ac358246cd81233dd0982d534f}
+## Uppgraderingskrav och Recommendations {#section-8704a9ac358246cd81233dd0982d534f}
 
 Följ dessa krav och rekommendationer när du uppgraderar till Data Workbench 6.4.
 
@@ -23,26 +24,27 @@ Följ dessa krav och rekommendationer när du uppgraderar till Data Workbench 6.
 >
 >Vi rekommenderar att du använder de nyinstallerade standardkonfigurationsfilerna och anpassar dem, i stället för att flytta filer från en tidigare installation, med följande undantag:
 
-* **Lägg till** ***undantagna processer*** för *MS System Center Endpoint Protection i Windows 2012-servrar* för följande körbara filer:
+* **Lägg till** ***Exkluderade processer*** for *MS System Center Endpoint Protection i Windows 2012-servrar* för följande körbara filer:
 
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   Detta aktiverar rättigheter för dessa korsande körbara filer.
 
-* **Uppdatera certifikatet *Trust_ca_cert.pem*på servrarna**.
+   Detta aktiverar tillåtelselista-rättigheter för dessa korsande körbara filer.
+
+* **Uppdatera *Trust_ca_cert.pem* certifikat på servrarna**.
 * **Omorganisation av attribueringsprofiler**.
 
-   * Mappen *Attribution* döptes om till ***Attribution - Premium*** (finns i standardinstallationen på *Profiles*\*Attribution - Premium*).
+   * The *Attribut* mappen har bytt namn till ***Attribution - Premium*** (finns i standardinstallationen på *Profiler*\*Attribution - Premium*).
 
-   * Profilen *Premium* togs bort och arbetsytan flyttades till den nya mappen ***Attribution - Premium*** .
+   * The *Premium* profilen togs bort och arbetsytan flyttades till den nya ***Attribution - Premium*** mapp.
 
-* **Uppdatera *Attribution-Premium*-inställningar**. Om du har anpassade profiler med parameterinställningar som åsidosätter *Adobe SC* -standardprofilen måste du uppdatera de anpassade fälten i dessa konfigurationsfiler:
+* **Uppdatera *Attribution-Premium* inställningar**. Om du har anpassade profiler med parameterinställningar som åsidosätter standardinställningarna *Adobe SC* måste du uppdatera de anpassade fälten i dessa konfigurationsfiler:
 
    * **[!DNL Decoding Instructions.cfg]**
    * **[!DNL SC Fields.cfg]**
 
-* På grund av den här omorganisationen vill du ta bort de gamla mapparna *Attribution* och *Premium* från serverinstallationen.
+* På grund av den här omorganisationen vill du ta bort den gamla *Attribut* och *Premium* mappar från serverinstallationen.
 
    **Ändra de här inställningarna**
 
@@ -72,11 +74,11 @@ Följ dessa krav och rekommendationer när du uppgraderar till Data Workbench 6.
        4 = string: Attribution - Premium\\
    ```
 
-* **Uppdatera anpassade Meta.cfg-filer** (om det behövs).
+* **Uppdatera anpassade Meta.cfg-filer** (vid behov).
 
-   Filerna **[!DNL Meta.cfg]** i **[!DNL Base\Context and AdobeSC\Context]** mapparna har uppdaterats i den här versionen.
+   The **[!DNL Meta.cfg]** filer i **[!DNL Base\Context and AdobeSC\Context]** mappar har uppdaterats i den här versionen.
 
-   Om du åsidosätter **filen meta.cfg** under installationen måste din profilkopia uppdateras med de här parametrarna och **metadatavektorn** anges korrekt:
+   Om du åsidosätter **meta.cfg** under installationen måste din profilkopia uppdateras med de här parametrarna och **metadatavektor** lämpligt angivet:
 
    ```
    94 = meta: 
@@ -97,7 +99,7 @@ Följ dessa krav och rekommendationer när du uppgraderar till Data Workbench 6.
          value = string:
    ```
 
-* **Ange behörighet** för Report Server för att skapa Microsoft Excel-rapporter på Windows 2012-servrar.
+* **Ange behörigheter för rapportservern** för att generera Microsoft Excel-rapporter på Windows 2012-servrar.
 
    1. Ange behörighet för rotmappen (**[!DNL E:\ReportServer\]**) till *Alla = full kontroll*.
 
@@ -116,7 +118,7 @@ Följ dessa krav och rekommendationer när du uppgraderar till Data Workbench 6.
 
    1. Tilldela &quot;SYSTEM&quot; som ägare för dessa mappar.
 
-* **Lägg till teckensnitt i rapportservern.** Lägg till följande teckensnitt (för alla språk) i **[!DNL ReportServer.cfg]**filen:
+* **Lägg till teckensnitt i rapportservern.** I[!DNL ReportServer.cfg]**file, add these fonts (for all languages):
 
    ```
    Fonts = vector: 3 items 
@@ -127,12 +129,12 @@ Följ dessa krav och rekommendationer när du uppgraderar till Data Workbench 6.
 
 * **Uppdatera din version av Microsoft Excel **(om det behövs).
 
-   I och med lanseringen av Data Workbench 6.4 har stödet för Excel 2007 upphört. Eftersom Data Workbench endast kan köras i Microsoft Windows med 64-bitarsarkitektur rekommenderar vi att du även installerar en 64-bitarsversion av Microsoft Excel.
+   I och med Data Workbench 6.4 har stödet för Excel 2007 upphört. Eftersom Data Workbench endast kan köras i Microsoft Windows med 64-bitarsarkitektur rekommenderar vi att du också installerar en 64-bitarsversion av Microsoft Excel.
 
-* **64-bitarsarkitektur** krävs för Workstation-installation (klient).
-* **Kör installationsguiden** för arbetsstationen.
+* **64-bitarsarkitektur** krävs för installation av arbetsstation (klient).
+* **Kör installationsguiden för arbetsstationen**.
 
-   Installera den nya versionen av arbetsstationen (klienten) genom att ladda ned och starta ***InsightSetup.exe*** och stega igenom installationsanvisningarna. Installationsguiden installerar dina filer på en ny plats som standard:
+   Installera den nya versionen av arbetsstationen (klienten) genom att hämta och starta ***InsightSetup.exe*** och stega igenom instruktionerna. Installationsguiden installerar dina filer på en ny plats som standard:
 
    Programfiler sparas nu som standard till:
 
@@ -146,9 +148,9 @@ Följ dessa krav och rekommendationer när du uppgraderar till Data Workbench 6.
    C:\Users\<username>\AppData\Local\Adobe\Adobe Analytics\Data Workbench\
    ```
 
-* **Lägg till teckensnitt i arbetsstationen**.
+* **Lägga till teckensnitt i arbetsstationen**.
 
-   Lägg till följande teckensnitt (för alla språk) i **[!DNL Insight.cfg]** filen:
+   I **[!DNL Insight.cfg]** lägger du till följande teckensnitt (för alla språk):
 
    ```
    Fonts = vector: 3 items 
@@ -156,4 +158,3 @@ Följ dessa krav och rekommendationer när du uppgraderar till Data Workbench 6.
      1 = string: SimSun 
      2 = string: MS Mincho
    ```
-
