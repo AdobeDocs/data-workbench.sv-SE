@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: c92c1e5688ca867caf1f3d4a6a3e44dafb5b3734
+source-git-commit: 73c7ad435917ab17022494f6f73d2c626363dcc2
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Highlighting should start after this paragraph.
 
 Last highlighted paragraph
 
-<\div>
+</div>
 
 Not highlighted
 ```
@@ -140,7 +140,7 @@ Not highlighted
 
 Senast markerade stycke
 
-&lt;\div>
+</div>
 
 Ej markerad
 
