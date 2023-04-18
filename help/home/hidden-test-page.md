@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: fd815415e55e72ab01a1beee9b7ebed0432eded9
+source-git-commit: 3c3a0289ae50d407a83ca8878af59ecde5e86e8d
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,6 @@ Det finns två typer av emblem med olika syntax:
 
 * **Metadata** - Visar märket nära en sidas överkant
 * **Textbunden** - Visar märket där syntaxen finns
-
-![Exempel på emblem](assets/badge-examples.png "Exempel på emblem"){width="200" zoomable="yes"}
 
 ### Metadata-emblem
 
