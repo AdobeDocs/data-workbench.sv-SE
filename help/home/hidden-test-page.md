@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 3c3a0289ae50d407a83ca8878af59ecde5e86e8d
+source-git-commit: c92c1e5688ca867caf1f3d4a6a3e44dafb5b3734
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Exempel på syntax
 
 Workfront-teamet bad om att få använda gula markeringar för att visa hur man förhandsgranskar kommande funktioner. Så här fungerar det.
 
-Exempel:
+Exempel 1:
 
 ```
 This entire paragraph should NOT be highlighted. <span class="preview"> This word is **bold** inside a highlighted sentence.</span> And this is just the last sentence.
@@ -107,6 +107,42 @@ This entire paragraph should NOT be highlighted. <span class="preview"> This wor
 Återgiven:
 
 Hela stycket ska INTE markeras. <span class="preview"> Det här ordet är **fet** inuti en markerad mening.</span> Och det här är bara den sista meningen.
+
+Exempel 2:
+
+```
+Highlighting should start after this paragraph.
+
+<div class="preview">
+
+**This is a test**
+
+>[!TIP]
+>
+>Drink 6 cups of water a day.
+
+Last highlighted paragraph
+
+<\div>
+
+Not highlighted
+```
+
+Återgiven: Markeringen ska börja efter det här stycket.
+
+<div class="preview">
+
+**Detta är ett test**
+
+>[!TIP]
+>
+>Drick 6 koppar vatten om dagen.
+
+Senast markerade stycke
+
+&lt;\div>
+
+Ej markerad
 
 Som allmän regel gäller följande: `<span class="preview">` för att markera ett stycke eller en text i ett stycke och använda `<div class="preview">` för flera stycken och komponenter.
 
