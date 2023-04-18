@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 87af4ae77f71701b52247f996b89edfb93794dd7
+source-git-commit: c08189cf57f08fc5be4bc24ec06d9b9a865a53c8
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -113,17 +113,21 @@ Exempel 2:
 ```
 Highlighting should start after this paragraph.
 
-<span class="preview">
+<div class="preview">
 
-**This is a test**
+Start of DIV.
 
->[!TIP]
+>[!NOTE]
 >
->Drink 6 cups of water a day.
+>This is a note.
+>
+>I have a request to highlight the note's background.
 
-Last highlighted paragraph
+![image](/help/quicksilver/administration-and-setup/add-users/create-and-manage-users/assets/add-admin-1.png)
 
-</span>
+Last highlighted item.
+
+</div>
 
 Not highlighted
 ```
@@ -132,17 +136,21 @@ Not highlighted
 
 Markeringen ska börja efter det här stycket.
 
-<span class="preview">
+<div class="preview">
 
-**Detta är ett test**
+DIV börjar.
 
->[!TIP]
+>[!NOTE]
 >
->Drick 6 koppar vatten om dagen.
+>Det här är en lapp.
+>
+>Jag har en begäran om att belysa anteckningens bakgrund.
 
-Senast markerade stycke
+![image](/help/home/assets/analytics-icon-24.png)
 
-</span>
+Senast markerat objekt.
+
+</div>
 
 Ej markerad
 
