@@ -4,19 +4,19 @@ product: analytics
 audience: end-user
 feature-set: Analytics
 feature: Data Workbench
-user-guide-title: Hjälp om Data Workbench
-user-guide-description: Läs mer om Datans Workbench flerkanalsfunktioner. Innefattar handböcker om Data Workbench Client, Installation, Dataset Configuration med mera.
-source-git-commit: 90b9fff995cb37a62024f454f009e9e0d7b927cd
+user-guide-title: Hjälp med Data Workbench
+user-guide-description: Lär dig mer om flerkanalsfunktionerna i Data Workbench. Innefattar användarhandböcker om Data Workbench-klient, installation, konfiguration av datauppsättningar med mera.
+source-git-commit: fd815415e55e72ab01a1beee9b7ebed0432eded9
 workflow-type: tm+mt
-source-wordcount: '3498'
-ht-degree: 0%
+source-wordcount: '3501'
+ht-degree: 1%
 
 ---
 
 
-# Hjälp om Data Workbench {#using}
+# Hjälp med Data Workbench {#using}
 
-+ [Hjälp om Data Workbench](home.md)
++ [Hjälp med Data Workbench](home.md)
 + [Meddelande om att produkten är slut](eol.md)
 + Versionsinformation {#release-notes}
    + [Översikt över versionsinformation](c-release-notes-insight/release-notes.md)
@@ -963,3 +963,4 @@ ht-degree: 0%
 + [Fråge-API](https://www.adobe.io/)
 + [Integrering av Data Workbench med Adobe Target](dwb-adobe-target.md)
 + [Datans Workbench ordlista](dwb-glossary.md)
++ [Dold testsida](hidden-test-page.md)
