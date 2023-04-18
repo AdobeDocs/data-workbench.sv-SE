@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 73c7ad435917ab17022494f6f73d2c626363dcc2
+source-git-commit: 87af4ae77f71701b52247f996b89edfb93794dd7
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Exempel 2:
 ```
 Highlighting should start after this paragraph.
 
-<div class="preview">
+<span class="preview">
 
 **This is a test**
 
@@ -123,14 +123,16 @@ Highlighting should start after this paragraph.
 
 Last highlighted paragraph
 
-</div>
+</span>
 
 Not highlighted
 ```
 
-Återgiven: Markeringen ska börja efter det här stycket.
+Återgiven:
 
-<div class="preview">
+Markeringen ska börja efter det här stycket.
+
+<span class="preview">
 
 **Detta är ett test**
 
@@ -140,11 +142,9 @@ Not highlighted
 
 Senast markerade stycke
 
-</div>
+</span>
 
 Ej markerad
-
-Som allmän regel gäller följande: `<span class="preview">` för att markera ett stycke eller en text i ett stycke och använda `<div class="preview">` för flera stycken och komponenter.
 
 ## Syntaxmarkering för kodblock
 
