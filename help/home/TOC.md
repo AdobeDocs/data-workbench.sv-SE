@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Hjälp med Data Workbench
 user-guide-description: Lär dig mer om flerkanalsfunktionerna i Data Workbench. Innefattar användarhandböcker om Data Workbench-klient, installation, konfiguration av datauppsättningar med mera.
-source-git-commit: fd815415e55e72ab01a1beee9b7ebed0432eded9
+source-git-commit: 35cd94fdde735cc24f88083a16881a12bbc33f4f
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3504'
 ht-degree: 1%
 
 ---
@@ -964,3 +964,4 @@ ht-degree: 1%
 + [Integrering av Data Workbench med Adobe Target](dwb-adobe-target.md)
 + [Datans Workbench ordlista](dwb-glossary.md)
 + [Dold testsida](hidden-test-page.md)
++ [Översikt över dolt stöd](hidden-support-overview.md)
