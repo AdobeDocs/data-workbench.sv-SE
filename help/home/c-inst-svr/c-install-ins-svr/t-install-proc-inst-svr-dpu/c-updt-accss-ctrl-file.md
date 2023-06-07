@@ -3,9 +3,9 @@ description: Filen Access Control.cfg hanterar åtkomsten till vissa funktioner 
 title: Uppdaterar åtkomstkontrollsfilen
 uuid: f73651e5-6a8b-45fc-8f36-6751304dc53c
 exl-id: 551758c1-f24b-49e6-ab6e-09979511e4f4
-source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+source-git-commit: 5ce5b8f8b35d2d4f319076f54347e300e5f133df
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '472'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Den definierar entiteter som kallas AccessGroups. En AccessGroup identifierar en
 
 Innan du kan ansluta till [!DNL Insight Server] med [!DNL Insight]måste du uppdatera åtkomstgruppen Administratörer så att den innehåller en av [!DNL Insight] licenser som Adobe har utfärdat till din organisation. Den här AccessGroup identifierar användare som har behörighet att utföra administrativa funktioner via [!DNL Insight].
 
-I proceduren nedan beskrivs hur du lägger till en licens i gruppen Administrators AccessGroup. För att kunna utföra den här uppgiften måste du bestämma vilken [!DNL Insight] licensen har administratörsbehörighet för din organisation. (För den första konfigurationen och konfigurationen räcker det att ge administratörsbehörighet till en licens. Du kan ge ytterligare licenser administratörsbehörighet senare.) Du måste också känna till det&quot;vanliga namnet&quot; som tilldelats den här licensen. För att få fram det här värdet kan du undersöka licenscertifikaten för ditt konto på [https://aap.adobe.com](https://aap.adobe.com).
+I proceduren nedan beskrivs hur du lägger till en licens i gruppen Administrators AccessGroup. För att kunna utföra den här uppgiften måste du bestämma vilken [!DNL Insight] licensen har administratörsbehörighet för din organisation. (För den första konfigurationen och konfigurationen räcker det att ge administratörsbehörighet till en licens. Du kan ge ytterligare licenser administratörsbehörighet senare.) Du måste också känna till det&quot;vanliga namnet&quot; som tilldelats den här licensen.
 
 Syftet med detta förfarande är att identifiera en licensierad kopia av [!DNL Insight] som du kan använda för att konfigurera och konfigurera [!DNL Insight Server]. När du har identifierat den här licensen kan du utföra all efterföljande serverkonfiguration (inklusive ytterligare AccessGroup-konfiguration) med den licensierade kopian av [!DNL Insight]. Mer information om hur du styr åtkomst till servern med hjälp av AccessGroups finns i [Konfigurera åtkomstkontroll](../../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md#concept-ac385e870dbe4b57a72bf7266b60f93d).
 

@@ -3,9 +3,9 @@ description: När du har konfigurerat DWB kan du implementera dessa funktioner.
 title: Data Workbench implementering av funktioner
 uuid: f7eec017-f27c-4ae0-bc23-45195fc08d81
 exl-id: 4b2625a6-cc44-4281-b532-fc29e8c06105
-source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+source-git-commit: 5ce5b8f8b35d2d4f319076f54347e300e5f133df
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -39,5 +39,3 @@ När du har konfigurerat DWB kan du implementera dessa funktioner.
 * Att implementera **Prediktiv intelligens med binomial Correlation**, se [Binomiskt korrelation](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html).
 
 * Att implementera **Prediktiv intelligens med binomial Correlation**, se [Korrelationsmatris](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html).
-
-* Om du vill konfigurera och validera DWB Dashboard går du till [Adobe Data Workbench Licensing Portal](https://license.visualsciences.com/License/#documentation). Se även [Grundläggande introduktionsinstruktioner](../../../home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md#concept-e93aba41b26a410f959c5ca7f8e33355).
