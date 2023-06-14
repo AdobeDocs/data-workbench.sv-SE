@@ -6,9 +6,9 @@ hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: a3625867de6b7b8f8b7f71b3b124f028356dabad
+source-git-commit: 62b03629815f33344189c2562bc486301878a146
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 0%
 # Dold testsida
 
 ## Anteckningstyper
-
 
 Alla anteckningstyper som stöds.
 
@@ -42,7 +41,7 @@ Alla anteckningstyper som stöds.
 
 >[!ADMIN]
 >
->Det här är en administratörsanteckning. Endast EXL.
+>Det här är en administratörsanteckning som återges som ADMINISTRATION. Endast EXL.
 
 >[!AVAILABILITY]
 >
@@ -68,7 +67,6 @@ Alla anteckningstyper som stöds.
 >
 >* Sida 1
 >* Sidan 2
-
 
 ## Badges
 
@@ -142,13 +140,13 @@ Exempel på syntax
 * Om flera metadatamärkningar anges visas märken i alfabetisk ordning baserat på märkordsnamnet, till exempel `badge1:` eller `badgeWeb`.
 * Om du vill att URL:en ska öppnas på en ny flik använder du den här syntaxen:
 
-   ```
-   [!BADGE Open in new tab]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Open adobe.com in new tab"}
-   ```
+  ```
+  [!BADGE Open in new tab]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Open adobe.com in new tab"}
+  ```
 
-   Återgiven:
+  Återgiven:
 
-   [!BADGE Öppna på ny flik]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Öppna adobe.com på en ny flik"}
+  [!BADGE Öppna på ny flik]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Öppna adobe.com på en ny flik"}
 
 ## Textmarkering
 
