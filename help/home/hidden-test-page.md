@@ -3,17 +3,23 @@ title: Dold testsida
 description: Den här sidan är dold för sökning och från innehållsförteckningen
 hide: true
 hidefromtoc: true
-badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
-badgeExam: label="Exam ADO-E903" type="neutral"
+badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Ladda ned Premium"
+badgeExam: label="tentamen ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 62b03629815f33344189c2562bc486301878a146
+source-git-commit: 3480cc9b82a5561a364a88f3d09c14cca56a0c7a
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
 
 # Dold testsida
+
+## Problem med förhandsgranskning
+
+Följande stycke återges inte korrekt i VSC-förhandsvisning. Jag är inte säker på varför.
+
+Om ditt lösenord hanteras av [!DNL Adobe]kan du [ändra lösenordet i ditt Adobe-konto](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 ## Anteckningstyper
 
