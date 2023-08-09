@@ -6,14 +6,16 @@ hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Ladda ned Premium"
 badgeExam: label="tentamen ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 3480cc9b82a5561a364a88f3d09c14cca56a0c7a
+source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
 # Dold testsida
+
+Vill du aktivera?
 
 ## Problem med förhandsgranskning
 
@@ -118,7 +120,7 @@ För märken används färger som definieras i Adobe Spectrum:
 |---|---|
 | Informativ (standard) | [!BADGE Beta]{type=Informative url="https://www.example.com"} |
 | Positiv | [!BADGE Ny funktion]{type=Positive url="https://www.example.com" tooltip="Gå till example.com"} |
-| Negativ | [!BADGE Avbruten]{type=negative tooltip="Den här funktionen är nu inte längre aktiv"} |
+| Negativ | [!BADGE Avbruten]{type=negative tooltip="Den här funktionen är nu inte längre användbar"} |
 | Neutral | [!BADGE Kanske]{type=Neutral tooltip="En ryttare föll av hästen..."} |
 | Varning | [!BADGE Attention]{type=Caution tooltip="Gul status"} |
 
@@ -142,7 +144,7 @@ Exempel på syntax
 * Lägga till ett märke till `metadata-new.md` visar märket på alla artiklar i ett svar.
 * Se till att alla värden är omslutna av citattecken för metadatamärken. För infogade emblem måste du se till att `url` och `tooltip` är omslutna av citattecken.
 * Giltiga typvärden är *Informativ* (standard, blå), *Positiv* (grönt), *Negativ* (röd), *Neutral* (mörkgrå), och *Varning* (gult).
-* Märkesetiketter är lokaliserade.
+* Badge-etiketter är lokaliserade.
 * Om flera metadatamärkningar anges visas märken i alfabetisk ordning baserat på märkordsnamnet, till exempel `badge1:` eller `badgeWeb`.
 * Om du vill att URL:en ska öppnas på en ny flik använder du den här syntaxen:
 
@@ -152,7 +154,7 @@ Exempel på syntax
 
   Återgiven:
 
-  [!BADGE Öppna på ny flik]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Öppna adobe.com på en ny flik"}
+  [!BADGE Öppna på ny flik]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Öppna adobe.com på ny flik"}
 
 ## Textmarkering
 
