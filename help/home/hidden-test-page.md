@@ -5,17 +5,17 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Ladda ned Premium"
 badgeExam: label="tentamen ADO-E903" type="neutral"
-exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
+exl-id: 02245655-511e-4e89-8846-dac85681ea91
+source-git-commit: 6df7ed2c80f04416a48db8d4bc52ede2e87bf372
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
 
 # Dold testsida
 
-Vill du aktivera?
+Vill du aktivera? Upprepa, aktiverades den här automatiskt kl. 11.30 PT?
 
 ## Problem med förhandsgranskning
 
@@ -82,7 +82,7 @@ Ett märke är en färgad etikett som används som innehållsindikator. Du kan t
 
 [!BADGE Exempel på badge]
 
-Det finns två typer av emblem med olika syntax:
+Det finns två typer of emblem med olika syntax:
 
 * **Metadata** - Visar märket nära en sidas överkant
 * **Textbunden** - Visar märket där syntaxen finns
