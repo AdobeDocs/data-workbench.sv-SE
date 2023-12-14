@@ -1,13 +1,13 @@
 ---
 title: Vanliga frågor och svar om Datans Workbench upphörande
 description: Läs mer om Datans Workbench meddelande om att produkten upphör att gälla.
-source-git-commit: 4f591a65d4cfbb69b3e5397cf27a9ed3ee498a30
+exl-id: 0abb72f1-b68b-48cc-829c-cac7bd21a6de
+source-git-commit: 9097a4ac8dc4339193d745c54c94129470a7c11f
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 1%
+source-wordcount: '379'
+ht-degree: 0%
 
 ---
-
 
 # Vanliga frågor och svar om Datans Workbench upphörande
 
@@ -15,17 +15,17 @@ Datans Workbench sista giltighetsdatum är **31 december 2023**.
 
 ## Vad ingår?
 
-Detta meddelande påverkar alla lösningar som bygger på Data Workbench, inklusive Managed Services och lösningar för lokal programvara. Detta slutdatum påverkar endast Datan Workbench. påverkar inte andra funktioner eller komponenter i Adobe Analytics.
+Detta meddelande påverkar alla lösningar som bygger på Data Workbench, inklusive Managed Services och lösningar för lokal programvara. Detta påverkar bara Datan Workbench, inte andra funktioner eller komponenter i Adobe Analytics.
 
 ## Varför går Datan Workbench i pension?
 
-I och med lanseringen och den kontinuerliga förbättringen av Adobe Experience Platform kan kunderna kombinera data över flera kanaler och använda dem i flera Adobe-lösningar. Customer Journey Analytics gör att ni kan ta data över flera kanaler för att utföra avancerade analyser av dessa data.
+I och med lanseringen och den kontinuerliga förbättringen av Adobe Experience Platform kan kunderna kombinera data över flera kanaler och använda dem i flera Adobe-lösningar. I synnerhet [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html) gör att ni kan ta data över flera kanaler för att utföra avancerad analys av dessa data.
 
 De flesta funktioner och användningsfall som för närvarande finns i Data Workbench finns i Adobe Experience Platform lösningar. Det finns dock vissa fall där Datans Workbench funktionalitet inte replikeras med en Adobe Experience Platform-lösning. Kontakta er kontoansvarige på Adobe för att diskutera specifika funktionsområden eller använda fallkompatibilitet.
 
 ## Vad är Adobe vägledning för driftsättning på plats?
 
-Kunderna uppmuntras att gå över till de nuvarande Adobe-lösningarna för avancerad analys. Gamla permanenta licenskunder kan välja att fortsätta använda Data Workbench. Adobe har dock inga planer på att ge support eller uppdatera produkten, inklusive allvarliga fel eller säkerhetsluckor. Fortsatt användning av anläggningsdistributioner av Data Workbench efter sista giltighetsdatum sker på egen risk.
+Kunderna uppmuntras att gå över till de nuvarande Adobe-lösningarna för avancerad analys. Gamla permanenta licenskunder kan välja att fortsätta använda Data Workbench. Adobe har dock inga planer på att ge support eller uppdatera produkten, inklusive allvarliga fel eller säkerhetsproblem. Fortsatt användning av anläggningsdistributioner av Data Workbench efter sista giltighetsdatum sker på egen risk.
 
 ## Kan jag köpa konsulttjänster för att få hjälp med Datan Workbench?
 
